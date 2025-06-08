@@ -12,14 +12,14 @@
     "url": "https://github.com/cjo4m06/mcp-shrimp-task-manager/issues"
   },
   "homepage": "https://cjo4m06.github.io/mcp-shrimp-task-manager",
-  "bin": {
-    "mcp-shrimp-task-manager": "./dist/index.js"
-  },
   "scripts": {
+    "start": "node --no-warnings=ExperimentalWarnings server.mjs",
+    "dev": "node --watch --no-warnings=ExperimentalWarnings server.mjs",
     "build": "tsc && copyfiles -u 1 \"src/**/*.md\" dist && copyfiles -u 1 \"src/public/**/*\" dist && node scripts/add-shebang.js",
-    "dev": "node --loader ts-node/esm src/index.ts",
-    "start": "node --experimental-modules dist/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": ">=18.0.0"
   },
   "keywords": [
     "mcp",
