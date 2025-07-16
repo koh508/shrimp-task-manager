@@ -1,0 +1,11 @@
+--- SCRIPT EXECUTION START: 2025-07-16 15:43:17 ---
+[2025-07-16 15:43:17,322] - INFO - ✅ 관리자 권한 확인 단계를 건너뛰고 에이전트를 시작합니다.
+[2025-07-16 15:43:17,322] - INFO - 🚀 AI 에이전트 시작. Vault 경로: D:/my workspace/OneDrive NEW/GNY
+[2025-07-16 15:43:17,325] - INFO - ✅ 경로 접근 및 쓰기 권한 확인 완료: D:\my workspace\OneDrive NEW\GNY
+[2025-07-16 15:43:17,409] - INFO - [설정] git 긴 경로(longpaths) 지원 활성화 완료.
+[2025-07-16 15:43:17,409] - INFO - 폴더 내 긴 파일명 검사 시작: D:\my workspace\OneDrive NEW\GNY\Clippings
+[2025-07-16 15:43:17,410] - INFO - 폴더 내 긴 파일명 검사 시작: D:\my workspace\OneDrive NEW\GNY\Processed
+[2025-07-16 15:43:17,411] - WARNING - 긴 파일명 검사 대상 폴더가 존재하지 않습니다: D:\my workspace\OneDrive NEW\GNY\.smart-env\multi
+브랜치 전환/생성: main
+[에러 기록] D:\my workspace\OneDrive NEW\GNY\AI_Agent_Error\error_20250716_154317.md
+[2025-07-16 15:43:17,643] - INFO - 🚀 [AI Agent] 클리핑 자동 감시가 시작되었습니다. 실시간 대시보드와 보고서를 확인하세요.

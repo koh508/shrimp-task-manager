@@ -1,0 +1,44 @@
+# Windows specific
+AppData/
+Local Settings/
+Temp/
+
+# Logs
+*.log
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+.venv/
+env/
+venv/
+ENV/
+
+# IDE / Editor specific
+.vscode/
+.idea/
+
+# Secrets
+.env
+config.json
+
+# Personal Documents
+*.pdf
+
+# Application-specific
+.obsidian/
+winget-cli/
+
+# Other cache
+.cache/
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+
+# Railway specific
+.railway/

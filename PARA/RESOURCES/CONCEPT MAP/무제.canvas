@@ -1,0 +1,16 @@
+{
+	"edges":[],
+	"metadata":{"version":"1.0-1.0"},
+	"nodes":[
+		{
+			"height":200,
+			"id":"cd63f1ecc758b882",
+			"styleAttributes":{},
+			"text":"꿈",
+			"type":"text",
+			"width":247,
+			"x":-197,
+			"y":-80
+		}
+	]
+}
