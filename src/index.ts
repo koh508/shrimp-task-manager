@@ -9,6 +9,7 @@ import {
   ListToolsRequestSchema,
 } from "@modelcontextprotocol/sdk/types.js";
 import express, { Request, Response, NextFunction } from "express";
+import rateLimit from "express-rate-limit";
 import getPort from "get-port";
 import path from "path";
 import fs from "fs";
@@ -88,7 +89,13 @@ async function main() {
       app.use(express.static(publicPath));
 
       // 設置 API 路由
-      app.get("/api/tasks", async (req: Request, res: Response) => {
+      const tasksRateLimiter = rateLimit({
+        windowMs: 60 * 1000, // 1 minute
+        max: 10, // Limit each IP to 10 requests per windowMs
+        message: { error: "Too many requests, please try again later." },
+      });
+
+      app.get("/api/tasks", tasksRateLimiter, async (req: Request, res: Response) => {
         try {
           // 使用 fsPromises 保持異步讀取
           const tasksData = await fsPromises.readFile(TASKS_FILE_PATH, "utf-8");
