@@ -1,15 +1,17 @@
-from pathlib import Path
 import logging
+from pathlib import Path
+
 
 def safe_read_file(path: Path) -> str | None:
     try:
-        return path.read_text(encoding='utf-8')
+        return path.read_text(encoding="utf-8")
     except FileNotFoundError:
         logging.warning(f"❗ 파일 없음 (이미 이동됨/삭제됨): {path}")
         return None
     except Exception as e:
         logging.error(f"❌ 파일 읽기 실패: {path} → {e}")
         return None
+
 
 def safe_move_file(src: Path, dest: Path) -> bool:
     try:

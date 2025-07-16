@@ -1,0 +1,10 @@
+{
+    "import_error": "ImportError|ModuleNotFoundError",
+    "connection_error": "ConnectionError|TimeoutError|RequestException",
+    "github_api_error": "github.*(?:404|403|401|500)",
+    "file_not_found": "FileNotFoundError|No such file",
+    "permission_error": "PermissionError|Access denied",
+    "syntax_error": "SyntaxError|IndentationError",
+    "type_error": "TypeError|AttributeError",
+    "value_error": "ValueError|KeyError"
+}

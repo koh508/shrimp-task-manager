@@ -259,13 +259,13 @@ function Inbox() {
       })
       .filter(entry => {
         if (!dateFilter) return true;
-        
+
         const entryDate = sortBy === 'mtime' ? entry.$mtime : entry.$ctime;
         const filterDate = dc.luxon.DateTime.fromFormat(dateFilter, "yyyy-MM-dd").startOf('day');
-        
+
         if (!filterDate.isValid) return true;
-        
-        return isDateBefore 
+
+        return isDateBefore
           ? entryDate <= filterDate
           : entryDate >= filterDate;
       })
@@ -326,8 +326,8 @@ function Inbox() {
             onChange={(e) => setDateFilter(e.target.value)}
             style={styles.dateFilterBox}
           />
-          <button 
-            onClick={() => setIsDateBefore(!isDateBefore)} 
+          <button
+            onClick={() => setIsDateBefore(!isDateBefore)}
             style={{
               ...styles.dateToggleButton,
               backgroundColor: isDateBefore ? 'var(--interactive-accent)' : 'var(--background-modifier-border-focus)',
@@ -422,8 +422,8 @@ const styles = {
     flexDirection: "column",
     overflow: "auto",
   },
-  header: { 
-    marginBottom: "20px", 
+  header: {
+    marginBottom: "20px",
     fontSize: "1.5em",
   },
   controls: {

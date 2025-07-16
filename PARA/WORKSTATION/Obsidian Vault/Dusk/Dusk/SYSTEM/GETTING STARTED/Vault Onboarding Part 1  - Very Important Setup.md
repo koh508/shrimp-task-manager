@@ -6,7 +6,7 @@ cssclasses:
 # Do this when opening the vault for the first time:
 ```tabs
 tab: Note: Todoist Plugin in Homepage
-To enable the Todoist Plugin in Homepage, follow this tutorial: 
+To enable the Todoist Plugin in Homepage, follow this tutorial:
 [Todoist Youtube Tutorial](https://www.youtube.com/watch?v=t_nX51ODmPU&t)
 ```
 
@@ -40,7 +40,7 @@ tab: #### After that please press **"Ctrl + P"** then type **"Reload app without
 ![[Vault Onboarding-1.png]]
 ```
 ```tabs
-tab: #### At this point your vault should look like this **(Before)**: 
+tab: #### At this point your vault should look like this **(Before)**:
 | Before                      | After                       |
 | --------------------------- | --------------------------- |
 | ![[Vault Onboarding Part 2222.png]] | ![[Vault Onboarding Part 1111.png]] |
@@ -76,11 +76,11 @@ Then press **"Ctrl + P"** then type **"Outline: Show outline"** and **select** i
 
 
 tab: Status Bar Bottons
-#### Go to **Settings > Commander > Status Bar** 
+#### Go to **Settings > Commander > Status Bar**
 **You will now add these two` commands:**
 ![[Vault Onboarding Part 1.png|450x237]]
 
-These are what you will search for when you select **"Add Command"**. 
+These are what you will search for when you select **"Add Command"**.
 - Omnisearch: Vault Search
 ![[Vault Onboarding-10.png|350x50]]
 - Fullscreen focus mode
@@ -88,7 +88,7 @@ These are what you will search for when you select **"Add Command"**.
 
 **Note: You can select the icon for the button and the name when you hover the mouse button**.
 
-#### Go to **Settings > Status Bar Organizer** 
+#### Go to **Settings > Status Bar Organizer**
 Then arrange the status bar icons on how you want it.
 I personally like to keep mine like this:
 ![[Vault Onboarding Part 1-2.png]]
@@ -99,4 +99,3 @@ tab: Final Look
 ![[Getting Started.png]]
 ````
 ``````
-

@@ -54,7 +54,7 @@ dv.taskList(dv.pages().file.tasks
 
 # Notes & Reflections
 
-  
+
 # Plan for Next Week
 
 
@@ -93,9 +93,9 @@ let startDate = dv.current().file.frontmatter["journal-start-date"];
 let endDate = dv.current().file.frontmatter["journal-end-date"];
 
 let pages = dv.pages('"PARA/PROJECTS"')
-    .where(p => (p.type == "project_note" || p.type == "project_family") && 
-                p.Status != "4 Completed" && 
-                (p.Due_Date >= dv.date(startDate) || p.Due_Date == null) && 
+    .where(p => (p.type == "project_note" || p.type == "project_family") &&
+                p.Status != "4 Completed" &&
+                (p.Due_Date >= dv.date(startDate) || p.Due_Date == null) &&
                 (p.Due_Date <= dv.date(endDate) || p.Due_Date == null));
 
 // Separate pages with and without due dates

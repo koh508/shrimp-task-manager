@@ -7,18 +7,19 @@ import logging
 from datetime import datetime
 from typing import Dict
 
+
 class AutoRecoverySystem:
     def __init__(self):
         self.recovery_strategies = {
-            'github_rate_limit': self.handle_github_rate_limit,
-            'connection_timeout': self.handle_connection_timeout,
-            'authentication_error': self.handle_auth_error
+            "github_rate_limit": self.handle_github_rate_limit,
+            "connection_timeout": self.handle_connection_timeout,
+            "authentication_error": self.handle_auth_error,
         }
         self.retry_counts = {}
         self.max_retries = 3
 
     async def handle_github_rate_limit(self, error_context: Dict):
-        reset_time = error_context.get('reset_time')
+        reset_time = error_context.get("reset_time")
         if reset_time:
             wait_time = (reset_time - datetime.now()).total_seconds()
             logging.info(f"GitHub Rate Limit 대기 중: {wait_time:.0f}초")
@@ -27,9 +28,9 @@ class AutoRecoverySystem:
         return False
 
     async def handle_connection_timeout(self, error_context: Dict):
-        retry_count = self.retry_counts.get('connection_timeout', 0)
+        retry_count = self.retry_counts.get("connection_timeout", 0)
         if retry_count < self.max_retries:
-            self.retry_counts['connection_timeout'] = retry_count + 1
+            self.retry_counts["connection_timeout"] = retry_count + 1
             logging.info(f"연결 타임아웃 재시도: {retry_count + 1}/{self.max_retries}")
             await asyncio.sleep(5)
             return True

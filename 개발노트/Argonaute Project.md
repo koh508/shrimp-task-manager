@@ -10,7 +10,7 @@ Argonaute는 AI 기반 자동화 에이전트 시스템입니다.
 
 1. **다중 에이전트 시스템**
    - SuperHeroic: 영웅 소환 특화
-   - SuperDianaira: 코드 분석 특화  
+   - SuperDianaira: 코드 분석 특화
    - SuperArgonaute: 클라우드 특화
    - SuperUnified: 통합형
 

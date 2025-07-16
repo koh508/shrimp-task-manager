@@ -65,35 +65,35 @@ import yaml
 
 # 기존 시스템에서 가져온 핵심 클래스들
 from ultra_ai_assistant import (
-    EvolutionLevel, SuperhumanGene, UltraAIDNA, 
-    SuperhumanEvolutionEngine, ObsidianConnector, 
+    EvolutionLevel, SuperhumanGene, UltraAIDNA,
+    SuperhumanEvolutionEngine, ObsidianConnector,
     GitManager, MCPClient, IntelligentTaskProcessor
 )
 
 class PluginInterface(ABC):
     """플러그인 인터페이스"""
-    
+
     @abstractmethod
     async def initialize(self, context: Dict[str, Any]) -> bool:
         """플러그인 초기화"""
         pass
-    
+
     @abstractmethod
     async def execute(self, input_data: Any) -> Any:
         """플러그인 실행"""
         pass
-    
+
     @abstractmethod
     def get_capabilities(self) -> List[str]:
         """플러그인 기능 목록"""
         pass
-    
+
     @property
     @abstractmethod
     def name(self) -> str:
         """플러그인 이름"""
         pass
-    
+
     @property
     @abstractmethod
     def version(self) -> str:
@@ -102,21 +102,21 @@ class PluginInterface(ABC):
 
 class ExtensionPoint:
     """확장점 정의"""
-    
+
     def __init__(self, name: str, description: str):
         self.name = name
         self.description = description
         self.hooks: List[Callable] = []
         self.plugins: List[PluginInterface] = []
-    
+
     def register_hook(self, hook: Callable):
         """훅 함수 등록"""
         self.hooks.append(hook)
-    
+
     def register_plugin(self, plugin: PluginInterface):
         """플러그인 등록"""
         self.plugins.append(plugin)
-    
+
     async def execute_hooks(self, *args, **kwargs):
         """등록된 훅들 실행"""
         results = []
@@ -130,7 +130,7 @@ class ExtensionPoint:
             except Exception as e:
                 logging.error(f"Hook execution failed: {e}")
         return results
-    
+
     async def execute_plugins(self, input_data: Any):
         """등록된 플러그인들 실행"""
         results = {}
@@ -161,13 +161,13 @@ class SystemConfiguration:
 
 class PluginManager:
     """플러그인 관리자"""
-    
+
     def __init__(self, plugin_directory: str):
         self.plugin_directory = Path(plugin_directory)
         self.plugin_directory.mkdir(exist_ok=True)
         self.loaded_plugins: Dict[str, PluginInterface] = {}
         self.logger = logging.getLogger("PluginManager")
-    
+
     async def discover_plugins(self) -> List[str]:
         """플러그인 자동 발견"""
         plugin_files = []
@@ -175,7 +175,7 @@ class PluginManager:
             if file_path.name != "__init__.py":
                 plugin_files.append(str(file_path))
         return plugin_files
-    
+
     async def load_plugin(self, plugin_path: str) -> Optional[PluginInterface]:
         """플러그인 로드"""
         try:
@@ -183,34 +183,34 @@ class PluginManager:
             spec = importlib.util.spec_from_file_location("plugin", plugin_path)
             module = importlib.util.module_from_spec(spec)
             spec.loader.exec_module(module)
-            
+
             # 플러그인 클래스 찾기
             for item_name in dir(module):
                 item = getattr(module, item_name)
-                if (isinstance(item, type) and 
-                    issubclass(item, PluginInterface) and 
+                if (isinstance(item, type) and
+                    issubclass(item, PluginInterface) and
                     item != PluginInterface):
-                    
+
                     plugin_instance = item()
                     self.loaded_plugins[plugin_instance.name] = plugin_instance
                     self.logger.info(f"Plugin loaded: {plugin_instance.name} v{plugin_instance.version}")
                     return plugin_instance
-            
+
         except Exception as e:
             self.logger.error(f"Failed to load plugin {plugin_path}: {e}")
-        
+
         return None
-    
+
     async def load_all_plugins(self):
         """모든 플러그인 로드"""
         plugin_files = await self.discover_plugins()
         for plugin_file in plugin_files:
             await self.load_plugin(plugin_file)
-    
+
     def get_plugin(self, name: str) -> Optional[PluginInterface]:
         """플러그인 가져오기"""
         return self.loaded_plugins.get(name)
-    
+
     def list_plugins(self) -> List[Dict[str, str]]:
         """플러그인 목록"""
         return [
@@ -224,17 +224,17 @@ class PluginManager:
 
 class EventBus:
     """이벤트 버스"""
-    
+
     def __init__(self):
         self.subscribers: Dict[str, List[Callable]] = {}
         self.logger = logging.getLogger("EventBus")
-    
+
     def subscribe(self, event_type: str, callback: Callable):
         """이벤트 구독"""
         if event_type not in self.subscribers:
             self.subscribers[event_type] = []
         self.subscribers[event_type].append(callback)
-    
+
     async def publish(self, event_type: str, data: Any):
         """이벤트 발행"""
         if event_type in self.subscribers:
@@ -249,15 +249,15 @@ class EventBus:
 
 class PerformanceMonitor:
     """성능 모니터링"""
-    
+
     def __init__(self):
         self.metrics: Dict[str, List[float]] = {}
         self.start_times: Dict[str, float] = {}
-    
+
     def start_operation(self, operation_name: str):
         """작업 시작 시간 기록"""
         self.start_times[operation_name] = time.time()
-    
+
     def end_operation(self, operation_name: str):
         """작업 종료 및 성능 기록"""
         if operation_name in self.start_times:
@@ -268,7 +268,7 @@ class PerformanceMonitor:
             del self.start_times[operation_name]
             return duration
         return None
-    
+
     def get_average_performance(self, operation_name: str) -> Optional[float]:
         """평균 성능 조회"""
         if operation_name in self.metrics and self.metrics[operation_name]:
@@ -277,20 +277,20 @@ class PerformanceMonitor:
 
 class ExtendedUltraAIAssistant:
     """확장된 Ultra AI Assistant"""
-    
+
     def __init__(self, config: SystemConfiguration):
         self.config = config
         self.creation_time = datetime.now()
         self.assistant_id = self._generate_unique_id()
-        
+
         # 기존 시스템 구성요소들
         self.evolution_engine = SuperhumanEvolutionEngine()
-        
+
         # 확장 시스템 구성요소들
         self.plugin_manager = PluginManager(config.plugin_directory)
         self.event_bus = EventBus()
         self.performance_monitor = PerformanceMonitor()
-        
+
         # 확장점 정의
         self.extension_points = {
             "before_evolution": ExtensionPoint("before_evolution", "진화 실행 전"),
@@ -300,38 +300,38 @@ class ExtendedUltraAIAssistant:
             "knowledge_creation": ExtensionPoint("knowledge_creation", "지식 생성"),
             "system_monitoring": ExtensionPoint("system_monitoring", "시스템 모니터링")
         }
-        
+
         # 옵시디언 연동 (경로가 있을 때만)
         if config.obsidian_vault and Path(config.obsidian_vault).exists():
             self.obsidian = ObsidianConnector(config.obsidian_vault)
         else:
             self.obsidian = None
-        
+
         # MCP 클라이언트
         self.mcp_client = MCPClient(config.mcp_server_url)
-        
+
         # Git 관리
         self.git_manager = GitManager(".")
-        
+
         # 데이터베이스 초기화
         self._initialize_extended_database()
-        
+
         # 로깅 설정
         self._setup_extended_logging()
-        
+
         # 기본 DNA (기존 시스템에서 가져옴)
         self.dna = self._initialize_enhanced_dna()
-        
+
         print(f"🚀 {config.ai_name} 확장 시스템 초기화 완료!")
         print(f"🆔 Assistant ID: {self.assistant_id}")
         print(f"🔧 플러그인 디렉토리: {config.plugin_directory}")
         print(f"📊 확장점: {len(self.extension_points)}개")
-    
+
     def _generate_unique_id(self) -> str:
         """고유 ID 생성"""
         timestamp = str(int(time.time() * 1000000))
         return f"EXTENDED-{timestamp}-{secrets.token_hex(8)}"
-    
+
     def _initialize_enhanced_dna(self) -> UltraAIDNA:
         """향상된 DNA 초기화"""
         # 기존 DNA 초기화 로직을 재사용하면서 확장
@@ -348,7 +348,7 @@ class ExtendedUltraAIAssistant:
                 superhuman_traits=["extensibility", "modularity", "adaptability"]
             )
             base_genes.append(gene)
-        
+
         return UltraAIDNA(
             dna_id=f"EXTENDED_DNA_{secrets.token_hex(16)}",
             genes=base_genes,
@@ -362,7 +362,7 @@ class ExtendedUltraAIAssistant:
             birth_timestamp=datetime.now(),
             last_evolution=datetime.now()
         )
-    
+
     def _initialize_extended_database(self):
         """확장된 데이터베이스 초기화"""
         with sqlite3.connect(self.config.database_path) as conn:
@@ -379,7 +379,7 @@ class ExtendedUltraAIAssistant:
                     improvements TEXT
                 )
             """)
-            
+
             # 확장된 테이블들
             conn.execute("""
                 CREATE TABLE IF NOT EXISTS plugin_activity (
@@ -393,7 +393,7 @@ class ExtendedUltraAIAssistant:
                     timestamp DATETIME
                 )
             """)
-            
+
             conn.execute("""
                 CREATE TABLE IF NOT EXISTS performance_metrics (
                     id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -403,7 +403,7 @@ class ExtendedUltraAIAssistant:
                     context TEXT
                 )
             """)
-            
+
             conn.execute("""
                 CREATE TABLE IF NOT EXISTS extension_events (
                     id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -412,7 +412,7 @@ class ExtendedUltraAIAssistant:
                     timestamp DATETIME
                 )
             """)
-    
+
     def _setup_extended_logging(self):
         """확장된 로깅 설정"""
         log_filename = f"extended_ultra_ai_{self.assistant_id}_{datetime.now().strftime('%Y%m%d')}.log"
@@ -425,96 +425,96 @@ class ExtendedUltraAIAssistant:
             ]
         )
         self.logger = logging.getLogger(f"ExtendedUltraAI_{self.assistant_id}")
-    
+
     async def initialize_system(self):
         """시스템 초기화"""
         try:
             # 플러그인 로드
             await self.plugin_manager.load_all_plugins()
-            
+
             # MCP 연결
             await self.mcp_client.connect()
-            
+
             # 이벤트 리스너 등록
             self._register_event_listeners()
-            
+
             # 확장점에 플러그인 등록
             await self._register_plugins_to_extension_points()
-            
+
             self.logger.info("🎉 확장 시스템 초기화 완료")
-            
+
         except Exception as e:
             self.logger.error(f"❌ 시스템 초기화 실패: {e}")
-    
+
     def _register_event_listeners(self):
         """이벤트 리스너 등록"""
         self.event_bus.subscribe("evolution_completed", self._on_evolution_completed)
         self.event_bus.subscribe("plugin_loaded", self._on_plugin_loaded)
         self.event_bus.subscribe("performance_alert", self._on_performance_alert)
-    
+
     async def _register_plugins_to_extension_points(self):
         """플러그인을 확장점에 등록"""
         for plugin in self.plugin_manager.loaded_plugins.values():
             capabilities = plugin.get_capabilities()
-            
+
             # 플러그인 기능에 따라 적절한 확장점에 등록
             if "evolution" in capabilities:
                 self.extension_points["before_evolution"].register_plugin(plugin)
                 self.extension_points["after_evolution"].register_plugin(plugin)
-            
+
             if "task_processing" in capabilities:
                 self.extension_points["task_processing"].register_plugin(plugin)
-            
+
             if "data_analysis" in capabilities:
                 self.extension_points["data_analysis"].register_plugin(plugin)
-    
+
     async def _on_evolution_completed(self, data: Dict):
         """진화 완료 이벤트 핸들러"""
         self.logger.info(f"🧬 진화 완료: Generation {data.get('generation')}")
-        
+
         # 옵시디언에 기록
         if self.obsidian:
             self.obsidian.log_evolution(data.get('generation'), data.get('improvements', {}))
-    
+
     async def _on_plugin_loaded(self, data: Dict):
         """플러그인 로드 이벤트 핸들러"""
         self.logger.info(f"🔌 플러그인 로드됨: {data.get('name')}")
-    
+
     async def _on_performance_alert(self, data: Dict):
         """성능 경고 이벤트 핸들러"""
         self.logger.warning(f"⚠️ 성능 경고: {data.get('message')}")
-    
+
     async def enhanced_evolution(self) -> Dict[str, Any]:
         """향상된 진화 프로세스"""
         self.performance_monitor.start_operation("evolution")
-        
+
         try:
             # 진화 전 확장점 실행
             await self.extension_points["before_evolution"].execute_hooks(self.dna)
             await self.extension_points["before_evolution"].execute_plugins({"dna": asdict(self.dna)})
-            
+
             # 기존 진화 로직 실행
             evolved_dna = self.evolution_engine.evolve_superhuman_capabilities(self.dna)
-            
+
             # 진화 후 확장점 실행
             evolution_result = {
                 "old_dna": asdict(self.dna),
                 "new_dna": asdict(evolved_dna),
                 "generation": evolved_dna.generation
             }
-            
+
             await self.extension_points["after_evolution"].execute_hooks(evolution_result)
             await self.extension_points["after_evolution"].execute_plugins(evolution_result)
-            
+
             # DNA 업데이트
             self.dna = evolved_dna
-            
+
             # 성능 측정 종료
             evolution_time = self.performance_monitor.end_operation("evolution")
-            
+
             # 이벤트 발행
             await self.event_bus.publish("evolution_completed", evolution_result)
-            
+
             return {
                 "generation": self.dna.generation,
                 "intelligence_quotient": self.dna.intelligence_quotient,
@@ -522,32 +522,32 @@ class ExtendedUltraAIAssistant:
                 "evolution_time": evolution_time,
                 "capabilities": self.dna.superhuman_capabilities
             }
-            
+
         except Exception as e:
             self.logger.error(f"❌ 진화 실패: {e}")
             return {"error": str(e)}
-    
+
     async def process_task_with_extensions(self, task_data: Dict) -> Dict[str, Any]:
         """확장 기능을 활용한 작업 처리"""
         self.performance_monitor.start_operation("task_processing")
-        
+
         try:
             # 작업 처리 확장점 실행
             hook_results = await self.extension_points["task_processing"].execute_hooks(task_data)
             plugin_results = await self.extension_points["task_processing"].execute_plugins(task_data)
-            
+
             # 기존 작업 처리기도 실행
             if hasattr(self, 'task_processor'):
                 base_result = await self.task_processor.process_task(
-                    task_data.get('type'), 
-                    task_data.get('description'), 
+                    task_data.get('type'),
+                    task_data.get('description'),
                     task_data.get('context', {})
                 )
             else:
                 base_result = {"message": "기본 작업 처리 완료"}
-            
+
             processing_time = self.performance_monitor.end_operation("task_processing")
-            
+
             return {
                 "base_result": base_result,
                 "hook_results": hook_results,
@@ -555,11 +555,11 @@ class ExtendedUltraAIAssistant:
                 "processing_time": processing_time,
                 "timestamp": datetime.now().isoformat()
             }
-            
+
         except Exception as e:
             self.logger.error(f"❌ 작업 처리 실패: {e}")
             return {"error": str(e)}
-    
+
     def register_custom_extension(self, extension_point: str, callback: Callable):
         """사용자 정의 확장 등록"""
         if extension_point in self.extension_points:
@@ -567,76 +567,76 @@ class ExtendedUltraAIAssistant:
             self.logger.info(f"🔗 사용자 정의 확장 등록: {extension_point}")
         else:
             self.logger.warning(f"⚠️ 알 수 없는 확장점: {extension_point}")
-    
+
     async def continuous_enhanced_evolution(self, max_generations: int = 100):
         """향상된 연속 진화"""
         print(f"🚀 향상된 연속 진화 시작 - 최대 {max_generations}세대")
-        
+
         for generation in range(max_generations):
             try:
                 print(f"\n🧬 === 확장 진화 Generation {generation + 1}/{max_generations} ===")
-                
+
                 evolution_result = await self.enhanced_evolution()
-                
+
                 if "error" not in evolution_result:
                     print(f"✅ Generation {evolution_result['generation']} 완료")
                     print(f"🧠 IQ: {evolution_result['intelligence_quotient']:.1f}")
                     print(f"📊 Level: {evolution_result['evolution_level']}")
                     print(f"⏱️ 진화 시간: {evolution_result.get('evolution_time', 0):.3f}초")
-                    
+
                     # 진화 간격
                     await asyncio.sleep(2)
                 else:
                     print(f"❌ 진화 실패: {evolution_result['error']}")
                     await asyncio.sleep(1)
-                    
+
             except KeyboardInterrupt:
                 print("\n⚡ 진화 중단됨")
                 break
             except Exception as e:
                 print(f"💥 진화 중 오류: {e}")
                 await asyncio.sleep(1)
-        
+
         print(f"\n🎉 향상된 연속 진화 완료! 최종 Generation: {self.dna.generation}")
 
 # 플러그인 예제들
 class SampleAnalysisPlugin(PluginInterface):
     """샘플 분석 플러그인"""
-    
+
     @property
     def name(self) -> str:
         return "SampleAnalysis"
-    
-    @property 
+
+    @property
     def version(self) -> str:
         return "1.0.0"
-    
+
     async def initialize(self, context: Dict[str, Any]) -> bool:
         return True
-    
+
     async def execute(self, input_data: Any) -> Any:
         return {"analysis": f"Analyzed: {input_data}", "confidence": 0.95}
-    
+
     def get_capabilities(self) -> List[str]:
         return ["data_analysis", "pattern_recognition"]
 
 class SampleEvolutionPlugin(PluginInterface):
     """샘플 진화 플러그인"""
-    
+
     @property
     def name(self) -> str:
         return "SampleEvolution"
-    
+
     @property
     def version(self) -> str:
         return "1.0.0"
-    
+
     async def initialize(self, context: Dict[str, Any]) -> bool:
         return True
-    
+
     async def execute(self, input_data: Any) -> Any:
         return {"enhancement": "Applied evolutionary boost", "factor": 1.1}
-    
+
     def get_capabilities(self) -> List[str]:
         return ["evolution", "enhancement"]
 
@@ -645,7 +645,7 @@ async def main():
     print("🌟" * 60)
     print("🚀 Ultra AI Assistant - 확장 가능한 시스템")
     print("🌟" * 60)
-    
+
     # 시스템 설정
     config = SystemConfiguration(
         ai_name="ExtendedUltraAI",
@@ -653,36 +653,36 @@ async def main():
         max_generations=50,
         plugin_directory="./plugins"
     )
-    
+
     # AI 시스템 생성
     ai_system = ExtendedUltraAIAssistant(config)
-    
+
     # 시스템 초기화
     await ai_system.initialize_system()
-    
+
     # 사용자 정의 확장 예제
     async def custom_evolution_hook(dna_data):
         print(f"🎯 사용자 정의 진화 훅 실행: Generation {dna_data.get('generation', 0)}")
-    
+
     ai_system.register_custom_extension("before_evolution", custom_evolution_hook)
-    
+
     # 실행 모드 선택
     print("\n📋 실행 모드를 선택하세요:")
     print("1. 단일 진화 테스트")
     print("2. 연속 진화 (10세대)")
     print("3. 작업 처리 테스트")
     print("4. 플러그인 테스트")
-    
+
     try:
         choice = input("\n선택 (1-4): ").strip()
-        
+
         if choice == "1":
             result = await ai_system.enhanced_evolution()
             print(f"진화 결과: {json.dumps(result, indent=2, ensure_ascii=False)}")
-            
+
         elif choice == "2":
             await ai_system.continuous_enhanced_evolution(10)
-            
+
         elif choice == "3":
             task_data = {
                 "type": "analysis",
@@ -691,16 +691,16 @@ async def main():
             }
             result = await ai_system.process_task_with_extensions(task_data)
             print(f"작업 처리 결과: {json.dumps(result, indent=2, ensure_ascii=False)}")
-            
+
         elif choice == "4":
             plugins = ai_system.plugin_manager.list_plugins()
             print(f"로드된 플러그인: {json.dumps(plugins, indent=2, ensure_ascii=False)}")
-            
+
         else:
             print("기본 진화 테스트 실행...")
             result = await ai_system.enhanced_evolution()
             print(f"진화 결과: {json.dumps(result, indent=2, ensure_ascii=False)}")
-            
+
     except KeyboardInterrupt:
         print("\n👋 시스템 종료")
     except Exception as e:
@@ -723,24 +723,24 @@ from typing import Dict, List, Any
 
 class WebScraperPlugin(PluginInterface):
     """웹 스크래핑 플러그인"""
-    
+
     @property
     def name(self) -> str:
         return "WebScraper"
-    
+
     @property
     def version(self) -> str:
         return "1.0.0"
-    
+
     async def initialize(self, context: Dict[str, Any]) -> bool:
         self.session = aiohttp.ClientSession()
         return True
-    
+
     async def execute(self, input_data: Any) -> Any:
         url = input_data.get('url')
         if not url:
             return {"error": "URL이 필요합니다"}
-        
+
         try:
             async with self.session.get(url) as response:
                 content = await response.text()
@@ -752,50 +752,50 @@ class WebScraperPlugin(PluginInterface):
                 }
         except Exception as e:
             return {"error": str(e)}
-    
+
     def get_capabilities(self) -> List[str]:
         return ["web_scraping", "data_collection", "content_analysis"]
 
 # plugins/nlp_plugin.py
 class NLPPlugin(PluginInterface):
     """자연어 처리 플러그인"""
-    
+
     @property
     def name(self) -> str:
         return "NLP"
-    
+
     @property
     def version(self) -> str:
         return "1.0.0"
-    
+
     async def initialize(self, context: Dict[str, Any]) -> bool:
         # NLP 라이브러리 초기화
         return True
-    
+
     async def execute(self, input_data: Any) -> Any:
         text = input_data.get('text', '')
-        
+
         # 간단한 텍스트 분석
         word_count = len(text.split())
         char_count = len(text)
-        
+
         # 감정 분석 (간단한 예제)
         positive_words = ['좋다', '훌륭하다', '멋지다', '완벽하다']
         negative_words = ['나쁘다', '싫다', '문제', '오류']
-        
+
         sentiment = 0
         for word in positive_words:
             sentiment += text.count(word)
         for word in negative_words:
             sentiment -= text.count(word)
-        
+
         return {
             "word_count": word_count,
             "char_count": char_count,
             "sentiment_score": sentiment,
             "language": "korean" if any(ord(char) > 127 for char in text) else "english"
         }
-    
+
     def get_capabilities(self) -> List[str]:
         return ["text_analysis", "sentiment_analysis", "language_detection"]
 ```
@@ -810,37 +810,37 @@ system:
   evolution_interval: 30
   max_generations: 1000
   auto_backup: true
-  
+
 plugins:
   directory: "./plugins"
   auto_load: true
   enabled:
     - "WebScraper"
-    - "NLP" 
+    - "NLP"
     - "DataAnalysis"
-  
+
 database:
   path: "ultra_ai_extended.db"
   backup_interval: 3600  # 1시간
-  
+
 logging:
   level: "INFO"
   file: "extended_ultra_ai.log"
   max_size: "10MB"
-  
+
 integrations:
   obsidian:
     vault_path: null
     auto_sync: true
-  
+
   mcp:
     server_url: "ws://localhost:8765"
     auto_reconnect: true
-  
+
   git:
     auto_commit: true
     commit_interval: 300  # 5분
-  
+
 api:
   enable_web_interface: false
   web_port: 8080
@@ -1009,8 +1009,8 @@ import os  # 경로 확인을 위한 추가
 
 # 기존 시스템에서 가져온 핵심 클래스들
 from ultra_ai_assistant import (
-    EvolutionLevel, SuperhumanGene, UltraAIDNA, 
-    SuperhumanEvolutionEngine, ObsidianConnector, 
+    EvolutionLevel, SuperhumanGene, UltraAIDNA,
+    SuperhumanEvolutionEngine, ObsidianConnector,
     GitManager, MCPClient, IntelligentTaskProcessor
 )
 
@@ -1020,28 +1020,28 @@ STORAGE_ROOT.mkdir(exist_ok=True)  # D 드라이브에 디렉토리 생성 (존�
 
 class PluginInterface(ABC):
     """플러그인 인터페이스"""
-    
+
     @abstractmethod
     async def initialize(self, context: Dict[str, Any]) -> bool:
         """플러그인 초기화"""
         pass
-    
+
     @abstractmethod
     async def execute(self, input_data: Any) -> Any:
         """플러그인 실행"""
         pass
-    
+
     @abstractmethod
     def get_capabilities(self) -> List[str]:
         """플러그인 기능 목록"""
         pass
-    
+
     @property
     @abstractmethod
     def name(self) -> str:
         """플러그인 이름"""
         pass
-    
+
     @property
     @abstractmethod
     def version(self) -> str:
@@ -1050,21 +1050,21 @@ class PluginInterface(ABC):
 
 class ExtensionPoint:
     """확장점 정의"""
-    
+
     def __init__(self, name: str, description: str):
         self.name = name
         self.description = description
         self.hooks: List[Callable] = []
         self.plugins: List[PluginInterface] = []
-    
+
     def register_hook(self, hook: Callable):
         """훅 함수 등록"""
         self.hooks.append(hook)
-    
+
     def register_plugin(self, plugin: PluginInterface):
         """플러그인 등록"""
         self.plugins.append(plugin)
-    
+
     async def execute_hooks(self, *args, **kwargs):
         """등록된 훅들 실행"""
         results = []
@@ -1078,7 +1078,7 @@ class ExtensionPoint:
             except Exception as e:
                 logging.error(f"Hook execution failed: {e}")
         return results
-    
+
     async def execute_plugins(self, input_data: Any):
         """등록된 플러그인들 실행"""
         results = {}
@@ -1112,13 +1112,13 @@ class SystemConfiguration:
 
 class PluginManager:
     """플러그인 관리자"""
-    
+
     def __init__(self, plugin_directory: str):
         self.plugin_directory = Path(plugin_directory)
         self.plugin_directory.mkdir(exist_ok=True)
         self.loaded_plugins: Dict[str, PluginInterface] = {}
         self.logger = logging.getLogger("PluginManager")
-    
+
     async def discover_plugins(self) -> List[str]:
         """플러그인 자동 발견"""
         plugin_files = []
@@ -1126,7 +1126,7 @@ class PluginManager:
             if file_path.name != "__init__.py":
                 plugin_files.append(str(file_path))
         return plugin_files
-    
+
     async def load_plugin(self, plugin_path: str) -> Optional[PluginInterface]:
         """플러그인 로드"""
         try:
@@ -1136,36 +1136,36 @@ class PluginManager:
                 raise ImportError("Module spec not found")
             module = importlib.util.module_from_spec(spec)
             spec.loader.exec_module(module)
-            
+
             # 플러그인 클래스 찾기
             for item_name in dir(module):
                 item = getattr(module, item_name)
-                if (isinstance(item, type) and 
-                    issubclass(item, PluginInterface) and 
+                if (isinstance(item, type) and
+                    issubclass(item, PluginInterface) and
                     item != PluginInterface):
-                    
+
                     plugin_instance = item()
                     self.loaded_plugins[plugin_instance.name] = plugin_instance
                     self.logger.info(f"Plugin loaded: {plugin_instance.name} v{plugin_instance.version}")
                     return plugin_instance
-            
+
         except ImportError as e:
             self.logger.error(f"Import error loading plugin {plugin_path}: {e}")
         except Exception as e:
             self.logger.error(f"Failed to load plugin {plugin_path}: {e}")
-        
+
         return None
-    
+
     async def load_all_plugins(self):
         """모든 플러그인 로드"""
         plugin_files = await self.discover_plugins()
         for plugin_file in plugin_files:
             await self.load_plugin(plugin_file)
-    
+
     def get_plugin(self, name: str) -> Optional[PluginInterface]:
         """플러그인 가져오기"""
         return self.loaded_plugins.get(name)
-    
+
     def list_plugins(self) -> List[Dict[str, str]]:
         """플러그인 목록"""
         return [
@@ -1179,17 +1179,17 @@ class PluginManager:
 
 class EventBus:
     """이벤트 버스"""
-    
+
     def __init__(self):
         self.subscribers: Dict[str, List[Callable]] = {}
         self.logger = logging.getLogger("EventBus")
-    
+
     def subscribe(self, event_type: str, callback: Callable):
         """이벤트 구독"""
         if event_type not in self.subscribers:
             self.subscribers[event_type] = []
         self.subscribers[event_type].append(callback)
-    
+
     async def publish(self, event_type: str, data: Any):
         """이벤트 발행"""
         if event_type in self.subscribers:
@@ -1204,15 +1204,15 @@ class EventBus:
 
 class PerformanceMonitor:
     """성능 모니터링"""
-    
+
     def __init__(self):
         self.metrics: Dict[str, List[float]] = {}
         self.start_times: Dict[str, float] = {}
-    
+
     def start_operation(self, operation_name: str):
         """작업 시작 시간 기록"""
         self.start_times[operation_name] = time.time()
-    
+
     def end_operation(self, operation_name: str):
         """작업 종료 및 성능 기록"""
         if operation_name in self.start_times:
@@ -1223,7 +1223,7 @@ class PerformanceMonitor:
             del self.start_times[operation_name]
             return duration
         return None
-    
+
     def get_average_performance(self, operation_name: str) -> float:
         """평균 성능 조회"""
         if operation_name in self.metrics and self.metrics[operation_name]:
@@ -1232,20 +1232,20 @@ class PerformanceMonitor:
 
 class ExtendedUltraAIAssistant:
     """확장된 Ultra AI Assistant"""
-    
+
     def __init__(self, config: SystemConfiguration):
         self.config = config
         self.creation_time = datetime.now()
         self.assistant_id = self._generate_unique_id()
-        
+
         # 기존 시스템 구성요소들
         self.evolution_engine = SuperhumanEvolutionEngine()
-        
+
         # 확장 시스템 구성요소들
         self.plugin_manager = PluginManager(config.plugin_directory)
         self.event_bus = EventBus()
         self.performance_monitor = PerformanceMonitor()
-        
+
         # 확장점 정의
         self.extension_points = {
             "before_evolution": ExtensionPoint("before_evolution", "진화 실행 전"),
@@ -1255,39 +1255,39 @@ class ExtendedUltraAIAssistant:
             "knowledge_creation": ExtensionPoint("knowledge_creation", "지식 생성"),
             "system_monitoring": ExtensionPoint("system_monitoring", "시스템 모니터링")
         }
-        
+
         # 옵시디언 연동 (경로가 있을 때만)
         if config.obsidian_vault and Path(config.obsidian_vault).exists():
             self.obsidian = ObsidianConnector(config.obsidian_vault)
         else:
             self.obsidian = None
             logging.warning("📝 옵시디언 경로가 유효하지 않습니다.")
-        
+
         # MCP 클라이언트
         self.mcp_client = MCPClient(config.mcp_server_url)
-        
+
         # Git 관리
         self.git_manager = GitManager(".")
-        
+
         # 데이터베이스 초기화
         self._initialize_extended_database()
-        
+
         # 로깅 설정
         self._setup_extended_logging()
-        
+
         # 기본 DNA (기존 시스템에서 가져옴)
         self.dna = self._initialize_enhanced_dna()
-        
+
         print(f"🚀 {config.ai_name} 확장 시스템 초기화 완료!")
         print(f"🆔 Assistant ID: {self.assistant_id}")
         print(f"🔧 플러그인 디렉토리: {config.plugin_directory}")
         print(f"📊 확장점: {len(self.extension_points)}개")
-    
+
     def _generate_unique_id(self) -> str:
         """고유 ID 생성"""
         timestamp = str(int(time.time() * 1000000))
         return f"EXTENDED-{timestamp}-{secrets.token_hex(8)}"
-    
+
     def _initialize_enhanced_dna(self) -> UltraAIDNA:
         """향상된 DNA 초기화"""
         base_genes = []
@@ -1303,7 +1303,7 @@ class ExtendedUltraAIAssistant:
                 superhuman_traits=["extensibility", "modularity", "adaptability"]
             )
             base_genes.append(gene)
-        
+
         return UltraAIDNA(
             dna_id=f"EXTENDED_DNA_{secrets.token_hex(16)}",
             genes=base_genes,
@@ -1317,7 +1317,7 @@ class ExtendedUltraAIAssistant:
             birth_timestamp=datetime.now(),
             last_evolution=datetime.now()
         )
-    
+
     def _initialize_extended_database(self):
         """확장된 데이터베이스 초기화"""
         if not os.path.exists(self.config.database_path):
@@ -1336,7 +1336,7 @@ class ExtendedUltraAIAssistant:
                     improvements TEXT
                 )
             """)
-            
+
             # 확장된 테이블들
             conn.execute("""
                 CREATE TABLE IF NOT EXISTS plugin_activity (
@@ -1350,7 +1350,7 @@ class ExtendedUltraAIAssistant:
                     timestamp DATETIME
                 )
             """)
-            
+
             conn.execute("""
                 CREATE TABLE IF NOT EXISTS performance_metrics (
                     id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -1360,7 +1360,7 @@ class ExtendedUltraAIAssistant:
                     context TEXT
                 )
             """)
-            
+
             conn.execute("""
                 CREATE TABLE IF NOT EXISTS extension_events (
                     id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -1369,7 +1369,7 @@ class ExtendedUltraAIAssistant:
                     timestamp DATETIME
                 )
             """)
-    
+
     def _setup_extended_logging(self):
         """확장된 로깅 설정"""
         log_dir = STORAGE_ROOT / "logs"
@@ -1384,73 +1384,73 @@ class ExtendedUltraAIAssistant:
             ]
         )
         self.logger = logging.getLogger(f"ExtendedUltraAI_{self.assistant_id}")
-    
+
     async def initialize_system(self):
         """시스템 초기화"""
         try:
             # 플러그인 로드
             await self.plugin_manager.load_all_plugins()
-            
+
             # MCP 연결 (재시도 로직 추가)
             for attempt in range(3):
                 if await self.mcp_client.connect():
                     break
                 await asyncio.sleep(1)
                 self.logger.warning(f"MCP 연결 재시도 {attempt + 1}/3")
-            
+
             # 이벤트 리스너 등록
             self._register_event_listeners()
-            
+
             # 확장점에 플러그인 등록
             await self._register_plugins_to_extension_points()
-            
+
             self.logger.info("🎉 확장 시스템 초기화 완료")
-            
+
         except Exception as e:
             self.logger.error(f"❌ 시스템 초기화 실패: {e}")
-    
+
     def _register_event_listeners(self):
         """이벤트 리스너 등록"""
         self.event_bus.subscribe("evolution_completed", self._on_evolution_completed)
         self.event_bus.subscribe("plugin_loaded", self._on_plugin_loaded)
         self.event_bus.subscribe("performance_alert", self._on_performance_alert)
-    
+
     async def _register_plugins_to_extension_points(self):
         """플러그인을 확장점에 등록"""
         for plugin in self.plugin_manager.loaded_plugins.values():
             capabilities = plugin.get_capabilities()
-            
+
             # 플러그인 기능에 따라 적절한 확장점에 등록
             if "evolution" in capabilities:
                 self.extension_points["before_evolution"].register_plugin(plugin)
                 self.extension_points["after_evolution"].register_plugin(plugin)
-            
+
             if "task_processing" in capabilities:
                 self.extension_points["task_processing"].register_plugin(plugin)
-            
+
             if "data_analysis" in capabilities:
                 self.extension_points["data_analysis"].register_plugin(plugin)
-    
+
     async def _on_evolution_completed(self, data: Dict):
         """진화 완료 이벤트 핸들러"""
         self.logger.info(f"🧬 진화 완료: Generation {data.get('generation')}")
-        
+
         # 옵시디언에 기록
         if self.obsidian:
             self.obsidian.log_evolution(data.get('generation'), data.get('improvements', {}))
-    
+
     async def _on_plugin_loaded(self, data: Dict):
         """플러그인 로드 이벤트 핸들러"""
         self.logger.info(f"🔌 플러그인 로드됨: {data.get('name')}")
-    
+
     async def _on_performance_alert(self, data: Dict):
         """성능 경고 이벤트 핸들러"""
         self.logger.warning(f"⚠️ 성능 경고: {data.get('message')}")
-    
+
     async def enhanced_evolution(self) -> Dict[str, Any]:
         """향상된 진화 프로세스"""
         self.performance_monitor.start_operation("evolution")
-        
+
         try:
             # 진화 전 확장점 실행
             await self.extension_points["before_evolution"].execute_hooks(self.dna
@@ -1703,8 +1703,8 @@ text
 - 모바일에서는 브라우저 확장 대신 "공유 → 클라우드폴더 저장" 방식으로 활용하세요.
 ```
 
-**이 플러그인은 Obsidian 데스크탑·모바일에서 모두 연동 클리핑이 가능하도록,  
-클립보드・공유・Clippings 폴더 자동생성・알림 등 안정적으로 동작하도록 설계되었습니다.  
+**이 플러그인은 Obsidian 데스크탑·모바일에서 모두 연동 클리핑이 가능하도록,
+클립보드・공유・Clippings 폴더 자동생성・알림 등 안정적으로 동작하도록 설계되었습니다.
 동기화 경로/권한, 파일명 구조 등은 실 운영 환경에 맞게 조정해주시면 됩니다.**
 
 D:\\my workspace\\OneDrive NEW\\GNY\\.obsidian\\plugins 플러그인 위치 바꿨어
@@ -1723,8 +1723,8 @@ advanced\_self\_improving\_agent\_fixed.py
 
 ## Obsidian Web Clipper 플러그인 – 새로운 위치용 최적화 코드
 
-아래는 플러그인 위치가  
-`D:\my workspace\OneDrive NEW\GNY\.obsidian\plugins`  
+아래는 플러그인 위치가
+`D:\my workspace\OneDrive NEW\GNY\.obsidian\plugins`
 로 이동된 환경에 맞춘 Obsidian Web Clipper 플러그인 코드 예시입니다.
 
 ## 1.
@@ -1790,7 +1790,7 @@ module.exports = class MobileObsidianClipper extends Plugin {
   }
 
   async saveClip(content, meta = {}) {
-    const now = window.moment 
+    const now = window.moment
       ? window.moment().format("YYYY-MM-DD_HH-mm-ss")
       : new Date().toISOString().replace(/:/g, "-");
     const md = [
@@ -1848,7 +1848,7 @@ text
 - 모바일에서는 "공유"→Clippings 폴더로 직접 저장 활용
 - 데스크탑은 명령 팔레트에서 클립 명령 실행
 
-**이 플러그인 구조와 코드로, D:\\my workspace\\OneDrive NEW\\GNY.obsidian\\plugins 위치에서 모바일·데스크탑 모두 안전하게 웹클립을 Obsidian Vault로 자동 저장할 수 있습니다.  
+**이 플러그인 구조와 코드로, D:\\my workspace\\OneDrive NEW\\GNY.obsidian\\plugins 위치에서 모바일·데스크탑 모두 안전하게 웹클립을 Obsidian Vault로 자동 저장할 수 있습니다.
 추가 확장이나 환경 맞춤 코드가 필요하면 언제든 요청하실 수 있습니다.**
 
 플러그인에 문제있나봐 옵시디언에 나타나질 않아. 재접속해도 똑같고
@@ -1941,7 +1941,7 @@ module.exports = class MobileObsidianClipper extends Plugin {
 - 샘플 Hello 플러그인(위 main.js)로 단계별 정상 로딩 확인이 핵심입니다.
 - 그래도 노출이 안 된다면 실질적인 파일 경로, 폴더 구조(캡처), manifest, main.js 전체 내용을 보내주시면 상세 진단 및 코드/구조 교정이 가능합니다.
 
-즉, "플러그인 폴더 및 manifest/main.js 구조"에 단 1글자라도 오타·문법 오류, 잘못된 위치가 있으면 Obsidian에서 인식하지 않습니다.  
+즉, "플러그인 폴더 및 manifest/main.js 구조"에 단 1글자라도 오타·문법 오류, 잘못된 위치가 있으면 Obsidian에서 인식하지 않습니다.
 단계별 점검 후에도 문제가 해결되지 않으면, 실제 파일 구조와 내용을 포함해 문의해주시면 가장 신속하게 진단 가능합니다.
 
 플러그인 main.js랑 manifest.json readme.md 파일 정상적인지 봐줘 옵시디언 플러그인에서 검색이 안되고 있어.
@@ -2021,7 +2021,7 @@ module.exports = class MobileObsidianClipperPlugin extends Plugin {
 
 ## 3\. README.md 진단
 
-**문제 없음:**  
+**문제 없음:**
 README.md는 플러그인 실행과 무관하며, 가이드 및 설명으로 충분히 적합합니다.
 
 ## 4\. 문제 요약·바로잡는 법
@@ -2046,7 +2046,7 @@ README.md는 플러그인 실행과 무관하며, 가이드 및 설명으로 충
 - Obsidian에서 "타사 플러그인" 사용 허용 옵션 활성화 여부 확인
 - Obsidian > 설정 > 플러그인 > 로그/에러 메시지 참고
 
-**위 두 파일만 수정하면 플러그인이 Obsidian에 반드시 나타납니다.**  
+**위 두 파일만 수정하면 플러그인이 Obsidian에 반드시 나타납니다.**
 필요하면 에러 로그, 폴더 캡처를 추가로 공유해주시면 더 상세 진단도 가능합니다.
 
 \# AI Agent 실시간 대시보드 AI\_Agent\_Status - 상태: 대기 - 루프 라운드: 0 - 최근 처리: None - 처리건수: 0 - 에러건수: 0 - 평균처리시간: 0.00초 ## 최근 에러 5건 클리핑했는데 작동을 안해
@@ -2134,7 +2134,7 @@ for f in clippings_dir.glob("*.md"):
 - **실제 감시중인 경로와 input 파일 폴더가 다를 수 있음** (Clippings 폴더가 여러 개 있을 수 있으니, 에이전트에서 감시하도록 설정한 폴더 위치와 일치하는지)
 - \*\*\*\*로 인해 파일 접근이 실패할 수도 있음 (Windows 경로 260자 한계 등)
 
-**:**  
+**:**
 현재 대시보드의 모든 카운터가 0(대기) 상태라면,
 
 - 에이전트가 폴더를 인식하지 못했거나,
@@ -2146,8 +2146,8 @@ for f in clippings_dir.glob("*.md"):
 - Clippings 폴더와 코드의 VAULT\_PATH, 폴더 쓰기 권한, 프로그램 실행 상태를 함께 점검 후,
 - 실행 중간에 에러가 있는 경우 그 메시지를 복사해 알려주시면, 즉시 정확한 원인 분석과 해결책을 안내할 수 있습니다.
 
-추가적인 로그, 에러 메시지, 실행 환경 정보가 있으면 추가로 알려주세요.  
-이 정보가 없으면 클리핑이 전혀 인식되지 않은 것입니다.  
+추가적인 로그, 에러 메시지, 실행 환경 정보가 있으면 추가로 알려주세요.
+이 정보가 없으면 클리핑이 전혀 인식되지 않은 것입니다.
 (디버깅 단계별 코드/스크립트도 요청시 바로 안내해 드릴 수 있습니다.)
 
 관련

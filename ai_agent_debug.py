@@ -1,14 +1,17 @@
-import os
-from pathlib import Path
-import time
 import logging
+import os
 import shutil
+import time
+from pathlib import Path
 
 # 로깅 설정
 logging.basicConfig(
     level=logging.DEBUG,
-    format='%(asctime)s [%(levelname)s] %(message)s',
-    handlers=[logging.FileHandler("D:/my workspace/OneDrive NEW/GNY/ai_agent_debug.log"), logging.StreamHandler()]
+    format="%(asctime)s [%(levelname)s] %(message)s",
+    handlers=[
+        logging.FileHandler("D:/my workspace/OneDrive NEW/GNY/ai_agent_debug.log"),
+        logging.StreamHandler(),
+    ],
 )
 
 # 경로 설정
@@ -19,10 +22,11 @@ status_file = vault_path / "AI_Agent_Status.md"
 error_dir = vault_path / "AI_Agent_Error"
 reports_dir = vault_path / "AI_WS_Reports"
 
+
 # 파일 감지 테스트
 def test_file_detection():
     logging.info("파일 감지 테스트 시작")
-    
+
     # 모든 필요한 폴더 확인
     for folder_name in ["Clippings", "Processed", "AI_WS_Reports", "AI_Agent_Error"]:
         folder = vault_path / folder_name
@@ -35,13 +39,13 @@ def test_file_detection():
                 logging.info(f"  → {folder_name} 폴더 생성됨")
             except Exception as e:
                 logging.error(f"  → {folder_name} 폴더 생성 실패: {str(e)}")
-            
+
     # 클리핑 폴더에 있는 파일 목록
     files = list(clippings_dir.glob("*.md"))
     logging.info(f"Clippings 폴더 내 파일 수: {len(files)}")
     for file in files:
         logging.info(f"- {file.name}")
-    
+
     # 상태 파일 업데이트 시도
     try:
         with open(status_file, "w", encoding="utf-8") as f:
@@ -64,7 +68,7 @@ def test_file_detection():
             dest_file = processed_dir / test_file.name
             shutil.copy2(test_file, dest_file)
             logging.info(f"✅ 테스트 파일 처리 성공: {test_file.name}")
-            
+
             # 보고서 생성 시도
             report_file = reports_dir / f"처리보고서_{time.strftime('%Y%m%d%H%M%S')}.md"
             with open(report_file, "w", encoding="utf-8") as f:
@@ -73,10 +77,10 @@ def test_file_detection():
                 f.write(f"- 처리 시간: {time.strftime('%Y-%m-%d %H:%M:%S')}\n")
                 f.write(f"- 결과: 성공\n")
             logging.info(f"✅ 보고서 생성 성공: {report_file.name}")
-            
+
         except Exception as e:
             logging.error(f"❌ 테스트 파일 처리 실패: {str(e)}")
-            
+
             # 에러 로그 생성 시도
             try:
                 error_file = error_dir / f"에러로그_{time.strftime('%Y%m%d%H%M%S')}.md"
@@ -90,7 +94,8 @@ def test_file_detection():
                 logging.error(f"❌ 에러 로그 생성 실패: {str(e2)}")
     else:
         logging.warning("처리할 파일이 없습니다.")
-        
+
+
 # 테스트 실행
 if __name__ == "__main__":
     logging.info("===== AI 에이전트 디버깅 테스트 시작 =====")

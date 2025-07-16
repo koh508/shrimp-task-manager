@@ -1,0 +1,461 @@
+import asyncio
+import json
+import logging
+import os
+import shutil
+import time
+from datetime import datetime
+import webbrowser
+from pathlib import Path
+from typing import Dict, List, Optional, Any
+import aiofiles
+import aiohttp
+import websockets
+from google.oauth2.credentials import Credentials
+from googleapiclient.discovery import build
+from googleapiclient.http import MediaFileUpload, MediaIoBaseDownload
+import hashlib
+import sqlite3
+from dataclasses import dataclass, asdict
+from watchfiles import awatch, Change
+import threading
+import queue
+from plugin_manager import PluginManager
+
+
+@dataclass
+class SyncEvent:
+    """동기화 이벤트 데이터 구조"""
+    event_type: str
+    source: str
+    file_path: str
+    target: Optional[str] = None
+    content: Optional[str] = None
+    metadata: Optional[Dict] = None
+    timestamp: str = None
+
+    def __post_init__(self):
+        if self.timestamp is None:
+            self.timestamp = datetime.now().isoformat()
+
+
+class TriSyncManager:
+    def __init__(self, config: Dict):
+        self.config = config
+        self.obsidian_path = Path(config.get('obsidian_vault_path'))
+        self.gdrive_folder_id = config.get('gdrive_folder_id')
+        self.agent_workspace = Path(config.get('agent_workspace'))
+
+        self.sync_queue = asyncio.Queue()
+        self.sync_lock = asyncio.Lock()
+        self.shutdown_event = asyncio.Event()
+        self.running = False
+        self.init_sync_db()
+
+    def init_sync_db(self):
+        """동기화 상태 데이터베이스 초기화"""
+        self.agent_workspace.mkdir(parents=True, exist_ok=True)
+        self.db_path = self.agent_workspace / "sync_state.db"
+        self.conn = sqlite3.connect(str(self.db_path), check_same_thread=False)
+        # ... (테이블 생성 SQL은 동일)
+        self.conn.execute(
+            """
+            CREATE TABLE IF NOT EXISTS file_states (
+                file_path TEXT PRIMARY KEY,
+                obsidian_hash TEXT,
+                gdrive_hash TEXT,
+                agent_hash TEXT,
+                last_sync TIMESTAMP,
+                sync_status TEXT
+            )
+        """
+        )
+        self.conn.execute(
+            """
+            CREATE TABLE IF NOT EXISTS sync_history (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                event_type TEXT,
+                source TEXT,
+                target TEXT,
+                file_path TEXT,
+                timestamp TIMESTAMP,
+                status TEXT,
+                error_message TEXT
+            )
+        """
+        )
+        self.conn.commit()
+
+    async def _watch_directory(self, path: str, source: str):
+        """디렉토리 감시"""
+        path_obj = Path(path)
+        path_obj.mkdir(parents=True, exist_ok=True)
+        logging.info(f"[{source}] '{path}' 경로에 대한 파일 감시를 시작합니다.")
+        try:
+            async for changes in awatch(path, stop_event=self.shutdown_event):
+                if not self.running:
+                    break
+                for change_type, file_path_str in changes:
+                    logging.info(f"[{source}] 파일 이벤트 감지: {change_type.name} - {file_path_str}")
+                    event = SyncEvent(event_type=change_type.name, source=source, file_path=str(file_path_str))
+                    await self.sync_queue.put(event)
+        except Exception as e:
+            logging.error(f"[{source}] 파일 감시 오류: {e}", exc_info=True)
+        finally:
+            logging.info(f"[{source}] '{path}' 경로에 대한 파일 감시를 중지했습니다.")
+
+    async def sync_processor(self):
+        """동기화 이벤트 처리기"""
+        while self.running:
+            try:
+                event = await self.sync_queue.get()
+                await self.process_sync_event(event)
+                self.sync_queue.task_done()
+            except asyncio.CancelledError:
+                break
+            except Exception as e:
+                logging.error(f"동기화 처리 오류: {e}", exc_info=True)
+    
+    async def process_sync_event(self, event: SyncEvent):
+        # ... (이전과 동일)
+        pass
+
+    async def start_sync_system(self):
+        """동기화 시스템의 메인 이벤트 루프를 시작합니다."""
+        self.running = True
+        self.shutdown_event.clear()
+        logging.info("동기화 시스템의 메인 이벤트 루프를 시작합니다.")
+        tasks = [
+            asyncio.create_task(self.sync_processor()),
+            asyncio.create_task(self._watch_directory(str(self.obsidian_path), 'obsidian')),
+            asyncio.create_task(self._watch_directory(str(self.agent_workspace), 'agent'))
+        ]
+        try:
+            await asyncio.gather(*tasks)
+        except asyncio.CancelledError:
+            logging.info("동기화 시스템 태스크가 외부 요청에 의해 취소되었습니다.")
+        finally:
+            for task in tasks:
+                if not task.done():
+                    task.cancel()
+            await asyncio.gather(*tasks, return_exceptions=True)
+            logging.info("동기화 시스템의 모든 태스크를 정리하고 종료합니다.")
+
+    async def stop_sync_system(self):
+        """동기화 시스템을 안전하게 종료합니다."""
+        if not self.running:
+            return
+        logging.info("동기화 시스템 종료를 시작합니다...")
+        self.running = False
+        self.shutdown_event.set()
+        # sync_processor가 큐에서 빠져나오도록 더미 이벤트 추가
+        await self.sync_queue.put(None)
+
+
+class UltraIntegratedSystem:
+    def __init__(self, config_path: str = "config.json"):
+        self.config = self._load_config(config_path)
+        self._setup_logging()
+        self.tri_sync_manager = TriSyncManager(self.config)
+        self.plugin_manager = PluginManager()
+        self.running = False
+        self.tasks = []
+
+    def _load_config(self, config_path: str) -> Dict:
+        default_config = {
+            "obsidian_vault_path": "./obsidian_vault",
+            "gdrive_folder_id": "",
+            "agent_workspace": "./agent_workspace",
+            "sync_interval": 30,
+            "log_level": "INFO"
+        }
+        try:
+            with open(config_path, "r", encoding="utf-8") as f:
+                user_config = json.load(f)
+            default_config.update(user_config)
+        except FileNotFoundError:
+            print(f"INFO: '{config_path}' 파일을 찾을 수 없어 기본 설정으로 생성합니다.")
+            with open(config_path, "w", encoding="utf-8") as f:
+                json.dump(default_config, f, indent=2, ensure_ascii=False)
+        return default_config
+
+    def _setup_logging(self):
+        log_level_str = self.config.get("log_level", "INFO").upper()
+        log_level = getattr(logging, log_level_str, logging.INFO)
+        logging.basicConfig(
+            level=log_level,
+            format='%(asctime)s - %(levelname)s - [%(funcName)s] %(message)s',
+            datefmt='%Y-%m-%d %H:%M:%S',
+            handlers=[
+                logging.FileHandler("ultra_integrated_system.log", encoding="utf-8"),
+                logging.StreamHandler()
+            ]
+        )
+        logging.info("로깅 시스템이 설정되었습니다.")
+
+    async def start(self):
+        """통합 시스템 시작"""
+        self.running = True
+        logging.info("🚀 Ultra Integrated System 시작")
+        try:
+            await self.plugin_manager.load_plugins()
+            sync_task = asyncio.create_task(self.tri_sync_manager.start_sync_system())
+            self.tasks.append(sync_task)
+            plugin_task = asyncio.create_task(self.plugin_manager.run_all())
+            self.tasks.append(plugin_task)
+            logging.info("✅ 모든 시스템이 성공적으로 시작되었습니다. Ctrl+C를 눌러 종료할 수 있습니다.")
+            await asyncio.gather(*self.tasks)
+        except asyncio.CancelledError:
+            logging.info("시스템의 메인 태스크가 취소되었습니다.")
+        finally:
+            self.running = False
+
+    async def stop(self):
+        """시스템 종료"""
+        if not self.running:
+            return
+        logging.info("시스템 종료 시작...")
+        self.running = False
+        if self.tri_sync_manager:
+            await self.tri_sync_manager.stop_sync_system()
+        if self.plugin_manager:
+            await self.plugin_manager.stop_all()
+        for task in self.tasks:
+            if not task.done():
+                task.cancel()
+        await asyncio.gather(*self.tasks, return_exceptions=True)
+        logging.info("✅ 시스템 종료 완료")
+
+async def main():
+    """메인 실행 함수"""
+    system = None
+    try:
+        system = UltraIntegratedSystem()
+        await system.start()
+    except KeyboardInterrupt:
+        logging.info("사용자에 의한 시스템 종료 요청 (KeyboardInterrupt)")
+    except Exception as e:
+        logging.error(f"시스템 실행 중 처리되지 않은 예외 발생: {e}", exc_info=True)
+    finally:
+        if system:
+            await system.stop()
+        logging.info("프로그램을 종료합니다.")
+
+if __name__ == "__main__":
+    try:
+        asyncio.run(main())
+    except RuntimeError as e:
+        if "This event loop is already running" in str(e):
+            loop = asyncio.get_event_loop()
+            if loop.is_running():
+                task = loop.create_task(main())
+                task.add_done_callback(
+                    lambda t: loop.stop() if not loop.is_running() else None
+                )
+            else:
+                loop.run_until_complete(main())
+        else:
+            raise
+        self.last_hash = {}
+        self.last_content = {}
+        self.change_threshold = 10
+
+    def detect_meaningful_change(self, file_path: str, content: str) -> bool:
+        """의미 있는 변화 감지"""
+        current_hash = hashlib.md5(content.encode()).hexdigest()
+        last_hash = self.last_hash.get(file_path)
+        if current_hash == last_hash:
+            return False
+        last_content = self.last_content.get(file_path, "")
+        if abs(len(content) - len(last_content)) < self.change_threshold:
+            return False
+        self.last_hash[file_path] = current_hash
+        self.last_content[file_path] = content
+        return True
+
+
+class IntegratedTitleGenerator:
+    """통합 제목 생성기"""
+
+    def __init__(self):
+        # These are placeholder generators
+        # self.keyword_gen = KeywordTitleGenerator()
+        # self.summary_gen = SummaryTitleGenerator()
+        # self.llm_gen = LLMTitleGenerator()
+        pass
+
+    def generate_title(self, content: str) -> str:
+        """콘텐츠 기반 제목 생성"""
+        return f"노트_{datetime.now().strftime('%H%M%S')}"  # Placeholder
+
+
+class GoogleDriveManager:
+    """구글드라이브 매니저"""
+
+    def __init__(self, folder_id: str):
+        self.folder_id = folder_id
+        self.service = None
+        self.file_cache = {}
+        self.sync_queue = asyncio.Queue()
+
+    async def initialize(self):
+        """구글드라이브 매니저 초기화"""
+        try:
+            creds = self.load_credentials()
+            self.service = build("drive", "v3", credentials=creds)
+            logging.info("🔑 구글드라이브 매니저 초기화 완료")
+            # asyncio.create_task(self.sync_worker())
+            # asyncio.create_task(self.watch_changes())
+        except Exception as e:
+            logging.error(f"구글드라이브 초기화 실패: {e}")
+
+    def load_credentials(self) -> Credentials:
+        """구글드라이브 인증 정보 로드"""
+        creds_json = os.getenv("GOOGLE_DRIVE_CREDENTIALS")
+        if creds_json:
+            creds_info = json.loads(creds_json)
+            return Credentials.from_authorized_user_info(creds_info)
+        creds_file = Path("google_drive_credentials.json")
+        if creds_file.exists():
+            return Credentials.from_authorized_user_file(str(creds_file))
+        raise Exception("구글드라이브 인증 정보를 찾을 수 없습니다")
+
+
+class AgentManager:
+    """AI 에이전트 핵심 매니저"""
+
+    def __init__(self, workspace_path: Path):
+        self.workspace_path = workspace_path
+        self.watcher = None
+        self.event_handler = None
+        self.processing_queue = asyncio.Queue()
+        # Placeholders for other components
+        # self.learning_engine = None
+        # self.memory_system = None
+        # self.goal_hierarchy = None
+        # self.mcp_client = None
+
+    async def initialize(self):
+        """에이전트 매니저 초기화"""
+        self.workspace_path.mkdir(parents=True, exist_ok=True)
+        logging.info(f"🤖 에이전트 매니저 초기화 완료: {self.workspace_path}")
+
+
+class UltraIntegratedSystem:
+    """옵시디언-구글드라이브-에이전트 통합 시스템"""
+
+    def __init__(self, config_path: str = "config.json"):
+        self.config = self._load_config(config_path)
+        self._setup_logging()
+        self.tri_sync_manager = TriSyncManager(self.config)
+        self.plugin_manager = PluginManager(config=self.config)
+        self.running = False
+
+    def _load_config(self, config_path: str) -> Dict:
+        """설정 파일을 로드하고, 없으면 기본값으로 생성합니다."""
+        default_config = {
+            "obsidian_vault_path": "./obsidian_vault",
+            "gdrive_folder_id": os.getenv("GDRIVE_FOLDER_ID", ""),
+            "agent_workspace": "./agent_workspace",
+            "sync_interval": 30,
+            "log_level": "INFO",
+            "backup_enabled": True,
+            "conflict_resolution": "merge",
+        }
+        try:
+            with open(config_path, "r", encoding="utf-8") as f:
+                user_config = json.load(f)
+            default_config.update(user_config)
+            return default_config
+        except FileNotFoundError:
+            # config.json이 없을 때 기본 로깅을 위해 임시 메시지 출력
+            print(f"INFO: '{config_path}' 파일을 찾을 수 없어 기본 설정으로 생성합니다.")
+            with open(config_path, "w", encoding="utf-8") as f:
+                json.dump(default_config, f, indent=2, ensure_ascii=False)
+            return default_config
+
+    async def start(self):
+        """통합 시스템 시작"""
+        try:
+            self.running = True
+            logging.info("🚀 Ultra Integrated System 시작")
+
+            # 플러그인 시스템 초기화
+            await self.plugin_manager.load_plugins()
+
+            # 동기화 시스템 시작
+            sync_task = asyncio.create_task(self.tri_sync_manager.start_sync_system())
+            self.tasks.append(sync_task)
+
+            # 플러그인 실행
+            plugin_task = asyncio.create_task(self.plugin_manager.run_all())
+            self.tasks.append(plugin_task)
+
+            logging.info("✅ 모든 시스템이 성공적으로 시작되었습니다. Ctrl+C를 눌러 종료할 수 있습니다.")
+            await asyncio.gather(*self.tasks)
+
+        except asyncio.CancelledError:
+            logging.info("시스템의 메인 태스크가 취소되었습니다.")
+        except Exception as e:
+            logging.error(f"시스템 시작 실패: {e}", exc_info=True)
+            raise
+        finally:
+            self.running = False
+
+    async def stop(self):
+        """시스템 종료"""
+        if not self.running:
+            return
+        self.running = False
+        logging.info("시스템 종료 시작...")
+
+        # 동기화 시스템 종료
+        if self.tri_sync_manager:
+            await self.tri_sync_manager.stop_sync_system()
+
+        # 플러그인 시스템 종료
+        if self.plugin_manager:
+            await self.plugin_manager.stop_all()
+
+        # 모든 백그라운드 태스크 취소
+        for task in self.tasks:
+            if not task.done():
+                task.cancel()
+        
+        # 모든 태스크가 완전히 종료될 때까지 대기
+        await asyncio.gather(*self.tasks, return_exceptions=True)
+
+        logging.info("✅ 시스템 종료 완료")
+
+async def main():
+    """메인 실행 함수"""
+    system = None
+    try:
+        system = UltraIntegratedSystem()
+        await system.start()
+    except KeyboardInterrupt:
+        logging.info("사용자에 의한 시스템 종료 요청 (KeyboardInterrupt)")
+    except Exception as e:
+        logging.error(f"시스템 실행 중 처리되지 않은 예외 발생: {e}", exc_info=True)
+    finally:
+        if system:
+            await system.stop()
+        logging.info("프로그램을 종료합니다.")
+
+if __name__ == "__main__":
+    try:
+        asyncio.run(main())
+    except RuntimeError as e:
+        if "This event loop is already running" in str(e):
+            loop = asyncio.get_event_loop()
+            if loop.is_running():
+                task = loop.create_task(main())
+                task.add_done_callback(
+                    lambda t: loop.stop() if not loop.is_running() else None
+                )
+            else:
+                loop.run_until_complete(main())
+        else:
+            raise
+    system = UltraIntegratedSystem()
+    asyncio.run(system.start())

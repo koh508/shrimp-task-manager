@@ -3,11 +3,11 @@
 간단한 대시보드 시스템 (수정 버전 - 순수 Python)
 """
 import http.server
-import socketserver
 import json
 import os
-import time
+import socketserver
 import threading
+import time
 from datetime import datetime
 
 PORT = 5000
@@ -31,7 +31,7 @@ def get_system_status():
         'plugin_system.py',
         'integrated_development_system.py'
     ]
-    
+
     files_present = all(os.path.exists(f) for f in core_files)
     status['components'].append({
         'name': 'Core Files',
@@ -117,7 +117,7 @@ class DashboardHandler(http.server.SimpleHTTPRequestHandler):
             <div class="container">
                 <h1>🚀 통합 시스템 대시보드</h1>
                 <p id="last-updated">마지막 업데이트: </p>
-                
+
                 <h2>📊 시스템 상태</h2>
                 <div id="overall-status" class="status-box"></div>
 
@@ -131,7 +131,7 @@ class DashboardHandler(http.server.SimpleHTTPRequestHandler):
                         .then(response => response.json())
                         .then(data => {{
                             document.getElementById('last-updated').innerText = `마지막 업데이트: ${new Date(data.timestamp).toLocaleTimeString()}`;
-                            
+
                             const overallStatusDiv = document.getElementById('overall-status');
                             overallStatusDiv.className = `status-box status-${data.overall_status}`;
                             overallStatusDiv.innerHTML = `<strong>전체 상태:</strong> ${data.overall_status}`;

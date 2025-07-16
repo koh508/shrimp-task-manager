@@ -11,7 +11,7 @@ I've been using obsidian for about 3 years now and for a long time I've been usi
 - Discord Link
 	- [Obsidian Discord](https://discord.gg/obsidianmd)
 #### **Homepage**
-- Add daily task 
+- Add daily task
 	- [Homepage Task Timeline](https://github.com/702573N/Obsidian-Tasks-Timeline)
 - Formatting
 	- [Multi Column Documentation](https://efemkay.github.io/obsidian-modular-css-layout/multi-column/)

@@ -1,9 +1,9 @@
 # Getting Started
-**The vault is mainly divided into two parts:** 
+**The vault is mainly divided into two parts:**
 - / **PARA:** Project, Area, Resources, Archive
 - / **ZETA:** Fleeting Note, Permanent Note, Literature Note
  If you want your vault to scale well in the long run **you must understand your use case for the vault and follow a separation rule for your note inputs.**
-- ? **My use case example:** 
+- ? **My use case example:**
 	- @ my **PARA** file inputs are things that are related to the development of a skill or things that might be doing that is work related.
 	- @ my **ZETA** file inputs are concepts for the brain that is **not PARA related.**
 # Quick Overview

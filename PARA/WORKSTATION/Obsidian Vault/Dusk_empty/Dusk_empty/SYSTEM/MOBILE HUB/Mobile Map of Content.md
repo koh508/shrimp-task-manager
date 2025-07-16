@@ -274,7 +274,7 @@ function EditColumnBlock(props) {
           }
           style={{
             ...styles.inlineButton,
-            backgroundColor: isGrouped 
+            backgroundColor: isGrouped
               ? "var(--background-modifier-border)"
               : "var(--interactive-accent)",
             color: isGrouped
@@ -947,7 +947,7 @@ function View({ initialSettingsOverride = {}, app }) {
     // Apply grouping and sorting
     if (groupByColumns.length > 0) {
       const groupedData = [];
-      
+
       const groupData = (entries, level = 0) => {
         if (level >= groupByColumns.length) {
           return entries.forEach(entry => groupedData.push(entry));
@@ -956,7 +956,7 @@ function View({ initialSettingsOverride = {}, app }) {
         const groupKey = groupByColumns[level];
         const property = dynamicColumnProperties[groupKey];
         const sortOrder = groupSortOrders[groupKey] || "asc";
-        
+
         const groups = {};
         entries.forEach(entry => {
           const key = getProperty(entry, property) || "Uncategorized";

@@ -6,7 +6,7 @@ tags:
 type: area_note
 created: 2024-11-12 05:13
 ---
-# [[2. Space Tourism Initiatives]] 
+# [[2. Space Tourism Initiatives]]
 # Overview
 Safety is paramount in space tourism, and this note establishes the **baseline safety protocols** required for human space travel. The document compiles research on both national and international regulations, looking at examples from NASA, the European Space Agency, and private aviation standards.
 

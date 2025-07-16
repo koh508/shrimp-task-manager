@@ -2,8 +2,8 @@
 """
 통합 시스템 실행 스크립트 (수정 버전)
 """
-import sys
 import os
+import sys
 from datetime import datetime
 
 # 스크립트의 디렉토리로 작업 디렉토리 변경
@@ -17,6 +17,7 @@ def print_banner():
     print("=" * 40)
     print("안정성 | 확장성 | 성능 | 사용성")
     print("=" * 40)
+
 
 def show_menu():
     """메뉴 표시"""
@@ -35,6 +36,7 @@ def show_menu():
     print("10. [통합] 자동 클리핑 및 진화 시스템 (구현 예정)")
     print("0. 종료")
 
+
 def run_script(script_name):
     """스크립트 실행 및 파일 존재 여부 확인"""
     if not os.path.exists(script_name):
@@ -43,22 +45,23 @@ def run_script(script_name):
         return
     os.system(f"python {script_name}")
 
+
 def check_system_status():
     """시스템 상태 확인"""
     print("\n시스템 상태 확인:")
-    
+
     important_files = [
-        'comprehensive_test.py',
-        'stability_monitor_fixed.py',
-        'backup_system_fixed.py',
-        'plugin_system.py',
-        'integrated_development_system.py',
-        'simple_dashboard_fixed.py',
-        'obsidian_monitor.py',
-        'windsurf_integration.py',
-        'self_evolving_agent.py'
+        "comprehensive_test.py",
+        "stability_monitor_fixed.py",
+        "backup_system_fixed.py",
+        "plugin_system.py",
+        "integrated_development_system.py",
+        "simple_dashboard_fixed.py",
+        "obsidian_monitor.py",
+        "windsurf_integration.py",
+        "self_evolving_agent.py",
     ]
-    
+
     print(f"\n중요 파일 상태:")
     all_present = True
     for file in important_files:
@@ -67,62 +70,64 @@ def check_system_status():
         else:
             print(f"   [!!] {file}")
             all_present = False
-    
+
     if all_present:
         print("\n모든 중요 시스템 파일이 존재합니다.")
     else:
         print("\n일부 중요 파일이 누락되었습니다. 먼저 파일을 생성하세요.")
-    
+
     return all_present
+
 
 def main():
     """메인 실행 함수"""
     print_banner()
-    
+
     system_ok = check_system_status()
-    
+
     if not system_ok:
         print("\n경고: 시스템이 불안정합니다. 일부 기능이 동작하지 않을 수 있습니다.")
-    
+
     while True:
         show_menu()
-        
+
         try:
             choice = input("\n선택하세요 (0-10): ").strip()
-            
+
             if choice == "0":
                 print("시스템 종료")
                 break
             elif choice == "1":
-                run_script('comprehensive_test.py')
+                run_script("comprehensive_test.py")
             elif choice == "2":
-                run_script('stability_monitor_fixed.py')
+                run_script("stability_monitor_fixed.py")
             elif choice == "3":
-                run_script('backup_system_fixed.py')
+                run_script("backup_system_fixed.py")
             elif choice == "4":
-                run_script('plugin_system.py')
+                run_script("plugin_system.py")
             elif choice == "5":
-                run_script('integrated_development_system.py')
+                run_script("integrated_development_system.py")
             elif choice == "6":
-                run_script('simple_dashboard_fixed.py')
+                run_script("simple_dashboard_fixed.py")
             elif choice == "7":
-                run_script('obsidian_monitor.py')
+                run_script("obsidian_monitor.py")
             elif choice == "8":
-                run_script('windsurf_integration.py')
+                run_script("windsurf_integration.py")
             elif choice == "9":
-                run_script('self_evolving_agent.py')
+                run_script("self_evolving_agent.py")
             elif choice == "10":
                 print("이 기능은 아직 구현되지 않았습니다.")
             else:
                 print("잘못된 선택입니다. 0-10 사이의 숫자를 입력하세요.")
-            
-            print("\n" + "="*50)
-            
+
+            print("\n" + "=" * 50)
+
         except KeyboardInterrupt:
             print("\n시스템 종료")
             break
         except Exception as e:
             print(f"오류 발생: {e}")
+
 
 if __name__ == "__main__":
     main()

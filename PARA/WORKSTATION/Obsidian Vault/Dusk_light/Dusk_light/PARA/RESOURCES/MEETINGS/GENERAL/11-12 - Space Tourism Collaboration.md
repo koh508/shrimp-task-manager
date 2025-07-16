@@ -18,10 +18,10 @@ Start Time: `INPUT[time:start_time]`  End Time:  `INPUT[time:end_time]`
 Meeting Summary: `INPUT[text(limit(30)):summary]`
 Meeting Status: `INPUT[toggle:meeting_status]` (`VIEW[{meeting_status} ? "Done" : "Not Done"]`)
 # Attendees Tag
-- #contact/elon_musk 
-- #contact/jeff_bezos 
+- #contact/elon_musk
+- #contact/jeff_bezos
 # Topic Tag
-- #area/space_tourism_initiatives 
+- #area/space_tourism_initiatives
 # Notes
 - Discussed the potential of **collaborative space tourism** ventures between SpaceX and Blue Origin.
 - Reviewed **key hurdles** such as **spacecraft compatibility**, **mission goals**, and **safety regulations**.

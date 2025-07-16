@@ -2,10 +2,11 @@
 """
 실시간 웹 대시보드 서버
 """
-from flask import Flask, render_template_string, jsonify
 import json
-from datetime import datetime
 import threading
+from datetime import datetime
+
+from flask import Flask, jsonify, render_template_string
 
 app = Flask(__name__)
 
@@ -109,59 +110,62 @@ DASHBOARD_HTML = """
 </html>
 """
 
+
 class DashboardManager:
     def __init__(self):
         pass
+
     def get_system_metrics(self):
         try:
-            with open('monitoring_report.json', 'r', encoding='utf-8') as f:
+            with open("monitoring_report.json", "r", encoding="utf-8") as f:
                 monitoring_data = json.load(f)
         except Exception as e:
-            monitoring_data = {'error': str(e)}
+            monitoring_data = {"error": str(e)}
         # 임시 목표/활동/성능 데이터 (실제 연동 시 확장)
         learning_goals = {
-            'total_goals': 2,
-            'completed_goals': 1,
-            'in_progress': 1,
-            'completion_rate': 50.0
+            "total_goals": 2,
+            "completed_goals": 1,
+            "in_progress": 1,
+            "completion_rate": 50.0,
         }
         github_activity = {
-            'open_issues': 3,
-            'closed_issues': 1,
-            'active_branches': 2,
-            'recent_commits': 5
+            "open_issues": 3,
+            "closed_issues": 1,
+            "active_branches": 2,
+            "recent_commits": 5,
         }
-        performance_metrics = {
-            'success_rate': 98.5,
-            'error_rate': 1.5,
-            'uptime': '99.9%'
-        }
+        performance_metrics = {"success_rate": 98.5, "error_rate": 1.5, "uptime": "99.9%"}
         return {
-            'system_health': monitoring_data,
-            'learning_goals': learning_goals,
-            'github_activity': github_activity,
-            'performance_metrics': performance_metrics
+            "system_health": monitoring_data,
+            "learning_goals": learning_goals,
+            "github_activity": github_activity,
+            "performance_metrics": performance_metrics,
         }
+
+
 dashboard = DashboardManager()
 
-@app.route('/')
+
+@app.route("/")
 def index():
     return render_template_string(DASHBOARD_HTML)
 
-@app.route('/api/metrics')
+
+@app.route("/api/metrics")
 def get_metrics():
     return jsonify(dashboard.get_system_metrics())
 
-@app.route('/api/health')
+
+@app.route("/api/health")
 def health_check():
-    return jsonify({
-        'status': 'healthy',
-        'timestamp': datetime.now().isoformat(),
-        'version': '1.0.0'
-    })
+    return jsonify(
+        {"status": "healthy", "timestamp": datetime.now().isoformat(), "version": "1.0.0"}
+    )
+
 
 def run_dashboard():
-    app.run(host='0.0.0.0', port=5000, debug=False)
+    app.run(host="0.0.0.0", port=5000, debug=False)
+
 
 if __name__ == "__main__":
     run_dashboard()

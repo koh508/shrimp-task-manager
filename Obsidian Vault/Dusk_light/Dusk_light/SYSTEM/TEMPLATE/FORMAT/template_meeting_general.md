@@ -1,7 +1,7 @@
 ---
-scheduled_date: 
-start_time: 
-end_time: 
+scheduled_date:
+start_time:
+end_time:
 summary: ""
 meeting_status: false
 tags:
@@ -18,9 +18,9 @@ Start Time: `INPUT[time:start_time]`  End Time:  `INPUT[time:end_time]`
 Meeting Summary: `INPUT[text(limit(30)):summary]`
 Meeting Status: `INPUT[toggle:meeting_status]` (`VIEW[{meeting_status} ? "Done" : "Not Done"]`)
 # Attendees Tag
-- 
+-
 # Topic Tag
-- 
+-
 # Notes
 
 

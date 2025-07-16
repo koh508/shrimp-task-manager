@@ -1,11 +1,11 @@
 ---
-company: 
-location: 
-title: 
-email: 
+company:
+location:
+title:
+email:
 phone: 0
-aliases: 
-tags: 
+aliases:
+tags:
 type: contact
 ---
 # Personal Notes
@@ -39,4 +39,3 @@ path does not include SYSTEM
 sort by due date
 ```
 ````
-

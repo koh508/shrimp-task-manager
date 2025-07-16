@@ -3,9 +3,9 @@ file_state: unchecked_task
 ---
 ```dataviewjs
 dv.view("SYSTEM/TEMPLATE/CSS/Timeline", {
-    pages: "", 
-    inbox: "Inbox.md", 
-    dailyNoteFolder: "DAILY/DAILY", 
+    pages: "",
+    inbox: "Inbox.md",
+    dailyNoteFolder: "DAILY/DAILY",
     dailyNoteFormat: "YYYY-MM-DD",
     section: "# New Tasks",
     forward: true,

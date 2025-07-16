@@ -2,12 +2,13 @@
 """
 WindSurf API 연동 및 에이전트/로그 생성 시스템
 """
-import requests
 import json
-import os
 import logging
-from typing import Dict, Any, Optional
+import os
 from datetime import datetime
+from typing import Any, Dict, Optional
+
+import requests
 
 # 로깅 설정
 logging.basicConfig(
@@ -18,7 +19,7 @@ logger = logging.getLogger(__name__)
 
 class WindSurfIntegration:
     """WindSurf API 연동 및 코드/로그 생성 클래스"""
-    
+
     def __init__(self, api_key: Optional[str] = None, api_url: str = "https://api.windsurf.ai/v1/generate"):
         self.api_key = api_key or os.getenv("WINDSURF_API_KEY")
         self.api_url = api_url
@@ -26,15 +27,15 @@ class WindSurfIntegration:
             "Authorization": f"Bearer {self.api_key}",
             "Content-Type": "application/json"
         }
-        
+
     def analyze_clipping_data(self, clipping_data: Dict[str, Any]) -> Dict[str, Any]:
         """클리핑 데이터 분석 및 생성 요청 데이터 구성"""
         try:
             extracted_text = clipping_data.get("extracted_text", "")
-            
+
             # 텍스트 복잡도 분석 (간단한 예시)
             complexity = len(extracted_text.split()) / 100.0  # 단어 수 기반
-            
+
             # 에이전트 액션 제안
             if "python" in extracted_text.lower() or "def " in extracted_text:
                 action_suggestion = "Create a Python agent to automate this task."
@@ -45,7 +46,7 @@ class WindSurfIntegration:
             else:
                 action_suggestion = "No specific action suggested."
                 generation_type = "none"
-                
+
             analysis_result = {
                 "complexity": complexity,
                 "action_suggestion": action_suggestion,
@@ -56,9 +57,9 @@ class WindSurfIntegration:
                     "timestamp": clipping_data.get("timestamp")
                 }
             }
-            
+
             return analysis_result
-            
+
         except Exception as e:
             logger.error(f"클리핑 데이터 분석 실패: {e}")
             return {}
@@ -75,7 +76,7 @@ import sys
 
 class GeneratedAgent:
     \"\"\"자동 생성된 에이전트 클래스\"\"\"
-    
+
     def __init__(self, source_text):
         self.source_text = source_text
         print("GeneratedAgent 초기화됨")
@@ -156,9 +157,9 @@ if __name__ == "__main__":
             logger.info(f"WindSurf API 호출: {self.api_url}")
             response = requests.post(self.api_url, headers=self.headers, json=payload)
             response.raise_for_status()
-            
+
             generated_content = response.json().get("choices", [{}])[0].get("text", "")
-            
+
             return {
                 "file_content": generated_content,
                 "file_type": generation_type,

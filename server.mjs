@@ -31,18 +31,18 @@ app.get('/', (req, res) => {
     <head>
       <title>Shrimp Task Manager</title>
       <style>
-        body { 
-          font-family: Arial, sans-serif; 
-          line-height: 1.6; 
-          max-width: 800px; 
-          margin: 0 auto; 
+        body {
+          font-family: Arial, sans-serif;
+          line-height: 1.6;
+          max-width: 800px;
+          margin: 0 auto;
           padding: 20px;
         }
         h1 { color: #2c3e50; }
-        .status { 
-          background: #f8f9fa; 
-          padding: 20px; 
-          border-radius: 5px; 
+        .status {
+          background: #f8f9fa;
+          padding: 20px;
+          border-radius: 5px;
           margin: 20px 0;
         }
       </style>
@@ -86,9 +86,9 @@ app.use((req, res) => {
 // 에러 핸들러
 app.use((err, req, res, next) => {
   console.error('Error:', err);
-  res.status(500).json({ 
+  res.status(500).json({
     error: 'Internal Server Error',
-    message: err.message 
+    message: err.message
   });
 });
 

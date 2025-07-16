@@ -1,12 +1,12 @@
 ---
 area: FORMAT
-area_category: 
-summary: 
-tags: 
+area_category:
+summary:
+tags:
 type: area_family
 created: 2024-11-12 17:29
 ---
-# [[2. FORMAT]] 
+# [[2. FORMAT]]
 # Overview
 
 <% tp.file.cursor() %>
@@ -64,4 +64,3 @@ path does not include "SYSTEM"
 sort by due date
 ```
 ````
-

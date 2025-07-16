@@ -7,5 +7,5 @@ tags:
 type: workstation_note
 created: 2024-11-12 04:59
 ---
-**Select Connection:** `INPUT[inlineListSuggester(optionQuery(#project), optionQuery(#area), optionQuery(#workstation_note), optionQuery(#documentation_note)):connections]` 
+**Select Connection:** `INPUT[inlineListSuggester(optionQuery(#project), optionQuery(#area), optionQuery(#workstation_note), optionQuery(#documentation_note)):connections]`
 Navigating **data compliance** is more challenging than expected. Frequent policy updates create **moving targets**, making it essential to stay adaptable. Next, we’ll evaluate compliance tools to ensure ongoing **data privacy and security**.

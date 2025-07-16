@@ -1,12 +1,12 @@
 ---
 area: PERMANENT
-area_category: 
-summary: 
-tags: 
+area_category:
+summary:
+tags:
 type: area_family
 created: 2024-11-12 05:56
 ---
-# [[2. PERMANENT]] 
+# [[2. PERMANENT]]
 # Overview
 
 <% tp.file.cursor() %>
@@ -64,4 +64,3 @@ path does not include "SYSTEM"
 sort by due date
 ```
 ````
-

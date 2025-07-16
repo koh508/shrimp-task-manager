@@ -6,7 +6,7 @@ tags:
 type: area_note
 created: 2024-11-12 05:15
 ---
-# [[2. Space Tourism Initiatives]] 
+# [[2. Space Tourism Initiatives]]
 # Overview
 This note compiles data on **public interest** in space tourism, aiming to gauge the overall market viability. Through **consumer surveys, polls**, and social media monitoring, this analysis will provide insights into the level of enthusiasm and willingness to pay for a space experience.
 

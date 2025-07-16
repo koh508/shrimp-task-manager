@@ -22,35 +22,35 @@ Write-Host "[VENV] Using Python from: $pythonExec" -ForegroundColor Cyan
 # Environment Variables Setup Function
 function Set-EnvironmentVariables {
     Write-Host "[CONFIG] Setting up Environment Variables..." -ForegroundColor Yellow
-    
+
     # Check and set API keys
     $envVars = @{
         "OPENAI_API_KEY" = "OpenAI API Key"
-        "ANTHROPIC_API_KEY" = "Anthropic API Key" 
+        "ANTHROPIC_API_KEY" = "Anthropic API Key"
         "GEMINI_API_KEY" = "Google Gemini API Key"
         "HUGGINGFACE_TOKEN" = "HuggingFace Token"
     }
-    
+
     foreach ($envVar in $envVars.Keys) {
         $currentValue = [Environment]::GetEnvironmentVariable($envVar)
         if (-not $currentValue) {
             Write-Host "   [WARN] $($envVars[$envVar]) not found" -ForegroundColor Yellow
-            
+
             # Try to set default/demo values for development
             switch ($envVar) {
-                "OPENAI_API_KEY" { 
+                "OPENAI_API_KEY" {
                     [Environment]::SetEnvironmentVariable("OPENAI_API_KEY", "sk-demo-key-for-development", "Process")
                     Write-Host "   [SET] Set demo OpenAI key for development" -ForegroundColor Cyan
                 }
-                "ANTHROPIC_API_KEY" { 
+                "ANTHROPIC_API_KEY" {
                     [Environment]::SetEnvironmentVariable("ANTHROPIC_API_KEY", "sk-ant-demo-key-for-development", "Process")
                     Write-Host "   [SET] Set demo Anthropic key for development" -ForegroundColor Cyan
                 }
-                "GEMINI_API_KEY" { 
+                "GEMINI_API_KEY" {
                     [Environment]::SetEnvironmentVariable("GEMINI_API_KEY", "demo-gemini-key-for-development", "Process")
                     Write-Host "   [SET] Set demo Gemini key for development" -ForegroundColor Cyan
                 }
-                "HUGGINGFACE_TOKEN" { 
+                "HUGGINGFACE_TOKEN" {
                     [Environment]::SetEnvironmentVariable("HUGGINGFACE_TOKEN", "hf_demo_token_for_development", "Process")
                     Write-Host "   [SET] Set demo HuggingFace token for development" -ForegroundColor Cyan
                 }
@@ -60,12 +60,12 @@ function Set-EnvironmentVariables {
             Write-Host "   [OK] $($envVars[$envVar]): $maskedKey" -ForegroundColor Green
         }
     }
-    
+
     # Set additional environment variables
     $env:PYTHONPATH = "$PWD;$PWD\src;$PWD\code_nation\argonaute\src"
     $env:FLASK_ENV = "development"
-    $env:FASTAPI_ENV = "development" 
-    
+    $env:FASTAPI_ENV = "development"
+
     Write-Host "   [OK] Python path configured" -ForegroundColor Green
     Write-Host "   [OK] Development environment set" -ForegroundColor Green
     Write-Host ""
@@ -74,7 +74,7 @@ function Set-EnvironmentVariables {
 # Function to create environment file
 function New-EnvironmentFile {
     Write-Host "[FILE] Creating .env file for persistent storage..." -ForegroundColor Cyan
-    
+
     $envContent = @"
 # AI Agent System Environment Variables
 # Generated on $(Get-Date)
@@ -110,12 +110,12 @@ DEBUG_MODE=true
 function Import-EnvironmentFile {
     if (Test-Path ".env") {
         Write-Host "[LOAD] Loading environment from .env file..." -ForegroundColor Cyan
-        
+
         Get-Content ".env" | ForEach-Object {
             if ($_ -match "^([^#][^=]+)=(.*)$") {
                 $name = $matches[1].Trim()
                 $value = $matches[2].Trim()
-                
+
                 # Only set if not already set
                 if (-not (Get-Item "env:$name" -ErrorAction SilentlyContinue)) {
                     Set-Item -Path "env:$name" -Value $value
@@ -143,7 +143,7 @@ $simpleChatPort = 8011
 
 Write-Host "[PORTS] Port Configuration Complete:" -ForegroundColor Yellow
 Write-Host "   [HERO] HeroicAge Simple: $heroicSimplePort" -ForegroundColor Cyan
-Write-Host "   [DEIA] Deianeira Simple: $deianeiraSimplePort" -ForegroundColor Cyan  
+Write-Host "   [DEIA] Deianeira Simple: $deianeiraSimplePort" -ForegroundColor Cyan
 Write-Host "   [HERO+] HeroicAge Full+MCP: $heroicFullPort" -ForegroundColor Green
 Write-Host "   [DEIA+] Deianeira Full+MCP: $deianeiraFullPort" -ForegroundColor Green
 Write-Host "   [CHAT] Simple AI Chat: $simpleChatPort" -ForegroundColor Magenta
@@ -153,10 +153,10 @@ Write-Host ""
 function Test-PythonDependencies {
     param($pythonExec)
     Write-Host "[DEPS] Checking Python Dependencies..." -ForegroundColor Cyan
-    
+
     $requiredPackages = @("fastapi", "uvicorn", "aiohttp", "python-dotenv")
     $missingPackages = @()
-    
+
     foreach ($package in $requiredPackages) {
         try {
             $result = & $pythonExec -c "import $package; print('OK')" 2>$null
@@ -171,7 +171,7 @@ function Test-PythonDependencies {
             $missingPackages += $package
         }
     }
-    
+
     if ($missingPackages.Count -gt 0) {
         Write-Host "   [INSTALL] Installing missing packages..." -ForegroundColor Yellow
         try {
@@ -195,13 +195,13 @@ $chatJob = Start-Job -ScriptBlock {
     Set-Location $WorkDir
     $env:PYTHONIOENCODING = "utf-8"
     $env:PORT = $Port
-    
+
     # Copy environment variables to job
     $env:OPENAI_API_KEY = $using:env:OPENAI_API_KEY
     $env:ANTHROPIC_API_KEY = $using:env:ANTHROPIC_API_KEY
     $env:GEMINI_API_KEY = $using:env:GEMINI_API_KEY
     $env:HUGGINGFACE_TOKEN = $using:env:HUGGINGFACE_TOKEN
-    
+
     & $pythonExec simple_chat.py
 } -ArgumentList @($PWD.Path, $simpleChatPort, $pythonExec)
 
@@ -215,13 +215,13 @@ $heroicSimpleJob = Start-Job -ScriptBlock {
     Set-Location HeroicAge
     $env:PYTHONIOENCODING = "utf-8"
     $env:PORT = $Port
-    
+
     # Copy environment variables to job
     $env:OPENAI_API_KEY = $using:env:OPENAI_API_KEY
     $env:ANTHROPIC_API_KEY = $using:env:ANTHROPIC_API_KEY
     $env:GEMINI_API_KEY = $using:env:GEMINI_API_KEY
     $env:HUGGINGFACE_TOKEN = $using:env:HUGGINGFACE_TOKEN
-    
+
     & $pythonExec main_simple.py
 } -ArgumentList @($PWD.Path, $heroicSimplePort, $pythonExec)
 
@@ -235,13 +235,13 @@ $deianeiraSimpleJob = Start-Job -ScriptBlock {
     Set-Location GeminiAnalysis
     $env:PYTHONIOENCODING = "utf-8"
     $env:PORT = $Port
-    
+
     # Copy environment variables to job
     $env:OPENAI_API_KEY = $using:env:OPENAI_API_KEY
     $env:ANTHROPIC_API_KEY = $using:env:ANTHROPIC_API_KEY
     $env:GEMINI_API_KEY = $using:env:GEMINI_API_KEY
     $env:HUGGINGFACE_TOKEN = $using:env:HUGGINGFACE_TOKEN
-    
+
     & $pythonExec main_simple.py
 } -ArgumentList @($PWD.Path, $deianeiraSimplePort, $pythonExec)
 
@@ -255,13 +255,13 @@ $heroicFullJob = Start-Job -ScriptBlock {
     Set-Location HeroicAge
     $env:PYTHONIOENCODING = "utf-8"
     $env:PORT = $Port
-    
+
     # Copy environment variables to job
     $env:OPENAI_API_KEY = $using:env:OPENAI_API_KEY
     $env:ANTHROPIC_API_KEY = $using:env:ANTHROPIC_API_KEY
     $env:GEMINI_API_KEY = $using:env:GEMINI_API_KEY
     $env:HUGGINGFACE_TOKEN = $using:env:HUGGINGFACE_TOKEN
-    
+
     & $pythonExec main.py
 } -ArgumentList @($PWD.Path, $heroicFullPort, $pythonExec)
 
@@ -275,13 +275,13 @@ $deianeiraFullJob = Start-Job -ScriptBlock {
     Set-Location GeminiAnalysis
     $env:PYTHONIOENCODING = "utf-8"
     $env:PORT = $Port
-    
+
     # Copy environment variables to job
     $env:OPENAI_API_KEY = $using:env:OPENAI_API_KEY
     $env:ANTHROPIC_API_KEY = $using:env:ANTHROPIC_API_KEY
     $env:GEMINI_API_KEY = $using:env:GEMINI_API_KEY
     $env:HUGGINGFACE_TOKEN = $using:env:HUGGINGFACE_TOKEN
-    
+
     & $pythonExec main.py
 } -ArgumentList @($PWD.Path, $deianeiraFullPort, $pythonExec)
 
@@ -300,7 +300,7 @@ function Test-Service {
         [string]$Url,
         [string]$Icon
     )
-    
+
     try {
         $response = Invoke-RestMethod -Uri $Url -Method GET -TimeoutSec 5
         Write-Host "$Icon $Name`: [OK] Running normally ($Url)" -ForegroundColor Green
@@ -340,7 +340,7 @@ Write-Host "[CHAT] Chat Interface:" -ForegroundColor Magenta
 Write-Host "   [CHAT] Simple AI Chat: http://localhost:$simpleChatPort/chat/interface" -ForegroundColor White
 
 Write-Host ""
-Write-Host "[DOCS] API Documentation:" -ForegroundColor Blue  
+Write-Host "[DOCS] API Documentation:" -ForegroundColor Blue
 Write-Host "   [HERO] HeroicAge Simple: http://localhost:$heroicSimplePort/docs" -ForegroundColor White
 Write-Host "   [DEIA] Deianeira Simple: http://localhost:$deianeiraSimplePort/docs" -ForegroundColor White
 Write-Host "   [HERO+] HeroicAge Full: http://localhost:$heroicFullPort/docs" -ForegroundColor White
@@ -353,7 +353,7 @@ Write-Host "[TEST] === Chat Test ===" -ForegroundColor Yellow
 try {
     Write-Host "[TEST] Testing Simple AI Chat..." -ForegroundColor Cyan
     $chatTest = Invoke-RestMethod -Uri "http://localhost:$simpleChatPort/chat" -Method POST -Body "message=Hello! This is a test." -ContentType "application/x-www-form-urlencoded"
-    
+
     if ($chatTest.success) {
         Write-Host "   [OK] Chat Response: $($chatTest.response)" -ForegroundColor Green
     } else {

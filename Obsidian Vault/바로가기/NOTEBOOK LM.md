@@ -1,2 +1,0 @@
-
-[Notebook LM GO](https://notebooklm.google.com/?_gl=1*mafe4g*_ga*MTg4Nzc3NzQzNC4xNzQ3NDQxMDgy*_ga_W0LDH41ZCB*czE3NDc0NDEwODIkbzEkZzAkdDE3NDc0NDEwODQkajYwJGwwJGgwJGRCWGZEXzFFal9FM05hbHRFTkt2WWp5dFZvM2ZNbHhPZlBn)

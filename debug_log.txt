@@ -1,0 +1,22 @@
+[2025-07-17 04:19:08.712748] --- 임포트 문제 디버깅 시작 ---
+[2025-07-17 04:19:08.714480]
+--- Python 모듈 검색 경로 (sys.path) ---
+[2025-07-17 04:19:08.715387] D:\my workspace\OneDrive NEW\GNY
+C:\Python313\python313.zip
+C:\Python313\DLLs
+C:\Python313\Lib
+C:\Python313
+C:\Users\koko1\AppData\Roaming\Python\Python313\site-packages
+C:\Python313\Lib\site-packages
+[2025-07-17 04:19:08.716544] -----------------------------------------
+[2025-07-17 04:19:08.719604]
+--- 'dotenv' 모듈 정보 ---
+[2025-07-17 04:19:08.721098] 성공적으로 'dotenv' 모듈을 불러왔습니다.
+[2025-07-17 04:19:08.722165] 모듈의 경로 위치: _NamespacePath(['C:\\Users\\koko1\\AppData\\Roaming\\Python\\Python313\\site-packages\\dotenv'])
+[2025-07-17 04:19:08.723195] 모듈 내용물 (dir): ['__doc__', '__file__', '__loader__', '__name__', '__package__', '__path__', '__spec__']
+[2025-07-17 04:19:08.723949] ---------------------------
+[2025-07-17 04:19:08.726064]
+!!! 임포트 오류 발생: cannot import name 'load_dotenv' from 'dotenv' (unknown location)
+[2025-07-17 04:19:08.727163] 원인: 위에서 확인된 'dotenv' 모듈이 올바른 'python-dotenv' 라이브러리가 아니거나, 라이브러리가 올바른 경로에 설치되지 않았을 수 있습니다.
+[2025-07-17 04:19:08.728279]
+--- 디버깅 종료 ---

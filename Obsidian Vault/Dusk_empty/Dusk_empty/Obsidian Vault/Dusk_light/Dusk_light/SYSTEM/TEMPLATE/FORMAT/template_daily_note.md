@@ -16,8 +16,8 @@ hide due date
 limit 10
 ```
 tab: Overdue
-```tasks 
-not done 
+```tasks
+not done
 due before template_contact
 sort by priority
 hide due date
@@ -106,5 +106,3 @@ table area_category as "Area Category", created as "Date Created" from "PARA/ARE
 WHERE type = "area_family"
 ```
 ````
-
-

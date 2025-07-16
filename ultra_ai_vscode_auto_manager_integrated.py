@@ -4,14 +4,14 @@
 Perplexity 4.md 분석 기반, 실전 적용/확장/디버깅 최적화 구조
 """
 
-import os
-import sys
-import logging
 import asyncio
+import logging
+import os
 import shutil
-from pathlib import Path
-from datetime import datetime
+import sys
 from abc import ABC, abstractmethod
+from datetime import datetime
+from pathlib import Path
 
 ############################
 # 1. 환경 및 경로 설정
@@ -26,7 +26,14 @@ ERROR_FOLDER = VAULT_PATH / "AI_Agent_Error"
 PLUGIN_FOLDER = STORAGE_ROOT / "plugins"
 LOG_FOLDER = STORAGE_ROOT / "logs"
 
-for folder in [CLIP_FOLDER, PROCESSED_FOLDER, REPORT_FOLDER, ERROR_FOLDER, PLUGIN_FOLDER, LOG_FOLDER]:
+for folder in [
+    CLIP_FOLDER,
+    PROCESSED_FOLDER,
+    REPORT_FOLDER,
+    ERROR_FOLDER,
+    PLUGIN_FOLDER,
+    LOG_FOLDER,
+]:
     folder.mkdir(parents=True, exist_ok=True)
 
 log_file = LOG_FOLDER / f"ultra_ai_{datetime.now().strftime('%Y%m%d_%H%M%S')}.log"
@@ -36,17 +43,19 @@ logging.basicConfig(
     handlers=[
         logging.StreamHandler(sys.stdout),
         logging.FileHandler(log_file, encoding="utf-8"),
-    ]
+    ],
 )
 
 ############################
 # 2. 플러그인/작업 처리 추상화
 ############################
 
+
 class PluginBase(ABC):
     @abstractmethod
     def run(self, data):
         pass
+
 
 class TaggingPlugin(PluginBase):
     def run(self, data):
@@ -60,13 +69,16 @@ class TaggingPlugin(PluginBase):
             tags.append("General")
         return tags
 
+
 def load_plugins():
     # 실제 확장 시: PLUGIN_FOLDER에서 동적으로 import
     return [TaggingPlugin()]
 
+
 ############################
 # 3. 클리핑 유틸리티
 ############################
+
 
 class WebClipper:
     def __init__(self, clip_folder=CLIP_FOLDER):
@@ -74,7 +86,7 @@ class WebClipper:
 
     def generate_clip_filename(self, title):
         timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-        safe_title = "".join(c if c.isalnum() or c == '_' else '_' for c in title[:40])
+        safe_title = "".join(c if c.isalnum() or c == "_" else "_" for c in title[:40])
         return f"{timestamp}_{safe_title}.md"
 
     def clip(self, content, title="WebClip", source_url="", tags=None):
@@ -99,15 +111,25 @@ type: webclip
         logging.info(f"Clipped: {filepath}")
         return filepath
 
+
 ############################
 # 4. 파일 감시 및 처리 에이전트 (확장형)
 ############################
 
-from utils.io_utils import safe_read_file, safe_move_file
 from collections import defaultdict
 
+from utils.io_utils import safe_move_file, safe_read_file
+
+
 class ClipAgent:
-    def __init__(self, clip_folder=CLIP_FOLDER, processed_folder=PROCESSED_FOLDER, report_folder=REPORT_FOLDER, error_folder=ERROR_FOLDER, plugins=None):
+    def __init__(
+        self,
+        clip_folder=CLIP_FOLDER,
+        processed_folder=PROCESSED_FOLDER,
+        report_folder=REPORT_FOLDER,
+        error_folder=ERROR_FOLDER,
+        plugins=None,
+    ):
         self.clip_folder = Path(clip_folder)
         self.processed_folder = Path(processed_folder)
         self.report_folder = Path(report_folder)
@@ -154,7 +176,9 @@ class ClipAgent:
             logging.info(f"✅ 클립 처리 성공: {target.name}")
             # 최초 1회만 안내
             if file.name not in self.warned_files:
-                logging.info("""📢 클리핑 파일이 이미 이동/삭제된 경우, 대시보드에서 자동 회피 처리합니다. 콘솔 로그 또는 AI_Agent_Error 폴더를 참조해 실패 원인을 확인하세요.""")
+                logging.info(
+                    """📢 클리핑 파일이 이미 이동/삭제된 경우, 대시보드에서 자동 회피 처리합니다. 콘솔 로그 또는 AI_Agent_Error 폴더를 참조해 실패 원인을 확인하세요."""
+                )
                 self.warned_files.add(file.name)
         if processed_files:
             self.write_report(processed_files)
@@ -172,27 +196,34 @@ class ClipAgent:
         err_path.write_text(f"에러: {msg}\n", encoding="utf-8")
         logging.error(f"에러 기록됨: {msg}")
 
+
 ############################
 # 5. 확장 예시: 새로운 플러그인 추가
 ############################
+
 
 class LengthPlugin(PluginBase):
     def run(self, data):
         return ["long"] if len(data) > 500 else ["short"]
 
+
 ############################
 # 6. Entry Point (직접 실행/테스트)
 ############################
 
+
 def test_all():
     clipper = WebClipper()
-    f1 = clipper.clip("테스트 콘텐츠", title="테스트1", source_url="https://test/a", tags=["test","webclip"])
+    f1 = clipper.clip(
+        "테스트 콘텐츠", title="테스트1", source_url="https://test/a", tags=["test", "webclip"]
+    )
     logging.info(f"테스트 클립 완료: {f1}")
 
     # 플러그인 확장: 태깅 + 길이
     plugins = [TaggingPlugin(), LengthPlugin()]
     agent = ClipAgent(plugins=plugins)
     asyncio.run(agent.process_clips())
+
 
 if __name__ == "__main__":
     test_all()

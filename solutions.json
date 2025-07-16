@@ -1,0 +1,22 @@
+{
+    "import_error": [
+        "pip install {module_name}",
+        "가상환경 활성화 확인",
+        "Python 경로 설정 확인"
+    ],
+    "connection_error": [
+        "네트워크 연결 상태 확인",
+        "방화벽 설정 점검",
+        "타임아웃 설정 증가"
+    ],
+    "github_api_error": [
+        "GitHub 토큰 유효성 확인",
+        "API 사용량 한도 확인",
+        "저장소 접근 권한 확인"
+    ],
+    "file_not_found": [
+        "파일 경로 확인",
+        "작업 디렉토리 확인",
+        "파일 권한 확인"
+    ]
+}

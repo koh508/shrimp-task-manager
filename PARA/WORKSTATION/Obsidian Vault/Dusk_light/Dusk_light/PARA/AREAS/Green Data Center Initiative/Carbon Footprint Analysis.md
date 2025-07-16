@@ -6,7 +6,7 @@ tags:
 type: area_note
 created: 2024-11-12 05:18
 ---
-# [[2. Green Data Center Initiative]] 
+# [[2. Green Data Center Initiative]]
 # Overview
 This analysis calculates the **carbon emissions** produced by data centers and establishes a baseline for measuring improvements toward net-zero emissions. The initial assessment covers both direct (scope 1) and indirect (scope 2 and 3) emissions.
 

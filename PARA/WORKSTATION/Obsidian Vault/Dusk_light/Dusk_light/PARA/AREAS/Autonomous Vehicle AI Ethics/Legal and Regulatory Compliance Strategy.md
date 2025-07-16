@@ -6,7 +6,7 @@ tags:
 type: area_note
 created: 2024-11-12 05:24
 ---
-# [[2. Autonomous Vehicle AI Ethics]] 
+# [[2. Autonomous Vehicle AI Ethics]]
 # Overview
 This document reviews current **legal and regulatory frameworks** impacting autonomous vehicle technology and outlines strategies to ensure compliance with all applicable laws.
 

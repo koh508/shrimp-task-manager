@@ -1,1 +1,10 @@
-websockets==12.0
+flask
+requests
+python-dotenv
+aiofiles
+aiohttp
+websockets
+google-api-python-client
+google-auth
+google-auth-oauthlib
+watchdog

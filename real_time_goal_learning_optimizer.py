@@ -1,6 +1,7 @@
 import asyncio
 from datetime import datetime
-from typing import List, Dict, Any
+from typing import Any, Dict, List
+
 
 # --- Level 1: 즉시 반응형 분석 ---
 class RealTimeLearningProcessor:
@@ -13,12 +14,14 @@ class RealTimeLearningProcessor:
     async def process_interaction(self, user_input, context):
         relevance_score = self.calculate_goal_relevance(user_input)
         self.pattern_analyzer.update_patterns(user_input, context)
-        self.learning_buffer.append({
-            'input': user_input,
-            'timestamp': datetime.now(),
-            'relevance': relevance_score,
-            'context': context
-        })
+        self.learning_buffer.append(
+            {
+                "input": user_input,
+                "timestamp": datetime.now(),
+                "relevance": relevance_score,
+                "context": context,
+            }
+        )
         if len(self.learning_buffer) >= 10:
             await self.batch_learn()
         self.feedback_score = self.calculate_feedback_score(user_input)
@@ -37,10 +40,12 @@ class RealTimeLearningProcessor:
         # 실시간 피드백 점수 계산 (예시)
         return 1.0 if "좋아요" in user_input else 0.7
 
+
 class PatternAnalyzer:
     def update_patterns(self, user_input, context):
         # 행동 및 성공/실패 패턴 실시간 갱신
         pass
+
 
 class ImprovementEngine:
     def calculate_comprehensive_reward(self, action, outcome, context):
@@ -49,12 +54,13 @@ class ImprovementEngine:
         efficiency_reward = context.get("efficiency", 0.5)
         learning_acceleration = context.get("learning_improvement", 0.5)
         total_reward = (
-            satisfaction_reward * 0.4 +
-            goal_contribution * 0.3 +
-            efficiency_reward * 0.2 +
-            learning_acceleration * 0.1
+            satisfaction_reward * 0.4
+            + goal_contribution * 0.3
+            + efficiency_reward * 0.2
+            + learning_acceleration * 0.1
         )
         return total_reward
+
 
 # --- GitHub 실시간 분석 통합 ---
 class GitHubLearningAnalyzer:
@@ -69,24 +75,27 @@ class GitHubLearningAnalyzer:
         skill_progress = self.skill_tracker.track_skill_development(learning_patterns)
         recommendations = self.generate_learning_recommendations(skill_progress)
         return {
-            'patterns': learning_patterns,
-            'skill_progress': skill_progress,
-            'recommendations': recommendations
+            "patterns": learning_patterns,
+            "skill_progress": skill_progress,
+            "recommendations": recommendations,
         }
 
     def generate_learning_recommendations(self, skill_progress):
         # 추천 생성 로직 (예시)
         return ["다음 목표: AI 알고리즘 개선", "코드 리뷰 참여 추천"]
 
+
 class CommitAnalyzer:
     def extract_patterns(self, commits: List[Any]):
         # 커밋에서 학습 패턴 추출
         return []
 
+
 class SkillTracker:
     def track_skill_development(self, patterns: List[Any]):
         # 스킬 발전 추적
         return {}
+
 
 # --- 개인화 최적화 및 피드백 ---
 class PersonalizedOptimizer:
@@ -106,17 +115,21 @@ class PersonalizedOptimizer:
         # 맞춤형 학습 경로 생성
         return ["추천 목표1", "추천 목표2"]
 
+
 class UserProfile:
     def update_preferences(self, goal_alignment):
         pass
+
 
 class LearningStyleAnalyzer:
     def analyze(self, interaction_data):
         return {}
 
+
 class GoalAlignmentEngine:
     def optimize(self, learning_style):
         return {}
+
 
 class RealTimeFeedbackSystem:
     def __init__(self):
@@ -127,13 +140,13 @@ class RealTimeFeedbackSystem:
     async def process_feedback(self, user_feedback):
         sentiment = self.sentiment_analyzer.analyze(user_feedback)
         feedback_type = self.classify_feedback(user_feedback)
-        if feedback_type == 'critical':
+        if feedback_type == "critical":
             await self.apply_immediate_improvement(user_feedback)
         self.add_to_learning_dataset(user_feedback, sentiment)
 
     def classify_feedback(self, user_feedback):
         # 피드백 분류
-        return 'normal'
+        return "normal"
 
     async def apply_immediate_improvement(self, user_feedback):
         pass
@@ -141,12 +154,15 @@ class RealTimeFeedbackSystem:
     def add_to_learning_dataset(self, user_feedback, sentiment):
         pass
 
+
 class SentimentAnalyzer:
     def analyze(self, text):
         return "positive"
 
+
 class ImprovementTracker:
     pass
+
 
 # --- 자동 성능 튜닝 ---
 class AutoPerformanceTuner:
@@ -179,6 +195,7 @@ class AutoPerformanceTuner:
 
     async def measure_improvement(self):
         return {}
+
 
 # --- 통합 예시 ---
 # 기존 시스템과 통합 시 RealTimeLearningProcessor, GitHubLearningAnalyzer 등 인스턴스를 생성하여

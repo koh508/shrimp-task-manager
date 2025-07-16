@@ -1,4 +1,4 @@
-# Cache Bust: 2025-07-17_v3
+# Cache Bust: 2025-07-17_v4_final_check
 import asyncio
 import logging
 import os
@@ -14,10 +14,11 @@ from datetime import datetime
 TIMEOUT = 20  # 파일 대기 시간 (초)
 LOG_LEVEL = logging.INFO  # 로그 레벨 (DEBUG, INFO, ERROR 등)
 MCP_RETRY = 3  # MCP 재연결 시도 횟수
-TEMP_DIR = Path(os.environ.get('TEMP', '/tmp')) / 'ultra_ai_temp'  # 임시 폴더 경로
+TEMP_DIR = Path(os.environ.get("TEMP", "/tmp")) / "ultra_ai_temp"  # 임시 폴더 경로
 
 # Google Drive 경로 설정
 GD_ROOT = Path("D:/Google Drive/GNY")  # 사용자 환경에 맞게 변경
+
 
 # --- 새로운 폴더/권한 확인 함수 ---
 def ensure_path(path_str):
@@ -35,13 +36,14 @@ def ensure_path(path_str):
         print(f"[ERROR] 폴더 생성 중 예기치 않은 오류: {p} ({e})")
         raise e
 
+
 # 단일 로깅 설정
 def setup_logging(log_dir):
     logger = logging.getLogger()
     if logger.hasHandlers():
         for handler in logger.handlers[:]:
             logger.removeHandler(handler)
-    
+
     logger.setLevel(LOG_LEVEL)
     formatter = logging.Formatter("[%(asctime)s] %(levelname)s - %(message)s")
 
@@ -55,14 +57,15 @@ def setup_logging(log_dir):
         console_handler = logging.StreamHandler()
         console_handler.setFormatter(formatter)
         logger.addHandler(console_handler)
-        
+
         print(f"[OK] 로그 설정 완료. 로그 파일: {log_file}")
         return logger
     except Exception as e:
         # 로깅 설정 실패 시 기본 로깅 사용
-        logging.basicConfig(level=logging.INFO, format='[%(asctime)s] %(levelname)s - %(message)s')
+        logging.basicConfig(level=logging.INFO, format="[%(asctime)s] %(levelname)s - %(message)s")
         logging.error(f"[ERROR] 로그 파일 핸들러 설정 실패: {e}")
         return logging.getLogger()
+
 
 class ErrorNotifier:
     def __init__(self, error_dir):
@@ -73,6 +76,7 @@ class ErrorNotifier:
         err_file = self.error_dir / f"error_{ts}.log"
         err_file.write_text(message, encoding="utf-8")
         logger.error(f"오류가 기록되었습니다: {err_file}")
+
 
 class MCPClient:
     def __init__(self, error_notifier):
@@ -106,9 +110,9 @@ class MCPClient:
             task_data = {
                 "type": "task",
                 "payload": {
-                    "tool_code": f'\n```markdown\n{file_content}\n```',
-                    "tool_name": "create_goal_and_task_from_text"
-                }
+                    "tool_code": f"\n```markdown\n{file_content}\n```",
+                    "tool_name": "create_goal_and_task_from_text",
+                },
             }
             await self.websocket.send(json.dumps(task_data))
             logger.info("✅ MCP에 작업을 성공적으로 전송했습니다.")
@@ -119,13 +123,14 @@ class MCPClient:
             self.error_notifier.notify_error(f"MCP 작업 전송 오류: {e}")
             return False
 
+
 class StableClipAgent:
     def __init__(self):
         self.clip_dir = ensure_path(GD_ROOT / "Clippings")
         self.proc_dir = ensure_path(GD_ROOT / "Processed")
         self.error_dir = ensure_path(GD_ROOT / "Errors")
         self.log_dir = ensure_path(GD_ROOT / "Logs")
-        
+
         global logger
         logger = setup_logging(self.log_dir)
 
@@ -135,7 +140,7 @@ class StableClipAgent:
 
     def read_file_content(self, path: Path):
         try:
-            return path.read_text(encoding='utf-8')
+            return path.read_text(encoding="utf-8")
         except FileNotFoundError:
             logger.warning(f"❗ 파일 없음: {path}")
             return None
@@ -158,7 +163,8 @@ class StableClipAgent:
             try:
                 shutil.move(str(file), str(self.proc_dir / file.name))
                 logger.info(f"  -> 처리 완료, 이동: {self.proc_dir / file.name}")
-                if file.name in self.retry_map: del self.retry_map[file.name]
+                if file.name in self.retry_map:
+                    del self.retry_map[file.name]
             except PermissionError:
                 logger.error(f"권한 오류로 파일 이동 실패: {file.name}. 임시 폴더에 복사 시도.")
                 try:
@@ -180,11 +186,13 @@ class StableClipAgent:
         start = time.time()
         while time.time() - start < timeout:
             try:
-                with open(path, 'r'): pass
+                with open(path, "r"):
+                    pass
                 return True
             except IOError:
                 time.sleep(0.5)
         return False
+
 
 # 메인 실행 로직 (Resilient Loop)
 # Triggering new deployment for verification.
@@ -193,7 +201,7 @@ async def main():
         agent = StableClipAgent()
         logger.info("에이전트 초기화 완료.")
     except Exception as e:
-        logging.basicConfig(level=logging.INFO, format='[%(asctime)s] %(levelname)s - %(message)s')
+        logging.basicConfig(level=logging.INFO, format="[%(asctime)s] %(levelname)s - %(message)s")
         logging.critical(f"에이전트 초기화 실패: {e}. 스크립트를 종료합니다.")
         return
 
@@ -204,20 +212,21 @@ async def main():
     logger.info("클리핑 처리 루프 시작.")
     while True:
         try:
-            files = list(agent.clip_dir.glob('*.md'))
+            files = list(agent.clip_dir.glob("*.md"))
             if not files:
                 await asyncio.sleep(10)
                 continue
 
             for file in files:
                 await agent.process_single_clip(file)
-            
+
             await asyncio.sleep(10)
 
         except Exception as e:
             logger.error(f"메인 루프에서 예기치 않은 오류 발생: {e}")
             agent.error_notifier.notify_error(traceback.format_exc())
             await asyncio.sleep(30)
+
 
 if __name__ == "__main__":
     try:

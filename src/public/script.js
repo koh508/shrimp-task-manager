@@ -592,35 +592,35 @@ function selectTask(taskId) {
         )} <span id="detail-status" class="task-status"></span></span>
       </div>
     </div>
-    
+
     <!-- 新增：條件顯示 Summary -->
     <div class="task-details-section" id="detail-summary-section" style="display: none;">
       <h4>${translate("task_detail_summary_title")}</h4>
       <p id="detail-summary"></p>
     </div>
-    
+
     <div class="task-details-section">
       <h4>${translate("task_detail_description_title")}</h4>
       <p id="detail-description"></p>
     </div>
-    
+
     <div class="task-details-section">
       <h4>${translate("task_detail_implementation_guide_title")}</h4>
       <pre id="detail-implementation-guide"></pre>
     </div>
-    
+
     <div class="task-details-section">
       <h4>${translate("task_detail_verification_criteria_title")}</h4>
       <p id="detail-verification-criteria"></p>
     </div>
-    
+
     <div class="task-details-section">
       <h4>${translate("task_detail_dependencies_title")}</h4>
       <div class="dependencies" id="detail-dependencies">
         <!-- Dependencies will be populated by JS -->
       </div>
     </div>
-    
+
     <div class="task-details-section">
       <h4>${translate("task_detail_related_files_title")}</h4>
       <div class="related-files" id="detail-related-files">
@@ -1154,8 +1154,8 @@ function renderGlobalAnalysisResult() {
     targetElement.innerHTML = `
             <h4 data-i18n-key="global_analysis_title">${translate(
               "global_analysis_title"
-            )}</h4> 
-            <pre>${globalAnalysisResult}</pre> 
+            )}</h4>
+            <pre>${globalAnalysisResult}</pre>
         `;
     targetElement.style.display = "block";
   } else {

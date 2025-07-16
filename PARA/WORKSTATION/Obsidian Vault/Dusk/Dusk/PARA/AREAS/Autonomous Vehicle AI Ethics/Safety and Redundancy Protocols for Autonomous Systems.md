@@ -6,7 +6,7 @@ tags:
 type: area_note
 created: 2024-11-12 05:23
 ---
-# [[2. Autonomous Vehicle AI Ethics]] 
+# [[2. Autonomous Vehicle AI Ethics]]
 # Overview
 This document provides a comprehensive set of **safety and redundancy protocols** designed to minimize risks associated with autonomous vehicles. The protocols emphasize a multi-layered approach to safety, ensuring that if one system fails, backup mechanisms are in place to prevent accidents.
 

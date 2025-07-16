@@ -1,11 +1,11 @@
-import os
-import logging
 import asyncio
+import logging
+import os
 import shutil
-import traceback
 import time
-from pathlib import Path
+import traceback
 from datetime import datetime
+from pathlib import Path
 from typing import List
 
 try:
@@ -13,9 +13,12 @@ try:
 except ImportError:
     Github = None
 
+
 # 로깅 설정 (단일 호출)
-def setup_logging(log_dir: Path = Path("D:/my workspace/OneDrive NEW/GNY/logs"), level: int = logging.INFO):
-    logger = logging.getLogger(__name__) # Use a named logger
+def setup_logging(
+    log_dir: Path = Path("D:/my workspace/OneDrive NEW/GNY/logs"), level: int = logging.INFO
+):
+    logger = logging.getLogger(__name__)  # Use a named logger
     if logger.hasHandlers():
         # This check is now more for preventing re-configuration in the same run
         return logger
@@ -42,7 +45,9 @@ def setup_logging(log_dir: Path = Path("D:/my workspace/OneDrive NEW/GNY/logs"),
     logger.info(f"로깅 설정 완료: {log_file}")
     return logger
 
+
 logger = setup_logging()
+
 
 # 에러 notifier
 class ErrorNotifier:
@@ -54,11 +59,14 @@ class ErrorNotifier:
         ts = datetime.now().strftime("%Y%m%d_%H%M%S")
         err_file = self.error_dir / f"error_{ts}.md"
         try:
-            with open(err_file, 'w', encoding='utf-8') as f:
-                f.write(f"# AI Agent Error Report\n\n**Timestamp:** {datetime.now()}\n\n**Error Message:**\n```\n{msg}\n```\n\n**Traceback:**\n```\n{traceback.format_exc()}\n```")
+            with open(err_file, "w", encoding="utf-8") as f:
+                f.write(
+                    f"# AI Agent Error Report\n\n**Timestamp:** {datetime.now()}\n\n**Error Message:**\n```\n{msg}\n```\n\n**Traceback:**\n```\n{traceback.format_exc()}\n```"
+                )
             logger.info(f"Error noted: {err_file}")
         except Exception as e:
             logger.error(f"Failed to write error notification file: {e}")
+
 
 # 목표 관리 (검색 결과 [1] 기반)
 class GoalHierarchy:
@@ -73,6 +81,7 @@ class GoalHierarchy:
         else:
             logger.warning(f"Goal already exists: {user_input}")
 
+
 # GitHub 통합 (브랜치/커밋/PR)
 class GitHubManager:
     def __init__(self, token, repo_name):
@@ -80,7 +89,7 @@ class GitHubManager:
         if not Github:
             logger.warning("PyGithub 라이브러리가 설치되지 않았습니다. GitHub 통합 기능을 건너뜁니다.")
             return
-        if not token or not repo_name or 'your_username' in repo_name:
+        if not token or not repo_name or "your_username" in repo_name:
             logger.warning("GitHub 토큰 또는 리포지토리 이름이 설정되지 않았습니다. GitHub 통합 기능을 건너뜁니다.")
             return
         try:
@@ -99,8 +108,8 @@ class GitHubManager:
             self.repo.create_git_ref(ref=f"refs/heads/{branch_name}", sha=main_branch.commit.sha)
             logger.info(f"성공적으로 브랜치를 생성했습니다: {branch_name}")
             return True
-        except Exception as e: # GithubException
-            if 'Reference already exists' in str(e):
+        except Exception as e:  # GithubException
+            if "Reference already exists" in str(e):
                 logger.warning(f"브랜치가 이미 존재합니다: {branch_name}")
                 return True
             logger.error(f"브랜치 생성 실패: {e}")
@@ -113,16 +122,18 @@ class GitHubManager:
             contents = []
             for file_path in files:
                 if file_path.exists():
-                    content = file_path.read_text(encoding='utf-8')
-                    # This is a simplified example. Real implementation needs more robust logic 
+                    content = file_path.read_text(encoding="utf-8")
+                    # This is a simplified example. Real implementation needs more robust logic
                     # for creating/updating files, handling blobs and trees for multiple files.
                     # For a single file commit for now:
                     try:
                         # Check if file exists to update, otherwise create
                         existing_file = self.repo.get_contents(file_path.name, ref=branch)
-                        self.repo.update_file(existing_file.path, message, content, existing_file.sha, branch=branch)
+                        self.repo.update_file(
+                            existing_file.path, message, content, existing_file.sha, branch=branch
+                        )
                         logger.info(f"파일 업데이트 및 커밋: {file_path.name} in {branch}")
-                    except Exception: # GithubException - Not Found
+                    except Exception:  # GithubException - Not Found
                         self.repo.create_file(file_path.name, message, content, branch=branch)
                         logger.info(f"파일 생성 및 커밋: {file_path.name} in {branch}")
             logger.info(f"커밋 완료: {message}")
@@ -138,18 +149,19 @@ class GitHubManager:
         except Exception as e:
             logger.error(f"PR 생성 실패: {e}")
 
+
 # 클리핑 에이전트 (디버깅 강화)
 class StableClipAgent:
-    def __init__(self, vault_root='D:/my workspace/OneDrive NEW/GNY'):
+    def __init__(self, vault_root="D:/my workspace/OneDrive NEW/GNY"):
         self.vault_path = Path(vault_root)
-        self.clip_dir = self.vault_path / 'Clippings'
-        self.processed_dir = self.vault_path / 'Processed'
-        self.error_notifier = ErrorNotifier(self.vault_path / 'AI_Agent_Error')
-        
+        self.clip_dir = self.vault_path / "Clippings"
+        self.processed_dir = self.vault_path / "Processed"
+        self.error_notifier = ErrorNotifier(self.vault_path / "AI_Agent_Error")
+
         # GitHub 설정은 사용자가 직접 교체해야 합니다.
-        repo_name = "koko8829/Ultra_AI_Assistant_ver2" # <--- 실제 리포지토리 이름으로 변경하세요
+        repo_name = "koko8829/Ultra_AI_Assistant_ver2"  # <--- 실제 리포지토리 이름으로 변경하세요
         self.github_manager = GitHubManager(os.environ.get("GITH_TOKEN"), repo_name)
-        
+
         self.goal_hierarchy = GoalHierarchy()
 
     async def resilient_loop(self, interval=10):
@@ -157,7 +169,7 @@ class StableClipAgent:
         max_fails = 5
         while True:
             try:
-                files = list(self.clip_dir.glob('*.md'))
+                files = list(self.clip_dir.glob("*.md"))
                 if not files:
                     # logger.info("감시 중... 새로운 클리핑 파일 없음.")
                     pass
@@ -171,20 +183,24 @@ class StableClipAgent:
                             shutil.move(str(file), str(self.processed_dir / file.name))
                             logger.info(f"파일 이동 완료: {file.name} -> {self.processed_dir.name}")
                             processed_files.append(self.processed_dir / file.name)
-                    
+
                     if processed_files:
-                        commit_message = f"Automated commit for {len(processed_files)} processed files"
+                        commit_message = (
+                            f"Automated commit for {len(processed_files)} processed files"
+                        )
                         self.github_manager.commit_changes(commit_message, processed_files)
-                
+
                 fail_count = 0  # 성공 시 실패 카운트 리셋
             except Exception as e:
                 fail_count += 1
                 logger.error(f"프로세스 루프에서 에러 발생 (시도 {fail_count}/{max_fails}): {e}")
-                self.error_notifier.notify_error(f"An error occurred in the processing loop (Attempt {fail_count}).")
+                self.error_notifier.notify_error(
+                    f"An error occurred in the processing loop (Attempt {fail_count})."
+                )
                 if fail_count >= max_fails:
                     logger.critical(f"{max_fails}회 연속 에러 발생. 시스템을 중단합니다.")
                     break
-                sleep_time = min(fail_count * 5, 60) # Exponential backoff
+                sleep_time = min(fail_count * 5, 60)  # Exponential backoff
                 logger.info(f"{sleep_time}초 후 재시도합니다.")
                 await asyncio.sleep(sleep_time)
                 continue
@@ -195,7 +211,7 @@ class StableClipAgent:
         start_time = time.time()
         while time.time() - start_time < timeout:
             try:
-                with path.open('r'):
+                with path.open("r"):
                     return True
             except (IOError, PermissionError) as e:
                 # logger.debug(f"파일이 아직 준비되지 않았습니다: {path.name}, 오류: {e}. 잠시 후 재시도합니다.")
@@ -203,12 +219,13 @@ class StableClipAgent:
         logger.warning(f"파일 준비 대기 시간 초과: {path.name}")
         return False
 
+
 # 추가 발전: GitHub Actions YAML 예시 (자동 백업)
 def generate_github_actions_yaml():
-    ga_dir = Path('.github/workflows')
+    ga_dir = Path(".github/workflows")
     ga_dir.mkdir(parents=True, exist_ok=True)
-    yaml_file = ga_dir / 'ci.yml'
-    
+    yaml_file = ga_dir / "ci.yml"
+
     if yaml_file.exists():
         logger.info("GitHub Actions YAML 파일이 이미 존재합니다.")
         return
@@ -249,24 +266,25 @@ jobs:
           # 예: zip -r backup.zip /path/to/data
 """
     try:
-        with open(yaml_file, 'w', encoding='utf-8') as f:
+        with open(yaml_file, "w", encoding="utf-8") as f:
             f.write(yaml_content)
         logger.info(f"성공적으로 GitHub Actions YAML 파일을 생성했습니다: {yaml_file}")
     except Exception as e:
         logger.error(f"GitHub Actions YAML 파일 생성 실패: {e}")
+
 
 # 메인 실행
 async def main():
     logger.info("===== Ultra AI Assistant v2 시작 =====")
     # 사용자가 GITHUB_TOKEN과 리포지토리 이름을 설정했는지 확인하는 것이 중요합니다.
     # 이 예제에서는 StableClipAgent 생성자에서 확인합니다.
-    
+
     agent = StableClipAgent()
     agent.goal_hierarchy.align_goals("System Stability and Autonomous Operation")
-    
+
     # GitHub Actions 파일 생성 (필요 시)
     generate_github_actions_yaml()
-    
+
     logger.info("에이전트가 클리핑 파일 감시를 시작합니다...")
     try:
         await agent.resilient_loop()
@@ -276,9 +294,9 @@ async def main():
         logger.critical(f"메인 루프에서 처리되지 않은 심각한 오류 발생: {e}")
         traceback.print_exc()
 
+
 if __name__ == "__main__":
     try:
         asyncio.run(main())
     finally:
         logger.info("===== Ultra AI Assistant v2 종료 =====")
-

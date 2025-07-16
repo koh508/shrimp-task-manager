@@ -1,0 +1,53 @@
+🚀 Python Project Inspector Report
+==================================================
+📁 프로젝트:
+📅 분석 시간: 2025-07-17 05:53:34
+
+📊 기본 통계
+------------------------------
+📄 총 파일 수: 3,233
+💾 총 용량: 15.9 MB
+📝 총 코드 라인: 434,286
+⚙️  총 함수 수: 350
+🏗️  총 클래스 수: 86
+
+🌍 파일 형식별 분포
+------------------------------
+     .md: 2657개 ( 82.2%)
+   .yaml: 308개 (  9.5%)
+   .json: 110개 (  3.4%)
+     .py:  71개 (  2.2%)
+    .yml:  66개 (  2.0%)
+    .txt:  21개 (  0.6%)
+
+📈 용량이 큰 파일 (상위 10개)
+------------------------------
+ 1. 에이전트 길라잡이\cursor_.md
+ 2. Obsidian Vault\Dusk\Dusk\PARA\RESOURCES\CONCEPT MAP\Chatbot Diagram.md
+ 3. Obsidian Vault\Dusk_empty\Dusk_empty\Obsidian Vault\Dusk\Dusk\PARA\RESOURCES\CONCEPT MAP\Chatbot Diagram.md
+ 4. Obsidian Vault\Dusk_empty\Dusk_empty\Obsidian Vault\Dusk_light\Dusk_light\PARA\RESOURCES\CONCEPT MAP\Chatbot Diagram.md
+ 5. Obsidian Vault\Dusk_light\Dusk_light\PARA\RESOURCES\CONCEPT MAP\Chatbot Diagram.md
+ 6. PARA\WORKSTATION\Obsidian Vault\Dusk\Dusk\PARA\RESOURCES\CONCEPT MAP\Chatbot Diagram.md
+ 7. PARA\WORKSTATION\Obsidian Vault\Dusk_light\Dusk_light\PARA\RESOURCES\CONCEPT MAP\Chatbot Diagram.md
+ 8. Clippings\NetClip\Scraped Pages\NAVER.md
+ 9. 에이전트 길라잡이\cursor_generate_a_name_for_the_chat.md
+10. Obsidian Vault\Dusk\Dusk\SYSTEM\GETTING STARTED\Vault Walkthrough - Concept Map.md
+
+🧠 복잡도가 높은 파일 (상위 10개)
+------------------------------
+ 1. project_inspector.py
+ 2. obsidian_monitor.py
+ 3. backup_system_fixed.py
+ 4. plugin_system.py
+ 5. ultra_ai_assistant_final.py
+ 6. integrated_launcher.py
+ 7. goal_learning_memory_system.py
+ 8. coding_tools.py
+ 9. integrated_development_system.py
+10. debug_utils.py
+
+💡 최적화 제안
+------------------------------
+📄 큰 파일 19개 발견 - 리팩토링 고려
+🧠 복잡한 파일 29개 발견 - 함수 분리 고려
+🔗 자주 사용되는 모듈 17개 - 공통 모듈화 고려
