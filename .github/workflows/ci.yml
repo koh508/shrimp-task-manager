@@ -29,7 +29,9 @@ jobs:
         node-version: '18' # Or a version compatible with Railway CLI
 
     - name: Deploy to Railway
-      env:
-        RAILWAY_TOKEN: ${{ secrets.RAILWAY_TOKEN }}
-      run: |
-        npx railway up
+  run: |
+    npm install -g @railway/cli
+    railway up
+  env:
+    RAILWAY_TOKEN: ${{ secrets.RAILWAY_TOKEN }}
+
