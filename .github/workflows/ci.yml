@@ -36,6 +36,6 @@ jobs:
         npm install -g @railway/cli
         railway up
       env:
-        RAILWAY_TOKEN: ${{ secrets.RAILWAY_TOKEN }}
+        RAILWAY_TOKEN: ${{4f57302c-6498-4e35-b45c-a2d76c25db6b}}
 
 
