@@ -280,20 +280,21 @@ def _generate_questions(content: str, note_title: str, generate_fn) -> str:
 # ==============================================================================
 # A. 자문자답 + 약점 자동 추출
 # ==============================================================================
-def _self_quiz_and_extract_weakness(questions: str, note_title: str, category: str, generate_fn) -> str:
-    """생성된 문제를 온유가 스스로 풀고, 불확실/모름 항목을 약점노트에 저장.
+def _self_quiz_and_extract_weakness(content: str, note_title: str, category: str, generate_fn) -> str:
+    """노트 내용에서 직접 약점 항목 추출 (문제 생성 없이).
     충돌3 방지: 공조냉동·소방만 실행 (API 절약)"""
     if category not in ('공조냉동', '소방'):
         return ''
-    if not questions or questions == '(문제 생성 실패)':
+    if not content or not content.strip():
         return ''
 
     prompt = (
-        f"다음 문제들에 답하라. 각 문제마다 반드시 아래 형식으로만 출력한다.\n\n"
+        f"다음 학습 노트에서 헷갈리거나 틀리기 쉬운 핵심 개념/공식을 추출하라.\n"
+        f"각 항목마다 반드시 아래 형식으로만 출력한다.\n\n"
         f"형식 (정확히 지킬 것):\n"
-        f"문제N: (핵심 답안 — 계산식 포함, 2~3줄)\n"
+        f"문제N: (핵심 개념 또는 공식 — 2~3줄)\n"
         f"자신감: 확실 / 불확실 / 모름 중 하나\n\n"
-        f"---\n{questions[:2500]}"
+        f"노트 제목: {note_title}\n---\n{content[:2500]}"
     )
     try:
         answer = generate_fn(prompt)
@@ -707,14 +708,8 @@ def run_study_session(generate_fn) -> list[str]:
         if links:
             _append_links_to_note(fpath, links)
 
-        # 2. 예상 문제 생성 (과년도 강제 포함)
-        questions = _generate_questions(content, note_title, generate_fn)
-        q_path = _save_questions(note_title, questions, today)
-        if q_path:
-            new_fpaths.append(q_path)
-
-        # A. 자문자답 + 약점 추출 (공조냉동·소방만 — 충돌3 방지)
-        weak_path = _self_quiz_and_extract_weakness(questions, note_title, category, generate_fn)
+        # A. 약점 추출 (노트 내용에서 직접 — 공조냉동·소방만)
+        weak_path = _self_quiz_and_extract_weakness(content, note_title, category, generate_fn)
         if weak_path and weak_path not in new_fpaths:
             new_fpaths.append(weak_path)
 
