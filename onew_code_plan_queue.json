@@ -1,0 +1,678 @@
+{
+  "plans": [
+    {
+      "id": "e49ee6af",
+      "goal": "토큰소비 최소화하며, 온유 시스템에 부족한 부분 자료 생성 (300자 내), 생성된 기준으로 Github 검색 하여 필요 파일 설치 계획 포함 재수정(500자 내외) 파일형식 md파일로 생성 후 보고.",
+      "status": "done",
+      "tasks": [
+        {
+          "id": "3cbd85f8",
+          "desc": "온유 시스템의 부족한 부분을 분석하고, 해당 자료를 300자 내외로 작성합니다. 이 자료는 이후 Github 검색의 기준이 됩니다.",
+          "type": "create",
+          "target": "onew_system_gaps_initial_draft.md",
+          "issue": "온유 시스템의 현재 기능과 목표를 고려하여 부족한 부분(예: 특정 라이브러리 부재, 기능 확장 필요성, 성능 개선 지점 등)을 식별하고, 이를 300자 내외의 간결한 텍스트로 작성합니다. 이 내용은 이후 Github 검색의 핵심 키워드가 될 것입니다.",
+          "depends_on": [],
+          "status": "done",
+          "result": "생성 완료: onew_system_gaps_initial_draft.md (2337자)",
+          "created_at": "2026-03-20T18:41:00.519536"
+        },
+        {
+          "id": "0ada3550",
+          "desc": "초안으로 작성된 부족한 부분 자료를 기반으로 Github에서 필요한 파일 및 라이브러리를 검색하고, 설치 계획을 포함하여 500자 내외의 최종 보고서(md 파일)를 작성합니다.",
+          "type": "create",
+          "target": "onew_system_gaps_and_search_plan.md",
+          "issue": "이전 태스크에서 생성된 'onew_system_gaps_initial_draft.md' 내용을 참조하여, Github에서 관련 라이브러리, 코드 스니펫, 프로젝트 등을 검색합니다. 검색 결과를 바탕으로 온유 시스템에 필요한 파일 및 라이브러리 목록, 각 항목의 설치 방법(예: pip install, git clone 등), 그리고 간략한 도입 이유를 포함하여 500자 내외의 Markdown 형식 보고서를 작성합니다.",
+          "depends_on": [
+            "3cbd85f8"
+          ],
+          "status": "done",
+          "result": "생성 완료: onew_system_gaps_and_search_plan.md (856자)",
+          "created_at": "2026-03-20T18:41:00.519548"
+        }
+      ],
+      "snapshot": {},
+      "created_at": "2026-03-20T18:41:00.519554",
+      "updated_at": "2026-03-20T18:42:23.364334"
+    },
+    {
+      "id": "afe7cc50",
+      "goal": "토큰소비 최소화하며, 온유 시스템에 부족한 부분 자료 생성 (300자 내), 생성된 기준으로 Github 검색 하여 필요 파일 설치 계획 포함 재수정(500자 내외) 파일형식 md파일로 생성 후 보고.",
+      "status": "aborted",
+      "tasks": [
+        {
+          "id": "ddf62dc7",
+          "desc": "온유 시스템에 부족한 부분 자료를 생성하고, Github 검색 계획을 포함한 초기 md 파일 생성 (300자 내외)",
+          "type": "create",
+          "target": "onew_system_gaps_and_search_plan.md",
+          "issue": "온유 시스템의 현재 기능과 목표를 기반으로 부족하다고 판단되는 부분(예: 특정 데이터 처리 기능, 외부 API 연동 부재, 특정 라이브러리 활용 미흡 등)을 300자 내외로 간략하게 작성합니다. 이어서, 이 부족한 부분을 해결하기 위해 Github에서 어떤 키워드로 어떤 종류의 파일을 검색할 것인지에 대한 계획을 포함합니다. 파일 형식은 Markdown으로 합니다.",
+          "depends_on": [],
+          "status": "done",
+          "result": "생성 완료: onew_system_gaps_and_search_plan.md (1471자)",
+          "created_at": "2026-03-20T18:38:37.682646"
+        },
+        {
+          "id": "e4ab2484",
+          "desc": "생성된 기준으로 Github 검색 하여 필요 파일 설치 계획 포함 재수정(500자 내외) 파일형식 md파일로 생성 후 보고.",
+          "type": "modify",
+          "target": "onew_system_gaps_and_search_plan.md",
+          "issue": "이전 태스크에서 생성된 'onew_system_gaps_and_search_plan.md' 파일을 수정합니다. 기존 내용에 Github 검색을 통해 발견된 잠재적인 해결책(라이브러리, 코드 스니펫 등)에 대한 간략한 설명과, 이를 온유 시스템에 통합하기 위한 구체적인 설치 또는 구현 계획을 500자 내외로 추가합니다. 이 과정에서 토큰 소비를 최소화하도록 간결하게 작성합니다.",
+          "depends_on": [
+            "ddf62dc7"
+          ],
+          "status": "failed",
+          "result": "실행 불가 (engine/client 미주입)",
+          "created_at": "2026-03-20T18:38:37.682663"
+        }
+      ],
+      "snapshot": {},
+      "created_at": "2026-03-20T18:38:37.682672",
+      "updated_at": "2026-03-20T18:39:59.321081"
+    },
+    {
+      "id": "554a1ed7",
+      "goal": "토큰소비 최소화하며, 온유 시스템에 부족한 부분 자료 생성 (300자 내), 생성된 기준으로 Github 검색 하여 필요 파일 설치 계획 포함 재수정(500자 내외) 파일형식 md파일로 생성 후 보고.",
+      "status": "aborted",
+      "tasks": [
+        {
+          "id": "149995b3",
+          "desc": "온유 시스템에 부족한 부분 자료를 생성하고, Github 검색 계획을 포함한 초기 md 파일 생성 (300자 내외)",
+          "type": "create",
+          "target": "onew_system_gaps_and_search_plan.md",
+          "issue": "온유 시스템의 현재 기능과 목표를 기반으로 부족하다고 판단되는 영역(예: 특정 데이터 처리, 외부 API 연동 부재, 특정 유틸리티 함수 부족 등)을 300자 내외로 간략히 기술하고, 이 부족한 부분을 해결하기 위한 Github 검색 키워드 및 검색 전략을 포함하여 초기 초안을 작성합니다. 파일 형식은 Markdown으로 합니다.",
+          "depends_on": [],
+          "status": "done",
+          "result": "생성 완료: onew_system_gaps_and_search_plan.md (1717자)",
+          "created_at": "2026-03-20T18:30:33.934426"
+        },
+        {
+          "id": "7457a2d6",
+          "desc": "생성된 'onew_system_gaps_and_search_plan.md' 파일을 기반으로 Github 검색 계획을 구체화하고, 필요 파일 설치 계획을 포함하여 500자 내외로 재수정",
+          "type": "modify",
+          "target": "onew_system_gaps_and_search_plan.md",
+          "issue": "이전 단계에서 생성된 'onew_system_gaps_and_search_plan.md' 파일의 내용을 확장하여, Github 검색을 통해 찾을 수 있는 잠재적인 라이브러리, 코드 스니펫, 또는 프로젝트를 명시합니다. 각 잠재적 해결책에 대해 어떤 파일(예: .py, .json, .yaml 등)이 필요할지, 그리고 해당 파일을 어떻게 설치하거나 통합할지에 대한 구체적인 계획을 500자 내외로 추가하여 재작성합니다. 기존 내용을 보존하며 추가 정보를 덧붙이는 방식으로 수정합니다.",
+          "depends_on": [
+            "149995b3"
+          ],
+          "status": "failed",
+          "result": "실행 불가 (engine/client 미주입)",
+          "created_at": "2026-03-20T18:30:33.934435"
+        }
+      ],
+      "snapshot": {},
+      "created_at": "2026-03-20T18:30:33.934443",
+      "updated_at": "2026-03-20T18:31:56.325510"
+    },
+    {
+      "id": "8a1d1292",
+      "goal": "토큰소비 최소화하며, 온유 시스템에 부족한 부분 자료 생성 (300자 내), 생성된 기준으로 Github 검색 하여 필요 파일 설치 계획 포함 재수정(500자 내외) 파일형식 md파일로 생성 후 보고.",
+      "status": "aborted",
+      "tasks": [
+        {
+          "id": "4b88467a",
+          "desc": "온유 시스템의 부족한 부분을 분석하고, Github 검색을 위한 초기 자료를 300자 내외로 작성하여 'onew_system_gaps_and_search_plan.md' 파일로 생성합니다.",
+          "type": "create",
+          "target": "onew_system_gaps_and_search_plan.md",
+          "issue": "온유 시스템의 현재 기능과 목표를 기반으로 부족하다고 판단되는 영역(예: 특정 라이브러리 부재, 데이터 처리 효율성, UI/UX 개선 등)을 300자 내외로 간략하게 기술하고, 각 부족한 부분에 대해 Github에서 검색할 키워드 및 예상되는 필요 파일/라이브러리 유형을 포함합니다. 파일 형식은 Markdown입니다.",
+          "depends_on": [],
+          "status": "done",
+          "result": "생성 완료: onew_system_gaps_and_search_plan.md (1473자)",
+          "created_at": "2026-03-20T18:27:30.551230"
+        },
+        {
+          "id": "72d02644",
+          "desc": "생성된 'onew_system_gaps_and_search_plan.md' 파일을 기반으로 Github 검색 결과를 반영하여 필요 파일 설치 계획을 포함한 최종 보고서를 500자 내외로 재작성합니다.",
+          "type": "modify",
+          "target": "onew_system_gaps_and_search_plan.md",
+          "issue": "이전 단계에서 생성된 'onew_system_gaps_and_search_plan.md' 파일의 내용을 확장하여, 각 부족한 부분에 대해 Github에서 검색한 결과(예: 특정 라이브러리/프레임워크, 코드 스니펫 등)를 요약하고, 이를 온유 시스템에 통합하기 위한 구체적인 설치 계획(예: pip install 명령어, git clone, 파일 복사 등)을 500자 내외로 상세하게 기술합니다. 파일 형식은 Markdown을 유지합니다.",
+          "depends_on": [
+            "4b88467a"
+          ],
+          "status": "failed",
+          "result": "실행 불가 (engine/client 미주입)",
+          "created_at": "2026-03-20T18:27:30.551240"
+        }
+      ],
+      "snapshot": {},
+      "created_at": "2026-03-20T18:27:30.551246",
+      "updated_at": "2026-03-20T18:28:41.435706"
+    },
+    {
+      "id": "39a315fd",
+      "goal": "토큰소비 최소화하며, 온유 시스템에 부족한 부분 자료 생성 (300자 내), 생성된 기준으로 Github 검색 하여 필요 파일 설치 계획 포함 재수정(500자 내외) 파일형식 md파일로 생성 후 보고.",
+      "status": "aborted",
+      "tasks": [
+        {
+          "id": "d7eaabdf",
+          "desc": "온유 시스템에 부족한 부분 자료를 생성하고, Github 검색 계획을 포함한 초기 md 파일 생성",
+          "type": "create",
+          "target": "docs/onew_system_gaps_and_search_plan.md",
+          "issue": "온유 시스템의 현재 기능과 목표를 고려하여 부족하다고 판단되는 부분을 300자 내외로 작성합니다. 이 자료를 기반으로 Github에서 어떤 종류의 라이브러리나 코드를 검색할지 초기 계획을 포함합니다. 파일 형식은 Markdown입니다.",
+          "depends_on": [],
+          "status": "done",
+          "result": "생성 완료: docs/onew_system_gaps_and_search_plan.md (1859자)",
+          "created_at": "2026-03-20T18:23:48.845668"
+        },
+        {
+          "id": "34e7516b",
+          "desc": "생성된 기준으로 Github 검색 하여 필요 파일 설치 계획 포함 재수정(500자 내외) 파일형식 md파일로",
+          "type": "modify",
+          "target": "docs/onew_system_gaps_and_search_plan.md",
+          "issue": "이전 태스크에서 생성된 'onew_system_gaps_and_search_plan.md' 파일을 수정합니다. 300자 내외로 작성된 부족한 부분 자료를 기반으로, 구체적인 Github 검색 키워드, 예상되는 검색 결과 (예: 특정 라이브러리, 코드 스니펫), 그리고 해당 라이브러리/코드를 온유 시스템에 통합하기 위한 설치 및 적용 계획을 500자 내외로 상세하게 추가합니다. Markdown 형식으로 유지합니다.",
+          "depends_on": [
+            "d7eaabdf"
+          ],
+          "status": "failed",
+          "result": "실행 불가 (engine/client 미주입)",
+          "created_at": "2026-03-20T18:23:48.845688"
+        }
+      ],
+      "snapshot": {},
+      "created_at": "2026-03-20T18:23:48.845701",
+      "updated_at": "2026-03-20T18:25:03.255960"
+    },
+    {
+      "id": "f81cdb5e",
+      "goal": "토큰소비 최소화하며, 온유 시스템에 부족한 부분 자료 생성 (300자 내), 생성된 기준으로 Github 검색 하여 필요 파일 설치 계획 포함 재수정(500자 내외) 파일형식 md파일로 생성 후 보고.",
+      "status": "aborted",
+      "tasks": [
+        {
+          "id": "b10bb70a",
+          "desc": "온유 시스템에 부족한 부분 자료를 생성하고, Github 검색 계획을 포함한 초기 md 파일 생성",
+          "type": "create",
+          "target": "docs/onew_system_gaps_and_search_plan.md",
+          "issue": "온유 시스템의 현재 기능과 목표를 기반으로 부족하다고 판단되는 영역(예: 특정 유틸리티, 데이터 처리, UI/UX 등)을 300자 내외로 간략히 작성하고, 이를 보완하기 위한 Github 검색 키워드 및 예상되는 파일/라이브러리 유형을 포함하는 초기 마크다운 파일 생성. 파일명은 'onew_system_gaps_and_search_plan.md'로 한다.",
+          "depends_on": [],
+          "status": "done",
+          "result": "생성 완료: docs/onew_system_gaps_and_search_plan.md (3731자)",
+          "created_at": "2026-03-20T18:19:49.826267"
+        },
+        {
+          "id": "e4d96ca4",
+          "desc": "생성된 기준으로 Github 검색 하여 필요 파일 설치 계획 포함 재수정(500자 내외) 파일형식 md파일로",
+          "type": "modify",
+          "target": "docs/onew_system_gaps_and_search_plan.md",
+          "issue": "이전 태스크에서 생성된 'onew_system_gaps_and_search_plan.md' 파일을 수정하여, 초기 자료를 바탕으로 Github에서 검색한 결과(가상)를 반영한다. 구체적으로, 검색을 통해 발견된 유용한 라이브러리/코드 스니펫의 이름, 간략한 설명, 그리고 이를 온유 시스템에 통합하기 위한 설치 계획(예: pip install [package_name], 특정 파일 다운로드 및 경로 지정 등)을 500자 내외로 추가하여 재작성한다. 기존 내용은 유지하되, 검색 결과를 바탕으로 보강하는 형식으로 작성한다.",
+          "depends_on": [
+            "b10bb70a"
+          ],
+          "status": "failed",
+          "result": "실행 불가 (engine/client 미주입)",
+          "created_at": "2026-03-20T18:19:49.826277"
+        }
+      ],
+      "snapshot": {},
+      "created_at": "2026-03-20T18:19:49.826283",
+      "updated_at": "2026-03-20T18:21:10.979419"
+    },
+    {
+      "id": "a8daafd5",
+      "goal": "토큰소비 최소화하며, 온유 시스템에 부족한 부분 자료 생성 (300자 내), 생성된 기준으로 Github 검색 하여 필요 파일 설치 계획 포함 재수정(500자 내외) 파일형식 md파일로 생성 후 보고.",
+      "status": "aborted",
+      "tasks": [
+        {
+          "id": "d9e369fe",
+          "desc": "온유 시스템에 부족한 부분 자료를 생성하고, Github 검색 계획을 포함한 초기 md 파일 생성",
+          "type": "create",
+          "target": "docs/onew_system_gaps_and_search_plan.md",
+          "issue": "온유 시스템의 현재 상태를 기반으로 부족한 부분을 300자 내외로 요약하고, 이를 보완하기 위한 Github 검색 키워드 및 예상되는 필요 파일/라이브러리 설치 계획을 500자 내외로 포함하는 마크다운 파일 생성. 파일 내용은 다음과 같은 구조를 가질 것:\n\n# 온유 시스템 개선을 위한 자료 생성 및 Github 검색 계획\n\n## 1. 현재 온유 시스템의 부족한 부분 (300자 내외)\n\n- (여기에 부족한 부분 요약)\n\n## 2. Github 검색 및 설치 계획 (500자 내외)\n\n- **검색 키워드:** (예: 'python code generation', 'llm agent framework', 'tdd python template')\n- **예상 필요 파일/라이브러리:** (예: 'pytest-mock', 'black', 'isort', 'langchain', 'autogen')\n- **설치 계획:** (예: 'pip install pytest-mock black isort', 'git clone https://github.com/...')",
+          "depends_on": [],
+          "status": "failed",
+          "result": "문법 오류: unterminated triple-quoted string literal (detected at line 26) (<unknown>, line 21)",
+          "created_at": "2026-03-20T18:15:50.468866"
+        }
+      ],
+      "snapshot": {},
+      "created_at": "2026-03-20T18:15:50.468877",
+      "updated_at": "2026-03-20T18:16:56.597298"
+    },
+    {
+      "id": "b2a46fd8",
+      "goal": "토큰소비 최소화하며, 온유 시스템에 부족한 부분 자료 생성 (300자 내), 생성된 기준으로 Github 검색 하여 필요 파일 설치 계획 포함 재수정(500자 내외) 파일형식 md파일로 생성 후 보고.",
+      "status": "aborted",
+      "tasks": [
+        {
+          "id": "d6351c96",
+          "desc": "온유 시스템에 부족한 부분 자료 생성 (300자 내) 및 Github 검색을 위한 초기 자료 수집",
+          "type": "create",
+          "target": "onew_system_gaps_and_search_plan.md",
+          "issue": "온유 시스템의 현재 상태를 기반으로 부족하다고 판단되는 부분(예: 테스트 커버리지, 문서화, 특정 유틸리티 함수 부재 등)을 300자 내외로 작성하고, 이를 보완하기 위한 Github 검색 키워드 및 예상되는 필요 파일(라이브러리, 코드 스니펫 등) 목록을 포함합니다. 이 파일은 이후 수정될 예정이므로 초기 초안으로 작성합니다.",
+          "depends_on": [],
+          "status": "done",
+          "result": "생성 완료: onew_system_gaps_and_search_plan.md (5072자)",
+          "created_at": "2026-03-20T18:12:57.554388"
+        },
+        {
+          "id": "5babafdd",
+          "desc": "생성된 기준으로 Github 검색 하여 필요 파일 설치 계획 포함 재수정(500자 내외) 파일형식 md파일로 생성 후 보고",
+          "type": "modify",
+          "target": "onew_system_gaps_and_search_plan.md",
+          "issue": "이전 태스크에서 생성된 'onew_system_gaps_and_search_plan.md' 파일을 수정합니다. 초기 자료를 바탕으로 Github에서 검색을 수행했다고 가정하고, 검색 결과에서 얻은 정보를 반영하여 부족한 부분을 보완하기 위한 구체적인 파일 설치 계획(예: pip install [library], 특정 GitHub 레포지토리 클론 및 파일 복사 등)을 500자 내외로 상세하게 작성합니다. 이 계획은 온유 시스템에 통합될 파일의 이름과 목적을 명시해야 합니다.",
+          "depends_on": [
+            "d6351c96"
+          ],
+          "status": "failed",
+          "result": "실행 불가 (engine/client 미주입)",
+          "created_at": "2026-03-20T18:12:57.554417"
+        }
+      ],
+      "snapshot": {},
+      "created_at": "2026-03-20T18:12:57.554436",
+      "updated_at": "2026-03-20T18:14:14.270293"
+    },
+    {
+      "id": "3e291e5f",
+      "goal": "토큰소비 최소화하며, 온유 시스템에 부족한 부분 자료 생성 (300자 내), 생성된 기준으로 Github 검색 하여 필요 파일 설치 계획 포함 재수정(500자 내외) 파일형식 md파일로 생성 후 보고.",
+      "status": "aborted",
+      "tasks": [
+        {
+          "id": "36424d46",
+          "desc": "온유 시스템에 부족한 부분 자료 생성 (300자 내) 및 Github 검색을 위한 초기 자료 수집",
+          "type": "create",
+          "target": "docs/onew_system_gaps_and_search_plan.md",
+          "issue": "온유 시스템의 현재 기능과 목표를 기반으로 부족하다고 판단되는 영역을 300자 내외로 요약하고, 이 부족한 부분을 채우기 위해 Github에서 어떤 종류의 라이브러리/프레임워크/코드 스니펫을 검색할지 구체적인 검색 키워드와 예상되는 파일 설치 계획을 500자 내외로 포함하여 작성합니다. 이 문서는 향후 시스템 개선의 방향성을 제시합니다.",
+          "depends_on": [],
+          "status": "failed",
+          "result": "예외: [Errno 2] No such file or directory: 'C:\\\\Users\\\\User\\\\Documents\\\\Obsidian Vault\\\\SYSTEM\\\\docs/onew_system_gaps_and_search_plan.md.tmp'",
+          "created_at": "2026-03-20T18:06:15.852049"
+        },
+        {
+          "id": "732da32d",
+          "desc": "생성된 자료를 바탕으로 Github 검색 및 필요 파일 설치 계획 재수정 (500자 내외) 및 보고서 생성",
+          "type": "modify",
+          "target": "docs/onew_system_gaps_and_search_plan.md",
+          "issue": "이전 태스크에서 생성된 'onew_system_gaps_and_search_plan.md' 파일을 수정하여, 초기 자료 수집 내용을 바탕으로 Github 검색을 통해 얻을 수 있는 구체적인 라이브러리/프레임워크/코드 스니펫의 이름과 그 설치 계획(예: pip install library_name, git clone repo_url 등)을 500자 내외로 상세하게 기술합니다. 이 보고서는 시스템 개선을 위한 실제적인 다음 단계를 명확히 제시해야 합니다.",
+          "depends_on": [
+            "36424d46"
+          ],
+          "status": "skipped",
+          "result": "선행 태스크(['36424d46']) 실패로 건너뜀",
+          "created_at": "2026-03-20T18:06:15.852071"
+        }
+      ],
+      "snapshot": {},
+      "created_at": "2026-03-20T18:06:15.852086",
+      "updated_at": "2026-03-20T18:08:01.976937"
+    },
+    {
+      "id": "208b25b8",
+      "goal": "onew_math_utils4.py 파일과 square_number(n) 함수를 생성하고, test_onew_math_utils4.py 테스트 파일도 함께 만들어라",
+      "status": "done",
+      "tasks": [
+        {
+          "id": "35161f25",
+          "desc": "onew_math_utils4.py 파일 생성",
+          "type": "create",
+          "target": "onew_math_utils4.py",
+          "issue": "onew_math_utils4.py 파일을 생성하고, square_number(n) 함수를 포함합니다. 이 함수는 입력 n의 제곱을 반환합니다.",
+          "depends_on": [],
+          "status": "done",
+          "result": "생성 완료: onew_math_utils4.py (777자)",
+          "created_at": "2026-03-20T17:45:19.933805"
+        },
+        {
+          "id": "e6f7b1f1",
+          "desc": "test_onew_math_utils4.py 파일 생성",
+          "type": "create",
+          "target": "test_onew_math_utils4.py",
+          "issue": "test_onew_math_utils4.py 파일을 생성하고, onew_math_utils4.py의 square_number 함수를 테스트하는 test_square_number 함수를 포함합니다. 양수, 음수, 0에 대한 테스트 케이스를 포함합니다.",
+          "depends_on": [
+            "35161f25"
+          ],
+          "status": "done",
+          "result": "생성 완료: test_onew_math_utils4.py (2065자)",
+          "created_at": "2026-03-20T17:45:19.933839"
+        },
+        {
+          "id": "8d77a9c1",
+          "desc": "onew_math_utils4.py 파일의 square_number 함수 기능 검증",
+          "type": "verify",
+          "target": "test_onew_math_utils4.py",
+          "issue": "[TDD] onew_math_utils4.py 변경 검증",
+          "depends_on": [
+            "e6f7b1f1"
+          ],
+          "status": "done",
+          "result": ".                                                                        [100%]\n1 passed in 0.02s",
+          "created_at": "2026-03-20T17:45:19.933854"
+        }
+      ],
+      "snapshot": {},
+      "created_at": "2026-03-20T17:45:19.933997",
+      "updated_at": "2026-03-20T17:46:50.838276"
+    },
+    {
+      "id": "30e55c05",
+      "goal": "onew_math_utils4.py 파일과 square_number(n) 함수를 생성하고, test_onew_math_utils4.py 테스트 파일도 함께 만들어라",
+      "status": "aborted",
+      "tasks": [
+        {
+          "id": "f98ec42b",
+          "desc": "onew_math_utils4.py 파일 생성",
+          "type": "create",
+          "target": "onew_math_utils4.py",
+          "issue": "onew_math_utils4.py 파일을 생성하고, square_number(n) 함수를 포함합니다. 이 함수는 입력 n의 제곱을 반환합니다.",
+          "depends_on": [],
+          "status": "done",
+          "result": "생성 완료: onew_math_utils4.py (887자)",
+          "created_at": "2026-03-20T17:42:35.603928"
+        },
+        {
+          "id": "fffe6403",
+          "desc": "[TDD] onew_math_utils4.py 변경 검증",
+          "type": "verify",
+          "target": "test_onew_math_utils4.py",
+          "issue": "onew_math_utils4.py 수정 완료 후 pytest 실행",
+          "depends_on": [
+            "f98ec42b"
+          ],
+          "status": "failed",
+          "result": "테스트 파일 없음: test_onew_math_utils4.py",
+          "created_at": "2026-03-20T17:42:35.603939"
+        },
+        {
+          "id": "ecda7bdd",
+          "desc": "test_onew_math_utils4.py 파일 생성",
+          "type": "create",
+          "target": "test_onew_math_utils4.py",
+          "issue": "test_onew_math_utils4.py 파일을 생성하고, onew_math_utils4.py의 square_number 함수를 테스트하는 test_square_number 함수를 포함합니다. 양수, 음수, 0에 대한 테스트 케이스를 포함합니다.",
+          "depends_on": [
+            "fffe6403"
+          ],
+          "status": "skipped",
+          "result": "선행 태스크(['fffe6403']) 실패로 건너뜀",
+          "created_at": "2026-03-20T17:42:35.603944"
+        },
+        {
+          "id": "78bd61b3",
+          "desc": "onew_math_utils4.py의 square_number 함수 기능 검증",
+          "type": "verify",
+          "target": "test_onew_math_utils4.py",
+          "issue": "[TDD] onew_math_utils4.py 변경 검증",
+          "depends_on": [
+            "ecda7bdd"
+          ],
+          "status": "skipped",
+          "result": "선행 태스크(['ecda7bdd']) 실패로 건너뜀",
+          "created_at": "2026-03-20T17:42:35.603952"
+        }
+      ],
+      "snapshot": {},
+      "created_at": "2026-03-20T17:42:35.603959",
+      "updated_at": "2026-03-20T17:43:53.868704"
+    },
+    {
+      "id": "1185da31",
+      "goal": "onew_math_utils4.py 파일과 square_number(n) 함수를 생성하고, test_onew_math_utils4.py 테스트 파일도 함께 만들어라",
+      "status": "aborted",
+      "tasks": [
+        {
+          "id": "3dd1214f",
+          "desc": "onew_math_utils4.py 파일 생성",
+          "type": "create",
+          "target": "onew_math_utils4.py",
+          "issue": "onew_math_utils4.py 파일을 생성하고, square_number(n) 함수를 포함합니다. 이 함수는 입력 n의 제곱을 반환합니다.",
+          "depends_on": [],
+          "status": "done",
+          "result": "생성 완료: onew_math_utils4.py (688자)",
+          "created_at": "2026-03-20T17:39:06.807072"
+        },
+        {
+          "id": "7f01e3ba",
+          "desc": "[TDD] onew_math_utils4.py 변경 검증",
+          "type": "verify",
+          "target": "test_onew_math_utils4.py",
+          "issue": "onew_math_utils4.py 수정 완료 후 pytest 실행",
+          "depends_on": [
+            "3dd1214f"
+          ],
+          "status": "failed",
+          "result": "테스트 파일 없음: test_onew_math_utils4.py",
+          "created_at": "2026-03-20T17:39:06.807086"
+        },
+        {
+          "id": "34980ad6",
+          "desc": "test_onew_math_utils4.py 파일 생성",
+          "type": "create",
+          "target": "test_onew_math_utils4.py",
+          "issue": "test_onew_math_utils4.py 파일을 생성하고, onew_math_utils4.py의 square_number(n) 함수를 테스트하는 test_square_number() 함수를 포함합니다. 양수, 음수, 0에 대한 테스트 케이스를 포함합니다.",
+          "depends_on": [
+            "7f01e3ba"
+          ],
+          "status": "skipped",
+          "result": "선행 태스크(['7f01e3ba']) 실패로 건너뜀",
+          "created_at": "2026-03-20T17:39:06.807092"
+        },
+        {
+          "id": "b32c71c8",
+          "desc": "onew_math_utils4.py 파일의 square_number 함수 기능 검증",
+          "type": "verify",
+          "target": "test_onew_math_utils4.py",
+          "issue": "onew_math_utils4.py 파일의 square_number 함수가 올바르게 동작하는지 test_onew_math_utils4.py를 실행하여 검증합니다.",
+          "depends_on": [
+            "34980ad6"
+          ],
+          "status": "skipped",
+          "result": "선행 태스크(['34980ad6']) 실패로 건너뜀",
+          "created_at": "2026-03-20T17:39:06.807098"
+        }
+      ],
+      "snapshot": {},
+      "created_at": "2026-03-20T17:39:06.807111",
+      "updated_at": "2026-03-20T17:40:13.095496"
+    },
+    {
+      "id": "8e0a9df0",
+      "goal": "onew_math_utils3.py 파일과 square_number(n) 함수를 생성해",
+      "status": "aborted",
+      "tasks": [
+        {
+          "id": "c495e2f1",
+          "desc": "onew_math_utils3.py 파일 생성",
+          "type": "create",
+          "target": "onew_math_utils3.py",
+          "issue": "onew_math_utils3.py 파일 생성. square_number(n) 함수를 포함하며, 입력 n의 제곱을 반환한다.",
+          "depends_on": [],
+          "status": "done",
+          "result": "생성 완료: onew_math_utils3.py (842자)",
+          "created_at": "2026-03-20T17:36:23.485256"
+        },
+        {
+          "id": "6fe8af43",
+          "desc": "[TDD] onew_math_utils3.py 변경 검증",
+          "type": "verify",
+          "target": "test_onew_math_utils3.py",
+          "issue": "onew_math_utils3.py 수정 완료 후 pytest 실행",
+          "depends_on": [
+            "c495e2f1"
+          ],
+          "status": "failed",
+          "result": "테스트 파일 없음: test_onew_math_utils3.py",
+          "created_at": "2026-03-20T17:36:23.485287"
+        },
+        {
+          "id": "94939123",
+          "desc": "onew_math_utils3.py 파일의 square_number 함수 검증을 위한 테스트 파일 생성",
+          "type": "create",
+          "target": "test_onew_math_utils3.py",
+          "issue": "test_onew_math_utils3.py 파일 생성. onew_math_utils3.py 모듈의 square_number(n) 함수를 테스트하는 test_square_number 함수를 포함한다.",
+          "depends_on": [
+            "6fe8af43"
+          ],
+          "status": "skipped",
+          "result": "선행 태스크(['6fe8af43']) 실패로 건너뜀",
+          "created_at": "2026-03-20T17:36:23.485300"
+        },
+        {
+          "id": "319b2483",
+          "desc": "onew_math_utils3.py 파일의 square_number 함수 테스트 실행",
+          "type": "verify",
+          "target": "test_onew_math_utils3.py",
+          "issue": "pytest를 사용하여 test_onew_math_utils3.py 파일의 테스트를 실행한다.",
+          "depends_on": [
+            "94939123"
+          ],
+          "status": "skipped",
+          "result": "선행 태스크(['94939123']) 실패로 건너뜀",
+          "created_at": "2026-03-20T17:36:23.485310"
+        }
+      ],
+      "snapshot": {},
+      "created_at": "2026-03-20T17:36:23.485331",
+      "updated_at": "2026-03-20T17:37:43.089025"
+    },
+    {
+      "id": "50fccb7b",
+      "goal": "onew_math_utils3.py 파일과 square_number(n) 함수를 생성해",
+      "status": "aborted",
+      "tasks": [
+        {
+          "id": "f61daa64",
+          "desc": "onew_math_utils3.py 파일 생성",
+          "type": "create",
+          "target": "onew_math_utils3.py",
+          "issue": "onew_math_utils3.py 파일 생성. square_number(n) 함수를 포함하며, 입력 n의 제곱을 반환한다.",
+          "depends_on": [],
+          "status": "done",
+          "result": "생성 완료: onew_math_utils3.py (562자)",
+          "created_at": "2026-03-20T17:35:23.118515"
+        },
+        {
+          "id": "01b5cc03",
+          "desc": "onew_math_utils3.py 파일의 square_number 함수 기능 검증",
+          "type": "verify",
+          "target": "test_onew_math_utils3.py",
+          "issue": "onew_math_utils3.py 파일의 square_number(n) 함수가 올바르게 동작하는지 테스트한다. 양수, 음수, 0에 대해 테스트 케이스를 포함한다.",
+          "depends_on": [
+            "f61daa64"
+          ],
+          "status": "failed",
+          "result": "테스트 파일 없음: test_onew_math_utils3.py",
+          "created_at": "2026-03-20T17:35:23.118533"
+        }
+      ],
+      "snapshot": {},
+      "created_at": "2026-03-20T17:35:23.118547",
+      "updated_at": "2026-03-20T17:36:43.084370"
+    },
+    {
+      "id": "859e660b",
+      "goal": "SYSTEM/onew_math_utils3.py 파일과 square_number(n) 함수를 생성해",
+      "status": "aborted",
+      "tasks": [
+        {
+          "id": "b97628df",
+          "desc": "SYSTEM/onew_math_utils3.py 파일 생성",
+          "type": "create",
+          "target": "SYSTEM/onew_math_utils3.py",
+          "issue": "SYSTEM/onew_math_utils3.py 파일을 생성하고, square_number(n) 함수를 포함합니다. 이 함수는 입력 n의 제곱을 반환해야 합니다.",
+          "depends_on": [],
+          "status": "failed",
+          "result": "이미 존재: SYSTEM/onew_math_utils3.py",
+          "created_at": "2026-03-20T17:32:41.760574"
+        },
+        {
+          "id": "0077a1f8",
+          "desc": "[TDD] SYSTEM/onew_math_utils3.py 변경 검증",
+          "type": "verify",
+          "target": "test_onew_math_utils3.py",
+          "issue": "SYSTEM/onew_math_utils3.py 수정 완료 후 pytest 실행",
+          "depends_on": [
+            "b97628df"
+          ],
+          "status": "skipped",
+          "result": "선행 태스크(['b97628df']) 실패로 건너뜀",
+          "created_at": "2026-03-20T17:32:41.760596"
+        },
+        {
+          "id": "876905a7",
+          "desc": "SYSTEM/onew_math_utils3.py 파일의 square_number 함수 검증을 위한 테스트 파일 생성",
+          "type": "create",
+          "target": "tests/test_onew_math_utils3.py",
+          "issue": "SYSTEM/onew_math_utils3.py의 square_number 함수를 검증하는 테스트 파일입니다. 양수, 음수, 0에 대한 테스트 케이스를 포함해야 합니다.",
+          "depends_on": [
+            "0077a1f8"
+          ],
+          "status": "skipped",
+          "result": "선행 태스크(['0077a1f8']) 실패로 건너뜀",
+          "created_at": "2026-03-20T17:32:41.760605"
+        },
+        {
+          "id": "bac503c2",
+          "desc": "[TDD] tests/test_onew_math_utils3.py 변경 검증",
+          "type": "verify",
+          "target": "test_onew_math_utils3.py",
+          "issue": "tests/test_onew_math_utils3.py 수정 완료 후 pytest 실행",
+          "depends_on": [
+            "876905a7"
+          ],
+          "status": "skipped",
+          "result": "선행 태스크(['876905a7']) 실패로 건너뜀",
+          "created_at": "2026-03-20T17:32:41.760614"
+        },
+        {
+          "id": "fadc4803",
+          "desc": "SYSTEM/onew_math_utils3.py 파일의 square_number 함수 검증",
+          "type": "verify",
+          "target": "tests/test_onew_math_utils3.py",
+          "issue": "SYSTEM/onew_math_utils3.py 파일의 square_number 함수가 올바르게 동작하는지 pytest를 통해 검증합니다.",
+          "depends_on": [
+            "bac503c2"
+          ],
+          "status": "skipped",
+          "result": "선행 태스크(['bac503c2']) 실패로 건너뜀",
+          "created_at": "2026-03-20T17:32:41.760620"
+        }
+      ],
+      "snapshot": {},
+      "created_at": "2026-03-20T17:32:41.760634",
+      "updated_at": "2026-03-20T17:33:26.308621"
+    },
+    {
+      "id": "23c66f9a",
+      "goal": "SYSTEM/onew_math_utils3.py 파일과 square_number(n) 함수를 생성해",
+      "status": "aborted",
+      "tasks": [
+        {
+          "id": "6ff53cc9",
+          "desc": "SYSTEM/onew_math_utils3.py 파일 생성",
+          "type": "create",
+          "target": "SYSTEM/onew_math_utils3.py",
+          "issue": "수학 관련 유틸리티 함수를 모아두는 파일입니다. square_number(n) 함수를 포함하여 숫자의 제곱을 계산하는 기능을 제공합니다.",
+          "depends_on": [],
+          "status": "failed",
+          "result": "예외: [Errno 2] No such file or directory: 'C:\\\\Users\\\\User\\\\Documents\\\\Obsidian Vault\\\\SYSTEM\\\\SYSTEM/onew_math_utils3.py.tmp'",
+          "created_at": "2026-03-20T17:27:47.595206"
+        },
+        {
+          "id": "797dc7ba",
+          "desc": "[TDD] SYSTEM/onew_math_utils3.py 변경 검증",
+          "type": "verify",
+          "target": "test_onew_math_utils3.py",
+          "issue": "SYSTEM/onew_math_utils3.py 수정 완료 후 pytest 실행",
+          "depends_on": [
+            "6ff53cc9"
+          ],
+          "status": "skipped",
+          "result": "선행 태스크(['6ff53cc9']) 실패로 건너뜀",
+          "created_at": "2026-03-20T17:27:47.595234"
+        },
+        {
+          "id": "fbe79f62",
+          "desc": "SYSTEM/onew_math_utils3.py 파일의 square_number 함수 기능 검증",
+          "type": "verify",
+          "target": "SYSTEM/test_onew_math_utils3.py",
+          "issue": "SYSTEM/onew_math_utils3.py 파일에 square_number(n) 함수가 올바르게 구현되었는지 테스트합니다. 양수, 음수, 0, 실수 등 다양한 입력에 대해 정확한 제곱값을 반환하는지 확인합니다.",
+          "depends_on": [
+            "797dc7ba"
+          ],
+          "status": "skipped",
+          "result": "선행 태스크(['797dc7ba']) 실패로 건너뜀",
+          "created_at": "2026-03-20T17:27:47.595245"
+        }
+      ],
+      "snapshot": {},
+      "created_at": "2026-03-20T17:27:47.595265",
+      "updated_at": "2026-03-20T17:28:38.101504"
+    }
+  ]
+}

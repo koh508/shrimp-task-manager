@@ -1,0 +1,65 @@
+[
+  {
+    "timestamp": "2026-03-20T18:14:14.273551",
+    "status": "aborted",
+    "goal": "토큰소비 최소화하며, 온유 시스템에 부족한 부분 자료 생성 (300자 내), 생성된 기준으로 Github 검색 하여 필요 파일 설치 계획 포함 재수정(500자 내외) 파일형식 md파일로 생성 후 보고.",
+    "files": [
+      "onew_system_gaps_and_search_plan.md"
+    ]
+  },
+  {
+    "timestamp": "2026-03-20T18:16:56.598268",
+    "status": "aborted",
+    "goal": "토큰소비 최소화하며, 온유 시스템에 부족한 부분 자료 생성 (300자 내), 생성된 기준으로 Github 검색 하여 필요 파일 설치 계획 포함 재수정(500자 내외) 파일형식 md파일로 생성 후 보고.",
+    "files": []
+  },
+  {
+    "timestamp": "2026-03-20T18:21:10.980450",
+    "status": "aborted",
+    "goal": "토큰소비 최소화하며, 온유 시스템에 부족한 부분 자료 생성 (300자 내), 생성된 기준으로 Github 검색 하여 필요 파일 설치 계획 포함 재수정(500자 내외) 파일형식 md파일로 생성 후 보고.",
+    "files": [
+      "docs/onew_system_gaps_and_search_plan.md"
+    ]
+  },
+  {
+    "timestamp": "2026-03-20T18:25:03.256912",
+    "status": "aborted",
+    "goal": "토큰소비 최소화하며, 온유 시스템에 부족한 부분 자료 생성 (300자 내), 생성된 기준으로 Github 검색 하여 필요 파일 설치 계획 포함 재수정(500자 내외) 파일형식 md파일로 생성 후 보고.",
+    "files": [
+      "docs/onew_system_gaps_and_search_plan.md"
+    ]
+  },
+  {
+    "timestamp": "2026-03-20T18:28:41.436903",
+    "status": "aborted",
+    "goal": "토큰소비 최소화하며, 온유 시스템에 부족한 부분 자료 생성 (300자 내), 생성된 기준으로 Github 검색 하여 필요 파일 설치 계획 포함 재수정(500자 내외) 파일형식 md파일로 생성 후 보고.",
+    "files": [
+      "onew_system_gaps_and_search_plan.md"
+    ]
+  },
+  {
+    "timestamp": "2026-03-20T18:31:56.326484",
+    "status": "aborted",
+    "goal": "토큰소비 최소화하며, 온유 시스템에 부족한 부분 자료 생성 (300자 내), 생성된 기준으로 Github 검색 하여 필요 파일 설치 계획 포함 재수정(500자 내외) 파일형식 md파일로 생성 후 보고.",
+    "files": [
+      "onew_system_gaps_and_search_plan.md"
+    ]
+  },
+  {
+    "timestamp": "2026-03-20T18:39:59.322894",
+    "status": "aborted",
+    "goal": "토큰소비 최소화하며, 온유 시스템에 부족한 부분 자료 생성 (300자 내), 생성된 기준으로 Github 검색 하여 필요 파일 설치 계획 포함 재수정(500자 내외) 파일형식 md파일로 생성 후 보고.",
+    "files": [
+      "onew_system_gaps_and_search_plan.md"
+    ]
+  },
+  {
+    "timestamp": "2026-03-20T18:42:23.365673",
+    "status": "done",
+    "goal": "토큰소비 최소화하며, 온유 시스템에 부족한 부분 자료 생성 (300자 내), 생성된 기준으로 Github 검색 하여 필요 파일 설치 계획 포함 재수정(500자 내외) 파일형식 md파일로 생성 후 보고.",
+    "files": [
+      "onew_system_gaps_initial_draft.md",
+      "onew_system_gaps_and_search_plan.md"
+    ]
+  }
+]
