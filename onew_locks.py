@@ -13,6 +13,12 @@ Strangler Fig Step 1:
 import json
 import os
 import threading
+import time
+
+# WinError 5 (Access Denied) 재시도 설정
+_RETRY_MAX     = 4      # 최대 재시도 횟수
+_RETRY_BASE    = 0.05   # 초기 대기 (초): 0.05 → 0.1 → 0.2 → 0.4
+_WINERROR_5    = 5      # Windows Access Denied errno
 
 # 파일 경로별 Lock 캐시
 _FILE_LOCKS: dict = {}
@@ -28,15 +34,18 @@ def _get_file_lock(filepath: str) -> threading.Lock:
 
 
 def _atomic_json_write(filepath: str, data: dict | list):
-    """JSON을 .tmp 파일에 쓰고 os.replace로 원자적으로 교체.
-    쓰는 도중 프로세스가 죽어도 기존 파일은 손상되지 않음."""
+    """JSON을 .tmp → os.replace로 원자적 교체.
+
+    Windows WinError 5 (Access Denied) 발생 시 지수 백오프 재시도:
+      1회차: 0.05s, 2회차: 0.10s, 3회차: 0.20s, 4회차: 0.40s
+    모든 재시도 소진 시 예외 전파.
+    """
     lock = _get_file_lock(filepath)
     with lock:
         tmp = filepath + ".tmp"
         try:
             with open(tmp, "w", encoding="utf-8") as f:
                 json.dump(data, f, ensure_ascii=False, indent=2)
-            os.replace(tmp, filepath)
         except Exception:
             try:
                 os.remove(tmp)
@@ -44,10 +53,44 @@ def _atomic_json_write(filepath: str, data: dict | list):
                 pass
             raise
 
+        # os.replace — WinError 5 재시도
+        last_exc = None
+        for attempt in range(_RETRY_MAX + 1):
+            try:
+                os.replace(tmp, filepath)
+                return  # 성공
+            except OSError as e:
+                if getattr(e, "winerror", None) == _WINERROR_5 and attempt < _RETRY_MAX:
+                    last_exc = e
+                    time.sleep(_RETRY_BASE * (2 ** attempt))
+                else:
+                    try:
+                        os.remove(tmp)
+                    except OSError:
+                        pass
+                    raise
+        # 여기까지 오면 모든 재시도 소진
+        try:
+            os.remove(tmp)
+        except OSError:
+            pass
+        raise last_exc  # type: ignore[misc]
+
 
 def _atomic_md_append(filepath: str, content: str):
-    """마크다운 파일에 내용을 안전하게 추가 (Lock 보호)."""
+    """마크다운 파일에 내용을 안전하게 추가 (Lock + WinError 5 재시도)."""
     lock = _get_file_lock(filepath)
     with lock:
-        with open(filepath, "a", encoding="utf-8") as f:
-            f.write(content)
+        last_exc = None
+        for attempt in range(_RETRY_MAX + 1):
+            try:
+                with open(filepath, "a", encoding="utf-8") as f:
+                    f.write(content)
+                return
+            except OSError as e:
+                if getattr(e, "winerror", None) == _WINERROR_5 and attempt < _RETRY_MAX:
+                    last_exc = e
+                    time.sleep(_RETRY_BASE * (2 ** attempt))
+                else:
+                    raise
+        raise last_exc  # type: ignore[misc]
