@@ -4295,7 +4295,9 @@ if __name__ == "__main__":
     
     # 🌟 빠른 시작 플래그: python obsidian_agent.py --fast
     # sync 완전 건너뜀 — 기존 DB 그대로 사용. 급할 때 사용.
-    FAST_MODE = len(sys.argv) > 1 and sys.argv[1] == "--fast"
+    if len(sys.argv) > 1 and sys.argv[1] == "--fast":
+        sys.argv.pop(1)  # --fast 플래그 제거 후 대화형 모드로 진입
+        print("⚡ [빠른 시작] sync 없이 기존 DB로 시작합니다.")
 
     # 🌟 [과금 방어 1단계] 수동 동기화 전용 명령어: gemini --sync
     if len(sys.argv) > 1 and sys.argv[1] == "--sync":
