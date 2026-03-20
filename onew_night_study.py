@@ -29,11 +29,12 @@ STUDY_FOLDERS = [
     # 기존
     'OCU', '약점노트', '대화요약', '클리핑', '현장학습',
     # 신규: 온유 AI/코딩 성장 학습
-    '작업일지',           # Claude Code가 기록한 개발 이력 → 코드 변경 맥락 학습
-    '온유_성장기록',      # 실패사례 + 코드교훈 → 자기 오류 패턴 학습
-    'SYSTEM/코드리뷰',    # Claude 코드 리뷰 결과 → 코드 품질 기준 학습
-    '클리핑/Anthropic',   # Anthropic 공홈에서 가져온 문서·연구·릴리즈노트
-    '클리핑/Google',      # Google Developers Blog에서 가져온 AI/개발 뉴스
+    '작업일지',               # Claude Code가 기록한 개발 이력 → 코드 변경 맥락 학습
+    '온유_성장기록',          # 실패사례 + 코드교훈 → 자기 오류 패턴 학습
+    'SYSTEM/코드리뷰',        # Claude 코드 리뷰 결과 → 코드 품질 기준 학습
+    '클리핑/Anthropic',       # Anthropic 공홈에서 가져온 문서·연구·릴리즈노트
+    '클리핑/Google',          # Google Developers Blog에서 가져온 AI/개발 뉴스
+    '야간학습/사용자요청',    # 대화 중 발화 → 학습 목표 포착 → 자율처리
 ]
 
 # Anthropic 공홈 정기 수집 URL 목록
