@@ -27,6 +27,7 @@ SYSTEM_DIR        = os.path.dirname(os.path.abspath(__file__))
 PLAN_QUEUE        = os.path.join(SYSTEM_DIR, "onew_code_plan_queue.json")
 INTERFACE_SUMMARY = os.path.join(SYSTEM_DIR, "interface_summary.json")
 REASONING_LOG     = os.path.join(SYSTEM_DIR, "onew_reasoning_log.json")
+PLANNER_CONTEXT   = os.path.join(SYSTEM_DIR, "onew_planner_context.json")  # 온유 대화 주입용
 MAX_TASKS         = 10
 PLAN_HISTORY      = 20
 
@@ -152,7 +153,7 @@ def _take_snapshot(plan):
     snapshot = {}
     for task in plan["tasks"]:
         if task["type"] == "modify":
-            path = os.path.join(SYSTEM_DIR, task["target"])
+            path = _resolve_target(task["target"])
             if os.path.exists(path):
                 try:
                     with open(path, encoding="utf-8") as f:
@@ -180,7 +181,7 @@ def _rollback_plan(plan):
 
     for task in plan["tasks"]:
         if task["type"] == "create" and task["status"] == "done":
-            path = os.path.join(SYSTEM_DIR, task["target"])
+            path = _resolve_target(task["target"])
             if os.path.exists(path) and task["target"] not in snapshot:
                 try:
                     os.remove(path)
@@ -229,23 +230,37 @@ def _build_context(task, all_tasks):
 # [v3-5] TDD 강제 — modify/create 직후 verify 자동 삽입
 # ==============================================================================
 def _ensure_tdd_order(tasks_raw):
-    """modify/create 직후 해당 파일의 verify 태스크가 없으면 자동 삽입."""
+    """modify 직후 테스트 파일이 존재하면 verify 자동 삽입.
+    .py 파일에만 적용. .md/.json 등 비-Python 파일은 절대 verify 삽입 안 함."""
     result = []
     for i, task in enumerate(tasks_raw):
         result.append(task)
         t_type = task.get("type", "modify")
         target = task.get("target", "")
-        if t_type not in ("modify", "create"):
+
+        # 확장자가 .py가 아니면 무조건 건너뜀 — 절대 verify 삽입 안 함
+        if not os.path.basename(target).endswith(".py"):
             continue
+
+        # create는 자동 삽입 안 함 (테스트 파일 미존재)
+        if t_type != "modify":
+            continue
+
         base          = os.path.basename(target)
         expected_test = f"test_{base}" if not base.startswith("test_") else base
-        # 다음 태스크가 이미 '이 파일'의 verify면 건너뜀 (type + target 둘 다 일치해야 함)
+
+        # 테스트 파일이 실제로 존재할 때만 삽입
+        test_path = _resolve_target(expected_test)
+        if not os.path.exists(test_path):
+            continue
+
+        # 다음 태스크가 이미 이 파일의 verify면 건너뜀
         next_t = tasks_raw[i + 1] if i + 1 < len(tasks_raw) else None
         if (next_t
                 and next_t.get("type") == "verify"
                 and next_t.get("target") == expected_test):
             continue
-        # verify 태스크 삽입
+
         result.append({
             "desc":       f"[TDD] {target} 변경 검증",
             "type":       "verify",
@@ -309,6 +324,72 @@ def _log_failure(plan, failed_task):
         pass
 
 
+def _save_planner_context(plan, touched_files, status):
+    """플랜 완료/중단 결과를 onew_planner_context.json에 저장 (온유 대화 주입용)."""
+    entry = {
+        "timestamp": datetime.now().isoformat(),
+        "status":    status,
+        "goal":      plan["goal"],
+        "files":     touched_files,
+    }
+    try:
+        records = []
+        if os.path.exists(PLANNER_CONTEXT):
+            with open(PLANNER_CONTEXT, encoding="utf-8") as f:
+                records = json.load(f)
+        records.append(entry)
+        records = records[-10:]  # 최근 10개만 유지
+        tmp = PLANNER_CONTEXT + ".tmp"
+        with open(tmp, "w", encoding="utf-8") as f:
+            json.dump(records, f, ensure_ascii=False, indent=2)
+        os.replace(tmp, PLANNER_CONTEXT)
+    except Exception:
+        pass
+
+
+def get_recent_context(max_entries=3):
+    """최근 플래너 실행 결과 + 현재 진행 중인 플랜 → 온유 대화 주입용 문자열."""
+    lines = []
+
+    # 1) 현재 대기/실행 중인 플랜 (큐에서 직접 읽기)
+    try:
+        data   = _load_queue()
+        active = [p for p in data.get("plans", [])
+                  if p["status"] in ("pending", "running", "waiting_approval")]
+        if active:
+            lines.append("[현재 진행 중인 플래너 작업]")
+            for p in active:
+                done_files = [t["target"] for t in p["tasks"]
+                              if t["status"] == "done" and t["type"] in ("create", "modify")]
+                pending_files = [t["target"] for t in p["tasks"]
+                                 if t["status"] in ("pending", "running") and t["type"] in ("create", "modify")]
+                lines.append(f"⏳ [{p['status']}] {p['goal'][:60]}")
+                if done_files:
+                    lines.append(f"   완료된 파일: {', '.join(done_files)}")
+                if pending_files:
+                    lines.append(f"   예정된 파일: {', '.join(pending_files)}")
+    except Exception:
+        pass
+
+    # 2) 최근 완료/중단된 플랜 이력
+    if os.path.exists(PLANNER_CONTEXT):
+        try:
+            with open(PLANNER_CONTEXT, encoding="utf-8") as f:
+                records = json.load(f)
+            if records:
+                lines.append("[최근 완료된 플래너 작업]")
+                for r in records[-max_entries:]:
+                    ts    = r["timestamp"][:16].replace("T", " ")
+                    icon  = "✅" if r["status"] == "done" else "🔴"
+                    files = ", ".join(r["files"]) if r["files"] else "없음"
+                    lines.append(f"{icon} {ts} — {r['goal'][:50]}")
+                    lines.append(f"   파일: {files}")
+        except Exception:
+            pass
+
+    return "\n".join(lines) if lines else ""
+
+
 def _load_failure_lessons(max_entries=5):
     """최근 실패 경험 → 프롬프트 주입용 문자열."""
     if not os.path.exists(REASONING_LOG):
@@ -357,9 +438,9 @@ def create_plan(goal, client=None):
 규칙:
 1. 태스크 최대 {MAX_TASKS}개, 각각 단일 파일 단위로 원자적 실행 가능
 2. type: "modify"(기존 파일 수정) / "create"(새 파일 생성) / "verify"(pytest 실행)
-3. [TDD 필수] modify 또는 create 직후에는 반드시 해당 파일을 검증하는 verify 태스크를 배치할 것
-   - verify가 없으면 다음 modify/create로 진행할 수 없음
-   - 패턴: modify A → verify test_A → modify B → verify test_B
+3. [TDD] .py 파일을 modify할 때만 verify 태스크 배치 (.md 등 비-Python 파일은 verify 불필요)
+   - 패턴: modify A.py → verify test_A.py → modify B.py → verify test_B.py
+   - .md, .json 등 비-Python 파일 create/modify 후에는 verify 태스크 추가하지 말 것
 4. modify의 issue: 위 함수 목록을 참고한 구체적 수정 요구사항 (어떤 함수를 어떻게)
 5. create의 issue: 파일 목적 + 포함할 핵심 함수/클래스 명세
 6. depends_on: 빈 배열 (순서로 의존성 표현)
@@ -394,7 +475,13 @@ JSON만 반환 (다른 텍스트 없이):
         _notify("⚠️ [코드플래너] 생성된 태스크 없음")
         return None
 
-    # [v3-5] TDD 강제: verify 누락 시 자동 삽입
+    # 비-Python 파일의 verify 태스크 제거 (LLM이 프롬프트 무시하고 생성하는 경우 방어)
+    tasks_raw = [
+        t for t in tasks_raw
+        if not (t.get("type") == "verify" and not t.get("target", "").endswith(".py"))
+    ]
+
+    # [v3-5] TDD 강제: verify 누락 시 자동 삽입 (.py만 해당)
     tasks_raw = _ensure_tdd_order(tasks_raw)
 
     tasks = [_new_task(
@@ -444,6 +531,16 @@ JSON만 반환 (다른 텍스트 없이):
 # ==============================================================================
 # [태스크 실행]
 # ==============================================================================
+def _resolve_target(target: str) -> str:
+    """target에서 SYSTEM/ 접두어 제거 후 절대경로 반환."""
+    t = target.replace("\\", "/")
+    for prefix in ("SYSTEM/", "system/"):
+        if t.startswith(prefix):
+            t = t[len(prefix):]
+            break
+    return os.path.join(SYSTEM_DIR, t)
+
+
 def _can_run(task, all_tasks):
     """의존 태스크가 모두 done인지 확인."""
     if not task["depends_on"]:
@@ -454,7 +551,7 @@ def _can_run(task, all_tasks):
 
 def _run_modify(task, engine, context=""):
     """기존 파일 수정 — apply_fix() 위임."""
-    target = os.path.join(SYSTEM_DIR, task["target"])
+    target = _resolve_target(task["target"])
     if not os.path.exists(target):
         return False, f"파일 없음: {task['target']}"
     issue = task["issue"]
@@ -466,9 +563,9 @@ def _run_modify(task, engine, context=""):
 
 def _run_create(task, client, context=""):
     """새 파일 생성 — Gemini가 전체 코드 생성."""
-    target_path = os.path.join(SYSTEM_DIR, task["target"])
+    target_path = _resolve_target(task["target"])
     if os.path.exists(target_path):
-        return False, f"이미 존재: {task['target']}"
+        return False, f"⚠️ 파일이 이미 존재합니다: {task['target']}\n→ 새로 만들기(create)가 아닌 수정(modify)으로 계획을 다시 세워주세요."
 
     ctx_section = f"\n\n선행 태스크 결과 (참고):\n{context}" if context else ""
     prompt = f"""온유 시스템용 Python 모듈을 작성하세요.
@@ -502,11 +599,15 @@ def _run_create(task, client, context=""):
     except Exception as e:
         return False, f"코드 생성 실패: {e}"
 
-    try:
-        ast.parse(code)
-    except SyntaxError as e:
-        return False, f"문법 오류: {e}"
+    # .py 파일만 문법 검사 — .md/.json 등은 완전 건너뜀
+    target_name = os.path.basename(task.get("target", ""))
+    if target_name.endswith(".py"):
+        try:
+            ast.parse(code)
+        except SyntaxError as e:
+            return False, f"문법 오류: {e}"
 
+    os.makedirs(os.path.dirname(target_path), exist_ok=True)
     tmp = target_path + ".tmp"
     with open(tmp, "w", encoding="utf-8") as f:
         f.write(code)
@@ -515,10 +616,15 @@ def _run_create(task, client, context=""):
 
 
 def _run_verify(task):
-    """pytest 실행."""
+    """pytest 실행. 비-Python 파일 대상이면 즉시 성공 반환."""
     target = task.get("target", "")
+
+    # .py 파일이 아닌 verify는 의미 없음 → 성공으로 처리
+    if target and not os.path.basename(target).endswith(".py"):
+        return True, f"비-Python 파일 verify 건너뜀 (대상: {target})"
+
     if target:
-        path = os.path.join(SYSTEM_DIR, target)
+        path = _resolve_target(target)
         if not os.path.exists(path):
             return False, f"테스트 파일 없음: {target}"
         cmd = [sys.executable, "-m", "pytest", path, "-q", "--tb=short"]
@@ -584,7 +690,9 @@ def execute_next(engine=None, client=None):
                     failed_task = next(t for t in tasks if t["status"] == "failed")
                     _log_failure(plan, failed_task)
 
-                    rolled = _rollback_plan(plan)
+                    rolled      = _rollback_plan(plan)
+                    done_files  = [t["target"] for t in tasks if t["status"] == "done" and t["type"] in ("create", "modify")]
+                    _save_planner_context(plan, done_files, "aborted")
                     _save_queue(data)
                     _notify(
                         f"🔴 [코드플래너] 플랜 중단 + 롤백\n"
@@ -596,10 +704,15 @@ def execute_next(engine=None, client=None):
                     plan["status"]     = "done"
                     plan["updated_at"] = datetime.now().isoformat()
                     _save_queue(data)
+                    # 생성/수정된 파일 목록
+                    touched   = [t["target"] for t in tasks if t["status"] == "done" and t["type"] in ("create", "modify")]
+                    file_list = "\n".join(f"  • {f}" for f in touched) if touched else "  (없음)"
+                    _save_planner_context(plan, touched, "done")
                     _notify(
                         f"✅ [코드플래너] 계획 완료\n"
                         f"목표: {plan['goal']}\n"
-                        f"성공 {done}개"
+                        f"성공 {done}개\n\n"
+                        f"생성/수정 파일:\n{file_list}"
                     )
             continue
 
@@ -654,6 +767,46 @@ def receive_direction(goal, client=None):
     if plan["status"] == "waiting_approval":
         return f"⚠️ 코어 파일 수정 계획 ({len(plan['tasks'])}개 태스크) — 승인 후 실행"
     return f"📋 계획 생성 완료 ({len(plan['tasks'])}개 태스크) — 순차 실행 시작"
+
+
+def get_log(max_plans=3):
+    """최근 플랜의 실패 상세 로그 반환 (텔레그램 '플래너로그' 명령용)."""
+    data  = _load_queue()
+    plans = data.get("plans", [])
+    if not plans:
+        return "플랜 기록 없음"
+
+    # 최근 플랜 중 실패/중단된 것 우선, 없으면 전체
+    targets = [p for p in plans if p["status"] in ("aborted", "failed")][-max_plans:]
+    if not targets:
+        targets = plans[-max_plans:]
+
+    lines = []
+    for p in targets:
+        lines.append(f"[{p['status']}] {p['goal'][:50]}")
+        for t in p["tasks"]:
+            if t["status"] in ("failed", "skipped"):
+                icon = "❌" if t["status"] == "failed" else "⏭"
+                lines.append(f"  {icon} [{t['type']}] {t['desc'][:40]}")
+                if t["result"]:
+                    lines.append(f"     → {t['result'][:120]}")
+        lines.append("")
+
+    # reasoning_log에서 추가 원인 정보
+    if os.path.exists(REASONING_LOG):
+        try:
+            with open(REASONING_LOG, encoding="utf-8") as f:
+                log = json.load(f)
+            if log:
+                last = log[-1]
+                lines.append(f"[마지막 오답 기록]")
+                lines.append(f"목표: {last['goal'][:50]}")
+                lines.append(f"실패: {last['failed_task_desc'][:50]}")
+                lines.append(f"원인: {last['error'][:200]}")
+        except Exception:
+            pass
+
+    return "\n".join(lines).strip() or "실패 기록 없음"
 
 
 def get_status():
