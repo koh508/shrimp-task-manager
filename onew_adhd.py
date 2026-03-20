@@ -7,7 +7,7 @@ onew_adhd.py — ADHD 보조 엔진
     feature 활성 조건: suggestions < MIN_SAMPLES OR response_rate >= PRUNE_THRESHOLD
 """
 
-import os, json, time
+import os, json, time, re, threading
 from datetime import datetime, date, timedelta
 from pathlib import Path
 
@@ -227,7 +227,125 @@ class StudyStreak:
 
 
 # ==============================================================================
-# 4. 도파민 메뉴 (Pull 전용 — 요청 시에만)
+# 4. 대화 기반 학습 목표 포착기
+# ==============================================================================
+# 학습 의도 키워드 패턴
+_LEARN_PATTERNS = [
+    r"(.{2,20})[가이]?\s*(궁금해|궁금하다|궁금한데)",
+    r"(.{2,20})[을를]?\s*(알고 싶어|알고싶어|배우고 싶어|배우고싶어)",
+    r"(.{2,20})[이가]?\s*(뭔지|뭔가|뭐야|뭐지|어떻게 돼|어떤 거야)",
+    r"(.{2,20})[을를]?\s*(공부해야|공부하고 싶어|이해하고 싶어)",
+    r"(.{2,20})[이가]?\s*(이해가 안 돼|이해가 안돼|모르겠어|헷갈려)",
+]
+
+NIGHT_STUDY_DIR   = os.path.join(os.path.dirname(SYSTEM_DIR), "야간학습")
+USER_REQUEST_DIR  = os.path.join(NIGHT_STUDY_DIR, "사용자요청")
+
+class LearningGoalCatcher:
+    """
+    대화 중 학습 의도 자동 감지 → 야간학습 파이프라인 투입.
+    ADHD 특성: 순간 떠오른 궁금증을 즉시 포착해 망각 방지.
+    """
+
+    def __init__(self, generate_fn=None):
+        self.generate_fn = generate_fn
+        os.makedirs(USER_REQUEST_DIR, exist_ok=True)
+
+    def detect_and_capture(self, query: str) -> str | None:
+        """
+        쿼리에서 학습 의도 감지.
+        감지 시 야간학습/사용자요청/ 에 저장 → 즉각 확인 메시지 반환.
+        미감지 시 None.
+        """
+        topic = self._extract_topic(query)
+        if not topic:
+            return None
+
+        # 이미 오늘 같은 주제 요청됐으면 중복 저장 방지
+        today = date.today().isoformat()
+        existing = [
+            f for f in os.listdir(USER_REQUEST_DIR)
+            if f.startswith(today) and topic[:5] in f
+        ]
+        if existing:
+            return None
+
+        # 야간학습 파일로 저장 (비동기)
+        threading.Thread(
+            target=self._save_goal,
+            args=(topic, query),
+            daemon=True
+        ).start()
+
+        return f"📌 [{topic}] 학습 목표로 등록했어. 오늘 밤 자율학습에서 자료 찾아볼게."
+
+    def _extract_topic(self, query: str) -> str | None:
+        """정규식으로 학습 주제 추출. 매칭 실패 시 None."""
+        for pattern in _LEARN_PATTERNS:
+            m = re.search(pattern, query)
+            if m:
+                topic = m.group(1).strip()
+                # 끝에 붙은 조사 제거 (이/가/을/를/은/는/의/에/로/으로)
+                topic = re.sub(r'(이|가|을|를|은|는|의|에|로|으로|과|와)$', '', topic).strip()
+                # 너무 짧거나 불용어면 제외
+                if len(topic) < 2 or topic in ("이게", "그게", "저게", "이거", "그거"):
+                    continue
+                return topic
+        return None
+
+    def _save_goal(self, topic: str, original_query: str):
+        """야간학습 폴더에 학습 목표 파일 저장."""
+        today    = date.today().isoformat()
+        now      = datetime.now().strftime("%H:%M")
+        safe     = re.sub(r'[\\/:*?"<>|]', '_', topic)
+        fpath    = os.path.join(USER_REQUEST_DIR, f"{today}_{safe}.md")
+
+        # Gemini로 학습 자료 검색 (generate_fn 있을 때)
+        resource_section = ""
+        if self.generate_fn:
+            try:
+                prompt = (
+                    f"'{topic}'에 대해 아래 형식으로 핵심 학습 자료를 정리하라. "
+                    f"200자 이내. 한국어.\n\n"
+                    f"## 핵심 개념\n- \n\n## 왜 중요한가\n- \n\n## 참고\n- "
+                )
+                resource_section = self.generate_fn(prompt)
+            except Exception:
+                resource_section = "(자료 검색 실패 — 직접 검색 필요)"
+
+        content = (
+            f"---\n"
+            f"tags: [사용자요청, 학습목표, {topic}]\n"
+            f"날짜: {today}\n"
+            f"시간: {now}\n"
+            f"출처: 대화 중 발화\n"
+            f"---\n\n"
+            f"# 📌 학습 목표: {topic}\n\n"
+            f"> 사용자 발화: \"{original_query[:100]}\"\n\n"
+            f"{resource_section}\n"
+        )
+
+        with open(fpath, 'w', encoding='utf-8') as f:
+            f.write(content)
+        print(f"  📚 [학습목표] '{topic}' → 야간학습 등록 완료")
+
+    def list_goals(self) -> str:
+        """등록된 학습 목표 목록 반환."""
+        files = sorted(Path(USER_REQUEST_DIR).glob("*.md"), reverse=True)[:10]
+        if not files:
+            return "등록된 학습 목표가 없습니다."
+        lines = ["## 📌 학습 목표 목록 (최근 10개)\n"]
+        for f in files:
+            stem = f.stem
+            parts = stem.split("_", 1)
+            date_str = parts[0] if parts else "?"
+            topic    = parts[1].replace("_", " ") if len(parts) > 1 else stem
+            lines.append(f"- [{date_str}] {topic}")
+        return "\n".join(lines)
+
+
+# ==============================================================================
+# 5. 도파민 메뉴 (Pull 전용 — 요청 시에만)
 # ==============================================================================
 DOPAMINE_MENU = {
     "애피타이저 (1~5분)": [
@@ -263,10 +381,11 @@ def get_dopamine_menu() -> str:
 # 5. 통합 엔진
 # ==============================================================================
 class ADHDEngine:
-    def __init__(self):
+    def __init__(self, generate_fn=None):
         self.tracker  = FeatureTracker()
         self.guard    = HyperfocusGuard()
         self.streak   = StudyStreak()
+        self.catcher  = LearningGoalCatcher(generate_fn=generate_fn)
 
     def on_message(self):
         """사용자 메시지마다 호출 — 과집중 타이밍 기록."""
@@ -294,21 +413,29 @@ class ADHDEngine:
         """공부 완료 기록 + 즉각 피드백."""
         return self.streak.record_study()
 
+    def detect_learning(self, query: str) -> str | None:
+        """대화에서 학습 의도 감지 → 야간학습 등록."""
+        return self.catcher.detect_and_capture(query)
+
+    def list_goals(self) -> str:
+        return self.catcher.list_goals()
+
     def status(self) -> str:
         return "\n\n".join([
             self.streak.get_status(),
             self.tracker.status_report(),
             f"과집중 상태: {'🔴 보호 중 (Push 차단)' if self.guard.is_hyperfocused() else '🟢 일반 모드'}",
+            self.catcher.list_goals(),
         ])
 
 
 # 싱글턴
 _engine: ADHDEngine | None = None
 
-def get_engine() -> ADHDEngine:
+def get_engine(generate_fn=None) -> ADHDEngine:
     global _engine
     if _engine is None:
-        _engine = ADHDEngine()
+        _engine = ADHDEngine(generate_fn=generate_fn)
     return _engine
 
 
@@ -338,3 +465,11 @@ def adhd_status() -> str:
 def dopamine_menu() -> str:
     """도파민 메뉴 (Pull 전용)."""
     return get_dopamine_menu()
+
+def detect_learning_goal(query: str) -> str | None:
+    """대화에서 학습 의도 감지 → 야간학습 등록. 감지 시 확인 메시지 반환."""
+    return get_engine().detect_learning(query)
+
+def list_learning_goals() -> str:
+    """등록된 학습 목표 목록."""
+    return get_engine().list_goals()
