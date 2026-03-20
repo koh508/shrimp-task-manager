@@ -13,7 +13,7 @@ SYSTEM_DIR  = os.path.dirname(os.path.abspath(__file__))
 BUDGET_FILE = os.path.join(SYSTEM_DIR, 'api_budget.json')
 
 # ── 기본 설정 (onew_config.json 있으면 오버라이드)
-DEFAULT_DAILY_LIMIT = 300  # 배경 작업 일일 호출 한도
+DEFAULT_DAILY_LIMIT = 1000  # 배경 작업 일일 호출 한도 (학습 파이프라인 보장)
 
 
 def _get_env(name):
@@ -107,18 +107,29 @@ def check_budget() -> bool:
 
 
 def get_status() -> str:
-    """현재 예산 현황 문자열 반환"""
-    data = _load()
+    """현재 예산 현황 문자열 반환 (비용 추정 포함)"""
+    data  = _load()
     count = data['count']
     limit = data['limit']
     pct   = int(count / limit * 100) if limit else 0
     bar   = '█' * (pct // 10) + '░' * (10 - pct // 10)
     status = "정상" if count < limit * 0.8 else ("주의" if count < limit else "초과")
+
+    # 비용 추정 (Gemini 2.5 Flash 기준)
+    # 배경 호출: 호출당 평균 2000 input + 1000 output 토큰 가정
+    # 입력 $0.075/1M, 출력 $0.30/1M
+    bg_cost   = count * (2000 * 0.075 + 1000 * 0.30) / 1_000_000
+    # 월간 추정 (오늘 배경 호출 기준 × 30일)
+    monthly   = bg_cost * 30
+
     return (
         f"📊 *API 예산 현황* ({data['date']})\n\n"
         f"`{bar}` {pct}%\n"
         f"배경 호출: {count} / {limit}회\n"
-        f"상태: {status}"
+        f"상태: {status}\n\n"
+        f"💰 오늘 배경 비용 추정: ${bg_cost:.4f}\n"
+        f"📅 월간 추정 (배경만): ${monthly:.2f}\n"
+        f"※ 대화 비용: 호출당 ~$0.0003 (500회/일 상한)"
     )
 
 
