@@ -1,0 +1,13 @@
+{
+  "_comment": "strict: true 함수는 인자 이름/순서/반환타입 변경 시 즉시 롤백. 수동 관리.",
+  "read_file":           {"strict": true,  "desc": "Vault 파일 읽기 핵심"},
+  "write_file":          {"strict": true,  "desc": "파일 쓰기 핵심"},
+  "edit_file":           {"strict": true,  "desc": "파일 수정 핵심"},
+  "search_vault":        {"strict": true,  "desc": "RAG 검색 핵심"},
+  "embed_single_file":   {"strict": true,  "desc": "LanceDB 임베딩"},
+  "apply_fix":           {"strict": true,  "desc": "자율코딩 핵심 루프"},
+  "start_watcher":       {"strict": true,  "desc": "백그라운드 워처"},
+  "notify_conversation": {"strict": true,  "desc": "대화 트리거 연동"},
+  "generate":            {"strict": false, "desc": "계약 생성 — 변경 허용"},
+  "verify":              {"strict": false, "desc": "계약 검증 — 변경 허용"}
+}

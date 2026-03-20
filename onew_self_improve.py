@@ -12,7 +12,7 @@ onew_self_improve.py — 온유 자율 코딩 엔진 v4.0
               → 자기진단 보고서 → 다음 날 proactive 반영 → 반복 성장
 """
 
-import os, sys, json, shutil, subprocess, threading, time, re, tempfile, ast
+import os, sys, json, shutil, subprocess, threading, time, re, tempfile, ast, difflib, hashlib
 from datetime import datetime, date
 from pathlib import Path
 
@@ -22,8 +22,12 @@ VAULT_PATH      = os.path.dirname(SYSTEM_DIR)
 ERROR_LOG       = os.path.join(SYSTEM_DIR, "온유_오류.md")
 IMPROVE_LOG     = os.path.join(SYSTEM_DIR, "onew_improve_log.json")
 ANALYSIS_LOG    = os.path.join(SYSTEM_DIR, "onew_fix_analysis.json")
+REASONING_LOG   = os.path.join(SYSTEM_DIR, "onew_reasoning_log.json")
 BACKUP_DIR      = os.path.join(SYSTEM_DIR, "code_backup")
 SELF_REVIEW_DIR = os.path.join(SYSTEM_DIR, "self_review")
+
+# ── 신뢰 점수 기준 ────────────────────────────────────────────────────────────
+HUMAN_APPROVAL_THRESHOLD = 60  # 60점 미만 → Human-in-the-loop 대기
 
 # ── 화이트리스트 ──────────────────────────────────────────────────────────────
 ALLOWED_FILES = [
@@ -41,6 +45,20 @@ TRIGGER_KEYWORDS = [
     "이상해", "버그", "오류", "틀렸어", "왜이래", "왜 이래",
     "고장", "안돼", "안 돼", "작동 안", "제대로 안", "망가",
 ]
+
+# ── aider Python 경로 (모듈 로드 시 1회 고정, 문제 ③ 해결) ───────────────────
+def _resolve_aider_python() -> list[str]:
+    """py -3.12 실행 커맨드를 초기화 시 탐지해 고정."""
+    for cmd in [["py", "-3.12"], ["python3.12"]]:
+        try:
+            r = subprocess.run(cmd + ["--version"], capture_output=True, timeout=5)
+            if r.returncode == 0:
+                return cmd
+        except Exception:
+            pass
+    return ["py", "-3.12"]  # 기본값 (실패 시 FileNotFoundError로 fallback 진입)
+
+AIDER_PYTHON_CMD = _resolve_aider_python()
 
 
 # ==============================================================================
@@ -99,6 +117,81 @@ class CircuitBreaker:
         key  = os.path.abspath(filepath)
         data.setdefault("failures", {}).pop(key, None)
         self._save(data)
+
+    # ── 해시 기반 실패 캐시 (무한 재시도 차단) ─────────────────────────────
+    def _fix_hash(self, fix: dict) -> str:
+        return hashlib.md5(
+            json.dumps(fix, sort_keys=True, default=str).encode()
+        ).hexdigest()
+
+    def is_fix_duplicate(self, fix: dict) -> bool:
+        """동일 fix JSON이 이전에 실패했으면 True."""
+        h    = self._fix_hash(fix)
+        data = self._load()
+        return h in data.get("failed_hashes", {})
+
+    def record_failed_hash(self, fix: dict):
+        """실패 fix 해시 기록 (최대 100개, 오래된 것 자동 삭제)."""
+        h      = self._fix_hash(fix)
+        data   = self._load()
+        hashes = data.setdefault("failed_hashes", {})
+        hashes[h] = datetime.now().isoformat()
+        if len(hashes) > 100:
+            for k in sorted(hashes, key=hashes.get)[:20]:
+                del hashes[k]
+        self._save(data)
+
+
+# ==============================================================================
+# [사전 분석] NeedAnalyzer — 수정 필요성 검토 (문제 ①②: API 호출 전 필터)
+# ==============================================================================
+class NeedAnalyzer:
+    """
+    수정이 실제로 필요한지 API 호출 없이 사전 분석.
+    95% 이상 불필요한 호출을 차단 → Gemini/aider 이중 호출 방지.
+    """
+
+    @staticmethod
+    def should_fix(issue: str, file_content: str, filepath: str) -> tuple[bool, str]:
+        """
+        True  = 수정 진행
+        False = 스킵 (사유 반환)
+        """
+        # 1. 이슈가 너무 짧거나 모호 (30자 미만)
+        if len(issue.strip()) < 30:
+            return False, f"이슈 너무 짧음 ({len(issue.strip())}자) — 구체성 부족"
+
+        # 2. 파일 최근 수정 (5분 이내) — 방금 수정됐을 가능성
+        try:
+            if time.time() - os.path.getmtime(filepath) < 300:
+                return False, "파일 최근 수정 (5분 이내) — 안정화 대기"
+        except Exception:
+            pass
+
+        # 3. 이슈 키워드와 파일 내용 매칭률 (30% 미만 → 무관한 이슈)
+        keywords = re.findall(r'[a-zA-Z_가-힣]{3,}', issue)
+        if keywords:
+            file_lower = file_content.lower()
+            matched = sum(1 for kw in keywords if kw.lower() in file_lower)
+            ratio = matched / len(keywords)
+            if ratio < 0.3:
+                return False, f"키워드 매칭 낮음 ({matched}/{len(keywords)}, {ratio:.0%})"
+
+        # 4. 동일 이슈 최근 성공 수정 이력 확인 (FixAnalyzer 연동)
+        if os.path.exists(ANALYSIS_LOG):
+            try:
+                with open(ANALYSIS_LOG, "r", encoding="utf-8") as f:
+                    records = json.load(f)
+                recent = records[-10:]
+                issue_short = issue[:80].lower()
+                for rec in recent:
+                    if (rec.get("live_applied") and
+                            rec.get("issue", "")[:80].lower() == issue_short):
+                        return False, "동일 이슈 최근 수정 완료 — 재수정 불필요"
+            except Exception:
+                pass
+
+        return True, "수정 필요"
 
 
 # ==============================================================================
@@ -254,6 +347,25 @@ class SandboxTester:
                 return False, "\n".join(details)
             details.append("PASS AST 정적 분석")
 
+            # 3-b.5 Ruff 린트 (import 누락·미정의 변수 — False Negative 보완)
+            if sandbox_path.endswith(".py"):
+                try:
+                    result = subprocess.run(
+                        [sys.executable, "-m", "ruff", "check", sandbox_path,
+                         "--select=F401,F821,E9",
+                         "--output-format=concise"],
+                        capture_output=True, text=True, timeout=10
+                    )
+                    if result.returncode != 0:
+                        err_out = (result.stdout or result.stderr)[:200]
+                        details.append(f"FAIL Ruff: {err_out}")
+                        return False, "\n".join(details)
+                    details.append("PASS Ruff (import/변수 검사)")
+                except FileNotFoundError:
+                    details.append("Ruff 스킵: 미설치 (pip install ruff)")
+                except Exception as e:
+                    details.append(f"Ruff 스킵 (예외): {e}")
+
             # 3-c. Dry-run: 새로 추가된 코드만 격리 실행 (timeout 3s)
             new_code = ""
             action = fix.get("action", "")
@@ -301,6 +413,11 @@ class SandboxTester:
             # SANDBOX_BACKEND = "pytest"  # 추후 "aider" | "docker" 로 교체 가능
             test_code = fix.get("test_code", "").strip()
             if test_code and sandbox_path.endswith(".py"):
+                # test_code 품질 검사 (MCP 기만 탐지)
+                quality_ok, quality_msg = _validate_test_code(test_code)
+                if not quality_ok:
+                    details.append(f"FAIL test_code 품질: {quality_msg}")
+                    return False, "\n".join(details)
                 pytest_path = None
                 try:
                     pytest_tmp = tempfile.NamedTemporaryFile(
@@ -433,6 +550,36 @@ class FixAnalyzer:
             lines.append(f"{icon} [{d['time']}] {d['action']}: {d['desc']}")
         return "\n".join(lines)
 
+    # ── Reasoning Log ─────────────────────────────────────────────────────────
+    def record_reasoning(self, issue: str, fix: dict, confidence: int,
+                         gates_passed: list, apply_method: str, result: str,
+                         human_approved: bool = False):
+        """
+        추론 로그 저장 — 왜 이 수정을 했는가.
+        result: "live_applied" | "rollback" | "pending_approval" | "fail"
+        """
+        try:
+            data = []
+            if os.path.exists(REASONING_LOG):
+                with open(REASONING_LOG, "r", encoding="utf-8") as f:
+                    data = json.load(f)
+        except Exception:
+            data = []
+
+        data.append({
+            "time":           datetime.now().strftime("%Y-%m-%d %H:%M"),
+            "issue":          issue[:200],
+            "action":         fix.get("action", "?"),
+            "desc":           fix.get("desc", ""),
+            "confidence":     confidence,
+            "gates_passed":   gates_passed,
+            "apply_method":   apply_method,
+            "human_approved": human_approved,
+            "result":         result,
+        })
+        with open(REASONING_LOG, "w", encoding="utf-8") as f:
+            json.dump(data[-200:], f, ensure_ascii=False, indent=2)
+
 
 # ==============================================================================
 # [개선 이력] ImprovementLog
@@ -512,6 +659,106 @@ class ImprovementLog:
 
 
 # ==============================================================================
+# [git 정리 에이전트] GitCleanupAgent — 문제 ⑥ 해결
+# ==============================================================================
+class GitCleanupAgent:
+    """
+    git working tree 상태를 정리.
+    - 문법 OK 수정 파일 → 커밋
+    - 문법 오류 파일 → backup 롤백 + git checkout
+    - apply_fix 성공/실패 후 자동 호출
+    """
+
+    @staticmethod
+    def run() -> str:
+        try:
+            r = subprocess.run(
+                ["git", "status", "--porcelain"],
+                capture_output=True, text=True, cwd=SYSTEM_DIR, timeout=10
+            )
+            lines = r.stdout.strip().splitlines()
+            if not lines:
+                return "git clean"
+
+            report = []
+            for line in lines:
+                status = line[:2].strip()
+                fname  = line[3:].strip()
+                fpath  = os.path.join(SYSTEM_DIR, fname)
+
+                if not os.path.exists(fpath):
+                    continue
+
+                if status in ("M", "A", "AM", "MM"):
+                    ok, err = SafetyGate.verify_syntax(fpath)
+                    if ok:
+                        subprocess.run(["git", "add", fname],
+                                       capture_output=True, cwd=SYSTEM_DIR)
+                        subprocess.run(
+                            ["git", "commit", "-m", f"auto[onew]: {fname}"],
+                            capture_output=True, cwd=SYSTEM_DIR
+                        )
+                        report.append(f"✅ 커밋: {fname}")
+                    else:
+                        SafetyGate.rollback(fpath)
+                        subprocess.run(["git", "checkout", "--", fname],
+                                       capture_output=True, cwd=SYSTEM_DIR)
+                        report.append(f"🔄 롤백+복구: {fname} (문법 오류)")
+                elif status == "??":
+                    # untracked — 온유 시스템 파일이면 add만 (커밋은 보류)
+                    if fname.endswith((".py", ".md", ".json")):
+                        subprocess.run(["git", "add", fname],
+                                       capture_output=True, cwd=SYSTEM_DIR)
+                        report.append(f"📎 tracked 등록: {fname}")
+
+            return "\n".join(report) if report else "정리 완료"
+        except Exception as e:
+            return f"git 정리 오류: {e}"
+
+
+# ==============================================================================
+# [Safe Point] — 메인 프로세스 유휴 상태 감지 후 코드 교체
+# ==============================================================================
+_PID_FILE = os.path.join(SYSTEM_DIR, "onew.pid")
+
+
+def _get_agent_pid() -> int | None:
+    """obsidian_agent.py 프로세스 PID 반환. 없으면 None."""
+    if not os.path.exists(_PID_FILE):
+        return None
+    try:
+        with open(_PID_FILE, "r") as f:
+            return int(f.read().strip())
+    except Exception:
+        return None
+
+
+def _wait_for_safe_point(timeout: int = 30) -> bool:
+    """
+    obsidian_agent 프로세스가 유휴(CPU < 5%)가 될 때까지 대기.
+
+    - psutil 없거나 PID 파일 없으면 즉시 통과 (하위 호환)
+    - timeout 초 초과 시에도 통과 (무한 대기 방지)
+    - 반환: True = 안전 시점 확인 / False = 타임아웃 후 강제 진행
+    """
+    try:
+        import psutil
+        pid = _get_agent_pid()
+        if pid is None:
+            return True
+        proc = psutil.Process(pid)
+        deadline = time.time() + timeout
+        while time.time() < deadline:
+            cpu = proc.cpu_percent(interval=1.0)
+            if cpu < 5.0:
+                return True
+            time.sleep(0.5)
+        return False  # 타임아웃 — 강제 진행
+    except Exception:
+        return True  # psutil 없거나 프로세스 종료 → 바로 진행
+
+
+# ==============================================================================
 # [공용 유틸]
 # ==============================================================================
 def _extract_file_structure(content: str, filepath: str) -> str:
@@ -525,6 +772,39 @@ def _extract_file_structure(content: str, filepath: str) -> str:
             indent = len(line) - len(line.lstrip())
             structure.append(f"L{i:04d} {'  '*(indent//4)}{s.split(':')[0]}")
     return f"[파일 구조]\n{chr(10).join(structure[:80])}\n\n[파일 앞부분]\n{content[:1500]}"
+
+
+def _validate_test_code(test_code: str) -> tuple[bool, str]:
+    """
+    test_code 품질 검사 — MCP 기만(return True 하드코딩) 탐지.
+    최소 조건: assert 1개 이상 + trivial assert 없음.
+    """
+    try:
+        tree = ast.parse(test_code)
+    except SyntaxError as e:
+        return False, f"test_code 문법 오류: {e}"
+
+    asserts = [n for n in ast.walk(tree) if isinstance(n, ast.Assert)]
+    if not asserts:
+        return False, "assert 없음 — 테스트 무효"
+
+    for a in asserts:
+        # assert True / assert 1 / assert "ok" 같은 trivial 탐지
+        if isinstance(a.test, ast.Constant) and bool(a.test.value):
+            return False, "assert True 하드코딩 탐지 — 의미 없는 테스트"
+        # assert func() 만 있고 비교 없는 경우 경고 (FAIL 아님, 로그만)
+
+    return True, "OK"
+
+
+def _make_diff(original: str, modified: str, filename: str) -> str:
+    """unified diff 생성 (aider --apply 에 전달용)."""
+    return "".join(difflib.unified_diff(
+        original.splitlines(keepends=True),
+        modified.splitlines(keepends=True),
+        fromfile=f"a/{filename}",
+        tofile=f"b/{filename}",
+    ))
 
 
 def _apply_action(content: str, fix: dict) -> tuple[bool, str]:
@@ -617,6 +897,113 @@ class SelfImproveEngine:
             pass
         return {"action": "skip", "desc": "파싱 실패", "test_code": ""}
 
+    # ── 신뢰 점수 계산 ───────────────────────────────────────────────────────
+    def _score_fix(self, fix: dict, sandbox_detail: str, filepath: str) -> tuple[int, list]:
+        """
+        수정안 신뢰 점수 (0~100) + 통과 게이트 목록 반환.
+        HUMAN_APPROVAL_THRESHOLD(60) 미만 → Human-in-the-loop.
+        """
+        score = 100
+        gates = ["PASS 문법", "PASS AST", "PASS Ruff", "PASS Dry-run", "PASS Pytest"]
+        passed_gates = [g for g in gates if g in sandbox_detail]
+
+        # 연속 실패 이력 감점
+        fail_count = self.breaker._load().get("failures", {}).get(
+            os.path.abspath(filepath), 0)
+        score -= fail_count * 15
+
+        # critical 파일 감점
+        cf_path = os.path.join(SYSTEM_DIR, "critical_functions.json")
+        if os.path.exists(cf_path):
+            try:
+                with open(cf_path, encoding="utf-8") as f:
+                    cf = json.load(f)
+                fname = os.path.basename(filepath)
+                if any(v.get("strict") for v in cf.values() if isinstance(v, dict)):
+                    score -= 10
+            except Exception:
+                pass
+
+        # 변경 규모 감점
+        change_size = len(fix.get("old", "") + fix.get("code", "") + fix.get("new", ""))
+        if change_size > 500:
+            score -= 20
+        elif change_size > 200:
+            score -= 10
+
+        # aider 실패 → 수동 폴백 사용 시 감점
+        if "수동폴백" in sandbox_detail or "aider 오류" in sandbox_detail:
+            score -= 10
+
+        # 통과 게이트 수 반영 (5개 미만 시 감점)
+        if len(passed_gates) < 3:
+            score -= (3 - len(passed_gates)) * 10
+
+        return max(0, min(100, score)), passed_gates
+
+    # ── aider 라이브 적용 (--apply diff, LLM 호출 없음) ─────────────────────
+    def _apply_via_aider(self, filepath: str, fix: dict,
+                         original_content: str) -> tuple[bool, str]:
+        """
+        샌드박스에서 검증된 diff를 aider --apply 로 적용.
+        LLM 2차 호출 없음 (문제 ② 해결).
+        untracked 파일 자동 git add (문제 ⑤ 해결).
+        AIDER_PYTHON_CMD 로 경로 고정 (문제 ③ 해결).
+        """
+        # 1. diff 생성 (sandbox와 동일한 _apply_action 결과)
+        ok, new_content = _apply_action(original_content, fix)
+        if not ok:
+            return False, "diff 생성 실패: 대상 코드 없음"
+        diff_text = _make_diff(original_content, new_content, os.path.basename(filepath))
+        if not diff_text.strip():
+            return False, "diff 없음 (변경 사항 없음)"
+
+        # 2. untracked 파일 git add (문제 ⑤)
+        try:
+            tr = subprocess.run(
+                ["git", "ls-files", "--error-unmatch", os.path.basename(filepath)],
+                capture_output=True, cwd=SYSTEM_DIR, timeout=5
+            )
+            if tr.returncode != 0:
+                subprocess.run(["git", "add", os.path.basename(filepath)],
+                               capture_output=True, cwd=SYSTEM_DIR, timeout=5)
+        except Exception:
+            pass  # git 없어도 계속 진행
+
+        # 3. diff 임시 파일 → aider --apply
+        diff_tmp = None
+        try:
+            diff_tmp = tempfile.NamedTemporaryFile(
+                suffix=".diff", delete=False, dir=SYSTEM_DIR, prefix="_aider_diff_"
+            )
+            diff_tmp.write(diff_text.encode("utf-8"))
+            diff_tmp.close()
+
+            result = subprocess.run(
+                AIDER_PYTHON_CMD + ["-m", "aider",
+                 "--apply", diff_tmp.name,
+                 "--yes",
+                 "--no-auto-commits",
+                 os.path.basename(filepath)],
+                capture_output=True, text=True, timeout=30,
+                cwd=SYSTEM_DIR,
+            )
+            if result.returncode == 0:
+                return True, "aider --apply 성공 (LLM 호출 없음)"
+            else:
+                err = (result.stderr or result.stdout)[:300]
+                return False, f"aider 오류: {err}"
+        except subprocess.TimeoutExpired:
+            return False, "aider 30s 타임아웃"
+        except FileNotFoundError:
+            return False, f"aider 미설치 또는 {AIDER_PYTHON_CMD} 없음"
+        except Exception as e:
+            return False, f"aider 호출 예외: {e}"
+        finally:
+            if diff_tmp and os.path.exists(diff_tmp.name):
+                try: os.remove(diff_tmp.name)
+                except: pass
+
     # ── 핵심 루프: 서킷 브레이커 → 샌드박스 → 분석 → 라이브 ────────────────
     def apply_fix(self, filepath: str, issue: str) -> str:
         with self._lock:
@@ -633,12 +1020,21 @@ class SelfImproveEngine:
             except Exception as e:
                 return f"❌ 읽기 실패: {e}"
 
+            # 0. 수정 필요성 사전 분석 (문제 ①② — API 호출 전 필터)
+            needed, reason = NeedAnalyzer.should_fix(issue, content, filepath)
+            if not needed:
+                return f"💡 분석 스킵: {reason}"
+
             # 1. 수정안 생성
             fix    = self._generate_fix(issue, content, filepath)
             action = fix.get("action", "skip")
             desc   = fix.get("desc", "")
             if action == "skip":
                 return f"💡 스킵: {desc}"
+
+            # 1-b. 해시 중복 차단 (동일 실패 fix 무한 재시도 방지)
+            if self.breaker.is_fix_duplicate(fix):
+                return "⛔ 동일 수정안 이전 실패 이력 — 재시도 차단 (해시 캐시)"
 
             # 2. 샌드박스 테스트 (라이브 불변)
             sandbox_ok, sandbox_detail = self.sandbox.run(filepath, fix)
@@ -648,8 +1044,8 @@ class SelfImproveEngine:
                                  live_applied=False)
 
             if not sandbox_ok:
-                # 실패 → 블랙리스트 카운터 +1
                 bl_msg = self.breaker.record_failure(filepath, sandbox_detail[:80])
+                self.breaker.record_failed_hash(fix)  # 해시 캐시 등록
                 self._notify(
                     f"⚠️ [자율코딩] 샌드박스 FAIL\n"
                     f"파일: {os.path.basename(filepath)}\n"
@@ -657,40 +1053,82 @@ class SelfImproveEngine:
                 )
                 return f"❌ 샌드박스 FAIL\n{sandbox_detail}\n{bl_msg}"
 
-            # 4. 라이브 적용 (백업 → 수정 → 문법 검사)
+            # 3-b. Confidence Score + Human-in-the-loop
+            confidence, gates_passed = self._score_fix(fix, sandbox_detail, filepath)
+            if confidence < HUMAN_APPROVAL_THRESHOLD:
+                self.analyzer.record_reasoning(
+                    issue, fix, confidence, gates_passed, "pending", "pending_approval")
+                self._notify(
+                    f"🤔 [Human-loop] 신뢰 점수 {confidence}/100\n"
+                    f"파일: {os.path.basename(filepath)}\n"
+                    f"수정: {desc}\n기준: {HUMAN_APPROVAL_THRESHOLD}점 미달"
+                )
+                return (f"⏸ 신뢰 점수 {confidence}/100 — Human 승인 대기\n"
+                        f"(기준: {HUMAN_APPROVAL_THRESHOLD}, 게이트: {gates_passed})")
+
+            # 4. Safe Point 대기 (메인 루프 유휴 상태 확인)
+            safe = _wait_for_safe_point(timeout=30)
+            if not safe:
+                self._notify(f"⚠️ [Safe Point] 30s 대기 후 강제 진행: {os.path.basename(filepath)}")
+
+            # 5. 라이브 적용 (백업 → aider → 원자적 수동폴백)
             backup_path = self.gate.backup(filepath)
             if backup_path.startswith("ERROR"):
                 return f"❌ 백업 실패: {backup_path}"
 
-            apply_ok, new_content = _apply_action(content, fix)
-            if not apply_ok:
-                return "❌ 라이브 적용 중 대상 코드 없음"
-
-            with open(filepath, "w", encoding="utf-8") as f:
-                f.write(new_content)
+            aider_ok, aider_detail = self._apply_via_aider(filepath, fix, content)
+            apply_method = "aider"
+            if not aider_ok:
+                # 원자적 수동 폴백 (os.replace — 중간 실패 시 파일 보호)
+                apply_ok, new_content = _apply_action(content, fix)
+                if not apply_ok:
+                    return f"❌ 라이브 적용 실패 (aider: {aider_detail})"
+                tmp_path = filepath + ".tmp"
+                with open(tmp_path, "w", encoding="utf-8") as f:
+                    f.write(new_content)
+                os.replace(tmp_path, filepath)  # 원자적 교체
+                apply_method = f"수동폴백 (aider: {aider_detail[:60]})"
 
             syntax_ok, err = self.gate.verify_syntax(filepath)
             if not syntax_ok:
                 rolled = self.gate.rollback(filepath)
                 self.log.record_rollback(filepath, err[:80])
                 bl_msg = self.breaker.record_failure(filepath, err[:80])
-                self.analyzer.record(issue, fix, True, f"라이브 문법 오류: {err[:80]}",
-                                     live_applied=False)
+                self.breaker.record_failed_hash(fix)
+                self.analyzer.record_reasoning(
+                    issue, fix, confidence, gates_passed, apply_method, "rollback")
                 self._notify(f"⚠️ [자율코딩] 라이브 문법 오류 → 롤백\n{err[:80]}\n{bl_msg}")
                 return f"❌ 라이브 문법 오류 → 롤백 {'성공' if rolled else '실패'}"
 
-            # 5. 성공 — 블랙리스트 초기화 + 분석 기록
+            # 5. 인터페이스 계약 검증
+            try:
+                from onew_contract import verify as _contract_verify
+                violations = _contract_verify(filepath)
+                if violations:
+                    rolled = self.gate.rollback(filepath)
+                    self.log.record_rollback(filepath, "인터페이스 계약 위반")
+                    self.breaker.record_failed_hash(fix)
+                    self.analyzer.record_reasoning(
+                        issue, fix, confidence, gates_passed, apply_method, "rollback")
+                    self._notify(f"⛔ [계약 위반] 롤백\n" + "\n".join(violations[:3]))
+                    return f"⛔ 인터페이스 계약 위반 → 롤백\n" + "\n".join(violations)
+            except ImportError:
+                pass
+
+            # 6. 성공 — 모든 기록
             self.breaker.record_success(filepath)
             self.log.record_modification(filepath, f"[{action}] {desc}", success=True)
             self.analyzer.record(issue, fix, True, sandbox_detail, live_applied=True)
+            self.analyzer.record_reasoning(
+                issue, fix, confidence, gates_passed, apply_method, "live_applied")
             self._notify(
-                f"✅ [자율코딩 v3] 적용 완료\n"
+                f"✅ [자율코딩 Lv5] 적용 완료\n"
                 f"파일: {os.path.basename(filepath)}\n"
                 f"액션: {action} / {desc}\n"
-                f"샌드박스: PASS → 라이브 적용\n"
+                f"신뢰: {confidence}/100 | 적용: {apply_method}\n"
                 f"누적: {self.analyzer.get_success_rate()}"
             )
-            return f"✅ [{action}] {desc}\n샌드박스 PASS → 라이브 적용"
+            return f"✅ [{action}] {desc}\n적용: {apply_method}"
 
     # ── 트리거 A: 오류 로그 감시 ──────────────────────────────────────────────
     def check_error_log(self) -> str:
@@ -898,6 +1336,8 @@ def start_watcher(check_interval: int = 300):
                 if now.hour == 23 and nightly_done != date.today():
                     nightly_done = date.today()
                     threading.Thread(target=engine.nightly_self_review, daemon=True).start()
+                # E: git 상태 정리 (매 사이클, 문제 ⑥)
+                threading.Thread(target=GitCleanupAgent.run, daemon=True).start()
             except:
                 pass
             time.sleep(check_interval)

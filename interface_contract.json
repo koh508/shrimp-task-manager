@@ -1,0 +1,2982 @@
+{
+  "obsidian_agent.py": {
+    "generated": "2026-03-20 14:26",
+    "functions": [
+      {
+        "file": "obsidian_agent.py",
+        "class": "_MetaCompat",
+        "name": "__init__",
+        "args": [
+          {
+            "name": "meta_dict",
+            "type": "unknown"
+          },
+          {
+            "name": "mem_obj",
+            "type": "unknown"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "obsidian_agent.py",
+        "class": "_MetaCompat",
+        "name": "get",
+        "args": [
+          {
+            "name": "key",
+            "type": "unknown"
+          },
+          {
+            "name": "default",
+            "type": "unknown"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "obsidian_agent.py",
+        "class": "_MetaCompat",
+        "name": "setdefault",
+        "args": [
+          {
+            "name": "key",
+            "type": "unknown"
+          },
+          {
+            "name": "default",
+            "type": "unknown"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "obsidian_agent.py",
+        "class": "_MetaCompat",
+        "name": "__len__",
+        "args": [],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "obsidian_agent.py",
+        "class": "_MetaCompat",
+        "name": "__contains__",
+        "args": [
+          {
+            "name": "key",
+            "type": "unknown"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "obsidian_agent.py",
+        "class": "OnewPureMemory",
+        "name": "__init__",
+        "args": [],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "obsidian_agent.py",
+        "class": "OnewPureMemory",
+        "name": "db",
+        "args": [],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "obsidian_agent.py",
+        "class": "OnewPureMemory",
+        "name": "_init_tables",
+        "args": [],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "obsidian_agent.py",
+        "class": "OnewPureMemory",
+        "name": "_load_db",
+        "args": [],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "obsidian_agent.py",
+        "class": "OnewPureMemory",
+        "name": "_migrate_from_json",
+        "args": [],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [
+          "json_write"
+        ],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "obsidian_agent.py",
+        "class": "OnewPureMemory",
+        "name": "_save_meta",
+        "args": [],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "obsidian_agent.py",
+        "class": "OnewPureMemory",
+        "name": "_save_db",
+        "args": [],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "obsidian_agent.py",
+        "class": "OnewPureMemory",
+        "name": "_ensure_loaded",
+        "args": [],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "obsidian_agent.py",
+        "class": "OnewPureMemory",
+        "name": "_reload_if_updated",
+        "args": [],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "obsidian_agent.py",
+        "class": "OnewPureMemory",
+        "name": "sync",
+        "args": [
+          {
+            "name": "silent",
+            "type": "unknown"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [
+          "file_write",
+          "json_write"
+        ],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "obsidian_agent.py",
+        "class": "OnewPureMemory",
+        "name": "embed_single_file",
+        "args": [
+          {
+            "name": "file_path",
+            "type": "str"
+          },
+          {
+            "name": "silent",
+            "type": "bool"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [
+          "json_write"
+        ],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "obsidian_agent.py",
+        "class": "OnewPureMemory",
+        "name": "search",
+        "args": [
+          {
+            "name": "query",
+            "type": "unknown"
+          },
+          {
+            "name": "k",
+            "type": "unknown"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "obsidian_agent.py",
+        "class": "OnewPureMemory",
+        "name": "recalculate_importance",
+        "args": [],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [
+          "json_write"
+        ],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "obsidian_agent.py",
+        "class": "AutoClipper",
+        "name": "__init__",
+        "args": [],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "obsidian_agent.py",
+        "class": "AutoClipper",
+        "name": "start",
+        "args": [],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "obsidian_agent.py",
+        "class": "AutoClipper",
+        "name": "stop",
+        "args": [],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "obsidian_agent.py",
+        "class": "AutoClipper",
+        "name": "_run",
+        "args": [],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [
+          "file_write"
+        ],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "obsidian_agent.py",
+        "class": "AutoClipper",
+        "name": "_update_list_md",
+        "args": [
+          {
+            "name": "today",
+            "type": "str"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [
+          "file_write"
+        ],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "obsidian_agent.py",
+        "class": "AutoClipper",
+        "name": "status",
+        "args": [],
+        "returns": "str",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "obsidian_agent.py",
+        "class": "OnewAgent",
+        "name": "__init__",
+        "args": [
+          {
+            "name": "location_mode",
+            "type": "str"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "obsidian_agent.py",
+        "class": "OnewAgent",
+        "name": "_save_history_to_vault",
+        "args": [],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [
+          "file_write"
+        ],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "obsidian_agent.py",
+        "class": "OnewAgent",
+        "name": "_save_session_summary",
+        "args": [
+          {
+            "name": "now",
+            "type": "datetime"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [
+          "file_write"
+        ],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "obsidian_agent.py",
+        "class": "OnewAgent",
+        "name": "_build_system_prompt",
+        "args": [],
+        "returns": "str",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "obsidian_agent.py",
+        "class": "OnewAgent",
+        "name": "_check_unfinished_tasks",
+        "args": [],
+        "returns": "str",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "obsidian_agent.py",
+        "class": "OnewAgent",
+        "name": "_new_chat_session",
+        "args": [
+          {
+            "name": "prev_summary",
+            "type": "str"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "obsidian_agent.py",
+        "class": "OnewAgent",
+        "name": "set_secret_mode",
+        "args": [
+          {
+            "name": "on",
+            "type": "bool"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [
+          "file_write",
+          "json_write"
+        ],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "obsidian_agent.py",
+        "class": "OnewAgent",
+        "name": "clear_secret_override",
+        "args": [],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [
+          "file_write",
+          "json_write"
+        ],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "obsidian_agent.py",
+        "class": "OnewAgent",
+        "name": "_classify_session",
+        "args": [
+          {
+            "name": "content",
+            "type": "str"
+          }
+        ],
+        "returns": "str",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "obsidian_agent.py",
+        "class": "OnewAgent",
+        "name": "_summarize_last_session",
+        "args": [],
+        "returns": "str",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "obsidian_agent.py",
+        "class": "OnewAgent",
+        "name": "_load_recent_summaries",
+        "args": [
+          {
+            "name": "days",
+            "type": "int"
+          }
+        ],
+        "returns": "str",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "obsidian_agent.py",
+        "class": "OnewAgent",
+        "name": "_load_entities",
+        "args": [],
+        "returns": "list",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "obsidian_agent.py",
+        "class": "OnewAgent",
+        "name": "_save_entities",
+        "args": [
+          {
+            "name": "entities",
+            "type": "list"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [
+          "json_write"
+        ],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "obsidian_agent.py",
+        "class": "OnewAgent",
+        "name": "_extract_entities",
+        "args": [
+          {
+            "name": "query",
+            "type": "str"
+          },
+          {
+            "name": "answer",
+            "type": "str"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "obsidian_agent.py",
+        "class": "OnewAgent",
+        "name": "_reset_chat_if_needed",
+        "args": [],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "obsidian_agent.py",
+        "class": "OnewAgent",
+        "name": "ask",
+        "args": [
+          {
+            "name": "query",
+            "type": "unknown"
+          },
+          {
+            "name": "silent_search",
+            "type": "unknown"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "obsidian_agent.py",
+        "class": "WakeWordListener",
+        "name": "__init__",
+        "args": [],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "obsidian_agent.py",
+        "class": "WakeWordListener",
+        "name": "start",
+        "args": [],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "obsidian_agent.py",
+        "class": "WakeWordListener",
+        "name": "stop",
+        "args": [],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "obsidian_agent.py",
+        "class": "WakeWordListener",
+        "name": "is_triggered",
+        "args": [],
+        "returns": "bool",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "obsidian_agent.py",
+        "class": "WakeWordListener",
+        "name": "_run",
+        "args": [],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "obsidian_agent.py",
+        "class": "_Extractor",
+        "name": "__init__",
+        "args": [],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "obsidian_agent.py",
+        "class": "_Extractor",
+        "name": "handle_starttag",
+        "args": [
+          {
+            "name": "tag",
+            "type": "unknown"
+          },
+          {
+            "name": "attrs",
+            "type": "unknown"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "obsidian_agent.py",
+        "class": "_Extractor",
+        "name": "handle_endtag",
+        "args": [
+          {
+            "name": "tag",
+            "type": "unknown"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "obsidian_agent.py",
+        "class": "_Extractor",
+        "name": "handle_data",
+        "args": [
+          {
+            "name": "data",
+            "type": "unknown"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "obsidian_agent.py",
+        "class": null,
+        "name": "_get_file_lock",
+        "args": [
+          {
+            "name": "filepath",
+            "type": "str"
+          }
+        ],
+        "returns": "threading.Lock",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "obsidian_agent.py",
+        "class": null,
+        "name": "_atomic_json_write",
+        "args": [
+          {
+            "name": "filepath",
+            "type": "str"
+          },
+          {
+            "name": "data",
+            "type": "dict | list"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [
+          "file_write",
+          "json_write"
+        ],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "obsidian_agent.py",
+        "class": null,
+        "name": "_atomic_md_append",
+        "args": [
+          {
+            "name": "filepath",
+            "type": "str"
+          },
+          {
+            "name": "content",
+            "type": "str"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [
+          "file_write"
+        ],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "obsidian_agent.py",
+        "class": null,
+        "name": "_check_single_instance",
+        "args": [],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [
+          "file_write"
+        ],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "obsidian_agent.py",
+        "class": null,
+        "name": "_get_public_ip",
+        "args": [],
+        "returns": "str",
+        "is_async": false,
+        "side_effects": [
+          "network"
+        ],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "obsidian_agent.py",
+        "class": null,
+        "name": "_get_wifi_security",
+        "args": [],
+        "returns": "str",
+        "is_async": false,
+        "side_effects": [
+          "subprocess"
+        ],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "obsidian_agent.py",
+        "class": null,
+        "name": "detect_location_mode",
+        "args": [],
+        "returns": "str",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "obsidian_agent.py",
+        "class": null,
+        "name": "cosine_similarity",
+        "args": [
+          {
+            "name": "v1",
+            "type": "unknown"
+          },
+          {
+            "name": "v2",
+            "type": "unknown"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "obsidian_agent.py",
+        "class": null,
+        "name": "_save_mistake",
+        "args": [
+          {
+            "name": "question",
+            "type": "str"
+          },
+          {
+            "name": "wrong_answer",
+            "type": "str"
+          },
+          {
+            "name": "correction",
+            "type": "str"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [
+          "file_write"
+        ],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "obsidian_agent.py",
+        "class": null,
+        "name": "_save_code_lesson",
+        "args": [
+          {
+            "name": "func_name",
+            "type": "str"
+          },
+          {
+            "name": "error",
+            "type": "str"
+          },
+          {
+            "name": "context",
+            "type": "str"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [
+          "file_write"
+        ],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "obsidian_agent.py",
+        "class": null,
+        "name": "_self_evaluate",
+        "args": [
+          {
+            "name": "query",
+            "type": "str"
+          },
+          {
+            "name": "answer",
+            "type": "str"
+          }
+        ],
+        "returns": "int",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "obsidian_agent.py",
+        "class": null,
+        "name": "_semantic_chunks",
+        "args": [
+          {
+            "name": "content",
+            "type": "str"
+          },
+          {
+            "name": "max_chunk",
+            "type": "int"
+          }
+        ],
+        "returns": "list[str]",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "obsidian_agent.py",
+        "class": null,
+        "name": "_compress_content",
+        "args": [
+          {
+            "name": "content",
+            "type": "str"
+          },
+          {
+            "name": "filename",
+            "type": "str"
+          }
+        ],
+        "returns": "str",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "obsidian_agent.py",
+        "class": null,
+        "name": "_score_importance",
+        "args": [
+          {
+            "name": "content",
+            "type": "str"
+          },
+          {
+            "name": "filename",
+            "type": "str"
+          }
+        ],
+        "returns": "str",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "obsidian_agent.py",
+        "class": null,
+        "name": "read_file",
+        "args": [
+          {
+            "name": "filepath",
+            "type": "str"
+          }
+        ],
+        "returns": "str",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "obsidian_agent.py",
+        "class": null,
+        "name": "create_folder",
+        "args": [
+          {
+            "name": "folderpath",
+            "type": "str"
+          }
+        ],
+        "returns": "str",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "obsidian_agent.py",
+        "class": null,
+        "name": "_backup_file",
+        "args": [
+          {
+            "name": "p",
+            "type": "Path"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "obsidian_agent.py",
+        "class": null,
+        "name": "_send_telegram_notify",
+        "args": [
+          {
+            "name": "msg",
+            "type": "str"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [
+          "network"
+        ],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "obsidian_agent.py",
+        "class": null,
+        "name": "_review_with_claude_bg",
+        "args": [
+          {
+            "name": "filepath",
+            "type": "str"
+          },
+          {
+            "name": "content",
+            "type": "str"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [
+          "file_write"
+        ],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "obsidian_agent.py",
+        "class": null,
+        "name": "write_file",
+        "args": [
+          {
+            "name": "filepath",
+            "type": "str"
+          },
+          {
+            "name": "content",
+            "type": "str"
+          }
+        ],
+        "returns": "str",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "obsidian_agent.py",
+        "class": null,
+        "name": "edit_file",
+        "args": [
+          {
+            "name": "filepath",
+            "type": "str"
+          },
+          {
+            "name": "old_str",
+            "type": "str"
+          },
+          {
+            "name": "new_str",
+            "type": "str"
+          }
+        ],
+        "returns": "str",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "obsidian_agent.py",
+        "class": null,
+        "name": "list_files",
+        "args": [
+          {
+            "name": "directory",
+            "type": "str"
+          }
+        ],
+        "returns": "str",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "obsidian_agent.py",
+        "class": null,
+        "name": "move_file",
+        "args": [
+          {
+            "name": "src",
+            "type": "str"
+          },
+          {
+            "name": "dst",
+            "type": "str"
+          }
+        ],
+        "returns": "str",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "obsidian_agent.py",
+        "class": null,
+        "name": "delete_file",
+        "args": [
+          {
+            "name": "filepath",
+            "type": "str"
+          }
+        ],
+        "returns": "str",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "obsidian_agent.py",
+        "class": null,
+        "name": "execute_script",
+        "args": [
+          {
+            "name": "filepath",
+            "type": "str"
+          }
+        ],
+        "returns": "str",
+        "is_async": false,
+        "side_effects": [
+          "subprocess"
+        ],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "obsidian_agent.py",
+        "class": null,
+        "name": "run_shell_command",
+        "args": [
+          {
+            "name": "cmd",
+            "type": "str"
+          }
+        ],
+        "returns": "str",
+        "is_async": false,
+        "side_effects": [
+          "subprocess"
+        ],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "obsidian_agent.py",
+        "class": null,
+        "name": "browse_web",
+        "args": [
+          {
+            "name": "url",
+            "type": "str"
+          },
+          {
+            "name": "extract",
+            "type": "str"
+          }
+        ],
+        "returns": "str",
+        "is_async": false,
+        "side_effects": [
+          "network"
+        ],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "obsidian_agent.py",
+        "class": null,
+        "name": "rollback_file",
+        "args": [
+          {
+            "name": "filepath",
+            "type": "str"
+          }
+        ],
+        "returns": "str",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "obsidian_agent.py",
+        "class": null,
+        "name": "backup_system",
+        "args": [],
+        "returns": "str",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "obsidian_agent.py",
+        "class": null,
+        "name": "code_safety_check",
+        "args": [],
+        "returns": "str",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "obsidian_agent.py",
+        "class": null,
+        "name": "save_code_checksums",
+        "args": [],
+        "returns": "str",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "obsidian_agent.py",
+        "class": null,
+        "name": "_get_search_count",
+        "args": [],
+        "returns": "tuple[dict, str, int]",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "obsidian_agent.py",
+        "class": null,
+        "name": "_get_today_usage",
+        "args": [
+          {
+            "name": "category",
+            "type": "str"
+          }
+        ],
+        "returns": "int",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "obsidian_agent.py",
+        "class": null,
+        "name": "_increment_usage",
+        "args": [
+          {
+            "name": "category",
+            "type": "str"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [
+          "file_write",
+          "json_write"
+        ],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "obsidian_agent.py",
+        "class": null,
+        "name": "_load_clip_config",
+        "args": [],
+        "returns": "dict",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "obsidian_agent.py",
+        "class": null,
+        "name": "_save_clip_config",
+        "args": [
+          {
+            "name": "cfg",
+            "type": "dict"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [
+          "file_write",
+          "json_write"
+        ],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "obsidian_agent.py",
+        "class": null,
+        "name": "_load_clip_index",
+        "args": [],
+        "returns": "dict",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "obsidian_agent.py",
+        "class": null,
+        "name": "_save_clip_index",
+        "args": [
+          {
+            "name": "index",
+            "type": "dict"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [
+          "file_write",
+          "json_write"
+        ],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "obsidian_agent.py",
+        "class": null,
+        "name": "_is_recently_clipped",
+        "args": [
+          {
+            "name": "topic",
+            "type": "str"
+          }
+        ],
+        "returns": "bool",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "obsidian_agent.py",
+        "class": null,
+        "name": "_today_clip_count",
+        "args": [],
+        "returns": "int",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "obsidian_agent.py",
+        "class": null,
+        "name": "_clip_command",
+        "args": [
+          {
+            "name": "q",
+            "type": "str"
+          },
+          {
+            "name": "clipper",
+            "type": "'AutoClipper'"
+          }
+        ],
+        "returns": "bool",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "obsidian_agent.py",
+        "class": null,
+        "name": "clip_status",
+        "args": [],
+        "returns": "str",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "obsidian_agent.py",
+        "class": null,
+        "name": "get_clip_topics",
+        "args": [],
+        "returns": "str",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "obsidian_agent.py",
+        "class": null,
+        "name": "set_clip_config",
+        "args": [
+          {
+            "name": "topics",
+            "type": "List[str]"
+          },
+          {
+            "name": "delay_seconds",
+            "type": "int"
+          },
+          {
+            "name": "max_clips",
+            "type": "int"
+          },
+          {
+            "name": "enabled",
+            "type": "bool"
+          }
+        ],
+        "returns": "str",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "obsidian_agent.py",
+        "class": null,
+        "name": "set_weekly_clip",
+        "args": [
+          {
+            "name": "topics",
+            "type": "List[str]"
+          },
+          {
+            "name": "action",
+            "type": "str"
+          }
+        ],
+        "returns": "str",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "obsidian_agent.py",
+        "class": null,
+        "name": "analyze_trend",
+        "args": [
+          {
+            "name": "query",
+            "type": "str"
+          }
+        ],
+        "returns": "str",
+        "is_async": false,
+        "side_effects": [
+          "file_write",
+          "json_write"
+        ],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "obsidian_agent.py",
+        "class": null,
+        "name": "_get_calendar_service",
+        "args": [],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [
+          "file_write",
+          "network"
+        ],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "obsidian_agent.py",
+        "class": null,
+        "name": "calendar_list",
+        "args": [
+          {
+            "name": "days",
+            "type": "int"
+          }
+        ],
+        "returns": "str",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "obsidian_agent.py",
+        "class": null,
+        "name": "_normalize_dt",
+        "args": [
+          {
+            "name": "dt",
+            "type": "str"
+          }
+        ],
+        "returns": "str",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "obsidian_agent.py",
+        "class": null,
+        "name": "calendar_add",
+        "args": [
+          {
+            "name": "title",
+            "type": "str"
+          },
+          {
+            "name": "start",
+            "type": "str"
+          },
+          {
+            "name": "end",
+            "type": "str"
+          },
+          {
+            "name": "description",
+            "type": "str"
+          }
+        ],
+        "returns": "str",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "obsidian_agent.py",
+        "class": null,
+        "name": "calendar_add_force",
+        "args": [
+          {
+            "name": "title",
+            "type": "str"
+          },
+          {
+            "name": "start",
+            "type": "str"
+          },
+          {
+            "name": "end",
+            "type": "str"
+          },
+          {
+            "name": "description",
+            "type": "str"
+          }
+        ],
+        "returns": "str",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "obsidian_agent.py",
+        "class": null,
+        "name": "calendar_update",
+        "args": [
+          {
+            "name": "event_id",
+            "type": "str"
+          },
+          {
+            "name": "title",
+            "type": "str"
+          },
+          {
+            "name": "start",
+            "type": "str"
+          },
+          {
+            "name": "end",
+            "type": "str"
+          },
+          {
+            "name": "description",
+            "type": "str"
+          }
+        ],
+        "returns": "str",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "obsidian_agent.py",
+        "class": null,
+        "name": "calendar_delete",
+        "args": [
+          {
+            "name": "event_id",
+            "type": "str"
+          }
+        ],
+        "returns": "str",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "obsidian_agent.py",
+        "class": null,
+        "name": "check_errors",
+        "args": [],
+        "returns": "str",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "obsidian_agent.py",
+        "class": null,
+        "name": "log_error_to_vault",
+        "args": [
+          {
+            "name": "context",
+            "type": "str"
+          },
+          {
+            "name": "error",
+            "type": "str"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [
+          "file_write"
+        ],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "obsidian_agent.py",
+        "class": null,
+        "name": "report_status",
+        "args": [],
+        "returns": "str",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "obsidian_agent.py",
+        "class": null,
+        "name": "search_vault",
+        "args": [
+          {
+            "name": "query",
+            "type": "str"
+          }
+        ],
+        "returns": "str",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "obsidian_agent.py",
+        "class": null,
+        "name": "set_secret_mode",
+        "args": [
+          {
+            "name": "on",
+            "type": "bool"
+          }
+        ],
+        "returns": "str",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "obsidian_agent.py",
+        "class": null,
+        "name": "get_secret_mode",
+        "args": [],
+        "returns": "str",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "obsidian_agent.py",
+        "class": null,
+        "name": "fetch_url_as_md",
+        "args": [
+          {
+            "name": "url",
+            "type": "str"
+          },
+          {
+            "name": "title",
+            "type": "str"
+          }
+        ],
+        "returns": "str",
+        "is_async": false,
+        "side_effects": [
+          "file_write",
+          "network"
+        ],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "obsidian_agent.py",
+        "class": null,
+        "name": "analyze_image",
+        "args": [
+          {
+            "name": "filepath",
+            "type": "str"
+          },
+          {
+            "name": "question",
+            "type": "str"
+          }
+        ],
+        "returns": "str",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "obsidian_agent.py",
+        "class": null,
+        "name": "_load_quiz_history",
+        "args": [],
+        "returns": "dict",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "obsidian_agent.py",
+        "class": null,
+        "name": "_save_quiz_history",
+        "args": [
+          {
+            "name": "h",
+            "type": "dict"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [
+          "json_write"
+        ],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "obsidian_agent.py",
+        "class": null,
+        "name": "_clean_latex",
+        "args": [
+          {
+            "name": "text",
+            "type": "str"
+          }
+        ],
+        "returns": "str",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "obsidian_agent.py",
+        "class": null,
+        "name": "_is_calc_heavy",
+        "args": [
+          {
+            "name": "question",
+            "type": "str"
+          },
+          {
+            "name": "answer",
+            "type": "str"
+          }
+        ],
+        "returns": "bool",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "obsidian_agent.py",
+        "class": null,
+        "name": "_question_hash",
+        "args": [
+          {
+            "name": "q_text",
+            "type": "str"
+          }
+        ],
+        "returns": "str",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "obsidian_agent.py",
+        "class": null,
+        "name": "_parse_questions_from_file",
+        "args": [
+          {
+            "name": "fpath",
+            "type": "str"
+          }
+        ],
+        "returns": "list[dict]",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "obsidian_agent.py",
+        "class": null,
+        "name": "quiz_me",
+        "args": [
+          {
+            "name": "category",
+            "type": "str"
+          },
+          {
+            "name": "count",
+            "type": "int"
+          },
+          {
+            "name": "exclude_calc",
+            "type": "bool"
+          }
+        ],
+        "returns": "str",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "obsidian_agent.py",
+        "class": null,
+        "name": "load_skills_metadata",
+        "args": [],
+        "returns": "str",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "obsidian_agent.py",
+        "class": null,
+        "name": "create_working_memory",
+        "args": [
+          {
+            "name": "task_name",
+            "type": "str"
+          }
+        ],
+        "returns": "str",
+        "is_async": false,
+        "side_effects": [
+          "file_write"
+        ],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "obsidian_agent.py",
+        "class": null,
+        "name": "speak",
+        "args": [
+          {
+            "name": "text",
+            "type": "str"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [
+          "subprocess"
+        ],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "obsidian_agent.py",
+        "class": null,
+        "name": "_get_whisper_model",
+        "args": [],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [
+          "global_state"
+        ],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "obsidian_agent.py",
+        "class": null,
+        "name": "_record_until_silence",
+        "args": [],
+        "returns": "'np.ndarray | None'",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "obsidian_agent.py",
+        "class": null,
+        "name": "voice_input",
+        "args": [],
+        "returns": "str",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "obsidian_agent.py",
+        "class": null,
+        "name": "_extract_mfcc",
+        "args": [
+          {
+            "name": "audio",
+            "type": "'np.ndarray'"
+          },
+          {
+            "name": "sr",
+            "type": "int"
+          }
+        ],
+        "returns": "'np.ndarray'",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "obsidian_agent.py",
+        "class": null,
+        "name": "_cosine_similarity",
+        "args": [
+          {
+            "name": "a",
+            "type": "'np.ndarray'"
+          },
+          {
+            "name": "b",
+            "type": "'np.ndarray'"
+          }
+        ],
+        "returns": "float",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "obsidian_agent.py",
+        "class": null,
+        "name": "enroll_voice",
+        "args": [
+          {
+            "name": "seconds",
+            "type": "int"
+          }
+        ],
+        "returns": "str",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "obsidian_agent.py",
+        "class": null,
+        "name": "verify_voice",
+        "args": [
+          {
+            "name": "audio",
+            "type": "'np.ndarray'"
+          },
+          {
+            "name": "threshold",
+            "type": "float"
+          }
+        ],
+        "returns": "bool",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "obsidian_agent.py",
+        "class": null,
+        "name": "_startup_briefing",
+        "args": [],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "obsidian_agent.py",
+        "class": null,
+        "name": "_send_telegram_notify",
+        "args": [
+          {
+            "name": "msg",
+            "type": "str"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [
+          "network"
+        ],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "obsidian_agent.py",
+        "class": null,
+        "name": "_auto_backup",
+        "args": [],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      }
+    ]
+  },
+  "onew_self_improve.py": {
+    "generated": "2026-03-20 14:26",
+    "functions": [
+      {
+        "file": "onew_self_improve.py",
+        "class": "CircuitBreaker",
+        "name": "_load",
+        "args": [],
+        "returns": "dict",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_self_improve.py",
+        "class": "CircuitBreaker",
+        "name": "_save",
+        "args": [
+          {
+            "name": "data",
+            "type": "dict"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [
+          "file_write",
+          "json_write"
+        ],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_self_improve.py",
+        "class": "CircuitBreaker",
+        "name": "is_blacklisted",
+        "args": [
+          {
+            "name": "filepath",
+            "type": "str"
+          }
+        ],
+        "returns": "tuple[bool, str]",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_self_improve.py",
+        "class": "CircuitBreaker",
+        "name": "record_failure",
+        "args": [
+          {
+            "name": "filepath",
+            "type": "str"
+          },
+          {
+            "name": "reason",
+            "type": "str"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_self_improve.py",
+        "class": "CircuitBreaker",
+        "name": "record_success",
+        "args": [
+          {
+            "name": "filepath",
+            "type": "str"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_self_improve.py",
+        "class": "NeedAnalyzer",
+        "name": "should_fix",
+        "args": [
+          {
+            "name": "issue",
+            "type": "str"
+          },
+          {
+            "name": "file_content",
+            "type": "str"
+          },
+          {
+            "name": "filepath",
+            "type": "str"
+          }
+        ],
+        "returns": "tuple[bool, str]",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_self_improve.py",
+        "class": "ASTChecker",
+        "name": "check",
+        "args": [
+          {
+            "name": "code",
+            "type": "str"
+          }
+        ],
+        "returns": "list[str]",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_self_improve.py",
+        "class": "SafetyGate",
+        "name": "backup",
+        "args": [
+          {
+            "name": "filepath",
+            "type": "str"
+          }
+        ],
+        "returns": "str",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_self_improve.py",
+        "class": "SafetyGate",
+        "name": "verify_syntax",
+        "args": [
+          {
+            "name": "filepath",
+            "type": "str"
+          }
+        ],
+        "returns": "tuple[bool, str]",
+        "is_async": false,
+        "side_effects": [
+          "subprocess"
+        ],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_self_improve.py",
+        "class": "SafetyGate",
+        "name": "rollback",
+        "args": [
+          {
+            "name": "filepath",
+            "type": "str"
+          }
+        ],
+        "returns": "bool",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_self_improve.py",
+        "class": "SafetyGate",
+        "name": "is_allowed",
+        "args": [
+          {
+            "name": "filepath",
+            "type": "str"
+          }
+        ],
+        "returns": "bool",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_self_improve.py",
+        "class": "SandboxTester",
+        "name": "run",
+        "args": [
+          {
+            "name": "filepath",
+            "type": "str"
+          },
+          {
+            "name": "fix",
+            "type": "dict"
+          }
+        ],
+        "returns": "tuple[bool, str]",
+        "is_async": false,
+        "side_effects": [
+          "file_write",
+          "subprocess"
+        ],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_self_improve.py",
+        "class": "FixAnalyzer",
+        "name": "_load",
+        "args": [],
+        "returns": "list",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_self_improve.py",
+        "class": "FixAnalyzer",
+        "name": "_save",
+        "args": [
+          {
+            "name": "data",
+            "type": "list"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [
+          "file_write",
+          "json_write"
+        ],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_self_improve.py",
+        "class": "FixAnalyzer",
+        "name": "record",
+        "args": [
+          {
+            "name": "issue",
+            "type": "str"
+          },
+          {
+            "name": "fix",
+            "type": "dict"
+          },
+          {
+            "name": "sandbox_ok",
+            "type": "bool"
+          },
+          {
+            "name": "sandbox_detail",
+            "type": "str"
+          },
+          {
+            "name": "live_applied",
+            "type": "bool"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_self_improve.py",
+        "class": "FixAnalyzer",
+        "name": "get_failure_patterns",
+        "args": [
+          {
+            "name": "n",
+            "type": "int"
+          }
+        ],
+        "returns": "str",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_self_improve.py",
+        "class": "FixAnalyzer",
+        "name": "get_success_rate",
+        "args": [],
+        "returns": "str",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_self_improve.py",
+        "class": "FixAnalyzer",
+        "name": "get_recent_summary",
+        "args": [
+          {
+            "name": "n",
+            "type": "int"
+          }
+        ],
+        "returns": "str",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_self_improve.py",
+        "class": "ImprovementLog",
+        "name": "_load",
+        "args": [],
+        "returns": "dict",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_self_improve.py",
+        "class": "ImprovementLog",
+        "name": "_save",
+        "args": [
+          {
+            "name": "data",
+            "type": "dict"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [
+          "file_write",
+          "json_write"
+        ],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_self_improve.py",
+        "class": "ImprovementLog",
+        "name": "today_key",
+        "args": [],
+        "returns": "str",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_self_improve.py",
+        "class": "ImprovementLog",
+        "name": "get_today",
+        "args": [],
+        "returns": "dict",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_self_improve.py",
+        "class": "ImprovementLog",
+        "name": "can_modify",
+        "args": [],
+        "returns": "bool",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_self_improve.py",
+        "class": "ImprovementLog",
+        "name": "record_modification",
+        "args": [
+          {
+            "name": "filepath",
+            "type": "str"
+          },
+          {
+            "name": "description",
+            "type": "str"
+          },
+          {
+            "name": "success",
+            "type": "bool"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_self_improve.py",
+        "class": "ImprovementLog",
+        "name": "record_rollback",
+        "args": [
+          {
+            "name": "filepath",
+            "type": "str"
+          },
+          {
+            "name": "reason",
+            "type": "str"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_self_improve.py",
+        "class": "ImprovementLog",
+        "name": "today_summary",
+        "args": [],
+        "returns": "str",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_self_improve.py",
+        "class": "ImprovementLog",
+        "name": "recent_history",
+        "args": [
+          {
+            "name": "days",
+            "type": "int"
+          }
+        ],
+        "returns": "str",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_self_improve.py",
+        "class": "GitCleanupAgent",
+        "name": "run",
+        "args": [],
+        "returns": "str",
+        "is_async": false,
+        "side_effects": [
+          "subprocess"
+        ],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_self_improve.py",
+        "class": "SelfImproveEngine",
+        "name": "__init__",
+        "args": [],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_self_improve.py",
+        "class": "SelfImproveEngine",
+        "name": "_call_gemini",
+        "args": [
+          {
+            "name": "prompt",
+            "type": "str"
+          }
+        ],
+        "returns": "str",
+        "is_async": false,
+        "side_effects": [
+          "network"
+        ],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_self_improve.py",
+        "class": "SelfImproveEngine",
+        "name": "_generate_fix",
+        "args": [
+          {
+            "name": "issue",
+            "type": "str"
+          },
+          {
+            "name": "file_content",
+            "type": "str"
+          },
+          {
+            "name": "filepath",
+            "type": "str"
+          }
+        ],
+        "returns": "dict",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_self_improve.py",
+        "class": "SelfImproveEngine",
+        "name": "_apply_via_aider",
+        "args": [
+          {
+            "name": "filepath",
+            "type": "str"
+          },
+          {
+            "name": "fix",
+            "type": "dict"
+          },
+          {
+            "name": "original_content",
+            "type": "str"
+          }
+        ],
+        "returns": "tuple[bool, str]",
+        "is_async": false,
+        "side_effects": [
+          "subprocess"
+        ],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_self_improve.py",
+        "class": "SelfImproveEngine",
+        "name": "apply_fix",
+        "args": [
+          {
+            "name": "filepath",
+            "type": "str"
+          },
+          {
+            "name": "issue",
+            "type": "str"
+          }
+        ],
+        "returns": "str",
+        "is_async": false,
+        "side_effects": [
+          "file_write"
+        ],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_self_improve.py",
+        "class": "SelfImproveEngine",
+        "name": "check_error_log",
+        "args": [],
+        "returns": "str",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_self_improve.py",
+        "class": "SelfImproveEngine",
+        "name": "detect_from_conversation",
+        "args": [
+          {
+            "name": "user_query",
+            "type": "str"
+          },
+          {
+            "name": "agent_answer",
+            "type": "str"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_self_improve.py",
+        "class": "SelfImproveEngine",
+        "name": "process_pending",
+        "args": [],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_self_improve.py",
+        "class": "SelfImproveEngine",
+        "name": "proactive_improve",
+        "args": [],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_self_improve.py",
+        "class": "SelfImproveEngine",
+        "name": "create_skill",
+        "args": [
+          {
+            "name": "skill_name",
+            "type": "str"
+          },
+          {
+            "name": "purpose",
+            "type": "str"
+          }
+        ],
+        "returns": "str",
+        "is_async": false,
+        "side_effects": [
+          "file_write"
+        ],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_self_improve.py",
+        "class": "SelfImproveEngine",
+        "name": "nightly_self_review",
+        "args": [],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [
+          "file_write"
+        ],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_self_improve.py",
+        "class": "SelfImproveEngine",
+        "name": "_notify",
+        "args": [
+          {
+            "name": "msg",
+            "type": "str"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [
+          "network"
+        ],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_self_improve.py",
+        "class": null,
+        "name": "_resolve_aider_python",
+        "args": [],
+        "returns": "list[str]",
+        "is_async": false,
+        "side_effects": [
+          "subprocess"
+        ],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_self_improve.py",
+        "class": null,
+        "name": "_extract_file_structure",
+        "args": [
+          {
+            "name": "content",
+            "type": "str"
+          },
+          {
+            "name": "filepath",
+            "type": "str"
+          }
+        ],
+        "returns": "str",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_self_improve.py",
+        "class": null,
+        "name": "_make_diff",
+        "args": [
+          {
+            "name": "original",
+            "type": "str"
+          },
+          {
+            "name": "modified",
+            "type": "str"
+          },
+          {
+            "name": "filename",
+            "type": "str"
+          }
+        ],
+        "returns": "str",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_self_improve.py",
+        "class": null,
+        "name": "_apply_action",
+        "args": [
+          {
+            "name": "content",
+            "type": "str"
+          },
+          {
+            "name": "fix",
+            "type": "dict"
+          }
+        ],
+        "returns": "tuple[bool, str]",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_self_improve.py",
+        "class": null,
+        "name": "get_engine",
+        "args": [],
+        "returns": "SelfImproveEngine",
+        "is_async": false,
+        "side_effects": [
+          "global_state"
+        ],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_self_improve.py",
+        "class": null,
+        "name": "start_watcher",
+        "args": [
+          {
+            "name": "check_interval",
+            "type": "int"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_self_improve.py",
+        "class": null,
+        "name": "notify_conversation",
+        "args": [
+          {
+            "name": "user_query",
+            "type": "str"
+          },
+          {
+            "name": "agent_answer",
+            "type": "str"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      }
+    ]
+  },
+  "onew_contract.py": {
+    "generated": "2026-03-20 14:26",
+    "functions": [
+      {
+        "file": "onew_contract.py",
+        "class": null,
+        "name": "_extract_signatures",
+        "args": [
+          {
+            "name": "filepath",
+            "type": "str"
+          }
+        ],
+        "returns": "list[dict]",
+        "is_async": false,
+        "side_effects": [
+          "file_write",
+          "json_write",
+          "subprocess",
+          "network"
+        ],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_contract.py",
+        "class": null,
+        "name": "_summarize_file",
+        "args": [
+          {
+            "name": "filepath",
+            "type": "str"
+          }
+        ],
+        "returns": "str",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_contract.py",
+        "class": null,
+        "name": "generate",
+        "args": [],
+        "returns": "str",
+        "is_async": false,
+        "side_effects": [
+          "file_write",
+          "json_write"
+        ],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_contract.py",
+        "class": null,
+        "name": "verify",
+        "args": [
+          {
+            "name": "filepath",
+            "type": "str"
+          }
+        ],
+        "returns": "list[str]",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_contract.py",
+        "class": null,
+        "name": "get_project_summary",
+        "args": [],
+        "returns": "str",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      }
+    ]
+  }
+}

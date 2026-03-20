@@ -1,0 +1,56 @@
+# aider
+.aider*
+
+# 민감 정보 (절대 커밋 금지)
+calendar_credentials.json
+calendar_token.json
+telegram_session.session
+*.session
+voice_profile.npy
+
+# 런타임 자동 생성 데이터
+onew_blacklist.json
+onew_fix_analysis.json
+onew_reasoning_log.json
+onew_improve_log.json
+onew_entities.json
+onew_pure_db.json
+onew_pure_db.json.pre_lance_backup
+onew_content_hashes.json
+onew_test_hashes.json
+onew_tasks.json
+onew_schedules.json
+onew_location.json
+api_usage_log.json
+api_budget.json
+adhd_coach_state.json
+field_linker_state.json
+night_study_state.json
+plan_db.json
+quiz_history.json
+telegram_state.json
+weakness_db.json
+clip_config.json
+link_batch_progress.json
+link_index.json
+meta_db.json
+file_checksums.json
+onew_scheduler_jobs.db
+search_debug.log
+onew_error.log
+test_out.txt
+test_sync_log.txt
+
+# 대용량 / DB
+onew_lance_db/
+onew_test_db/
+db_backup/
+__pycache__/
+*.pyc
+*.pyo
+
+# 백업 (git이 역할 대체)
+code_backup/
+
+# 실행파일
+cloudflared.exe
