@@ -3684,6 +3684,38 @@ class OnewAgent:
         except ImportError:
             pass
 
+        # ADHD 엔진: 메시지 타이밍 기록 (과집중 감지용)
+        try:
+            import onew_adhd as _adhd
+            _adhd.on_user_message()
+        except Exception:
+            pass
+
+        # 공부 완료 키워드 감지 → 스트릭 기록 + 즉각 피드백
+        _study_done_kw = ["공부 완료", "공부 끝", "오늘 공부 다 했어", "다 풀었어", "문제 다 풀었어"]
+        if any(kw in query for kw in _study_done_kw):
+            try:
+                import onew_adhd as _adhd
+                print(f"\n{_adhd.record_study_done()}\n")
+            except Exception:
+                pass
+
+        # 도파민 메뉴 요청 감지
+        if any(kw in query for kw in ["도파민 메뉴", "뭐 하지", "지루해", "보상 뭐야"]):
+            try:
+                import onew_adhd as _adhd
+                print(f"\n{_adhd.dopamine_menu()}\n")
+            except Exception:
+                pass
+
+        # ADHD 현황 보고 요청
+        if any(kw in query for kw in ["adhd 현황", "스트릭", "반응률", "공부 기록"]):
+            try:
+                import onew_adhd as _adhd
+                print(f"\n{_adhd.adhd_status()}\n")
+            except Exception:
+                pass
+
         # 회사 모드: 민감 주제 클라이언트 측 차단 (API 호출 전에 막음)
         if self.location_mode == "work":
             if any(kw in query for kw in SENSITIVE_KEYWORDS):
