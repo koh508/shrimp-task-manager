@@ -23,7 +23,7 @@ ERROR_LOG       = os.path.join(SYSTEM_DIR, "온유_오류.md")
 IMPROVE_LOG     = os.path.join(SYSTEM_DIR, "onew_improve_log.json")
 ANALYSIS_LOG    = os.path.join(SYSTEM_DIR, "onew_fix_analysis.json")
 REASONING_LOG   = os.path.join(SYSTEM_DIR, "onew_reasoning_log.json")
-BACKUP_DIR      = os.path.join(SYSTEM_DIR, "code_backup")
+BACKUP_DIR      = r"C:\Users\User\AppData\Local\onew\code_backup"
 SELF_REVIEW_DIR = os.path.join(SYSTEM_DIR, "self_review")
 
 # ── 신뢰 점수 기준 ────────────────────────────────────────────────────────────
@@ -1321,6 +1321,15 @@ def get_engine() -> SelfImproveEngine:
     return _engine
 
 
+def _get_gemini_client():
+    """onew_code_planner에 주입할 Gemini 클라이언트 반환."""
+    try:
+        from google import genai
+        return genai.Client(api_key=os.environ.get("GEMINI_API_KEY", ""))
+    except Exception:
+        return None
+
+
 def start_watcher(check_interval: int = 300):
     engine = get_engine()
 
@@ -1349,9 +1358,15 @@ def start_watcher(check_interval: int = 300):
                 if now.hour == 23 and nightly_done != date.today():
                     nightly_done = date.today()
                     threading.Thread(target=engine.nightly_self_review, daemon=True).start()
-                # E: git 상태 정리 (매 사이클, 문제 ⑥)
+                # E: git 상태 정리 (매 사이클)
                 threading.Thread(target=GitCleanupAgent.run, daemon=True).start()
-            except:
+                # F: 코드 계획 태스크 실행 (대기 중인 계획이 있으면 1개 처리)
+                try:
+                    import onew_code_planner as _cp
+                    _cp.execute_next(engine=engine, client=_get_gemini_client())
+                except Exception:
+                    pass
+            except Exception:
                 pass
             time.sleep(check_interval)
 
