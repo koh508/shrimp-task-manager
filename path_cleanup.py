@@ -109,7 +109,7 @@ def cleanup_temp_files() -> str:
 
 def check_backup_age() -> str:
     """code_backup 폴더의 최근 백업 날짜 확인."""
-    backup_base = Path(SYSTEM_DIR) / "code_backup"
+    backup_base = Path(r"C:\Users\User\AppData\Local\onew\code_backup")
     if not backup_base.exists():
         return "⚠️ 백업 폴더 없음"
     date_dirs = sorted([d for d in backup_base.iterdir() if d.is_dir()], reverse=True)
