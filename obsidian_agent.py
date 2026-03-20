@@ -3684,10 +3684,13 @@ class OnewAgent:
         except ImportError:
             pass
 
-        # ADHD 엔진: 메시지 타이밍 기록 (과집중 감지용)
+        # ADHD 엔진: 메시지 타이밍 기록 (과집중 감지용) + 학습 의도 포착
         try:
             import onew_adhd as _adhd
             _adhd.on_user_message()
+            _goal_msg = _adhd.detect_learning_goal(query)
+            if _goal_msg:
+                print(f"\n{_goal_msg}\n")
         except Exception:
             pass
 
@@ -3774,6 +3777,17 @@ class OnewAgent:
             pass  # 선조회 실패 시 조용히 건너뜀 — ask() 전체에 영향 없음
 
         # 2. 질문 전송
+        # 대화 하드스톱: 하루 500회 초과 시 차단 (루프 과금 방지)
+        _today_chat_pre = _get_today_usage("chat")
+        if _today_chat_pre >= 500:
+            print("🔴 [과금 보호] 오늘 대화 API 500회 초과. 온유를 재시작하거나 내일 다시 사용하세요.")
+            _send_telegram_notify(
+                f"🔴 *온유 대화 한도 초과*\n\n"
+                f"오늘 대화 API {_today_chat_pre}회 도달.\n"
+                f"비정상 루프 가능성. 온유를 재시작하세요."
+            )
+            return
+
         try:
             ans = self.chat.send_message(f"Context:\n{ctx}\n\n명령: {query}")
             _increment_usage("chat")
@@ -4375,6 +4389,14 @@ if __name__ == "__main__":
         _coach_start(_coach)
     except Exception as _e:
         print(f"  ⚠️ [ADHD코치] 초기화 실패: {_e}")
+
+    # ADHD 엔진 초기화 (generate_fn 주입 — 학습목표 자료 검색용)
+    try:
+        import onew_adhd as _adhd_mod
+        _adhd_mod.get_engine(generate_fn=_bg_gen_fn)
+        print("🧠 [ADHD엔진] 초기화 완료 (학습목표 포착 + 과집중 보호 + 스트릭)")
+    except Exception as _e:
+        print(f"  ⚠️ [ADHD엔진] 초기화 실패: {_e}")
 
     clipper = AutoClipper()
 
