@@ -349,6 +349,18 @@ def _synthesize_concept_note(note_contents: list, category: str, generate_fn) ->
     if len(note_contents) < 2:
         return ''
 
+    # 대화 중 또는 동기화 중이면 개념정리 생략 (지연)
+    try:
+        import onew_shared
+        if onew_shared.is_quiet_period():
+            print(f"  ⏸️ [개념정리] 대화 중 — {category} 개념정리 생략 (다음 사이클로 지연)")
+            return ''
+        if onew_shared.is_syncing():
+            print(f"  ⏸️ [개념정리] 동기화 중 — {category} 개념정리 생략 (다음 사이클로 지연)")
+            return ''
+    except ImportError:
+        pass
+
     combined = '\n\n'.join(
         f"[{title}]\n{content[:700]}" for title, content in note_contents[:4]
     )
