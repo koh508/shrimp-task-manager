@@ -385,6 +385,31 @@ async def handle_text(update: Update, ctx: ContextTypes.DEFAULT_TYPE):
     if not query:
         return
 
+    # 코드 플래너 명령 처리 (ADHD 코치보다 먼저)
+    if query.startswith('계획:') or query.startswith('계획 '):
+        goal = query.split(':', 1)[-1].strip() if ':' in query else query[3:].strip()
+        try:
+            import onew_code_planner as _ocp
+            result = _ocp.receive_direction(goal, client=get_agent()._client if hasattr(get_agent(), '_client') else None)
+            await update.message.reply_text(f"📋 {result}")
+        except Exception as _e:
+            await update.message.reply_text(f"⚠️ 계획 생성 실패: {_e}")
+        return
+    elif query in ('계획상태', '계획 상태', 'plan status'):
+        try:
+            import onew_code_planner as _ocp
+            await update.message.reply_text(_ocp.get_status())
+        except Exception as _e:
+            await update.message.reply_text(f"⚠️ {_e}")
+        return
+    elif query in ('승인', '플래너승인', 'plan approve'):
+        try:
+            import onew_code_planner as _ocp
+            await update.message.reply_text(_ocp.approve_plan())
+        except Exception as _e:
+            await update.message.reply_text(f"⚠️ {_e}")
+        return
+
     # ADHD 코치가 먼저 처리
     coach = get_coach()
     if coach:
