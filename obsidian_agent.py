@@ -2736,37 +2736,104 @@ def _parse_questions_from_file(fpath: str) -> list[dict]:
         pass
     return questions
 
-def quiz_me(category: str = None, count: int = 3, exclude_calc: bool = True) -> str:
+def quiz_me(category: str = None, count: int = 3, exclude_calc: bool = True, file_path: str = None) -> str:
     """야간학습에서 예상 문제를 가져와 퀴즈 세트를 반환합니다.
     category: '공조냉동' / '소방' / 'OCU' / 'AI클리핑' / '현장' / None(전체)
     count: 출제 문제 수 (기본 3, 최대 5)
     exclude_calc: True(기본) → 계산기 필요한 수치 계산 문제 제외
+    file_path: 특정 Vault 파일 경로 지정 시 해당 파일 내용에서 직접 문제 추출
+               (야간학습 폴더 무관 — 상대경로: Vault 기준, 절대경로 모두 허용)
 
     ⚠️ 반환된 문제+정답 세트를 활용 방법:
     - 사용자에게는 문제만 하나씩 보여주세요
     - 답변 후 정답과 해설을 공개하세요
     - 전체 끝나면 점수와 격려 메시지로 마무리하세요
     """
-    if not os.path.exists(NIGHT_STUDY_DIR):
-        return "야간학습 폴더가 없습니다. 자율학습이 아직 실행되지 않았을 수 있습니다."
+    import random
 
     count = min(max(1, count), 5)
     history = _load_quiz_history()
     cutoff  = (datetime.now() - timedelta(days=QUIZ_COOLDOWN_DAYS)).strftime("%Y-%m-%d")
-    # 최근 n일 내 출제된 해시 제외
     recent_hashes = {
         e["hash"] for e in history.get("asked", [])
         if e.get("date", "0000-00-00") >= cutoff
     }
 
+    # ── 특정 파일 지정 모드 ──────────────────────────────────────────────────
+    if file_path:
+        # 상대경로면 Vault 기준으로 변환
+        if not os.path.isabs(file_path):
+            file_path = os.path.join(OBSIDIAN_VAULT_PATH, file_path)
+        if not os.path.exists(file_path):
+            return f"파일을 찾을 수 없습니다: {file_path}"
+        try:
+            with open(file_path, 'r', encoding='utf-8') as f:
+                content = f.read()
+        except Exception as e:
+            return f"파일 읽기 실패: {e}"
+
+        # 파일 내용에서 문제 직접 추출 (파싱 시도 → 없으면 헤더 기반 분할)
+        all_questions = _parse_questions_from_file(file_path)
+        if not all_questions:
+            # 파싱 실패 시 ## 헤더 단위로 분할해 문제 형식으로 변환
+            sections = re.split(r'\n#{1,3} ', content)
+            all_questions = []
+            for sec in sections[1:]:
+                lines = sec.strip().splitlines()
+                if not lines:
+                    continue
+                title = lines[0].strip()
+                body  = '\n'.join(lines[1:]).strip()
+                if len(body) < 10:
+                    continue
+                all_questions.append({
+                    "question": title,
+                    "answer": body[:300],
+                    "explain": "",
+                    "source": os.path.basename(file_path)
+                })
+        if not all_questions:
+            return f"'{os.path.basename(file_path)}'에서 문제를 추출할 수 없습니다. 파일 내용을 확인하세요."
+
+        for q in all_questions:
+            q["question"] = _clean_latex(q["question"])
+            q["answer"]   = _clean_latex(q["answer"])
+            q["explain"]  = _clean_latex(q.get("explain", ""))
+
+        fresh = [q for q in all_questions if _question_hash(q["question"]) not in recent_hashes]
+        pool = fresh if len(fresh) >= count else all_questions
+        selected = random.sample(pool, min(count, len(pool)))
+
+        today = datetime.now().strftime("%Y-%m-%d")
+        asked_list = history.get("asked", [])
+        for q in selected:
+            asked_list.append({"hash": _question_hash(q["question"]), "date": today})
+        history["asked"] = asked_list[-500:]
+        _save_quiz_history(history)
+
+        lines = [f"📚 퀴즈 {len(selected)}문제 준비됨 (파일: {os.path.basename(file_path)})\n"]
+        for i, q in enumerate(selected, 1):
+            lines.append(
+                f"[Q{i}]\n"
+                f"문제: {q['question']}\n"
+                f"정답: {q['answer']}\n"
+                f"해설: {q.get('explain','')}\n"
+                f"출처: {q['source']}\n"
+            )
+        lines.append("--- 퀴즈 진행 방법 ---")
+        lines.append("각 문제를 하나씩 제시하고, 사용자가 답한 뒤 정답+해설 공개. 마지막에 총점 알림.")
+        return "\n".join(lines)
+
+    # ── 야간학습 폴더 모드 (기존) ────────────────────────────────────────────
+    if not os.path.exists(NIGHT_STUDY_DIR):
+        return "야간학습 폴더가 없습니다. 자율학습이 아직 실행되지 않았을 수 있습니다."
+
     # 야간학습 파일 수집 (카테고리 필터)
     all_files = []
     for root, dirs, files in os.walk(NIGHT_STUDY_DIR):
         dirs[:] = [d for d in dirs if not d.startswith('.')]
-        # 카테고리 폴더 필터 (정확한 폴더명 매칭)
         if category:
             rel = os.path.relpath(root, NIGHT_STUDY_DIR)
-            # 루트이거나, 최상위 폴더명이 카테고리와 정확히 일치할 때만 포함
             if rel != ".":
                 top_folder = rel.split(os.sep)[0]
                 if top_folder != category:
@@ -2802,7 +2869,6 @@ def quiz_me(category: str = None, count: int = 3, exclude_calc: bool = True) -> 
             all_questions = filtered if filtered else all_questions
 
     # 쿨다운 제외 → 셔플 → count개 선택
-    import random
     fresh = [q for q in all_questions if _question_hash(q["question"]) not in recent_hashes]
     # fresh가 부족하면 전체에서 보충
     pool = fresh if len(fresh) >= count else all_questions
