@@ -8,8 +8,8 @@ import json, os, numpy as np
 import lancedb, pyarrow as pa
 
 VAULT = r"C:\Users\User\Documents\Obsidian Vault"
-BACKUP_JSON = os.path.join(VAULT, "SYSTEM", "db_backup", "onew_pure_db_MANUAL_20260318_113155.json")
-LANCE_DB_DIR = os.path.join(VAULT, "SYSTEM", "onew_lance_db")
+BACKUP_JSON = r"C:\Users\User\AppData\Local\onew\db_backup\onew_pure_db_MANUAL_20260318_113155.json"
+LANCE_DB_DIR = os.path.join(VAULT, "SYSTEM", ".onew_lance_db")
 EMBED_DIM = 3072  # gemini-embedding-001 실제 출력 차원
 CHUNK_VERSION = "v3"
 
