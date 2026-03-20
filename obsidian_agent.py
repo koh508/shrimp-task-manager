@@ -55,7 +55,7 @@ def _check_single_instance():
         pass
 
 DB_FILE      = os.path.join(OBSIDIAN_VAULT_PATH, "SYSTEM", "onew_pure_db.json")  # 마이그레이션 참조용
-LANCE_DB_DIR = os.path.join(OBSIDIAN_VAULT_PATH, "SYSTEM", "onew_lance_db")
+LANCE_DB_DIR = os.path.join(OBSIDIAN_VAULT_PATH, "SYSTEM", ".onew_lance_db")
 EMBED_DIM    = 3072  # gemini-embedding-001 실제 출력 차원
 SYSTEM_PROMPT_PATH = os.path.join(OBSIDIAN_VAULT_PATH, "SYSTEM", "onew_system_prompt.md")
 ANTIPATTERNS_PATH = os.path.join(OBSIDIAN_VAULT_PATH, "SYSTEM", "onew_antipatterns.md")
@@ -71,7 +71,7 @@ HASH_CACHE_FILE  = os.path.join(OBSIDIAN_VAULT_PATH, "SYSTEM", "onew_content_has
 # ── 학습 테두리 ──────────────────────────────────────────────────────────────
 # 이 이름이 경로에 포함된 폴더는 임베딩 학습에서 제외
 SYNC_EXCLUDE_DIRS  = ["대화기록", "venv", ".obsidian", ".git",
-                       "code_backup", "db_backup", "__pycache__", "Onew_Core_Backup"]
+                       "code_backup", ".db_backup", "__pycache__", "Onew_Core_Backup"]
 
 # 이 이름이 포함된 파일은 학습 제외
 SYNC_EXCLUDE_FILES = ["onew_pure_db", "api_usage_log", "onew_content_hashes"]
@@ -616,7 +616,7 @@ class OnewPureMemory:
         """LanceDB는 자동 저장. 백업 폴더에 스냅샷만 남김."""
         try:
             import shutil
-            backup_dir = os.path.join(OBSIDIAN_VAULT_PATH, "SYSTEM", "db_backup")
+            backup_dir = r"C:\Users\User\AppData\Local\onew\db_backup"
             os.makedirs(backup_dir, exist_ok=True)
             ts = datetime.now().strftime("%Y%m%d_%H%M%S")
             dst = os.path.join(backup_dir, f"onew_lance_db_{ts}")
@@ -1116,7 +1116,7 @@ def _backup_file(p: Path):
     """수정 전 원본을 code_backup/YYYY-MM-DD/ 에 보존."""
     try:
         import shutil
-        backup_dir = Path(OBSIDIAN_VAULT_PATH) / 'SYSTEM' / 'code_backup' / datetime.now().strftime('%Y-%m-%d')
+        backup_dir = Path(r"C:\Users\User\AppData\Local\onew\code_backup") / datetime.now().strftime('%Y-%m-%d')
         backup_dir.mkdir(parents=True, exist_ok=True)
         dest = backup_dir / p.name
         # 같은 날 이미 백업 있으면 덮어쓰지 않음 (첫 수정본 보존)
@@ -1626,7 +1626,7 @@ def rollback_file(filepath: str) -> str:
             p = Path(OBSIDIAN_VAULT_PATH) / filepath
         p = p.resolve()
 
-        backup_base = Path(OBSIDIAN_VAULT_PATH) / 'SYSTEM' / 'code_backup'
+        backup_base = Path(r"C:\Users\User\AppData\Local\onew\code_backup")
         if not backup_base.exists():
             return "Error: 백업 폴더가 없습니다."
 
@@ -1653,7 +1653,7 @@ def backup_system() -> str:
     """SYSTEM 폴더 전체를 ZIP으로 압축 백업한다."""
     try:
         ts = datetime.now().strftime("%Y%m%d_%H%M%S")
-        backup_dir = os.path.join(OBSIDIAN_VAULT_PATH, "SYSTEM", "db_backup")
+        backup_dir = r"C:\Users\User\AppData\Local\onew\db_backup"
         os.makedirs(backup_dir, exist_ok=True)
         target = os.path.join(backup_dir, f"Onew_Backup_{ts}")
         shutil.make_archive(target, 'zip', os.path.join(OBSIDIAN_VAULT_PATH, "SYSTEM"))
@@ -4214,7 +4214,7 @@ def _auto_backup():
     try:
         system_dir = os.path.join(OBSIDIAN_VAULT_PATH, "SYSTEM")
         today = datetime.now().strftime("%Y-%m-%d")
-        backup_dir = os.path.join(system_dir, "code_backup", today)
+        backup_dir = os.path.join(r"C:\Users\User\AppData\Local\onew\code_backup", today)
         # 오늘 이미 백업했으면 건너뜀
         if os.path.exists(backup_dir):
             return
@@ -4622,6 +4622,27 @@ if __name__ == "__main__":
                 elif cmd in ['저장', '저장해줘', '저장해', '저장하기', '대화 저장', '대화저장']:
                     onew._save_history_to_vault()
                     print("💾 대화 기록 저장 완료")
+                elif q.startswith('계획:') or q.startswith('계획 '):
+                    # 온유 자율 코딩 계획 실행
+                    goal = q.split(':', 1)[-1].strip() if ':' in q else q[3:].strip()
+                    try:
+                        import onew_code_planner as _ocp
+                        result = _ocp.receive_direction(goal, client=client)
+                        print(f"📋 {result}")
+                    except Exception as _e:
+                        print(f"⚠️ 계획 생성 실패: {_e}")
+                elif q in ('계획상태', '계획 상태', 'plan status'):
+                    try:
+                        import onew_code_planner as _ocp
+                        print(_ocp.get_status())
+                    except Exception as _e:
+                        print(f"⚠️ {_e}")
+                elif q in ('승인', '플래너승인', 'plan approve'):
+                    try:
+                        import onew_code_planner as _ocp
+                        print(_ocp.approve_plan())
+                    except Exception as _e:
+                        print(f"⚠️ {_e}")
                 elif q.startswith('클로드한테 시킬 거야') or q.startswith('클로드에게 시킬 거야') or q.startswith('클로드한테 시켜'):
                     # 콜론 또는 공백 이후 내용 추출
                     task = q.split(':', 1)[-1].strip() if ':' in q else re.sub(r'^클로드(한테|에게)\s*시킬\s*거야|^클로드한테\s*시켜', '', q).strip()
