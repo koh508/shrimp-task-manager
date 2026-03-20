@@ -4639,6 +4639,12 @@ if __name__ == "__main__":
                         print(_ocp.get_status())
                     except Exception as _e:
                         print(f"⚠️ {_e}")
+                elif q in ('플래너로그', '계획로그', 'plan log'):
+                    try:
+                        import onew_code_planner as _ocp
+                        print(_ocp.get_log())
+                    except Exception as _e:
+                        print(f"⚠️ {_e}")
                 elif q in ('승인', '플래너승인', 'plan approve'):
                     try:
                         import onew_code_planner as _ocp
