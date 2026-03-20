@@ -1,0 +1,81 @@
+# Obsidian Vault 구조 (자동 생성됨)
+**마지막 갱신:** 2026-03-14 22:11:46
+
+## 📁 Vault 폴더 목록 (교차검증용 정확한 폴더명)
+
+- 01_Daily
+- ADMIN
+- AI_Agent_Error
+- AI_WS_Reports
+- Anki
+- Claude_Docs
+- Clippings
+- DAILY
+- DD
+- Drafts
+- Excalidraw
+- Monthly
+- OCU
+- Obsidian Vault
+- OneDrive_가져오기
+- Onew_Managed_Files
+- Processed
+- Quotation
+- SYSTEM
+- Study PDF
+- Thinking note
+- Weekly
+- Work Folder
+- Yearly
+- _NoteCompanion
+- docs
+- 개발노트
+- 공부 방법
+- 공조냉동기계기사
+- 구매한 물품 리뷰
+- 글쓰기
+- 대화기록
+- 독서
+- 엄마랑 여행
+- 자동화_로그
+- 작업일지
+- 첨부파일
+- 클리핑
+- 템플릿
+
+## ⚙️ SYSTEM 파일 목록
+
+- Gemini_CLI_실전_생존_매뉴얼.md
+- Onew_Evolution_Roadmap.md
+- Termux.md
+- api_usage_log.json
+- calendar_credentials.json
+- calendar_token.json
+- check_output.py
+- check_sync.py
+- clip_config.json
+- mika keyboard setting.md
+- obsidian_agent - 복사본 (2).py
+- obsidian_agent.py
+- onew_location.json
+- onew_pure_db.json
+- onew_search.py
+- onew_tools.py
+- onew_watcher - 복사본.py
+- onew_watcher.py
+- pdf_to_md - 복사본.py
+- pdf_to_md.py
+- project_map.md
+- run_test.py
+- 미니  PC 복구 프로젝트.md
+- 블루투스로 태블릿을 켤 수 있는가..md
+- 비밀번호 만드는 팁.md
+- 오답_패턴_감시_시스템_설계안.md
+- 온유_CLI_통합_및_실전_운용_매뉴얼.md
+- 온유_시스템_초기화_프로토콜.md
+- 온유_심층_기억_코어.md
+- 온유_오류.md
+- 온유_작동원리_해설서.md
+- 유용한 주소.md
+- 임베딩_복리의_마법.md
+- 클리핑_인덱스.json
