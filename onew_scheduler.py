@@ -211,7 +211,7 @@ def job_health_check():
                 issues.append("🔴 최근 1시간 내 오류 발생 (`SYSTEM/온유_오류.md` 확인)")
 
         # 4. 코드 백업 3일 이상 없음
-        backup_base = os.path.join(SYSTEM_DIR, 'code_backup')
+        backup_base = r"C:\Users\User\AppData\Local\onew\code_backup"
         if os.path.exists(backup_base):
             dirs = sorted(os.listdir(backup_base), reverse=True)
             if dirs:
