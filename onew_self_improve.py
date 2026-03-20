@@ -717,9 +717,11 @@ class GitCleanupAgent:
 
 
 # ==============================================================================
-# [Safe Point] — 메인 프로세스 유휴 상태 감지 후 코드 교체
+# [Safe Point + Update Lock] — 핫 업데이트 크래시 방지
 # ==============================================================================
-_PID_FILE = os.path.join(SYSTEM_DIR, "onew.pid")
+# _UPDATE_LOCK: apply_fix() 동시 진입 차단 (단일 스레드만 라이브 적용 허용)
+_UPDATE_LOCK = threading.Lock()
+_PID_FILE    = os.path.join(SYSTEM_DIR, "onew.pid")
 
 
 def _get_agent_pid() -> int | None:
@@ -918,8 +920,13 @@ class SelfImproveEngine:
             try:
                 with open(cf_path, encoding="utf-8") as f:
                     cf = json.load(f)
-                fname = os.path.basename(filepath)
-                if any(v.get("strict") for v in cf.values() if isinstance(v, dict)):
+                # strict 함수가 정의된 파일이면 감점 (파일명 기준 rough 매칭)
+                fname = os.path.basename(filepath).replace(".py", "")
+                has_strict = any(
+                    v.get("strict") for k, v in cf.items()
+                    if isinstance(v, dict) and fname in k
+                )
+                if has_strict:
                     score -= 10
             except Exception:
                 pass
@@ -1071,64 +1078,70 @@ class SelfImproveEngine:
             if not safe:
                 self._notify(f"⚠️ [Safe Point] 30s 대기 후 강제 진행: {os.path.basename(filepath)}")
 
-            # 5. 라이브 적용 (백업 → aider → 원자적 수동폴백)
-            backup_path = self.gate.backup(filepath)
-            if backup_path.startswith("ERROR"):
-                return f"❌ 백업 실패: {backup_path}"
-
-            aider_ok, aider_detail = self._apply_via_aider(filepath, fix, content)
-            apply_method = "aider"
-            if not aider_ok:
-                # 원자적 수동 폴백 (os.replace — 중간 실패 시 파일 보호)
-                apply_ok, new_content = _apply_action(content, fix)
-                if not apply_ok:
-                    return f"❌ 라이브 적용 실패 (aider: {aider_detail})"
-                tmp_path = filepath + ".tmp"
-                with open(tmp_path, "w", encoding="utf-8") as f:
-                    f.write(new_content)
-                os.replace(tmp_path, filepath)  # 원자적 교체
-                apply_method = f"수동폴백 (aider: {aider_detail[:60]})"
-
-            syntax_ok, err = self.gate.verify_syntax(filepath)
-            if not syntax_ok:
-                rolled = self.gate.rollback(filepath)
-                self.log.record_rollback(filepath, err[:80])
-                bl_msg = self.breaker.record_failure(filepath, err[:80])
-                self.breaker.record_failed_hash(fix)
-                self.analyzer.record_reasoning(
-                    issue, fix, confidence, gates_passed, apply_method, "rollback")
-                self._notify(f"⚠️ [자율코딩] 라이브 문법 오류 → 롤백\n{err[:80]}\n{bl_msg}")
-                return f"❌ 라이브 문법 오류 → 롤백 {'성공' if rolled else '실패'}"
-
-            # 5. 인터페이스 계약 검증
+            # 5. Update Lock — 동시 apply_fix() 충돌 방지 (단일 스레드만 진입)
+            if not _UPDATE_LOCK.acquire(blocking=False):
+                return "⏳ 다른 apply_fix() 실행 중 — 이번 수정 건너뜀"
             try:
-                from onew_contract import verify as _contract_verify
-                violations = _contract_verify(filepath)
-                if violations:
+                # 5a. 라이브 적용 (백업 → aider → 원자적 수동폴백)
+                backup_path = self.gate.backup(filepath)
+                if backup_path.startswith("ERROR"):
+                    return f"❌ 백업 실패: {backup_path}"
+
+                aider_ok, aider_detail = self._apply_via_aider(filepath, fix, content)
+                apply_method = "aider"
+                if not aider_ok:
+                    # 원자적 수동 폴백 (os.replace — 중간 실패 시 파일 보호)
+                    apply_ok, new_content = _apply_action(content, fix)
+                    if not apply_ok:
+                        return f"❌ 라이브 적용 실패 (aider: {aider_detail})"
+                    tmp_path = filepath + ".tmp"
+                    with open(tmp_path, "w", encoding="utf-8") as f:
+                        f.write(new_content)
+                    os.replace(tmp_path, filepath)  # 원자적 교체
+                    apply_method = f"수동폴백 (aider: {aider_detail[:60]})"
+
+                syntax_ok, err = self.gate.verify_syntax(filepath)
+                if not syntax_ok:
                     rolled = self.gate.rollback(filepath)
-                    self.log.record_rollback(filepath, "인터페이스 계약 위반")
+                    self.log.record_rollback(filepath, err[:80])
+                    bl_msg = self.breaker.record_failure(filepath, err[:80])
                     self.breaker.record_failed_hash(fix)
                     self.analyzer.record_reasoning(
                         issue, fix, confidence, gates_passed, apply_method, "rollback")
-                    self._notify(f"⛔ [계약 위반] 롤백\n" + "\n".join(violations[:3]))
-                    return f"⛔ 인터페이스 계약 위반 → 롤백\n" + "\n".join(violations)
-            except ImportError:
-                pass
+                    self._notify(f"⚠️ [자율코딩] 라이브 문법 오류 → 롤백\n{err[:80]}\n{bl_msg}")
+                    return f"❌ 라이브 문법 오류 → 롤백 {'성공' if rolled else '실패'}"
 
-            # 6. 성공 — 모든 기록
-            self.breaker.record_success(filepath)
-            self.log.record_modification(filepath, f"[{action}] {desc}", success=True)
-            self.analyzer.record(issue, fix, True, sandbox_detail, live_applied=True)
-            self.analyzer.record_reasoning(
-                issue, fix, confidence, gates_passed, apply_method, "live_applied")
-            self._notify(
-                f"✅ [자율코딩 Lv5] 적용 완료\n"
-                f"파일: {os.path.basename(filepath)}\n"
-                f"액션: {action} / {desc}\n"
-                f"신뢰: {confidence}/100 | 적용: {apply_method}\n"
-                f"누적: {self.analyzer.get_success_rate()}"
-            )
-            return f"✅ [{action}] {desc}\n적용: {apply_method}"
+                # 5b. 인터페이스 계약 검증
+                try:
+                    from onew_contract import verify as _contract_verify
+                    violations = _contract_verify(filepath)
+                    if violations:
+                        rolled = self.gate.rollback(filepath)
+                        self.log.record_rollback(filepath, "인터페이스 계약 위반")
+                        self.breaker.record_failed_hash(fix)
+                        self.analyzer.record_reasoning(
+                            issue, fix, confidence, gates_passed, apply_method, "rollback")
+                        self._notify(f"⛔ [계약 위반] 롤백\n" + "\n".join(violations[:3]))
+                        return f"⛔ 인터페이스 계약 위반 → 롤백\n" + "\n".join(violations)
+                except ImportError:
+                    pass
+
+                # 6. 성공 — 모든 기록
+                self.breaker.record_success(filepath)
+                self.log.record_modification(filepath, f"[{action}] {desc}", success=True)
+                self.analyzer.record(issue, fix, True, sandbox_detail, live_applied=True)
+                self.analyzer.record_reasoning(
+                    issue, fix, confidence, gates_passed, apply_method, "live_applied")
+                self._notify(
+                    f"✅ [자율코딩 Lv5] 적용 완료\n"
+                    f"파일: {os.path.basename(filepath)}\n"
+                    f"액션: {action} / {desc}\n"
+                    f"신뢰: {confidence}/100 | 적용: {apply_method}\n"
+                    f"누적: {self.analyzer.get_success_rate()}"
+                )
+                return f"✅ [{action}] {desc}\n적용: {apply_method}"
+            finally:
+                _UPDATE_LOCK.release()
 
     # ── 트리거 A: 오류 로그 감시 ──────────────────────────────────────────────
     def check_error_log(self) -> str:
