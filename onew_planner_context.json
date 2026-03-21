@@ -1,19 +1,5 @@
 [
   {
-    "timestamp": "2026-03-20T18:16:56.598268",
-    "status": "aborted",
-    "goal": "토큰소비 최소화하며, 온유 시스템에 부족한 부분 자료 생성 (300자 내), 생성된 기준으로 Github 검색 하여 필요 파일 설치 계획 포함 재수정(500자 내외) 파일형식 md파일로 생성 후 보고.",
-    "files": []
-  },
-  {
-    "timestamp": "2026-03-20T18:21:10.980450",
-    "status": "aborted",
-    "goal": "토큰소비 최소화하며, 온유 시스템에 부족한 부분 자료 생성 (300자 내), 생성된 기준으로 Github 검색 하여 필요 파일 설치 계획 포함 재수정(500자 내외) 파일형식 md파일로 생성 후 보고.",
-    "files": [
-      "docs/onew_system_gaps_and_search_plan.md"
-    ]
-  },
-  {
     "timestamp": "2026-03-20T18:25:03.256912",
     "status": "aborted",
     "goal": "토큰소비 최소화하며, 온유 시스템에 부족한 부분 자료 생성 (300자 내), 생성된 기준으로 Github 검색 하여 필요 파일 설치 계획 포함 재수정(500자 내외) 파일형식 md파일로 생성 후 보고.",
@@ -85,6 +71,20 @@
       "onew_system_gaps_analysis_plan.md",
       "src/onew_system/new_feature_module.py",
       "tests/test_new_feature_module.py"
+    ]
+  },
+  {
+    "timestamp": "2026-03-21T23:30:14.955877",
+    "status": "aborted",
+    "goal": "`onew_system_gaps_initial_draft.md`에 기반하여 `src/onew_system/core/interface.py` 파일의 '실행 불가 (engine/client 미주입)' 오류를 수정하고, 안정된 상태로 시스템에 적용합니다. 특히 engine/client 주입 문제를 해결하고, 필요하다면 비동기 처리 및 데이터 유효성 검증 기능을 통합합니다.",
+    "files": []
+  },
+  {
+    "timestamp": "2026-03-21T23:33:14.942456",
+    "status": "aborted",
+    "goal": "`onew_system_gaps_initial_draft.md`에 기반하여 `src/onew_system/core/interface.py` 파일을 생성하고 '실행 불가 (engine/client 미주입)' 오류를 수정하며, 비동기 처리 및 데이터 유효성 검증 기능을 통합하여 안정된 상태로 시스템에 적용합니다.",
+    "files": [
+      "src/onew_system/core/interface.py"
     ]
   }
 ]
