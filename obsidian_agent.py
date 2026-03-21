@@ -2738,7 +2738,7 @@ def _parse_questions_from_file(fpath: str) -> list[dict]:
 
 def quiz_me(category: str = None, count: int = 3, exclude_calc: bool = True, file_path: str = None) -> str:
     """야간학습에서 예상 문제를 가져와 퀴즈 세트를 반환합니다.
-    category: '공조냉동' / '소방' / 'OCU' / 'AI클리핑' / '현장' / None(전체)
+    category: '소방' / 'OCU' / 'AI클리핑' / '현장' / None(전체)
     count: 출제 문제 수 (기본 3, 최대 5)
     exclude_calc: True(기본) → 계산기 필요한 수치 계산 문제 제외
     file_path: 특정 Vault 파일 경로 지정 시 해당 파일 내용에서 직접 문제 추출
