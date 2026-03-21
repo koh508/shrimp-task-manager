@@ -1,13 +1,5 @@
 [
   {
-    "timestamp": "2026-03-20T18:14:14.273551",
-    "status": "aborted",
-    "goal": "토큰소비 최소화하며, 온유 시스템에 부족한 부분 자료 생성 (300자 내), 생성된 기준으로 Github 검색 하여 필요 파일 설치 계획 포함 재수정(500자 내외) 파일형식 md파일로 생성 후 보고.",
-    "files": [
-      "onew_system_gaps_and_search_plan.md"
-    ]
-  },
-  {
     "timestamp": "2026-03-20T18:16:56.598268",
     "status": "aborted",
     "goal": "토큰소비 최소화하며, 온유 시스템에 부족한 부분 자료 생성 (300자 내), 생성된 기준으로 Github 검색 하여 필요 파일 설치 계획 포함 재수정(500자 내외) 파일형식 md파일로 생성 후 보고.",
@@ -75,6 +67,24 @@
       "tests/test_onew_system_processor.py",
       "main.py",
       "verification/system_integration_test_plan.md"
+    ]
+  },
+  {
+    "timestamp": "2026-03-21T23:26:15.037166",
+    "status": "done",
+    "goal": "플래너에 오류를 파악하고.md 파일로 방안을 제시한다.",
+    "files": [
+      "planner_error_analysis.md"
+    ]
+  },
+  {
+    "timestamp": "2026-03-21T23:29:15.017757",
+    "status": "aborted",
+    "goal": "'onew_system_gaps_initial_draft.md'  이 Md파일을 기준으로 계획을 세우고 검증 후에 테스트를 거쳐 안정된 상태에서 시스템에 적용해줘.",
+    "files": [
+      "onew_system_gaps_analysis_plan.md",
+      "src/onew_system/new_feature_module.py",
+      "tests/test_new_feature_module.py"
     ]
   }
 ]
