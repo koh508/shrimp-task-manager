@@ -1,6 +1,144 @@
 {
   "plans": [
     {
+      "id": "07eca3b8",
+      "goal": "개선점을 계획하고 검증 후에 파이썬으로 만들어 테스트 해보고 결과를 검증 후 완료되면 시스템에 적용한다.",
+      "status": "running",
+      "tasks": [
+        {
+          "id": "9834c78a",
+          "desc": "현재 시스템 파일 구조 요약 로드 실패 원인 분석 및 개선 방안 마련을 위한 정보 수집",
+          "type": "create",
+          "target": "analysis/system_interface_summary_failure_analysis.md",
+          "issue": "현재 시스템 파일 구조 요약 로드 실패 ('str' object has no attribute 'get') 원인을 분석하고, 이를 해결하기 위한 정보 수집 계획을 포함하는 마크다운 파일을 생성합니다. 실패 원인으로 추정되는 시나리오 (예: 잘못된 데이터 형식, API 호출 오류 등)를 나열하고, 각 시나리오를 검증하기 위한 데이터 수집 방법 (예: 로그 확인, API 응답 형식 확인 등)을 명시합니다.",
+          "depends_on": [],
+          "status": "done",
+          "result": "생성 완료: analysis/system_interface_summary_failure_analysis.md (3801자)",
+          "created_at": "2026-03-21T23:17:09.008936"
+        },
+        {
+          "id": "da805936",
+          "desc": "개선점 계획 및 검증을 위한 초기 설계 문서 작성",
+          "type": "create",
+          "target": "plan/improvement_plan_initial_design.md",
+          "issue": "현재 시스템의 개선점을 도출하고, 이를 검증하기 위한 초기 설계 문서를 작성합니다. 이 문서에는 개선할 기능의 개요, 예상되는 변경 사항, 그리고 변경 사항을 검증하기 위한 테스트 계획 (어떤 지표를 통해 성공을 판단할지)이 포함되어야 합니다.",
+          "depends_on": [
+            "9834c78a"
+          ],
+          "status": "done",
+          "result": "생성 완료: plan/improvement_plan_initial_design.md (6735자)",
+          "created_at": "2026-03-21T23:17:09.008979"
+        },
+        {
+          "id": "c6a124aa",
+          "desc": "개선점 계획에 따라 필요한 유틸리티 함수를 포함하는 모듈 생성",
+          "type": "create",
+          "target": "src/utils/data_processing.py",
+          "issue": "개선점 계획에서 도출된 데이터 처리 요구사항을 충족하는 유틸리티 함수들을 포함하는 `data_processing.py` 모듈을 생성합니다. 예를 들어, JSON 데이터 파싱, 특정 필드 추출, 데이터 유효성 검사 등의 순수 함수들을 포함합니다. 전역 변수 사용 금지 및 단일 책임 원칙을 준수합니다.",
+          "depends_on": [
+            "da805936"
+          ],
+          "status": "done",
+          "result": "생성 완료: src/utils/data_processing.py (6072자)",
+          "created_at": "2026-03-21T23:17:09.008990"
+        },
+        {
+          "id": "3b848552",
+          "desc": "생성된 data_processing.py 모듈의 유닛 테스트 파일 생성",
+          "type": "create",
+          "target": "tests/test_data_processing.py",
+          "issue": "src/utils/data_processing.py에 정의된 각 유틸리티 함수에 대한 유닛 테스트를 포함하는 `test_data_processing.py` 파일을 생성합니다. 각 테스트 케이스는 함수의 입력과 예상되는 출력을 명확히 정의하고, 다양한 엣지 케이스를 커버하도록 합니다.",
+          "depends_on": [
+            "c6a124aa"
+          ],
+          "status": "pending",
+          "result": "",
+          "created_at": "2026-03-21T23:17:09.008999"
+        },
+        {
+          "id": "81a6f123",
+          "desc": "data_processing.py 모듈의 유닛 테스트 실행 및 검증",
+          "type": "verify",
+          "target": "tests/test_data_processing.py",
+          "issue": "pytest를 사용하여 `test_data_processing.py`에 정의된 모든 테스트를 실행하고, 모든 테스트가 성공하는지 검증합니다.",
+          "depends_on": [
+            "3b848552"
+          ],
+          "status": "pending",
+          "result": "",
+          "created_at": "2026-03-21T23:17:09.009007"
+        },
+        {
+          "id": "84159e4b",
+          "desc": "개선된 로직을 적용할 핵심 컴포넌트 파일 생성",
+          "type": "create",
+          "target": "src/core/onew_system_processor.py",
+          "issue": "개선된 로직을 적용할 `onew_system_processor.py` 파일을 생성합니다. 이 파일은 `data_processing.py` 모듈의 함수들을 활용하여 시스템의 핵심 처리 로직을 구현합니다. 예를 들어, 입력 데이터를 받아 처리하고, 결과를 반환하는 `process_system_data`와 같은 함수를 포함합니다. 순환 참조 금지 원칙을 준수합니다.",
+          "depends_on": [
+            "81a6f123"
+          ],
+          "status": "pending",
+          "result": "",
+          "created_at": "2026-03-21T23:17:09.009014"
+        },
+        {
+          "id": "d8c913f2",
+          "desc": "생성된 onew_system_processor.py 모듈의 유닛 테스트 파일 생성",
+          "type": "create",
+          "target": "tests/test_onew_system_processor.py",
+          "issue": "src/core/onew_system_processor.py에 정의된 핵심 처리 로직에 대한 유닛 테스트를 포함하는 `test_onew_system_processor.py` 파일을 생성합니다. `process_system_data`와 같은 주요 함수에 대해 다양한 시나리오를 테스트하고, 예상되는 시스템 동작을 검증합니다.",
+          "depends_on": [
+            "84159e4b"
+          ],
+          "status": "pending",
+          "result": "",
+          "created_at": "2026-03-21T23:17:09.009021"
+        },
+        {
+          "id": "c2aa1c8f",
+          "desc": "onew_system_processor.py 모듈의 유닛 테스트 실행 및 검증",
+          "type": "verify",
+          "target": "tests/test_onew_system_processor.py",
+          "issue": "pytest를 사용하여 `test_onew_system_processor.py`에 정의된 모든 테스트를 실행하고, 모든 테스트가 성공하는지 검증합니다.",
+          "depends_on": [
+            "d8c913f2"
+          ],
+          "status": "pending",
+          "result": "",
+          "created_at": "2026-03-21T23:17:09.009028"
+        },
+        {
+          "id": "b8dbe4dd",
+          "desc": "개선된 시스템 로직을 통합하고 실행하는 메인 스크립트 생성",
+          "type": "create",
+          "target": "main.py",
+          "issue": "개선된 `onew_system_processor.py` 모듈을 사용하여 시스템의 전체 흐름을 통합하고 실행하는 `main.py` 스크립트를 생성합니다. 이 스크립트는 외부 입력을 처리하고, `onew_system_processor`를 호출하며, 최종 결과를 출력하는 역할을 합니다. 환경 변수 사용 원칙을 준수합니다.",
+          "depends_on": [
+            "c2aa1c8f"
+          ],
+          "status": "pending",
+          "result": "",
+          "created_at": "2026-03-21T23:17:09.009035"
+        },
+        {
+          "id": "7373c775",
+          "desc": "전체 시스템 통합 테스트 계획 및 검증 문서 작성",
+          "type": "create",
+          "target": "verification/system_integration_test_plan.md",
+          "issue": "개선된 시스템이 목표를 달성했는지 최종적으로 검증하기 위한 통합 테스트 계획 문서를 작성합니다. 이 문서에는 테스트 시나리오, 예상 결과, 성공 기준, 그리고 테스트 수행 방법 (예: 실제 데이터 사용, 특정 환경 설정 등)이 상세하게 기술되어야 합니다.",
+          "depends_on": [
+            "b8dbe4dd"
+          ],
+          "status": "pending",
+          "result": "",
+          "created_at": "2026-03-21T23:17:09.009042"
+        }
+      ],
+      "snapshot": {},
+      "created_at": "2026-03-21T23:17:09.009084",
+      "updated_at": "2026-03-21T23:19:15.788026"
+    },
+    {
       "id": "e49ee6af",
       "goal": "토큰소비 최소화하며, 온유 시스템에 부족한 부분 자료 생성 (300자 내), 생성된 기준으로 Github 검색 하여 필요 파일 설치 계획 포함 재수정(500자 내외) 파일형식 md파일로 생성 후 보고.",
       "status": "done",
