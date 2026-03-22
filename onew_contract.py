@@ -323,9 +323,28 @@ def get_project_summary() -> str:
 # ==============================================================================
 # [실행]
 # ==============================================================================
+def _hook_mode():
+    """Claude Code PostToolUse 훅 모드: .py 파일 수정 시 자동 재생성"""
+    import sys, json as _json
+    try:
+        raw       = sys.stdin.read()
+        data      = _json.loads(raw)
+        file_path = data.get("tool_input", {}).get("file_path", "")
+        # SCAN_FILES에 포함된 .py 파일일 때만 실행
+        if not any(f in file_path for f in SCAN_FILES):
+            sys.exit(0)
+        result = generate()
+        print(f"[계약 갱신] {result.splitlines()[0] if result else 'OK'}", flush=True)
+    except Exception:
+        sys.exit(0)  # 훅 실패는 조용히
+
+
 if __name__ == "__main__":
     import sys
     sys.stdout.reconfigure(encoding="utf-8")
+    if "--hook" in sys.argv:
+        _hook_mode()
+        sys.exit(0)
     print(generate())
     print()
     print(get_project_summary())
