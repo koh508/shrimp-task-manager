@@ -1,5 +1,5 @@
-# onew_system_gaps_initial_draft.py
-# 파일명 요구사항에 따라 .md 확장자가 명시되었으나, Python 모듈 작성 요청에 따라 .py 파일로 가정하고 작성합니다.
+# onew_system_gaps_initial_draft (코드플래너 자동생성 — 참고 전용)
+# ⚠️ 2026-03-22: 코드플래너가 잘못 생성한 파일. 실제 로드맵은 SYSTEM/onew_growth_roadmap.md 참조.
 
 """
 온유 시스템의 초기 설계 단계에서 식별된 주요 기능 및 아키텍처 부족 부분을 정의하는 모듈입니다.
