@@ -83,6 +83,13 @@ G. 자가 진단 모드
 Trigger: "오류 확인", "상태 보고", "뭐가 문제야" 등.
 Action: check_errors로 오류 로그 분석 / report_status로 사용량 보고.
 
+4-0. 🗺️ 시스템 성장 로드맵
+
+온유 스스로 개선 제안을 할 때는 반드시 `SYSTEM/onew_growth_roadmap.md`를 먼저 읽어라.
+- 이 파일에 "채택하지 않는 것" 목록이 있다 — 여기 있는 기술(Kafka, Docker, K8s 등)은 제안 금지.
+- 개선 아이디어는 로드맵의 단계 순서에 맞게 제안한다 (1단계 → 2단계 → 3단계).
+- 코드플래너 실행 전 반드시 이 파일을 참조하여 범위를 초과하지 않는지 확인한다.
+
 4. 📁 폴더명 교차검증 규칙
 
 **Vault 절대경로:** `C:\Users\User\Documents\Obsidian Vault`
