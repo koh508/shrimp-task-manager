@@ -14,6 +14,7 @@ v3 개선:
   8. 설계 원칙    : 프롬프트에 코딩 가이드라인 주입 (전역변수 금지 등)
 """
 import ast
+import difflib
 import json
 import os
 import subprocess
@@ -22,9 +23,11 @@ import urllib.parse
 import urllib.request
 import uuid
 from datetime import datetime
+from pathlib import Path
 
 SYSTEM_DIR        = os.path.dirname(os.path.abspath(__file__))
 PLAN_QUEUE        = os.path.join(SYSTEM_DIR, "onew_code_plan_queue.json")
+CHANGE_LOG_DIR    = os.path.join(SYSTEM_DIR, "코드변경이력")
 INTERFACE_SUMMARY = os.path.join(SYSTEM_DIR, "interface_summary.json")
 REASONING_LOG     = os.path.join(SYSTEM_DIR, "onew_reasoning_log.json")
 PLANNER_CONTEXT   = os.path.join(SYSTEM_DIR, "onew_planner_context.json")  # 온유 대화 주입용
@@ -313,6 +316,70 @@ def reject_plan(plan_id=None):
 # ==============================================================================
 # [v3-7] 오답 노트 — 실패 기록 / 로드
 # ==============================================================================
+def _save_code_change(target: str, old_content: str, goal: str):
+    """수정된 파일의 diff를 SYSTEM/코드변경이력/ 에 .md로 저장하고 터미널에 요약 출력."""
+    try:
+        path = _resolve_target(target)
+        if not os.path.exists(path):
+            return
+        new_content = Path(path).read_text(encoding="utf-8")
+
+        old_lines = old_content.splitlines(keepends=True)
+        new_lines = new_content.splitlines(keepends=True)
+        diff = list(difflib.unified_diff(
+            old_lines, new_lines,
+            fromfile=f"{target} (이전)",
+            tofile=f"{target} (이후)",
+            lineterm=""
+        ))
+
+        if not diff:
+            return  # 변경 없음
+
+        added   = sum(1 for l in diff if l.startswith("+") and not l.startswith("+++"))
+        removed = sum(1 for l in diff if l.startswith("-") and not l.startswith("---"))
+
+        now = datetime.now()
+        ts  = now.strftime("%Y-%m-%d_%H%M")
+        safe_name = target.replace("/", "_").replace("\\", "_")
+
+        # diff 내용이 너무 길면 앞부분만 (최대 100줄)
+        diff_text = "\n".join(diff[:100])
+        if len(diff) > 100:
+            diff_text += f"\n... (생략: {len(diff)-100}줄 더 있음)"
+
+        md = (
+            f"---\n"
+            f"tags: [코드변경이력]\n"
+            f"날짜: {now.strftime('%Y-%m-%d')}\n"
+            f"파일: {target}\n"
+            f"목표: {goal[:80]}\n"
+            f"---\n\n"
+            f"# 코드 변경 이력: {target}\n\n"
+            f"**변경 시각:** {now.strftime('%Y-%m-%d %H:%M')}\n"
+            f"**목표:** {goal[:120]}\n"
+            f"**변경:** +{added}줄 추가 / -{removed}줄 삭제\n\n"
+            f"```diff\n{diff_text}\n```\n"
+        )
+
+        os.makedirs(CHANGE_LOG_DIR, exist_ok=True)
+        log_path = os.path.join(CHANGE_LOG_DIR, f"{ts}_{safe_name}.md")
+        tmp = log_path + ".tmp"
+        with open(tmp, "w", encoding="utf-8") as f:
+            f.write(md)
+        os.replace(tmp, log_path)
+
+        # 터미널 요약 출력
+        summary = f"[변경이력] {target}: +{added}줄 / -{removed}줄 -> {os.path.basename(log_path)}"
+        try:
+            print(summary)
+        except UnicodeEncodeError:
+            pass
+
+    except Exception:
+        pass
+
+
 def _log_failure(plan, failed_task):
     """롤백 발생 시 실패 경험을 onew_reasoning_log.json에 기록."""
     entry = {
@@ -808,6 +875,13 @@ def execute_next(engine=None, client=None):
         task["status"] = "done" if ok else "failed"
         task["result"] = result[:300]
         plan["updated_at"] = datetime.now().isoformat()
+
+        # 수정 성공 시 diff 저장
+        if ok and task["type"] == "modify":
+            old = plan.get("snapshot", {}).get(task["target"], "")
+            if old:
+                _save_code_change(task["target"], old, plan["goal"])
+
         _save_queue(data)
 
         if not ok:
@@ -879,6 +953,30 @@ def get_log(max_plans=3):
             pass
 
     return "\n".join(lines).strip() or "실패 기록 없음"
+
+
+def get_change_log(max_entries=5):
+    """최근 코드 변경 이력 목록 반환."""
+    if not os.path.exists(CHANGE_LOG_DIR):
+        return "변경 이력 없음 (아직 코드 수정이 실행되지 않았습니다)"
+    files = sorted(Path(CHANGE_LOG_DIR).glob("*.md"), reverse=True)[:max_entries]
+    if not files:
+        return "변경 이력 없음"
+    lines = ["[최근 코드 변경 이력]"]
+    for f in files:
+        try:
+            content = f.read_text(encoding="utf-8")
+            # YAML에서 파일/목표/변경 줄 추출
+            file_line = next((l for l in content.splitlines() if l.startswith("파일:")), "")
+            goal_line = next((l for l in content.splitlines() if l.startswith("목표:")), "")
+            change_line = next((l for l in content.splitlines() if l.startswith("**변경:**")), "")
+            lines.append(f"\n{f.stem}")
+            if file_line: lines.append(f"  {file_line}")
+            if goal_line: lines.append(f"  {goal_line}")
+            if change_line: lines.append(f"  {change_line.replace('**변경:**','변경:')}")
+        except Exception:
+            lines.append(f"\n{f.name}")
+    return "\n".join(lines)
 
 
 def get_status():
