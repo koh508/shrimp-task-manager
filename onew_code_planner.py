@@ -283,7 +283,7 @@ def _has_core_file(tasks):
 
 
 def approve_plan(plan_id=None):
-    """텔레그램 '승인' 명령 처리 — waiting_approval 플랜을 pending으로 전환."""
+    """'승인' 명령 처리 — waiting_approval 플랜을 pending으로 전환."""
     data    = _load_queue()
     waiting = [p for p in data.get("plans", []) if p["status"] == "waiting_approval"]
     if not waiting:
@@ -293,7 +293,21 @@ def approve_plan(plan_id=None):
     target["updated_at"] = datetime.now().isoformat()
     _save_queue(data)
     _notify(f"✅ [코드플래너] 계획 승인됨\n목표: {target['goal'][:50]}")
-    return f"계획 승인: {target['goal'][:50]}"
+    return f"✅ 계획 승인됨 — 실행 시작: {target['goal'][:60]}"
+
+
+def reject_plan(plan_id=None):
+    """'거부' 명령 처리 — waiting_approval 플랜을 cancelled로 전환."""
+    data    = _load_queue()
+    waiting = [p for p in data.get("plans", []) if p["status"] == "waiting_approval"]
+    if not waiting:
+        return "승인 대기 중인 계획 없음"
+    target = next((p for p in waiting if p["id"] == plan_id), waiting[-1])
+    target["status"]     = "cancelled"
+    target["updated_at"] = datetime.now().isoformat()
+    _save_queue(data)
+    _notify(f"🚫 [코드플래너] 계획 거부됨\n목표: {target['goal'][:50]}")
+    return f"🚫 계획 거부됨: {target['goal'][:60]}"
 
 
 # ==============================================================================
@@ -425,26 +439,55 @@ def create_plan(goal, client=None):
     failure_ctx    = _load_failure_lessons()
     failure_section = f"\n{failure_ctx}\n" if failure_ctx else ""
 
+    # 실제 존재하는 수정 가능 파일 목록 동적 생성
+    from onew_contract import SCAN_FILES as _scan
+    existing_files = [f for f in _scan if os.path.exists(os.path.join(SYSTEM_DIR, f))]
+    allowed_targets = "\n".join(f"  - {f}" for f in existing_files)
+
+    # 성장 로드맵 로드 (있으면)
+    roadmap_path = os.path.join(SYSTEM_DIR, "onew_growth_roadmap.md")
+    roadmap_ctx = ""
+    if os.path.exists(roadmap_path):
+        try:
+            with open(roadmap_path, encoding="utf-8") as f:
+                roadmap_raw = f.read()
+            # "채택하지 않는 것" 섹션만 추출
+            if "채택하지 않는 것" in roadmap_raw:
+                start = roadmap_raw.index("채택하지 않는 것")
+                roadmap_ctx = "\n=== 채택 금지 기술 (절대 사용 금지) ===\n" + roadmap_raw[start:start+600]
+        except Exception:
+            pass
+
     prompt = f"""온유 자율 코딩 시스템입니다.
 다음 목표를 달성하기 위한 코딩 태스크 목록을 JSON으로 작성하세요.
 
 목표: {goal}
 
+=== 수정 가능한 파일 목록 (이 목록 외의 파일은 절대 target으로 지정 금지) ===
+{allowed_targets}
+
+=== 새 파일 생성 규칙 ===
+- create 태스크: SYSTEM 폴더 직접 하위에만 생성 가능 (src/, tests/ 등 하위 폴더 생성 금지)
+- 파일명은 "onew_" 접두어 사용 (예: onew_new_feature.py)
+- 테스트 파일은 "test_onew_" 접두어 사용
+
 === 현재 시스템 파일 구조 (interface_summary) ===
 {interface_ctx}
+{roadmap_ctx}
 {failure_section}
 {DESIGN_PRINCIPLES}
 
 규칙:
 1. 태스크 최대 {MAX_TASKS}개, 각각 단일 파일 단위로 원자적 실행 가능
 2. type: "modify"(기존 파일 수정) / "create"(새 파일 생성) / "verify"(pytest 실행)
-3. [TDD] .py 파일을 modify할 때만 verify 태스크 배치 (.md 등 비-Python 파일은 verify 불필요)
+3. modify target은 반드시 위 "수정 가능한 파일 목록"에서만 선택할 것 — 목록에 없는 파일은 수정 불가
+4. [TDD] .py 파일을 modify할 때만 verify 태스크 배치 (.md 등 비-Python 파일은 verify 불필요)
    - 패턴: modify A.py → verify test_A.py → modify B.py → verify test_B.py
    - .md, .json 등 비-Python 파일 create/modify 후에는 verify 태스크 추가하지 말 것
-4. modify의 issue: 위 함수 목록을 참고한 구체적 수정 요구사항 (어떤 함수를 어떻게)
-5. create의 issue: 파일 목적 + 포함할 핵심 함수/클래스 명세
-6. depends_on: 빈 배열 (순서로 의존성 표현)
-7. 실행 가능한 순서로 정렬
+5. modify의 issue: 위 함수 목록을 참고한 구체적 수정 요구사항 (어떤 함수를 어떻게)
+6. create의 issue: 파일 목적 + 포함할 핵심 함수/클래스 명세
+7. depends_on: 빈 배열 (순서로 의존성 표현)
+8. 실행 가능한 순서로 정렬
 
 JSON만 반환 (다른 텍스트 없이):
 {{"tasks": [{{"desc": "...", "type": "modify|create|verify", "target": "파일명.py", "issue": "...", "depends_on": []}}]}}"""
@@ -475,6 +518,24 @@ JSON만 반환 (다른 텍스트 없이):
         _notify("⚠️ [코드플래너] 생성된 태스크 없음")
         return None
 
+    # [검증] modify 대상 파일이 실제 존재하는지 계획 생성 시점에 확인
+    invalid_modify = [
+        t for t in tasks_raw
+        if t.get("type") == "modify" and t.get("target") not in existing_files
+    ]
+    if invalid_modify:
+        bad_names = [t["target"] for t in invalid_modify]
+        tasks_raw = [t for t in tasks_raw if t not in invalid_modify]
+        warn_msg = f"[코드플래너] 존재하지 않는 파일 수정 시도 제거: {bad_names}"
+        try:
+            print(f"!! {warn_msg}")
+        except UnicodeEncodeError:
+            pass
+        _notify(f"⚠️ {warn_msg}")
+        if not tasks_raw:
+            _notify("⚠️ [코드플래너] 유효한 태스크가 없어 계획 취소")
+            return None
+
     # 비-Python 파일의 verify 태스크 제거 (LLM이 프롬프트 무시하고 생성하는 경우 방어)
     tasks_raw = [
         t for t in tasks_raw
@@ -500,30 +561,41 @@ JSON만 반환 (다른 텍스트 없이):
 
     plan = _new_plan(goal, tasks)
 
-    # [v3-6] HITL: 코어 파일 수정 시 승인 대기
-    needs_approval = _has_core_file(tasks)
-    if needs_approval:
-        plan["status"] = "waiting_approval"
+    # [v3-6] 모든 계획 → 사용자 확인 대기 (코어 파일 여부 무관)
+    plan["status"] = "waiting_approval"
+    is_core = _has_core_file(tasks)
 
     data = _load_queue()
     data["plans"].append(plan)
     _save_queue(data)
 
-    summary = "\n".join(
-        f"  {i+1}. [{t['type']}] {t['desc']}" for i, t in enumerate(tasks)
-    )
+    # 터미널 출력 — 계획 상세 내용 표시
+    summary_lines = []
+    for i, t in enumerate(tasks):
+        icon = {"modify": "✏️", "create": "🆕", "verify": "🧪"}.get(t["type"], "•")
+        summary_lines.append(f"  {i+1}. {icon} [{t['type']}] {t['target']} — {t['desc']}")
+    summary = "\n".join(summary_lines)
 
-    if needs_approval:
+    core_warn = ""
+    if is_core:
         core_targets = [t["target"] for t in tasks if t.get("target") in CORE_FILES]
-        _notify(
-            f"⚠️ [코드플래너] 승인 필요\n"
-            f"목표: {goal}\n"
-            f"코어 파일 수정: {', '.join(core_targets)}\n\n"
-            f"{summary}\n\n"
-            f"'승인' 또는 '플래너승인'을 입력하면 실행합니다."
-        )
-    else:
-        _notify(f"📋 [코드플래너] 계획 생성\n목표: {goal}\n\n{summary}")
+        core_warn = f"\n⚠️  코어 파일 포함: {', '.join(core_targets)}"
+
+    plan_preview = (
+        f"\n{'='*50}\n"
+        f"📋 [코드플래너] 계획 생성 완료 — 실행 전 확인 필요\n"
+        f"목표: {goal}{core_warn}\n"
+        f"태스크 {len(tasks)}개:\n{summary}\n"
+        f"{'='*50}\n"
+        f"👉 실행하려면 '승인' 입력 / 취소하려면 '거부' 입력\n"
+    )
+    try:
+        print(plan_preview)
+    except UnicodeEncodeError:
+        # Windows cp949 터미널 대응 — 이모지 제거 후 출력
+        safe = plan_preview.encode('cp949', errors='replace').decode('cp949')
+        print(safe)
+    _notify(f"📋 [코드플래너] 계획 생성 — 승인 대기\n목표: {goal}\n{summary[:400]}")
 
     return plan
 
