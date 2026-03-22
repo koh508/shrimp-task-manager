@@ -2324,6 +2324,78 @@ def log_error_to_vault(context: str, error: str):
             f.write(existing + entry)
     except: pass
 
+
+def _notify_safety_block(ans, context: str):
+    """Gemini 응답에서 방어기제(Safety) 차단 여부를 감지하고 텔레그램으로 알린다.
+    차단이 감지되면 True 반환, 아니면 False 반환.
+    차단 시 온유_오류.md 최근 5개 항목을 로그로 첨부한다.
+    """
+    block_reason = None
+    finish_reason = None
+
+    # 1. 프롬프트 자체가 차단된 경우 (candidates 없음)
+    try:
+        candidates = getattr(ans, 'candidates', None)
+        if not candidates:
+            pf = getattr(ans, 'prompt_feedback', None)
+            if pf:
+                block_reason = str(getattr(pf, 'block_reason', 'UNKNOWN'))
+            else:
+                block_reason = "PROMPT_BLOCKED (candidates 없음)"
+    except Exception:
+        pass
+
+    # 2. 응답 생성 중 Safety 필터로 중단된 경우
+    if not block_reason:
+        try:
+            candidate = ans.candidates[0]
+            fr = getattr(candidate, 'finish_reason', None)
+            fr_str = str(fr) if fr is not None else ""
+            if "SAFETY" in fr_str.upper() or "BLOCK" in fr_str.upper():
+                finish_reason = fr_str
+                # safety_ratings 상세 정보 수집
+                ratings = getattr(candidate, 'safety_ratings', [])
+                blocked_cats = [
+                    f"{getattr(r,'category','?')}={getattr(r,'probability','?')}"
+                    for r in ratings
+                    if str(getattr(r, 'probability', '')).upper() not in ('NEGLIGIBLE', 'LOW', 'UNSPECIFIED', '0', '')
+                ]
+                block_reason = f"finish_reason={finish_reason}"
+                if blocked_cats:
+                    block_reason += f" | {', '.join(blocked_cats)}"
+        except Exception:
+            pass
+
+    if not block_reason:
+        return False  # 차단 아님
+
+    # 차단 감지 → 로그 기록
+    log_error_to_vault(f"Safety 차단 — {context[:80]}", block_reason)
+
+    # 온유_오류.md 최근 5개 항목 읽기
+    recent_log = ""
+    try:
+        log_path = os.path.join(OBSIDIAN_VAULT_PATH, "SYSTEM", "온유_오류.md")
+        if os.path.exists(log_path):
+            with open(log_path, 'r', encoding='utf-8') as f:
+                raw = f.read()
+            entries = [e for e in raw.split("\n## ") if e.strip()]
+            last5 = entries[-5:]
+            recent_log = "\n---\n".join(last5)[-800:]  # 최대 800자
+    except Exception:
+        recent_log = "(로그 읽기 실패)"
+
+    msg = (
+        f"🚫 *[온유 방어기제 차단 감지]*\n\n"
+        f"📌 상황: `{context[:120]}`\n"
+        f"❌ 차단 이유: `{block_reason}`\n\n"
+        f"📋 *최근 오류 로그 (최대 5건)*\n"
+        f"```\n{recent_log}\n```"
+    )
+    _send_telegram_notify(msg)
+    return True
+
+
 def report_status() -> str:
     """오늘의 API 사용량, 비용, 저장된 지식 수를 보고한다."""
     _, today, search_count = _get_search_count()
@@ -3082,6 +3154,22 @@ author: Onew
     return "📋 작업 기억 파일 생성 완료:\n" + "\n".join(results) + f"\n경로: SYSTEM/working_memory/"
 
 
+def refresh_code_index() -> str:
+    """obsidian_agent.py 코드 구조를 AST로 파싱해 온유_코드구조.md를 재생성합니다.
+    Gemini API 호출 없음. 토큰 소모 없음. Claude Code가 코드를 수정할 때마다 자동 실행됩니다.
+    수동으로 '코드구조 갱신' 명령 시 이 도구를 호출하세요.
+    """
+    try:
+        import importlib.util
+        _idx_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "onew_code_indexer.py")
+        spec = importlib.util.spec_from_file_location("onew_code_indexer", _idx_path)
+        mod = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(mod)
+        return mod.build_index()
+    except Exception as e:
+        return f"코드 인덱스 갱신 실패: {e}"
+
+
 # 온유가 사용할 수 있는 권한 목록
 tool_map = {
     "read_file": read_file,
@@ -3122,6 +3210,7 @@ tool_map = {
     "fetch_url_as_md": fetch_url_as_md,
     "quiz_me": quiz_me,
     "create_working_memory": create_working_memory,
+    "refresh_code_index": refresh_code_index,
 }
 onew_tools = [
     read_file, write_file, edit_file, create_folder, list_files, move_file, delete_file,
@@ -3130,7 +3219,7 @@ onew_tools = [
     check_errors, report_status, get_secret_mode, set_secret_mode,
     search_vault, clip_status, get_clip_topics, set_clip_config, set_weekly_clip,
     fetch_url_as_md, analyze_image,
-    quiz_me, create_working_memory,
+    quiz_me, create_working_memory, refresh_code_index,
 ] + [
     __import__('onew_task_manager').task_create,
     __import__('onew_task_manager').task_list,
@@ -3929,6 +4018,10 @@ class OnewAgent:
         try:
             ans = self.chat.send_message(f"Context:\n{ctx}\n\n명령: {query}")
             _increment_usage("chat")
+            # Safety 방어기제 차단 감지
+            if _notify_safety_block(ans, f"초기 질문: {query[:80]}"):
+                print("🚫 [방어기제] 응답이 Safety 필터에 차단되었습니다. 텔레그램으로 알림 전송됨.")
+                return
             # chat 일일 과금 경고 (소프트 한도)
             _today_chat = _get_today_usage("chat")
             if _today_chat == MAX_DAILY_CHAT_WARN:
@@ -4026,6 +4119,10 @@ class OnewAgent:
             try:
                 ans = self.chat.send_message(tool_responses)
                 _increment_usage("chat")
+                # Safety 방어기제 차단 감지 (도구 결과 처리 중)
+                if _notify_safety_block(ans, f"도구루프 #{tool_loop_count} — {query[:60]}"):
+                    print("🚫 [방어기제] 도구 결과 처리 중 Safety 필터 차단. 텔레그램 알림 전송됨.")
+                    break
             except Exception as e:
                 if "INVALID_ARGUMENT" in str(e):
                     self._new_chat_session()
@@ -4036,6 +4133,8 @@ class OnewAgent:
         
         # 4. 최종 결과 출력 및 히스토리 저장
         # ans.text 대신 parts에서 직접 추출 → function_call 경고 방지
+        # Safety 차단 최종 확인 (위 단계에서 통과했더라도 최종 응답에서 차단될 수 있음)
+        _notify_safety_block(ans, f"최종 답변 생성 — {query[:80]}")
         try:
             parts = ans.candidates[0].content.parts
             texts = [p.text for p in parts if hasattr(p, 'text') and p.text]
@@ -4498,6 +4597,19 @@ if __name__ == "__main__":
     _review   = ReviewScheduler(generate_fn=_bg_gen_fn)
     _weakness = WeaknessTracker(generate_fn=_bg_gen_fn, review_scheduler=_review)
     _review.run_daily_check()
+
+    # 학습 설계 엔진 초기화 (study_plan.json 기반 커리큘럼)
+    try:
+        from onew_study_engine import StudyEngine
+        _study_engine = StudyEngine(
+            generate_fn=_bg_gen_fn,
+            weakness_tracker=_weakness,
+            review_scheduler=_review,
+        )
+        print("📚 [학습엔진] 초기화 완료 (Vault 우선 문제 선택 + 마스터리 추적)")
+    except Exception as _se:
+        print(f"  ⚠️ [학습엔진] 초기화 실패: {_se}")
+        _study_engine = None
     from onew_night_study import start_background as _night_start
     _night_start(_bg_gen_fn)
     from onew_field_linker import start_background as _field_start
@@ -4525,7 +4637,7 @@ if __name__ == "__main__":
 
     try:
         from onew_adhd_coach import ADHDCoach, start_background as _coach_start
-        _coach = ADHDCoach(generate_fn=_gen_fn)
+        _coach = ADHDCoach(generate_fn=_gen_fn, study_engine=_study_engine)
         _coach_start(_coach)
     except Exception as _e:
         print(f"  ⚠️ [ADHD코치] 초기화 실패: {_e}")
@@ -4871,6 +4983,16 @@ if __name__ == "__main__":
                     _planner.force_plan()
                 elif cmd in ['복습 현황', '복습현황', '복습 일정', '복습일정']:
                     print(_review.get_summary())
+                elif cmd in ['학습진도', '학습 진도', '공부진도', '진도']:
+                    if _study_engine:
+                        print(_study_engine.get_progress_summary())
+                    else:
+                        print("학습엔진이 초기화되지 않았습니다.")
+                elif cmd in ['학습계획', '학습 계획', '공부계획', '공부 계획', '학습설계']:
+                    if _study_engine:
+                        print(_study_engine.get_plan_summary())
+                    else:
+                        print("학습엔진이 초기화되지 않았습니다.")
                 elif q.startswith('복습등록:') or q.startswith('복습 등록:'):
                     concept = q.split(':', 1)[-1].strip()
                     if concept:

@@ -1,0 +1,41 @@
+{
+  "version": "1.0",
+  "updated": "2026-03-22",
+  "note": "학습 목표 설계 파일. 수동 수정 가능. deadline/priority/topics 변경 반영됨.",
+  "goals": [
+    {
+      "id": "hvac_exam",
+      "name": "공조냉동기계기사 실기",
+      "deadline": "2026-05-10",
+      "priority": 1,
+      "vault_path": "OCU/2024 공조냉동기계기사 실기 합본",
+      "topics": [
+        "냉동 사이클",
+        "압축기",
+        "냉매 특성",
+        "응축기",
+        "증발기",
+        "팽창 장치",
+        "공기조화",
+        "냉동 부하 계산",
+        "배관 및 부속기기",
+        "안전 장치 및 제어"
+      ]
+    },
+    {
+      "id": "ocu_fire",
+      "name": "OCU 소방방재안전학과",
+      "deadline": "2026-06-30",
+      "priority": 2,
+      "subjects": [
+        {"name": "소방원론",          "vault_path": "OCU/소방원론"},
+        {"name": "소방약제학",        "vault_path": "OCU/소방약제학"},
+        {"name": "소방학개론",        "vault_path": "OCU/소방학개론"},
+        {"name": "소방드론학",        "vault_path": "OCU/소방드론학"},
+        {"name": "인간공학",          "vault_path": "OCU/인간공학 1~7주차"},
+        {"name": "환경보건",          "vault_path": "OCU/환경보건"},
+        {"name": "법규 및 에너지",    "vault_path": "OCU/법규 및 에너지추진방향"}
+      ]
+    }
+  ]
+}
