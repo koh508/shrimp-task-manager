@@ -4917,6 +4917,12 @@ if __name__ == "__main__":
                         print(_ocp.reject_plan())
                     except Exception as _e:
                         print(f"⚠️ {_e}")
+                elif q in ('변경이력', '코드변경', 'plan changes'):
+                    try:
+                        import onew_code_planner as _ocp
+                        print(_ocp.get_change_log())
+                    except Exception as _e:
+                        print(f"⚠️ {_e}")
                 elif q.startswith('클로드한테 시킬 거야') or q.startswith('클로드에게 시킬 거야') or q.startswith('클로드한테 시켜'):
                     # 콜론 또는 공백 이후 내용 추출
                     task = q.split(':', 1)[-1].strip() if ':' in q else re.sub(r'^클로드(한테|에게)\s*시킬\s*거야|^클로드한테\s*시켜', '', q).strip()
