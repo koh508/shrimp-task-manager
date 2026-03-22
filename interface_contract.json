@@ -1,6 +1,6 @@
 {
   "obsidian_agent.py": {
-    "generated": "2026-03-20 14:26",
+    "generated": "2026-03-22 14:15",
     "functions": [
       {
         "file": "obsidian_agent.py",
@@ -552,6 +552,28 @@
       {
         "file": "obsidian_agent.py",
         "class": "OnewAgent",
+        "name": "_update_user_profile_facts",
+        "args": [
+          {
+            "name": "query",
+            "type": "str"
+          },
+          {
+            "name": "answer",
+            "type": "str"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [
+          "file_write"
+        ],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "obsidian_agent.py",
+        "class": "OnewAgent",
         "name": "_reset_chat_if_needed",
         "args": [],
         "returns": "unknown",
@@ -695,67 +717,6 @@
         "returns": "unknown",
         "is_async": false,
         "side_effects": [],
-        "has_kwargs": false,
-        "has_varargs": false
-      },
-      {
-        "file": "obsidian_agent.py",
-        "class": null,
-        "name": "_get_file_lock",
-        "args": [
-          {
-            "name": "filepath",
-            "type": "str"
-          }
-        ],
-        "returns": "threading.Lock",
-        "is_async": false,
-        "side_effects": [],
-        "has_kwargs": false,
-        "has_varargs": false
-      },
-      {
-        "file": "obsidian_agent.py",
-        "class": null,
-        "name": "_atomic_json_write",
-        "args": [
-          {
-            "name": "filepath",
-            "type": "str"
-          },
-          {
-            "name": "data",
-            "type": "dict | list"
-          }
-        ],
-        "returns": "unknown",
-        "is_async": false,
-        "side_effects": [
-          "file_write",
-          "json_write"
-        ],
-        "has_kwargs": false,
-        "has_varargs": false
-      },
-      {
-        "file": "obsidian_agent.py",
-        "class": null,
-        "name": "_atomic_md_append",
-        "args": [
-          {
-            "name": "filepath",
-            "type": "str"
-          },
-          {
-            "name": "content",
-            "type": "str"
-          }
-        ],
-        "returns": "unknown",
-        "is_async": false,
-        "side_effects": [
-          "file_write"
-        ],
         "has_kwargs": false,
         "has_varargs": false
       },
@@ -1887,6 +1848,10 @@
           {
             "name": "exclude_calc",
             "type": "bool"
+          },
+          {
+            "name": "file_path",
+            "type": "str"
           }
         ],
         "returns": "str",
@@ -2096,7 +2061,7 @@
     ]
   },
   "onew_self_improve.py": {
-    "generated": "2026-03-20 14:26",
+    "generated": "2026-03-22 14:15",
     "functions": [
       {
         "file": "onew_self_improve.py",
@@ -2172,6 +2137,56 @@
           {
             "name": "filepath",
             "type": "str"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_self_improve.py",
+        "class": "CircuitBreaker",
+        "name": "_fix_hash",
+        "args": [
+          {
+            "name": "fix",
+            "type": "dict"
+          }
+        ],
+        "returns": "str",
+        "is_async": false,
+        "side_effects": [
+          "json_write"
+        ],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_self_improve.py",
+        "class": "CircuitBreaker",
+        "name": "is_fix_duplicate",
+        "args": [
+          {
+            "name": "fix",
+            "type": "dict"
+          }
+        ],
+        "returns": "bool",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_self_improve.py",
+        "class": "CircuitBreaker",
+        "name": "record_failed_hash",
+        "args": [
+          {
+            "name": "fix",
+            "type": "dict"
           }
         ],
         "returns": "unknown",
@@ -2416,6 +2431,49 @@
       },
       {
         "file": "onew_self_improve.py",
+        "class": "FixAnalyzer",
+        "name": "record_reasoning",
+        "args": [
+          {
+            "name": "issue",
+            "type": "str"
+          },
+          {
+            "name": "fix",
+            "type": "dict"
+          },
+          {
+            "name": "confidence",
+            "type": "int"
+          },
+          {
+            "name": "gates_passed",
+            "type": "list"
+          },
+          {
+            "name": "apply_method",
+            "type": "str"
+          },
+          {
+            "name": "result",
+            "type": "str"
+          },
+          {
+            "name": "human_approved",
+            "type": "bool"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [
+          "file_write",
+          "json_write"
+        ],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_self_improve.py",
         "class": "ImprovementLog",
         "name": "_load",
         "args": [],
@@ -2617,6 +2675,30 @@
       {
         "file": "onew_self_improve.py",
         "class": "SelfImproveEngine",
+        "name": "_score_fix",
+        "args": [
+          {
+            "name": "fix",
+            "type": "dict"
+          },
+          {
+            "name": "sandbox_detail",
+            "type": "str"
+          },
+          {
+            "name": "filepath",
+            "type": "str"
+          }
+        ],
+        "returns": "tuple[int, list]",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_self_improve.py",
+        "class": "SelfImproveEngine",
         "name": "_apply_via_aider",
         "args": [
           {
@@ -2784,6 +2866,33 @@
       {
         "file": "onew_self_improve.py",
         "class": null,
+        "name": "_get_agent_pid",
+        "args": [],
+        "returns": "int | None",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_self_improve.py",
+        "class": null,
+        "name": "_wait_for_safe_point",
+        "args": [
+          {
+            "name": "timeout",
+            "type": "int"
+          }
+        ],
+        "returns": "bool",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_self_improve.py",
+        "class": null,
         "name": "_extract_file_structure",
         "args": [
           {
@@ -2796,6 +2905,22 @@
           }
         ],
         "returns": "str",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_self_improve.py",
+        "class": null,
+        "name": "_validate_test_code",
+        "args": [
+          {
+            "name": "test_code",
+            "type": "str"
+          }
+        ],
+        "returns": "tuple[bool, str]",
         "is_async": false,
         "side_effects": [],
         "has_kwargs": false,
@@ -2861,6 +2986,19 @@
       {
         "file": "onew_self_improve.py",
         "class": null,
+        "name": "_get_gemini_client",
+        "args": [],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [
+          "network"
+        ],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_self_improve.py",
+        "class": null,
         "name": "start_watcher",
         "args": [
           {
@@ -2897,7 +3035,7 @@
     ]
   },
   "onew_contract.py": {
-    "generated": "2026-03-20 14:26",
+    "generated": "2026-03-22 14:15",
     "functions": [
       {
         "file": "onew_contract.py",
@@ -2945,7 +3083,8 @@
         "is_async": false,
         "side_effects": [
           "file_write",
-          "json_write"
+          "json_write",
+          "subprocess"
         ],
         "has_kwargs": false,
         "has_varargs": false
@@ -2972,6 +3111,4637 @@
         "name": "get_project_summary",
         "args": [],
         "returns": "str",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      }
+    ]
+  },
+  "onew_code_planner.py": {
+    "generated": "2026-03-22 14:15",
+    "functions": [
+      {
+        "file": "onew_code_planner.py",
+        "class": null,
+        "name": "_new_task",
+        "args": [
+          {
+            "name": "desc",
+            "type": "unknown"
+          },
+          {
+            "name": "task_type",
+            "type": "unknown"
+          },
+          {
+            "name": "target",
+            "type": "unknown"
+          },
+          {
+            "name": "issue",
+            "type": "unknown"
+          },
+          {
+            "name": "depends_on",
+            "type": "unknown"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_code_planner.py",
+        "class": null,
+        "name": "_new_plan",
+        "args": [
+          {
+            "name": "goal",
+            "type": "unknown"
+          },
+          {
+            "name": "tasks",
+            "type": "unknown"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_code_planner.py",
+        "class": null,
+        "name": "_load_queue",
+        "args": [],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_code_planner.py",
+        "class": null,
+        "name": "_save_queue",
+        "args": [
+          {
+            "name": "data",
+            "type": "unknown"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [
+          "file_write",
+          "json_write"
+        ],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_code_planner.py",
+        "class": null,
+        "name": "_notify",
+        "args": [
+          {
+            "name": "msg",
+            "type": "unknown"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [
+          "network"
+        ],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_code_planner.py",
+        "class": null,
+        "name": "_load_interface_summary",
+        "args": [
+          {
+            "name": "max_chars",
+            "type": "unknown"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_code_planner.py",
+        "class": null,
+        "name": "_take_snapshot",
+        "args": [
+          {
+            "name": "plan",
+            "type": "unknown"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_code_planner.py",
+        "class": null,
+        "name": "_rollback_plan",
+        "args": [
+          {
+            "name": "plan",
+            "type": "unknown"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [
+          "file_write"
+        ],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_code_planner.py",
+        "class": null,
+        "name": "_propagate_failure",
+        "args": [
+          {
+            "name": "failed_id",
+            "type": "unknown"
+          },
+          {
+            "name": "all_tasks",
+            "type": "unknown"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_code_planner.py",
+        "class": null,
+        "name": "_build_context",
+        "args": [
+          {
+            "name": "task",
+            "type": "unknown"
+          },
+          {
+            "name": "all_tasks",
+            "type": "unknown"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_code_planner.py",
+        "class": null,
+        "name": "_ensure_tdd_order",
+        "args": [
+          {
+            "name": "tasks_raw",
+            "type": "unknown"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_code_planner.py",
+        "class": null,
+        "name": "_has_core_file",
+        "args": [
+          {
+            "name": "tasks",
+            "type": "unknown"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_code_planner.py",
+        "class": null,
+        "name": "approve_plan",
+        "args": [
+          {
+            "name": "plan_id",
+            "type": "unknown"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_code_planner.py",
+        "class": null,
+        "name": "_log_failure",
+        "args": [
+          {
+            "name": "plan",
+            "type": "unknown"
+          },
+          {
+            "name": "failed_task",
+            "type": "unknown"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [
+          "file_write",
+          "json_write"
+        ],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_code_planner.py",
+        "class": null,
+        "name": "_save_planner_context",
+        "args": [
+          {
+            "name": "plan",
+            "type": "unknown"
+          },
+          {
+            "name": "touched_files",
+            "type": "unknown"
+          },
+          {
+            "name": "status",
+            "type": "unknown"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [
+          "file_write",
+          "json_write"
+        ],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_code_planner.py",
+        "class": null,
+        "name": "get_recent_context",
+        "args": [
+          {
+            "name": "max_entries",
+            "type": "unknown"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_code_planner.py",
+        "class": null,
+        "name": "_load_failure_lessons",
+        "args": [
+          {
+            "name": "max_entries",
+            "type": "unknown"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_code_planner.py",
+        "class": null,
+        "name": "create_plan",
+        "args": [
+          {
+            "name": "goal",
+            "type": "unknown"
+          },
+          {
+            "name": "client",
+            "type": "unknown"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [
+          "network"
+        ],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_code_planner.py",
+        "class": null,
+        "name": "_resolve_target",
+        "args": [
+          {
+            "name": "target",
+            "type": "str"
+          }
+        ],
+        "returns": "str",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_code_planner.py",
+        "class": null,
+        "name": "_can_run",
+        "args": [
+          {
+            "name": "task",
+            "type": "unknown"
+          },
+          {
+            "name": "all_tasks",
+            "type": "unknown"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_code_planner.py",
+        "class": null,
+        "name": "_run_modify",
+        "args": [
+          {
+            "name": "task",
+            "type": "unknown"
+          },
+          {
+            "name": "engine",
+            "type": "unknown"
+          },
+          {
+            "name": "context",
+            "type": "unknown"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_code_planner.py",
+        "class": null,
+        "name": "_run_create",
+        "args": [
+          {
+            "name": "task",
+            "type": "unknown"
+          },
+          {
+            "name": "client",
+            "type": "unknown"
+          },
+          {
+            "name": "context",
+            "type": "unknown"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [
+          "file_write",
+          "network"
+        ],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_code_planner.py",
+        "class": null,
+        "name": "_run_verify",
+        "args": [
+          {
+            "name": "task",
+            "type": "unknown"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [
+          "subprocess"
+        ],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_code_planner.py",
+        "class": null,
+        "name": "execute_next",
+        "args": [
+          {
+            "name": "engine",
+            "type": "unknown"
+          },
+          {
+            "name": "client",
+            "type": "unknown"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_code_planner.py",
+        "class": null,
+        "name": "receive_direction",
+        "args": [
+          {
+            "name": "goal",
+            "type": "unknown"
+          },
+          {
+            "name": "client",
+            "type": "unknown"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_code_planner.py",
+        "class": null,
+        "name": "get_log",
+        "args": [
+          {
+            "name": "max_plans",
+            "type": "unknown"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_code_planner.py",
+        "class": null,
+        "name": "get_status",
+        "args": [],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      }
+    ]
+  },
+  "onew_watcher.py": {
+    "generated": "2026-03-22 14:15",
+    "functions": [
+      {
+        "file": "onew_watcher.py",
+        "class": "VaultEventHandler",
+        "name": "__init__",
+        "args": [],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_watcher.py",
+        "class": "VaultEventHandler",
+        "name": "on_created",
+        "args": [
+          {
+            "name": "event",
+            "type": "unknown"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_watcher.py",
+        "class": "VaultEventHandler",
+        "name": "on_modified",
+        "args": [
+          {
+            "name": "event",
+            "type": "unknown"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_watcher.py",
+        "class": "VaultEventHandler",
+        "name": "_handle",
+        "args": [
+          {
+            "name": "path",
+            "type": "unknown"
+          },
+          {
+            "name": "event_type",
+            "type": "unknown"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [
+          "file_write"
+        ],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_watcher.py",
+        "class": "SystemFolderHandler",
+        "name": "on_created",
+        "args": [
+          {
+            "name": "event",
+            "type": "unknown"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_watcher.py",
+        "class": "SystemFolderHandler",
+        "name": "on_deleted",
+        "args": [
+          {
+            "name": "event",
+            "type": "unknown"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_watcher.py",
+        "class": null,
+        "name": "log_error",
+        "args": [
+          {
+            "name": "msg",
+            "type": "unknown"
+          },
+          {
+            "name": "exc",
+            "type": "unknown"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_watcher.py",
+        "class": null,
+        "name": "_increment_usage",
+        "args": [
+          {
+            "name": "category",
+            "type": "str"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [
+          "file_write",
+          "json_write"
+        ],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_watcher.py",
+        "class": null,
+        "name": "should_ignore",
+        "args": [
+          {
+            "name": "path",
+            "type": "unknown"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_watcher.py",
+        "class": null,
+        "name": "detect_note_type",
+        "args": [
+          {
+            "name": "filename",
+            "type": "unknown"
+          },
+          {
+            "name": "content",
+            "type": "unknown"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_watcher.py",
+        "class": null,
+        "name": "build_prompt",
+        "args": [
+          {
+            "name": "note_type",
+            "type": "unknown"
+          },
+          {
+            "name": "filename",
+            "type": "unknown"
+          },
+          {
+            "name": "content",
+            "type": "unknown"
+          },
+          {
+            "name": "today",
+            "type": "unknown"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_watcher.py",
+        "class": null,
+        "name": "generate_flowchart",
+        "args": [
+          {
+            "name": "filename",
+            "type": "unknown"
+          },
+          {
+            "name": "content",
+            "type": "unknown"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_watcher.py",
+        "class": null,
+        "name": "_semantic_chunks",
+        "args": [
+          {
+            "name": "content",
+            "type": "str"
+          },
+          {
+            "name": "max_chunk",
+            "type": "int"
+          }
+        ],
+        "returns": "list",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_watcher.py",
+        "class": null,
+        "name": "_score_importance",
+        "args": [
+          {
+            "name": "content",
+            "type": "str"
+          },
+          {
+            "name": "filename",
+            "type": "str"
+          }
+        ],
+        "returns": "str",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_watcher.py",
+        "class": null,
+        "name": "embed_file_to_db",
+        "args": [
+          {
+            "name": "file_path",
+            "type": "unknown"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [
+          "file_write",
+          "json_write"
+        ],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_watcher.py",
+        "class": null,
+        "name": "generate_summary",
+        "args": [
+          {
+            "name": "filename",
+            "type": "unknown"
+          },
+          {
+            "name": "content",
+            "type": "unknown"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_watcher.py",
+        "class": null,
+        "name": "_auto_sync_loop",
+        "args": [],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [
+          "file_write",
+          "subprocess"
+        ],
+        "has_kwargs": false,
+        "has_varargs": false
+      }
+    ]
+  },
+  "onew_meta.py": {
+    "generated": "2026-03-22 14:15",
+    "functions": [
+      {
+        "file": "onew_meta.py",
+        "class": "MetaEngine",
+        "name": "__init__",
+        "args": [
+          {
+            "name": "generate_fn",
+            "type": "unknown"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_meta.py",
+        "class": "MetaEngine",
+        "name": "observe",
+        "args": [
+          {
+            "name": "q",
+            "type": "str"
+          },
+          {
+            "name": "answer",
+            "type": "str"
+          }
+        ],
+        "returns": "str | None",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_meta.py",
+        "class": "MetaEngine",
+        "name": "_check_immediate",
+        "args": [
+          {
+            "name": "topic",
+            "type": "str"
+          },
+          {
+            "name": "entry",
+            "type": "dict"
+          },
+          {
+            "name": "signal",
+            "type": "str"
+          }
+        ],
+        "returns": "str | None",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_meta.py",
+        "class": "MetaEngine",
+        "name": "run_periodic_analysis",
+        "args": [],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_meta.py",
+        "class": "MetaEngine",
+        "name": "get_summary",
+        "args": [],
+        "returns": "str",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_meta.py",
+        "class": "MetaEngine",
+        "name": "recommend_today",
+        "args": [],
+        "returns": "str",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_meta.py",
+        "class": null,
+        "name": "_get_env",
+        "args": [
+          {
+            "name": "name",
+            "type": "unknown"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_meta.py",
+        "class": null,
+        "name": "_load_db",
+        "args": [],
+        "returns": "dict",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_meta.py",
+        "class": null,
+        "name": "_save_db",
+        "args": [
+          {
+            "name": "db",
+            "type": "dict"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [
+          "file_write",
+          "json_write"
+        ],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_meta.py",
+        "class": null,
+        "name": "_send_telegram",
+        "args": [
+          {
+            "name": "msg",
+            "type": "str"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [
+          "network"
+        ],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_meta.py",
+        "class": null,
+        "name": "_vault_has_note",
+        "args": [
+          {
+            "name": "topic",
+            "type": "str"
+          }
+        ],
+        "returns": "bool",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_meta.py",
+        "class": null,
+        "name": "_vault_note_count",
+        "args": [
+          {
+            "name": "folder",
+            "type": "str"
+          }
+        ],
+        "returns": "int",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_meta.py",
+        "class": null,
+        "name": "_extract_topic",
+        "args": [
+          {
+            "name": "q",
+            "type": "str"
+          },
+          {
+            "name": "generate_fn",
+            "type": "unknown"
+          }
+        ],
+        "returns": "str | None",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_meta.py",
+        "class": null,
+        "name": "_satisfaction_signal",
+        "args": [
+          {
+            "name": "q",
+            "type": "str"
+          }
+        ],
+        "returns": "str",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_meta.py",
+        "class": null,
+        "name": "_write_improvement_proposal",
+        "args": [
+          {
+            "name": "topic",
+            "type": "str"
+          },
+          {
+            "name": "questions",
+            "type": "list[str]"
+          },
+          {
+            "name": "generate_fn",
+            "type": "unknown"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [
+          "file_write"
+        ],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_meta.py",
+        "class": null,
+        "name": "_bg_loop",
+        "args": [
+          {
+            "name": "engine",
+            "type": "MetaEngine"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_meta.py",
+        "class": null,
+        "name": "start_background",
+        "args": [
+          {
+            "name": "engine",
+            "type": "MetaEngine"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      }
+    ]
+  },
+  "onew_night_study.py": {
+    "generated": "2026-03-22 14:15",
+    "functions": [
+      {
+        "file": "onew_night_study.py",
+        "class": "_Extractor",
+        "name": "__init__",
+        "args": [],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_night_study.py",
+        "class": "_Extractor",
+        "name": "handle_starttag",
+        "args": [
+          {
+            "name": "tag",
+            "type": "unknown"
+          },
+          {
+            "name": "attrs",
+            "type": "unknown"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_night_study.py",
+        "class": "_Extractor",
+        "name": "handle_endtag",
+        "args": [
+          {
+            "name": "tag",
+            "type": "unknown"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_night_study.py",
+        "class": "_Extractor",
+        "name": "handle_data",
+        "args": [
+          {
+            "name": "data",
+            "type": "unknown"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_night_study.py",
+        "class": "_Extractor",
+        "name": "__init__",
+        "args": [],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_night_study.py",
+        "class": "_Extractor",
+        "name": "handle_starttag",
+        "args": [
+          {
+            "name": "tag",
+            "type": "unknown"
+          },
+          {
+            "name": "attrs",
+            "type": "unknown"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_night_study.py",
+        "class": "_Extractor",
+        "name": "handle_endtag",
+        "args": [
+          {
+            "name": "tag",
+            "type": "unknown"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_night_study.py",
+        "class": "_Extractor",
+        "name": "handle_data",
+        "args": [
+          {
+            "name": "data",
+            "type": "unknown"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_night_study.py",
+        "class": null,
+        "name": "_get_env",
+        "args": [
+          {
+            "name": "name",
+            "type": "unknown"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_night_study.py",
+        "class": null,
+        "name": "_load_state",
+        "args": [],
+        "returns": "dict",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_night_study.py",
+        "class": null,
+        "name": "_save_state",
+        "args": [
+          {
+            "name": "s",
+            "type": "dict"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [
+          "file_write",
+          "json_write"
+        ],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_night_study.py",
+        "class": null,
+        "name": "_send_telegram",
+        "args": [
+          {
+            "name": "msg",
+            "type": "str"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [
+          "network"
+        ],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_night_study.py",
+        "class": null,
+        "name": "get_idle_seconds",
+        "args": [],
+        "returns": "float",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_night_study.py",
+        "class": null,
+        "name": "is_idle",
+        "args": [],
+        "returns": "bool",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_night_study.py",
+        "class": null,
+        "name": "is_night_hours",
+        "args": [],
+        "returns": "bool",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_night_study.py",
+        "class": null,
+        "name": "is_conversation_idle",
+        "args": [],
+        "returns": "bool",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_night_study.py",
+        "class": null,
+        "name": "is_morning_briefing_time",
+        "args": [],
+        "returns": "bool",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_night_study.py",
+        "class": null,
+        "name": "_find_new_notes",
+        "args": [
+          {
+            "name": "state",
+            "type": "dict"
+          }
+        ],
+        "returns": "list[str]",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_night_study.py",
+        "class": null,
+        "name": "_read_note",
+        "args": [
+          {
+            "name": "fpath",
+            "type": "str"
+          }
+        ],
+        "returns": "str",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_night_study.py",
+        "class": null,
+        "name": "_find_related_links",
+        "args": [
+          {
+            "name": "content",
+            "type": "str"
+          },
+          {
+            "name": "note_title",
+            "type": "str"
+          },
+          {
+            "name": "generate_fn",
+            "type": "unknown"
+          }
+        ],
+        "returns": "list[str]",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_night_study.py",
+        "class": null,
+        "name": "_load_past_exam_sample",
+        "args": [
+          {
+            "name": "char_limit",
+            "type": "int"
+          }
+        ],
+        "returns": "str",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_night_study.py",
+        "class": null,
+        "name": "_generate_questions",
+        "args": [
+          {
+            "name": "content",
+            "type": "str"
+          },
+          {
+            "name": "note_title",
+            "type": "str"
+          },
+          {
+            "name": "generate_fn",
+            "type": "unknown"
+          }
+        ],
+        "returns": "str",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_night_study.py",
+        "class": null,
+        "name": "_self_quiz_and_extract_weakness",
+        "args": [
+          {
+            "name": "content",
+            "type": "str"
+          },
+          {
+            "name": "note_title",
+            "type": "str"
+          },
+          {
+            "name": "category",
+            "type": "str"
+          },
+          {
+            "name": "generate_fn",
+            "type": "unknown"
+          }
+        ],
+        "returns": "str",
+        "is_async": false,
+        "side_effects": [
+          "file_write"
+        ],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_night_study.py",
+        "class": null,
+        "name": "_synthesize_concept_note",
+        "args": [
+          {
+            "name": "note_contents",
+            "type": "list"
+          },
+          {
+            "name": "category",
+            "type": "str"
+          },
+          {
+            "name": "generate_fn",
+            "type": "unknown"
+          }
+        ],
+        "returns": "str",
+        "is_async": false,
+        "side_effects": [
+          "file_write"
+        ],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_night_study.py",
+        "class": null,
+        "name": "_queue_for_embedding",
+        "args": [
+          {
+            "name": "fpaths",
+            "type": "list"
+          }
+        ],
+        "returns": "None",
+        "is_async": false,
+        "side_effects": [
+          "file_write",
+          "json_write"
+        ],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_night_study.py",
+        "class": null,
+        "name": "_append_links_to_note",
+        "args": [
+          {
+            "name": "fpath",
+            "type": "str"
+          },
+          {
+            "name": "links",
+            "type": "list[str]"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [
+          "file_write"
+        ],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_night_study.py",
+        "class": null,
+        "name": "_get_category",
+        "args": [
+          {
+            "name": "note_title",
+            "type": "str"
+          }
+        ],
+        "returns": "str",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_night_study.py",
+        "class": null,
+        "name": "_get_report_path",
+        "args": [
+          {
+            "name": "cat",
+            "type": "str"
+          },
+          {
+            "name": "today_str",
+            "type": "str"
+          }
+        ],
+        "returns": "str",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_night_study.py",
+        "class": null,
+        "name": "_save_questions",
+        "args": [
+          {
+            "name": "note_title",
+            "type": "str"
+          },
+          {
+            "name": "questions",
+            "type": "str"
+          },
+          {
+            "name": "today_str",
+            "type": "str"
+          }
+        ],
+        "returns": "str",
+        "is_async": false,
+        "side_effects": [
+          "file_write"
+        ],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_night_study.py",
+        "class": null,
+        "name": "_fetch_anthropic_pages",
+        "args": [
+          {
+            "name": "state",
+            "type": "dict"
+          }
+        ],
+        "returns": "list[str]",
+        "is_async": false,
+        "side_effects": [
+          "file_write",
+          "network"
+        ],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_night_study.py",
+        "class": null,
+        "name": "_fetch_google_devblog_pages",
+        "args": [
+          {
+            "name": "state",
+            "type": "dict"
+          }
+        ],
+        "returns": "list[str]",
+        "is_async": false,
+        "side_effects": [
+          "file_write",
+          "network"
+        ],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_night_study.py",
+        "class": null,
+        "name": "_track_night_study_usage",
+        "args": [],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_night_study.py",
+        "class": null,
+        "name": "run_study_session",
+        "args": [
+          {
+            "name": "generate_fn",
+            "type": "unknown"
+          }
+        ],
+        "returns": "list[str]",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_night_study.py",
+        "class": null,
+        "name": "_get_clip_summary",
+        "args": [],
+        "returns": "str",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_night_study.py",
+        "class": null,
+        "name": "send_morning_briefing",
+        "args": [
+          {
+            "name": "studied_titles",
+            "type": "list[str]"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_night_study.py",
+        "class": null,
+        "name": "_run_loop",
+        "args": [
+          {
+            "name": "generate_fn",
+            "type": "unknown"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_night_study.py",
+        "class": null,
+        "name": "start_background",
+        "args": [
+          {
+            "name": "generate_fn",
+            "type": "unknown"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      }
+    ]
+  },
+  "onew_adhd.py": {
+    "generated": "2026-03-22 14:15",
+    "functions": [
+      {
+        "file": "onew_adhd.py",
+        "class": "FeatureTracker",
+        "name": "__init__",
+        "args": [],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_adhd.py",
+        "class": "FeatureTracker",
+        "name": "_cutoff",
+        "args": [],
+        "returns": "str",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_adhd.py",
+        "class": "FeatureTracker",
+        "name": "record_suggestion",
+        "args": [
+          {
+            "name": "feature",
+            "type": "str"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_adhd.py",
+        "class": "FeatureTracker",
+        "name": "record_response",
+        "args": [
+          {
+            "name": "feature",
+            "type": "str"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_adhd.py",
+        "class": "FeatureTracker",
+        "name": "response_rate",
+        "args": [
+          {
+            "name": "feature",
+            "type": "str"
+          }
+        ],
+        "returns": "float",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_adhd.py",
+        "class": "FeatureTracker",
+        "name": "is_active",
+        "args": [
+          {
+            "name": "feature",
+            "type": "str"
+          }
+        ],
+        "returns": "bool",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_adhd.py",
+        "class": "FeatureTracker",
+        "name": "status_report",
+        "args": [],
+        "returns": "str",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_adhd.py",
+        "class": "HyperfocusGuard",
+        "name": "__init__",
+        "args": [],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_adhd.py",
+        "class": "HyperfocusGuard",
+        "name": "record_message",
+        "args": [],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_adhd.py",
+        "class": "HyperfocusGuard",
+        "name": "is_hyperfocused",
+        "args": [],
+        "returns": "bool",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_adhd.py",
+        "class": "HyperfocusGuard",
+        "name": "can_push",
+        "args": [],
+        "returns": "bool",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_adhd.py",
+        "class": "StudyStreak",
+        "name": "_load",
+        "args": [],
+        "returns": "dict",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_adhd.py",
+        "class": "StudyStreak",
+        "name": "_save",
+        "args": [
+          {
+            "name": "data",
+            "type": "dict"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [
+          "file_write",
+          "json_write"
+        ],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_adhd.py",
+        "class": "StudyStreak",
+        "name": "record_study",
+        "args": [],
+        "returns": "str",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_adhd.py",
+        "class": "StudyStreak",
+        "name": "_calc_streak",
+        "args": [
+          {
+            "name": "dates",
+            "type": "list"
+          }
+        ],
+        "returns": "int",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_adhd.py",
+        "class": "StudyStreak",
+        "name": "_feedback",
+        "args": [
+          {
+            "name": "streak",
+            "type": "int"
+          }
+        ],
+        "returns": "str",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_adhd.py",
+        "class": "StudyStreak",
+        "name": "get_status",
+        "args": [],
+        "returns": "str",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_adhd.py",
+        "class": "LearningGoalCatcher",
+        "name": "__init__",
+        "args": [
+          {
+            "name": "generate_fn",
+            "type": "unknown"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_adhd.py",
+        "class": "LearningGoalCatcher",
+        "name": "detect_and_capture",
+        "args": [
+          {
+            "name": "query",
+            "type": "str"
+          }
+        ],
+        "returns": "str | None",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_adhd.py",
+        "class": "LearningGoalCatcher",
+        "name": "_extract_topic",
+        "args": [
+          {
+            "name": "query",
+            "type": "str"
+          }
+        ],
+        "returns": "str | None",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_adhd.py",
+        "class": "LearningGoalCatcher",
+        "name": "_save_goal",
+        "args": [
+          {
+            "name": "topic",
+            "type": "str"
+          },
+          {
+            "name": "original_query",
+            "type": "str"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [
+          "file_write"
+        ],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_adhd.py",
+        "class": "LearningGoalCatcher",
+        "name": "list_goals",
+        "args": [],
+        "returns": "str",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_adhd.py",
+        "class": "ADHDEngine",
+        "name": "__init__",
+        "args": [
+          {
+            "name": "generate_fn",
+            "type": "unknown"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_adhd.py",
+        "class": "ADHDEngine",
+        "name": "on_message",
+        "args": [],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_adhd.py",
+        "class": "ADHDEngine",
+        "name": "suggest",
+        "args": [
+          {
+            "name": "feature",
+            "type": "str"
+          },
+          {
+            "name": "text",
+            "type": "str"
+          }
+        ],
+        "returns": "str | None",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_adhd.py",
+        "class": "ADHDEngine",
+        "name": "respond",
+        "args": [
+          {
+            "name": "feature",
+            "type": "str"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_adhd.py",
+        "class": "ADHDEngine",
+        "name": "complete_study",
+        "args": [],
+        "returns": "str",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_adhd.py",
+        "class": "ADHDEngine",
+        "name": "detect_learning",
+        "args": [
+          {
+            "name": "query",
+            "type": "str"
+          }
+        ],
+        "returns": "str | None",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_adhd.py",
+        "class": "ADHDEngine",
+        "name": "list_goals",
+        "args": [],
+        "returns": "str",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_adhd.py",
+        "class": "ADHDEngine",
+        "name": "status",
+        "args": [],
+        "returns": "str",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_adhd.py",
+        "class": null,
+        "name": "_load",
+        "args": [],
+        "returns": "dict",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_adhd.py",
+        "class": null,
+        "name": "_save",
+        "args": [
+          {
+            "name": "db",
+            "type": "dict"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [
+          "file_write",
+          "json_write"
+        ],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_adhd.py",
+        "class": null,
+        "name": "get_dopamine_menu",
+        "args": [],
+        "returns": "str",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_adhd.py",
+        "class": null,
+        "name": "get_engine",
+        "args": [
+          {
+            "name": "generate_fn",
+            "type": "unknown"
+          }
+        ],
+        "returns": "ADHDEngine",
+        "is_async": false,
+        "side_effects": [
+          "global_state"
+        ],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_adhd.py",
+        "class": null,
+        "name": "on_user_message",
+        "args": [],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_adhd.py",
+        "class": null,
+        "name": "try_suggest",
+        "args": [
+          {
+            "name": "feature",
+            "type": "str"
+          },
+          {
+            "name": "text",
+            "type": "str"
+          }
+        ],
+        "returns": "str | None",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_adhd.py",
+        "class": null,
+        "name": "mark_responded",
+        "args": [
+          {
+            "name": "feature",
+            "type": "str"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_adhd.py",
+        "class": null,
+        "name": "record_study_done",
+        "args": [],
+        "returns": "str",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_adhd.py",
+        "class": null,
+        "name": "adhd_status",
+        "args": [],
+        "returns": "str",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_adhd.py",
+        "class": null,
+        "name": "dopamine_menu",
+        "args": [],
+        "returns": "str",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_adhd.py",
+        "class": null,
+        "name": "detect_learning_goal",
+        "args": [
+          {
+            "name": "query",
+            "type": "str"
+          }
+        ],
+        "returns": "str | None",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_adhd.py",
+        "class": null,
+        "name": "list_learning_goals",
+        "args": [],
+        "returns": "str",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      }
+    ]
+  },
+  "onew_adhd_coach.py": {
+    "generated": "2026-03-22 14:15",
+    "functions": [
+      {
+        "file": "onew_adhd_coach.py",
+        "class": "ADHDCoach",
+        "name": "__init__",
+        "args": [
+          {
+            "name": "generate_fn",
+            "type": "unknown"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_adhd_coach.py",
+        "class": "ADHDCoach",
+        "name": "get_session",
+        "args": [],
+        "returns": "dict",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_adhd_coach.py",
+        "class": "ADHDCoach",
+        "name": "is_in_session",
+        "args": [],
+        "returns": "bool",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_adhd_coach.py",
+        "class": "ADHDCoach",
+        "name": "morning_ask",
+        "args": [],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_adhd_coach.py",
+        "class": "ADHDCoach",
+        "name": "handle_commitment",
+        "args": [
+          {
+            "name": "text",
+            "type": "str"
+          }
+        ],
+        "returns": "bool",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_adhd_coach.py",
+        "class": "ADHDCoach",
+        "name": "start_session",
+        "args": [
+          {
+            "name": "topic",
+            "type": "str"
+          }
+        ],
+        "returns": "str",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_adhd_coach.py",
+        "class": "ADHDCoach",
+        "name": "handle_answer",
+        "args": [
+          {
+            "name": "text",
+            "type": "str"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_adhd_coach.py",
+        "class": "ADHDCoach",
+        "name": "handle_continue",
+        "args": [
+          {
+            "name": "text",
+            "type": "str"
+          }
+        ],
+        "returns": "bool",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_adhd_coach.py",
+        "class": "ADHDCoach",
+        "name": "_end_session",
+        "args": [
+          {
+            "name": "state",
+            "type": "dict"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_adhd_coach.py",
+        "class": "ADHDCoach",
+        "name": "nudge_if_needed",
+        "args": [],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_adhd_coach.py",
+        "class": "ADHDCoach",
+        "name": "handle_message",
+        "args": [
+          {
+            "name": "text",
+            "type": "str"
+          }
+        ],
+        "returns": "bool",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_adhd_coach.py",
+        "class": "ADHDCoach",
+        "name": "run_background",
+        "args": [],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_adhd_coach.py",
+        "class": null,
+        "name": "_get_env",
+        "args": [
+          {
+            "name": "name",
+            "type": "unknown"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_adhd_coach.py",
+        "class": null,
+        "name": "_send_telegram",
+        "args": [
+          {
+            "name": "msg",
+            "type": "str"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [
+          "network"
+        ],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_adhd_coach.py",
+        "class": null,
+        "name": "_load_state",
+        "args": [],
+        "returns": "dict",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_adhd_coach.py",
+        "class": null,
+        "name": "_save_state",
+        "args": [
+          {
+            "name": "s",
+            "type": "dict"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [
+          "file_write",
+          "json_write"
+        ],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_adhd_coach.py",
+        "class": null,
+        "name": "_pick_topic",
+        "args": [
+          {
+            "name": "state",
+            "type": "dict"
+          }
+        ],
+        "returns": "str",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_adhd_coach.py",
+        "class": null,
+        "name": "_generate_question",
+        "args": [
+          {
+            "name": "topic",
+            "type": "str"
+          },
+          {
+            "name": "generate_fn",
+            "type": "unknown"
+          }
+        ],
+        "returns": "dict",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_adhd_coach.py",
+        "class": null,
+        "name": "_evaluate_answer",
+        "args": [
+          {
+            "name": "user_ans",
+            "type": "str"
+          },
+          {
+            "name": "correct_ans",
+            "type": "str"
+          },
+          {
+            "name": "question",
+            "type": "str"
+          },
+          {
+            "name": "generate_fn",
+            "type": "unknown"
+          }
+        ],
+        "returns": "tuple[bool, str]",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_adhd_coach.py",
+        "class": null,
+        "name": "start_background",
+        "args": [
+          {
+            "name": "coach",
+            "type": "'ADHDCoach'"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      }
+    ]
+  },
+  "onew_task_manager.py": {
+    "generated": "2026-03-22 14:15",
+    "functions": [
+      {
+        "file": "onew_task_manager.py",
+        "class": null,
+        "name": "_load",
+        "args": [],
+        "returns": "list",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_task_manager.py",
+        "class": null,
+        "name": "_save",
+        "args": [
+          {
+            "name": "tasks",
+            "type": "list"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [
+          "file_write",
+          "json_write"
+        ],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_task_manager.py",
+        "class": null,
+        "name": "_new_id",
+        "args": [],
+        "returns": "str",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_task_manager.py",
+        "class": null,
+        "name": "task_create",
+        "args": [
+          {
+            "name": "title",
+            "type": "str"
+          },
+          {
+            "name": "steps",
+            "type": "list[str]"
+          },
+          {
+            "name": "priority",
+            "type": "str"
+          }
+        ],
+        "returns": "str",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_task_manager.py",
+        "class": null,
+        "name": "task_list",
+        "args": [
+          {
+            "name": "status_filter",
+            "type": "str"
+          }
+        ],
+        "returns": "str",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_task_manager.py",
+        "class": null,
+        "name": "task_update",
+        "args": [
+          {
+            "name": "task_id",
+            "type": "str"
+          },
+          {
+            "name": "step_index",
+            "type": "int"
+          },
+          {
+            "name": "status",
+            "type": "str"
+          },
+          {
+            "name": "note",
+            "type": "str"
+          }
+        ],
+        "returns": "str",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_task_manager.py",
+        "class": null,
+        "name": "task_next",
+        "args": [
+          {
+            "name": "task_id",
+            "type": "str"
+          }
+        ],
+        "returns": "str",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_task_manager.py",
+        "class": null,
+        "name": "task_cancel",
+        "args": [
+          {
+            "name": "task_id",
+            "type": "str"
+          }
+        ],
+        "returns": "str",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_task_manager.py",
+        "class": null,
+        "name": "get_pending_summary",
+        "args": [],
+        "returns": "str",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      }
+    ]
+  },
+  "onew_budget.py": {
+    "generated": "2026-03-22 14:15",
+    "functions": [
+      {
+        "file": "onew_budget.py",
+        "class": null,
+        "name": "_get_env",
+        "args": [
+          {
+            "name": "name",
+            "type": "unknown"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_budget.py",
+        "class": null,
+        "name": "_load",
+        "args": [],
+        "returns": "dict",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_budget.py",
+        "class": null,
+        "name": "_save",
+        "args": [
+          {
+            "name": "data",
+            "type": "dict"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [
+          "file_write",
+          "json_write"
+        ],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_budget.py",
+        "class": null,
+        "name": "_send_telegram",
+        "args": [
+          {
+            "name": "msg",
+            "type": "str"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [
+          "network"
+        ],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_budget.py",
+        "class": null,
+        "name": "check_budget",
+        "args": [],
+        "returns": "bool",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_budget.py",
+        "class": null,
+        "name": "get_status",
+        "args": [],
+        "returns": "str",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_budget.py",
+        "class": null,
+        "name": "set_limit",
+        "args": [
+          {
+            "name": "new_limit",
+            "type": "int"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      }
+    ]
+  },
+  "onew_review_scheduler.py": {
+    "generated": "2026-03-22 14:15",
+    "functions": [
+      {
+        "file": "onew_review_scheduler.py",
+        "class": "ReviewScheduler",
+        "name": "__init__",
+        "args": [
+          {
+            "name": "generate_fn",
+            "type": "unknown"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_review_scheduler.py",
+        "class": "ReviewScheduler",
+        "name": "register",
+        "args": [
+          {
+            "name": "concept",
+            "type": "str"
+          },
+          {
+            "name": "note_path",
+            "type": "str | None"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_review_scheduler.py",
+        "class": "ReviewScheduler",
+        "name": "get_due_today",
+        "args": [],
+        "returns": "list[dict]",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_review_scheduler.py",
+        "class": "ReviewScheduler",
+        "name": "mark_reviewed",
+        "args": [
+          {
+            "name": "concept",
+            "type": "str"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_review_scheduler.py",
+        "class": "ReviewScheduler",
+        "name": "run_daily_check",
+        "args": [],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_review_scheduler.py",
+        "class": "ReviewScheduler",
+        "name": "get_summary",
+        "args": [],
+        "returns": "str",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_review_scheduler.py",
+        "class": null,
+        "name": "_load_db",
+        "args": [],
+        "returns": "dict",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_review_scheduler.py",
+        "class": null,
+        "name": "_save_db",
+        "args": [
+          {
+            "name": "db",
+            "type": "dict"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [
+          "file_write",
+          "json_write"
+        ],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_review_scheduler.py",
+        "class": null,
+        "name": "_get_env",
+        "args": [
+          {
+            "name": "name",
+            "type": "unknown"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_review_scheduler.py",
+        "class": null,
+        "name": "_send_telegram",
+        "args": [
+          {
+            "name": "msg",
+            "type": "str"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [
+          "network"
+        ],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_review_scheduler.py",
+        "class": null,
+        "name": "_build_quiz",
+        "args": [
+          {
+            "name": "concept",
+            "type": "str"
+          },
+          {
+            "name": "note_path",
+            "type": "str | None"
+          },
+          {
+            "name": "generate_fn",
+            "type": "unknown"
+          }
+        ],
+        "returns": "str",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      }
+    ]
+  },
+  "onew_weakness_tracker.py": {
+    "generated": "2026-03-22 14:15",
+    "functions": [
+      {
+        "file": "onew_weakness_tracker.py",
+        "class": "WeaknessTracker",
+        "name": "__init__",
+        "args": [
+          {
+            "name": "generate_fn",
+            "type": "unknown"
+          },
+          {
+            "name": "review_scheduler",
+            "type": "unknown"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_weakness_tracker.py",
+        "class": "WeaknessTracker",
+        "name": "detect_and_log",
+        "args": [
+          {
+            "name": "q",
+            "type": "str"
+          },
+          {
+            "name": "answer",
+            "type": "str"
+          }
+        ],
+        "returns": "str | None",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_weakness_tracker.py",
+        "class": "WeaknessTracker",
+        "name": "get_summary",
+        "args": [],
+        "returns": "str",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_weakness_tracker.py",
+        "class": null,
+        "name": "_load_db",
+        "args": [],
+        "returns": "dict",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_weakness_tracker.py",
+        "class": null,
+        "name": "_save_db",
+        "args": [
+          {
+            "name": "db",
+            "type": "dict"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [
+          "file_write",
+          "json_write"
+        ],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_weakness_tracker.py",
+        "class": null,
+        "name": "_is_weak_question",
+        "args": [
+          {
+            "name": "q",
+            "type": "str"
+          }
+        ],
+        "returns": "bool",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_weakness_tracker.py",
+        "class": null,
+        "name": "_extract_concept",
+        "args": [
+          {
+            "name": "q",
+            "type": "str"
+          },
+          {
+            "name": "answer",
+            "type": "str"
+          },
+          {
+            "name": "generate_fn",
+            "type": "unknown"
+          }
+        ],
+        "returns": "str | None",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_weakness_tracker.py",
+        "class": null,
+        "name": "_safe_filename",
+        "args": [
+          {
+            "name": "concept",
+            "type": "str"
+          }
+        ],
+        "returns": "str",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_weakness_tracker.py",
+        "class": null,
+        "name": "_generate_note",
+        "args": [
+          {
+            "name": "concept",
+            "type": "str"
+          },
+          {
+            "name": "q",
+            "type": "str"
+          },
+          {
+            "name": "answer",
+            "type": "str"
+          },
+          {
+            "name": "history",
+            "type": "list"
+          },
+          {
+            "name": "generate_fn",
+            "type": "unknown"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [
+          "file_write"
+        ],
+        "has_kwargs": false,
+        "has_varargs": false
+      }
+    ]
+  },
+  "onew_planner.py": {
+    "generated": "2026-03-22 14:15",
+    "functions": [
+      {
+        "file": "onew_planner.py",
+        "class": "DailyPlanner",
+        "name": "__init__",
+        "args": [
+          {
+            "name": "generate_fn",
+            "type": "unknown"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_planner.py",
+        "class": "DailyPlanner",
+        "name": "run_morning",
+        "args": [],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_planner.py",
+        "class": "DailyPlanner",
+        "name": "run_evening",
+        "args": [],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_planner.py",
+        "class": "DailyPlanner",
+        "name": "get_today_plan",
+        "args": [],
+        "returns": "str",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_planner.py",
+        "class": "DailyPlanner",
+        "name": "force_plan",
+        "args": [],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_planner.py",
+        "class": null,
+        "name": "_get_env",
+        "args": [
+          {
+            "name": "name",
+            "type": "unknown"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_planner.py",
+        "class": null,
+        "name": "_load_db",
+        "args": [],
+        "returns": "dict",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_planner.py",
+        "class": null,
+        "name": "_save_db",
+        "args": [
+          {
+            "name": "db",
+            "type": "dict"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [
+          "file_write",
+          "json_write"
+        ],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_planner.py",
+        "class": null,
+        "name": "_send_telegram",
+        "args": [
+          {
+            "name": "msg",
+            "type": "str"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [
+          "network"
+        ],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_planner.py",
+        "class": null,
+        "name": "_get_dday",
+        "args": [],
+        "returns": "int",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_planner.py",
+        "class": null,
+        "name": "_get_weak_topics",
+        "args": [
+          {
+            "name": "top_n",
+            "type": "unknown"
+          }
+        ],
+        "returns": "list[dict]",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_planner.py",
+        "class": null,
+        "name": "_get_due_reviews",
+        "args": [],
+        "returns": "list[str]",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_planner.py",
+        "class": null,
+        "name": "_get_meta_pattern",
+        "args": [],
+        "returns": "dict",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_planner.py",
+        "class": null,
+        "name": "_get_last_night_study",
+        "args": [],
+        "returns": "list[str]",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_planner.py",
+        "class": null,
+        "name": "_dday_phase",
+        "args": [
+          {
+            "name": "dday",
+            "type": "int"
+          }
+        ],
+        "returns": "str",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_planner.py",
+        "class": null,
+        "name": "_dday_strategy",
+        "args": [
+          {
+            "name": "dday",
+            "type": "int"
+          }
+        ],
+        "returns": "str",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_planner.py",
+        "class": null,
+        "name": "build_daily_plan",
+        "args": [
+          {
+            "name": "generate_fn",
+            "type": "unknown"
+          }
+        ],
+        "returns": "dict",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_planner.py",
+        "class": null,
+        "name": "_extract_tasks",
+        "args": [
+          {
+            "name": "weak",
+            "type": "list"
+          },
+          {
+            "name": "reviews",
+            "type": "list"
+          }
+        ],
+        "returns": "list[dict]",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_planner.py",
+        "class": null,
+        "name": "execute_tasks",
+        "args": [
+          {
+            "name": "plan",
+            "type": "dict"
+          },
+          {
+            "name": "generate_fn",
+            "type": "unknown"
+          }
+        ],
+        "returns": "list[str]",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_planner.py",
+        "class": null,
+        "name": "_create_study_note",
+        "args": [
+          {
+            "name": "topic",
+            "type": "str"
+          },
+          {
+            "name": "generate_fn",
+            "type": "unknown"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [
+          "file_write"
+        ],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_planner.py",
+        "class": null,
+        "name": "_create_quiz",
+        "args": [
+          {
+            "name": "topic",
+            "type": "str"
+          },
+          {
+            "name": "today",
+            "type": "str"
+          },
+          {
+            "name": "generate_fn",
+            "type": "unknown"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [
+          "file_write"
+        ],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_planner.py",
+        "class": null,
+        "name": "save_plan_to_vault",
+        "args": [
+          {
+            "name": "plan",
+            "type": "dict"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [
+          "file_write"
+        ],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_planner.py",
+        "class": null,
+        "name": "send_morning_plan",
+        "args": [
+          {
+            "name": "plan",
+            "type": "dict"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_planner.py",
+        "class": null,
+        "name": "send_evening_report",
+        "args": [
+          {
+            "name": "plan",
+            "type": "dict"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_planner.py",
+        "class": null,
+        "name": "_bg_loop",
+        "args": [
+          {
+            "name": "planner",
+            "type": "DailyPlanner"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_planner.py",
+        "class": null,
+        "name": "start_background",
+        "args": [
+          {
+            "name": "planner",
+            "type": "DailyPlanner"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      }
+    ]
+  },
+  "onew_shared.py": {
+    "generated": "2026-03-22 14:15",
+    "functions": [
+      {
+        "file": "onew_shared.py",
+        "class": null,
+        "name": "set_syncing",
+        "args": [
+          {
+            "name": "value",
+            "type": "bool"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [
+          "global_state"
+        ],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_shared.py",
+        "class": null,
+        "name": "is_syncing",
+        "args": [],
+        "returns": "bool",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_shared.py",
+        "class": null,
+        "name": "touch",
+        "args": [],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [
+          "global_state"
+        ],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_shared.py",
+        "class": null,
+        "name": "is_quiet_period",
+        "args": [],
+        "returns": "bool",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_shared.py",
+        "class": null,
+        "name": "report_error",
+        "args": [
+          {
+            "name": "module",
+            "type": "str"
+          },
+          {
+            "name": "error",
+            "type": "str"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [
+          "network"
+        ],
+        "has_kwargs": false,
+        "has_varargs": false
+      }
+    ]
+  },
+  "onew_tools.py": {
+    "generated": "2026-03-22 14:15",
+    "functions": [
+      {
+        "file": "onew_tools.py",
+        "class": null,
+        "name": "generate_project_map",
+        "args": [],
+        "returns": "str",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_tools.py",
+        "class": null,
+        "name": "is_in_vault",
+        "args": [
+          {
+            "name": "path",
+            "type": "str | Path"
+          }
+        ],
+        "returns": "bool",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_tools.py",
+        "class": null,
+        "name": "resolve_vault_path",
+        "args": [
+          {
+            "name": "name",
+            "type": "str"
+          }
+        ],
+        "returns": "Path | None",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_tools.py",
+        "class": null,
+        "name": "safe_read",
+        "args": [
+          {
+            "name": "path",
+            "type": "str | Path"
+          },
+          {
+            "name": "encoding",
+            "type": "str"
+          }
+        ],
+        "returns": "str",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_tools.py",
+        "class": null,
+        "name": "tool_error",
+        "args": [
+          {
+            "name": "fn_name",
+            "type": "str"
+          },
+          {
+            "name": "exc",
+            "type": "Exception"
+          }
+        ],
+        "returns": "str",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      }
+    ]
+  },
+  "onew_locks.py": {
+    "generated": "2026-03-22 14:15",
+    "functions": [
+      {
+        "file": "onew_locks.py",
+        "class": null,
+        "name": "_get_file_lock",
+        "args": [
+          {
+            "name": "filepath",
+            "type": "str"
+          }
+        ],
+        "returns": "threading.Lock",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_locks.py",
+        "class": null,
+        "name": "_atomic_json_write",
+        "args": [
+          {
+            "name": "filepath",
+            "type": "str"
+          },
+          {
+            "name": "data",
+            "type": "dict | list"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [
+          "file_write",
+          "json_write"
+        ],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_locks.py",
+        "class": null,
+        "name": "_atomic_md_append",
+        "args": [
+          {
+            "name": "filepath",
+            "type": "str"
+          },
+          {
+            "name": "content",
+            "type": "str"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [
+          "file_write"
+        ],
+        "has_kwargs": false,
+        "has_varargs": false
+      }
+    ]
+  },
+  "onew_scheduler.py": {
+    "generated": "2026-03-22 14:15",
+    "functions": [
+      {
+        "file": "onew_scheduler.py",
+        "class": null,
+        "name": "_mark_ready",
+        "args": [],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [
+          "global_state"
+        ],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_scheduler.py",
+        "class": null,
+        "name": "_is_safe_to_run",
+        "args": [],
+        "returns": "bool",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_scheduler.py",
+        "class": null,
+        "name": "_get_env",
+        "args": [
+          {
+            "name": "name",
+            "type": "unknown"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_scheduler.py",
+        "class": null,
+        "name": "_send_telegram",
+        "args": [
+          {
+            "name": "msg",
+            "type": "str"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [
+          "network"
+        ],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_scheduler.py",
+        "class": null,
+        "name": "job_weekly_backup",
+        "args": [],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_scheduler.py",
+        "class": null,
+        "name": "job_budget_reset_notify",
+        "args": [],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_scheduler.py",
+        "class": null,
+        "name": "job_evening_nudge",
+        "args": [],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_scheduler.py",
+        "class": null,
+        "name": "job_study_nudge",
+        "args": [],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_scheduler.py",
+        "class": null,
+        "name": "job_health_check",
+        "args": [],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_scheduler.py",
+        "class": null,
+        "name": "job_exam_intensive",
+        "args": [],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_scheduler.py",
+        "class": null,
+        "name": "start_background",
+        "args": [],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      }
+    ]
+  },
+  "onew_field_linker.py": {
+    "generated": "2026-03-22 14:15",
+    "functions": [
+      {
+        "file": "onew_field_linker.py",
+        "class": null,
+        "name": "_get_env",
+        "args": [
+          {
+            "name": "name",
+            "type": "unknown"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_field_linker.py",
+        "class": null,
+        "name": "_load_state",
+        "args": [],
+        "returns": "dict",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_field_linker.py",
+        "class": null,
+        "name": "_save_state",
+        "args": [
+          {
+            "name": "s",
+            "type": "dict"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [
+          "file_write",
+          "json_write"
+        ],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_field_linker.py",
+        "class": null,
+        "name": "_send_telegram",
+        "args": [
+          {
+            "name": "msg",
+            "type": "str"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [
+          "network"
+        ],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_field_linker.py",
+        "class": null,
+        "name": "_get_today_telegram_files",
+        "args": [],
+        "returns": "list[str]",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_field_linker.py",
+        "class": null,
+        "name": "_extract_messages_from_md",
+        "args": [
+          {
+            "name": "fpath",
+            "type": "str"
+          },
+          {
+            "name": "processed_pos",
+            "type": "int"
+          }
+        ],
+        "returns": "tuple[list[str], int]",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_field_linker.py",
+        "class": null,
+        "name": "_find_theory_notes",
+        "args": [
+          {
+            "name": "keywords",
+            "type": "list[str]"
+          }
+        ],
+        "returns": "list[tuple[str, str]]",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_field_linker.py",
+        "class": null,
+        "name": "_has_field_keyword",
+        "args": [
+          {
+            "name": "text",
+            "type": "str"
+          }
+        ],
+        "returns": "bool",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_field_linker.py",
+        "class": null,
+        "name": "_analyze_and_link",
+        "args": [
+          {
+            "name": "messages",
+            "type": "list[str]"
+          },
+          {
+            "name": "generate_fn",
+            "type": "unknown"
+          }
+        ],
+        "returns": "str | None",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_field_linker.py",
+        "class": null,
+        "name": "_run_loop",
+        "args": [
+          {
+            "name": "generate_fn",
+            "type": "unknown"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_field_linker.py",
+        "class": null,
+        "name": "start_background",
+        "args": [
+          {
+            "name": "generate_fn",
+            "type": "unknown"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      }
+    ]
+  },
+  "onew_field_analyzer.py": {
+    "generated": "2026-03-22 14:15",
+    "functions": [
+      {
+        "file": "onew_field_analyzer.py",
+        "class": null,
+        "name": "analyze_field_image",
+        "args": [
+          {
+            "name": "img_path",
+            "type": "str"
+          },
+          {
+            "name": "question",
+            "type": "str"
+          },
+          {
+            "name": "agent",
+            "type": "unknown"
+          }
+        ],
+        "returns": "dict",
+        "is_async": false,
+        "side_effects": [
+          "network"
+        ],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_field_analyzer.py",
+        "class": null,
+        "name": "analyze_multiple_field_images",
+        "args": [
+          {
+            "name": "img_paths",
+            "type": "list"
+          },
+          {
+            "name": "question",
+            "type": "str"
+          },
+          {
+            "name": "agent",
+            "type": "unknown"
+          }
+        ],
+        "returns": "str",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_field_analyzer.py",
+        "class": null,
+        "name": "_search_vault",
+        "args": [
+          {
+            "name": "query",
+            "type": "str"
+          },
+          {
+            "name": "agent",
+            "type": "unknown"
+          },
+          {
+            "name": "k",
+            "type": "int"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_field_analyzer.py",
+        "class": null,
+        "name": "_generate",
+        "args": [
+          {
+            "name": "prompt",
+            "type": "str"
+          }
+        ],
+        "returns": "str",
+        "is_async": false,
+        "side_effects": [
+          "network"
+        ],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_field_analyzer.py",
+        "class": null,
+        "name": "analyze_field_image_bytes",
+        "args": [
+          {
+            "name": "img_bytes",
+            "type": "bytes"
+          },
+          {
+            "name": "ext",
+            "type": "str"
+          },
+          {
+            "name": "question",
+            "type": "str"
+          },
+          {
+            "name": "agent",
+            "type": "unknown"
+          }
+        ],
+        "returns": "dict",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      }
+    ]
+  },
+  "pdf_to_md.py": {
+    "generated": "2026-03-22 14:15",
+    "functions": [
+      {
+        "file": "pdf_to_md.py",
+        "class": null,
+        "name": "get_api_key",
+        "args": [],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [
+          "subprocess"
+        ],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "pdf_to_md.py",
+        "class": null,
+        "name": "get_client",
+        "args": [],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [
+          "network"
+        ],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "pdf_to_md.py",
+        "class": null,
+        "name": "get_total_pages",
+        "args": [
+          {
+            "name": "pdf_path",
+            "type": "unknown"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "pdf_to_md.py",
+        "class": null,
+        "name": "pages_to_images",
+        "args": [
+          {
+            "name": "pdf_path",
+            "type": "unknown"
+          },
+          {
+            "name": "start_page",
+            "type": "unknown"
+          },
+          {
+            "name": "end_page",
+            "type": "unknown"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "pdf_to_md.py",
+        "class": null,
+        "name": "extract_figures",
+        "args": [
+          {
+            "name": "pdf_path",
+            "type": "unknown"
+          },
+          {
+            "name": "start_page",
+            "type": "unknown"
+          },
+          {
+            "name": "end_page",
+            "type": "unknown"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "pdf_to_md.py",
+        "class": null,
+        "name": "convert_to_md",
+        "args": [
+          {
+            "name": "client",
+            "type": "unknown"
+          },
+          {
+            "name": "types",
+            "type": "unknown"
+          },
+          {
+            "name": "page_images",
+            "type": "unknown"
+          },
+          {
+            "name": "figures",
+            "type": "unknown"
+          },
+          {
+            "name": "subject",
+            "type": "unknown"
+          },
+          {
+            "name": "chapter",
+            "type": "unknown"
+          },
+          {
+            "name": "page_range",
+            "type": "unknown"
+          },
+          {
+            "name": "first_chunk",
+            "type": "unknown"
+          },
+          {
+            "name": "page_start",
+            "type": "unknown"
+          },
+          {
+            "name": "img_dir",
+            "type": "unknown"
+          },
+          {
+            "name": "name_prefix",
+            "type": "unknown"
+          },
+          {
+            "name": "doc_context",
+            "type": "unknown"
+          },
+          {
+            "name": "extra_tags",
+            "type": "unknown"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "pdf_to_md.py",
+        "class": null,
+        "name": "_scan_pdfs",
+        "args": [
+          {
+            "name": "folder",
+            "type": "unknown"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "pdf_to_md.py",
+        "class": null,
+        "name": "_print_pdf_list",
+        "args": [
+          {
+            "name": "pdfs",
+            "type": "unknown"
+          },
+          {
+            "name": "base_dir",
+            "type": "unknown"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "pdf_to_md.py",
+        "class": null,
+        "name": "_run_conversion",
+        "args": [
+          {
+            "name": "client",
+            "type": "unknown"
+          },
+          {
+            "name": "types",
+            "type": "unknown"
+          },
+          {
+            "name": "pdf_path",
+            "type": "unknown"
+          },
+          {
+            "name": "start",
+            "type": "unknown"
+          },
+          {
+            "name": "end",
+            "type": "unknown"
+          },
+          {
+            "name": "subject",
+            "type": "unknown"
+          },
+          {
+            "name": "chapter",
+            "type": "unknown"
+          },
+          {
+            "name": "out_dir",
+            "type": "unknown"
+          },
+          {
+            "name": "doc_context",
+            "type": "unknown"
+          },
+          {
+            "name": "extra_tags",
+            "type": "unknown"
+          },
+          {
+            "name": "img_dir",
+            "type": "unknown"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [
+          "file_write"
+        ],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "pdf_to_md.py",
+        "class": null,
+        "name": "main",
+        "args": [],
+        "returns": "unknown",
         "is_async": false,
         "side_effects": [],
         "has_kwargs": false,
