@@ -24,10 +24,29 @@ SUMMARY_FILE     = os.path.join(SYSTEM_DIR, "interface_summary.json")
 CRITICAL_FILE    = os.path.join(SYSTEM_DIR, "critical_functions.json")
 
 # 스캔 대상 파일 (자율코딩 허용 파일과 동기화)
+# ⚠️ 백업/복사본 파일은 절대 포함 금지 (- 복사본.py, _Backup.py)
 SCAN_FILES = [
     "obsidian_agent.py",
     "onew_self_improve.py",
     "onew_contract.py",
+    "onew_code_planner.py",
+    "onew_watcher.py",
+    "onew_meta.py",
+    "onew_night_study.py",
+    "onew_adhd.py",
+    "onew_adhd_coach.py",
+    "onew_task_manager.py",
+    "onew_budget.py",
+    "onew_review_scheduler.py",
+    "onew_weakness_tracker.py",
+    "onew_planner.py",
+    "onew_shared.py",
+    "onew_tools.py",
+    "onew_locks.py",
+    "onew_scheduler.py",
+    "onew_field_linker.py",
+    "onew_field_analyzer.py",
+    "pdf_to_md.py",
 ]
 
 
