@@ -59,6 +59,7 @@ LANCE_DB_DIR = os.path.join(OBSIDIAN_VAULT_PATH, "SYSTEM", ".onew_lance_db")
 EMBED_DIM    = 3072  # gemini-embedding-001 실제 출력 차원
 SYSTEM_PROMPT_PATH = os.path.join(OBSIDIAN_VAULT_PATH, "SYSTEM", "onew_system_prompt.md")
 ANTIPATTERNS_PATH = os.path.join(OBSIDIAN_VAULT_PATH, "SYSTEM", "onew_antipatterns.md")
+USER_PROFILE_PATH = os.path.join(OBSIDIAN_VAULT_PATH, "SYSTEM", "User_Profile.md")
 SKILLS_DIR = os.path.join(OBSIDIAN_VAULT_PATH, "SYSTEM", "skills")
 WORKING_MEMORY_DIR = os.path.join(OBSIDIAN_VAULT_PATH, "SYSTEM", "working_memory")
 USAGE_LOG_FILE   = os.path.join(OBSIDIAN_VAULT_PATH, "SYSTEM", "api_usage_log.json")
@@ -2759,13 +2760,73 @@ def quiz_me(category: str = None, count: int = 3, exclude_calc: bool = True, fil
         if e.get("date", "0000-00-00") >= cutoff
     }
 
-    # ── 특정 파일 지정 모드 ──────────────────────────────────────────────────
+    # ── 특정 파일/폴더 지정 모드 ─────────────────────────────────────────────
     if file_path:
         # 상대경로면 Vault 기준으로 변환
         if not os.path.isabs(file_path):
             file_path = os.path.join(OBSIDIAN_VAULT_PATH, file_path)
         if not os.path.exists(file_path):
             return f"파일을 찾을 수 없습니다: {file_path}"
+
+        # 디렉토리인 경우 내부 .md 파일 전체 수집
+        if os.path.isdir(file_path):
+            md_files = sorted(glob.glob(os.path.join(file_path, "*.md")))
+            if not md_files:
+                return f"'{file_path}' 폴더에 .md 파일이 없습니다."
+            all_questions = []
+            for fp in md_files:
+                all_questions.extend(_parse_questions_from_file(fp))
+            if not all_questions:
+                # 파싱 실패 시 헤더 기반 분할
+                for fp in md_files:
+                    try:
+                        content = Path(fp).read_text(encoding='utf-8')
+                    except Exception:
+                        continue
+                    sections = re.split(r'\n#{1,3} ', content)
+                    for sec in sections[1:]:
+                        lines = sec.strip().splitlines()
+                        if not lines:
+                            continue
+                        title = lines[0].strip()
+                        body  = '\n'.join(lines[1:]).strip()
+                        if len(body) < 10:
+                            continue
+                        all_questions.append({
+                            "question": title,
+                            "answer": body[:300],
+                            "explain": "",
+                            "source": os.path.basename(fp)
+                        })
+            if not all_questions:
+                return f"'{os.path.basename(file_path)}' 폴더에서 문제를 추출할 수 없습니다."
+            for q in all_questions:
+                q["question"] = _clean_latex(q["question"])
+                q["answer"]   = _clean_latex(q["answer"])
+                q["explain"]  = _clean_latex(q.get("explain", ""))
+            fresh = [q for q in all_questions if _question_hash(q["question"]) not in recent_hashes]
+            pool = fresh if len(fresh) >= count else all_questions
+            selected = random.sample(pool, min(count, len(pool)))
+            today = datetime.now().strftime("%Y-%m-%d")
+            asked_list = history.get("asked", [])
+            for q in selected:
+                asked_list.append({"hash": _question_hash(q["question"]), "date": today})
+            history["asked"] = asked_list[-500:]
+            _save_quiz_history(history)
+            lines = [f"📚 퀴즈 {len(selected)}문제 준비됨 (폴더: {os.path.basename(file_path)}, 전체 {len(all_questions)}문제 중)\n"]
+            for i, q in enumerate(selected, 1):
+                lines.append(
+                    f"[Q{i}]\n"
+                    f"문제: {q['question']}\n"
+                    f"정답: {q['answer']}\n"
+                    f"해설: {q.get('explain','')}\n"
+                    f"출처: {q['source']}\n"
+                )
+            lines.append("--- 퀴즈 진행 방법 ---")
+            lines.append("각 문제를 하나씩 제시하고, 사용자가 답한 뒤 정답+해설 공개. 마지막에 총점 알림.")
+            return "\n".join(lines)
+
+        # 단일 파일 모드
         try:
             with open(file_path, 'r', encoding='utf-8') as f:
                 content = f.read()
@@ -3254,7 +3315,13 @@ class OnewAgent:
             "[퀴즈 모드 규칙]\n"
             "사용자가 '퀴즈', '문제 풀어', '시험 준비', '약점 문제', '연습 문제', '공부하자', '테스트해줘', '문제 내줘', '퀴즈 내줘' 등을 말하면:\n"
             "⚠️ 예외: '계산', '공식', '풀이 순서', '어떻게 계산해' 등 계산 문제 풀이 요청은 퀴즈 모드 대신 hvac_solver 스킬을 우선 적용하라.\n"
-            "1. quiz_me(category=관련_카테고리, count=3, exclude_calc=True) 를 즉시 호출하라\n"
+            "⚠️ 절대 AI로 문제를 생성하지 말 것. 반드시 quiz_me 도구를 호출하여 Vault 실제 파일에서 문제를 가져와야 한다.\n"
+            "1. 사용자가 파일 경로 또는 폴더명을 언급한 경우 (예: '실기 합본', 'OCU/...', '합본 파일') →\n"
+            "   quiz_me(file_path='OCU/2024 공조냉동기계기사 실기 합본') 형식으로 file_path 파라미터를 반드시 사용하라.\n"
+            "   - 폴더 경로를 그대로 넘기면 내부 파일 전체에서 문제를 추출한다 (디렉토리 지원)\n"
+            "   - '실기 합본' 언급 시 기본 경로: 'OCU/2024 공조냉동기계기사 실기 합본'\n"
+            "   - file_path 사용 시 category 파라미터는 생략해도 된다\n"
+            "2. 파일/폴더 미언급 시: quiz_me(category=관련_카테고리, count=3, exclude_calc=True) 호출\n"
             "   ⚠️ category 값은 아래 실제 폴더명과 정확히 일치해야 한다 (오타/부분명 금지):\n"
             "   - 공조냉동/냉동기사 관련 → category='공조냉동'\n"
             "   - OCU/소방/방재 관련 → category='소방'\n"
@@ -3439,6 +3506,17 @@ class OnewAgent:
                 f"- [{e['type']}] {e['value']}" for e in entities[-15:]
             )
             prompt += f"\n\n[대화 중 언급된 핵심 항목 — 지시어 해석 시 우선 참조]\n{entity_lines}"
+        if os.path.exists(USER_PROFILE_PATH):
+            try:
+                with open(USER_PROFILE_PATH, "r", encoding="utf-8") as f:
+                    profile_content = f.read()
+                # YAML 프론트매터 제거 후 주입
+                if profile_content.startswith("---"):
+                    end = profile_content.find("---", 3)
+                    if end != -1:
+                        profile_content = profile_content[end + 3:].strip()
+                prompt += f"\n\n[사용자 프로필 — 고용준 (항상 참조)]\n{profile_content}"
+            except: pass
         if os.path.exists(SYSTEM_PROMPT_PATH):
             try:
                 with open(SYSTEM_PROMPT_PATH, "r", encoding="utf-8") as f:
@@ -3639,6 +3717,66 @@ class OnewAgent:
                             existing_vals.add(val)
             if new_entities:
                 self._save_entities(existing + new_entities)
+        except:
+            pass
+
+    def _update_user_profile_facts(self, query: str, answer: str):
+        """대화에서 용준 관련 새 사실 추출 → User_Profile.md '최근 상태' 섹션에 누적.
+        6턴마다 실행. 건강/목표진척/결정/감정 등 장기적으로 기억할 정보만 추출."""
+        turn = len(self.history_records)
+        if turn % 6 != 0:
+            return
+        try:
+            prompt = (
+                "아래 대화에서 '고용준'에 관한 새로운 사실/상태 변화를 추출하라.\n"
+                "추출 대상: 건강 상태, 목표 진척, 중요한 결정, 감정 변화, 일상 변화, 설비 이상 등\n"
+                "형식: 각 줄에 한 문장 (날짜 포함하지 말 것 — 자동 추가됨)\n"
+                "추출할 내용이 없으면 '없음'만 출력.\n"
+                "예시:\n"
+                "- 어깨 통증이 심해져 병원 예약을 검토 중\n"
+                "- 공조냉동 실기 공부 2시간 완료, 냉동사이클 파트 마무리\n"
+                "- 배수펌프C 수리 완료\n\n"
+                f"사용자: {query[:400]}\n온유: {answer[:400]}"
+            )
+            res = client.models.generate_content(
+                model="gemini-2.5-flash",
+                contents=prompt,
+                config=types.GenerateContentConfig(
+                    thinking_config=types.ThinkingConfig(thinking_budget=0))
+            )
+            raw = res.text.strip()
+            if not raw or raw == "없음":
+                return
+            facts = [l.strip() for l in raw.splitlines() if l.strip() and l.strip() != "없음"]
+            if not facts:
+                return
+
+            today = datetime.now().strftime("%Y-%m-%d %H:%M")
+            new_block = f"\n### {today}\n" + "\n".join(facts)
+
+            if not os.path.exists(USER_PROFILE_PATH):
+                return
+            content = Path(USER_PROFILE_PATH).read_text(encoding="utf-8")
+            SECTION = "## 최근 상태 (자동 업데이트)"
+            if SECTION in content:
+                # 섹션 뒤에 추가
+                idx = content.index(SECTION) + len(SECTION)
+                content = content[:idx] + new_block + content[idx:]
+            else:
+                # 섹션 없으면 파일 끝에 추가, 최대 20개 항목 유지
+                content = content.rstrip() + f"\n\n{SECTION}\n{new_block}\n"
+
+            # 섹션 내 항목 수 제한 (### 헤더 기준 최대 20개)
+            if SECTION in content:
+                before, after = content.split(SECTION, 1)
+                entries = after.split("\n### ")
+                if len(entries) > 21:  # entries[0]은 첫 줄 빈 문자열
+                    after = "\n### ".join(entries[:21])
+                content = before + SECTION + after
+
+            _atomic_md_append  # 파일 전체 재작성이므로 직접 write
+            with open(USER_PROFILE_PATH, "w", encoding="utf-8") as f:
+                f.write(content)
         except:
             pass
 
@@ -3909,6 +4047,8 @@ class OnewAgent:
 
         # [엔티티 추출] 3 Q&A마다 핵심 항목 워킹메모리 저장
         self._extract_entities(query, final_text)
+        # [사용자 프로필 업데이트] 3 Q&A마다 새 사실 추출 → User_Profile.md 반영
+        self._update_user_profile_facts(query, final_text)
 
         print(f"==================================================")
         print(f"💡 온유:\n{final_text}\n")
@@ -4769,6 +4909,12 @@ if __name__ == "__main__":
                     try:
                         import onew_code_planner as _ocp
                         print(_ocp.approve_plan())
+                    except Exception as _e:
+                        print(f"⚠️ {_e}")
+                elif q in ('거부', '플래너거부', 'plan reject'):
+                    try:
+                        import onew_code_planner as _ocp
+                        print(_ocp.reject_plan())
                     except Exception as _e:
                         print(f"⚠️ {_e}")
                 elif q.startswith('클로드한테 시킬 거야') or q.startswith('클로드에게 시킬 거야') or q.startswith('클로드한테 시켜'):
