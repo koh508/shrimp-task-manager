@@ -177,7 +177,8 @@ class ReviewScheduler:
                 f"_온유에게 '복습완료: {concept}' 라고 말하면 다음 일정으로 넘어갑니다._"
             )
             _send_telegram(msg)
-            self.mark_reviewed(concept)
+            # ⚠️ 버그수정: 텔레그램 전송 직후 자동 완료 처리하지 않음
+            # 사용자가 '복습완료: {concept}' 입력 시에만 mark_reviewed() 호출
 
     def get_summary(self) -> str:
         """복습 현황 요약"""
