@@ -203,8 +203,9 @@ def _evaluate_answer(user_ans: str, correct_ans: str, question: str, generate_fn
 # 코치 클래스
 # ==============================================================================
 class ADHDCoach:
-    def __init__(self, generate_fn):
-        self.generate_fn = generate_fn
+    def __init__(self, generate_fn, study_engine=None):
+        self.generate_fn  = generate_fn
+        self.study_engine = study_engine  # StudyEngine 인스턴스 (선택)
 
     def get_session(self) -> dict:
         return _load_state()
@@ -264,7 +265,11 @@ class ADHDCoach:
         if not topic:
             topic = _pick_topic(state)
 
-        q_data = _generate_question(topic, self.generate_fn)
+        # StudyEngine 우선 → fallback: AI 생성
+        if self.study_engine:
+            q_data = self.study_engine.pick_next_question(goal_hint=topic)
+        else:
+            q_data = _generate_question(topic, self.generate_fn)
         state['in_session']    = True
         state['current_q']     = q_data
         state['current_topic'] = topic
@@ -313,6 +318,13 @@ class ADHDCoach:
             if correct:
                 state['correct_today'] = state.get('correct_today', 0) + 1
 
+        # 결과 → StudyEngine 기록 (마스터리 업데이트 + 오답 시 약점 연동)
+        if self.study_engine:
+            try:
+                self.study_engine.record_result(q_data, correct)
+            except Exception as _se:
+                print(f"  ⚠️ [ADHD코치] 학습엔진 기록 오류: {_se}")
+
         state['last_study_time'] = datetime.now().strftime('%Y-%m-%d %H:%M')
         q_count = state['session_q_count']
 
@@ -323,8 +335,11 @@ class ADHDCoach:
             self._end_session(state)
             return
 
-        # 다음 문제 생성
-        next_q = _generate_question(state['current_topic'], self.generate_fn)
+        # 다음 문제 (StudyEngine 우선 → fallback: AI 생성)
+        if self.study_engine:
+            next_q = self.study_engine.pick_next_question(goal_hint=state['current_topic'])
+        else:
+            next_q = _generate_question(state['current_topic'], self.generate_fn)
         state['current_q'] = next_q
         _save_state(state)
 
@@ -364,7 +379,10 @@ class ADHDCoach:
         if text in ['계속', '응', 'ㅇ', '계속해', '더']:
             state['waiting_continue'] = False
             state['in_session'] = True
-            next_q = _generate_question(state['current_topic'], self.generate_fn)
+            if self.study_engine:
+                next_q = self.study_engine.pick_next_question(goal_hint=state['current_topic'])
+            else:
+                next_q = _generate_question(state['current_topic'], self.generate_fn)
             state['current_q'] = next_q
             _save_state(state)
             _send_telegram(
