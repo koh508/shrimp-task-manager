@@ -43,3 +43,5 @@ _확인: 2026-03-18 Claude Code_
 4.  **System Prompt/Few-shot examples 파일:** LLM에 주입되는 초기 지시어 또는 예제 프롬프트 파일 (검색 우선순위 및 실패 처리 관련 지시 강화, 컨텍스트 활용 지시). (예: `system_prompt.txt`, `few_shot_examples.json`)
 
 > 자동 생성됨 by onew_meta.py
+
+_확인: 2026-03-22 Claude Code_
