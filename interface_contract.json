@@ -1,6 +1,6 @@
 {
   "obsidian_agent.py": {
-    "generated": "2026-03-22 15:34",
+    "generated": "2026-03-22 15:39",
     "functions": [
       {
         "file": "obsidian_agent.py",
@@ -2092,7 +2092,7 @@
     ]
   },
   "onew_self_improve.py": {
-    "generated": "2026-03-22 15:34",
+    "generated": "2026-03-22 15:39",
     "functions": [
       {
         "file": "onew_self_improve.py",
@@ -3066,7 +3066,7 @@
     ]
   },
   "onew_contract.py": {
-    "generated": "2026-03-22 15:34",
+    "generated": "2026-03-22 15:39",
     "functions": [
       {
         "file": "onew_contract.py",
@@ -3146,11 +3146,22 @@
         "side_effects": [],
         "has_kwargs": false,
         "has_varargs": false
+      },
+      {
+        "file": "onew_contract.py",
+        "class": null,
+        "name": "_hook_mode",
+        "args": [],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
       }
     ]
   },
   "onew_code_planner.py": {
-    "generated": "2026-03-22 15:34",
+    "generated": "2026-03-22 15:39",
     "functions": [
       {
         "file": "onew_code_planner.py",
@@ -3727,7 +3738,7 @@
     ]
   },
   "onew_watcher.py": {
-    "generated": "2026-03-22 15:34",
+    "generated": "2026-03-22 15:39",
     "functions": [
       {
         "file": "onew_watcher.py",
@@ -4045,7 +4056,7 @@
     ]
   },
   "onew_meta.py": {
-    "generated": "2026-03-22 15:34",
+    "generated": "2026-03-22 15:39",
     "functions": [
       {
         "file": "onew_meta.py",
@@ -4333,7 +4344,7 @@
     ]
   },
   "onew_night_study.py": {
-    "generated": "2026-03-22 15:34",
+    "generated": "2026-03-22 15:39",
     "functions": [
       {
         "file": "onew_night_study.py",
@@ -4962,7 +4973,7 @@
     ]
   },
   "onew_adhd.py": {
-    "generated": "2026-03-22 15:34",
+    "generated": "2026-03-22 15:39",
     "functions": [
       {
         "file": "onew_adhd.py",
@@ -5551,7 +5562,7 @@
     ]
   },
   "onew_adhd_coach.py": {
-    "generated": "2026-03-22 15:34",
+    "generated": "2026-03-22 15:39",
     "functions": [
       {
         "file": "onew_adhd_coach.py",
@@ -5871,7 +5882,7 @@
     ]
   },
   "onew_task_manager.py": {
-    "generated": "2026-03-22 15:34",
+    "generated": "2026-03-22 15:39",
     "functions": [
       {
         "file": "onew_task_manager.py",
@@ -6028,7 +6039,7 @@
     ]
   },
   "onew_budget.py": {
-    "generated": "2026-03-22 15:34",
+    "generated": "2026-03-22 15:39",
     "functions": [
       {
         "file": "onew_budget.py",
@@ -6135,7 +6146,7 @@
     ]
   },
   "onew_review_scheduler.py": {
-    "generated": "2026-03-22 15:34",
+    "generated": "2026-03-22 15:39",
     "functions": [
       {
         "file": "onew_review_scheduler.py",
@@ -6313,7 +6324,7 @@
     ]
   },
   "onew_weakness_tracker.py": {
-    "generated": "2026-03-22 15:34",
+    "generated": "2026-03-22 15:39",
     "functions": [
       {
         "file": "onew_weakness_tracker.py",
@@ -6489,7 +6500,7 @@
     ]
   },
   "onew_planner.py": {
-    "generated": "2026-03-22 15:34",
+    "generated": "2026-03-22 15:39",
     "functions": [
       {
         "file": "onew_planner.py",
@@ -6896,7 +6907,7 @@
     ]
   },
   "onew_shared.py": {
-    "generated": "2026-03-22 15:34",
+    "generated": "2026-03-22 15:39",
     "functions": [
       {
         "file": "onew_shared.py",
@@ -6976,7 +6987,7 @@
     ]
   },
   "onew_tools.py": {
-    "generated": "2026-03-22 15:34",
+    "generated": "2026-03-22 15:39",
     "functions": [
       {
         "file": "onew_tools.py",
@@ -7064,7 +7075,7 @@
     ]
   },
   "onew_locks.py": {
-    "generated": "2026-03-22 15:34",
+    "generated": "2026-03-22 15:39",
     "functions": [
       {
         "file": "onew_locks.py",
@@ -7130,7 +7141,7 @@
     ]
   },
   "onew_scheduler.py": {
-    "generated": "2026-03-22 15:34",
+    "generated": "2026-03-22 15:39",
     "functions": [
       {
         "file": "onew_scheduler.py",
@@ -7270,7 +7281,7 @@
     ]
   },
   "onew_field_linker.py": {
-    "generated": "2026-03-22 15:34",
+    "generated": "2026-03-22 15:39",
     "functions": [
       {
         "file": "onew_field_linker.py",
@@ -7454,7 +7465,7 @@
     ]
   },
   "onew_field_analyzer.py": {
-    "generated": "2026-03-22 15:34",
+    "generated": "2026-03-22 15:39",
     "functions": [
       {
         "file": "onew_field_analyzer.py",
@@ -7579,7 +7590,7 @@
     ]
   },
   "pdf_to_md.py": {
-    "generated": "2026-03-22 15:34",
+    "generated": "2026-03-22 15:39",
     "functions": [
       {
         "file": "pdf_to_md.py",
