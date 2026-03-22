@@ -8,7 +8,8 @@
       "name": "공조냉동기계기사 실기",
       "deadline": "2026-05-10",
       "priority": 1,
-      "vault_path": "OCU/2024 공조냉동기계기사 실기 합본",
+      "_vault_path_note": "야간학습에 공조냉동 문제 생성되면 vault_path 추가",
+      "_source": "OCU/2024 공조냉동기계기사 실기 합본",
       "topics": [
         "냉동 사이클",
         "압축기",
