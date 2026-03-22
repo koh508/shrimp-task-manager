@@ -1,7 +1,7 @@
 {
   "obsidian_agent.py": "클래스: _MetaCompat, OnewPureMemory, AutoClipper, OnewAgent, WakeWordListener | 함수 80개 | 5168줄",
   "onew_self_improve.py": "클래스: CircuitBreaker, NeedAnalyzer, ASTChecker, SafetyGate, SandboxTester | 함수 11개 | 1379줄",
-  "onew_contract.py": "함수 5개 | 331줄",
+  "onew_contract.py": "함수 6개 | 350줄",
   "onew_code_planner.py": "함수 30개 | 999줄",
   "onew_watcher.py": "클래스: VaultEventHandler, SystemFolderHandler | 함수 11개 | 549줄",
   "onew_meta.py": "클래스: MetaEngine | 함수 11개 | 375줄",
