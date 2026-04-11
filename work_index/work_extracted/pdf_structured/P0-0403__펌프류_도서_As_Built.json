@@ -1,0 +1,125 @@
+{
+  "meta": {
+    "tag": "P0-0403",
+    "file": "펌프류 도서_As Built.pdf",
+    "company_id": "34",
+    "source_path": "D:\\기계도면\\기계도면\\34. 펌프류 (청우하이드로)\\펌프류 도서_As Built.pdf",
+    "split_from": "P0-0301",
+    "extracted_at": "2026-03-28T13:31:31"
+  },
+  "tag": "P0-0403",
+  "records": [
+    {
+      "tag": "P0-0403",
+      "section": "FAN",
+      "position": null,
+      "parameter": "air_flow_m3h",
+      "value": "10.0",
+      "unit": "M3/H",
+      "match_type": "exact",
+      "source": {
+        "file": "펌프류 도서_As Built.pdf",
+        "company": "34",
+        "page": 162
+      }
+    },
+    {
+      "tag": "P0-0403",
+      "section": "PERFORMANCE",
+      "position": null,
+      "parameter": "head_m",
+      "value": "140",
+      "unit": "m",
+      "match_type": "exact",
+      "source": {
+        "file": "펌프류 도서_As Built.pdf",
+        "company": "34",
+        "page": 291
+      }
+    },
+    {
+      "tag": "P0-0403",
+      "section": "LUBRICATION",
+      "position": null,
+      "parameter": "grease_type",
+      "value": "with new oil every year",
+      "unit": "",
+      "match_type": "exact",
+      "source": {
+        "file": "펌프류 도서_As Built.pdf",
+        "company": "34",
+        "page": 297
+      }
+    },
+    {
+      "tag": "P0-0403",
+      "section": "LUBRICATION",
+      "position": null,
+      "parameter": "grease_type",
+      "value": "may be applied to each packing ring",
+      "unit": "",
+      "match_type": "exact",
+      "source": {
+        "file": "펌프류 도서_As Built.pdf",
+        "company": "34",
+        "page": 307
+      }
+    },
+    {
+      "tag": "P0-0403",
+      "section": "LUBRICATION",
+      "position": null,
+      "parameter": "grease_type",
+      "value": "levels periodically to ensure",
+      "unit": "",
+      "match_type": "exact",
+      "source": {
+        "file": "펌프류 도서_As Built.pdf",
+        "company": "34",
+        "page": 311
+      }
+    },
+    {
+      "tag": "P0-0403",
+      "section": "LUBRICATION",
+      "position": null,
+      "parameter": "grease_type",
+      "value": "contamination",
+      "unit": "",
+      "match_type": "exact",
+      "source": {
+        "file": "펌프류 도서_As Built.pdf",
+        "company": "34",
+        "page": 312
+      }
+    },
+    {
+      "tag": "P0-0403",
+      "section": "LUBRICATION",
+      "position": null,
+      "parameter": "grease_type",
+      "value": "list attached",
+      "unit": "",
+      "match_type": "exact",
+      "source": {
+        "file": "펌프류 도서_As Built.pdf",
+        "company": "34",
+        "page": 313
+      }
+    },
+    {
+      "tag": "P0-0403",
+      "section": "LUBRICATION",
+      "position": null,
+      "parameter": "grease_type",
+      "value": "oil on bearing cover",
+      "unit": "",
+      "match_type": "exact",
+      "source": {
+        "file": "펌프류 도서_As Built.pdf",
+        "company": "34",
+        "page": 325
+      }
+    }
+  ]
+}

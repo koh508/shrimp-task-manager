@@ -1,0 +1,448 @@
+{
+  "meta": {
+    "source_path": "D:\\기계도면\\기계도면\\22. 시료수, 약품2, 침출수, 화격자 (조선내화E)\\시료수분석설비 외 준공도서\\01. [제주-기계] 승인서류 (19.11.) AS BUILT\\16. 운전 및 유지관리 지침서\\16-4. 폐기물침출수설비\\도면 및 Manual\\4-1. 제주침출수P&id.pdf",
+    "company_id": "22",
+    "company_name": "시료수, 약품2, 침출수, 화격자",
+    "equipment": "화격자",
+    "doc_type": "MANUAL",
+    "rev": "AS_BUILT",
+    "is_latest": true,
+    "extracted_at": "2026-03-27T20:22:22",
+    "chunk_count": 27,
+    "vision_pages": 0
+  },
+  "chunks": [
+    {
+      "chunk_idx": 0,
+      "text": "VSP 3080\nA1S-9180-0-WW-A52\nA1S-4080-1-WW-A52\nA1S-5180-0-WW-A05\nA1S-7080-0-WW-A05\nA1S-2180-0-WW-A05\nA1S-3280-0-WW-A05\nA1S-8080-0-WW-A001\nA1S-4180-0-WW-A05",
+      "header": "",
+      "section_type": "일반",
+      "equipment": [
+        "화격자"
+      ],
+      "company_id": "22",
+      "company_name": "시료수, 약품2, 침출수, 화격자",
+      "source_file": "4-1. 제주침출수P&id",
+      "source_path": "D:\\기계도면\\기계도면\\22. 시료수, 약품2, 침출수, 화격자 (조선내화E)\\시료수분석설비 외 준공도서\\01. [제주-기계] 승인서류 (19.11.) AS BUILT\\16. 운전 및 유지관리 지침서\\16-4. 폐기물침출수설비\\도면 및 Manual\\4-1. 제주침출수P&id.pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "d9a981d4823a364b",
+      "char_count": 153
+    },
+    {
+      "chunk_idx": 1,
+      "text": "-WW-A05\nA1S-2180-0-WW-A05\nA1S-3280-0-WW-A05\nA1S-8080-0-WW-A001\nA1S-4180-0-WW-A05 VX\nVN\nS\nⅠ",
+      "header": "VX\nVN\nS",
+      "section_type": "일반",
+      "equipment": [
+        "화격자"
+      ],
+      "company_id": "22",
+      "company_name": "시료수, 약품2, 침출수, 화격자",
+      "source_file": "4-1. 제주침출수P&id",
+      "source_path": "D:\\기계도면\\기계도면\\22. 시료수, 약품2, 침출수, 화격자 (조선내화E)\\시료수분석설비 외 준공도서\\01. [제주-기계] 승인서류 (19.11.) AS BUILT\\16. 운전 및 유지관리 지침서\\16-4. 폐기물침출수설비\\도면 및 Manual\\4-1. 제주침출수P&id.pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "8b41c2914ccfb18f",
+      "char_count": 90
+    },
+    {
+      "chunk_idx": 2,
+      "text": "H L H H L L\nAIL\nA1S-0180-0-WW-A05",
+      "header": "H L H H L L\nAIL",
+      "section_type": "일반",
+      "equipment": [
+        "화격자"
+      ],
+      "company_id": "22",
+      "company_name": "시료수, 약품2, 침출수, 화격자",
+      "source_file": "4-1. 제주침출수P&id",
+      "source_path": "D:\\기계도면\\기계도면\\22. 시료수, 약품2, 침출수, 화격자 (조선내화E)\\시료수분석설비 외 준공도서\\01. [제주-기계] 승인서류 (19.11.) AS BUILT\\16. 운전 및 유지관리 지침서\\16-4. 폐기물침출수설비\\도면 및 Manual\\4-1. 제주침출수P&id.pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "69cd8ffbd1efa577",
+      "char_count": 33
+    },
+    {
+      "chunk_idx": 5,
+      "text": "GP\nGP\nⅠ\n\n수출침\n물기폐\nB9280\nA9280\nL\n프펌무분\nSL 3180\nGL 2180\nA1S-6180-0-WW-A05",
+      "header": "GP\nGP",
+      "section_type": "일반",
+      "equipment": [
+        "화격자"
+      ],
+      "company_id": "22",
+      "company_name": "시료수, 약품2, 침출수, 화격자",
+      "source_file": "4-1. 제주침출수P&id",
+      "source_path": "D:\\기계도면\\기계도면\\22. 시료수, 약품2, 침출수, 화격자 (조선내화E)\\시료수분석설비 외 준공도서\\01. [제주-기계] 승인서류 (19.11.) AS BUILT\\16. 운전 및 유지관리 지침서\\16-4. 폐기물침출수설비\\도면 및 Manual\\4-1. 제주침출수P&id.pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "21908b1c79fd3da7",
+      "char_count": 69
+    },
+    {
+      "chunk_idx": 7,
+      "text": "SH\nSH\n4180-0T\nⅠ\nⅠ\nB1280\nA1280\n크탱장저\n수출침\n물기폐\nA1S-0280-0-WW-A05\nP.V\nB/A 5180-0P\n수출침\n물기폐\n수출침\n물기폐\n프펌송이\n수출침\n물기폐\n조장저\n조전침\nA1S-7180-0-WW-A05\nA1S-1080-1-WW-A05\nA1A-5380-0-WP-A05\nA1A-6380-0-WP-A05",
+      "header": "SH\nSH",
+      "section_type": "일반",
+      "equipment": [
+        "과열기"
+      ],
+      "company_id": "22",
+      "company_name": "시료수, 약품2, 침출수, 화격자",
+      "source_file": "4-1. 제주침출수P&id",
+      "source_path": "D:\\기계도면\\기계도면\\22. 시료수, 약품2, 침출수, 화격자 (조선내화E)\\시료수분석설비 외 준공도서\\01. [제주-기계] 승인서류 (19.11.) AS BUILT\\16. 운전 및 유지관리 지침서\\16-4. 폐기물침출수설비\\도면 및 Manual\\4-1. 제주침출수P&id.pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "4244ec3c65bad24b",
+      "char_count": 185
+    },
+    {
+      "chunk_idx": 8,
+      "text": "조장저\n조전침\nA1S-7180-0-WW-A05\nA1S-1080-1-WW-A05\nA1A-5380-0-WP-A05\nA1A-6380-0-WP-A05 GP\n*\n\nVRP* 2101\nB1A-1080-0-AI-A52\nB1A-4001-0-AI-A08\n기공축압\n용어제측계",
+      "header": "GP",
+      "section_type": "일반",
+      "equipment": [
+        "화격자"
+      ],
+      "company_id": "22",
+      "company_name": "시료수, 약품2, 침출수, 화격자",
+      "source_file": "4-1. 제주침출수P&id",
+      "source_path": "D:\\기계도면\\기계도면\\22. 시료수, 약품2, 침출수, 화격자 (조선내화E)\\시료수분석설비 외 준공도서\\01. [제주-기계] 승인서류 (19.11.) AS BUILT\\16. 운전 및 유지관리 지침서\\16-4. 폐기물침출수설비\\도면 및 Manual\\4-1. 제주침출수P&id.pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "56c69c5cd8ad624d",
+      "char_count": 142
+    },
+    {
+      "chunk_idx": 9,
+      "text": "GP\n*\n2-B\n,831-M-JJ\n\nVRP* 6101\nB1A-1080-0-AP-A52\nB1A-0101-0-AP-A08\n기공축압\n용정공",
+      "header": "GP",
+      "section_type": "일반",
+      "equipment": [
+        "화격자"
+      ],
+      "company_id": "22",
+      "company_name": "시료수, 약품2, 침출수, 화격자",
+      "source_file": "4-1. 제주침출수P&id",
+      "source_path": "D:\\기계도면\\기계도면\\22. 시료수, 약품2, 침출수, 화격자 (조선내화E)\\시료수분석설비 외 준공도서\\01. [제주-기계] 승인서류 (19.11.) AS BUILT\\16. 운전 및 유지관리 지침서\\16-4. 폐기물침출수설비\\도면 및 Manual\\4-1. 제주침출수P&id.pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "6b80029d576bfff9",
+      "char_count": 74
+    },
+    {
+      "chunk_idx": 10,
+      "text": "IX\nAX\nSH\n4-D\n,831-M-JJ\nC.L.P\n즐노무분\n수출침물기폐\n)기호2,1(\n도온\n실소연차2\n반어제장현\n1-A\n,701,201-M-JJ\n5080-0-PCL\nA1A-0380-0-WP-A05\nA1A-2180-0-WP-A08\n크탱가고\n수정공\n5-A\n,921-M-JJ\nA1A-7380-0-WP-A52\nH ADP A1080",
+      "header": "IX\nAX\nSH",
+      "section_type": "일반",
+      "equipment": [
+        "과열기"
+      ],
+      "company_id": "22",
+      "company_name": "시료수, 약품2, 침출수, 화격자",
+      "source_file": "4-1. 제주침출수P&id",
+      "source_path": "D:\\기계도면\\기계도면\\22. 시료수, 약품2, 침출수, 화격자 (조선내화E)\\시료수분석설비 외 준공도서\\01. [제주-기계] 승인서류 (19.11.) AS BUILT\\16. 운전 및 유지관리 지침서\\16-4. 폐기물침출수설비\\도면 및 Manual\\4-1. 제주침출수P&id.pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "db30ece5e5f4aee7",
+      "char_count": 181
+    },
+    {
+      "chunk_idx": 11,
+      "text": "-0-WP-A05\nA1A-2180-0-WP-A08\n크탱가고\n수정공\n5-A\n,921-M-JJ\nA1A-7380-0-WP-A52\nH ADP A1080 IX\nAX\nSH\nⅠ\nC.L.P\n비설리처\n수출침물기폐\n반어제장현",
+      "header": "IX\nAX\nSH",
+      "section_type": "일반",
+      "equipment": [
+        "과열기"
+      ],
+      "company_id": "22",
+      "company_name": "시료수, 약품2, 침출수, 화격자",
+      "source_file": "4-1. 제주침출수P&id",
+      "source_path": "D:\\기계도면\\기계도면\\22. 시료수, 약품2, 침출수, 화격자 (조선내화E)\\시료수분석설비 외 준공도서\\01. [제주-기계] 승인서류 (19.11.) AS BUILT\\16. 운전 및 유지관리 지침서\\16-4. 폐기물침출수설비\\도면 및 Manual\\4-1. 제주침출수P&id.pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "a8f7ae1ce682ef77",
+      "char_count": 115
+    },
+    {
+      "chunk_idx": 12,
+      "text": "VX\n4080-0-PCL\nA1S-3180-0-WWA05\nA5180\nVX A6180\nA1S-1180-0-WW-A05\nA1S-9080-0-WW-A05\n)리처탁위\n시상비(\n리로크탱\nA 3080-0U\nA1S-8180-0-WW-A52\n기과여\n수출침\n물기폐",
+      "header": "VX",
+      "section_type": "일반",
+      "equipment": [
+        "화격자"
+      ],
+      "company_id": "22",
+      "company_name": "시료수, 약품2, 침출수, 화격자",
+      "source_file": "4-1. 제주침출수P&id",
+      "source_path": "D:\\기계도면\\기계도면\\22. 시료수, 약품2, 침출수, 화격자 (조선내화E)\\시료수분석설비 외 준공도서\\01. [제주-기계] 승인서류 (19.11.) AS BUILT\\16. 운전 및 유지관리 지침서\\16-4. 폐기물침출수설비\\도면 및 Manual\\4-1. 제주침출수P&id.pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "67e21c8c3f545988",
+      "char_count": 137
+    },
+    {
+      "chunk_idx": 13,
+      "text": "WW-A05\nA1S-9080-0-WW-A05\n)리처탁위\n시상비(\n리로크탱\nA 3080-0U\nA1S-8180-0-WW-A52\n기과여\n수출침\n물기폐 VSP\nGP\n\nGP\nB6180\n\n7080 7080\n조장저\n물기폐\nA1S-4080-2-WW-A52\nB2082\nA1S-1080-2-WW-A05\nP.V\nVN B2081\nB1A-1080-1-AI-A51",
+      "header": "VSP\nGP\n\nGP",
+      "section_type": "일반",
+      "equipment": [
+        "화격자"
+      ],
+      "company_id": "22",
+      "company_name": "시료수, 약품2, 침출수, 화격자",
+      "source_file": "4-1. 제주침출수P&id",
+      "source_path": "D:\\기계도면\\기계도면\\22. 시료수, 약품2, 침출수, 화격자 (조선내화E)\\시료수분석설비 외 준공도서\\01. [제주-기계] 승인서류 (19.11.) AS BUILT\\16. 운전 및 유지관리 지침서\\16-4. 폐기물침출수설비\\도면 및 Manual\\4-1. 제주침출수P&id.pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "27d49c4e8181f2a0",
+      "char_count": 189
+    },
+    {
+      "chunk_idx": 14,
+      "text": "조장저\n물기폐\nA1S-4080-2-WW-A52\nB2082\nA1S-1080-2-WW-A05\nP.V\nVN B2081\nB1A-1080-1-AI-A51 S\nAP\nQRIF\nL\nⅠ",
+      "header": "S\nAP\nQRIF\nL",
+      "section_type": "일반",
+      "equipment": [
+        "화격자"
+      ],
+      "company_id": "22",
+      "company_name": "시료수, 약품2, 침출수, 화격자",
+      "source_file": "4-1. 제주침출수P&id",
+      "source_path": "D:\\기계도면\\기계도면\\22. 시료수, 약품2, 침출수, 화격자 (조선내화E)\\시료수분석설비 외 준공도서\\01. [제주-기계] 승인서류 (19.11.) AS BUILT\\16. 운전 및 유지관리 지침서\\16-4. 폐기물침출수설비\\도면 및 Manual\\4-1. 제주침출수P&id.pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "b37dd84938e032e0",
+      "char_count": 94
+    },
+    {
+      "chunk_idx": 15,
+      "text": "GP\nSP\nTF\nB1A-2080-1-AI-A51\nA9081",
+      "header": "GP\nSP\nTF",
+      "section_type": "일반",
+      "equipment": [
+        "화격자"
+      ],
+      "company_id": "22",
+      "company_name": "시료수, 약품2, 침출수, 화격자",
+      "source_file": "4-1. 제주침출수P&id",
+      "source_path": "D:\\기계도면\\기계도면\\22. 시료수, 약품2, 침출수, 화격자 (조선내화E)\\시료수분석설비 외 준공도서\\01. [제주-기계] 승인서류 (19.11.) AS BUILT\\16. 운전 및 유지관리 지침서\\16-4. 폐기물침출수설비\\도면 및 Manual\\4-1. 제주침출수P&id.pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "a12ac0fb1ac5a5f2",
+      "char_count": 32
+    },
+    {
+      "chunk_idx": 16,
+      "text": "VN\nA1081\nS\nA1S-2080-1-WW-A52\n로각소\nGP A0181",
+      "header": "VN",
+      "section_type": "일반",
+      "equipment": [
+        "화격자"
+      ],
+      "company_id": "22",
+      "company_name": "시료수, 약품2, 침출수, 화격자",
+      "source_file": "4-1. 제주침출수P&id",
+      "source_path": "D:\\기계도면\\기계도면\\22. 시료수, 약품2, 침출수, 화격자 (조선내화E)\\시료수분석설비 외 준공도서\\01. [제주-기계] 승인서류 (19.11.) AS BUILT\\16. 운전 및 유지관리 지침서\\16-4. 폐기물침출수설비\\도면 및 Manual\\4-1. 제주침출수P&id.pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "b2767949f86c02ae",
+      "char_count": 41
+    },
+    {
+      "chunk_idx": 18,
+      "text": "S\nA\n1080-1N\n즐노무분\n수출침\n물기폐\nB1A-1080-1-AP-A51 VN B2081\nS\nB1A-3080-1-AI-A51\nⅠ",
+      "header": "S\nA",
+      "section_type": "일반",
+      "equipment": [
+        "화격자"
+      ],
+      "company_id": "22",
+      "company_name": "시료수, 약품2, 침출수, 화격자",
+      "source_file": "4-1. 제주침출수P&id",
+      "source_path": "D:\\기계도면\\기계도면\\22. 시료수, 약품2, 침출수, 화격자 (조선내화E)\\시료수분석설비 외 준공도서\\01. [제주-기계] 승인서류 (19.11.) AS BUILT\\16. 운전 및 유지관리 지침서\\16-4. 폐기물침출수설비\\도면 및 Manual\\4-1. 제주침출수P&id.pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "b681770d4aebd5d0",
+      "char_count": 73
+    },
+    {
+      "chunk_idx": 20,
+      "text": "VN\nB1081\nS\nA1S-3080-1-WW-A52\n로각소\nGP B0181",
+      "header": "VN",
+      "section_type": "일반",
+      "equipment": [
+        "화격자"
+      ],
+      "company_id": "22",
+      "company_name": "시료수, 약품2, 침출수, 화격자",
+      "source_file": "4-1. 제주침출수P&id",
+      "source_path": "D:\\기계도면\\기계도면\\22. 시료수, 약품2, 침출수, 화격자 (조선내화E)\\시료수분석설비 외 준공도서\\01. [제주-기계] 승인서류 (19.11.) AS BUILT\\16. 운전 및 유지관리 지침서\\16-4. 폐기물침출수설비\\도면 및 Manual\\4-1. 제주침출수P&id.pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "41e68994e2beaaed",
+      "char_count": 41
+    },
+    {
+      "chunk_idx": 22,
+      "text": "S\nB\n1080-1N\n즐노무분\n수출침\n물기폐B1A-2080-1-AP-A51\nVN A2082\nS\nB1A-1080-2-AI-A51",
+      "header": "S\nB",
+      "section_type": "일반",
+      "equipment": [
+        "화격자"
+      ],
+      "company_id": "22",
+      "company_name": "시료수, 약품2, 침출수, 화격자",
+      "source_file": "4-1. 제주침출수P&id",
+      "source_path": "D:\\기계도면\\기계도면\\22. 시료수, 약품2, 침출수, 화격자 (조선내화E)\\시료수분석설비 외 준공도서\\01. [제주-기계] 승인서류 (19.11.) AS BUILT\\16. 운전 및 유지관리 지침서\\16-4. 폐기물침출수설비\\도면 및 Manual\\4-1. 제주침출수P&id.pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "5f2856c64c4faf74",
+      "char_count": 70
+    },
+    {
+      "chunk_idx": 25,
+      "text": "TF\nVN\nA1082\nS\nA1S-2080-2-WW-A52\n로각소\nGP A0182",
+      "header": "TF\nVN",
+      "section_type": "일반",
+      "equipment": [
+        "화격자"
+      ],
+      "company_id": "22",
+      "company_name": "시료수, 약품2, 침출수, 화격자",
+      "source_file": "4-1. 제주침출수P&id",
+      "source_path": "D:\\기계도면\\기계도면\\22. 시료수, 약품2, 침출수, 화격자 (조선내화E)\\시료수분석설비 외 준공도서\\01. [제주-기계] 승인서류 (19.11.) AS BUILT\\16. 운전 및 유지관리 지침서\\16-4. 폐기물침출수설비\\도면 및 Manual\\4-1. 제주침출수P&id.pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "0f22b678ecfa28dc",
+      "char_count": 44
+    },
+    {
+      "chunk_idx": 27,
+      "text": "S\nL\n8 G 08\nP 2\n즐노무분\n수출침\n물기폐B1A-1080-2-AP-A51",
+      "header": "S\nL",
+      "section_type": "일반",
+      "equipment": [
+        "화격자"
+      ],
+      "company_id": "22",
+      "company_name": "시료수, 약품2, 침출수, 화격자",
+      "source_file": "4-1. 제주침출수P&id",
+      "source_path": "D:\\기계도면\\기계도면\\22. 시료수, 약품2, 침출수, 화격자 (조선내화E)\\시료수분석설비 외 준공도서\\01. [제주-기계] 승인서류 (19.11.) AS BUILT\\16. 운전 및 유지관리 지침서\\16-4. 폐기물침출수설비\\도면 및 Manual\\4-1. 제주침출수P&id.pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "21dd5aaa606dcf9c",
+      "char_count": 44
+    },
+    {
+      "chunk_idx": 30,
+      "text": "VN\nB1082\nS\nA1S-3080-2-WW-A52\n로각소\nGP B0182",
+      "header": "VN",
+      "section_type": "일반",
+      "equipment": [
+        "화격자"
+      ],
+      "company_id": "22",
+      "company_name": "시료수, 약품2, 침출수, 화격자",
+      "source_file": "4-1. 제주침출수P&id",
+      "source_path": "D:\\기계도면\\기계도면\\22. 시료수, 약품2, 침출수, 화격자 (조선내화E)\\시료수분석설비 외 준공도서\\01. [제주-기계] 승인서류 (19.11.) AS BUILT\\16. 운전 및 유지관리 지침서\\16-4. 폐기물침출수설비\\도면 및 Manual\\4-1. 제주침출수P&id.pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "efe9d73fd1560727",
+      "char_count": 41
+    },
+    {
+      "chunk_idx": 32,
+      "text": "S\nB\n1080-2N\n즐노무분\n수출침\n물기폐B1A-2080-2-AP-A51\n-\n-\n-\n-",
+      "header": "S\nB",
+      "section_type": "일반",
+      "equipment": [
+        "화격자"
+      ],
+      "company_id": "22",
+      "company_name": "시료수, 약품2, 침출수, 화격자",
+      "source_file": "4-1. 제주침출수P&id",
+      "source_path": "D:\\기계도면\\기계도면\\22. 시료수, 약품2, 침출수, 화격자 (조선내화E)\\시료수분석설비 외 준공도서\\01. [제주-기계] 승인서류 (19.11.) AS BUILT\\16. 운전 및 유지관리 지침서\\16-4. 폐기물침출수설비\\도면 및 Manual\\4-1. 제주침출수P&id.pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "b7525ca482fe8392",
+      "char_count": 49
+    },
+    {
+      "chunk_idx": 33,
+      "text": "LAVORPPA\nROF\n13.80.81\n\n인\n승\n토\n검\n계\n설\n도\n제\n용\n내\n짜\n날\n정\n수",
+      "header": "LAVORPPA\nROF",
+      "section_type": "일반",
+      "equipment": [
+        "화격자"
+      ],
+      "company_id": "22",
+      "company_name": "시료수, 약품2, 침출수, 화격자",
+      "source_file": "4-1. 제주침출수P&id",
+      "source_path": "D:\\기계도면\\기계도면\\22. 시료수, 약품2, 침출수, 화격자 (조선내화E)\\시료수분석설비 외 준공도서\\01. [제주-기계] 승인서류 (19.11.) AS BUILT\\16. 운전 및 유지관리 지침서\\16-4. 폐기물침출수설비\\도면 및 Manual\\4-1. 제주침출수P&id.pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "19f881957d268a6c",
+      "char_count": 50
+    },
+    {
+      "chunk_idx": 34,
+      "text": "D\nNOITPIRCSED\nETADON.VER\n업사성조\n)설시각소(터센환순원자경환주제 도치자별특주제\n소무사사축건합종한신)주(\n소무사사축건합종인제)주(\n링어니지엔성수)주(\n링어니지엔진웅)주(\n사공술기일동)주(\n사회식주\n설건합종영두\n사회식주\n설건합종도대\n사회식주\n설건보영\n사회식주\n설건합종강벽\n사회식주\n설건림성\n설건웅대\n사회식주\nDI&P\n비설리처\n수출침\n물기폐\n.ON",
+      "header": "D\nNOITPIRCSED",
+      "section_type": "일반",
+      "equipment": [
+        "화격자"
+      ],
+      "company_id": "22",
+      "company_name": "시료수, 약품2, 침출수, 화격자",
+      "source_file": "4-1. 제주침출수P&id",
+      "source_path": "D:\\기계도면\\기계도면\\22. 시료수, 약품2, 침출수, 화격자 (조선내화E)\\시료수분석설비 외 준공도서\\01. [제주-기계] 승인서류 (19.11.) AS BUILT\\16. 운전 및 유지관리 지침서\\16-4. 폐기물침출수설비\\도면 및 Manual\\4-1. 제주침출수P&id.pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "7892fed75fbba888",
+      "char_count": 202
+    },
+    {
+      "chunk_idx": 35,
+      "text": "합종영두\n사회식주\n설건합종도대\n사회식주\n설건보영\n사회식주\n설건합종강벽\n사회식주\n설건림성\n설건웅대\n사회식주\nDI&P\n비설리처\n수출침\n물기폐\n.ON GNIWARD\n.veR\n-",
+      "header": "GNIWARD",
+      "section_type": "일반",
+      "equipment": [
+        "화격자"
+      ],
+      "company_id": "22",
+      "company_name": "시료수, 약품2, 침출수, 화격자",
+      "source_file": "4-1. 제주침출수P&id",
+      "source_path": "D:\\기계도면\\기계도면\\22. 시료수, 약품2, 침출수, 화격자 (조선내화E)\\시료수분석설비 외 준공도서\\01. [제주-기계] 승인서류 (19.11.) AS BUILT\\16. 운전 및 유지관리 지침서\\16-4. 폐기물침출수설비\\도면 및 Manual\\4-1. 제주침출수P&id.pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "a0616518ed22ad48",
+      "char_count": 95
+    },
+    {
+      "chunk_idx": 36,
+      "text": "ELACS\n431-M-JJ\nA52xA05\nA52xA05\nA52xA05\n기공축압\n용정공\n1/4-D\n,831-M-JJ\nⅠ\nVN A3080 S\n기공축압\n용정공\nVN A4080\n1/4-D\n,831-M-JJ\nS\nA7180\n) 결연설매하지\n조수계연( A1S-9080-0-WW-A05\nH ADP B1080\nⅠ\nⅠ\nB4 V 0 N 80\nB3 V 0 N 80",
+      "header": "ELACS",
+      "section_type": "일반",
+      "equipment": [
+        "화격자"
+      ],
+      "company_id": "22",
+      "company_name": "시료수, 약품2, 침출수, 화격자",
+      "source_file": "4-1. 제주침출수P&id",
+      "source_path": "D:\\기계도면\\기계도면\\22. 시료수, 약품2, 침출수, 화격자 (조선내화E)\\시료수분석설비 외 준공도서\\01. [제주-기계] 승인서류 (19.11.) AS BUILT\\16. 운전 및 유지관리 지침서\\16-4. 폐기물침출수설비\\도면 및 Manual\\4-1. 제주침출수P&id.pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "9ad8bc7149659d5a",
+      "char_count": 191
+    },
+    {
+      "chunk_idx": 37,
+      "text": "S\nA7180\n) 결연설매하지\n조수계연( A1S-9080-0-WW-A05\nH ADP B1080\nⅠ\nⅠ\nB4 V 0 N 80\nB3 V 0 N 80 S\nS\nB5 V 1 X 80 B7180\nB 3080-0U\n기과여\n수출침\n물기폐\nA05xA001",
+      "header": "S\nS",
+      "section_type": "일반",
+      "equipment": [
+        "화격자"
+      ],
+      "company_id": "22",
+      "company_name": "시료수, 약품2, 침출수, 화격자",
+      "source_file": "4-1. 제주침출수P&id",
+      "source_path": "D:\\기계도면\\기계도면\\22. 시료수, 약품2, 침출수, 화격자 (조선내화E)\\시료수분석설비 외 준공도서\\01. [제주-기계] 승인서류 (19.11.) AS BUILT\\16. 운전 및 유지관리 지침서\\16-4. 폐기물침출수설비\\도면 및 Manual\\4-1. 제주침출수P&id.pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "e8ae0808e9dc4b57",
+      "char_count": 133
+    },
+    {
+      "chunk_idx": 38,
+      "text": "IX AX\nC.L.P\nA 1080-1N\n즐노무분\n수출침물기폐 반어제장현 6080-0-PCL IX AX\nC.L.P\nB 1080-1N\n즐노무분\n수출침물기폐 반전운 7080-0-PCL\nA05xA001",
+      "header": "IX AX",
+      "section_type": "일반",
+      "equipment": [
+        "화격자"
+      ],
+      "company_id": "22",
+      "company_name": "시료수, 약품2, 침출수, 화격자",
+      "source_file": "4-1. 제주침출수P&id",
+      "source_path": "D:\\기계도면\\기계도면\\22. 시료수, 약품2, 침출수, 화격자 (조선내화E)\\시료수분석설비 외 준공도서\\01. [제주-기계] 승인서류 (19.11.) AS BUILT\\16. 운전 및 유지관리 지침서\\16-4. 폐기물침출수설비\\도면 및 Manual\\4-1. 제주침출수P&id.pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "55575188f341dc4f",
+      "char_count": 108
+    }
+  ]
+}

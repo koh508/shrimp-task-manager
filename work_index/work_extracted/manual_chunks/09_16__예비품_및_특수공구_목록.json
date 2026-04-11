@@ -1,0 +1,64 @@
+{
+  "meta": {
+    "source_path": "D:\\기계도면\\기계도면\\09. 바닥재 처리설비 (태광)\\재처리 설비(전기분야)\\16. 예비품 및 특수공구 목록\\16. 예비품 및 특수공구 목록.pdf",
+    "company_id": "09",
+    "company_name": "바닥재 처리설비",
+    "equipment": "바닥재처리",
+    "doc_type": "MANUAL",
+    "rev": null,
+    "is_latest": true,
+    "extracted_at": "2026-03-27T20:18:18",
+    "chunk_count": 3,
+    "vision_pages": 0
+  },
+  "chunks": [
+    {
+      "chunk_idx": 0,
+      "text": "예비품 및 특수공구 목록\n번호 품명 규격 수량 참조\nKFS-B02\n1 FUSE 6\n(2A)",
+      "header": "",
+      "section_type": "일반",
+      "equipment": [
+        "바닥재처리"
+      ],
+      "company_id": "09",
+      "company_name": "바닥재 처리설비",
+      "source_file": "16. 예비품 및 특수공구 목록",
+      "source_path": "D:\\기계도면\\기계도면\\09. 바닥재 처리설비 (태광)\\재처리 설비(전기분야)\\16. 예비품 및 특수공구 목록\\16. 예비품 및 특수공구 목록.pdf",
+      "rev": null,
+      "chunk_hash": "500c7d35e00f43ce",
+      "char_count": 50
+    },
+    {
+      "chunk_idx": 2,
+      "text": "SWITCH LAMP\nPUSH BUTTON KH-512G\n3 2\nSWITCH LAMP (GREEN)\nPUSH BUTTON KH-512Y\n4 2\nSWITCH LAMP (YELLOW)\nPUSH BUTTON KPB-25M\n5 2",
+      "header": "SWITCH LAMP",
+      "section_type": "일반",
+      "equipment": [
+        "바닥재처리"
+      ],
+      "company_id": "09",
+      "company_name": "바닥재 처리설비",
+      "source_file": "16. 예비품 및 특수공구 목록",
+      "source_path": "D:\\기계도면\\기계도면\\09. 바닥재 처리설비 (태광)\\재처리 설비(전기분야)\\16. 예비품 및 특수공구 목록\\16. 예비품 및 특수공구 목록.pdf",
+      "rev": null,
+      "chunk_hash": "9981fd47449f97ea",
+      "char_count": 124
+    },
+    {
+      "chunk_idx": 3,
+      "text": "AMP (GREEN)\nPUSH BUTTON KH-512Y\n4 2\nSWITCH LAMP (YELLOW)\nPUSH BUTTON KPB-25M\n5 2 SWITCH\n6 SELECT SWITCH KSL25L2 2",
+      "header": "SWITCH",
+      "section_type": "일반",
+      "equipment": [
+        "바닥재처리"
+      ],
+      "company_id": "09",
+      "company_name": "바닥재 처리설비",
+      "source_file": "16. 예비품 및 특수공구 목록",
+      "source_path": "D:\\기계도면\\기계도면\\09. 바닥재 처리설비 (태광)\\재처리 설비(전기분야)\\16. 예비품 및 특수공구 목록\\16. 예비품 및 특수공구 목록.pdf",
+      "rev": null,
+      "chunk_hash": "0fef283bc631781b",
+      "char_count": 113
+    }
+  ]
+}

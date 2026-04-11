@@ -1,0 +1,128 @@
+{
+  "meta": {
+    "source_path": "D:\\기계도면\\기계도면\\22. 시료수, 약품2, 침출수, 화격자 (조선내화E)\\시료수분석설비 외 준공도서\\01. [제주-기계] 승인서류 (19.11.) AS BUILT\\16. 운전 및 유지관리 지침서\\16-3. 냉각수약품주입설비\\도면&메뉴얼\\3-1. Chemical (Cooling Water) P&ID.pdf",
+    "company_id": "22",
+    "company_name": "시료수, 약품2, 침출수, 화격자",
+    "equipment": "화격자",
+    "doc_type": "MANUAL",
+    "rev": "AS_BUILT",
+    "is_latest": true,
+    "extracted_at": "2026-03-27T20:22:11",
+    "chunk_count": 7,
+    "vision_pages": 0
+  },
+  "chunks": [
+    {
+      "chunk_idx": 7,
+      "text": "M\nIX\nAX\nSH\nA1S-7080-0-403STS-A51\nD\nA1S-6080-0-403STS-A51\nC.L.P\nB/A\n3180-0P\n비설입주품약\n수각냉\n프펌입주\n제지방식부\n반어제장현\n6080-0-PCL",
+      "header": "M\nIX\nAX\nSH",
+      "section_type": "일반",
+      "equipment": [
+        "과열기"
+      ],
+      "company_id": "22",
+      "company_name": "시료수, 약품2, 침출수, 화격자",
+      "source_file": "3-1. Chemical (Cooling Water) P&ID",
+      "source_path": "D:\\기계도면\\기계도면\\22. 시료수, 약품2, 침출수, 화격자 (조선내화E)\\시료수분석설비 외 준공도서\\01. [제주-기계] 승인서류 (19.11.) AS BUILT\\16. 운전 및 유지관리 지침서\\16-3. 냉각수약품주입설비\\도면&메뉴얼\\3-1. Chemical (Cooling Water) P&ID.pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "f5e5ded3f85abcce",
+      "char_count": 113
+    },
+    {
+      "chunk_idx": 8,
+      "text": "D\nA1S-6080-0-403STS-A51\nC.L.P\nB/A\n3180-0P\n비설입주품약\n수각냉\n프펌입주\n제지방식부\n반어제장현\n6080-0-PCL AL\n\nL\nVSP\nSL\nA2080",
+      "header": "AL\n\nL\nVSP\nSL",
+      "section_type": "일반",
+      "equipment": [
+        "화격자"
+      ],
+      "company_id": "22",
+      "company_name": "시료수, 약품2, 침출수, 화격자",
+      "source_file": "3-1. Chemical (Cooling Water) P&ID",
+      "source_path": "D:\\기계도면\\기계도면\\22. 시료수, 약품2, 침출수, 화격자 (조선내화E)\\시료수분석설비 외 준공도서\\01. [제주-기계] 승인서류 (19.11.) AS BUILT\\16. 운전 및 유지관리 지침서\\16-3. 냉각수약품주입설비\\도면&메뉴얼\\3-1. Chemical (Cooling Water) P&ID.pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "5a91518ad643a097",
+      "char_count": 99
+    },
+    {
+      "chunk_idx": 10,
+      "text": "M\nGL\nA1S-4080-0-403STS-A51\nD\nA1S-1080-0-403STS-A51\n---\n---\n---\n---",
+      "header": "M\nGL",
+      "section_type": "일반",
+      "equipment": [
+        "화격자"
+      ],
+      "company_id": "22",
+      "company_name": "시료수, 약품2, 침출수, 화격자",
+      "source_file": "3-1. Chemical (Cooling Water) P&ID",
+      "source_path": "D:\\기계도면\\기계도면\\22. 시료수, 약품2, 침출수, 화격자 (조선내화E)\\시료수분석설비 외 준공도서\\01. [제주-기계] 승인서류 (19.11.) AS BUILT\\16. 운전 및 유지관리 지침서\\16-3. 냉각수약품주입설비\\도면&메뉴얼\\3-1. Chemical (Cooling Water) P&ID.pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "e963a2bccd678f24",
+      "char_count": 66
+    },
+    {
+      "chunk_idx": 11,
+      "text": "NOITCURTSNOC\n80.01.81\n\n인\n승\n토\n검\n계\n설\n도\n제\n용\n내\n짜\n날\n정\n수",
+      "header": "NOITCURTSNOC",
+      "section_type": "일반",
+      "equipment": [
+        "화격자"
+      ],
+      "company_id": "22",
+      "company_name": "시료수, 약품2, 침출수, 화격자",
+      "source_file": "3-1. Chemical (Cooling Water) P&ID",
+      "source_path": "D:\\기계도면\\기계도면\\22. 시료수, 약품2, 침출수, 화격자 (조선내화E)\\시료수분석설비 외 준공도서\\01. [제주-기계] 승인서류 (19.11.) AS BUILT\\16. 운전 및 유지관리 지침서\\16-3. 냉각수약품주입설비\\도면&메뉴얼\\3-1. Chemical (Cooling Water) P&ID.pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "6acccbb0e8905a51",
+      "char_count": 50
+    },
+    {
+      "chunk_idx": 12,
+      "text": "N\nW\nD\nNOITPIRCSED\nETADON.VER\nⅠ\nB2080\n업사성조\n)설시각소(터센환순원자경환주제",
+      "header": "N\nW\nD\nNOITPIRCSED",
+      "section_type": "일반",
+      "equipment": [
+        "화격자"
+      ],
+      "company_id": "22",
+      "company_name": "시료수, 약품2, 침출수, 화격자",
+      "source_file": "3-1. Chemical (Cooling Water) P&ID",
+      "source_path": "D:\\기계도면\\기계도면\\22. 시료수, 약품2, 침출수, 화격자 (조선내화E)\\시료수분석설비 외 준공도서\\01. [제주-기계] 승인서류 (19.11.) AS BUILT\\16. 운전 및 유지관리 지침서\\16-3. 냉각수약품주입설비\\도면&메뉴얼\\3-1. Chemical (Cooling Water) P&ID.pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "644a2eb0b5665837",
+      "char_count": 58
+    },
+    {
+      "chunk_idx": 13,
+      "text": "GP\n도치자별특주제\nB2080\n3180-0T\nM\n소무사사축건합종한신)주(\n크탱급공\n제균살\n소무사사축건합종인제)주(\n링어니지엔성수)주(\n링어니지엔진웅)주(\n사공술기일동)주(\nA1S-3080-0-403STS-A51\nD\n사회식주\n설건합종영두\n사회식주\n설건합종도대\n사회식주\n설건보영\nA1S-2080-0-403STS-A51\n사회식주\n설건합종강벽\n사회식주\n설건림성\nB/A\n4180-0P\n설건웅대\n사회식주\n프펌입주\n제균살\n1-도통계\n비설급공\n수각냉\n.ON",
+      "header": "GP",
+      "section_type": "일반",
+      "equipment": [
+        "화격자"
+      ],
+      "company_id": "22",
+      "company_name": "시료수, 약품2, 침출수, 화격자",
+      "source_file": "3-1. Chemical (Cooling Water) P&ID",
+      "source_path": "D:\\기계도면\\기계도면\\22. 시료수, 약품2, 침출수, 화격자 (조선내화E)\\시료수분석설비 외 준공도서\\01. [제주-기계] 승인서류 (19.11.) AS BUILT\\16. 운전 및 유지관리 지침서\\16-3. 냉각수약품주입설비\\도면&메뉴얼\\3-1. Chemical (Cooling Water) P&ID.pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "1f08748988c57946",
+      "char_count": 247
+    },
+    {
+      "chunk_idx": 14,
+      "text": "3STS-A51\n사회식주\n설건합종강벽\n사회식주\n설건림성\nB/A\n4180-0P\n설건웅대\n사회식주\n프펌입주\n제균살\n1-도통계\n비설급공\n수각냉\n.ON GNIWARD\n.veR",
+      "header": "GNIWARD",
+      "section_type": "일반",
+      "equipment": [
+        "화격자"
+      ],
+      "company_id": "22",
+      "company_name": "시료수, 약품2, 침출수, 화격자",
+      "source_file": "3-1. Chemical (Cooling Water) P&ID",
+      "source_path": "D:\\기계도면\\기계도면\\22. 시료수, 약품2, 침출수, 화격자 (조선내화E)\\시료수분석설비 외 준공도서\\01. [제주-기계] 승인서류 (19.11.) AS BUILT\\16. 운전 및 유지관리 지침서\\16-3. 냉각수약품주입설비\\도면&메뉴얼\\3-1. Chemical (Cooling Water) P&ID.pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "ab106d5479871413",
+      "char_count": 93
+    }
+  ]
+}

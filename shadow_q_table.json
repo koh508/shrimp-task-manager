@@ -1,0 +1,77 @@
+{
+  "q_table": {
+    "SEMANTIC|HIT|NONE": {
+      "ANSWER_RAG": 4.4514
+    },
+    "SEMANTIC|NOHIT|NONE": {
+      "ANSWER_FALLBACK": 0.45,
+      "ANSWER_TEMPORAL": 0.6,
+      "UNKNOWN": 0.6,
+      "ACTION_DELEGATED": 0.6
+    },
+    "FACT|HIT|NONE": {
+      "ANSWER_RAG": 0.75
+    },
+    "FACT|NOHIT|NONE": {
+      "UNKNOWN": 0.8
+    }
+  },
+  "counts": {
+    "SEMANTIC|HIT|NONE": {
+      "ANSWER_RAG": 6
+    },
+    "SEMANTIC|NOHIT|NONE": {
+      "ANSWER_FALLBACK": 1,
+      "ANSWER_TEMPORAL": 1,
+      "UNKNOWN": 1,
+      "ACTION_DELEGATED": 1
+    },
+    "FACT|HIT|NONE": {
+      "ANSWER_RAG": 1
+    },
+    "FACT|NOHIT|NONE": {
+      "UNKNOWN": 1
+    }
+  },
+  "recent_rewards": {
+    "SEMANTIC|HIT|NONE": {
+      "ANSWER_RAG": [
+        9.5,
+        9.5,
+        9.5,
+        9.5,
+        9.5,
+        9.5
+      ]
+    },
+    "SEMANTIC|NOHIT|NONE": {
+      "ANSWER_FALLBACK": [
+        4.5
+      ],
+      "ANSWER_TEMPORAL": [
+        6.0
+      ],
+      "UNKNOWN": [
+        6.0
+      ],
+      "ACTION_DELEGATED": [
+        6.0
+      ]
+    },
+    "FACT|HIT|NONE": {
+      "ANSWER_RAG": [
+        7.5
+      ]
+    },
+    "FACT|NOHIT|NONE": {
+      "UNKNOWN": [
+        8.0
+      ]
+    }
+  },
+  "_meta": {
+    "last_updated": "2026-03-26T17:28:52.887359",
+    "total_records": 12,
+    "alpha": 0.1
+  }
+}

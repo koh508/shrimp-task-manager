@@ -1,0 +1,1004 @@
+{
+  "meta": {
+    "source_path": "D:\\기계도면\\기계도면\\22. 시료수, 약품2, 침출수, 화격자 (조선내화E)\\시료수분석설비 외 준공도서\\01. [제주-기계] 승인서류 (19.11.) AS BUILT\\6. DATA SHEET 및 성능곡선도\\[6-3] 냉각수 약품주입설비\\6-3-1. 살균제 및 부식방지제 주입펌프&모터 Data-Sheet.xls",
+    "company_id": "22",
+    "equipment": "펌프",
+    "doc_type": "DATA_SHEET",
+    "rev": "AS_BUILT",
+    "is_latest": true,
+    "extracted_at": "2026-03-27T19:33:07",
+    "record_count": 99
+  },
+  "records": [
+    {
+      "parameter": "1",
+      "value": "제주특별자치도",
+      "unit": "",
+      "design_value": "CUSTOMER",
+      "equipment": "펌프",
+      "row_idx": 3,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "e2f118819643cedd"
+    },
+    {
+      "parameter": "2",
+      "value": "56",
+      "unit": "",
+      "design_value": "LOCATION",
+      "equipment": "펌프",
+      "row_idx": 4,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "0a23bbf76cf07eab"
+    },
+    {
+      "parameter": "3",
+      "value": "CHOSUN REFRACTORIES.ENG.CO.,LTD",
+      "unit": "",
+      "design_value": "SUPPLIER",
+      "equipment": "펌프",
+      "row_idx": 5,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "b96c61a441243d37"
+    },
+    {
+      "parameter": "4",
+      "value": "시료수분석설비 외",
+      "unit": "",
+      "design_value": "ITEM NAME",
+      "equipment": "펌프",
+      "row_idx": 6,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "d47467e8f0607664"
+    },
+    {
+      "parameter": "5",
+      "value": "0",
+      "unit": "",
+      "design_value": "ITEM NO.",
+      "equipment": "펌프",
+      "row_idx": 7,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "76097a8612c58ff2"
+    },
+    {
+      "parameter": "6",
+      "value": "공정용냉각수약품주입설비",
+      "unit": "",
+      "design_value": "SERVICE",
+      "equipment": "펌프",
+      "row_idx": 8,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "0650f53b499c38bd"
+    },
+    {
+      "parameter": "7",
+      "value": "TOTAL",
+      "unit": "",
+      "design_value": "NO.  REQ'D",
+      "equipment": "펌프",
+      "row_idx": 9,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "f1a26c4e22aaff35"
+    },
+    {
+      "parameter": "9",
+      "value": "CONDITION OF INJECTION LIQUID",
+      "unit": "",
+      "design_value": "",
+      "equipment": "펌프",
+      "row_idx": 11,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "071a806734ec314a"
+    },
+    {
+      "parameter": "10",
+      "value": "SPEC. GRAVITY  :",
+      "unit": "",
+      "design_value": "LIQUID :",
+      "equipment": "펌프",
+      "row_idx": 12,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "6982649f11343e50"
+    },
+    {
+      "parameter": "11",
+      "value": "72",
+      "unit": "℃",
+      "design_value": "VISCOSITY :",
+      "equipment": "펌프",
+      "row_idx": 13,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "d71efc70f781dfb0"
+    },
+    {
+      "parameter": "13",
+      "value": "DOSING TANK DATA",
+      "unit": "",
+      "design_value": "DOSING PUMP DATA",
+      "equipment": "펌프",
+      "row_idx": 15,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "692e3d937e3ca76b"
+    },
+    {
+      "parameter": "14",
+      "value": "-0813",
+      "unit": "A",
+      "design_value": "ITEM NO.",
+      "equipment": "펌프",
+      "row_idx": 16,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "26d30fe4a893ea43"
+    },
+    {
+      "parameter": "15",
+      "value": "-61",
+      "unit": "",
+      "design_value": "MODEL NO.",
+      "equipment": "펌프",
+      "row_idx": 17,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "298c97f64c97c63f"
+    },
+    {
+      "parameter": "16",
+      "value": "살균제(NAOCL)",
+      "unit": "",
+      "design_value": "SERVICE.",
+      "equipment": "펌프",
+      "row_idx": 18,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "4cfa088011c9b0c0"
+    },
+    {
+      "parameter": "17",
+      "value": "2",
+      "unit": "℃",
+      "design_value": "Q'TY.",
+      "equipment": "펌프",
+      "row_idx": 19,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "9778bf69bcf6dd14"
+    },
+    {
+      "parameter": "18",
+      "value": "(㎖/min)",
+      "unit": "℃",
+      "design_value": "CAPACITY.",
+      "equipment": "펌프",
+      "row_idx": 20,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "200b184f23aa0db3"
+    },
+    {
+      "parameter": "19",
+      "value": "(Bar G)",
+      "unit": "",
+      "design_value": "DISC. PRESSURE",
+      "equipment": "펌프",
+      "row_idx": 21,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "60bc5b2ef28a69da"
+    },
+    {
+      "parameter": "20",
+      "value": "HYDRAULIC DIAPHRAGM",
+      "unit": "",
+      "design_value": "TYPE.",
+      "equipment": "펌프",
+      "row_idx": 22,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "2388a9c93618e625"
+    },
+    {
+      "parameter": "21",
+      "value": "GEAR",
+      "unit": "",
+      "design_value": "DIAPHRAGM",
+      "equipment": "펌프",
+      "row_idx": 23,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "c4f4bd961c8cfbfc"
+    },
+    {
+      "parameter": "22",
+      "value": "THICKNESS.",
+      "unit": "",
+      "design_value": "PLUNGER",
+      "equipment": "펌프",
+      "row_idx": 24,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "86506df95251ce2f"
+    },
+    {
+      "parameter": "23",
+      "value": "SIMPLEX",
+      "unit": "",
+      "design_value": "PISTON NO.",
+      "equipment": "펌프",
+      "row_idx": 25,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "ed38a7ec86e8f718"
+    },
+    {
+      "parameter": "24",
+      "value": "ACCESSORIES",
+      "unit": "",
+      "design_value": "PLUNGER/DIAPHRAM DIA.",
+      "equipment": "펌프",
+      "row_idx": 26,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "2b4dc3efc04f91d1"
+    },
+    {
+      "parameter": "25",
+      "value": "116",
+      "unit": "",
+      "design_value": "STROKE SPEED. (SPM)",
+      "equipment": "펌프",
+      "row_idx": 27,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "01c724959f923a07"
+    },
+    {
+      "parameter": "26",
+      "value": "PUMP HEAD",
+      "unit": "A/C FILTER",
+      "design_value": "MATERIAL.",
+      "equipment": "펌프",
+      "row_idx": 28,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "1274af16dcda50cc"
+    },
+    {
+      "parameter": "27",
+      "value": ":",
+      "unit": "",
+      "design_value": "DIAPHRAGM",
+      "equipment": "펌프",
+      "row_idx": 29,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "540199b216d98633"
+    },
+    {
+      "parameter": "28",
+      "value": ":",
+      "unit": "",
+      "design_value": "CHECK BALL",
+      "equipment": "펌프",
+      "row_idx": 30,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "4a3f1583e1bb1b61"
+    },
+    {
+      "parameter": "29",
+      "value": ":",
+      "unit": "",
+      "design_value": "BALL SEAT",
+      "equipment": "펌프",
+      "row_idx": 31,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "f05c0a82a937bf66"
+    },
+    {
+      "parameter": "30",
+      "value": "AGITATOR DATA",
+      "unit": "",
+      "design_value": "CAPACITY CONTROL",
+      "equipment": "펌프",
+      "row_idx": 32,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "298693333a45a891"
+    },
+    {
+      "parameter": "31",
+      "value": "AUTOMATIC",
+      "unit": "",
+      "design_value": "MANUAL",
+      "equipment": "펌프",
+      "row_idx": 33,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "7733159a4ea5d698"
+    },
+    {
+      "parameter": "32",
+      "value": "MOTOR RPM CONTROL",
+      "unit": "",
+      "design_value": "STROKE ADJUSTMENT",
+      "equipment": "펌프",
+      "row_idx": 34,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "cfbe297695a5a53c"
+    },
+    {
+      "parameter": "33",
+      "value": "STROKE CONTROL",
+      "unit": "",
+      "design_value": "DURING OPERATION",
+      "equipment": "펌프",
+      "row_idx": 35,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "3463dd71abb170a5"
+    },
+    {
+      "parameter": "34",
+      "value": "TYPE.",
+      "unit": "",
+      "design_value": "CAPACITY CONTROL RANGE  : 20 TO 100% RATED",
+      "equipment": "펌프",
+      "row_idx": 36,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "5a79741cd9716285"
+    },
+    {
+      "parameter": "35",
+      "value": "SHAFT SEAL.",
+      "unit": "",
+      "design_value": "MOTOR DATA FOR DOSING PUMP",
+      "equipment": "펌프",
+      "row_idx": 37,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "8d37fd8bb39f1584"
+    },
+    {
+      "parameter": "36",
+      "value": "2",
+      "unit": "",
+      "design_value": "Q'TY.                    :",
+      "equipment": "펌프",
+      "row_idx": 38,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "83f87951c5160943"
+    },
+    {
+      "parameter": "37",
+      "value": "SHINKANG ELEC.",
+      "unit": "",
+      "design_value": "MFR.  :",
+      "equipment": "펌프",
+      "row_idx": 39,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "d76ba700ea14b656"
+    },
+    {
+      "parameter": "38",
+      "value": "0.2",
+      "unit": "",
+      "design_value": "RATED OUTPUT.  :",
+      "equipment": "펌프",
+      "row_idx": 40,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "41cf0e9c727be965"
+    },
+    {
+      "parameter": "39",
+      "value": "4",
+      "unit": "",
+      "design_value": "POLE.                   :",
+      "equipment": "펌프",
+      "row_idx": 41,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "f6ea3b5a52e68f29"
+    },
+    {
+      "parameter": "40",
+      "value": "3",
+      "unit": "",
+      "design_value": "PHASE.",
+      "equipment": "펌프",
+      "row_idx": 42,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "ae01cd1dd2f17633"
+    },
+    {
+      "parameter": "41",
+      "value": "CYCLE",
+      "unit": "",
+      "design_value": "PHASE.",
+      "equipment": "펌프",
+      "row_idx": 43,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "29f1798df85882a9"
+    },
+    {
+      "parameter": "43",
+      "value": "ACCESSORIES",
+      "unit": "",
+      "design_value": "",
+      "equipment": "펌프",
+      "row_idx": 45,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "923ed76a56de6580"
+    },
+    {
+      "parameter": "44",
+      "value": "REDUCER FOR TERMINAL POINT",
+      "unit": "",
+      "design_value": "MANUAL VALVE",
+      "equipment": "펌프",
+      "row_idx": 46,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "ec182c38ee934714"
+    },
+    {
+      "parameter": "45",
+      "value": "PRESSURE SWITCH",
+      "unit": "",
+      "design_value": "CHECK VALVE",
+      "equipment": "펌프",
+      "row_idx": 47,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "2ee9d3caec1057a5"
+    },
+    {
+      "parameter": "46",
+      "value": "PRESSURE GAUGE",
+      "unit": "",
+      "design_value": "STRAINER",
+      "equipment": "펌프",
+      "row_idx": 48,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "c7d70cbdfd363c0f"
+    },
+    {
+      "parameter": "47",
+      "value": "NAME PLATE",
+      "unit": "",
+      "design_value": "BASE SKID",
+      "equipment": "펌프",
+      "row_idx": 49,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "ba74c16b25b5da2e"
+    },
+    {
+      "parameter": "48",
+      "value": "COMPANION FLANGE BOLT & NUT",
+      "unit": "",
+      "design_value": "CONTROL PANEL",
+      "equipment": "펌프",
+      "row_idx": 50,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "d8f071fde5764e3a"
+    },
+    {
+      "parameter": "49",
+      "value": "14",
+      "unit": "",
+      "design_value": "PUMP WEIGHT",
+      "equipment": "펌프",
+      "row_idx": 51,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "7d6f58bc76eb8faa"
+    },
+    {
+      "parameter": "50",
+      "value": "520",
+      "unit": "",
+      "design_value": "TANK WEIGHT",
+      "equipment": "펌프",
+      "row_idx": 52,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "2c6cf7bef37edeb9"
+    },
+    {
+      "parameter": "51",
+      "value": "수량",
+      "unit": "",
+      "design_value": "살균제 및 부식방지제 주입펌프\nSPARE PARTS",
+      "equipment": "펌프",
+      "row_idx": 53,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "ada0d3dda740b67b"
+    },
+    {
+      "parameter": "52",
+      "value": "4",
+      "unit": "",
+      "design_value": "Check Ball",
+      "equipment": "펌프",
+      "row_idx": 54,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "70b457047962b1ab"
+    },
+    {
+      "parameter": "53",
+      "value": "4",
+      "unit": "",
+      "design_value": "Diaphragm",
+      "equipment": "펌프",
+      "row_idx": 55,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "40577fbcd5c421fd"
+    },
+    {
+      "parameter": "PREPARED BY.                 H.S.KIM",
+      "value": "CHECKED BY.                   S.W.CHOI",
+      "unit": "",
+      "design_value": "APPROVED BY.                 J.H.KIM",
+      "equipment": "펌프",
+      "row_idx": 56,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "e26bcb65ee5c5124"
+    },
+    {
+      "parameter": "1",
+      "value": "제주특별자치도",
+      "unit": "",
+      "design_value": "CUSTOMER",
+      "equipment": "펌프",
+      "row_idx": 63,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "a26ec600d7c9affe"
+    },
+    {
+      "parameter": "2",
+      "value": "56",
+      "unit": "",
+      "design_value": "LOCATION",
+      "equipment": "펌프",
+      "row_idx": 64,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "b349bccd60cb632b"
+    },
+    {
+      "parameter": "3",
+      "value": "CHOSUN REFRACTORIES.ENG.,CO LTD",
+      "unit": "",
+      "design_value": "SUPPLIER",
+      "equipment": "펌프",
+      "row_idx": 65,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "a1839952aa2fac5b"
+    },
+    {
+      "parameter": "4",
+      "value": "시료수분석설비 외",
+      "unit": "",
+      "design_value": "ITEM NAME",
+      "equipment": "펌프",
+      "row_idx": 66,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "ced26a338a5e5568"
+    },
+    {
+      "parameter": "5",
+      "value": "0",
+      "unit": "",
+      "design_value": "ITEM NO.",
+      "equipment": "펌프",
+      "row_idx": 67,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "9d9fd86f8b8f7a60"
+    },
+    {
+      "parameter": "6",
+      "value": "공정용냉각수약품주입설비",
+      "unit": "",
+      "design_value": "SERVICE",
+      "equipment": "펌프",
+      "row_idx": 68,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "90deff5e848861ae"
+    },
+    {
+      "parameter": "7",
+      "value": "TOTAL",
+      "unit": "",
+      "design_value": "NO.  REQ'D",
+      "equipment": "펌프",
+      "row_idx": 69,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "4c19f3445ec42771"
+    },
+    {
+      "parameter": "9",
+      "value": "CONDITION OF INJECTION LIQUID",
+      "unit": "",
+      "design_value": "",
+      "equipment": "펌프",
+      "row_idx": 71,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "f4732b83bf61a881"
+    },
+    {
+      "parameter": "10",
+      "value": "SPEC. GRAVITY  :",
+      "unit": "",
+      "design_value": "LIQUID :",
+      "equipment": "펌프",
+      "row_idx": 72,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "b7d686cc18b57b55"
+    },
+    {
+      "parameter": "11",
+      "value": "12",
+      "unit": "mm",
+      "design_value": "VAPOR PRESS    :",
+      "equipment": "펌프",
+      "row_idx": 73,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "67c39f49162e3524"
+    },
+    {
+      "parameter": "13",
+      "value": "DOSING TANK DATA",
+      "unit": "",
+      "design_value": "DOSING PUMP DATA",
+      "equipment": "펌프",
+      "row_idx": 75,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "81aad8c13f495bc3"
+    },
+    {
+      "parameter": "14",
+      "value": "-0814",
+      "unit": "A",
+      "design_value": "ITEM NO.",
+      "equipment": "펌프",
+      "row_idx": 76,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "1e2765245a4e005e"
+    },
+    {
+      "parameter": "15",
+      "value": "-61",
+      "unit": "",
+      "design_value": "MODEL NO.",
+      "equipment": "펌프",
+      "row_idx": 77,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "4abcb2f4f6a13665"
+    },
+    {
+      "parameter": "16",
+      "value": "3",
+      "unit": "",
+      "design_value": "SERVICE.",
+      "equipment": "펌프",
+      "row_idx": 78,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "0fdcbcd39ac84ced"
+    },
+    {
+      "parameter": "17",
+      "value": "2",
+      "unit": "℃",
+      "design_value": "Q'TY.",
+      "equipment": "펌프",
+      "row_idx": 79,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "c7ceda4f928e0486"
+    },
+    {
+      "parameter": "18",
+      "value": "(㎖/min)",
+      "unit": "℃",
+      "design_value": "CAPACITY.",
+      "equipment": "펌프",
+      "row_idx": 80,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "7b987b0056acdff5"
+    },
+    {
+      "parameter": "19",
+      "value": "(Bar G)",
+      "unit": "",
+      "design_value": "DISC. PRESSURE",
+      "equipment": "펌프",
+      "row_idx": 81,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "f51ae05e5bef98ce"
+    },
+    {
+      "parameter": "20",
+      "value": "HYDRAULIC DIAPHRAGM",
+      "unit": "",
+      "design_value": "TYPE.",
+      "equipment": "펌프",
+      "row_idx": 82,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "8cd608172831a117"
+    },
+    {
+      "parameter": "21",
+      "value": "GEAR",
+      "unit": "",
+      "design_value": "DIAPHRAGM",
+      "equipment": "펌프",
+      "row_idx": 83,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "3b97c6db513f5873"
+    },
+    {
+      "parameter": "22",
+      "value": "THICKNESS.",
+      "unit": "",
+      "design_value": "PLUNGER",
+      "equipment": "펌프",
+      "row_idx": 84,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "d26446b193affe84"
+    },
+    {
+      "parameter": "23",
+      "value": "SIMPLEX",
+      "unit": "",
+      "design_value": "PISTON NO.",
+      "equipment": "펌프",
+      "row_idx": 85,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "10e3b138b2f5d8cf"
+    },
+    {
+      "parameter": "24",
+      "value": "ACCESSORIES",
+      "unit": "",
+      "design_value": "PLUNGER/DIAPHRAM DIA.",
+      "equipment": "펌프",
+      "row_idx": 86,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "e9e6ffc30cf610ac"
+    },
+    {
+      "parameter": "25",
+      "value": "116",
+      "unit": "",
+      "design_value": "STROKE SPEED. (SPM)",
+      "equipment": "펌프",
+      "row_idx": 87,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "0a46a3350ee78c29"
+    },
+    {
+      "parameter": "26",
+      "value": "PUMP HEAD",
+      "unit": "A/C FILTER",
+      "design_value": "MATERIAL.",
+      "equipment": "펌프",
+      "row_idx": 88,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "745e147caacbdb92"
+    },
+    {
+      "parameter": "27",
+      "value": ":",
+      "unit": "",
+      "design_value": "DIAPHRAGM",
+      "equipment": "펌프",
+      "row_idx": 89,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "30e6e813ce5b1e2a"
+    },
+    {
+      "parameter": "28",
+      "value": ":",
+      "unit": "",
+      "design_value": "CHECK BALL",
+      "equipment": "펌프",
+      "row_idx": 90,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "3a08e52a3ca180fc"
+    },
+    {
+      "parameter": "29",
+      "value": ":",
+      "unit": "",
+      "design_value": "BALL SEAT",
+      "equipment": "펌프",
+      "row_idx": 91,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "bb5961944c9777f8"
+    },
+    {
+      "parameter": "30",
+      "value": "AGITATOR DATA",
+      "unit": "",
+      "design_value": "CAPACITY CONTROL",
+      "equipment": "펌프",
+      "row_idx": 92,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "ccbced5d5b598703"
+    },
+    {
+      "parameter": "31",
+      "value": "AUTOMATIC",
+      "unit": "",
+      "design_value": "MANUAL",
+      "equipment": "펌프",
+      "row_idx": 93,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "63f96fa98adcb5f9"
+    },
+    {
+      "parameter": "32",
+      "value": "MOTOR RPM CONTROL",
+      "unit": "",
+      "design_value": "STROKE ADJUSTMENT",
+      "equipment": "펌프",
+      "row_idx": 94,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "32a94760ca191d4c"
+    },
+    {
+      "parameter": "33",
+      "value": "STROKE CONTROL",
+      "unit": "",
+      "design_value": "DURING OPERATION",
+      "equipment": "펌프",
+      "row_idx": 95,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "177a9224fb162cee"
+    },
+    {
+      "parameter": "34",
+      "value": "TYPE.",
+      "unit": "",
+      "design_value": "CAPACITY CONTROL RANGE  : 20 - 100 %",
+      "equipment": "펌프",
+      "row_idx": 96,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "ea7a515167f5cdf9"
+    },
+    {
+      "parameter": "35",
+      "value": "SHAFT SEAL.",
+      "unit": "",
+      "design_value": "MOTOR DATA FOR DOSING PUMP",
+      "equipment": "펌프",
+      "row_idx": 97,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "91cafb2bac51a425"
+    },
+    {
+      "parameter": "36",
+      "value": "2",
+      "unit": "",
+      "design_value": "Q'TY.                    :",
+      "equipment": "펌프",
+      "row_idx": 98,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "c99fb5ae45ebc74f"
+    },
+    {
+      "parameter": "37",
+      "value": "SHINKANG ELEC.",
+      "unit": "",
+      "design_value": "MFR.  :",
+      "equipment": "펌프",
+      "row_idx": 99,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "c1da01672814d7a8"
+    },
+    {
+      "parameter": "38",
+      "value": "0.2",
+      "unit": "",
+      "design_value": "RATED OUTPUT.  :",
+      "equipment": "펌프",
+      "row_idx": 100,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "1308c5587a69573a"
+    },
+    {
+      "parameter": "39",
+      "value": "4",
+      "unit": "",
+      "design_value": "POLE.                   :",
+      "equipment": "펌프",
+      "row_idx": 101,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "e714031ea7d08c00"
+    },
+    {
+      "parameter": "40",
+      "value": "3",
+      "unit": "",
+      "design_value": "PHASE.",
+      "equipment": "펌프",
+      "row_idx": 102,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "eee895400cc489f3"
+    },
+    {
+      "parameter": "41",
+      "value": "CYCLE",
+      "unit": "",
+      "design_value": "PHASE.",
+      "equipment": "펌프",
+      "row_idx": 103,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "f1cdc24fa9f33520"
+    },
+    {
+      "parameter": "42",
+      "value": "ACCESSORIES",
+      "unit": "",
+      "design_value": "",
+      "equipment": "펌프",
+      "row_idx": 104,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "7b6b41ba29d4abec"
+    },
+    {
+      "parameter": "43",
+      "value": "REDUCER FOR TERMINAL POINT",
+      "unit": "",
+      "design_value": "MANUAL VALVE",
+      "equipment": "펌프",
+      "row_idx": 105,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "adb90bb7bff48b40"
+    },
+    {
+      "parameter": "44",
+      "value": "PRESSURE SWITCH",
+      "unit": "",
+      "design_value": "CHECK VALVE",
+      "equipment": "펌프",
+      "row_idx": 106,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "39c7dc6bc9c5b37d"
+    },
+    {
+      "parameter": "45",
+      "value": "PRESSURE GAUGE",
+      "unit": "",
+      "design_value": "STRAINER",
+      "equipment": "펌프",
+      "row_idx": 107,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "fa4d01eb663e232f"
+    },
+    {
+      "parameter": "46",
+      "value": "NAME PLATE",
+      "unit": "",
+      "design_value": "BASE SKID",
+      "equipment": "펌프",
+      "row_idx": 108,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "a77a0ba8ed839b02"
+    },
+    {
+      "parameter": "47",
+      "value": "COMPANION FLANGE BOLT & NUT",
+      "unit": "",
+      "design_value": "CONTROL PANEL",
+      "equipment": "펌프",
+      "row_idx": 109,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "06f84bc68f034e63"
+    },
+    {
+      "parameter": "48",
+      "value": "14",
+      "unit": "",
+      "design_value": "PUMP WEIGHT",
+      "equipment": "펌프",
+      "row_idx": 110,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "560177227fcc40bc"
+    },
+    {
+      "parameter": "49",
+      "value": "520",
+      "unit": "",
+      "design_value": "TANK WEIGHT",
+      "equipment": "펌프",
+      "row_idx": 111,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "0126726613ce59e4"
+    },
+    {
+      "parameter": "PREPARED BY.                 H.S.KIM",
+      "value": "CHECKED BY.                   S.W.CHOI",
+      "unit": "",
+      "design_value": "APPROVED BY.                 J.H.KIM",
+      "equipment": "펌프",
+      "row_idx": 115,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "7a4e4189e6e75640"
+    }
+  ]
+}

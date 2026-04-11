@@ -1,0 +1,32 @@
+{
+  "meta": {
+    "source_path": "D:\\기계도면\\기계도면\\09. 바닥재 처리설비 (태광)\\재처리 설비\\16.기기 중량표\\016.기기중량표.pdf",
+    "company_id": "09",
+    "company_name": "바닥재 처리설비",
+    "equipment": "바닥재처리",
+    "doc_type": "MANUAL",
+    "rev": null,
+    "is_latest": true,
+    "extracted_at": "2026-03-27T20:18:18",
+    "chunk_count": 1,
+    "vision_pages": 0
+  },
+  "chunks": [
+    {
+      "chunk_idx": 0,
+      "text": "WEIGHT SHEET\n(기기중량표)\nDOC.No. JJ-M-022-16\n공 사 명 : 제주환경자원순환센터(소각시설) 조성공사 REV. No. 0\n설 비 명 : 바닥재 처리설비 PAGE 2 OF 2\nNo. DESCRIPTION 정하중 동하중 REMARK\n1 바닥재 배출장치-1 32 TON 85 TON\n2 바닥재 배출장치-2 32 TON 85 TON\n3 바닥재 이송 콘베이어 9.5 TON 10 TON\n4 바닥재 자력 선별기 3 TON 3.5TON\n5 선별 철재물 이송 콘베이어-1 1.5 TON 2 TON\n6 선별 철재물 이송 콘베이어-2 2 TON 2.8 TON\n= B L I N K =",
+      "header": "WEIGHT SHEET",
+      "section_type": "일반",
+      "equipment": [
+        "바닥재처리"
+      ],
+      "company_id": "09",
+      "company_name": "바닥재 처리설비",
+      "source_file": "016.기기중량표",
+      "source_path": "D:\\기계도면\\기계도면\\09. 바닥재 처리설비 (태광)\\재처리 설비\\16.기기 중량표\\016.기기중량표.pdf",
+      "rev": null,
+      "chunk_hash": "8918b150909d4818",
+      "char_count": 330
+    }
+  ]
+}

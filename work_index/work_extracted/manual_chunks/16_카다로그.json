@@ -1,0 +1,371 @@
+{
+  "meta": {
+    "source_path": "D:\\기계도면\\기계도면\\16. 세차설비 (경일산업)\\카다로그.pdf",
+    "company_id": "16",
+    "company_name": "세차설비",
+    "equipment": "세차설비",
+    "doc_type": "MANUAL",
+    "rev": null,
+    "is_latest": true,
+    "extracted_at": "2026-03-27T20:19:48",
+    "chunk_count": 22,
+    "vision_pages": 0
+  },
+  "chunks": [
+    {
+      "chunk_idx": 0,
+      "text": "Catalogues Index\n-. 고압 세척수 펌프\n-. 세척액, 방청액분사펌프\n-. 세척액,방청액 공급펌프\n-. 세척수 공급펌프\n-. 고압 노즐\n-. 세척액, 방청액 노즐\n-. 에어 콤프레셔\n-. 수동세척기\n-. 송풍기",
+      "header": "",
+      "section_type": "일반",
+      "equipment": [
+        "펌프",
+        "팬"
+      ],
+      "company_id": "16",
+      "company_name": "세차설비",
+      "source_file": "카다로그",
+      "source_path": "D:\\기계도면\\기계도면\\16. 세차설비 (경일산업)\\카다로그.pdf",
+      "rev": null,
+      "chunk_hash": "e8b819b8c97ca756",
+      "char_count": 124
+    },
+    {
+      "chunk_idx": 1,
+      "text": "프\n-. 세척액,방청액 공급펌프\n-. 세척수 공급펌프\n-. 고압 노즐\n-. 세척액, 방청액 노즐\n-. 에어 콤프레셔\n-. 수동세척기\n-. 송풍기",
+      "header": "PUMP DATA SHEET",
+      "section_type": "일반",
+      "equipment": [
+        "펌프",
+        "팬"
+      ],
+      "company_id": "16",
+      "company_name": "세차설비",
+      "source_file": "카다로그",
+      "source_path": "D:\\기계도면\\기계도면\\16. 세차설비 (경일산업)\\카다로그.pdf",
+      "rev": null,
+      "chunk_hash": "1e37e2915c30103c",
+      "char_count": 80
+    },
+    {
+      "chunk_idx": 2,
+      "text": "프\n-. 세척액,방청액 공급펌프\n-. 세척수 공급펌프\n-. 고압 노즐\n-. 세척액, 방청액 노즐\n-. 에어 콤프레셔\n-. 수동세척기\n-. 송풍기 PUMP DATA SHEET\nModel PUM-1703N Title Sheet No.\n1 Customer Agent No.\n2 Location Date Issued\n3 Item No. Plant Name\n4 Service Quantity Location ■In, □Out\n5 OPERATING CONDITION\n6 Liquid Flow 130 ℓ/min NPSHav mAq\n7 Pumping Temp AMB. ℃ Suct.Head 6 m Concentration %\n8 Sp. Gr. @P.T 1 Disch.Press 24 m Solid\n9 Vap. Press @P.T Kg/㎠A Total Head 30 m Corros.or Erros\n10 Visc @P.T Cp\n11 MATERIALS\n12 ■ Horizontal □ Vertical Efficiency 35 % (Parts' Name) Symbol(KS)\n13 Number of Stages 2 Stage Rated Power 1500 W Impeller HBsC1\n14 Speed 3450 NPSHre mAq Shaft SM20C+STS430\n15 Rotation □ CW, ■ CCW Column Head m Casing GC150\n16 Flange Size(Dia) Rating Face Position Suct.Flange GC200\n17 Suction 40mm ■ FF, □ RF □End □Top ■Side Disch.Flange GC200\n18 Discharge 40mm ■ FF, □ RF ■Top, □Side Guide Vane GC150\n19 Impeller Type Closed ■Single Suct. □Double Suct. HYDROSTATIC\n20 Flow Direction ■Radial □ Mixed □ Axial Casing 5 Kg/㎠ 3 Min.\n21 Shaft Seal □ G/Packing ■ M/Seal\n22 Shaft Sleeve □Yes, □No\n23 Mounting □ Foot □ Centerline □ Bracket TESTING\n24 Lubrication Type □ Grease □ Oil Bath (Items) (witness)\n25 Cooling □ Stuff.Box □B/R Housing □ No. Cooling Run Perform. ■ Yes □ No □Yes □No\n26 Radial Bearings 6204ZZ Thrust Bearing 6205ZZ Hydrostatic ■ Yes □ No □Yes □No\n27 PUMP DRIVER SPARE PARTS\n28 Motor V/Phase/Hz 440 3 60 Impeller Set(S)\n29 Maker WILO Pumps Ltd. Shaft Set(S)\n30 Type INDUCTION MOTOR Shaft Sleeve Set(S)\n31 Power 1500W Casing Ring Set(S)\n32 Pole & Speed 2 p 3450 rpm Insulation Class ■ B □ E Bearing(R+T) Set(S)\n33 ACCESSORIES Bearing(Journal) Set(S)\n34 □Base Plate □ Cast Iron □Steel Plate □ Drain Rim M/Seal Set(S)\n35 □Foundation Bolts & Nuts Casing Gasket Set(S)\n36 Coupling □ Sun Flex □ WOODS □ Grid □Coupling Guard Oil Seal Set(S)\n37 □Press. Gauge □Suct.Vacuum □Suct.Compound □Suct.Press □Disch.Press Coupling Set(S)\n38 □Collar or Plug for Drain & Air Vent. Coupling Rubber Set(S)\n39 □Sealing Flushing Pipe □ Cooling Piping Name Plate Set(S)\n40 Maker N.E.K Model & Size Φ 18 Set(S)\n41 Mechanical Seal Type EA103-18 Cooler □Yes, ■No WEIGHT\n42 Pump / Bed Kg\n43 □ Companion Flange Driver Kg\n44 □ Special Tools Total Wt. 45 Kg",
+      "header": "PUMP DATA SHEET",
+      "section_type": "일반",
+      "equipment": [
+        "펌프",
+        "팬"
+      ],
+      "company_id": "16",
+      "company_name": "세차설비",
+      "source_file": "카다로그",
+      "source_path": "D:\\기계도면\\기계도면\\16. 세차설비 (경일산업)\\카다로그.pdf",
+      "rev": null,
+      "chunk_hash": "b6fddd520724cc9d",
+      "char_count": 2207
+    },
+    {
+      "chunk_idx": 3,
+      "text": "Pump / Bed Kg\n43 □ Companion Flange Driver Kg\n44 □ Special Tools Total Wt. 45 Kg PUMP TEST REPORT\n■ PERFORMANCE CURVE\n40 70",
+      "header": "PUMP TEST REPORT",
+      "section_type": "일반",
+      "equipment": [
+        "펌프"
+      ],
+      "company_id": "16",
+      "company_name": "세차설비",
+      "source_file": "카다로그",
+      "source_path": "D:\\기계도면\\기계도면\\16. 세차설비 (경일산업)\\카다로그.pdf",
+      "rev": null,
+      "chunk_hash": "178849190dde4bff",
+      "char_count": 123
+    },
+    {
+      "chunk_idx": 4,
+      "text": "Kg\n44 □ Special Tools Total Wt. 45 Kg PUMP TEST REPORT\n■ PERFORMANCE CURVE\n40 70 →\n)wK(rewoP\ntfahS/)m(daeH\nlatoT\n→\n)%(\n.ffE\n□ Total Head ㅇ Pump Eff. △ Shaft Power X Specification\n0 0\n0 20 40 60 80 100 120 140 160 180 200\nCapacity(ℓ/min) →\n■ PERFORMANCE DATA\nCapacity (ℓ/min) 0.00 83.00 130.00 166.00 182.00 183.00 185.00 186.00\nDis. Head (m) 31.00 30.00 24.00 20.00 15.00 10.00 6.00 0.00\nSuc. Head (m) 6.00 6.00 6.00 6.00 6.00 6.00 6.00 6.00\nSpeed Head (m) 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00\nTotal Head (m) 37.00 36.00 30.00 26.00 21.00 16.00 12.00 6.00\nWater Power (㎾) 0.00 0.49 0.64 0.70 0.62 0.48 0.36 0.18\nShaft Power (㎾) 0.73 1.17 1.41 1.53 1.57 1.50 1.44 1.28\nPump Eff. (%) 0.00 41.68 45.15 46.08 39.74 31.75 25.12 14.18\nSpeed (rpm) 3549 3518 3495 3485 3482 3488 3493 3504\nVoltage (V) 440 440 440 440 440 440 440 440\nCurrent (A) 2.04 2.54 2.87 3.03 3.10 2.99 2.89 2.68\nMotor Input (㎾) 0.893 1.425 1.717 1.862 1.912 1.833 1.757 1.565\nMotor Eff. (%) 82.0 82.0 82.0 82.0 82.0 82.0 82.0 82.0\n■ SPECIFICATION FOR PUMP & MOTOR\nPUMP SPECIFICATION MOTOR SPECIFICATION TEST CONDITION\nCapacity 130 (ℓ/min) Phase (Φ) 3 Output(㎾) 1.5 S/Pipe(mm) D/Pipe(mm) H/Diff.(m)\nTotal Head 30 (m) Pole (P) 2 Freq.(Hz) 60 40 40\nEfficiency (%) Volt. (V) 440 Current(A) Flow Meter R.T (℃) W.T (℃)\nI/P Out-Dia (mm) Eff. (%) 82 Maker WILO Turbin 25 22\nItem No. Serial No. Inspector S.W.H Run (Hr) B/R (℃) Test Date\nModel PUM-1703N Customer 1 10/4/9\nChecked By Approved By",
+      "header": "PUMP TEST REPORT",
+      "section_type": "일반",
+      "equipment": [
+        "펌프"
+      ],
+      "company_id": "16",
+      "company_name": "세차설비",
+      "source_file": "카다로그",
+      "source_path": "D:\\기계도면\\기계도면\\16. 세차설비 (경일산업)\\카다로그.pdf",
+      "rev": null,
+      "chunk_hash": "cd114770874a3a51",
+      "char_count": 1453
+    },
+    {
+      "chunk_idx": 5,
+      "text": "(Hr) B/R (℃) Test Date\nModel PUM-1703N Customer 1 10/4/9\nChecked By Approved By",
+      "header": "PUMP DATA SHEET",
+      "section_type": "일반",
+      "equipment": [
+        "세차설비"
+      ],
+      "company_id": "16",
+      "company_name": "세차설비",
+      "source_file": "카다로그",
+      "source_path": "D:\\기계도면\\기계도면\\16. 세차설비 (경일산업)\\카다로그.pdf",
+      "rev": null,
+      "chunk_hash": "8bc0f7e56e0f64ef",
+      "char_count": 79
+    },
+    {
+      "chunk_idx": 6,
+      "text": "(Hr) B/R (℃) Test Date\nModel PUM-1703N Customer 1 10/4/9\nChecked By Approved By PUMP DATA SHEET\nModel PU-1700i Title Sheet No.\n1 Customer Agent No.\n2 Location Date Issued\n3 Item No. Plant Name\n4 Service Quantity Location ■In, □Out\n5 OPERATING CONDITION\n6 Liquid Flow 300 ℓ/min NPSHav mAq\n7 Pumping Temp AMB. ℃ Suct.Head 6 m Concentration %\n8 Sp. Gr. @P.T 1 Disch.Head 3 m Solid\n9 Vap. Press @P.T Kg/㎠A Total Head 9 m Corros.or Erros\n10 Visc @P.T Cp\n11 MATERIALS\n12 ■ Horizontal □ Vertical Efficiency 30 % (Parts' Name) Symbol(KS)\n13 Number of Stages 1 Stage Rated Power 1700 W Impeller C3771BD\n14 Speed 3400 NPSHre mAq Shaft SM20C+STS430\n15 Rotation □ CW, ■ CCW Column Head m Casing GC150\n16 Flange Size(Dia) Rating Face Position Suct.Flange GC200\n17 Suction 50mm ■ FF, □ RF □End □Top ■Side Disch.Flange GC200\n18 Discharge 50mm ■ FF, □ RF ■Top, □Side Plate STS304\n19 Impeller Type Semi Open ■Single Suct. □Double Suct. HYDROSTATIC\n20 Flow Direction ■Radial □ Mixed □ Axial Casing 5 Kg/㎠ 3 Min.\n21 Shaft Seal □ G/Packing ■ M/Seal\n22 Shaft Sleeve □Yes, □No\n23 Mounting □ Foot □ Centerline □ Bracket TESTING\n24 Lubrication Type □ Grease □ Oil Bath (Items) (witness)\n25 Cooling □ Stuff.Box □B/R Housing □ No. Cooling Run Perform. ■ Yes □ No □Yes □No\n26 Radial Bearings 6204ZZ Thrust Bearing 6305ZZ Hydrostatic ■ Yes □ No □Yes □No\n27 PUMP DRIVER SPARE PARTS\n28 Motor V/Phase/Hz 220/380 3 60 Impeller Set(S)\n29 Maker WILO Pumps Ltd. Shaft Set(S)\n30 Type INDUCTION MOTOR Shaft Sleeve Set(S)\n31 Power 1700W Casing Ring Set(S)\n32 Pole & Speed 2 p 3400 rpm Insulation Class ■ B □ E Bearing(R+T) Set(S)\n33 ACCESSORIES Bearing(Journal) Set(S)\n34 □Base Plate □ Cast Iron □Steel Plate □ Drain Rim M/Seal Set(S)\n35 □Foundation Bolts & Nuts Casing Gasket Set(S)\n36 Coupling □ Sun Flex □ WOODS □ Grid □Coupling Guard Oil Seal Set(S)\n37 □Press. Gauge □Suct.Vacuum □Suct.Compound □Suct.Press □Disch.Press Coupling Set(S)\n38 □Collar or Plug for Drain & Air Vent. Coupling Rubber Set(S)\n39 □Sealing Flushing Pipe □ Cooling Piping Name Plate Set(S)\n40 Maker N.E.K Model & Size Φ 18 Set(S)\n41 Mechanical Seal Type EA103-18 Cooler □Yes, ■No WEIGHT\n42 Pump / Bed Kg\n43 □ Companion Flange Driver Kg\n44 □ Special Tools Total Wt. 43.5 Kg",
+      "header": "PUMP DATA SHEET",
+      "section_type": "일반",
+      "equipment": [
+        "펌프"
+      ],
+      "company_id": "16",
+      "company_name": "세차설비",
+      "source_file": "카다로그",
+      "source_path": "D:\\기계도면\\기계도면\\16. 세차설비 (경일산업)\\카다로그.pdf",
+      "rev": null,
+      "chunk_hash": "d984712f00a8b152",
+      "char_count": 2209
+    },
+    {
+      "chunk_idx": 7,
+      "text": "mp / Bed Kg\n43 □ Companion Flange Driver Kg\n44 □ Special Tools Total Wt. 43.5 Kg PUMP TEST REPORT\n■ PERFORMANCE CURVE\n□ Total Head ㅇ Pump Eff. △ Shaft Power X Specification",
+      "header": "PUMP TEST REPORT",
+      "section_type": "일반",
+      "equipment": [
+        "펌프"
+      ],
+      "company_id": "16",
+      "company_name": "세차설비",
+      "source_file": "카다로그",
+      "source_path": "D:\\기계도면\\기계도면\\16. 세차설비 (경일산업)\\카다로그.pdf",
+      "rev": null,
+      "chunk_hash": "9f18bb4862f8c147",
+      "char_count": 172
+    },
+    {
+      "chunk_idx": 8,
+      "text": "EPORT\n■ PERFORMANCE CURVE\n□ Total Head ㅇ Pump Eff. △ Shaft Power X Specification 0 50 100 150 200 250 300 350\n■ PERFORMANCE DATA\nCapacity (ℓ/min) 0.00 109.00 214.00 280.00 330.00 337.00 347.00\nDis. Head (m) 24.00 20.00 15.00 10.00 5.00 3.00 0.00\nSuc. Head (m) 6.00 6.00 6.00 6.00 6.00 6.00 6.00\nSpeed Head (m) 0.00 0.00 0.00 0.00 0.00 0.00 0.00\nTotal Head (m) 30.00 26.00 21.00 16.00 11.00 9.00 6.00\nWater Power (㎾) 0.00 0.46 0.73 0.73 0.59 0.49 0.34\nShaft Power (㎾) 1.46 1.77 2.00 2.05 2.09 2.00 1.83\nPump Eff. (%) 0.00 26.12 36.67 35.68 28.34 24.75 18.54\nSpeed (rpm) 3522 3503 3488 3484 3480 3485 3495\nVoltage (V) 380 380 380 380 380 380 380\nCurrent (A) 3.53 4.00 4.37 4.47 4.53 4.38 4.10\nMotor Input (㎾) 1.783 2.157 2.436 2.496 2.546 2.436 2.232\nMotor Eff. (%) 82.0 82.0 82.0 82.0 82.0 82.0 82.0\n■ SPECIFICATION FOR PUMP & MOTOR\nPUMP SPECIFICATION MOTOR SPECIFICATION TEST CONDITION\nCapacity 300 (ℓ/min) Phase (Φ) 3 Output(㎾) 1.7 S/Pipe(mm) D/Pipe(mm) H/Diff.(m)\nTotal Head 9 (m) Pole (P) 2 Freq.(Hz) 60 50 50\nEfficiency (%) Volt. (V) 220/380 Current(A) Flow Meter R.T (℃) W.T (℃)\nI/P Out-Dia (mm) Eff. (%) 82 Maker WILO Turbin 20 7\nItem No. Serial No. Inspector S.W.H Run (Hr) B/R (℃) Test Date\nModel PU-1700I Customer 1 2012.11.02\nChecked By Approved By",
+      "header": "PUMP TEST REPORT",
+      "section_type": "일반",
+      "equipment": [
+        "펌프"
+      ],
+      "company_id": "16",
+      "company_name": "세차설비",
+      "source_file": "카다로그",
+      "source_path": "D:\\기계도면\\기계도면\\16. 세차설비 (경일산업)\\카다로그.pdf",
+      "rev": null,
+      "chunk_hash": "df257e7710a2f573",
+      "char_count": 1258
+    },
+    {
+      "chunk_idx": 9,
+      "text": "r) B/R (℃) Test Date\nModel PU-1700I Customer 1 2012.11.02\nChecked By Approved By 서울시 금천구 시흥3동 984번지 시흥유통센터 20동 320호\nTel. 02) 894-8111 / 894-8112 / 894-8115 Fax. 02) 894-8113\n● 특성 : 부채꼴 SPRAY 중첩분사시 균일한 유량분포를 위해\nTAPER 설계\n● 재질 : BRASS, SUS전재질, PVC, 기타 주문재질\n● 용도 : 세척용, 코팅용, 냉각용, 표면처리 外\n규격(인치) 유량(ℓ/min) 각도(°)\n오리\n노즐\n피스 1 1 3 1 3\n번호\n직경 / / / / / 1 0.3 1 2 3 4 5 7 10 20 35 15 25 40 50 65 80 95 110\n8 4 8 2 4\n0017 0.28 ● - - 0.06 0.07 0.08 0.09 0.1 0.13 0.17 0.3 ●\n0033 0.38 ● - - 0.1 0.13 0.15 0.17 0.2 0.24 0.33 0.5 ●\n0050 0.46 ● - 0.1 0.16 0.2 0.23 0.25 0.3 0.36 0.50 0.7 ● ●\n0067 0.53 ● ● - 0.15 0.2 0.26 0.3 0.35 0.4 0.5 0.67 1 ● ●\n01 0.66 ● ● 0.12 0.24 0.32 0.4 0.45 0.5 0.6 0.7 1 1.5 ● ● ● ● ● ● ● ●\n015 0.8 ● ● 0.18 0.34 0.48 0.6 0.68 0.76 0.9 1 1.5 2 ● ● ● ● ● ● ● ●\n02 0.9 ● ● 0.24 0.45 0.65 0.8 0.9 1 1.2 1.4 2 2.8 ● ● ● ● ● ● ● ●\n03 1.1 ● ● ● 0.38 0.68 0.96 1.2 1.4 1.6 1.8 2 3 4 ● ● ● ● ● ● ● ●\n04 1.3 ● ● ● 0.5 0.9 1.3 1.6 1.8 2 2.4 3 4 6 ● ● ● ● ● ● ● ●\n05 1.4 ● ● ● 0.6 1.2 1.6 2 2.3 2.5 3 3.6 5 7 ● ● ● ● ● ● ● ●\n06 1.6 ● ● ● 0.75 1.4 2 2.3 2.7 3 3.6 4.2 6 8 ● ● ● ● ● ● ● ●\n08 1.8 ● ● ● 1 1.8 2.6 3.0 3.6 4.0 4.8 5.6 8 11 ● ● ● ● ● ● ● ●\n10 2.0 ● ● ● ● 1.2 2.3 3.2 4 4.5 5 6 7 10 14 ● ● ● ● ● ● ● ●\n15 2.4 ● ● ● ● 2 3.4 4.8 6 6.8 7.6 9 11 15 20 ● ● ● ● ● ● ● ●\n20 2.8 ● ● ● ● 2.5 4.5 6.5 7.8 9 10 12 14 20 27 ● ● ● ● ● ● ● ●\n30 3.6 ● ● ● ● 3.8 6.8 9.6 11.8 13.5 15 18 20 30 40 ● ● ● ● ● ● ● ●\n40 4.0 ● ● ● ● 5 9 13 15.5 18 20 24 30 40 55 ● ● ● ● ● ● ● ●\n50 4.4 ● ● ● ● 6.2 11.5 16 19.5 22 25 30 36 50 68 ● ● ● ● ● ● ● ●\n60 4.8 ● ● ● 7.5 13.5 19 23 27 30 36 43 60 80 ● ● ● ● ● ● ● ●\n70 5.2 ● ● ● 8.8 16 22 27 32 35 42 50 70 95 ● ● ● ● ● ● ● ●",
+      "header": "PUMP TEST REPORT",
+      "section_type": "일반",
+      "equipment": [
+        "세차설비"
+      ],
+      "company_id": "16",
+      "company_name": "세차설비",
+      "source_file": "카다로그",
+      "source_path": "D:\\기계도면\\기계도면\\16. 세차설비 (경일산업)\\카다로그.pdf",
+      "rev": null,
+      "chunk_hash": "5632cbb68dbb63b2",
+      "char_count": 1653
+    },
+    {
+      "chunk_idx": 10,
+      "text": "0 80 ● ● ● ● ● ● ● ●\n70 5.2 ● ● ● 8.8 16 22 27 32 35 42 50 70 95 ● ● ● ● ● ● ● ● 규격(인치) 유량(ℓ/min) 각도(°)\n오리\n노즐\n피스 1 1 3 1 3\n번호\n직경 / / / / / 1 0.3 1 2 3 4 5 7 10 20 35 15 25 40 50 65 80 95 110\n8 4 8 2 4\n80 5.6 ● ● ● 10 18 26 30 36 40 48 57 80 106 ● ● ● ● ● ● ● ●\n100 6.4 ● ● ● ● 12.5 23 32 38 45 50 60 70 100 136 ● ● ● ● ● ● ● ●\n120 6.8 ● ● ● 15 27 39 46 55 62 73 85 120 166 ● ● ● ● ● ● ● ●\n150 7.5 ● ● ● 19 35 50 60 70 80 94 110 160 210 ● ● ● ● ● ● ● ●\n200 8.8 ● ● ● 25 46 65 80 92 104 124 150 200 270 ● ● ● ● ● ● ● ●\n0003 1.2 ● ● 0.37 0.68 0.97 1.2 1.4 1.5 1.8 2.2 3.1 4.0\n0004 1.4 ● ● 0.50 0.91 1.3 1.6 1.8 2.0 2.4 2.9 4.1 5.4\n0005 1.5 ● ● 0.62 1.1 1.6 2.0 2.3 2.5 3.0 3.6 5.1 6.7\n0006 1.7 ● ● 0.75 1.4 1.9 2.4 2.7 3.1 3.6 4.3 6.1 8.1\n0008 2.0 ● ● 1.0 1.8 2.6 3.2 3.6 4.1 4.8 5.8 8.2 10.8\n0010 2.2 ● ● ● 1.2 2.3 3.2 3.9 4.6 5.1 6.0 7.2 10.2 13.5\n0015 2.7 ● ● ● 1.9 3.4 4.8 5.9 6.8 7.6 9.0 10.8 15.3 20\n0020 3.2 ● ● ● 2.5 4.6 6.4 7.9 9.1 10.2 12.1 14.4 20 27\n0030 3.6 ● ● ● 3.7 6.8 9.7 11.8 13.7 15.3 18.1 22 31 40\n0040 4.0 ● ● ● 5.0 9.1 12.9 15.8 18.2 20 24 29 41 54 0° 일직선\n분사\n0050 4.4 ● ● 6.2 11.4 16.1 19.7 23 25 30 36 51 68\n0060 4.8 ● ● 7.5 13.7 19.3 24 27 31 36 43 61 81\n0070 5.2 ● ● 8.7 16.0 23 28 32 36 42 50 71 94\n0080 5.2 ● ● 10.0 18.2 26 32 36 41 48 58 82 108\n00100 6.0 ● 12.5 23 32 39 46 51 60 72 102 135\n00120 6.4 ● 15.0 27 39 47 55 61 72 86 122 162\n00150 7.5 ● ● 18.7 34 48 59 68 76 90 108 153 205\n00200 8.3 ● ● 25 46 64 79 91 102 121 144 205 270\n00250 9.5 ● ● 31 57 81 99 114 127 151 180 255 340\n00350 11.1 ● ● 44 80 113 138 160 178 210 255 360 475\n00700 15.5 ● ● 87 160 225 275 320 355 420 510 720 950\n001000 19.1 ● 125 230 325 395 460 510 610 720 1020 1350\n001100 19.8 ● 140 255 355 435 500 560 670 790 1120 1490\n0° 일직선\n001400 22.2 ● 175 320 455 560 640 720 850 1010 14301890\n분사\n001800 25.4 ● 225 410 580 710 820 920 1090 130018402430\n002000 26.6 ● 250 460 650 790 910 1020 1210144020402700\n003500 34.9 ● 440 800 1130 1380160017902110252035704720",
+      "header": "PUMP TEST REPORT",
+      "section_type": "일반",
+      "equipment": [
+        "세차설비"
+      ],
+      "company_id": "16",
+      "company_name": "세차설비",
+      "source_file": "카다로그",
+      "source_path": "D:\\기계도면\\기계도면\\16. 세차설비 (경일산업)\\카다로그.pdf",
+      "rev": null,
+      "chunk_hash": "1ae3d5148074a766",
+      "char_count": 1962
+    },
+    {
+      "chunk_idx": 11,
+      "text": "10 1020 1210144020402700\n003500 34.9 ● 440 800 1130 1380160017902110252035704720 서울시 금천구 시흥3동 984번지 시흥유통센터 20동 320호\nTel. 02) 894-8111 / 894-8112 / 894-8115 Fax. 02) 894-8113\n● 특성 : 부채꼴 SPRAY 중첩분사시 균일한 유량분포를 위해\nTAPER 설계\n● 재질 : BRASS, SUS전재질, PVC, 기타 주문재질\n● 용도 : 세척용, 코팅용, 냉각용, 표면처리 外\n규격(인치) 유량(ℓ/min) 각도(°)\n오리\n노즐\n피스 1 1 3 1 3\n번호\n직경 / / / / / 1 0.3 1 2 3 4 5 7 10 20 35 15 25 40 50 65 80 95 110\n8 4 8 2 4\n0017 0.28 ● - - 0.06 0.07 0.08 0.09 0.1 0.13 0.17 0.3 ●\n0033 0.38 ● - - 0.1 0.13 0.15 0.17 0.2 0.24 0.33 0.5 ●\n0050 0.46 ● - 0.1 0.16 0.2 0.23 0.25 0.3 0.36 0.50 0.7 ● ●\n0067 0.53 ● ● - 0.15 0.2 0.26 0.3 0.35 0.4 0.5 0.67 1 ● ●\n01 0.66 ● ● 0.12 0.24 0.32 0.4 0.45 0.5 0.6 0.7 1 1.5 ● ● ● ● ● ● ● ●\n015 0.8 ● ● 0.18 0.34 0.48 0.6 0.68 0.76 0.9 1 1.5 2 ● ● ● ● ● ● ● ●\n02 0.9 ● ● 0.24 0.45 0.65 0.8 0.9 1 1.2 1.4 2 2.8 ● ● ● ● ● ● ● ●\n03 1.1 ● ● ● 0.38 0.68 0.96 1.2 1.4 1.6 1.8 2 3 4 ● ● ● ● ● ● ● ●\n04 1.3 ● ● ● 0.5 0.9 1.3 1.6 1.8 2 2.4 3 4 6 ● ● ● ● ● ● ● ●\n05 1.4 ● ● ● 0.6 1.2 1.6 2 2.3 2.5 3 3.6 5 7 ● ● ● ● ● ● ● ●\n06 1.6 ● ● ● 0.75 1.4 2 2.3 2.7 3 3.6 4.2 6 8 ● ● ● ● ● ● ● ●\n08 1.8 ● ● ● 1 1.8 2.6 3.0 3.6 4.0 4.8 5.6 8 11 ● ● ● ● ● ● ● ●\n10 2.0 ● ● ● ● 1.2 2.3 3.2 4 4.5 5 6 7 10 14 ● ● ● ● ● ● ● ●\n15 2.4 ● ● ● ● 2 3.4 4.8 6 6.8 7.6 9 11 15 20 ● ● ● ● ● ● ● ●\n20 2.8 ● ● ● ● 2.5 4.5 6.5 7.8 9 10 12 14 20 27 ● ● ● ● ● ● ● ●\n30 3.6 ● ● ● ● 3.8 6.8 9.6 11.8 13.5 15 18 20 30 40 ● ● ● ● ● ● ● ●\n40 4.0 ● ● ● ● 5 9 13 15.5 18 20 24 30 40 55 ● ● ● ● ● ● ● ●\n50 4.4 ● ● ● ● 6.2 11.5 16 19.5 22 25 30 36 50 68 ● ● ● ● ● ● ● ●\n60 4.8 ● ● ● 7.5 13.5 19 23 27 30 36 43 60 80 ● ● ● ● ● ● ● ●\n70 5.2 ● ● ● 8.8 16 22 27 32 35 42 50 70 95 ● ● ● ● ● ● ● ●",
+      "header": "PUMP TEST REPORT",
+      "section_type": "일반",
+      "equipment": [
+        "세차설비"
+      ],
+      "company_id": "16",
+      "company_name": "세차설비",
+      "source_file": "카다로그",
+      "source_path": "D:\\기계도면\\기계도면\\16. 세차설비 (경일산업)\\카다로그.pdf",
+      "rev": null,
+      "chunk_hash": "4d064a13d09f3d4c",
+      "char_count": 1653
+    },
+    {
+      "chunk_idx": 12,
+      "text": "0 80 ● ● ● ● ● ● ● ●\n70 5.2 ● ● ● 8.8 16 22 27 32 35 42 50 70 95 ● ● ● ● ● ● ● ● 규격(인치) 유량(ℓ/min) 각도(°)\n오리\n노즐\n피스 1 1 3 1 3\n번호\n직경 / / / / / 1 0.3 1 2 3 4 5 7 10 20 35 15 25 40 50 65 80 95 110\n8 4 8 2 4\n80 5.6 ● ● ● 10 18 26 30 36 40 48 57 80 106 ● ● ● ● ● ● ● ●\n100 6.4 ● ● ● ● 12.5 23 32 38 45 50 60 70 100 136 ● ● ● ● ● ● ● ●\n120 6.8 ● ● ● 15 27 39 46 55 62 73 85 120 166 ● ● ● ● ● ● ● ●\n150 7.5 ● ● ● 19 35 50 60 70 80 94 110 160 210 ● ● ● ● ● ● ● ●\n200 8.8 ● ● ● 25 46 65 80 92 104 124 150 200 270 ● ● ● ● ● ● ● ●\n0003 1.2 ● ● 0.37 0.68 0.97 1.2 1.4 1.5 1.8 2.2 3.1 4.0\n0004 1.4 ● ● 0.50 0.91 1.3 1.6 1.8 2.0 2.4 2.9 4.1 5.4\n0005 1.5 ● ● 0.62 1.1 1.6 2.0 2.3 2.5 3.0 3.6 5.1 6.7\n0006 1.7 ● ● 0.75 1.4 1.9 2.4 2.7 3.1 3.6 4.3 6.1 8.1\n0008 2.0 ● ● 1.0 1.8 2.6 3.2 3.6 4.1 4.8 5.8 8.2 10.8\n0010 2.2 ● ● ● 1.2 2.3 3.2 3.9 4.6 5.1 6.0 7.2 10.2 13.5\n0015 2.7 ● ● ● 1.9 3.4 4.8 5.9 6.8 7.6 9.0 10.8 15.3 20\n0020 3.2 ● ● ● 2.5 4.6 6.4 7.9 9.1 10.2 12.1 14.4 20 27\n0030 3.6 ● ● ● 3.7 6.8 9.7 11.8 13.7 15.3 18.1 22 31 40\n0040 4.0 ● ● ● 5.0 9.1 12.9 15.8 18.2 20 24 29 41 54 0° 일직선\n분사\n0050 4.4 ● ● 6.2 11.4 16.1 19.7 23 25 30 36 51 68\n0060 4.8 ● ● 7.5 13.7 19.3 24 27 31 36 43 61 81\n0070 5.2 ● ● 8.7 16.0 23 28 32 36 42 50 71 94\n0080 5.2 ● ● 10.0 18.2 26 32 36 41 48 58 82 108\n00100 6.0 ● 12.5 23 32 39 46 51 60 72 102 135\n00120 6.4 ● 15.0 27 39 47 55 61 72 86 122 162\n00150 7.5 ● ● 18.7 34 48 59 68 76 90 108 153 205\n00200 8.3 ● ● 25 46 64 79 91 102 121 144 205 270\n00250 9.5 ● ● 31 57 81 99 114 127 151 180 255 340\n00350 11.1 ● ● 44 80 113 138 160 178 210 255 360 475\n00700 15.5 ● ● 87 160 225 275 320 355 420 510 720 950\n001000 19.1 ● 125 230 325 395 460 510 610 720 1020 1350\n001100 19.8 ● 140 255 355 435 500 560 670 790 1120 1490\n0° 일직선\n001400 22.2 ● 175 320 455 560 640 720 850 1010 14301890\n분사\n001800 25.4 ● 225 410 580 710 820 920 1090 130018402430\n002000 26.6 ● 250 460 650 790 910 1020 1210144020402700\n003500 34.9 ● 440 800 1130 1380160017902110252035704720",
+      "header": "PUMP TEST REPORT",
+      "section_type": "일반",
+      "equipment": [
+        "세차설비"
+      ],
+      "company_id": "16",
+      "company_name": "세차설비",
+      "source_file": "카다로그",
+      "source_path": "D:\\기계도면\\기계도면\\16. 세차설비 (경일산업)\\카다로그.pdf",
+      "rev": null,
+      "chunk_hash": "1ae3d5148074a766",
+      "char_count": 1962
+    },
+    {
+      "chunk_idx": 13,
+      "text": "10 1020 1210144020402700\n003500 34.9 ● 440 800 1130 1380160017902110252035704720 dukjin poongryuk co.,ltd TECHNICAL DATA SHEET DATE 2018-11-28\nOFFICE : REVISION NO - 0",
+      "header": "PUMP TEST REPORT",
+      "section_type": "일반",
+      "equipment": [
+        "세차설비"
+      ],
+      "company_id": "16",
+      "company_name": "세차설비",
+      "source_file": "카다로그",
+      "source_path": "D:\\기계도면\\기계도면\\16. 세차설비 (경일산업)\\카다로그.pdf",
+      "rev": null,
+      "chunk_hash": "7139e34d92972c06",
+      "char_count": 167
+    },
+    {
+      "chunk_idx": 14,
+      "text": "poongryuk co.,ltd TECHNICAL DATA SHEET DATE 2018-11-28\nOFFICE : REVISION NO - 0",
+      "header": "PERFORMANCE CURVE",
+      "section_type": "일반",
+      "equipment": [
+        "세차설비"
+      ],
+      "company_id": "16",
+      "company_name": "세차설비",
+      "source_file": "카다로그",
+      "source_path": "D:\\기계도면\\기계도면\\16. 세차설비 (경일산업)\\카다로그.pdf",
+      "rev": null,
+      "chunk_hash": "937222605065b1b1",
+      "char_count": 79
+    },
+    {
+      "chunk_idx": 15,
+      "text": "poongryuk co.,ltd TECHNICAL DATA SHEET DATE 2018-11-28\nOFFICE : REVISION NO - 0 PERFORMANCE CURVE\nTEL : 031) 985 - 9815 PAGE 1 OF 4\nFAX : 031) 985 - 9819\nCustomer 경일산업개발㈜ MATERIALS\nProject Casing SS400 Bearing Housing\nLocation Impeller AL Fan Base SS400\nUints SET Shaft\nFAN Type STF10HP CONSTRUCTION FEATURES\nModel CASE SPLIT HORIZONTAL VERTICAL NONE\nSpecification SUCTION TYPE DOUBLE SINGLE\nCapacity 50 m3/min 3000 m3/hr REV.VIEVED FROM DRIVER CW CCW\nStatic Pressur (DIS.) 509.86 mmAq POWER TRANS DIRECT\n(SUC.) mmAq Ball Roller Etc.\n(TOTAL) 509.86 mmAq Bearing Radial Thrust\nFan Revolution 3450 R.P.M Housing Housing\nTemperature 20 ℃ Lubrication Grease Oil\nHumidity 65 % BASE COMMON SOLE\nSpecific Weight 1.198 Kg/m3 SILENCER SUCTION DISCHARGE NONE\nPERFORMANCE DAMPER SUCTION DISCHARGE NONE\nSuction Size Ø 250.00 mm AREA 0.049 m2 SHAFT SEAL Felt Grand NONE\nVELOCITY 16.98 m/s GAGE TEMPERATURE. Necessity NONE\nDischrge Size Ø 180 160 mm AREA 0.029 m2 Pressur Suction Discharge NONE\nVELOCITY 14.66 m/s SCOPE ANCHOR BOLT C.FLANGE Etc.\nDYNAMIC PRESSURE 13.1 mmAq Accessories Rain Cover Safty screen Etc.\nTOTAL PRESSURE 523.0 mmAq PERFORMANCE CURVE\nImpeller DIA Ø 488.0 mm\nTIP SPEED 88.2 m/s IMP.GD2 0.52 Kg-m2\nEFFICIENCY (TOTAL) 68.0 %\nCRITICAL SPEED rpm IMP.Wt. 3.2 Kg\nBRAKE HORSE POWER 6.2 Kw\nNOISE AT 1m DIS(W/DUCT) 96 dB(A)\nVIBRATION AT BEARING 3.0 um",
+      "header": "PERFORMANCE CURVE",
+      "section_type": "일반",
+      "equipment": [
+        "팬"
+      ],
+      "company_id": "16",
+      "company_name": "세차설비",
+      "source_file": "카다로그",
+      "source_path": "D:\\기계도면\\기계도면\\16. 세차설비 (경일산업)\\카다로그.pdf",
+      "rev": null,
+      "chunk_hash": "88650d605ded81ba",
+      "char_count": 1351
+    },
+    {
+      "chunk_idx": 16,
+      "text": "HORSE POWER 6.2 Kw\nNOISE AT 1m DIS(W/DUCT) 96 dB(A)\nVIBRATION AT BEARING 3.0 um MOTOR DATA\nOutput Power 7.5 Kw Manufacture\n10.0 HP Type TEFC\nRevolution 3450 rpm Frame No. 132S\nPole 2 P Bearing 6206ZZ\nVoltage 220/380 V 6209ZZ\nFrequency 60 Hz Lubricarion GREASE\nPhase 3 Ø Insulation F\nClass\nFullLoad Current 27.1/15.7 A Enclosure TE\n덕 진 풍 력",
+      "header": "MOTOR DATA",
+      "section_type": "일반",
+      "equipment": [
+        "세차설비"
+      ],
+      "company_id": "16",
+      "company_name": "세차설비",
+      "source_file": "카다로그",
+      "source_path": "D:\\기계도면\\기계도면\\16. 세차설비 (경일산업)\\카다로그.pdf",
+      "rev": null,
+      "chunk_hash": "70a568f67722e3d3",
+      "char_count": 338
+    },
+    {
+      "chunk_idx": 17,
+      "text": "E\nPhase 3 Ø Insulation F\nClass\nFullLoad Current 27.1/15.7 A Enclosure TE\n덕 진 풍 력 TECHNICAL CALCULATION\n'FOR APPROVAL'\nPerformanc Curves\nCustormer 경일산업개발㈜ Project\nREQ'NO. 설치장소 및 용도\nFAN Type STF10HP Model\nFan Specification Motor Specification\nCapacity M3 / min 50 Type TEFC Frame 132S Ins. F\nStaic Press. mmAq 509.86 7.5 KW x 2 P x 3 Ph x 3450 R.P.M\nSpeed R.P.M 3450 60 Hz x 220/380 Volt Maker\nEfficiency % 68.0 Efficiency 85.5 % Power Factor 85 %\nBearing Size Temperature ℃ 20\nLubication Gas Sp.W Kg / m3 1.20\nPower Drive DIRECT Type Row Fan Pulley Motor Pulley\n양식 덕 진 풍 력 A4(210×297)\n\nREV.0 PAGE",
+      "header": "TECHNICAL CALCULATION",
+      "section_type": "일반",
+      "equipment": [
+        "팬"
+      ],
+      "company_id": "16",
+      "company_name": "세차설비",
+      "source_file": "카다로그",
+      "source_path": "D:\\기계도면\\기계도면\\16. 세차설비 (경일산업)\\카다로그.pdf",
+      "rev": null,
+      "chunk_hash": "28f236a929ba61df",
+      "char_count": 595
+    },
+    {
+      "chunk_idx": 18,
+      "text": "Drive DIRECT Type Row Fan Pulley Motor Pulley\n양식 덕 진 풍 력 A4(210×297)\n\nREV.0 PAGE POWER CALCULATION\nSERIAL NO.",
+      "header": "POWER CALCULATION",
+      "section_type": "일반",
+      "equipment": [
+        "팬"
+      ],
+      "company_id": "16",
+      "company_name": "세차설비",
+      "source_file": "카다로그",
+      "source_path": "D:\\기계도면\\기계도면\\16. 세차설비 (경일산업)\\카다로그.pdf",
+      "rev": null,
+      "chunk_hash": "0a4345851189a579",
+      "char_count": 109
+    },
+    {
+      "chunk_idx": 19,
+      "text": "1. PORJECT NAME :\n2.ITEM NAME :\n3.SPECIFICATION : Air\n1)FLOW RATE : 50 ㎥/min (Qs)\n2)PRESSURE :\n*STATIC PRESS.DIFF : 509.86 mmAq (Ps=Ps2-Ps1)\n*INLET PRESSURE : mmAq (Ps1)\n*OUTLET PRESSURE : mmAq (Ps2)\n*DYNAMIC PRESSURE : 13.1 mmAq (Pd)\n*TOTAL PRESSURE : 523.0 mmAq (Pt=Ps+Pd)\n3)TEMPERRATURE : 20 ℃ (T)\n4)FAN EFFICIXNCY : 68 % (Eff)\n5)여 유 율 : 1.2 (α)\n4.CLACULATION\nA) 정압 300 mmAq 이하인 경우\n1)BREAKE HOUSE POWER(BKw) 20 ℃\nQs x Pt 50 x 523\nBKw(L) = = = Kw\n6120 x Eff 6120 x 0.68\n2)MOTOR RATE\nMOTOR RATE=BKw x α = x = Kw\n※따라서 MOTOR 용량은 Kw이상인 Kw를 선정함.\nB) 정압 300 mmAq 이상인 경우 (단열 변화로 계산)\n1)BREAKE HOUSE POWER(BKw) 20 ℃\n1.4 x Qs x 10,332 10,332+Pt 0.4/1.4\nBKw(L) = x -1 Eff\n0.4 x 6120 10,332\n= 6.2 Kw\n2)MOTOR RATE\nMOTOR RATE=BKw x α = 6.2 x 1.20 = 7.4 Kw\n※따라서 MOTOR 용량은 7.4 Kw이상인 7.5 Kw를 선정함.\n덕 진 풍 력\n\nFAN SIZE & HORSE POWER\nPROJECTE NAME :\nEQUIPMENT NAME : EQUIPMENT NO :",
+      "header": "1. PORJECT NAME :",
+      "section_type": "일반",
+      "equipment": [
+        "팬"
+      ],
+      "company_id": "16",
+      "company_name": "세차설비",
+      "source_file": "카다로그",
+      "source_path": "D:\\기계도면\\기계도면\\16. 세차설비 (경일산업)\\카다로그.pdf",
+      "rev": null,
+      "chunk_hash": "1b6ac59be9b18320",
+      "char_count": 860
+    },
+    {
+      "chunk_idx": 20,
+      "text": "덕 진 풍 력\n\nFAN SIZE & HORSE POWER\nPROJECTE NAME :\nEQUIPMENT NAME : EQUIPMENT NO : SPECIFICATION\nFluide Gas : Air\nFlow Rate : Q : 50 [㎥/min]\nTotal Pressure Pt : 523.0 [mmAq]\nStatic Pressure Ps : 509.86 [mmAq]\nDischarge Pso : 509.86 [mmAq]\nSuction Psi : [mmAq]\nDesigine Teperature T : 20 [℃]\nDesigne Air Density Gamma : 1.198 [Kg/㎥]",
+      "header": "SPECIFICATION",
+      "section_type": "일반",
+      "equipment": [
+        "팬"
+      ],
+      "company_id": "16",
+      "company_name": "세차설비",
+      "source_file": "카다로그",
+      "source_path": "D:\\기계도면\\기계도면\\16. 세차설비 (경일산업)\\카다로그.pdf",
+      "rev": null,
+      "chunk_hash": "6fd4fe42e070b6a6",
+      "char_count": 328
+    },
+    {
+      "chunk_idx": 21,
+      "text": ": [mmAq]\nDesigine Teperature T : 20 [℃]\nDesigne Air Density Gamma : 1.198 [Kg/㎥] FAN SIZE SELECTION\nFan Revolution 3450 [rpm]\nHead : Ht : 438 [m]\nSpecific Speed Ns : 254 [rpm.㎥/min,m]\nPressure Coefficient ψ : 1.169\nPeripheral Velocity U2 : 86 [m/sec]\nFan Diametar D : 488 [mm]\nFan No. 10HP\nModel Name STF\nHORSE POWER CALCULATION\nAir Horse Power Akw 4.41 [Kw]\nTotal Pressure Eff. Eff 68 [%]\nBreak Horse Power BKw 6.17 [Kw]\nService Factor SF 1.2\nBKw x SF 7.41 [Kw]\nMotor Power MKw 7.5 [Kw]\nFan Revolution 3450 [rpm]\nMotor Revolution 3450 [rpm]\nFan GD^2 0.52 [Kg-㎡]\nMotor Shaft 환산 GD^2 0.52 [Kg-㎡]\nMotor Starting Time 2.3 [Sec]\n덕 진 풍 력",
+      "header": "FAN SIZE SELECTION",
+      "section_type": "일반",
+      "equipment": [
+        "팬"
+      ],
+      "company_id": "16",
+      "company_name": "세차설비",
+      "source_file": "카다로그",
+      "source_path": "D:\\기계도면\\기계도면\\16. 세차설비 (경일산업)\\카다로그.pdf",
+      "rev": null,
+      "chunk_hash": "e776852beeb55f96",
+      "char_count": 632
+    }
+  ]
+}

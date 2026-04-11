@@ -1,0 +1,284 @@
+{
+  "meta": {
+    "source_path": "D:\\기계도면\\기계도면\\26. 연소가스처리설비 (에스텍)\\준공도서-연소가스 처리설비(전기)\\8. INSTRUMENT DATA SHEET\\1. 신범\\1. 계기류\\도면\\2. ORIFICE.xlsx",
+    "company_id": "26",
+    "equipment": "연소가스처리",
+    "doc_type": "DATA_SHEET",
+    "rev": "AS_BUILT",
+    "is_latest": true,
+    "extracted_at": "2026-03-27T19:33:09",
+    "record_count": 27
+  },
+  "records": [
+    {
+      "parameter": "PROJECT : 제주환경자원순환센터",
+      "value": "2018.7",
+      "unit": "",
+      "design_value": "0",
+      "equipment": "연소가스처리",
+      "row_idx": 5,
+      "sheet": "FT TRANSMITTER",
+      "chunk_hash": "4ae45b3168cb46e7"
+    },
+    {
+      "parameter": "RFQ NO.  JJ-I-VP-003",
+      "value": "DATE",
+      "unit": "",
+      "design_value": "REV.",
+      "equipment": "연소가스처리",
+      "row_idx": 6,
+      "sheet": "FT TRANSMITTER",
+      "chunk_hash": "9475219385180a95"
+    },
+    {
+      "parameter": "Tag No.",
+      "value": "Temperature \n()",
+      "unit": "℃",
+      "design_value": "Pressure \n(Kg/㎠.G)",
+      "equipment": "연소가스처리",
+      "row_idx": 7,
+      "sheet": "FT TRANSMITTER",
+      "chunk_hash": "ac0d10e0f3cbd009"
+    },
+    {
+      "parameter": "FT-1302",
+      "value": "40",
+      "unit": "",
+      "design_value": "40",
+      "equipment": "연소가스처리",
+      "row_idx": 9,
+      "sheet": "FT TRANSMITTER",
+      "chunk_hash": "1a9c609301f0dcf0"
+    },
+    {
+      "parameter": "FT-2302",
+      "value": "40",
+      "unit": "",
+      "design_value": "40",
+      "equipment": "연소가스처리",
+      "row_idx": 11,
+      "sheet": "FT TRANSMITTER",
+      "chunk_hash": "8eb1e23f2a575406"
+    },
+    {
+      "parameter": "FT-1301",
+      "value": "40",
+      "unit": "",
+      "design_value": "40",
+      "equipment": "연소가스처리",
+      "row_idx": 13,
+      "sheet": "FT TRANSMITTER",
+      "chunk_hash": "d22087ddfa8ee109"
+    },
+    {
+      "parameter": "FT-2301",
+      "value": "40",
+      "unit": "",
+      "design_value": "40",
+      "equipment": "연소가스처리",
+      "row_idx": 15,
+      "sheet": "FT TRANSMITTER",
+      "chunk_hash": "9031b277cb2f149a"
+    },
+    {
+      "parameter": "FT-1306",
+      "value": "52.5",
+      "unit": "",
+      "design_value": "52.5",
+      "equipment": "연소가스처리",
+      "row_idx": 17,
+      "sheet": "FT TRANSMITTER",
+      "chunk_hash": "4d1db64b92baddbf"
+    },
+    {
+      "parameter": "FT-2306",
+      "value": "52.5",
+      "unit": "",
+      "design_value": "52.5",
+      "equipment": "연소가스처리",
+      "row_idx": 19,
+      "sheet": "FT TRANSMITTER",
+      "chunk_hash": "005297677e5ea8c6"
+    },
+    {
+      "parameter": "FT-1305",
+      "value": "52.5",
+      "unit": "",
+      "design_value": "52.5",
+      "equipment": "연소가스처리",
+      "row_idx": 21,
+      "sheet": "FT TRANSMITTER",
+      "chunk_hash": "b9b92a5bc0ec897c"
+    },
+    {
+      "parameter": "FT-2305",
+      "value": "52.5",
+      "unit": "",
+      "design_value": "52.5",
+      "equipment": "연소가스처리",
+      "row_idx": 23,
+      "sheet": "FT TRANSMITTER",
+      "chunk_hash": "df055912c12593df"
+    },
+    {
+      "parameter": "FT-0301",
+      "value": "40",
+      "unit": "",
+      "design_value": "40",
+      "equipment": "연소가스처리",
+      "row_idx": 25,
+      "sheet": "FT TRANSMITTER",
+      "chunk_hash": "d1630b0701f57c0c"
+    },
+    {
+      "parameter": "FT-0303",
+      "value": "40",
+      "unit": "",
+      "design_value": "40",
+      "equipment": "연소가스처리",
+      "row_idx": 27,
+      "sheet": "FT TRANSMITTER",
+      "chunk_hash": "f58d0486989374d9"
+    },
+    {
+      "parameter": "FT-0306",
+      "value": "52.5",
+      "unit": "",
+      "design_value": "52.5",
+      "equipment": "연소가스처리",
+      "row_idx": 29,
+      "sheet": "FT TRANSMITTER",
+      "chunk_hash": "ff6e6e338578dcf0"
+    },
+    {
+      "parameter": "FT-0305",
+      "value": "52.5",
+      "unit": "",
+      "design_value": "52.5",
+      "equipment": "연소가스처리",
+      "row_idx": 31,
+      "sheet": "FT TRANSMITTER",
+      "chunk_hash": "96e240eff4baad3d"
+    },
+    {
+      "parameter": "FT-0304",
+      "value": "52.5",
+      "unit": "",
+      "design_value": "52.5",
+      "equipment": "연소가스처리",
+      "row_idx": 33,
+      "sheet": "FT TRANSMITTER",
+      "chunk_hash": "e3dca3d0aac403a3"
+    },
+    {
+      "parameter": "FT-0302",
+      "value": "30",
+      "unit": "",
+      "design_value": "30",
+      "equipment": "연소가스처리",
+      "row_idx": 35,
+      "sheet": "FT TRANSMITTER",
+      "chunk_hash": "f3941825832699a1"
+    },
+    {
+      "parameter": "FT-1303",
+      "value": "30",
+      "unit": "",
+      "design_value": "30",
+      "equipment": "연소가스처리",
+      "row_idx": 37,
+      "sheet": "FT TRANSMITTER",
+      "chunk_hash": "5b745eb6b567f3bf"
+    },
+    {
+      "parameter": "FT-2303",
+      "value": "30",
+      "unit": "",
+      "design_value": "30",
+      "equipment": "연소가스처리",
+      "row_idx": 39,
+      "sheet": "FT TRANSMITTER",
+      "chunk_hash": "bf14383f6f70c9f4"
+    },
+    {
+      "parameter": "FT-1304",
+      "value": "30",
+      "unit": "",
+      "design_value": "30",
+      "equipment": "연소가스처리",
+      "row_idx": 41,
+      "sheet": "FT TRANSMITTER",
+      "chunk_hash": "79dfac826a64addd"
+    },
+    {
+      "parameter": "FT-2304",
+      "value": "30",
+      "unit": "",
+      "design_value": "30",
+      "equipment": "연소가스처리",
+      "row_idx": 43,
+      "sheet": "FT TRANSMITTER",
+      "chunk_hash": "2b7b066e27719ea0"
+    },
+    {
+      "parameter": "FT-0307",
+      "value": "52.5",
+      "unit": "",
+      "design_value": "52.5",
+      "equipment": "연소가스처리",
+      "row_idx": 45,
+      "sheet": "FT TRANSMITTER",
+      "chunk_hash": "230d8012bf237129"
+    },
+    {
+      "parameter": "FT-0308",
+      "value": "30",
+      "unit": "",
+      "design_value": "30",
+      "equipment": "연소가스처리",
+      "row_idx": 47,
+      "sheet": "FT TRANSMITTER",
+      "chunk_hash": "5336e520c1cdaff3"
+    },
+    {
+      "parameter": "TAG NO.",
+      "value": "BORE DIA",
+      "unit": "",
+      "design_value": "LINE SIZE",
+      "equipment": "연소가스처리",
+      "row_idx": 25,
+      "sheet": "RO ORIFICE. ",
+      "chunk_hash": "9a287c033f494395"
+    },
+    {
+      "parameter": "RO-1501",
+      "value": "5.22",
+      "unit": "",
+      "design_value": "1/2\"(15A)",
+      "equipment": "연소가스처리",
+      "row_idx": 27,
+      "sheet": "RO ORIFICE. ",
+      "chunk_hash": "e5ff47c6cbd1a57a"
+    },
+    {
+      "parameter": "RO-2501",
+      "value": "5.22",
+      "unit": "",
+      "design_value": "1/2\"(15A)",
+      "equipment": "연소가스처리",
+      "row_idx": 28,
+      "sheet": "RO ORIFICE. ",
+      "chunk_hash": "75235299601b4ebb"
+    },
+    {
+      "parameter": "RO-0501",
+      "value": "9.06",
+      "unit": "",
+      "design_value": "1\"(25A)",
+      "equipment": "연소가스처리",
+      "row_idx": 29,
+      "sheet": "RO ORIFICE. ",
+      "chunk_hash": "cf063d86bdb1b100"
+    }
+  ]
+}

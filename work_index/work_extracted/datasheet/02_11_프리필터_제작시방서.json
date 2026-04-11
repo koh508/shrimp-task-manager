@@ -1,0 +1,24 @@
+{
+  "meta": {
+    "source_path": "D:\\기계도면\\기계도면\\02. 공기압축기 (한국에어로)\\기계\\6. Data Sheet & 성능곡선도\\11.프리필터 제작시방서.xls",
+    "company_id": "02",
+    "equipment": "압축기",
+    "doc_type": "DATA_SHEET",
+    "rev": null,
+    "is_latest": true,
+    "extracted_at": "2026-03-27T19:33:07",
+    "record_count": 1
+  },
+  "records": [
+    {
+      "parameter": "Rev",
+      "value": "제주특별자치도",
+      "unit": "",
+      "design_value": "Customer",
+      "equipment": "필터",
+      "row_idx": 7,
+      "sheet": "KHF-32 80A",
+      "chunk_hash": "d49adda8b80a3f5a"
+    }
+  ]
+}

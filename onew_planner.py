@@ -14,7 +14,7 @@ OBSIDIAN_VAULT_PATH = r"C:\Users\User\Documents\Obsidian Vault"
 SYSTEM_DIR   = os.path.dirname(os.path.abspath(__file__))
 PLAN_DB      = os.path.join(SYSTEM_DIR, 'plan_db.json')
 PLAN_DIR     = os.path.join(OBSIDIAN_VAULT_PATH, '학습계획')
-EXAM_DATE    = date(2026, 4, 26)   # 공조냉동 실기
+EXAM_DATE    = date(2026, 4, 18)   # 공조냉동 실기
 
 MORNING_HOUR = 7    # 아침 계획 전송 시각
 EVENING_HOUR = 21   # 저녁 보고 시각

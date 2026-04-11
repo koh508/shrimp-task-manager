@@ -1,0 +1,362 @@
+{
+  "meta": {
+    "tag": "H0-0401",
+    "file": "6. Data Sheet 및 성능 곡선도.pdf",
+    "company_id": "30",
+    "source_path": "D:\\기계도면\\기계도면\\30. 저압증기복수기 (DTS)\\감리 승인용 7차 문서 (201908) As built\\6. Data Sheet 및 성능 곡선도\\6. Data Sheet 및 성능 곡선도.pdf",
+    "extracted_at": "2026-03-27T22:20:13"
+  },
+  "tag": "H0-0401",
+  "records": [
+    {
+      "tag": "H0-0401",
+      "section": "MOTOR",
+      "position": null,
+      "parameter": "ip_rating",
+      "value": "IP55",
+      "unit": "",
+      "match_type": "exact",
+      "source": {
+        "file": "6. Data Sheet 및 성능 곡선도.pdf",
+        "company": "30",
+        "page": 3
+      }
+    },
+    {
+      "tag": "H0-0401",
+      "section": "MOTOR",
+      "position": null,
+      "parameter": "motor_poles",
+      "value": "4",
+      "unit": "pole",
+      "match_type": "exact",
+      "source": {
+        "file": "6. Data Sheet 및 성능 곡선도.pdf",
+        "company": "30",
+        "page": 8
+      }
+    },
+    {
+      "tag": "H0-0401",
+      "section": "MOTOR",
+      "position": null,
+      "parameter": "motor_voltage_V",
+      "value": "380",
+      "unit": "V",
+      "match_type": "exact",
+      "source": {
+        "file": "6. Data Sheet 및 성능 곡선도.pdf",
+        "company": "30",
+        "page": 8
+      }
+    },
+    {
+      "tag": "H0-0401",
+      "section": "MOTOR",
+      "position": null,
+      "parameter": "insulation_class",
+      "value": "F",
+      "unit": "",
+      "match_type": "exact",
+      "source": {
+        "file": "6. Data Sheet 및 성능 곡선도.pdf",
+        "company": "30",
+        "page": 8
+      }
+    },
+    {
+      "tag": "H0-0401",
+      "section": "LUBRICATION",
+      "position": null,
+      "parameter": "grease_type",
+      "value": "GUN GREASE GUN",
+      "unit": "",
+      "match_type": "exact",
+      "source": {
+        "file": "6. Data Sheet 및 성능 곡선도.pdf",
+        "company": "30",
+        "page": 13
+      }
+    },
+    {
+      "tag": "H0-0401",
+      "section": "LUBRICATION",
+      "position": null,
+      "parameter": "grease_type",
+      "value": "and Maker",
+      "unit": "",
+      "match_type": "exact",
+      "source": {
+        "file": "6. Data Sheet 및 성능 곡선도.pdf",
+        "company": "30",
+        "page": 13
+      }
+    },
+    {
+      "tag": "H0-0401",
+      "section": "MOTOR",
+      "position": null,
+      "parameter": "insulation_class",
+      "value": "Pillow",
+      "unit": "",
+      "match_type": "exact",
+      "source": {
+        "file": "6. Data Sheet 및 성능 곡선도.pdf",
+        "company": "30",
+        "page": 31
+      }
+    },
+    {
+      "tag": "H0-0401",
+      "section": "MOTOR",
+      "position": null,
+      "parameter": "ip_rating",
+      "value": "IP65",
+      "unit": "",
+      "match_type": "exact",
+      "source": {
+        "file": "6. Data Sheet 및 성능 곡선도.pdf",
+        "company": "30",
+        "page": 40
+      }
+    },
+    {
+      "tag": "H0-0401",
+      "section": "MOTOR",
+      "position": null,
+      "parameter": "motor_voltage_V",
+      "value": "220",
+      "unit": "V",
+      "match_type": "exact",
+      "source": {
+        "file": "6. Data Sheet 및 성능 곡선도.pdf",
+        "company": "30",
+        "page": 40
+      }
+    },
+    {
+      "tag": "H0-0401",
+      "section": "PERFORMANCE",
+      "position": null,
+      "parameter": "flow_rate",
+      "value": "96.40",
+      "unit": "m³/h",
+      "match_type": "exact",
+      "source": {
+        "file": "6. Data Sheet 및 성능 곡선도.pdf",
+        "company": "30",
+        "page": 48
+      }
+    },
+    {
+      "tag": "H0-0401",
+      "section": "PERFORMANCE",
+      "position": null,
+      "parameter": "head_m",
+      "value": "53.00",
+      "unit": "m",
+      "match_type": "exact",
+      "source": {
+        "file": "6. Data Sheet 및 성능 곡선도.pdf",
+        "company": "30",
+        "page": 48
+      }
+    },
+    {
+      "tag": "H0-0401",
+      "section": "MOTOR",
+      "position": null,
+      "parameter": "motor_rpm",
+      "value": "1777",
+      "unit": "rpm",
+      "match_type": "exact",
+      "source": {
+        "file": "6. Data Sheet 및 성능 곡선도.pdf",
+        "company": "30",
+        "page": 48
+      }
+    },
+    {
+      "tag": "H0-0401",
+      "section": "PERFORMANCE",
+      "position": null,
+      "parameter": "npsh_required_m",
+      "value": "1.76",
+      "unit": "m",
+      "match_type": "exact",
+      "source": {
+        "file": "6. Data Sheet 및 성능 곡선도.pdf",
+        "company": "30",
+        "page": 48
+      }
+    },
+    {
+      "tag": "H0-0401",
+      "section": "SEAL",
+      "position": null,
+      "parameter": "seal_type",
+      "value": "Single acting mechanical seal",
+      "unit": "",
+      "match_type": "exact",
+      "source": {
+        "file": "6. Data Sheet 및 성능 곡선도.pdf",
+        "company": "30",
+        "page": 48
+      }
+    },
+    {
+      "tag": "H0-0401",
+      "section": "MECHANICAL",
+      "position": null,
+      "parameter": "coupling_type",
+      "value": "Eupex NH",
+      "unit": "",
+      "match_type": "exact",
+      "source": {
+        "file": "6. Data Sheet 및 성능 곡선도.pdf",
+        "company": "30",
+        "page": 49
+      }
+    },
+    {
+      "tag": "H0-0401",
+      "section": "MOTOR",
+      "position": null,
+      "parameter": "motor_kw",
+      "value": "25.30",
+      "unit": "kW",
+      "match_type": "exact",
+      "source": {
+        "file": "6. Data Sheet 및 성능 곡선도.pdf",
+        "company": "30",
+        "page": 49
+      }
+    },
+    {
+      "tag": "H0-0401",
+      "section": "BEARING",
+      "position": "DE",
+      "parameter": "bearing_no",
+      "value": "6210 Z C3",
+      "unit": "",
+      "match_type": "exact",
+      "source": {
+        "file": "6. Data Sheet 및 성능 곡선도.pdf",
+        "company": "30",
+        "page": 54
+      }
+    },
+    {
+      "tag": "H0-0401",
+      "section": "BEARING",
+      "position": "NDE",
+      "parameter": "bearing_no",
+      "value": "6210 Z C3",
+      "unit": "",
+      "match_type": "exact",
+      "source": {
+        "file": "6. Data Sheet 및 성능 곡선도.pdf",
+        "company": "30",
+        "page": 54
+      }
+    },
+    {
+      "tag": "H0-0401",
+      "section": "BEARING",
+      "position": null,
+      "parameter": "bearing_lifetime_h",
+      "value": "40000",
+      "unit": "h",
+      "match_type": "exact",
+      "source": {
+        "file": "6. Data Sheet 및 성능 곡선도.pdf",
+        "company": "30",
+        "page": 54
+      }
+    },
+    {
+      "tag": "H0-0401",
+      "section": "LUBRICATION",
+      "position": null,
+      "parameter": "grease_type",
+      "value": "Esso Unirex N3",
+      "unit": "",
+      "match_type": "exact",
+      "source": {
+        "file": "6. Data Sheet 및 성능 곡선도.pdf",
+        "company": "30",
+        "page": 54
+      }
+    },
+    {
+      "tag": "H0-0401",
+      "section": "MOTOR",
+      "position": null,
+      "parameter": "insulation_class",
+      "value": "155",
+      "unit": "",
+      "match_type": "exact",
+      "source": {
+        "file": "6. Data Sheet 및 성능 곡선도.pdf",
+        "company": "30",
+        "page": 54
+      }
+    },
+    {
+      "tag": "H0-0401",
+      "section": "MOTOR",
+      "position": null,
+      "parameter": "ip_rating",
+      "value": "IP67",
+      "unit": "",
+      "match_type": "exact",
+      "source": {
+        "file": "6. Data Sheet 및 성능 곡선도.pdf",
+        "company": "30",
+        "page": 74
+      }
+    },
+    {
+      "tag": "H0-0401",
+      "section": "MOTOR",
+      "position": null,
+      "parameter": "ip_rating",
+      "value": "IP68",
+      "unit": "",
+      "match_type": "exact",
+      "source": {
+        "file": "6. Data Sheet 및 성능 곡선도.pdf",
+        "company": "30",
+        "page": 77
+      }
+    },
+    {
+      "tag": "H0-0401",
+      "section": "MOTOR",
+      "position": null,
+      "parameter": "motor_poles",
+      "value": "6",
+      "unit": "pole",
+      "match_type": "exact",
+      "source": {
+        "file": "6. Data Sheet 및 성능 곡선도.pdf",
+        "company": "30",
+        "page": 90
+      }
+    },
+    {
+      "tag": "H0-0401",
+      "section": "MOTOR",
+      "position": null,
+      "parameter": "insulation_class",
+      "value": "B",
+      "unit": "",
+      "match_type": "exact",
+      "source": {
+        "file": "6. Data Sheet 및 성능 곡선도.pdf",
+        "company": "30",
+        "page": 90
+      }
+    }
+  ]
+}

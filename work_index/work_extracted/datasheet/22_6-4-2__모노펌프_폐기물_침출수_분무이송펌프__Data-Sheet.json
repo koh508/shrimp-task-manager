@@ -1,0 +1,424 @@
+{
+  "meta": {
+    "source_path": "D:\\기계도면\\기계도면\\22. 시료수, 약품2, 침출수, 화격자 (조선내화E)\\시료수분석설비 외 준공도서\\01. [제주-기계] 승인서류 (19.11.) AS BUILT\\6. DATA SHEET 및 성능곡선도\\[6-4] 폐기물 침출수 설비\\6-4-2. 모노펌프(폐기물 침출수 분무이송펌프) Data-Sheet.xls",
+    "company_id": "22",
+    "equipment": "펌프",
+    "doc_type": "DATA_SHEET",
+    "rev": "AS_BUILT",
+    "is_latest": true,
+    "extracted_at": "2026-03-27T19:33:07",
+    "record_count": 41
+  },
+  "records": [
+    {
+      "parameter": "01",
+      "value": "제주환경자원순환센터 (소각시설)조성사업",
+      "unit": "",
+      "design_value": "공 사 명",
+      "equipment": "펌프",
+      "row_idx": 4,
+      "sheet": "pump datasheet",
+      "chunk_hash": "309c5b01bd6a9dc4"
+    },
+    {
+      "parameter": "02",
+      "value": "제주특별자치도",
+      "unit": "",
+      "design_value": "발 주 처",
+      "equipment": "펌프",
+      "row_idx": 5,
+      "sheet": "pump datasheet",
+      "chunk_hash": "83e0a4b2de0fe2ef"
+    },
+    {
+      "parameter": "03",
+      "value": "검 토",
+      "unit": "",
+      "design_value": "일 자",
+      "equipment": "펌프",
+      "row_idx": 6,
+      "sheet": "pump datasheet",
+      "chunk_hash": "4ba84343bae4a06b"
+    },
+    {
+      "parameter": "04",
+      "value": "폐기물침출수 분무펌프",
+      "unit": "",
+      "design_value": "장 치 명",
+      "equipment": "펌프",
+      "row_idx": 7,
+      "sheet": "pump datasheet",
+      "chunk_hash": "fd410874b1918d4b"
+    },
+    {
+      "parameter": "05",
+      "value": "추진공동형 일축 스크류 펌프",
+      "unit": "",
+      "design_value": "펌프 형식",
+      "equipment": "펌프",
+      "row_idx": 8,
+      "sheet": "pump datasheet",
+      "chunk_hash": "6cbfe569a0740245"
+    },
+    {
+      "parameter": "06",
+      "value": "폐기물 침출수",
+      "unit": "",
+      "design_value": "액 상 명",
+      "equipment": "펌프",
+      "row_idx": 9,
+      "sheet": "pump datasheet",
+      "chunk_hash": "d422f6c76b25555f"
+    },
+    {
+      "parameter": "07",
+      "value": "20",
+      "unit": "℃",
+      "design_value": "온 도",
+      "equipment": "펌프",
+      "row_idx": 10,
+      "sheet": "pump datasheet",
+      "chunk_hash": "fc62a3413298a556"
+    },
+    {
+      "parameter": "08",
+      "value": "점 도",
+      "unit": "",
+      "design_value": "이송액",
+      "equipment": "펌프",
+      "row_idx": 11,
+      "sheet": "pump datasheet",
+      "chunk_hash": "d9092e399bf0cec7"
+    },
+    {
+      "parameter": "09",
+      "value": "7",
+      "unit": "",
+      "design_value": "PH",
+      "equipment": "펌프",
+      "row_idx": 12,
+      "sheet": "pump datasheet",
+      "chunk_hash": "6311038a36a182a9"
+    },
+    {
+      "parameter": "10",
+      "value": "1.05",
+      "unit": "",
+      "design_value": "비 중",
+      "equipment": "펌프",
+      "row_idx": 13,
+      "sheet": "pump datasheet",
+      "chunk_hash": "42c7bce591d80b9f"
+    },
+    {
+      "parameter": "11",
+      "value": "사용 재질",
+      "unit": "",
+      "design_value": "펌프 사양",
+      "equipment": "펌프",
+      "row_idx": 14,
+      "sheet": "pump datasheet",
+      "chunk_hash": "e9d7813992c36ac0"
+    },
+    {
+      "parameter": "12",
+      "value": "30",
+      "unit": "",
+      "design_value": "펌프 모델",
+      "equipment": "펌프",
+      "row_idx": 15,
+      "sheet": "pump datasheet",
+      "chunk_hash": "76fbd34a0775bdcf"
+    },
+    {
+      "parameter": "13",
+      "value": "0.5 ~ 3",
+      "unit": "",
+      "design_value": "펌프 유량",
+      "equipment": "펌프",
+      "row_idx": 16,
+      "sheet": "pump datasheet",
+      "chunk_hash": "312bb576bd034973"
+    },
+    {
+      "parameter": "14",
+      "value": "80",
+      "unit": "",
+      "design_value": "양  정",
+      "equipment": "펌프",
+      "row_idx": 17,
+      "sheet": "pump datasheet",
+      "chunk_hash": "72809ae21a0a56b6"
+    },
+    {
+      "parameter": "15",
+      "value": "8",
+      "unit": "",
+      "design_value": "토출압력",
+      "equipment": "펌프",
+      "row_idx": 18,
+      "sheet": "pump datasheet",
+      "chunk_hash": "edd77c6831081237"
+    },
+    {
+      "parameter": "16",
+      "value": "kg/cm²",
+      "unit": "",
+      "design_value": "흡입압력",
+      "equipment": "펌프",
+      "row_idx": 19,
+      "sheet": "pump datasheet",
+      "chunk_hash": "7e17d5910bd4c56c"
+    },
+    {
+      "parameter": "17",
+      "value": "10~60",
+      "unit": "Hz",
+      "design_value": "인버터구동",
+      "equipment": "펌프",
+      "row_idx": 20,
+      "sheet": "pump datasheet",
+      "chunk_hash": "47e3349fce5de084"
+    },
+    {
+      "parameter": "18",
+      "value": "70~350",
+      "unit": "rpm",
+      "design_value": "회전수 범위",
+      "equipment": "펌프",
+      "row_idx": 21,
+      "sheet": "pump datasheet",
+      "chunk_hash": "31770cd3482fb61d"
+    },
+    {
+      "parameter": "19",
+      "value": "규격",
+      "unit": "",
+      "design_value": "구경",
+      "equipment": "펌프",
+      "row_idx": 22,
+      "sheet": "pump datasheet",
+      "chunk_hash": "280c922e25f685a3"
+    },
+    {
+      "parameter": "20",
+      "value": "50",
+      "unit": "",
+      "design_value": "토출",
+      "equipment": "펌프",
+      "row_idx": 23,
+      "sheet": "pump datasheet",
+      "chunk_hash": "d2300346b85b1175"
+    },
+    {
+      "parameter": "21",
+      "value": "50",
+      "unit": "",
+      "design_value": "흡입",
+      "equipment": "펌프",
+      "row_idx": 24,
+      "sheet": "pump datasheet",
+      "chunk_hash": "da0d72d429f4956b"
+    },
+    {
+      "parameter": "22",
+      "value": "□시계방향(CW)  ■반시계방향(CCW)",
+      "unit": "",
+      "design_value": "풀리측 기준 펌프회전방향",
+      "equipment": "펌프",
+      "row_idx": 25,
+      "sheet": "pump datasheet",
+      "chunk_hash": "21c7c24e3487927d"
+    },
+    {
+      "parameter": "23",
+      "value": "160",
+      "unit": "V",
+      "design_value": "구동방식",
+      "equipment": "펌프",
+      "row_idx": 26,
+      "sheet": "pump datasheet",
+      "chunk_hash": "534570fac3a58aab"
+    },
+    {
+      "parameter": "24",
+      "value": "□우측   □상부   □좌측   ■직결",
+      "unit": "",
+      "design_value": "구동부 설치형식",
+      "equipment": "펌프",
+      "row_idx": 27,
+      "sheet": "pump datasheet",
+      "chunk_hash": "a0eeeb99cb4e3ab1"
+    },
+    {
+      "parameter": "25",
+      "value": "2",
+      "unit": "",
+      "design_value": "스테이터의 단수",
+      "equipment": "펌프",
+      "row_idx": 28,
+      "sheet": "pump datasheet",
+      "chunk_hash": "5a19bd57f45d352b"
+    },
+    {
+      "parameter": "26",
+      "value": "6405",
+      "unit": "",
+      "design_value": "펌프측 베어링",
+      "equipment": "펌프",
+      "row_idx": 29,
+      "sheet": "pump datasheet",
+      "chunk_hash": "d320b3da5f5e4726"
+    },
+    {
+      "parameter": "27",
+      "value": "■메카니컬씰         □그랜드패킹",
+      "unit": "",
+      "design_value": "샤프트 씰형식",
+      "equipment": "펌프",
+      "row_idx": 30,
+      "sheet": "pump datasheet",
+      "chunk_hash": "6403ddf35c158da5"
+    },
+    {
+      "parameter": "28",
+      "value": "표준부속품(대당)",
+      "unit": "",
+      "design_value": "전동기 사양",
+      "equipment": "펌프",
+      "row_idx": 31,
+      "sheet": "pump datasheet",
+      "chunk_hash": "6e2353851c3f8c2b"
+    },
+    {
+      "parameter": "29",
+      "value": "□.S MOTOR          ■GEARED MOTOR",
+      "unit": "V",
+      "design_value": "전동기 형식",
+      "equipment": "펌프",
+      "row_idx": 32,
+      "sheet": "pump datasheet",
+      "chunk_hash": "6fb0a961f59b9f9e"
+    },
+    {
+      "parameter": "30",
+      "value": "삼양감속기㈜+효성(모터체결)",
+      "unit": "",
+      "design_value": "전동기 제작처",
+      "equipment": "펌프",
+      "row_idx": 33,
+      "sheet": "pump datasheet",
+      "chunk_hash": "6655420551ec2b10"
+    },
+    {
+      "parameter": "31",
+      "value": "2.2",
+      "unit": "",
+      "design_value": "동 력",
+      "equipment": "펌프",
+      "row_idx": 34,
+      "sheet": "pump datasheet",
+      "chunk_hash": "7d136cc408469986"
+    },
+    {
+      "parameter": "32",
+      "value": "380",
+      "unit": "",
+      "design_value": "전압/주파수/상수",
+      "equipment": "펌프",
+      "row_idx": 35,
+      "sheet": "pump datasheet",
+      "chunk_hash": "ed9d49b4d15fbed4"
+    },
+    {
+      "parameter": "33",
+      "value": "172",
+      "unit": "",
+      "design_value": "프레임.번호",
+      "equipment": "펌프",
+      "row_idx": 36,
+      "sheet": "pump datasheet",
+      "chunk_hash": "16ce6f134afd9132"
+    },
+    {
+      "parameter": "34",
+      "value": "4",
+      "unit": "",
+      "design_value": "극수/회전수",
+      "equipment": "펌프",
+      "row_idx": 37,
+      "sheet": "pump datasheet",
+      "chunk_hash": "1d2abdf76896209a"
+    },
+    {
+      "parameter": "35",
+      "value": "■ F                 □B",
+      "unit": "",
+      "design_value": "절연계급",
+      "equipment": "펌프",
+      "row_idx": 38,
+      "sheet": "pump datasheet",
+      "chunk_hash": "ddbe939626c530cf"
+    },
+    {
+      "parameter": "36",
+      "value": "1",
+      "unit": "rpm",
+      "design_value": "회전수 범위",
+      "equipment": "펌프",
+      "row_idx": 39,
+      "sheet": "pump datasheet",
+      "chunk_hash": "685e56a433b92f83"
+    },
+    {
+      "parameter": "37",
+      "value": "Remarks)",
+      "unit": "",
+      "design_value": "",
+      "equipment": "펌프",
+      "row_idx": 40,
+      "sheet": "pump datasheet",
+      "chunk_hash": "32ca70361d01c107"
+    },
+    {
+      "parameter": "38",
+      "value": "10 ~ 60",
+      "unit": "V",
+      "design_value": "",
+      "equipment": "펌프",
+      "row_idx": 41,
+      "sheet": "pump datasheet",
+      "chunk_hash": "ab1ff4792a5a8daa"
+    },
+    {
+      "parameter": "39",
+      "value": "20",
+      "unit": "Hz",
+      "design_value": "",
+      "equipment": "펌프",
+      "row_idx": 42,
+      "sheet": "pump datasheet",
+      "chunk_hash": "8c06bf637cdd3d95"
+    },
+    {
+      "parameter": "㈜대봉엔지니어링",
+      "value": "4",
+      "unit": "mm",
+      "design_value": "",
+      "equipment": "펌프",
+      "row_idx": 48,
+      "sheet": "유지관리지침서",
+      "chunk_hash": "d3079e35d7da279a"
+    },
+    {
+      "parameter": "㈜대봉엔지니어링",
+      "value": "4",
+      "unit": "mm",
+      "design_value": "",
+      "equipment": "펌프",
+      "row_idx": 48,
+      "sheet": "카타로그",
+      "chunk_hash": "15b69170ebc1ca90"
+    }
+  ]
+}

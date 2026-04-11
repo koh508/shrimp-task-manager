@@ -1,0 +1,2562 @@
+{
+  "meta": {
+    "source_path": "D:\\기계도면\\기계도면\\26. 연소가스처리설비 (에스텍)\\준공도서-연소가스 처리설비(전기)\\16. 기술 및 참고자료(CATALOGUE 등)\\기술 및 참고자료(CATALOGUE 등).pdf",
+    "company_id": "26",
+    "company_name": "연소가스처리설비",
+    "equipment": "연소가스처리",
+    "doc_type": "MANUAL",
+    "rev": "AS_BUILT",
+    "is_latest": true,
+    "extracted_at": "2026-03-27T20:27:04",
+    "chunk_count": 159,
+    "vision_pages": 0
+  },
+  "chunks": [
+    {
+      "chunk_idx": 0,
+      "text": "기기종종일일람람표표 MMCCCCBB\n배선용차단기\nAF 30AF 50AF 60AF\nType E-Type S-Type N-Type S-Type H-Type N-Type S-Type\n형명및극수 2극(2-pole) ABE32b ABS32c ABN52c ABS52c ABH52c ABN62c ABS62c\n3극(3-pole) ABE33b ABS33c ABN53c ABS53c ABH53c ABN63c ABS63c\n4극(4-pole) - ABS34c ABN54c ABS54c ABH54c ABN64c ABS64c\n정격전류, In A 15, 20, 30, 40, 50, 60\n정격전압, Ue AC (V) 460 690 690 690 690 690 690\nDC (V) - 500 500 500 500 500 500\n정격절연전압(Ui) V 460 750 750 750 750 750 750\n정격임펄스전압(Uimp) kV 6 8 8 8 8 8 8\n정정격격차차단단전전류류(Icu) kA (Sym), KS C8321, IEC 60947-2\nAC 690V - 2.5 2.5 5 10 2.5 5\n480/500V - 7.5 7.5 10 35 7.5 10\n415/460V 2.5 14 (10) 14 18 50 14 18\n380V 2.5 18 (14) 18 22 50 18 22\n220/250V 5 30 (25) 30 35 100 30 35\nDC 500V (3극) - 5 5 10 30 5 10\n250V (2극) - 5 5 10 30 5 10\nIcs=%×Icu 50 100 100 100 100 100 100\n외형치수(mm) W×H×D 75×96×60mm 75×130×60mm 75×130×60mm 90×155×60mm 75×130×60mm\n(3극) (외형도1) (외형도1) (외형도2) (외형도1)\n기술자료 상세정격 34 쪽 36 쪽 38 쪽 38 쪽 40 쪽\n특성곡선 93 쪽 93 쪽 93 쪽 94 쪽 93 쪽\n외형및설치치수 98 쪽 99 쪽 99 쪽 100 쪽 99 쪽\n주) 1. S-Type의정격차단전류중( ) 는3, 5, 10A 정격전류제품만해당합니다.",
+      "header": "",
+      "section_type": "청소",
+      "equipment": [
+        "연소가스처리"
+      ],
+      "company_id": "26",
+      "company_name": "연소가스처리설비",
+      "source_file": "기술 및 참고자료(CATALOGUE 등)",
+      "source_path": "D:\\기계도면\\기계도면\\26. 연소가스처리설비 (에스텍)\\준공도서-연소가스 처리설비(전기)\\16. 기술 및 참고자료(CATALOGUE 등)\\기술 및 참고자료(CATALOGUE 등).pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "f7cddf6a1e33eeb6",
+      "char_count": 1025
+    },
+    {
+      "chunk_idx": 1,
+      "text": "및설치치수 98 쪽 99 쪽 99 쪽 100 쪽 99 쪽\n주) 1. S-Type의정격차단전류중( ) 는3, 5, 10A 정격전류제품만해당합니다. AF\nType 30AF 50AF 60AF 100AF 125AF 250AF 50\nABN ABN50c ABN60c ABN100c ABN250c\n14kA 14kA 18kA 26kA\nABS ABS30c ABS50c ABS60c ABS125c ABS250c\n14kA 18kA 18kA 37kA 37kA\n22 58\nABH ABH50c ABH125c ABH250c 50 50kA 50kA 50kA 75\n(외형도1) 5.4∅ 05 48 511 031\n(3, 5, 10), 15, 20, 30 15, 20, 30, 40, 50",
+      "header": "AF",
+      "section_type": "일반",
+      "equipment": [
+        "연소가스처리"
+      ],
+      "company_id": "26",
+      "company_name": "연소가스처리설비",
+      "source_file": "기술 및 참고자료(CATALOGUE 등)",
+      "source_path": "D:\\기계도면\\기계도면\\26. 연소가스처리설비 (에스텍)\\준공도서-연소가스 처리설비(전기)\\16. 기술 및 참고자료(CATALOGUE 등)\\기술 및 참고자료(CATALOGUE 등).pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "da48cedf5edf947f",
+      "char_count": 366
+    },
+    {
+      "chunk_idx": 2,
+      "text": "50kA 50kA 75\n(외형도1) 5.4∅ 05 48 511 031\n(3, 5, 10), 15, 20, 30 15, 20, 30, 40, 50 100AF 125AF 250AF\nN-Type S-Type H-Type N-Type S-Type H-Type\nABN102c ABN102d ABS102c ABH102c ABN202c ABS202c ABH202c\nABN103c ABN103d ABS103c ABH103c ABN203c ABS203c ABH203c\nABN104c ABN104d ABS104c ABH104c ABN204c ABS204c ABH204c\n15, 20, 30, 40, 50, 60, 75, 100 15, 20, 30, 40, 50, 60, 75, 100, 125 100, 125, 150, 175, 200, 225, 250\n690 690 690 690 690 690 690\n500 500 500 500 500 500 500\n750 750 750 750 750 750 750\n8 8 8 8 8 8 8\n5 7.5 8 10 8 8 10\n10 14 26 35 18 26 35\n18 26 37 50 26 37 50\n22 30 42 50 30 42 50\n35 50 85 100 65 85 100\n10 15 20 30 10 20 30\n10 15 20 30 10 20 30\n100 50 100 100 100 100 100\n75×130×60mm 90×155×60mm 105×165×60mm\n(외형도1) (외형도2) (외형도3)\n42 쪽 44 쪽 46 쪽\n93 쪽 94 쪽 95 쪽\n99 쪽 100 쪽 101 쪽 (외형도2) (외형도3) 05 001 531 8 60 50 47",
+      "header": "AF",
+      "section_type": "일반",
+      "equipment": [
+        "연소가스처리"
+      ],
+      "company_id": "26",
+      "company_name": "연소가스처리설비",
+      "source_file": "기술 및 참고자료(CATALOGUE 등)",
+      "source_path": "D:\\기계도면\\기계도면\\26. 연소가스처리설비 (에스텍)\\준공도서-연소가스 처리설비(전기)\\16. 기술 및 참고자료(CATALOGUE 등)\\기술 및 참고자료(CATALOGUE 등).pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "a9ebf5c975810c34",
+      "char_count": 823
+    },
+    {
+      "chunk_idx": 3,
+      "text": "쪽 44 쪽 46 쪽\n93 쪽 94 쪽 95 쪽\n99 쪽 100 쪽 101 쪽 (외형도2) (외형도3) 05 001 531 8 60 50 47 CL\n68.5\n86.85\n2.8∅\n\n4.95 05 201 621 441 561\n\n기기종종일일람람표표 EELLCCBB\n누전차단기\nAF 30AF 50AF 60AF\nType S-Type N-Type S-Type H-Type N-Type S-Type\n형명및극수 2극(2-pole) - EBN52c - - - -\n3극(3-pole) EBS33c EBN53c EBS53c EBH53c EBN63c EBS63c\n4극(4-pole) EBS34c - EBS54c EBH54c - EBS64c\n보호기능 누전∙과부하∙ 누전∙과부하∙\n누전∙과부하∙단락보호겸용 누전∙과부하∙단락보호겸용\n단락보호겸용 단락보호겸용\n정격전류, In A 5, 10, 15, 20, 30 15, 20, 30, 40, 50 15, 20, 30, 40, 50 60\n정격감도전류 mA 30, 100/200/500mA 30, 100/200/500mA 30, 100/200/500mA 30,100/200/500mA\n정격전압(Ue) AC (V) 220/460 220/460 220/460 220/460\n정격임펄스전압(Uimp) kV 6 6 6 6\n동작시간(누전차단) sec 0.1이내 0.1이내 0.1이내 0.1이내\n정정격격차차단단전전류류(Icu) kA (Sym), KS C8321, IEC 60947-2\nAC 415/460V 14 14 18 50 14 18\n220/250V 30 30 35 100 30 35\nIcs=%×Icu 100 100 100 100 100 100\n외형치수(mm) W×H×D 75×130×60mm 75×130×60mm 90×155×60mm 75×130×60mm\n(3극) (외형도1) (외형도1) (외형도2) (외형도1)\n기술자료 상세정격 58 쪽 58 쪽 60 쪽 62 쪽\n특성곡선 93 쪽 93 쪽 94 쪽 93 쪽\n외형및설치치수 105 쪽 106 쪽 107 쪽 106 쪽\n주)",
+      "header": "CL",
+      "section_type": "청소",
+      "equipment": [
+        "연소가스처리"
+      ],
+      "company_id": "26",
+      "company_name": "연소가스처리설비",
+      "source_file": "기술 및 참고자료(CATALOGUE 등)",
+      "source_path": "D:\\기계도면\\기계도면\\26. 연소가스처리설비 (에스텍)\\준공도서-연소가스 처리설비(전기)\\16. 기술 및 참고자료(CATALOGUE 등)\\기술 및 참고자료(CATALOGUE 등).pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "5213d93c971596f6",
+      "char_count": 999
+    },
+    {
+      "chunk_idx": 4,
+      "text": "쪽\n특성곡선 93 쪽 93 쪽 94 쪽 93 쪽\n외형및설치치수 105 쪽 106 쪽 107 쪽 106 쪽\n주) 50/60Hz 공용사용가능합니다. AF\n30AF 50AF 60AF 100AF 125AF 250AF\nType\nEBN EBN50c EBN60c EBN100c EBN250c\n14kA 14kA 18kA 26kA\nEBS EBS30c EBS50c EBS60c EBS125c EBS250c\n14kA 18kA 18kA 37kA 37kA\nEBH EBH50c EBH125c EBH250c\n50kA 50kA 50kA\n(외형도1) 100AF 125AF 250AF\nN-Type S-Type H-Type N-Type S-Type H-Type\nEBN102c - - EBN202c - -\nEBN103c EBS103c EBH103c EBN203c EBS203c EBH203c\nEBN104c EBS104c EBH104c - EBS204c EBH204c\n누전∙과부하∙단락보호겸용 누전∙과부하∙단락보호겸용 누전∙과부하∙단락보호겸용\n60, 75, 100 15, 20, 30, 40, 50, 60, 75, 100, 125 100, 125, 150, 175, 200, 225, 250\n30, 100/200/500mA 30,100/200/500mA 30,100/200/500mA\n220/460 220/460 220/460\n6 6 6\n0.1이내 0.1이내 0.1이내\n18 37 50 26 37 50\n35 85 100 65 85 100\n100 100 100 100 100 100\n75×130×60mm 90×155×60mm 105×165×60mm\n(외형도1) (외형도2) (외형도3)\n64 쪽 66 쪽 68 쪽\n93 쪽 94 쪽 95 쪽\n106 쪽 107 쪽 108 쪽\n50 5∅\n0 5 0 0 1 5 3 1 5 5 1 CL .4\n60 58\n90 8 60 5.4∅ 47 66.5\n68.5\n86.85\n7 05 201 441 561 (외형도2) (외형도3)",
+      "header": "AF",
+      "section_type": "일반",
+      "equipment": [
+        "연소가스처리"
+      ],
+      "company_id": "26",
+      "company_name": "연소가스처리설비",
+      "source_file": "기술 및 참고자료(CATALOGUE 등)",
+      "source_path": "D:\\기계도면\\기계도면\\26. 연소가스처리설비 (에스텍)\\준공도서-연소가스 처리설비(전기)\\16. 기술 및 참고자료(CATALOGUE 등)\\기술 및 참고자료(CATALOGUE 등).pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "7030b2248cedefbc",
+      "char_count": 960
+    },
+    {
+      "chunk_idx": 5,
+      "text": "5 5 1 CL .4\n60 58\n90 8 60 5.4∅ 47 66.5\n68.5\n86.85\n7 05 201 441 561 (외형도2) (외형도3) 3300AAFF MMCCCCBB\nAABBEE3300bb\n제품의정격및사양\n프레임의크기 30AF\n형형명명및및극극수수 E-Type\n2극(2-pole) ABE32b\n3극(3-pole) ABE33b\n4극(4-pole) -\n정격전류, In 3-5-10-15-20-30A\n정격전압, Ue AC : 460V\n-\n정격절연전압, Ui AC : 460V\nABE32b\n정격임펄스전압, Uimp 6kV\n정정격격차차단단전전류류, Icu 주1) E-Type\nKS C8321(Sym) AC 690V -\nIEC 60947-2 (lcu) 480/500V -\n460V 2.5kA\n415V 2.5kA\n380V 2.5kA\n220/250V 5kA\nDC 500V (3극) -\nABE33b 250V (2극) -\n보보호호기기능능 과부하, 순시및단락전류\n과전류트립방식 완전전자식(ODP)\n순시트립동작특성 12In\n내구수명 기계적 8500회\n전기적 1500회\n접속방식 표준 표면형(Front connection)\n선택 -\n-\n설치방식 표준 나사취부\n외외형형치치수수(mm) 극수 2극 3극\na 50 75\na b 96 96\nc1 주2) 60 60\nc2 주2) - -\nd 80 80\n제품중량, kg 표준 0.5 0.7\n취취득득규규격격 극수 2극 3극\n전기용품안전관리법 ○ ○\nCE 마크 ○ ○ b\nd\nc2\nc1\n기타자료\n�외형치수 ▶98 쪽\n�특성곡선 ▶93 쪽\n�부속장치 ▶78 쪽\n�부착과접속 ▶116 쪽\n주) 1. 정격차단전류중안전인증(형식승인) 취득정격은빨간색글씨부분이고나머지전압의차단전류는참고정격임.",
+      "header": "AF",
+      "section_type": "비상",
+      "equipment": [
+        "연소가스처리"
+      ],
+      "company_id": "26",
+      "company_name": "연소가스처리설비",
+      "source_file": "기술 및 참고자료(CATALOGUE 등)",
+      "source_path": "D:\\기계도면\\기계도면\\26. 연소가스처리설비 (에스텍)\\준공도서-연소가스 처리설비(전기)\\16. 기술 및 참고자료(CATALOGUE 등)\\기술 및 참고자료(CATALOGUE 등).pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "aac621a46c53f210",
+      "char_count": 839
+    },
+    {
+      "chunk_idx": 6,
+      "text": "부속장치 ▶78 쪽\n�부착과접속 ▶116 쪽\n주) 1. 정격차단전류중안전인증(형식승인) 취득정격은빨간색글씨부분이고나머지전압의차단전류는참고정격임. 2. C1 : 명판노출방법, C2 : 핸들노출방법\n선정 및 주문\n차단기본체주문형명 부속장치(Accessory)\nABS type (10kA/460V)\n정정격격전전류류, In 2극극 3극극 4극극\n3 A ABS32c/3 ABS33c/3 ABS34c/3\n5 A ABS32c/5 ABS33c/5 ABS34c/5\n10 A ABS32c/10 ABS33c/10 ABS34c/10\n내내부부부부속속장장치치류류\nABS type (14kA/460V)\nAX 보조스위치\n정정격격전전류류, In 2극극 3극극 4극극 AL 경보스위치\n15 A ABS32c/15 ABS33c/15 ABS34c/15 AX+AL 조합스위치 R T\n20 A ABS32c/20 ABS33c/20 ABS34c/20 SHT 전압트립장치\n30 A ABS32c/30 ABS33c/30 ABS34c/30 UVT 부족전압트립장치\n설치가능조합\nT상상(右右극극) 위부속장치가운데1종\nR상상(左左극극) AX, AL, AX+AL 가운데1종\n주) 상세정격- 78 쪽\n외외부부부부속속장장치치류류\nABS30c 부부속속장장치치명명\nIB13 절연베리어(전원측은기본제공)\nTCL13 단자커버(Long type)\nTCS13 단자커버(Short type)\nDH100 외부조작핸들(직결형)\nDHK100 외부조작핸들(직결형, 키록부착)\nEH100 외부조작핸들(확장형)\nRTR1 이면형단자(Round type)\nPB-A3 Plug-in kit\nPHL100C Pad Handle Lock\n주) 3극기준이며, 상세정격은86 쪽참조",
+      "header": "2. C1 : 명판노출방법, C2 : 핸들노출방법",
+      "section_type": "비상",
+      "equipment": [
+        "연소가스처리"
+      ],
+      "company_id": "26",
+      "company_name": "연소가스처리설비",
+      "source_file": "기술 및 참고자료(CATALOGUE 등)",
+      "source_path": "D:\\기계도면\\기계도면\\26. 연소가스처리설비 (에스텍)\\준공도서-연소가스 처리설비(전기)\\16. 기술 및 참고자료(CATALOGUE 등)\\기술 및 참고자료(CATALOGUE 등).pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "42d1ae3e18cbffdc",
+      "char_count": 829
+    },
+    {
+      "chunk_idx": 7,
+      "text": "형단자(Round type)\nPB-A3 Plug-in kit\nPHL100C Pad Handle Lock\n주) 3극기준이며, 상세정격은86 쪽참조 5500AAFF MMCCCCBB\nAABBNN5500cc,, AABBSS5500cc,, AABBHH5500cc\n제품의정격및사양\n프레임의크기 50AF\n형형명명및및극극수수 N-Type S-Type H-Type\n2극(2-pole) ABN52c ABS52c ABH52c\n3극(3-pole) ABN53c ABS53c ABH53c\n4극(4-pole) ABN54c ABS54c ABH54c\n정격전류, In 15-20-30-40-50A\n정격전압, Ue AC : 690V\nDC : 500V\n정격절연전압, Ui AC : 750V\n정격임펄스전압, Uimp 8kV\n정정격격차차단단전전류류, Icu 주1) N-Type S-Type H-Type\nKS C8321(Sym) AC 690V 2.5kA 5kA 10kA\nIEC 60947-2 (lcu) 480/500V 7.5kA 10kA 35kA\nlcs=100%Icu 460V 14kA 18kA 50kA\n415V 14kA 18kA 50kA\n380V 18kA 22kA 50kA\n220/250V 30kA 35kA 100kA\nDC 500V (3극) 5kA 10kA 30kA\n250V (2극) 5kA 10kA 30kA\n보보호호기기능능 과부하, 순시및단락전류\n과전류트립방식 열동전자식(Thermal-Magnetic, TM)\n순시트립동작특성 12×In (30A 이하: 400A)\n내구수명 기계적 25000회\n전기적 10000회\n접속방식 표준 표면형(Front connection)\n선택 이면형(Rear connection)\n꽂음접속식(Plug-in)\n설치방식 표준 나사취부\n외외형형치치수수(mm) 극수\na\na b\nc1 주2)\nc2 주2)\nd\n제품중량, kg 표준\n취취득득규규격격 극수\n전기용품안전관리법\nCE 마크\n주) 1. 정격차단전류중안전인증(형식승인) 취득정격은빨간색글씨부분이고나머지전압의차단전류는참고정격임.",
+      "header": "2. C1 : 명판노출방법, C2 : 핸들노출방법",
+      "section_type": "비상",
+      "equipment": [
+        "연소가스처리"
+      ],
+      "company_id": "26",
+      "company_name": "연소가스처리설비",
+      "source_file": "기술 및 참고자료(CATALOGUE 등)",
+      "source_path": "D:\\기계도면\\기계도면\\26. 연소가스처리설비 (에스텍)\\준공도서-연소가스 처리설비(전기)\\16. 기술 및 참고자료(CATALOGUE 등)\\기술 및 참고자료(CATALOGUE 등).pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "c63651e4a2a50e2f",
+      "char_count": 985
+    },
+    {
+      "chunk_idx": 8,
+      "text": "득규규격격 극수\n전기용품안전관리법\nCE 마크\n주) 1. 정격차단전류중안전인증(형식승인) 취득정격은빨간색글씨부분이고나머지전압의차단전류는참고정격임. 2. C1 : 명판노출방법, C2 : 핸들노출방법\nb\nABS52c\nABS53c\nABS54c\n2극 3극 4극 2극 3극 4극 2극 3극 4극\nd 50 75 100 50 75 100 60 90 120\nc2\nc1 130 130 155\n60 60 60\n64 64 64\n82 82 82\n기타자료 0.5 0.7 0.9 0.5 0.7 0.9 0.7 1 1.2\n�외형치수 ▶99~110 쪽 2극 3극 4극 2극 3극 4극 2극 3극 4극\n�특성곡선 ▶93~94 쪽\n○ ○ ○\n�부속장치 ▶78 쪽\n�부착과접속 ▶116 쪽 ○ ○ ○",
+      "header": "2. C1 : 명판노출방법, C2 : 핸들노출방법",
+      "section_type": "일반",
+      "equipment": [
+        "연소가스처리"
+      ],
+      "company_id": "26",
+      "company_name": "연소가스처리설비",
+      "source_file": "기술 및 참고자료(CATALOGUE 등)",
+      "source_path": "D:\\기계도면\\기계도면\\26. 연소가스처리설비 (에스텍)\\준공도서-연소가스 처리설비(전기)\\16. 기술 및 참고자료(CATALOGUE 등)\\기술 및 참고자료(CATALOGUE 등).pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "762f7123da186c31",
+      "char_count": 370
+    },
+    {
+      "chunk_idx": 9,
+      "text": "2극 3극 4극 2극 3극 4극 2극 3극 4극\n�특성곡선 ▶93~94 쪽\n○ ○ ○\n�부속장치 ▶78 쪽\n�부착과접속 ▶116 쪽 ○ ○ ○ 선정 및 주문\n차단기본체주문형명 부속장치(Accessory)\nABN type (14kA/460V)\n정정격격전전류류, In 2극극 3극극 4극극\n15 A ABN52c/15 ABN53c/15 ABN54c/15\n20 A ABN52c/20 ABN53c/20 ABN54c/20\n30 A ABN52c/30 ABN53c/30 ABN54c/30\n40 A ABN52c/40 ABN53c/40 ABN54c/40\n50 A ABN52c/50 ABN53c/50 ABN54c/50\n내내부부부부속속장장치치류류\nABS type (18kA/460V)\nAX 보조스위치\n정정격격전전류류, In 2극극 3극극 4극극 AL 경보스위치\n15 A ABS52c/15 ABS53c/15 ABS54c/15 AX+AL 조합스위치 R T\n20 A ABS52c/20 ABS53c/20 ABS54c/20 SHT 전압트립장치\n30 A ABS52c/30 ABS53c/30 ABS54c/30 UVT 부족전압트립장치\n40 A ABS52c/40 ABS53c/40 ABS54c/40\n50 A ABS52c/50 ABS53c/50 ABS54c/50 설치가능조합\nT상상(右右극극) 위부속장치가운데1종\nABH type (50kA/460V) R상상(左左극극) AX, AL, AX+AL 가운데1종\n정정격격전전류류, In 2극극 3극극 4극극 주) 상세정격- 78 쪽\n15 A ABH52c/15 ABH53c/15 ABH54c/15\n20 A ABH52c/20 ABH53c/20 ABH54c/20\n30 A ABH52c/30 ABH53c/30 ABH54c/30\n40 A ABH52c/40 ABH53c/40 ABH54c/40\n50 A ABH52c/50 ABH53c/50 ABH54c/50\n외외부부부부속속장장치치류류\nABN50c\nABH50c 부부속속장장치치명명\nABS50c\nIB13 IB23 절연베리어(전원측은기본제공)\nTCL13 TCL23 단자커버(Long type)\nTCS13 TCS23 단자커버(Short type)\nDH100 DH125 외부조작핸들(직결형)\nDHK100 DHK125 외부조작핸들(직결형, 키록부착)\nEH100 EH125 외부조작핸들(확장형)\n- RTB2 이면형단자(Bar type)\nRTR1 RTR2 이면형단자(Round type)\nPB-A3 PB-C3 Plug-in kit\nPHL100 PHL125 Pad Handle Lock\n주) 3극기준이며, 상세정격은86 쪽참조",
+      "header": "2. C1 : 명판노출방법, C2 : 핸들노출방법",
+      "section_type": "비상",
+      "equipment": [
+        "연소가스처리"
+      ],
+      "company_id": "26",
+      "company_name": "연소가스처리설비",
+      "source_file": "기술 및 참고자료(CATALOGUE 등)",
+      "source_path": "D:\\기계도면\\기계도면\\26. 연소가스처리설비 (에스텍)\\준공도서-연소가스 처리설비(전기)\\16. 기술 및 참고자료(CATALOGUE 등)\\기술 및 참고자료(CATALOGUE 등).pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "06dbe278428958ee",
+      "char_count": 1259
+    },
+    {
+      "chunk_idx": 10,
+      "text": "pe)\nPB-A3 PB-C3 Plug-in kit\nPHL100 PHL125 Pad Handle Lock\n주) 3극기준이며, 상세정격은86 쪽참조 6600AAFF MMCCCCBB\nAABBNN6600cc,, AABBSS6600cc\n제품의정격및사양\n프레임의크기 60AF\n형형명명및및극극수수 N-Type S-Type\n2극(2-pole) ABN62c ABS62c\n3극(3-pole) ABN63c ABS63c\n4극(4-pole) ABN64c ABS64c\n정격전류, In 15-20-30-40-50-60A\n정격전압, Ue AC : 690V\nDC : 500V\n정격절연전압, Ui AC : 750V\n정격임펄스전압, Uimp 8kV\n정정격격차차단단전전류류, Icu 주1) N-Type S-Type\nKS C8321(Sym) AC 690V 2.5kA 5kA\nIEC 60947-2 (lcu) 480/500V 7.5kA 10kA\nlcs=100%Icu 460V 14kA 18kA\n415V 14kA 18kA\n380V 18kA 22kA\n220/250V 30kA 35kA\nDC 500V (3극) 5kA 10kA\n250V (2극) 5kA 10kA\n보보호호기기능능 과부하, 순시및단락전류\n과전류트립방식 열동전자식(Thermal-Magnetic, TM)\n순시트립동작특성 12×In (30A 이하: 400A)\n내구수명 기계적 25000회\n전기적 10000회\n접속방식 표준 표면형(Front connection)\n선택 이면형(Rear connection)\n꽂음접속식(Plug-in)\n설치방식 표준 나사취부\n외외형형치치수수(mm) 극수 2극 3극 4극 2극 3극 4극\na 50 75 100 50 75 100\na b 130 130\nc1 주2) 60 60\nc2 주2) 64 64\nd 82 82\n제품중량, kg 표준 0.5 0.7 0.9 0.5 0.7 0.9\n취취득득규규격격 극수 2극 3극 4극 2극 3극 4극\n전기용품안전관리법 ○ ○\nCE 마크 ○ ○\n주) 1. 정격차단전류중안전인증(형식승인) 취득정격은빨간색글씨부분이고나머지전압의차단전류는참고정격임.",
+      "header": "2. C1 : 명판노출방법, C2 : 핸들노출방법",
+      "section_type": "비상",
+      "equipment": [
+        "연소가스처리"
+      ],
+      "company_id": "26",
+      "company_name": "연소가스처리설비",
+      "source_file": "기술 및 참고자료(CATALOGUE 등)",
+      "source_path": "D:\\기계도면\\기계도면\\26. 연소가스처리설비 (에스텍)\\준공도서-연소가스 처리설비(전기)\\16. 기술 및 참고자료(CATALOGUE 등)\\기술 및 참고자료(CATALOGUE 등).pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "a4df97bda093c92b",
+      "char_count": 1011
+    },
+    {
+      "chunk_idx": 11,
+      "text": "전기용품안전관리법 ○ ○\nCE 마크 ○ ○\n주) 1. 정격차단전류중안전인증(형식승인) 취득정격은빨간색글씨부분이고나머지전압의차단전류는참고정격임. 2. C1 : 명판노출방법, C2 : 핸들노출방법\nb\nABS62c\nABS63c\nABS64c\nd\nc2\nc1\n기타자료\n�외형치수 ▶99 쪽\n�특성곡선 ▶93 쪽\n�부속장치 ▶78 쪽\n�부착과접속 ▶116 쪽",
+      "header": "2. C1 : 명판노출방법, C2 : 핸들노출방법",
+      "section_type": "일반",
+      "equipment": [
+        "연소가스처리"
+      ],
+      "company_id": "26",
+      "company_name": "연소가스처리설비",
+      "source_file": "기술 및 참고자료(CATALOGUE 등)",
+      "source_path": "D:\\기계도면\\기계도면\\26. 연소가스처리설비 (에스텍)\\준공도서-연소가스 처리설비(전기)\\16. 기술 및 참고자료(CATALOGUE 등)\\기술 및 참고자료(CATALOGUE 등).pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "af57c3a0d6dd6468",
+      "char_count": 193
+    },
+    {
+      "chunk_idx": 12,
+      "text": "62c\nABS63c\nABS64c\nd\nc2\nc1\n기타자료\n�외형치수 ▶99 쪽\n�특성곡선 ▶93 쪽\n�부속장치 ▶78 쪽\n�부착과접속 ▶116 쪽 선정 및 주문\n차단기본체주문형명 부속장치(Accessory)\nABN type (14kA/460V)\n정정격격전전류류, In 2극극 3극극 4극극\n15 A ABN62c/15 ABN63c/15 ABN64c/15\n20 A ABN62c/20 ABN63c/20 ABN64c/20\n30 A ABN62c/30 ABN63c/30 ABN64c/30\n40 A ABN62c/40 ABN63c/40 ABN64c/40\n50 A ABN62c/50 ABN63c/50 ABN64c/50\n내내부부부부속속장장치치류류\n60 A ABN62c/60 ABN63c/60 ABN64c/60\nAX 보조스위치\nABS type (18kA/460V)\nAL 경보스위치\n정정격격전전류류, In 2극극 3극극 4극극 AX+AL 조합스위치 R T\n15 A ABS62c/15 ABS63c/15 ABS64c/15 SHT 전압트립장치\n20 A ABS62c/20 ABS63c/20 ABS64c/20 UVT 부족전압트립장치\n30 A ABS62c/30 ABS63c/30 ABS64c/30\n40 A ABS62c/40 ABS63c/40 ABS64c/40 설치가능조합\n50 A ABS62c/50 ABS63c/50 ABS64c/50 T상상(右右극극) 위부속장치가운데1종\n60 A ABS62c/60 ABS63c/60 ABS64c/60 R상상(左左극극) AX, AL, AX+AL 가운데1종\n주) 상세정격- 78 쪽\n외외부부부부속속장장치치류류\nABS60c\n부부속속장장치치명명\nABN60c\nIB13 절연베리어(전원측은기본제공)\nTCL13 단자커버(Long type)\nTCS13 단자커버(Short type)\nDH100 외부조작핸들(직결형)\nDHK100 외부조작핸들(직결형, 키록부착)\nEH100 외부조작핸들(확장형)\nRTB1 이면형단자(Bar type)\nRTR1 이면형단자(Round type)\nPB-A3 Plug-in kit\nPHL100 Pad Handle Lock\n주) 3극기준이며, 상세정격은86 쪽참조",
+      "header": "2. C1 : 명판노출방법, C2 : 핸들노출방법",
+      "section_type": "비상",
+      "equipment": [
+        "연소가스처리"
+      ],
+      "company_id": "26",
+      "company_name": "연소가스처리설비",
+      "source_file": "기술 및 참고자료(CATALOGUE 등)",
+      "source_path": "D:\\기계도면\\기계도면\\26. 연소가스처리설비 (에스텍)\\준공도서-연소가스 처리설비(전기)\\16. 기술 및 참고자료(CATALOGUE 등)\\기술 및 참고자료(CATALOGUE 등).pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "1b42b0e1b0069eb6",
+      "char_count": 1046
+    },
+    {
+      "chunk_idx": 13,
+      "text": "면형단자(Round type)\nPB-A3 Plug-in kit\nPHL100 Pad Handle Lock\n주) 3극기준이며, 상세정격은86 쪽참조 110000AAFF MMCCCCBB\nAABBNN110000cc // AABBNN110000dd\n제품의정격및사양\n프레임의크기 100AF\n형형명명및및극극수수 N-Type\n2극(2-pole) ABN102c ABN102d\n3극(3-pole) ABN103c ABN103d\n4극(4-pole) ABN104c ABN104d\n정격전류, In 15-20-30-40-50-60-75-100A\n정격전압, Ue AC : 690V\nDC : 500V\n정격절연전압, Ui AC : 750V\n정격임펄스전압, Uimp 8kV\n정정격격차차단단전전류류, Icu 주1) N-Type\nKS C8321(Sym) AC 690V 5kA 7.5kA\nIEC 60947-2 (lcu) 480/500V 10kA 14kA\nlcs=100%Icu 460V 18kA 26kA\n415V 18kA 26kA\n380V 22kA 30kA\n220/250V 35kA 50kA\nDC 500V (3극) 10kA 15kA\n250V (2극) 10kA 15kA\n보보호호기기능능 과부하, 순시및단락전류\n과전류트립방식 열동전자식(Thermal-Magnetic, TM)\n순시트립동작특성 12×In (30 A이하: 400 A)\n내구수명 기계적 25000회\n전기적 10000회\n접속방식 표준 표면형(Front connection)\n선택 이면형(Rear connection)\n꽂음접속식(Plug-in)\n설치방식 표준 나사취부\n외외형형치치수수(mm) 극수 2극 3극 4극\na 50 75 100\na b 130 130 130\nc1 주2) 60 60 60\nc2 주2) 64 64 64\nd 82 82 82\n제품중량, kg 표준 0.5 0.7 0.9\n취취득득규규격격 극수 2극 3극 4극\n전기용품안전관리법 ○ ○ ○\nCE 마크 ○ ○ ○\n주) 1. 정격차단전류중안전인증(형식승인) 취득정격은빨간색글씨부분이고나머지전압의차단전류는참고정격임.",
+      "header": "2. C1 : 명판노출방법, C2 : 핸들노출방법",
+      "section_type": "비상",
+      "equipment": [
+        "연소가스처리"
+      ],
+      "company_id": "26",
+      "company_name": "연소가스처리설비",
+      "source_file": "기술 및 참고자료(CATALOGUE 등)",
+      "source_path": "D:\\기계도면\\기계도면\\26. 연소가스처리설비 (에스텍)\\준공도서-연소가스 처리설비(전기)\\16. 기술 및 참고자료(CATALOGUE 등)\\기술 및 참고자료(CATALOGUE 등).pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "2bc3a22491345933",
+      "char_count": 997
+    },
+    {
+      "chunk_idx": 14,
+      "text": "품안전관리법 ○ ○ ○\nCE 마크 ○ ○ ○\n주) 1. 정격차단전류중안전인증(형식승인) 취득정격은빨간색글씨부분이고나머지전압의차단전류는참고정격임. 3. ABN100d Type의경우Ics=50%Icu임.\nb\nABN102c\nABN103c\nABN104c\nd\nc2\nc1\n기타자료\n�외형치수 ▶99 쪽\n�특성곡선 ▶93 쪽\n�부속장치 ▶78 쪽\n�부착과접속 ▶116 쪽",
+      "header": "3. ABN100d Type의경우Ics=50%Icu임.",
+      "section_type": "일반",
+      "equipment": [
+        "연소가스처리"
+      ],
+      "company_id": "26",
+      "company_name": "연소가스처리설비",
+      "source_file": "기술 및 참고자료(CATALOGUE 등)",
+      "source_path": "D:\\기계도면\\기계도면\\26. 연소가스처리설비 (에스텍)\\준공도서-연소가스 처리설비(전기)\\16. 기술 및 참고자료(CATALOGUE 등)\\기술 및 참고자료(CATALOGUE 등).pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "66ad4aeaa70a912d",
+      "char_count": 200
+    },
+    {
+      "chunk_idx": 15,
+      "text": "c\nABN103c\nABN104c\nd\nc2\nc1\n기타자료\n�외형치수 ▶99 쪽\n�특성곡선 ▶93 쪽\n�부속장치 ▶78 쪽\n�부착과접속 ▶116 쪽 선정 및 주문\n차단기본체주문형명 부속장치(Accessory)\nABN-c type (18kA/460V)\n정정격격전전류류, In 2극극 3극극 4극극\n15 A ABN102c/15 ABN103c/15 ABN104c/15\n20 A ABN102c/20 ABN103c/20 ABN104c/20\n30 A ABN102c/30 ABN103c/30 ABN104c/30\n40 A ABN102c/40 ABN103c/40 ABN104c/40\n50 A ABN102c/50 ABN103c/50 ABN104c/50\n내내부부부부속속장장치치류류\n60 A ABN102c/60 ABN103c/60 ABN104c/60\n75 A ABN102c/75 ABN103c/75 ABN104c/75 AX 보조스위치\n100 A ABN102c/100 ABN103c/100 ABN104c/100 AL 경보스위치\nAX+AL 조합스위치 R T\nABN-d type (26kA/460V)\nSHT 전압트립장치\n정정격격전전류류, In 2극극 3극극 4극극 UVT 부족전압트립장치\n15 A ABN102d/15 ABN103d/15 ABN104d/15\n20 A ABN102d/20 ABN103d/20 ABN104d/20 설치가능조합\n30 A ABN102d/30 ABN103d/30 ABN104d/30 T상상(右右극극) 위부속장치가운데1종\n40 A ABN102d/40 ABN103d/40 ABN104d/40 R상상(左左극극) AX, AL, AX+AL 가운데1종\n50 A ABN102d/50 ABN103d/50 ABN104d/50 주) 상세정격- 78 쪽\n60 A ABN102d/60 ABN103d/60 ABN104d/60\n75 A ABN102d/75 ABN103d/75 ABN104d/75\n100 A ABN102d/100 ABN103d/100 ABN104d/100\n외외부부부부속속장장치치류류\nABN100c 부부속속장장치치명명\nIB13 절연베리어(전원측은기본제공)\nTCL13 단자커버(Long type)\nTCS13 단자커버(Short type)\nDH100 외부조작핸들(직결형)\nDHK100 외부조작핸들(직결형, 키록부착)\nEH100 외부조작핸들(확장형)\nRTB1 이면형단자(Bar type)\nRTR1 이면형단자(Round type)\nPB-A3 Plug-in kit\nPHL100 Pad Handle Lock\n주) 3극기준이며, 상세정격은86 쪽참조",
+      "header": "3. ABN100d Type의경우Ics=50%Icu임.",
+      "section_type": "비상",
+      "equipment": [
+        "연소가스처리"
+      ],
+      "company_id": "26",
+      "company_name": "연소가스처리설비",
+      "source_file": "기술 및 참고자료(CATALOGUE 등)",
+      "source_path": "D:\\기계도면\\기계도면\\26. 연소가스처리설비 (에스텍)\\준공도서-연소가스 처리설비(전기)\\16. 기술 및 참고자료(CATALOGUE 등)\\기술 및 참고자료(CATALOGUE 등).pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "c802542bbad89087",
+      "char_count": 1240
+    },
+    {
+      "chunk_idx": 16,
+      "text": "면형단자(Round type)\nPB-A3 Plug-in kit\nPHL100 Pad Handle Lock\n주) 3극기준이며, 상세정격은86 쪽참조 112255AAFF MMCCCCBB\nAABBSS112255cc,, AABBHH112255cc\n제품의정격및사양\n프레임의크기 125AF\n형형명명및및극극수수 S-Type H-Type\n2극(2-pole) ABS102c ABH102c\n3극(3-pole) ABS103c ABH103c\n4극(4-pole) ABS104c ABH104c\n정격전류, In 15-20-30-40-50-60-75-100-125A\n정격전압, Ue AC : 690V\nDC : 500V\n정격절연전압, Ui AC : 750V\n정격임펄스전압, Uimp 8kV\n정정격격차차단단전전류류, Icu 주1) S-Type H-Type\nKS C8321(Sym) AC 690V 8kA 10kA\nIEC 60947-2 (lcu) 480/500V 26kA 35kA\nlcs=100%Icu 460V 37kA 50kA\n415V 37kA 50kA\n380V 42kA 50kA\n220/250V 85kA 100kA\nDC 500V (3극) 20kA 30kA\n250V (2극) 20kA 30kA\n보보호호기기능능 과부하, 순시및단락전류\n과전류트립방식 열동전자식(Thermal-Magnetic, TM)\n순시트립동작특성 12×In (30A 이하: 400A)\n내구수명 기계적 25000회\n전기적 10000회\n접속방식 표준 표면형(Front connection)\n선택 이면형(Rear connection)\n꽂음접속식(Plug-in)\n설치방식 표준 나사취부\n외외형형치치수수(mm) 극수 2극 3극 4극 2극 3극 4극\na 60 90 120 60 90 120\na b 155 155\nc1 주2) 60 60\nc2 주2) 64 64\nd 82 82\n제품중량, kg 표준 0.7 1 1.2 0.7 1 1.2\n취취득득규규격격 극수 2극 3극 4극 2극 3극 4극\n전기용품안전관리법 ○ ○\nCE 마크 ○ ○\n주) 1. 정격차단전류중안전인증(형식승인) 취득정격은빨간색글씨부분이고나머지전압의차단전류는참고정격임.",
+      "header": "3. ABN100d Type의경우Ics=50%Icu임.",
+      "section_type": "비상",
+      "equipment": [
+        "연소가스처리"
+      ],
+      "company_id": "26",
+      "company_name": "연소가스처리설비",
+      "source_file": "기술 및 참고자료(CATALOGUE 등)",
+      "source_path": "D:\\기계도면\\기계도면\\26. 연소가스처리설비 (에스텍)\\준공도서-연소가스 처리설비(전기)\\16. 기술 및 참고자료(CATALOGUE 등)\\기술 및 참고자료(CATALOGUE 등).pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "9bad617448fe4a74",
+      "char_count": 1032
+    },
+    {
+      "chunk_idx": 17,
+      "text": "전기용품안전관리법 ○ ○\nCE 마크 ○ ○\n주) 1. 정격차단전류중안전인증(형식승인) 취득정격은빨간색글씨부분이고나머지전압의차단전류는참고정격임. 2. C1 : 명판노출방법, C2 : 핸들노출방법\nb\nABS102c\nABS103c\nABS104c d\nc2\nc1\n기타자료\n�외형치수 ▶100 쪽\n�특성곡선 ▶94 쪽\n�부속장치 ▶78 쪽\n�부착과접속 ▶116 쪽",
+      "header": "2. C1 : 명판노출방법, C2 : 핸들노출방법",
+      "section_type": "일반",
+      "equipment": [
+        "연소가스처리"
+      ],
+      "company_id": "26",
+      "company_name": "연소가스처리설비",
+      "source_file": "기술 및 참고자료(CATALOGUE 등)",
+      "source_path": "D:\\기계도면\\기계도면\\26. 연소가스처리설비 (에스텍)\\준공도서-연소가스 처리설비(전기)\\16. 기술 및 참고자료(CATALOGUE 등)\\기술 및 참고자료(CATALOGUE 등).pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "af57c3a0d6dd6468",
+      "char_count": 197
+    },
+    {
+      "chunk_idx": 18,
+      "text": "ABS103c\nABS104c d\nc2\nc1\n기타자료\n�외형치수 ▶100 쪽\n�특성곡선 ▶94 쪽\n�부속장치 ▶78 쪽\n�부착과접속 ▶116 쪽 선정 및 주문\n차단기본체주문형명 부속장치(Accessory)\nABS type (37kA/460V)\n정정격격전전류류, In 2극극 3극극 4극극\n15 A ABS102c/15 ABS103c/15 ABS104c/15\n20 A ABS102c/20 ABS103c/20 ABS104c/20\n30 A ABS102c/30 ABS103c/30 ABS104c/30\n40 A ABS102c/40 ABS103c/40 ABS104c/40\n50 A ABS102c/50 ABS103c/50 ABS104c/50\n내내부부부부속속장장치치류류\n60 A ABS102c/60 ABS103c/60 ABS104c/60\n75 A ABS102c/75 ABS103c/75 ABS104c/75 AX 보조스위치\n100 A ABS102c/100 ABS103c/100 ABS104c/100 AL 경보스위치\n125 A ABS102c/125 ABS103c/125 ABS104c/125 AX+AL 조합스위치 R T\nSHT 전압트립장치\nABH type (50kA/460V)\nUVT 부족전압트립장치\n정정격격전전류류, In 2극극 3극극 4극극\n15 A ABH102c/15 ABH103c/15 ABH104c/15 설치가능조합\n20 A ABH102c/20 ABH103c/20 ABH104c/20 T상상(右右극극) 위부속장치가운데1종\n30 A ABH102c/30 ABH103c/30 ABH104c/30 R상상(左左극극) AX, AL, AX+AL 가운데1종\n40 A ABH102c/40 ABH103c/40 ABH104c/40 주) 상세정격- 78 쪽\n50 A ABH102c/50 ABH103c/50 ABH104c/50\n60 A ABH102c/60 ABH103c/60 ABH104c/60\n75 A ABH102c/75 ABH103c/75 ABH104c/75\n100 A ABH102c/100 ABH103c/100 ABH104c/100\n125 A ABH102c/125 ABH103c/125 ABH104c/125\n외외부부부부속속장장치치류류\nABS125c\n부부속속장장치치명명\nABH125c\nIB23 절연베리어(전원측은기본제공)\nTCL23 단자커버(Long type)\nTCS23 단자커버(Short type)\nDH125 외부조작핸들(직결형)\nDHK125 외부조작핸들(직결형, 키록부착)\nEH125 외부조작핸들(확장형)\nRTB2 이면형단자(Bar type)\nRTR2 이면형단자(Round type)\nPB-C3 Plug-in kit\nPHL125 Pad Handle Lock\n주) 3극기준이며, 상세정격은86 쪽참조",
+      "header": "2. C1 : 명판노출방법, C2 : 핸들노출방법",
+      "section_type": "비상",
+      "equipment": [
+        "연소가스처리"
+      ],
+      "company_id": "26",
+      "company_name": "연소가스처리설비",
+      "source_file": "기술 및 참고자료(CATALOGUE 등)",
+      "source_path": "D:\\기계도면\\기계도면\\26. 연소가스처리설비 (에스텍)\\준공도서-연소가스 처리설비(전기)\\16. 기술 및 참고자료(CATALOGUE 등)\\기술 및 참고자료(CATALOGUE 등).pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "c14949c3ced93aff",
+      "char_count": 1327
+    },
+    {
+      "chunk_idx": 19,
+      "text": "면형단자(Round type)\nPB-C3 Plug-in kit\nPHL125 Pad Handle Lock\n주) 3극기준이며, 상세정격은86 쪽참조 225500AAFF MMCCCCBB\nAABBNN225500cc,, AABBSS225500cc,, AABBHH225500cc\n제품의정격및사양\n프레임의크기 250AF\n형형명명및및극극수수 N-Type S-Type H-Type\n2극(2-pole) ABN202c ABS202c ABH202c\n3극(3-pole) ABN203c ABS203c ABH203c\n4극(4-pole) ABN204c ABS204c ABH204c\n정격전류, In 100-125-150-175-200-225-250A\n정격전압, Ue AC : 690V\nDC : 500V\n정격절연전압, Ui AC : 750V\n정격임펄스전압, Uimp 8kV\n정정격격차차단단전전류류, Icu 주1) N-Type S-Type H-Type\nKS C8321(Sym) AC 690V 8kA 8kA 10kA\nIEC 60947-2 (lcu) 480/500V 18kA 26kA 35kA\nlcs=100%Icu 460V 26kA 37kA 50kA\n415V 26kA 37kA 50kA\n380V 30kA 42kA 50kA\n220/250V 65kA 85kA 100kA\nDC 500V (3극) 10kA 20kA 30kA\n250V (2극) 10kA 20kA 30kA\n보보호호기기능능 과부하, 순시및단락전류\n과전류트립방식 열동전자식(Thermal-Magnetic, TM)\n순시트립동작특성 12×In\n내구수명 기계적 20000회\n전기적 5000회\n접속방식 표준 표면형(Front connection)\n선택 이면형(Rear connection)\n꽂음접속식(Plug-in)\n설치방식 표준 나사취부\n외외형형치치수수(mm) 극수 2극 3극 4극 2극 3극 4극 2극 3극 4극\na 105 105 140 105 105 140 105 105 140\na b 165 165 165\nc1 주2) 60 60 60\nc2 주2) 64 64 64\nd 87 87 87\n제품중량, kg 표준 1.1 1.2 1.6 1.1 1.2 1.6 1.1 1.2 1.6\n취취득득규규격격 극수 2극 3극 4극 2극 3극 4극 2극 3극 4극\n전기용품안전관리법 ○ ○ ○\nCE 마크 ○ ○ ○\n주) 1. 정격차단전류중안전인증(형식승인) 취득정격은빨간색글씨부분이고나머지전압의차단전류는참고정격임.",
+      "header": "2. C1 : 명판노출방법, C2 : 핸들노출방법",
+      "section_type": "비상",
+      "equipment": [
+        "연소가스처리"
+      ],
+      "company_id": "26",
+      "company_name": "연소가스처리설비",
+      "source_file": "기술 및 참고자료(CATALOGUE 등)",
+      "source_path": "D:\\기계도면\\기계도면\\26. 연소가스처리설비 (에스텍)\\준공도서-연소가스 처리설비(전기)\\16. 기술 및 참고자료(CATALOGUE 등)\\기술 및 참고자료(CATALOGUE 등).pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "661e0f3a8a0eddc4",
+      "char_count": 1176
+    },
+    {
+      "chunk_idx": 20,
+      "text": "품안전관리법 ○ ○ ○\nCE 마크 ○ ○ ○\n주) 1. 정격차단전류중안전인증(형식승인) 취득정격은빨간색글씨부분이고나머지전압의차단전류는참고정격임. 2. C1 : 명판노출방법, C2 : 핸들노출방법\nb\nABS202c\nABS203c\nd\nABS204c c2\nc1\n기타자료\n�외형치수 ▶101 쪽\n�특성곡선 ▶95 쪽\n�부속장치 ▶78 쪽\n�부착과접속 ▶116 쪽",
+      "header": "2. C1 : 명판노출방법, C2 : 핸들노출방법",
+      "section_type": "일반",
+      "equipment": [
+        "연소가스처리"
+      ],
+      "company_id": "26",
+      "company_name": "연소가스처리설비",
+      "source_file": "기술 및 참고자료(CATALOGUE 등)",
+      "source_path": "D:\\기계도면\\기계도면\\26. 연소가스처리설비 (에스텍)\\준공도서-연소가스 처리설비(전기)\\16. 기술 및 참고자료(CATALOGUE 등)\\기술 및 참고자료(CATALOGUE 등).pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "580db7ac596f88b6",
+      "char_count": 198
+    },
+    {
+      "chunk_idx": 21,
+      "text": "ABS203c\nd\nABS204c c2\nc1\n기타자료\n�외형치수 ▶101 쪽\n�특성곡선 ▶95 쪽\n�부속장치 ▶78 쪽\n�부착과접속 ▶116 쪽 선정 및 주문\n차단기본체주문형명 부속장치(Accessory)\nABN type (26kA/460V)\n정정격격전전류류, In 2극극 3극극 4극극\n100 A ABN202c/100 ABN203c/100 ABN204c/100\n125 A ABN202c/125 ABN203c/125 ABN204c/125\n150 A ABN202c/150 ABN203c/150 ABN204c/150\n175 A ABN202c/175 ABN203c/175 ABN204c/175\n200 A ABN202c/200 ABN203c/200 ABN204c/200\n내내부부부부속속장장치치류류\n225 A ABN202c/225 ABN203c/225 ABN204c/225\n250 A ABN202c/250 ABN203c/250 ABN204c/250 AX 보조스위치\nAL 경보스위치\nABS type (37kA/460V)\nAX+AL 조합스위치 R T\n정정격격전전류류, In 2극극 3극극 4극극 SHT 전압트립장치\n100 A ABS202c/100 ABS203c/100 ABS204c/100 UVT 부족전압트립장치\n125 A ABS202c/125 ABS203c/125 ABS204c/125\n150 A ABS202c/150 ABS203c/150 ABS204c/150 설치가능조합\n175 A ABS202c/175 ABS203c/175 ABS204c/175 T상상(右右극극) 위부속장치가운데1종\n200 A ABS202c/200 ABS203c/200 ABS204c/200 R상상(左左극극) AX, AL, AX+AL 가운데1종\n225 A ABS202c/225 ABS203c/225 ABS204c/225\n주) 상세정격- 78 쪽\n250 A ABS202c/250 ABS203c/250 ABS204c/250\nABH type (50kA/460V)\n정정격격전전류류, In 2극극 3극극 4극극\n100 A ABH202c/100 ABH203c/100 ABH204c/100\n125 A ABH202c/125 ABH203c/125 ABH204c/125\n150 A ABH202c/150 ABH203c/150 ABH204c/150\n175 A ABH202c/175 ABH203c/175 ABH204c/175\n200 A ABH202c/200 ABH203c/200 ABH204c/200\n225 A ABH202c/225 ABH203c/225 ABH204c/225\n250 A ABH202c/250 ABH203c/250 ABH204c/250\n외외부부부부속속장장치치류류\nABH250c 부부속속장장치치명명\nIB23 절연베리어(전원측은기본제공)\nTCL33 단자커버(Long type)\nTCS33 단자커버(Short type)\nDH250 외부조작핸들(직결형)\nDHK250 외부조작핸들(직결형, 키록부착)\nEH250 외부조작핸들(확장형)\nRTB3 이면형단자(Bar type)\nRTR3 이면형단자(Round type)\nPB-D3 Plug-in kit\nPHL250 Pad Handle Lock\n주) 3극기준이며, 상세정격은86 쪽참조",
+      "header": "2. C1 : 명판노출방법, C2 : 핸들노출방법",
+      "section_type": "비상",
+      "equipment": [
+        "연소가스처리"
+      ],
+      "company_id": "26",
+      "company_name": "연소가스처리설비",
+      "source_file": "기술 및 참고자료(CATALOGUE 등)",
+      "source_path": "D:\\기계도면\\기계도면\\26. 연소가스처리설비 (에스텍)\\준공도서-연소가스 처리설비(전기)\\16. 기술 및 참고자료(CATALOGUE 등)\\기술 및 참고자료(CATALOGUE 등).pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "560af69aeeb87cdc",
+      "char_count": 1547
+    },
+    {
+      "chunk_idx": 22,
+      "text": "면형단자(Round type)\nPB-D3 Plug-in kit\nPHL250 Pad Handle Lock\n주) 3극기준이며, 상세정격은86 쪽참조 440000AAFF MMCCCCBB\nAABBNN440000cc,, AABBSS440000cc,, AABBHH440000cc,, AABBLL440000cc\n제품의정격및사양\n프레임의크기 400AF\n형형명명및및극극수수 N-Type S-Type H-Type L-Type\n2극(2-pole) ABN402c ABS402c ABH402c ABL402c\n3극(3-pole) ABN403c ABS403c ABH403c ABL403c\n4극(4-pole) ABN404c ABS404c ABH404c ABL404c\n정격전류, In 250-300-350-400A\n정격전압, Ue AC : 690V\nDC : 500V\n정격절연전압, Ui AC : 750V\n정격임펄스전압, Uimp 8kV\n정정격격차차단단전전류류, Icu 주1) N-Type S-Type H-Type L-Type\nKS C8321(Sym) AC 690V 5kA 8kA 10kA 14kA\nIEC 60947-2 (lcu) 480/500V 18kA 35kA 50kA 65kA\n415/460V 37kA 50kA 65kA 85kA\n380V 42kA 65kA 70kA 100kA\n220/250V 50kA 75kA 85kA 125kA\nDC 500V(3P) 10kA 20kA 40kA 40kA\n250V(2P) 10kA 20kA 40kA 40kA\nlcs=100%Icu 100% 100% 100% 75%\n보보호호기기능능 과부하, 순시및단락전류\n과전류트립방식 열동전자식(Thermal-Magnetic)\n순시트립동작특성 8~12In\n내구수명 기계적 4000회\n전기적 1000회\n접속방식 표준 표면형(Front connection)\n선택 이면형(Rear connection)\n꽂음접속식(Plug-in)\n설치방식 표준 나사취부\n외외형형치치수수(mm) 극수 2극 3극 4극 2극 3극 4극 2극 3극 4극 2극 3극 4극\na 140 140 184 140 140 184 140 140 184 140 140 184\na b 257 257 257 257\nc1 주2) 109 109 109 109\nc2 주2) 113 113 113 113\nd 145 145 145 145\n제품중량, kg 표준 5.2 6.2 7.8 5.2 6.2 7.8 5.2 6.2 7.8 5.2 6.2 7.8\n취취득득규규격격 극수 2극 3극 4극 2극 3극 4극 2극 3극 4극 2극 3극 4극\n전기용품안전관리법 ○ ○ ○ ○\nCE 마크 ○ ○ ○ ○\n주) 1. 정격차단전류중안전인증(형식승인) 취득정격은빨간색글씨부분이고나머지전압의차단전류는참고정격임.",
+      "header": "2. C1 : 명판노출방법, C2 : 핸들노출방법",
+      "section_type": "비상",
+      "equipment": [
+        "연소가스처리"
+      ],
+      "company_id": "26",
+      "company_name": "연소가스처리설비",
+      "source_file": "기술 및 참고자료(CATALOGUE 등)",
+      "source_path": "D:\\기계도면\\기계도면\\26. 연소가스처리설비 (에스텍)\\준공도서-연소가스 처리설비(전기)\\16. 기술 및 참고자료(CATALOGUE 등)\\기술 및 참고자료(CATALOGUE 등).pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "51ab84f7bfffe734",
+      "char_count": 1323
+    },
+    {
+      "chunk_idx": 23,
+      "text": "리법 ○ ○ ○ ○\nCE 마크 ○ ○ ○ ○\n주) 1. 정격차단전류중안전인증(형식승인) 취득정격은빨간색글씨부분이고나머지전압의차단전류는참고정격임. 2. C1 : 명판노출방법, C2 : 핸들노출방법\nb\nABS403c\nABL404c\nd\nc2\nc1\n기타자료\n�외형치수 ▶102 쪽\n�특성곡선 ▶96 쪽\n�부속장치 ▶79 쪽\n�부착과접속 ▶117 쪽",
+      "header": "2. C1 : 명판노출방법, C2 : 핸들노출방법",
+      "section_type": "일반",
+      "equipment": [
+        "연소가스처리"
+      ],
+      "company_id": "26",
+      "company_name": "연소가스처리설비",
+      "source_file": "기술 및 참고자료(CATALOGUE 등)",
+      "source_path": "D:\\기계도면\\기계도면\\26. 연소가스처리설비 (에스텍)\\준공도서-연소가스 처리설비(전기)\\16. 기술 및 참고자료(CATALOGUE 등)\\기술 및 참고자료(CATALOGUE 등).pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "aee917bfa1b3f73e",
+      "char_count": 190
+    },
+    {
+      "chunk_idx": 24,
+      "text": "ABS403c\nABL404c\nd\nc2\nc1\n기타자료\n�외형치수 ▶102 쪽\n�특성곡선 ▶96 쪽\n�부속장치 ▶79 쪽\n�부착과접속 ▶117 쪽 전전자자접접촉촉기기(18AF)\n정격\n기본\n접점의구성: 주접점3극\n보조접점: 1a 또는1b\n수명(AC3급) :1500만회(기계적), 250만회(전기적)\n조작전원: 교류(AC 50, 60Hz) 또는직류(DC)\n�4단자구조로전원부및부하단배선가능\n단자의구조: Screw 방식\n부착방식: 나사/DIN Rail(35mm) 겸용\n정격\n형명 MC-6a MC-9a MC-12a MC-18a\n구분\n단위 kW A kW A kW A kW A\n3상농형모터 AC3급 200/240V 2.2 9 2.5 11 3.5 13 4.5 18\n380/440V 3 7 4 9 5.5 12 7.5 18\n500/550V 3 6 4 7 7.5 12 7.5 13\n690V 3 4 4 5 7.5 9 7.5 9\nAC4급 200/240V 1.5 7 1.5 8 2.2 11 3.7 16\nMC-18a\n380/440V 2.2 5 2.2 6 4 9 4 11\n저항/비유도성부하 AC1급 - 25 - 25 - 25 - 32\nDC1 2극직렬 24V - 18 - 18 - 18 - 18\n(L/R=1ms) 48V - 17 - 17 - 17 - 17\n저항/비유도성부하 110V - 12 - 12 - 12 - 12\n3극직렬 24V - 20 - 20 - 20 - 20\n48V - 20 - 20 - 20 - 20\n110V - 15 - 15 - 15 - 15\nDC2,4 2극직렬 24V - 15 - 15 - 15 - 15\n(L/R=15ms) 48V - 12 - 12 - 12 - 12\nDC 모터부하 110V - 8 - 8 - 8 - 8\n3극직렬 24V - 18 - 18 - 18 - 18\n48V - 15 - 15 - 15 - 15\n110V - 12 - 12 - 12 - 12\n2극직렬\n조합열동형과부하계전기 MT-12\n전선치수(Solid, stranded) AWG 18~10 16~10 16~8 14~8\n(the max. number of conducts : 2) mm2 1~4 1.5~4 1.5~10 2.5~10\n전선종류 65/75℃Cu-wire only\n3극직렬\n조작(코일)전압\n50Hz 24, 32, 42, 48, 80, 100, 110, 220, 230, 240, 380, 400, 500, 550V\n규격인증\nAC 60Hz 24, 48, 100, 110, 120, 200, 208, 220, 230, 240, 277, 380, 480, 600V\n�안전인증\n50/60Hz 24, 48, 100, 110, 120, 200, 220, 230, 240, 380, 415, 440, 500, 550V\n�CE(IEC)\nDC DC 12, 20, 24, 48, 60, 80, 100, 110, 125, 200, 220, 250V �UL508",
+      "header": "2. C1 : 명판노출방법, C2 : 핸들노출방법",
+      "section_type": "운전",
+      "equipment": [
+        "연소가스처리"
+      ],
+      "company_id": "26",
+      "company_name": "연소가스처리설비",
+      "source_file": "기술 및 참고자료(CATALOGUE 등)",
+      "source_path": "D:\\기계도면\\기계도면\\26. 연소가스처리설비 (에스텍)\\준공도서-연소가스 처리설비(전기)\\16. 기술 및 참고자료(CATALOGUE 등)\\기술 및 참고자료(CATALOGUE 등).pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "44c4981f2698f0ce",
+      "char_count": 1398
+    },
+    {
+      "chunk_idx": 25,
+      "text": "550V\n�CE(IEC)\nDC DC 12, 20, 24, 48, 60, 80, 100, 110, 125, 200, 220, 250V �UL508 부속장치전개도\n가역전선세트, UW-18\n가역형접촉기결선용\n▶80쪽\n지연석방유닛, AD-9 서지유닛, US\n▶79쪽 코일단자에부착\n▶82쪽\n인터록유닛, UR\n가역형접촉기조립용\n▶80쪽\n보조접점, UA-1\n2극(1a1b)\n양측면부착용\n▶75쪽\n보조접점, UA-4\n4극(4a, 3a1b, 2a2b, 1a3b, 4b)\n상부부착용\n▶75쪽\n보조접점, UA-2\n2극(2a, 1a1b, 2b)\n상부부착용\n▶75쪽\n안전커버\n오동작방지용\n열동형과부하계전기 ▶85쪽\nScrew 방식단자전용\n2소자, 3소자, 결상형, 지동형\n전자접촉기에직접연결\n▶88쪽",
+      "header": "2. C1 : 명판노출방법, C2 : 핸들노출방법",
+      "section_type": "일반",
+      "equipment": [
+        "연소가스처리"
+      ],
+      "company_id": "26",
+      "company_name": "연소가스처리설비",
+      "source_file": "기술 및 참고자료(CATALOGUE 등)",
+      "source_path": "D:\\기계도면\\기계도면\\26. 연소가스처리설비 (에스텍)\\준공도서-연소가스 처리설비(전기)\\16. 기술 및 참고자료(CATALOGUE 등)\\기술 및 참고자료(CATALOGUE 등).pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "3e2608b456d17ff0",
+      "char_count": 379
+    },
+    {
+      "chunk_idx": 26,
+      "text": "▶75쪽\n안전커버\n오동작방지용\n열동형과부하계전기 ▶85쪽\nScrew 방식단자전용\n2소자, 3소자, 결상형, 지동형\n전자접촉기에직접연결\n▶88쪽 전전자자접접촉촉기기 (22AF)\n정격\n기본\n접점의구성: 주접점3극\n보조접점: 1a1b(표준)\n보조접점추가시우측에UA-1 설치불가\n수명(AC3급) : 1500만회(기계적), 250만회(전기적)\n조작전원: 교류(AC 50, 60Hz) 또는직류(DC)\n�4단자구조로전원부및부하단배선가능\n단자의구조: Screw 방식\n부착방식: 나사/DIN Rail(35mm) 겸용\n정격\n형명 MC-9b MC-12b MC-18b MC-22b\n구분\n단위 kW A kW A kW A kW A\n3상농형모터 AC3급 200/240V 2.5 11 3.5 13 4.5 18 5.5 22\n380/440V 4 9 5.5 12 7.5 18 11 22\n500/550V 4 7 7.5 12 7.5 13 15 20\n690V 4 5 7.5 9 7.5 9 15 18\nAC4급 200/240V 1.5 8 2.2 11 3.7 16 3.7 18\nMC-22b 380/440V 2.2 6 4 9 4 11 5.5 13\n저항/비유도성부하 AC1급 - 25 - 25 - 32 - 40\nDC1 2극직렬 24V - 18 - 18 - 18 - 32\n(L/R=1ms) 48V - 17 - 17 - 17 - 30\n저항/비유도성부하 110V - 12 - 12 - 12 - 23\n3극직렬 24V - 20 - 20 - 20 - 32\n48V - 20 - 20 - 20 - 32\n110V - 15 - 15 - 15 - 27\nDC2,4 2극직렬 24V - 15 - 15 - 15 - 25\n(L/R=15ms) 48V - 12 - 12 - 12 - 20\nDC 모터부하 110V - 8 - 8 - 8 - 15\n3극직렬 24V - 18 - 18 - 18 - 30\n48V - 15 - 15 - 15 - 30\n110V - 12 - 12 - 12 - 20\n2극직렬\n조합열동형과부하계전기 MT-32\n전선치수(Solid, stranded) AWG 16~10 16~8 14~8 14~8\n(the max. number of conducts : 2) mm2 1.5~4 1.5~10 2.5~10 2.5~10\n전선종류 65/75℃Cu-wire only\n3극직렬\n조작(코일)전압\n50Hz 24, 32, 42, 48, 80, 100, 110, 220, 230, 240, 380, 400, 500, 550V\n규격인증\nAC 60Hz 24, 48, 100, 110, 120, 200, 208, 220, 230, 240, 277, 380, 480, 600V\n�안전인증\n50/60Hz 24, 48, 100, 110, 120, 200, 220, 230, 240, 380, 415, 440, 500, 550V\n�CE(IEC)\nDC DC 12, 20, 24, 48, 60, 80, 100, 110, 125, 200, 220, 250V �UL508",
+      "header": "2. C1 : 명판노출방법, C2 : 핸들노출방법",
+      "section_type": "운전",
+      "equipment": [
+        "연소가스처리"
+      ],
+      "company_id": "26",
+      "company_name": "연소가스처리설비",
+      "source_file": "기술 및 참고자료(CATALOGUE 등)",
+      "source_path": "D:\\기계도면\\기계도면\\26. 연소가스처리설비 (에스텍)\\준공도서-연소가스 처리설비(전기)\\16. 기술 및 참고자료(CATALOGUE 등)\\기술 및 참고자료(CATALOGUE 등).pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "950c5661cb6dbd89",
+      "char_count": 1434
+    },
+    {
+      "chunk_idx": 27,
+      "text": "550V\n�CE(IEC)\nDC DC 12, 20, 24, 48, 60, 80, 100, 110, 125, 200, 220, 250V �UL508 부속장치전개도\n가역전선세트, UW-22\n가역형접촉기결선용\n▶80쪽\n지연석방유닛, AD-9 서지유닛, US\n▶79쪽 코일단자에부착\n▶82쪽\n인터록유닛, UR\n가역형접촉기조립용\n▶80쪽\n보조접점, UA-1\n2극(1a1b)\n양측면부착용\n▶75쪽\n보조접점, UA-4\n4극(4a, 3a1b, 2a2b, 1a3b, 4b)\n상부부착용\n▶75쪽\n보조접점, UA-2\n2극(2a, 1a1b, 2b)\n상부부착용\n▶75쪽\n안전커버\n열동형과부하계전기 오동작방지용\nScrew 방식단자전용 ▶85쪽\n2소자, 3소자, 결상형, 지동형\n전자접촉기에직접연결\n▶89쪽",
+      "header": "2. C1 : 명판노출방법, C2 : 핸들노출방법",
+      "section_type": "일반",
+      "equipment": [
+        "연소가스처리"
+      ],
+      "company_id": "26",
+      "company_name": "연소가스처리설비",
+      "source_file": "기술 및 참고자료(CATALOGUE 등)",
+      "source_path": "D:\\기계도면\\기계도면\\26. 연소가스처리설비 (에스텍)\\준공도서-연소가스 처리설비(전기)\\16. 기술 및 참고자료(CATALOGUE 등)\\기술 및 참고자료(CATALOGUE 등).pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "3e2608b456d17ff0",
+      "char_count": 379
+    },
+    {
+      "chunk_idx": 28,
+      "text": "▶75쪽\n안전커버\n열동형과부하계전기 오동작방지용\nScrew 방식단자전용 ▶85쪽\n2소자, 3소자, 결상형, 지동형\n전자접촉기에직접연결\n▶89쪽 전전자자접접촉촉기기 (40AF)\n정격\n기본\n접점의구성: 주접점3극\n보조접점: 2a2b(표준)\n수명(AC3급) :1200만회(기계적), 220만회(전기적)\n조작전원: 교류(AC 50, 60Hz) 또는직류(DC)\n�4단자구조로전원부및부하단배선가능\n단자의구조: Screw 방식\n부착방식: 나사/DIN Rail(35mm) 겸용\n정격\n형명 MC-32a MC-40a\n구분\n단위 kW A kW A\n3상농형모터 AC3급 200/240V 7.5 32 11 40\n380/440V 15 32 18.5 40\n500/550V 18.5 28 22 32\n690V 18.5 20 22 23\nAC4급 200/240V 4.5 20 5.5 25\nMC-40a 380/440V 7.5 17 11 24\n저항/비유도성부하 AC1급 - 50 - 60\nDC1 2극직렬 24V - 32 - 55\n(L/R=1ms) 48V - 30 - 55\n저항/비유도성부하 110V - 25 - 40\n3극직렬 24V - 32 - 55\n48V - 32 - 55\n110V - 27 - 45\nDC2,4 2극직렬 24V - 25 - 30\n(L/R=15ms) 48V - 20 - 25\nDC 모터부하 110V - 15 - 20\n3극직렬 24V - 30 - 45\n48V - 30 - 40\n110V - 20 - 30\n2극직렬\n조합열동형과부하계전기 MT-32\n전선치수(Solid, stranded) AWG 12~8 10~6\n(the max. number of conducts : 2) mm2 2.5~10 4~16\n전선종류 65/75℃Cu-wire only\n3극직렬\n조작(코일)전압\n50Hz 24, 32, 42, 48, 80, 100, 110, 220, 230, 240, 380, 400, 500, 550V\n규격인증\nAC 60Hz 24, 48, 100, 110, 120, 200, 208, 220, 230, 240, 277, 380, 480, 600V\n�안전인증\n50/60Hz 24, 48, 100, 110, 120, 200, 220, 230, 240, 380, 415, 440, 500, 550V\n�CE(IEC)\nDC DC 12, 20, 24, 48, 60, 80, 100, 110, 125, 200, 220, 250V �UL508",
+      "header": "2. C1 : 명판노출방법, C2 : 핸들노출방법",
+      "section_type": "운전",
+      "equipment": [
+        "연소가스처리"
+      ],
+      "company_id": "26",
+      "company_name": "연소가스처리설비",
+      "source_file": "기술 및 참고자료(CATALOGUE 등)",
+      "source_path": "D:\\기계도면\\기계도면\\26. 연소가스처리설비 (에스텍)\\준공도서-연소가스 처리설비(전기)\\16. 기술 및 참고자료(CATALOGUE 등)\\기술 및 참고자료(CATALOGUE 등).pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "d726559e0ea80bb8",
+      "char_count": 1172
+    },
+    {
+      "chunk_idx": 29,
+      "text": "550V\n�CE(IEC)\nDC DC 12, 20, 24, 48, 60, 80, 100, 110, 125, 200, 220, 250V �UL508 부속장치전개도\n가역전선세트, UW-32\n가역형접촉기결선용\n▶80쪽\n지연석방유닛, AD-9 서지유닛, US\n▶79쪽 코일단자에부착\n▶82쪽\n인터록유닛, UR\n가역형접촉기조립용\n▶80쪽\n보조접점, UA-1\n2극(1a1b)\n양측면부착용\n▶75쪽\n보조접점, UA-4\n4극(4a, 3a1b, 2a2b, 1a3b, 4b)\n상부부착용\n▶75쪽\n보조접점, UA-2\n2극(2a, 1a1b, 2b)\n상부부착용\n▶75쪽\n안전커버\n오동작방지용\n▶85쪽\n열동형과부하계전기\nScrew 방식단자전용\n2소자, 3소자, 결상형, 지동형\n전자접촉기에직접연결\n▶89쪽",
+      "header": "2. C1 : 명판노출방법, C2 : 핸들노출방법",
+      "section_type": "일반",
+      "equipment": [
+        "연소가스처리"
+      ],
+      "company_id": "26",
+      "company_name": "연소가스처리설비",
+      "source_file": "기술 및 참고자료(CATALOGUE 등)",
+      "source_path": "D:\\기계도면\\기계도면\\26. 연소가스처리설비 (에스텍)\\준공도서-연소가스 처리설비(전기)\\16. 기술 및 참고자료(CATALOGUE 등)\\기술 및 참고자료(CATALOGUE 등).pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "3e2608b456d17ff0",
+      "char_count": 379
+    },
+    {
+      "chunk_idx": 30,
+      "text": "▶75쪽\n안전커버\n오동작방지용\n▶85쪽\n열동형과부하계전기\nScrew 방식단자전용\n2소자, 3소자, 결상형, 지동형\n전자접촉기에직접연결\n▶89쪽 전전자자접접촉촉기기 (65AF)\n정격\n기본\n접점의구성: 주접점3극\n보조접점: 2a2b(표준)\n수명(AC3급) : 1200만회(기계적), 200만회(전기적)\n조작전원: 교류(AC 50, 60Hz) 또는직류(DC)\n�4단자구조로전원부및부하단배선가능\n단자의구조: Screw 방식\n부착방식: 나사/DIN Rail(35mm) 겸용\n정격\n형명 MC-50a MC-65a\n구분\n단위 kW A kW A\n3상농형모터 AC3급 200/240V 15 55 18.5 65\n380/440V 22 50 30 65\n500/550V 30 43 33 60\n690V 30 28 33 35\nAC4급 200/240V 7.5 35 11 50\n380/440V 15 32 22 47\nMC-65a 저항/비유도성부하 AC1급 - 70 - 100\nDC1 2극직렬 24V - 70 - 90\n(L/R=1ms) 48V - 70 - 90\n저항/비유도성부하 110V - 50 - 75\n3극직렬 24V - 70 - 90\n48V - 70 - 90\n110V - 60 - 80\nDC2,4 2극직렬 24V - 45 - 55\n(L/R=15ms) 48V - 40 - 45\nDC 모터부하 110V - 25 - 38\n3극직렬 24V - 55 - 75\n48V - 50 - 65\n110V - 35 - 55\n2극직렬\n조합열동형과부하계전기 MT-63\n전선치수(Solid, stranded) AWG 10~4 8~3\n(the max. number of conducts : 2) mm2 6~25 10~35\n전선종류 65/75℃Cu-wire only\n3극직렬\n조작(코일)전압\n50Hz 24, 32, 42, 48, 80, 100, 110, 220, 230, 240, 380, 400, 500, 550V\n규격인증\nAC 60Hz 24, 48, 100, 110, 120, 200, 208, 220, 230, 240, 277, 380, 480, 600V\n�안전인증\n50/60Hz 24, 48, 100, 110, 120, 200, 220, 230, 240, 380, 415, 440, 500, 550V\n�CE(IEC)\nDC DC 12, 20, 24, 48, 60, 80, 100, 110, 125, 200, 220, 250V �UL508",
+      "header": "2. C1 : 명판노출방법, C2 : 핸들노출방법",
+      "section_type": "운전",
+      "equipment": [
+        "연소가스처리"
+      ],
+      "company_id": "26",
+      "company_name": "연소가스처리설비",
+      "source_file": "기술 및 참고자료(CATALOGUE 등)",
+      "source_path": "D:\\기계도면\\기계도면\\26. 연소가스처리설비 (에스텍)\\준공도서-연소가스 처리설비(전기)\\16. 기술 및 참고자료(CATALOGUE 등)\\기술 및 참고자료(CATALOGUE 등).pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "250665013a13b908",
+      "char_count": 1165
+    },
+    {
+      "chunk_idx": 31,
+      "text": "550V\n�CE(IEC)\nDC DC 12, 20, 24, 48, 60, 80, 100, 110, 125, 200, 220, 250V �UL508 부속장치전개도\n가역전선세트, UW-63\n가역형접촉기결선용\n▶80쪽\n지연석방유닛, AD-50 서지유닛, US\n▶79쪽 코일단자에부착\n▶82쪽\n인터록유닛, UR\n가역형접촉기조립용\n▶80쪽\n보조접점, UA-1\n2극(1a1b)\n양측면부착용\n▶75쪽\n보조접점, UA-4\n4극(4a, 3a1b, 2a2b, 1a3b, 4b)\n상부부착용\n▶75쪽\n보조접점, UA-2\n2극(2a, 1a1b, 2b)\n상부부착용\n▶75쪽\n안전커버\n오동작방지용\n▶85쪽\n열동형과부하계전기\nScrew 방식단자전용\n2소자, 3소자, 결상형, 지동형\n전자접촉기에직접연결\n▶89쪽 Meta-MEC EMPR (DMP Series)\n표준기종일람표\n분리가가능한\nDisplay부\n분리가가능한\n터미널블록 나사또는DIN 레일\n설치가능구조",
+      "header": "2. C1 : 명판노출방법, C2 : 핸들노출방법",
+      "section_type": "일반",
+      "equipment": [
+        "연소가스처리"
+      ],
+      "company_id": "26",
+      "company_name": "연소가스처리설비",
+      "source_file": "기술 및 참고자료(CATALOGUE 등)",
+      "source_path": "D:\\기계도면\\기계도면\\26. 연소가스처리설비 (에스텍)\\준공도서-연소가스 처리설비(전기)\\16. 기술 및 참고자료(CATALOGUE 등)\\기술 및 참고자료(CATALOGUE 등).pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "3e2608b456d17ff0",
+      "char_count": 462
+    },
+    {
+      "chunk_idx": 32,
+      "text": "eta-MEC EMPR (DMP Series)\n표준기종일람표\n분리가가능한\nDisplay부\n분리가가능한\n터미널블록 나사또는DIN 레일\n설치가능구조",
+      "header": "DMP",
+      "section_type": "일반",
+      "equipment": [
+        "연소가스처리"
+      ],
+      "company_id": "26",
+      "company_name": "연소가스처리설비",
+      "source_file": "기술 및 참고자료(CATALOGUE 등)",
+      "source_path": "D:\\기계도면\\기계도면\\26. 연소가스처리설비 (에스텍)\\준공도서-연소가스 처리설비(전기)\\16. 기술 및 참고자료(CATALOGUE 등)\\기술 및 참고자료(CATALOGUE 등).pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "546bc171b303b472",
+      "char_count": 80
+    },
+    {
+      "chunk_idx": 33,
+      "text": "eta-MEC EMPR (DMP Series)\n표준기종일람표\n분리가가능한\nDisplay부\n분리가가능한\n터미널블록 나사또는DIN 레일\n설치가능구조 DMP\nEM정정P격격R전전류류 접접속속방방식식 형형명명 과과전전류류 결결상상 구구속속 불불평평형형 역역상상 부부족족전전류류 지지락락 순순시시단단락락 비비고고\n0.5~6A 단자형 DMP06-S, Sa ● ● ● ● ● ● - -\n(Screw) DMP06-SZ, SZa ● ● ● ● ● ● ● -\nDMP06-SI ● ● ● ● ● ● - ●\n관통형 DMP06-T, Ta ● ● ● ● ● ● - -\n(Tunnel) DMP06-TZ, TZa ● ● ● ● ● ● ● -\nDMP06-TI ● ● ● ● ● ● - ● 반한시/정한시선택기능\n3~36A 단자형 DMP36-S, Sa ● ● ● ● ● ● - -\n(Screw) DMP36-SZ, SZa ● ● ● ● ● ● ● -\nDMP36-SI ● ● ● ● ● ● - ●\n관통형 DMP36-T, Ta ● ● ● ● ● ● - -\n(Tunnel) DMP36-TZ, TZa ● ● ● ● ● ● ● -\nDMP36-TI ● ● ● ● ● ● - ●\n5~60A 단자형 DMP60-S, Sa ● ● ● ● ● ● - -\n(Screw) DMP60-SZ, SZa ● ● ● ● ● ● ● -\nDMP60-SI ● ● ● ● ● ● - ●\n관통형 DMP60-T, Ta ● ● ● ● ● ● - -\n(Tunnel) DMP60-TZ, TZa ● ● ● ● ● ● ● -\nDMP60-TI ● ● ● ● ● ● - ●\nDMP 형명체계\nDMP 06 S Z a 220 보조접점\n전전류류조조정정범범위위 결결선선방방법법 OOPPTTIIOONN 구구분분 조조작작전전압압 AAuuxx.. ccoonnttaaccttoorr\n06 0.5~6A 단자형 -- 표준모델 - 기존모델 220 AC220V 1a1b\nS\n36 3~36A (Screw) ZZ 지락보호 운전시간 110 AC110V 2a\na\n60 5~60A 관통형 II 순시단락보호 관련기능 2b\nT\n(Tunnel) 주) a-type은 2a1b\nB2-38, 40쪽\n주1) 같은모델이라도\n접점사양이다르니\n주문시확인바랍니다.\n주2) 전원인가시\n접접상태임\nB2-32",
+      "header": "DMP",
+      "section_type": "운전",
+      "equipment": [
+        "연소가스처리"
+      ],
+      "company_id": "26",
+      "company_name": "연소가스처리설비",
+      "source_file": "기술 및 참고자료(CATALOGUE 등)",
+      "source_path": "D:\\기계도면\\기계도면\\26. 연소가스처리설비 (에스텍)\\준공도서-연소가스 처리설비(전기)\\16. 기술 및 참고자료(CATALOGUE 등)\\기술 및 참고자료(CATALOGUE 등).pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "b51af45c73ad4991",
+      "char_count": 1096
+    },
+    {
+      "chunk_idx": 34,
+      "text": "주) a-type은 2a1b\nB2-38, 40쪽\n주1) 같은모델이라도\n접점사양이다르니\n주문시확인바랍니다.\n주2) 전원인가시\n접접상태임\nB2-32 특징\nMCU (Microprocessor Control Unit)를사용한종합디지털모터보호계전기\n실시간데이터처리(Real Time Processing) 및고정밀성(High Precision) 실현\n다양한보호기능\n보보호호기기능능 DDMMPP��--SS//SSaa DDMMPP��--SSZZ//SSZZaa DDMMPP��--SSII DDMMPP��--TT//TTaa DDMMPP��--TTZZ//TTZZaa DDMMPP��--TTII\n결선방식 단자형(Screw) 관통형(Tunnel)\n과전류 � � � � � �\n부족전류 � � � � � �\n구속 Stall � � � � � �\nLock � � � � � �\n결상 � � � � � �\n역상 � � � � � �\n불평형 � � � � � �\n지락 � �\n순시단락 � �\n일체형/분리형의일원화로고객사용편리\nDisplay부를 분리하여 패널 전면부에 부착함으로서 각종 고장원인/고장치/전류값을 확인할 수 있으며, Unit를 인출하지 않고서도 전류/\n동작시간 및 각종 기능들을 간단한 버튼조작으로 설정할 수 있습니다. 또한 일체형으로 Motor Control Center내부에 설치할 수도 있어\n고객이사용하기에매우편리합니다.\n주) LS산전의MCC Unit-SOLUTION 2000\n단자형/관통형의공용화로다양한설치환경적용\n단자대의탈착이가능하여다양한설치환경에\n적용할수있습니다.\n취득규격\nCE UL & CSA Good Design 안전마크\nB2-33 Meta-MEC EMPR (DMP Series)\n특징\n각종고장원인및고장치표시\n디지털표시창으로각종고장원인및고장전류치를\n표시할수있어보수유지와신속한사고대응이가능합니다.\n3상디지털전류계기능(Digital Ampere-Meter)\n간단한버튼조작으로3상전류치의표시가가능하여별도의전류계가필요없습니다.\n모터운전중부하율표시\nR R R 모터의운전중Bar-Graph로",
+      "header": "DMP",
+      "section_type": "운전",
+      "equipment": [
+        "연소가스처리"
+      ],
+      "company_id": "26",
+      "company_name": "연소가스처리설비",
+      "source_file": "기술 및 참고자료(CATALOGUE 등)",
+      "source_path": "D:\\기계도면\\기계도면\\26. 연소가스처리설비 (에스텍)\\준공도서-연소가스 처리설비(전기)\\16. 기술 및 참고자료(CATALOGUE 등)\\기술 및 참고자료(CATALOGUE 등).pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "43af2d17a69c4153",
+      "char_count": 994
+    },
+    {
+      "chunk_idx": 35,
+      "text": "re-Meter)\n간단한버튼조작으로3상전류치의표시가가능하여별도의전류계가필요없습니다.\n모터운전중부하율표시\nR R R 모터의운전중Bar-Graph로 S S S\n부하율을표시할수있어모터의",
+      "header": "S S S",
+      "section_type": "운전",
+      "equipment": [
+        "연소가스처리"
+      ],
+      "company_id": "26",
+      "company_name": "연소가스처리설비",
+      "source_file": "기술 및 참고자료(CATALOGUE 등)",
+      "source_path": "D:\\기계도면\\기계도면\\26. 연소가스처리설비 (에스텍)\\준공도서-연소가스 처리설비(전기)\\16. 기술 및 참고자료(CATALOGUE 등)\\기술 및 참고자료(CATALOGUE 등).pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "7ee2b338152768f2",
+      "char_count": 100
+    },
+    {
+      "chunk_idx": 36,
+      "text": "T T T\n운전상태확인이용이합니다.\nR상전류값표시 S상전류값표시 T상전류값표시\n반한시/정한시선택가능\n고객이필요에따라반한시특성과정한시특성을직접선택가능하도록하여고객의편리를추구하였습니다.\n<반한시특성곡선> <정한시특성곡선>\n인버터회로에사용가능\n고조파Noise에대한특성이우수하여인버터제어회로2차측에적용이가능합니다.\n사용가능주파수범위는20~200Hz이며그외의사양은문의하십시오. (단, 지락모델제외)\n미려한외관\n뛰어난디자인으로세련되고고급화된제품이미지를창출합니다.\nFault 값저장기능(a-type)\n정전후복전시에도최종Trip 동작원인이확인가능합니다. (FUNC+SEL 조합Key)\n총운전시간및운전시간설정가능(a-type)\n누적Timer 기능(a-type) 설정한운전시간경과시경보를출력하여모터베어링교체및\n주유주기등을확인할수있습니다.\nB2-34",
+      "header": "T T T",
+      "section_type": "비상",
+      "equipment": [
+        "연소가스처리"
+      ],
+      "company_id": "26",
+      "company_name": "연소가스처리설비",
+      "source_file": "기술 및 참고자료(CATALOGUE 등)",
+      "source_path": "D:\\기계도면\\기계도면\\26. 연소가스처리설비 (에스텍)\\준공도서-연소가스 처리설비(전기)\\16. 기술 및 참고자료(CATALOGUE 등)\\기술 및 참고자료(CATALOGUE 등).pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "84e0e1ad02a2fd9d",
+      "char_count": 408
+    },
+    {
+      "chunk_idx": 37,
+      "text": "간설정가능(a-type)\n누적Timer 기능(a-type) 설정한운전시간경과시경보를출력하여모터베어링교체및\n주유주기등을확인할수있습니다.\nB2-34 디지털모터보호계전기, DMP\n관통형DMP\n형형명명 표표준준형형 지지락락보보호호용용 순순시시단단락락보보호호용용\n기기능능 DDMMPP��--TT,, TTaa DDMMPP��--TTZZ,, TTZZaa DDMMPP��--TTII\n과전류(OL)\n결 상\n불평형\n역 상\n보\n호 구 속 Stall\n기 Lock\n능 부족전류\n지락(GR) - -\n순시단락(SR) - -\n경보(AL)설정 - -\n운전시간확인/설정기능 (DMP�-Ta) (DMP�-TZa) -\nFault값저장기능 (DMP�-Ta) (DMP�-TZa) -\n보조접점 OL : 2SPST OL/GR : 2SPST OL : 2SPST\nAL : 1SPST - SR : 1SPST\n선정및주문형식\n연연결결방방식식 보보호호기기능능 형형명명 전전류류조조정정범범위위 주주문문형형식식\n관통형 표준형 0.5 - 6A DMP06-T\nDMP�-T\n3` - 36A` DMP36-T\n기본기능\n5 - 60A DMP60-T\n0.5 - 6A DMP06-Ta\nDMP�-Ta\n3` - 36A` DMP36-Ta\n운전시간확인/설정\n5 - 60A DMP60-Ta\n지락보호용 0.5 - 6A DMP06-TZ\nDMP�-TZ\n3` - 36A` DMP36-TZ\n기본기능\n5 - 60A DMP60-TZ\n0.5 - 6A DMP06-TZa\nDMP�-TZa\n외부CT(변류기) 이용시60A이상의\n3` - 36A` DMP36-TZa\n큰전류에도적용이가능합니다. 운전시간확인/설정\n5 - 60A DMP60-TZa\n순시단락보호용 0.5 - 6A DMP06-TI\nDMP�-TI\n3` - 36A` DMP36-Tl\n기본기능\n5 - 60A DMP60-TI\n기본사양\n접속방식 관통형\n동작시간특성 반한시/정한시설정기능\n정격전류 0.5~6/3~36/5~60A\n표시(Display) 3상전류치표시- 디지털(7 segment)\n실부하전류표시- Bar graph\n트립원인및동작치- 7 segment\n내장된CT(변류기) 수 3개(각상)\n조작전원 AC 110/220V 별도\n복귀(리셋)방식 수동즉시복귀\nNVR 무전압석방기능\n설치/취부방식 표시창의 분리설치가능\n35mm DIN rail / 나사설치\nB2-35",
+      "header": "T T T",
+      "section_type": "비상",
+      "equipment": [
+        "연소가스처리"
+      ],
+      "company_id": "26",
+      "company_name": "연소가스처리설비",
+      "source_file": "기술 및 참고자료(CATALOGUE 등)",
+      "source_path": "D:\\기계도면\\기계도면\\26. 연소가스처리설비 (에스텍)\\준공도서-연소가스 처리설비(전기)\\16. 기술 및 참고자료(CATALOGUE 등)\\기술 및 참고자료(CATALOGUE 등).pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "0c1611179d0e47c6",
+      "char_count": 1124
+    },
+    {
+      "chunk_idx": 38,
+      "text": "0V 별도\n복귀(리셋)방식 수동즉시복귀\nNVR 무전압석방기능\n설치/취부방식 표시창의 분리설치가능\n35mm DIN rail / 나사설치\nB2-35 Meta-MEC EMPR (DMP Series)\n디지털모터보호계전기, DMP\n단자형DMP\n형형명명 표표준준형형 지지락락보보호호용용 순순시시단단락락보보호호용용\n기기능능 DDMMPP��--SS,, SSaa DDMMPP��--SSZZ,, SSZZaa DDMMPP��--SSII\n과전류(OL)\n결 상\n불평형\n역 상\n보\n호 구 속 Stall\n기 Lock\n능 부족전류\n지락(GR) - -\n순시단락(SR) - -\n경보(AL)설정 - -\n운전시간확인/설정기능 (DMP�-Sa) (DMP�-SZa) -\nFault값저장기능 (DMP�-Sa) (DMP�-SZa) -\n보조접점 OL : 2SPST OL/GR : 2SPST OL : 2SPST\nAL : 1SPST - SR : 1SPST\n선정및주문형식\n연연결결방방식식 보보호호기기능능 형형명명 전전류류조조정정범범위위 주주문문형형식식\n단자형 표준형 0.5 - 6A DMP06-S\nDMP�-S\n3 - 36A DMP36-S\n기본기능\n5 - 60A DMP60-S\n0.5 - 6A DMP06-Sa\nDMP�-Sa\n3 - 36A DMP36-Sa\n운전시간확인/설정\n5 - 60A DMP60-Sa\n지락보호용 0.5 - 6A DMP06-SZ\nDMP�-SZ\n3 - 36A DMP36-SZ\n기본기능\n5 - 60A DMP60-SZ\n0.5 - 6A DMP06-SZa\nDMP�-SZa\n3 - 36A DMP36-SZa\n운전시간확인/설정\n분리가가능한터미널블록 5 - 60A DMP60-SZa\n순시단락보호용 0.5 - 6A DMP06-SI\nDMP�-SI\n3 - 36A DMP36-SI\n기본기능\n5 - 60A DMP60-SI\n기타정격\n허용오차 전류: ±5%\n시간: ±5% (또는±0.5초)\n주파수 60Hz (50Hz)\n보조접점용량 3A/250VAC 저항부하시\n절연저항 최소100㏁ /500VDC\n뇌임펄스전압 1.2×50㎲ 6kV표준파형인가(IEC1000-4-5)\nFast Transient Burst 2kV/5min (IEC1000-4-4)\n사용환경 사용온도: -25~70℃\n보관온도: -30~80℃\n상대습도: 30~90%RH (결빙이없을것)\n경보(AL)설정(표준형) 설정전류의60~110% 가변\nZCT입력(지락보호용) 200mA/100mV (전용ZCT 별매) ▶B2-68 쪽\n지락감도전류(지락보호용) 100~2500mA (7단계설정) ▶B2-48 쪽\n분리설치용Cable Cable길이: 1m /1.5m /2m /3m (별매품)\nB2-36",
+      "header": "T T T",
+      "section_type": "운전",
+      "equipment": [
+        "재열기"
+      ],
+      "company_id": "26",
+      "company_name": "연소가스처리설비",
+      "source_file": "기술 및 참고자료(CATALOGUE 등)",
+      "source_path": "D:\\기계도면\\기계도면\\26. 연소가스처리설비 (에스텍)\\준공도서-연소가스 처리설비(전기)\\16. 기술 및 참고자료(CATALOGUE 등)\\기술 및 참고자료(CATALOGUE 등).pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "4013ed15c5ff9394",
+      "char_count": 1273
+    },
+    {
+      "chunk_idx": 39,
+      "text": "호용) 100~2500mA (7단계설정) ▶B2-48 쪽\n분리설치용Cable Cable길이: 1m /1.5m /2m /3m (별매품)\nB2-36 DMP-S/T (표준형)\n과전류/부족전류/결상/역상/불평형/구속(단락)/경보\n�1모델로일체형과분리형사용가능\n- 분리형: 표시창패널매입\n�3상전류계기능: Display 버튼으로3상전류및설정치확인\n�반한시/정한시선택가능\n�조작이편리: 조작버튼과노브로모든기능을설정\n�트립원인및동작치가표시창에표시됨\n�경보설정: %로표시되며설정전류에따라연동됨\n- 부하율측정, 운전표시, 고장예고(Pre-Alarm), 트립표시\n�무전압석방기능: (No Voltage Release)기본\n보호기능\n과전류 설정된Time에따라동작 반한시/정한시선택가능\n결상 3초이내동작 전류의상간편차70% 이상\n불평형 5초이내동작 전류의상간편차50% 이상\n역상 0.1초이내동작\n구속 Stall 5초이내동작 정격전류의180% 이상\n(단락) Lock 0.5초이내동작 정격전류의200~900% 설정\n부족전류 3초이내동작 정격전류의30~70% 설정\n주) 구속동작: 정한시의경우설정된D-Time후에동작함\n기능설정\nFFUUNNCC SSEELL 기기능능설설명명",
+      "header": "T T T",
+      "section_type": "비상",
+      "equipment": [
+        "연소가스처리"
+      ],
+      "company_id": "26",
+      "company_name": "연소가스처리설비",
+      "source_file": "기술 및 참고자료(CATALOGUE 등)",
+      "source_path": "D:\\기계도면\\기계도면\\26. 연소가스처리설비 (에스텍)\\준공도서-연소가스 처리설비(전기)\\16. 기술 및 참고자료(CATALOGUE 등)\\기술 및 참고자료(CATALOGUE 등).pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "9540e0247baa13e2",
+      "char_count": 584
+    },
+    {
+      "chunk_idx": 40,
+      "text": "초이내동작 정격전류의30~70% 설정\n주) 구속동작: 정한시의경우설정된D-Time후에동작함\n기능설정\nFFUUNNCC SSEELL 기기능능설설명명 9. P.F on/oFF 결상및불평형보호기능선택\nSto Sto 저장(Store)\n주) 는 에서 (정한시)를선택했을경우만표시됨\n정격사양\n모모델델 DDMMPP��--SS DDMMPP��--TT\nTYPE 결선방식 단자형(Screw) 관통형(Tunnel)\n동작시간특성 반한시/정한시선택\n경보기능(Alert) 설정전류의60~110% 가변\n전류조정범위(A)DMP06-� 0.5~6\nDMP36-� 3~36\nDMP60-� 5~60\n시간설정(초) 정한시 기동지연(D-T) 0~60초\n동작지연(O-T) 0~30초\n반한시 0~60초\n복귀시간(R-T) 수동즉시복귀/Reset 버튼을누르거나조작전원차단\n입력사양 조작전압 AC 110/220V 별도(±10%)\n주파수 50Hz/60Hz\n보조접점 OL 2-SPST (95~98) 3A/250VAC 저항부하\nAL SPST (07-08) 3A/250VAC 저항부하\n표시기능 7-Segment 3상전류치표시, 트립원인표시\nBar-Graph 실부하전류60~110%표시\n설치방식 35mm DIN-Rail/Panel\nB2-37",
+      "header": "9. P.F on/oFF 결상및불평형보호기능선택",
+      "section_type": "시동",
+      "equipment": [
+        "연소가스처리"
+      ],
+      "company_id": "26",
+      "company_name": "연소가스처리설비",
+      "source_file": "기술 및 참고자료(CATALOGUE 등)",
+      "source_path": "D:\\기계도면\\기계도면\\26. 연소가스처리설비 (에스텍)\\준공도서-연소가스 처리설비(전기)\\16. 기술 및 참고자료(CATALOGUE 등)\\기술 및 참고자료(CATALOGUE 등).pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "5438ba80c35fe22b",
+      "char_count": 605
+    },
+    {
+      "chunk_idx": 41,
+      "text": "-Segment 3상전류치표시, 트립원인표시\nBar-Graph 실부하전류60~110%표시\n설치방식 35mm DIN-Rail/Panel\nB2-37 Meta-MEC EMPR (DMP Series)\nDMP-Sa/Ta(표준형)\n과전류/부족전류/결상/역상/불평형/구속(단락)/경보\n�MCU (Microprocessor Control Unit) 내장 �트립원인및동작치가표시창에표시됨\n�1개모델로일체형과분리형사용가능 �무전압석방기능: NVR (No Voltage Trip)기능기본\n- 분리형: 표시창패널매입 �총운전시간및운전시간설정가능누적Timer 기능\n�3상전류순환표시: Digital Ammeter 기능 - 설정한운전시간경과시경보출력\n�반한시/정한시선택가능 - 모터베어링교체및주유주기확인등\n�조작이편리: 조작버튼과노브로모든기능을설정및확인 �Fault 값저장기능\n�경보설정: %로표시되며설정전류에따라연동됨 - 최종트립원인저장및확인가능\n- 부하율측정, 운전표시, 고장예고(Pre-Alarm), 트립표시\n보호기능\n과전류 설정된Time에따라동작 반한시/정한시선택가능\n결상 3초이내동작 전류의상간편차70% 이상\n불평형 5초이내동작 전류의상간편차50% 이상\n역상 0.1초이내동작\n구속 Stall 5초이내동작 정격전류의180% 이상\n(단락) Lock 0.5초이내동작 정격전류의200~900% 설정\n부족전류 3초이내동작 정격전류의30~70% 설정\n주) 구속동작:정한시의경우설정된D-Time후에동작함\n기능설정\nFFUUNNCC SSEELL 기기능능설설명명",
+      "header": "9. P.F on/oFF 결상및불평형보호기능선택",
+      "section_type": "비상",
+      "equipment": [
+        "연소가스처리"
+      ],
+      "company_id": "26",
+      "company_name": "연소가스처리설비",
+      "source_file": "기술 및 참고자료(CATALOGUE 등)",
+      "source_path": "D:\\기계도면\\기계도면\\26. 연소가스처리설비 (에스텍)\\준공도서-연소가스 처리설비(전기)\\16. 기술 및 참고자료(CATALOGUE 등)\\기술 및 참고자료(CATALOGUE 등).pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "6e6f6e887924f773",
+      "char_count": 743
+    },
+    {
+      "chunk_idx": 42,
+      "text": "3초이내동작 정격전류의30~70% 설정\n주) 구속동작:정한시의경우설정된D-Time후에동작함\n기능설정\nFFUUNNCC SSEELL 기기능능설설명명 9. P.F on/oFF 결상및불평형보호기능선택\nb. StA 0~120 운전시간설정(개월)\nC. StH 10~730 운전시간설정(시간)\nd. tAH 개월, 시간 총운전시간확인\nE. rAH 개월, 시간 운전시간확인\nSto Sto 저장(Store)\n주) 는 에서 (정한시)를선택했을경우만표시됨\n정격사양\n모모델델 DDMMPP��--SSaa DDMMPP��--TTaa\nTYPE 결선방식 단자형(Screw) 관통형(Tunnel)\n동작시간특성 반한시/정한시선택\n경보기능(Alert) 설정전류의60~110% 가변\n전류조정범위(A)DMP06-� 0.5~6\nDMP36-� 3`~36\nDMP60-� 5~60\n시간설정(초) 정한시 기동지연(D-T) 0~60초\n동작지연(O-T) 0~30초\n반한시 0~60초\n복귀시간(R-T) 수동즉시복귀/Reset 버튼을누르거나조작전원차단\n입력사양 조작전압 AC 110/220V 별도(±10%)\n주파수 50Hz/60Hz\n보조접점 OL 2-SPST (95~98) 3A/250VAC 저항부하\nAL SPST (07-08) 3A/250VAC 저항부하\n표시기능 7-Segment 3상전류치표시, 트립원인표시\nBar-Graph 실부하전류60~110%표시\n설치방식 35mm DIN-Rail/Panel\nB2-38",
+      "header": "9. P.F on/oFF 결상및불평형보호기능선택",
+      "section_type": "시동",
+      "equipment": [
+        "연소가스처리"
+      ],
+      "company_id": "26",
+      "company_name": "연소가스처리설비",
+      "source_file": "기술 및 참고자료(CATALOGUE 등)",
+      "source_path": "D:\\기계도면\\기계도면\\26. 연소가스처리설비 (에스텍)\\준공도서-연소가스 처리설비(전기)\\16. 기술 및 참고자료(CATALOGUE 등)\\기술 및 참고자료(CATALOGUE 등).pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "104c210d75a3fce4",
+      "char_count": 702
+    },
+    {
+      "chunk_idx": 43,
+      "text": "-Segment 3상전류치표시, 트립원인표시\nBar-Graph 실부하전류60~110%표시\n설치방식 35mm DIN-Rail/Panel\nB2-38 DMP-SZ/TZ (지락보호용)\n과전류/부족전류/결상/역상/불평형/구속(단락)/지락보호\n�1모델로일체형과분리형사용가능\n- 분리형: 표시창패널매입\n�3상전류계기능: Display 버튼으로3상전류및설정치확인\n�반한시/정한시선택가능\n�조작이편리: 조작버튼과노브로모든기능을설정\n�트립원인및동작치가표시창에표시됨\n�지락보호기능추가\n�다양한보조접점으로적용이편리함(2a/2b/1a1b type)\n보호기능\n과전류 설정된Time에따라동작 반한시/정한시선택가능\n결상 3초이내동작 전류의상간편차70% 이상\n불평형 5초이내동작 전류의상간편차50% 이상\n역상 0.1초이내동작\n구속 Stall 5초이내동작 정격전류의180% 이상\n(단락) Lock 0.5초이내동작 정격전류의200~900% 설정\n부족전류 3초이내동작 정격전류의30~70% 설정\n지락 0.05~1초선택 감도전류100~2500mA 설정(DIP s/w)\n주) 구속동작: 정한시의경우설정된D-Time후에동작함\n기능설정\nFFUUNNCC SSEELL 기기능능설설명명",
+      "header": "9. P.F on/oFF 결상및불평형보호기능선택",
+      "section_type": "비상",
+      "equipment": [
+        "연소가스처리"
+      ],
+      "company_id": "26",
+      "company_name": "연소가스처리설비",
+      "source_file": "기술 및 참고자료(CATALOGUE 등)",
+      "source_path": "D:\\기계도면\\기계도면\\26. 연소가스처리설비 (에스텍)\\준공도서-연소가스 처리설비(전기)\\16. 기술 및 참고자료(CATALOGUE 등)\\기술 및 참고자료(CATALOGUE 등).pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "08ebfcbe5a403101",
+      "char_count": 580
+    },
+    {
+      "chunk_idx": 44,
+      "text": "0~2500mA 설정(DIP s/w)\n주) 구속동작: 정한시의경우설정된D-Time후에동작함\n기능설정\nFFUUNNCC SSEELL 기기능능설설명명 9. P.F on/oFF 결상및불평형보호기능선택\nSto Sto 저장(Store)\n주1) 는 에서 (정한시)를선택했을경우만표시됨\n주2) 지락감도전류선택: DIP S/W (100~2500mA)→B2-48 쪽\n● 정격사양\n모모델델 DDMMPP��--SSZZ DDMMPP��--TTZZ\nTYPE 결선방식 단자형(Screw) 관통형(Tunnel)\n동작시간특성 반한시/정한시선택\n전류조정범위(A) DMP06-� 0.5~6\nDMP36-� 3~36\nDMP60-� 5~60\n시간설정(초) 정한시 기동지연(D-T) 0~60초\n동작지연(O-T) 0~30초\n반한시 0~60초\n복귀시간(R-T) 수동즉시복귀/Reset 버튼을누르거나조작전원차단\n입력사양 조작전압 AC 110/220V 별도(±10%)\n주파수 50Hz/60Hz\nZCT입력(07-08) 200mA / 100mV(전용ZCT)〔 30∅ , 50∅ , 65∅ , 80∅ 〕\n보조접점 OL, GR 2-SPST (95~98) 3A/250VAC 저항부하\n(2a, 2b, 1a1b)\n표시기능 7-Segment 3상전류치표시, 트립원인표시\nBar-Graph 실부하전류60~110%표시\n설치방식 35mm DIN-Rail / Panel\nB2-39",
+      "header": "9. P.F on/oFF 결상및불평형보호기능선택",
+      "section_type": "시동",
+      "equipment": [
+        "연소가스처리"
+      ],
+      "company_id": "26",
+      "company_name": "연소가스처리설비",
+      "source_file": "기술 및 참고자료(CATALOGUE 등)",
+      "source_path": "D:\\기계도면\\기계도면\\26. 연소가스처리설비 (에스텍)\\준공도서-연소가스 처리설비(전기)\\16. 기술 및 참고자료(CATALOGUE 등)\\기술 및 참고자료(CATALOGUE 등).pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "9f3b36d3d95f0989",
+      "char_count": 677
+    },
+    {
+      "chunk_idx": 45,
+      "text": "egment 3상전류치표시, 트립원인표시\nBar-Graph 실부하전류60~110%표시\n설치방식 35mm DIN-Rail / Panel\nB2-39 Meta-MEC EMPR (DMP Series)\nDMP-SZa/TZa(지락보호용)\n과전류/부족전류/결상/역상/불평형/구속(단락)/지락보호\n�MCU (Micro Controller Unit) 내장 �총운전시간및운전시간설정가능누적Timer 기능\n�1개모델로일체형과분리형사용가능 - 설정한운전시간경과시경보출력\n- 분리형: 표시창패널매입 - 모터베어링교체및주유주기확인등\n�3상전류순환표시: Digital Ammeter 기능 �Fault 값저장기능\n�반한시/정한시선택가능 - 최종트립원인저장및확인가능\n�조작이편리: 조작버튼과노브로모든기능을설정및확인 �다양한보조접점으로적용이편리함(2a / 1a1b type)\n�트립원인및동작치가표시창에표시됨 �지락보호기능추가\n�무전압석방기능: NVR (No Voltage Trip)기능기본\n보호기능\n과전류 설정된Time에따라동작 반한시/정한시선택가능\n결상 3초이내동작 전류의상간편차70% 이상\n불평형 5초이내동작 전류의상간편차50% 이상\n역상 0.1초이내동작\n구속 Stall 5초이내동작 정격전류의180% 이상\n(단락) Lock 0.5초이내동작 정격전류의200~900% 설정\n부족전류 3초이내동작 정격전류의30~70% 설정\n지락 0.05~1초선택 감도전류100~2500mA 설정(DIP s/w)\n주) 구속동작:정한시의경우설정된D-Time후에동작함\n기능설정\nFFUUNNCC SSEELL 기기능능설설명명",
+      "header": "9. P.F on/oFF 결상및불평형보호기능선택",
+      "section_type": "비상",
+      "equipment": [
+        "연소가스처리"
+      ],
+      "company_id": "26",
+      "company_name": "연소가스처리설비",
+      "source_file": "기술 및 참고자료(CATALOGUE 등)",
+      "source_path": "D:\\기계도면\\기계도면\\26. 연소가스처리설비 (에스텍)\\준공도서-연소가스 처리설비(전기)\\16. 기술 및 참고자료(CATALOGUE 등)\\기술 및 참고자료(CATALOGUE 등).pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "6af7bd10f691a9c3",
+      "char_count": 765
+    },
+    {
+      "chunk_idx": 46,
+      "text": "00~2500mA 설정(DIP s/w)\n주) 구속동작:정한시의경우설정된D-Time후에동작함\n기능설정\nFFUUNNCC SSEELL 기기능능설설명명 9. P.F on/oFF 결상및불평형보호기능선택\nA. gFd oFF/on 기동시지락지연기능\nb. StA 0~120 운전시간설정(개월)\nC. StH 10~730 운전시간설정(시간)\nd. tAH 개월, 시간 총운전시간확인\nE. rAH 개월, 시간 운전시간확인\nSto Sto 저장(Store)\n주1) 는 에서 (정한시)를선택했을경우만표시됨\n주2) 지락감도전류선택: DIP S/W (100~2500mA)\n정격사양\n모모델델 DDMMPP��--SSZZaa DDMMPP��--TTZZaa\nTYPE 결선방식 단자형(Screw) 관통형(Tunnel)\n동작시간특성 반한시/정한시선택\n전류조정범위(A)DMP06-� 0.5~6\nDMP36-� 3~36\nDMP60-� 5~60\n시간설정(초) 정한시 기동지연(D-T) 0~60초\n동작지연(O-T) 0~30초\n반한시 0~60초\n복귀시간(R-T) 수동즉시복귀/Reset 버튼을누르거나조작전원차단\n입력사양 조작전압 AC 110/220V 별도(±10%)\n주파수 50Hz/60Hz\nZCT입력(07-08) 200mA / 100mV(전용ZCT)〔 30∅ , 50∅ , 65∅ , 80∅ 〕\n보조접점 OL, GR 2-SPST (95~98) 3A/250VAC 저항부하\n(2a, 1a1b)\n표시기능 7-Segment 3상전류치표시, 트립원인표시\nBar-Graph 실부하전류60~110%표시\n설치방식 35mm DIN-Rail/Panel\nB2-40",
+      "header": "9. P.F on/oFF 결상및불평형보호기능선택",
+      "section_type": "시동",
+      "equipment": [
+        "연소가스처리"
+      ],
+      "company_id": "26",
+      "company_name": "연소가스처리설비",
+      "source_file": "기술 및 참고자료(CATALOGUE 등)",
+      "source_path": "D:\\기계도면\\기계도면\\26. 연소가스처리설비 (에스텍)\\준공도서-연소가스 처리설비(전기)\\16. 기술 및 참고자료(CATALOGUE 등)\\기술 및 참고자료(CATALOGUE 등).pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "f22a3866d0127160",
+      "char_count": 780
+    },
+    {
+      "chunk_idx": 47,
+      "text": "-Segment 3상전류치표시, 트립원인표시\nBar-Graph 실부하전류60~110%표시\n설치방식 35mm DIN-Rail/Panel\nB2-40 DMP-SI/TI (순시단락보호용)\n과전류/부족전류/결상/역상/불평형/구속/순시단락보호\n�1모델로일체형과분리형사용가능\n- 분리형: 표시창패널매입\n�3상전류계기능: Display 버튼으로3상전류및설정치확인\n�반한시/정한시선택가능\n�조작이편리:조작버튼과노브로모든기능을설정\n�트립원인및동작치가표시창에표시됨\n�무전압석방기능: (No Voltage Release)기본\n�순시단락동작시는에는07 08 접점만동작\n보호기능\n과전류 설정된Time에따라동작 반한시/정한시선택가능\n결상 3초이내동작 전류의상간편차70% 이상\n불평형 5초이내동작 전류의상간편차50% 이상\n역상 0.1초이내동작\n구속 Stall 5초이내동작 정격전류의180% 이상\nLock 0.5초이내동작 정격전류의200~900% 설정\n부족전류 3초이내동작 정격전류의30~70% 설정\n순시단락 50ms 이내동작 정격전류의300~1800% 설정\n주) 구속동작:정한시의경우설정된D-Time후에동작함\n기능설정\nFFUUNNCC SSEELL 기기능능설설명명",
+      "header": "9. P.F on/oFF 결상및불평형보호기능선택",
+      "section_type": "비상",
+      "equipment": [
+        "연소가스처리"
+      ],
+      "company_id": "26",
+      "company_name": "연소가스처리설비",
+      "source_file": "기술 및 참고자료(CATALOGUE 등)",
+      "source_path": "D:\\기계도면\\기계도면\\26. 연소가스처리설비 (에스텍)\\준공도서-연소가스 처리설비(전기)\\16. 기술 및 참고자료(CATALOGUE 등)\\기술 및 참고자료(CATALOGUE 등).pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "961d2888f43a8276",
+      "char_count": 578
+    },
+    {
+      "chunk_idx": 48,
+      "text": "내동작 정격전류의300~1800% 설정\n주) 구속동작:정한시의경우설정된D-Time후에동작함\n기능설정\nFFUUNNCC SSEELL 기기능능설설명명 9. P.F on/oFF 결상및불평형보호기능선택\nSto Sto 저장(Store)\n주) 는 에서 (정한시)를선택했을경우만표시됨\n정격사양\n모모델델 DDMMPP��--SSII DDMMPP��--TTII\nTYPE 결선방식 단자형(Screw) 관통형(Tunnel)\n동작시간특성 반한시/정한시선택\n전류조정범위(A)DMP06-� 0.5~6\nDMP36-� 3~36\nDMP60-� 5~60\n시간설정(초) 정한시 기동지연(D-T) 0~60초\n동작지연(O-T) 0~30초\n반한시 0~60초\n복귀시간(R-T) 수동즉시복귀/Reset 버튼을누르거나조작전원차단\n입력사양 조작전압 AC 110/220V별도(±10%)\n주파수 50Hz/60Hz\n보조접점 OL 2-SPST (95-98) 3A/250VAC 저항부하\nSR SPST (07-08) 3A/250VAC 저항부하\n표시기능 7-Segment 3상전류치표시, 트립원인표시\nBar-Graph 실부하전류60~110%표시\n설치방식 35mm DIN-Rail/Panel\nB2-41\n\nMeta-MEC EMPR (DMP Series)\n조작및설정방법\n모터의기동전에다음과같이설정합니다.",
+      "header": "9. P.F on/oFF 결상및불평형보호기능선택",
+      "section_type": "시동",
+      "equipment": [
+        "연소가스처리"
+      ],
+      "company_id": "26",
+      "company_name": "연소가스처리설비",
+      "source_file": "기술 및 참고자료(CATALOGUE 등)",
+      "source_path": "D:\\기계도면\\기계도면\\26. 연소가스처리설비 (에스텍)\\준공도서-연소가스 처리설비(전기)\\16. 기술 및 참고자료(CATALOGUE 등)\\기술 및 참고자료(CATALOGUE 등).pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "1853d5be56829a0a",
+      "char_count": 635
+    },
+    {
+      "chunk_idx": 49,
+      "text": "35mm DIN-Rail/Panel\nB2-41\n\nMeta-MEC EMPR (DMP Series)\n조작및설정방법\n모터의기동전에다음과같이설정합니다. 1. Test/Reset 버튼동작을확인합니다.\n트트립립시시에에 정정상상동동작작 여여부부를를 점점검검합합니니다다.. R상 디지털표시창",
+      "header": "1. Test/Reset 버튼동작을확인합니다.",
+      "section_type": "시동",
+      "equipment": [
+        "연소가스처리"
+      ],
+      "company_id": "26",
+      "company_name": "연소가스처리설비",
+      "source_file": "기술 및 참고자료(CATALOGUE 등)",
+      "source_path": "D:\\기계도면\\기계도면\\26. 연소가스처리설비 (에스텍)\\준공도서-연소가스 처리설비(전기)\\16. 기술 및 참고자료(CATALOGUE 등)\\기술 및 참고자료(CATALOGUE 등).pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "d3ef465950ade11b",
+      "char_count": 154
+    },
+    {
+      "chunk_idx": 50,
+      "text": "2) Test/Reset 버튼을한번누르면표시창에 가표시\nT상\n되고기기가트립됩니다.\nDisplay 버튼",
+      "header": "2) Test/Reset 버튼을한번누르면표시창에 가표시",
+      "section_type": "비상",
+      "equipment": [
+        "연소가스처리"
+      ],
+      "company_id": "26",
+      "company_name": "연소가스처리설비",
+      "source_file": "기술 및 참고자료(CATALOGUE 등)",
+      "source_path": "D:\\기계도면\\기계도면\\26. 연소가스처리설비 (에스텍)\\준공도서-연소가스 처리설비(전기)\\16. 기술 및 참고자료(CATALOGUE 등)\\기술 및 참고자료(CATALOGUE 등).pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "a266d8bc50c262fb",
+      "char_count": 56
+    },
+    {
+      "chunk_idx": 51,
+      "text": "3) 트립시에 Test/Reset 버튼을 한 번 더 누르면 표시창이 Test/Reset버튼\n동작상태로되며기기가정상상태로복귀(Reset)됩니다.\nFUNC 버튼 SEL 버튼\n주) 트립사고의방지를위해모터가운전중일때는Test/Reset 버튼이동작되지\n않도록설계되어있습니다.\nCurrent 노브 TIME 노브",
+      "header": "3) 트립시에 Test/Reset 버튼을 한 번 더 누르면 표시창이 Test/Reset버튼",
+      "section_type": "비상",
+      "equipment": [
+        "연소가스처리"
+      ],
+      "company_id": "26",
+      "company_name": "연소가스처리설비",
+      "source_file": "기술 및 참고자료(CATALOGUE 등)",
+      "source_path": "D:\\기계도면\\기계도면\\26. 연소가스처리설비 (에스텍)\\준공도서-연소가스 처리설비(전기)\\16. 기술 및 참고자료(CATALOGUE 등)\\기술 및 참고자료(CATALOGUE 등).pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "792b74b5dd4213e5",
+      "char_count": 167
+    },
+    {
+      "chunk_idx": 52,
+      "text": "SEL 버튼\n주) 트립사고의방지를위해모터가운전중일때는Test/Reset 버튼이동작되지\n않도록설계되어있습니다.\nCurrent 노브 TIME 노브 1) 먼저Test/Reset 버튼을눌러서TEST모드로전환후,\n경보신호의출력Pulse (Alert기능)\nFUNC버튼으로기능들을설정합니다.\n55..AALLtt AALL ((0077--0088))접접점점의의동동작작상상태태",
+      "header": "1) 먼저Test/Reset 버튼을눌러서TEST모드로전환후,",
+      "section_type": "비상",
+      "equipment": [
+        "연소가스처리"
+      ],
+      "company_id": "26",
+      "company_name": "연소가스처리설비",
+      "source_file": "기술 및 참고자료(CATALOGUE 등)",
+      "source_path": "D:\\기계도면\\기계도면\\26. 연소가스처리설비 (에스텍)\\준공도서-연소가스 처리설비(전기)\\16. 기술 및 참고자료(CATALOGUE 등)\\기술 및 참고자료(CATALOGUE 등).pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "00f78a3b5a4585a2",
+      "char_count": 200
+    },
+    {
+      "chunk_idx": 53,
+      "text": "력Pulse (Alert기능)\nFUNC버튼으로기능들을설정합니다.\n55..AALLtt AALL ((0077--0088))접접점점의의동동작작상상태태 2) FUNC 버튼을누를때마다표시창에 부터\n까지순서대로나타나며, 표시창에표시되고있는\n\n항목에대해SEL 버튼을눌러서원하는값을선택합니다. OONN\n\n다시FUNC 버튼을누르면해당기능이설정되면서다음\n기능을표시합니다.",
+      "header": "2) FUNC 버튼을누를때마다표시창에 부터",
+      "section_type": "일반",
+      "equipment": [
+        "연소가스처리"
+      ],
+      "company_id": "26",
+      "company_name": "연소가스처리설비",
+      "source_file": "기술 및 참고자료(CATALOGUE 등)",
+      "source_path": "D:\\기계도면\\기계도면\\26. 연소가스처리설비 (에스텍)\\준공도서-연소가스 처리설비(전기)\\16. 기술 및 참고자료(CATALOGUE 등)\\기술 및 참고자료(CATALOGUE 등).pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "701f65a6e409728e",
+      "char_count": 197
+    },
+    {
+      "chunk_idx": 54,
+      "text": "표시창에표시되고있는\n\n항목에대해SEL 버튼을눌러서원하는값을선택합니다. OONN\n\n다시FUNC 버튼을누르면해당기능이설정되면서다음\n기능을표시합니다. 3) 설정Mode에서아무런버튼조작이없으면계속설정\nMode상태로유지됩니다.",
+      "header": "3) 설정Mode에서아무런버튼조작이없으면계속설정",
+      "section_type": "운전",
+      "equipment": [
+        "연소가스처리"
+      ],
+      "company_id": "26",
+      "company_name": "연소가스처리설비",
+      "source_file": "기술 및 참고자료(CATALOGUE 등)",
+      "source_path": "D:\\기계도면\\기계도면\\26. 연소가스처리설비 (에스텍)\\준공도서-연소가스 처리설비(전기)\\16. 기술 및 참고자료(CATALOGUE 등)\\기술 및 참고자료(CATALOGUE 등).pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "f1454e0acc9b0885",
+      "char_count": 121
+    },
+    {
+      "chunk_idx": 55,
+      "text": "4) 에서 (반한시)를선택하면 는표시되지\n정상시 경보신호 동작(Trip)신호\n않고다음에 가표시됩니다.\nAlert설정치 EMPR 동작",
+      "header": "4) 에서 (반한시)를선택하면 는표시되지",
+      "section_type": "비상",
+      "equipment": [
+        "연소가스처리"
+      ],
+      "company_id": "26",
+      "company_name": "연소가스처리설비",
+      "source_file": "기술 및 참고자료(CATALOGUE 등)",
+      "source_path": "D:\\기계도면\\기계도면\\26. 연소가스처리설비 (에스텍)\\준공도서-연소가스 처리설비(전기)\\16. 기술 및 참고자료(CATALOGUE 등)\\기술 및 참고자료(CATALOGUE 등).pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "1ba18a7c9e6bbf5a",
+      "char_count": 73
+    },
+    {
+      "chunk_idx": 56,
+      "text": "5) 는경보설정이며전류설정치의60~110% 까지 초과 (Trip)\n부하율을Bar-Graph로표시할수있습니다.\n- 경보설정치이상의전류가흐르면Bar-Graph LED가점멸하면서AL Relay (07-II-08)가1초간격으로Close/Open을반복\n하여Pre-Alarm 기능을수행합니다.\n- 트립시에는Close되며경보설정을 로하면일반OL Relay와같이1a 접점으로동작합니다.\n예) 과전류 설정이 5A이고 Alert 설정이 90%라면, 5×90%=4.5A 이상의 전류가 흐르게 되면 AL Relay가 On/Off를 반복하는\n출력이나옵니다.\n※지락모델일경우 가표시되며, 순시단락모델일경우 가표시됩니다",
+      "header": "5) 는경보설정이며전류설정치의60~110% 까지 초과 (Trip)",
+      "section_type": "비상",
+      "equipment": [
+        "연소가스처리"
+      ],
+      "company_id": "26",
+      "company_name": "연소가스처리설비",
+      "source_file": "기술 및 참고자료(CATALOGUE 등)",
+      "source_path": "D:\\기계도면\\기계도면\\26. 연소가스처리설비 (에스텍)\\준공도서-연소가스 처리설비(전기)\\16. 기술 및 참고자료(CATALOGUE 등)\\기술 및 참고자료(CATALOGUE 등).pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "37962a693d488831",
+      "char_count": 331
+    },
+    {
+      "chunk_idx": 57,
+      "text": "이상의 전류가 흐르게 되면 AL Relay가 On/Off를 반복하는\n출력이나옵니다.\n※지락모델일경우 가표시되며, 순시단락모델일경우 가표시됩니다 7) 최종적으로 에서SEL버튼을누르면표시창이한번깜박이면서설정된모든값들이저장(Store)됩니다.\n※ SEL버튼을누르지않고통과시에는모든설정값들이저장되지않으므로주의하시기바랍니다.\nB2-42",
+      "header": "7) 최종적으로 에서SEL버튼을누르면표시창이한번깜박이면서설정된모든값들이저장(Store)됩니다.",
+      "section_type": "일반",
+      "equipment": [
+        "연소가스처리"
+      ],
+      "company_id": "26",
+      "company_name": "연소가스처리설비",
+      "source_file": "기술 및 참고자료(CATALOGUE 등)",
+      "source_path": "D:\\기계도면\\기계도면\\26. 연소가스처리설비 (에스텍)\\준공도서-연소가스 처리설비(전기)\\16. 기술 및 참고자료(CATALOGUE 등)\\기술 및 참고자료(CATALOGUE 등).pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "10f1b147a46317fc",
+      "char_count": 182
+    },
+    {
+      "chunk_idx": 58,
+      "text": "창이한번깜박이면서설정된모든값들이저장(Store)됩니다.\n※ SEL버튼을누르지않고통과시에는모든설정값들이저장되지않으므로주의하시기바랍니다.\nB2-42 �운전중임의조작방지를위하여 모드에서만설정이가능합니다.\n� 모드가아닌경우에FUNC 버튼을누르면설정치확인만가능합니다.\nFFUUNNCC SSEELL 기기능능설설명명 비비고고\n반한시/정한시선택 반한시기본\n(Characteristic-Inverse/Definite)\n정한시O-Time설정 D-Time은노브로설정\n(Definite Time) 정한시선택시만표시\n역상보호기능선택 OFF 기본주5)\n(Reverse Phase)\n부족전류보호기능선택및설정 OFF 기본주1)\n(Under Current)\n경보기능선택및설정 OFF 기본\n(Alert)\n지락보호기능선택및 OFF기본\n동작시간설정(Ground Fault) (※지락모델: Z/SZa/TZa type)\n순시단락보호기능선택및 OFF기본\n동작전류설정(Short Current) (※순시단락모델: I type)\nStall기능선택 OFF 기본\nLock기능선택및설정 OFF 기본\nCT 변류비설정 1:1기본주2)\n결상및불평형보호기능선택 ON 기본\n(Phase Fault)\n지락지연기능 SZa/TZa 모델만해당\n운전시간설정(개월)\n운전시간설정(시간)\nSa/Ta/SZa/TZa 모델해당\n주3)\n개월, 시간표시 총운전시간확인\n개월, 시간표시 운전시간확인\nSEL버튼을눌러서주4)\n저장(Store)\n저장함\n주1) 부족전류설정시350㎃ 이상부터설정하여주십시오.\n주2) 60 Type은CT비가10:1 기본으로설정되어있으므로변경하지마십시오. 외부CT비가100:5인경우20을설정하시면됩니다.\n주3) 운전시간확인방법은B2-34쪽참조바랍니다.\n주4) 저장을하지않고도중에나오면이전설정상태로돌아갑니다.\n주5) 시운전시에만역상기능을ON한뒤결선상태를확인하시고, 정상운전시에는기능을Off 하여주십시오.\n- 노이즈및불평형에의해역상오동작할수있습니다.\nB2-43 Meta-MEC EMPR (DMP Series)\n조작및설정방법",
+      "header": "7) 최종적으로 에서SEL버튼을누르면표시창이한번깜박이면서설정된모든값들이저장(Store)됩니다.",
+      "section_type": "운전",
+      "equipment": [
+        "연소가스처리"
+      ],
+      "company_id": "26",
+      "company_name": "연소가스처리설비",
+      "source_file": "기술 및 참고자료(CATALOGUE 등)",
+      "source_path": "D:\\기계도면\\기계도면\\26. 연소가스처리설비 (에스텍)\\준공도서-연소가스 처리설비(전기)\\16. 기술 및 참고자료(CATALOGUE 등)\\기술 및 참고자료(CATALOGUE 등).pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "f9a78ae48ecd943e",
+      "char_count": 984
+    },
+    {
+      "chunk_idx": 59,
+      "text": "기능을Off 하여주십시오.\n- 노이즈및불평형에의해역상오동작할수있습니다.\nB2-43 Meta-MEC EMPR (DMP Series)\n조작및설정방법 3. TIME 노브로동작시간을설정합니다.\n노노브브를를 조조작작하하면면 표표시시창창의의 시시간간값값이이 노노브브의의 조조정정에에 따따라라 변변하하게게 됩됩니니다다.. 단단위위는는 sseecc 입입니니다다..\n��반반한한시시 특특성성",
+      "header": "3. TIME 노브로동작시간을설정합니다.",
+      "section_type": "운전",
+      "equipment": [
+        "연소가스처리"
+      ],
+      "company_id": "26",
+      "company_name": "연소가스처리설비",
+      "source_file": "기술 및 참고자료(CATALOGUE 등)",
+      "source_path": "D:\\기계도면\\기계도면\\26. 연소가스처리설비 (에스텍)\\준공도서-연소가스 처리설비(전기)\\16. 기술 및 참고자료(CATALOGUE 등)\\기술 및 참고자료(CATALOGUE 등).pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "61a49c9ce10ffe6a",
+      "char_count": 209
+    },
+    {
+      "chunk_idx": 60,
+      "text": "시시간간값값이이 노노브브의의 조조정정에에 따따라라 변변하하게게 됩됩니니다다.. 단단위위는는 sseecc 입입니니다다..\n��반반한한시시 특특성성 1) 설정Mode의 에서 반한시 특성\n(Inv)을 선택하면 동작시간은 반한시\n특성곡선상에서 정격전류의 600%인\n지점이기준이됩니다.",
+      "header": "1) 설정Mode의 에서 반한시 특성",
+      "section_type": "일반",
+      "equipment": [
+        "연소가스처리"
+      ],
+      "company_id": "26",
+      "company_name": "연소가스처리설비",
+      "source_file": "기술 및 참고자료(CATALOGUE 등)",
+      "source_path": "D:\\기계도면\\기계도면\\26. 연소가스처리설비 (에스텍)\\준공도서-연소가스 처리설비(전기)\\16. 기술 및 참고자료(CATALOGUE 등)\\기술 및 참고자료(CATALOGUE 등).pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "a264debd63a168c8",
+      "char_count": 154
+    },
+    {
+      "chunk_idx": 61,
+      "text": "2) 동작시간은 0~60초까지 설정이 가능\n하며 모터의 기동시간을 고려하여\n설정합니다.",
+      "header": "2) 동작시간은 0~60초까지 설정이 가능",
+      "section_type": "시동",
+      "equipment": [
+        "연소가스처리"
+      ],
+      "company_id": "26",
+      "company_name": "연소가스처리설비",
+      "source_file": "기술 및 참고자료(CATALOGUE 등)",
+      "source_path": "D:\\기계도면\\기계도면\\26. 연소가스처리설비 (에스텍)\\준공도서-연소가스 처리설비(전기)\\16. 기술 및 참고자료(CATALOGUE 등)\\기술 및 참고자료(CATALOGUE 등).pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "ffd0db80f5a53e15",
+      "char_count": 48
+    },
+    {
+      "chunk_idx": 62,
+      "text": "3) 설정된 시간이 지나면 특성곡선상의\nHot curve로동작합니다.\n��정정한한시시 특특성성",
+      "header": "3) 설정된 시간이 지나면 특성곡선상의",
+      "section_type": "일반",
+      "equipment": [
+        "연소가스처리"
+      ],
+      "company_id": "26",
+      "company_name": "연소가스처리설비",
+      "source_file": "기술 및 참고자료(CATALOGUE 등)",
+      "source_path": "D:\\기계도면\\기계도면\\26. 연소가스처리설비 (에스텍)\\준공도서-연소가스 처리설비(전기)\\16. 기술 및 참고자료(CATALOGUE 등)\\기술 및 참고자료(CATALOGUE 등).pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "d39722e0acccd7ac",
+      "char_count": 52
+    },
+    {
+      "chunk_idx": 63,
+      "text": "2) 기동지연시간(D-Time)은기기가모터의기동전류에의해서트립되지않도록기동시간동안EMPR의동작을지연시켜주는시간을\n말합니다.",
+      "header": "2) 기동지연시간(D-Time)은기기가모터의기동전류에의해서트립되지않도록기동시간동안EMPR의동작을지연시켜주는시간을",
+      "section_type": "시동",
+      "equipment": [
+        "연소가스처리"
+      ],
+      "company_id": "26",
+      "company_name": "연소가스처리설비",
+      "source_file": "기술 및 참고자료(CATALOGUE 등)",
+      "source_path": "D:\\기계도면\\기계도면\\26. 연소가스처리설비 (에스텍)\\준공도서-연소가스 처리설비(전기)\\16. 기술 및 참고자료(CATALOGUE 등)\\기술 및 참고자료(CATALOGUE 등).pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "77c5b87f36d9d957",
+      "char_count": 68
+    },
+    {
+      "chunk_idx": 64,
+      "text": "4. Current 노브로동작전류를설정합니다.\n노브를조작하면표시창의전류값이노브의조정에따라변하게됩니다. 단위는A입니다.",
+      "header": "4. Current 노브로동작전류를설정합니다.",
+      "section_type": "운전",
+      "equipment": [
+        "연소가스처리"
+      ],
+      "company_id": "26",
+      "company_name": "연소가스처리설비",
+      "source_file": "기술 및 참고자료(CATALOGUE 등)",
+      "source_path": "D:\\기계도면\\기계도면\\26. 연소가스처리설비 (에스텍)\\준공도서-연소가스 처리설비(전기)\\16. 기술 및 참고자료(CATALOGUE 등)\\기술 및 참고자료(CATALOGUE 등).pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "cc9c4556ee91f31f",
+      "char_count": 65
+    },
+    {
+      "chunk_idx": 65,
+      "text": "1) 모터의 명판에 표시된 정격전류를 기준으로 설정합니다. 일반적으로 모터의 기동이 완료된 후 정상적인 부하상태에서 실부하\n전류의110~115% 정도로설정합니다.",
+      "header": "1) 모터의 명판에 표시된 정격전류를 기준으로 설정합니다. 일반적으로 모터의 기동이 완료된 후 정상적인 부하상태에서 실부하",
+      "section_type": "시동",
+      "equipment": [
+        "연소가스처리"
+      ],
+      "company_id": "26",
+      "company_name": "연소가스처리설비",
+      "source_file": "기술 및 참고자료(CATALOGUE 등)",
+      "source_path": "D:\\기계도면\\기계도면\\26. 연소가스처리설비 (에스텍)\\준공도서-연소가스 처리설비(전기)\\16. 기술 및 참고자료(CATALOGUE 등)\\기술 및 참고자료(CATALOGUE 등).pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "f42a4cf3278bc767",
+      "char_count": 90
+    },
+    {
+      "chunk_idx": 66,
+      "text": "표시된 정격전류를 기준으로 설정합니다. 일반적으로 모터의 기동이 완료된 후 정상적인 부하상태에서 실부하\n전류의110~115% 정도로설정합니다. 2) 디지털 모터보호계전기는 전류조정범위에 따라 06(0.5~6), 60(5~60) Type이 있으며 외부CT를 사용하는 경우, 설정Mode\n의 에서CT변류비를설정하면비율이환산되어실전류값이표시됩니다.\n단, 60Type은CT비가10:1로출하시에설정되어있으므로변경하지마십시오.",
+      "header": "2) 디지털 모터보호계전기는 전류조정범위에 따라 06(0.5~6), 60(5~60) Type이 있으며 외부CT를 사용하는 경우, 설정Mode",
+      "section_type": "시동",
+      "equipment": [
+        "연소가스처리"
+      ],
+      "company_id": "26",
+      "company_name": "연소가스처리설비",
+      "source_file": "기술 및 참고자료(CATALOGUE 등)",
+      "source_path": "D:\\기계도면\\기계도면\\26. 연소가스처리설비 (에스텍)\\준공도서-연소가스 처리설비(전기)\\16. 기술 및 참고자료(CATALOGUE 등)\\기술 및 참고자료(CATALOGUE 등).pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "3a974dbd4456304a",
+      "char_count": 232
+    },
+    {
+      "chunk_idx": 67,
+      "text": "설정Mode\n의 에서CT변류비를설정하면비율이환산되어실전류값이표시됩니다.\n단, 60Type은CT비가10:1로출하시에설정되어있으므로변경하지마십시오. 1) 정상상태는표시창에3상전류중최대값을표시합니다. T\nR상전류값표시",
+      "header": "1) 정상상태는표시창에3상전류중최대값을표시합니다. T",
+      "section_type": "일반",
+      "equipment": [
+        "연소가스처리"
+      ],
+      "company_id": "26",
+      "company_name": "연소가스처리설비",
+      "source_file": "기술 및 참고자료(CATALOGUE 등)",
+      "source_path": "D:\\기계도면\\기계도면\\26. 연소가스처리설비 (에스텍)\\준공도서-연소가스 처리설비(전기)\\16. 기술 및 참고자료(CATALOGUE 등)\\기술 및 참고자료(CATALOGUE 등).pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "32ce99a999410673",
+      "char_count": 118
+    },
+    {
+      "chunk_idx": 68,
+      "text": "2) Display 버튼을 1회씩 누름에 따라 그림과 같은 순서로\n전류와설정값들을표시합니다. R R",
+      "header": "2) Display 버튼을 1회씩 누름에 따라 그림과 같은 순서로",
+      "section_type": "일반",
+      "equipment": [
+        "연소가스처리"
+      ],
+      "company_id": "26",
+      "company_name": "연소가스처리설비",
+      "source_file": "기술 및 참고자료(CATALOGUE 등)",
+      "source_path": "D:\\기계도면\\기계도면\\26. 연소가스처리설비 (에스텍)\\준공도서-연소가스 처리설비(전기)\\16. 기술 및 참고자료(CATALOGUE 등)\\기술 및 참고자료(CATALOGUE 등).pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "0d3c6f682e29aab9",
+      "char_count": 55
+    },
+    {
+      "chunk_idx": 69,
+      "text": "T T\nO-time 10초설정 R S상전류값표시\n(정한시선택시만표시됨) S\nT\n정상상태표시",
+      "header": "T T",
+      "section_type": "일반",
+      "equipment": [
+        "연소가스처리"
+      ],
+      "company_id": "26",
+      "company_name": "연소가스처리설비",
+      "source_file": "기술 및 참고자료(CATALOGUE 등)",
+      "source_path": "D:\\기계도면\\기계도면\\26. 연소가스처리설비 (에스텍)\\준공도서-연소가스 처리설비(전기)\\16. 기술 및 참고자료(CATALOGUE 등)\\기술 및 참고자료(CATALOGUE 등).pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "3883b87e4bf4208f",
+      "char_count": 50
+    },
+    {
+      "chunk_idx": 70,
+      "text": "R R\nS S\nT T\n동작시간25초설정 T상전류값표시\n(모터의기동시간설정) R",
+      "header": "R R\nS S\nT T",
+      "section_type": "시동",
+      "equipment": [
+        "연소가스처리"
+      ],
+      "company_id": "26",
+      "company_name": "연소가스처리설비",
+      "source_file": "기술 및 참고자료(CATALOGUE 등)",
+      "source_path": "D:\\기계도면\\기계도면\\26. 연소가스처리설비 (에스텍)\\준공도서-연소가스 처리설비(전기)\\16. 기술 및 참고자료(CATALOGUE 등)\\기술 및 참고자료(CATALOGUE 등).pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "c5281bb1a29d53aa",
+      "char_count": 43
+    },
+    {
+      "chunk_idx": 72,
+      "text": "6. 트립시표시창의상태를확인합니다.\n트트립립이이 발발생생되되면면 고고장장 원원인인이이 표표시시창창에에 표표시시되되며며 과전류\n고고장장원원인인의의 표표시시는는 00..55초초 간간격격으으로로 점점멸멸하하게게 예) (Overload) R R",
+      "header": "6. 트립시표시창의상태를확인합니다.",
+      "section_type": "비상",
+      "equipment": [
+        "연소가스처리"
+      ],
+      "company_id": "26",
+      "company_name": "연소가스처리설비",
+      "source_file": "기술 및 참고자료(CATALOGUE 등)",
+      "source_path": "D:\\기계도면\\기계도면\\26. 연소가스처리설비 (에스텍)\\준공도서-연소가스 처리설비(전기)\\16. 기술 및 참고자료(CATALOGUE 등)\\기술 및 참고자료(CATALOGUE 등).pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "777244666cb71daf",
+      "char_count": 132
+    },
+    {
+      "chunk_idx": 73,
+      "text": "창창에에 표표시시되되며며 과전류\n고고장장원원인인의의 표표시시는는 00..55초초 간간격격으으로로 점점멸멸하하게게 예) (Overload) R R R S S\n됩됩니니다다.. S T T\nT 부족전류 역상\n이이때때 DDiissppllaayy 버버튼튼을을 누누르르면면 각각상상의의 전전류류값값과과 점멸 (Under Current) (Reverse Phase)\n설설정정값값이이표표시시되되므므로로사사고고치치를를확확인인할할수수있있습습니니다다.. R R R R",
+      "header": "R S S",
+      "section_type": "일반",
+      "equipment": [
+        "연소가스처리"
+      ],
+      "company_id": "26",
+      "company_name": "연소가스처리설비",
+      "source_file": "기술 및 참고자료(CATALOGUE 등)",
+      "source_path": "D:\\기계도면\\기계도면\\26. 연소가스처리설비 (에스텍)\\준공도서-연소가스 처리설비(전기)\\16. 기술 및 참고자료(CATALOGUE 등)\\기술 및 참고자료(CATALOGUE 등).pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "796c3bbbc049d286",
+      "char_count": 249
+    },
+    {
+      "chunk_idx": 74,
+      "text": "er Current) (Reverse Phase)\n설설정정값값이이표표시시되되므므로로사사고고치치를를확확인인할할수수있있습습니니다다.. R R R R S S S S\nT T T T\n불평형,결상 지락\n조조합합 KKeeyy ((FFUUNNCC++SSEELL)) ((DDMMPPaa,, DDMMPPZZaa (Phase Fail) (Ground Fault)\n시시리리즈즈에에 한한함함)) R R",
+      "header": "S S S S\nT T T T",
+      "section_type": "일반",
+      "equipment": [
+        "연소가스처리"
+      ],
+      "company_id": "26",
+      "company_name": "연소가스처리설비",
+      "source_file": "기술 및 참고자료(CATALOGUE 등)",
+      "source_path": "D:\\기계도면\\기계도면\\26. 연소가스처리설비 (에스텍)\\준공도서-연소가스 처리설비(전기)\\16. 기술 및 참고자료(CATALOGUE 등)\\기술 및 참고자료(CATALOGUE 등).pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "741b1ebae2b2698f",
+      "char_count": 211
+    },
+    {
+      "chunk_idx": 75,
+      "text": "SSEELL)) ((DDMMPPaa,, DDMMPPZZaa (Phase Fail) (Ground Fault)\n시시리리즈즈에에 한한함함)) R R R R S S\nS S T T\n�모터의이상으로trip발생후리셋후에 T T\n구속(Stall) 순시단락\n다시최종동작원인을확인하고자할때 R S R (Short Circuit)\n조합key (FUNC+SEL)를누르면확인이가능함. T S\nT\n�운전중에도간단한KEY조작으로확인가능함. 구속(Lock)\n�정전후복전후에도최종동작원인을확인가능함.\n�Trip이없었을경우에는“no”를표시함.",
+      "header": "R R S S\nS S T T",
+      "section_type": "비상",
+      "equipment": [
+        "연소가스처리"
+      ],
+      "company_id": "26",
+      "company_name": "연소가스처리설비",
+      "source_file": "기술 및 참고자료(CATALOGUE 등)",
+      "source_path": "D:\\기계도면\\기계도면\\26. 연소가스처리설비 (에스텍)\\준공도서-연소가스 처리설비(전기)\\16. 기술 및 참고자료(CATALOGUE 등)\\기술 및 참고자료(CATALOGUE 등).pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "42456ce1a04bdd08",
+      "char_count": 286
+    },
+    {
+      "chunk_idx": 76,
+      "text": "T\n�운전중에도간단한KEY조작으로확인가능함. 구속(Lock)\n�정전후복전후에도최종동작원인을확인가능함.\n�Trip이없었을경우에는“no”를표시함. 7. 운전시간설정기능: 설정시간이후OrH로TRIP 상태표시함(DMPa, DMPZa 시리즈에한함)\n(일반TYPE의경우: 07-08번단자출력Flicking함. 지락TYPE의경우: 07-08번단자출력Flicking하지않음.)\n메메뉴뉴항항목목 :: bb.. SSttAA\n�운전시간을설정할수있는모드로0개월~120개월까지설정이가능함. �기본출하값이A120\n메메뉴뉴항항목목 :: CC.. SSttHH\n�운전시간을설정할수있는모드로0시간~730시간까지설정이가능함. �기본출하값이H730",
+      "header": "7. 운전시간설정기능: 설정시간이후OrH로TRIP 상태표시함(DMPa, DMPZa 시리즈에한함)",
+      "section_type": "비상",
+      "equipment": [
+        "연소가스처리"
+      ],
+      "company_id": "26",
+      "company_name": "연소가스처리설비",
+      "source_file": "기술 및 참고자료(CATALOGUE 등)",
+      "source_path": "D:\\기계도면\\기계도면\\26. 연소가스처리설비 (에스텍)\\준공도서-연소가스 처리설비(전기)\\16. 기술 및 참고자료(CATALOGUE 등)\\기술 및 참고자료(CATALOGUE 등).pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "5ea3066b8b7e813b",
+      "char_count": 342
+    },
+    {
+      "chunk_idx": 77,
+      "text": "기본출하값이A120\n메메뉴뉴항항목목 :: CC.. SSttHH\n�운전시간을설정할수있는모드로0시간~730시간까지설정이가능함. �기본출하값이H730 8. 총운전시간확인기능(DMPa, DMPZa 시리즈에한함)\n메메뉴뉴항항목목 :: dd.. ttAAHH\n�총운전시간을확인할수있는모드개월/시간순서로확인가능함.\n�d.tAH에서SEL버튼을누르면총운전개월이보이고다시SEL버튼을누르면나머지운전시간이보임.\n�전원을Off해도운전시간값이지워지지않음(분단위시간은지워짐) 다시모터가운전하면누적되어저장됨\n예) 총운전시간이100개월100시간10분이면A100� 100.1, 전원을Off한후다시ON하면A100� A100.0",
+      "header": "8. 총운전시간확인기능(DMPa, DMPZa 시리즈에한함)",
+      "section_type": "운전",
+      "equipment": [
+        "연소가스처리"
+      ],
+      "company_id": "26",
+      "company_name": "연소가스처리설비",
+      "source_file": "기술 및 참고자료(CATALOGUE 등)",
+      "source_path": "D:\\기계도면\\기계도면\\26. 연소가스처리설비 (에스텍)\\준공도서-연소가스 처리설비(전기)\\16. 기술 및 참고자료(CATALOGUE 등)\\기술 및 참고자료(CATALOGUE 등).pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "605e3a9c513704cb",
+      "char_count": 330
+    },
+    {
+      "chunk_idx": 78,
+      "text": "다시모터가운전하면누적되어저장됨\n예) 총운전시간이100개월100시간10분이면A100� 100.1, 전원을Off한후다시ON하면A100� A100.0 9. 운전시간확인기능(DMPa, DMPZa 시리즈에한함)\n메메뉴뉴항항목목 :: EE.. rrAAHH\n�운전시간을확인할수있는모드개월/시간순서로확인가능함.\n�단, 모터가정지하면운전시간값이지워짐 예) 운전시간이100개월100시간10분이면A100� 100.1, 모터가정지하면A 00� 000.0",
+      "header": "9. 운전시간확인기능(DMPa, DMPZa 시리즈에한함)",
+      "section_type": "정지",
+      "equipment": [
+        "연소가스처리"
+      ],
+      "company_id": "26",
+      "company_name": "연소가스처리설비",
+      "source_file": "기술 및 참고자료(CATALOGUE 등)",
+      "source_path": "D:\\기계도면\\기계도면\\26. 연소가스처리설비 (에스텍)\\준공도서-연소가스 처리설비(전기)\\16. 기술 및 참고자료(CATALOGUE 등)\\기술 및 참고자료(CATALOGUE 등).pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "5e8def38a09d70d6",
+      "char_count": 241
+    },
+    {
+      "chunk_idx": 79,
+      "text": "가능함.\n�단, 모터가정지하면운전시간값이지워짐 예) 운전시간이100개월100시간10분이면A100� 100.1, 모터가정지하면A 00� 000.0 10. 용어정리\n�과전류: 교류모터의운전중실부하전류값이정격전류설정값보다커질경우동작.\n�저전류: 교류모터의운전중실부하전류값이정격전류설장값보다일정비율이상작아질경우동작.\n�결상: R, S, T 3상중1상또는2상에전류가흐르지않을경우또는상간편차가50%이상일때동작.\n�불평형: R, S, T 3상에흐르는상간편차가50%이상일때동작.\n�역상: R, S, T 3상중1상또는2상이서로바뀌어전류가흐를경우동작.\n�순시: 정상운전시순간적인과전류가흐를경우동작.\n�STALL : 전동기가외부의기계적인요인으로구속될경우동작.\n�Lock : 전동기가내부의기계적인요인으로구속될경우동작.\n�지락: 전동기의주회로또는권선이지락될경우동작.\nB2-45 Meta-MEC EMPR (DMP Series)\nDMP-Sa/Ta(표준형)\n결선방법(2a1b)\n조작전원\nDMP-S/Sa\nDMP-T/Ta\n∙단상모터주1)\n주1) 단상모터에사용시에는역상기능을반드시OFF로설정하여주십시오.\n외부CT 조합(2a1b)\nDMP-S/Sa\nDMP-T/Ta\nB2-46 DMP-SZa/TZa(지락보호용)\n결선방법(2a)\nDMP-SZ/SZa\nDMP-TZ/TZa\n결선방법(2b)\nDMP-SZ\nDMP-TZ\n주)\n주) 당사Digital EMPR 전용ZCT를별도로공급합니다(30∅ , 50∅ , 65∅ , 80∅ ).\nB2-47",
+      "header": "10. 용어정리",
+      "section_type": "정지",
+      "equipment": [
+        "연소가스처리"
+      ],
+      "company_id": "26",
+      "company_name": "연소가스처리설비",
+      "source_file": "기술 및 참고자료(CATALOGUE 등)",
+      "source_path": "D:\\기계도면\\기계도면\\26. 연소가스처리설비 (에스텍)\\준공도서-연소가스 처리설비(전기)\\16. 기술 및 참고자료(CATALOGUE 등)\\기술 및 참고자료(CATALOGUE 등).pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "64a7617e80797d53",
+      "char_count": 720
+    },
+    {
+      "chunk_idx": 80,
+      "text": "DMP-SZ\nDMP-TZ\n주)\n주) 당사Digital EMPR 전용ZCT를별도로공급합니다(30∅ , 50∅ , 65∅ , 80∅ ).\nB2-47 Meta-MEC EMPR (DMP Series)\nDMP-SZa/TZa(지락보호용)\n결선방법(1a1b)\nDMP-SZ/SZa\nDMP-TZ/TZa\n주1)\n외외부부CCTT 조조합합의의경경우우\n주1)1a1b접점은OL과GR 동작접점이별도로구분되어있지않으므로주의하시기바랍니다.\n지락감도전류설정방법\n오른쪽 그림과 같이 본체 상단홈에 위치한 DIP\nS/W를이용하여지락감도전류를설정합니다.\n출하시에는100mA로기본설정되어있습니다.\n감감도도전전류류 DDIIPP SS//WW\n(mA) 1 2 3 4\n100 � � � �\n200 1 � � �\n500 � 1 � �\n1000 � � 1 �\n1500 � � � 1\n2000 � � 1 1\n2500 1 1 1 1\n주1)감도전류30~300㎃ (고감도용) 제품은Option사항입니다.\n주2)반드시전용ZCT를사용하여야합니다.\nB2-48 DMP-SI/TI (순시단락보호용)\n결선방법",
+      "header": "10. 용어정리",
+      "section_type": "일반",
+      "equipment": [
+        "연소가스처리"
+      ],
+      "company_id": "26",
+      "company_name": "연소가스처리설비",
+      "source_file": "기술 및 참고자료(CATALOGUE 등)",
+      "source_path": "D:\\기계도면\\기계도면\\26. 연소가스처리설비 (에스텍)\\준공도서-연소가스 처리설비(전기)\\16. 기술 및 참고자료(CATALOGUE 등)\\기술 및 참고자료(CATALOGUE 등).pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "bcce47280bea9150",
+      "char_count": 526
+    },
+    {
+      "chunk_idx": 81,
+      "text": "300㎃ (고감도용) 제품은Option사항입니다.\n주2)반드시전용ZCT를사용하여야합니다.\nB2-48 DMP-SI/TI (순시단락보호용)\n결선방법 SHUNT\nDMP-SI/TI\n95 97 07 STOP RUN",
+      "header": "SHUNT",
+      "section_type": "일반",
+      "equipment": [
+        "연소가스처리"
+      ],
+      "company_id": "26",
+      "company_name": "연소가스처리설비",
+      "source_file": "기술 및 참고자료(CATALOGUE 등)",
+      "source_path": "D:\\기계도면\\기계도면\\26. 연소가스처리설비 (에스텍)\\준공도서-연소가스 처리설비(전기)\\16. 기술 및 참고자료(CATALOGUE 등)\\기술 및 참고자료(CATALOGUE 등).pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "575bc9f492a9a793",
+      "char_count": 114
+    },
+    {
+      "chunk_idx": 83,
+      "text": "MCCB\nAUX\nMC\nDMP-SI/TI SHT M SH C U C N B T\n95 97 07 STOP RUN",
+      "header": "MCCB\nAUX\nMC",
+      "section_type": "일반",
+      "equipment": [
+        "과열기"
+      ],
+      "company_id": "26",
+      "company_name": "연소가스처리설비",
+      "source_file": "기술 및 참고자료(CATALOGUE 등)",
+      "source_path": "D:\\기계도면\\기계도면\\26. 연소가스처리설비 (에스텍)\\준공도서-연소가스 처리설비(전기)\\16. 기술 및 참고자료(CATALOGUE 등)\\기술 및 참고자료(CATALOGUE 등).pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "abac352bcd93bb69",
+      "char_count": 60
+    },
+    {
+      "chunk_idx": 84,
+      "text": "SR\n96 98 08\n주1) 07-08접점으로MC를제어할경우MC의접점이융착될수있으므로주의하시기바랍니다.\nB2-49\n\nMeta-MEC EMPR (DMP Series)\n특성곡선\n<Class5> <Class10>\n<Class20> <Class30>\n<Class60> <정한시특성>\nB2-50\n\n외형치수(mm)\nDMP�-S/Sa\nDMP�-SZ/SZa\n<부착치수>\nDMP�-SI\n※보조단자접속전선굵기\n:8［mm2］이하\n0.7kg\nDMP�-S/Sa\nDMP�-SZ/SZa\n<부착치수>\nDMP�-SI\n&\n분리형Cable\n<패널컷팅치수>\n<패널매입방법>\n0.64kg\nB2-51\n\nMeta-MEC EMPR (DMP Series)\n외형치수(mm)\nDMP�-T/Ta\nDMP�-TZ/TZa\nDMP�-TI\n<부착치수>\n※CT 관통전선굵기\n:22［mm2］이하\n0.56kg\nDMP�-T/Ta\nDMP�-TZ/TZa\n<부착치수>\nDMP�-TI\n&\n분리형Cable\n<패널컷팅치수>\n<패널매입방법>\n주1) Display부는본체와함께출하시에Calibration되어있으므로Serial No.가다른제품과서로바뀌지않도록주의하십시오. 0.5kg\n주2) 지락기능모델은07-08단자가ZCT 입력단자입니다.\nB2-52\n\nLeader in Electrics & Automation\n경제형Intelligent 인버터",
+      "header": "SR",
+      "section_type": "일반",
+      "equipment": [
+        "연소가스처리"
+      ],
+      "company_id": "26",
+      "company_name": "연소가스처리설비",
+      "source_file": "기술 및 참고자료(CATALOGUE 등)",
+      "source_path": "D:\\기계도면\\기계도면\\26. 연소가스처리설비 (에스텍)\\준공도서-연소가스 처리설비(전기)\\16. 기술 및 참고자료(CATALOGUE 등)\\기술 및 참고자료(CATALOGUE 등).pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "48308adc23be36f4",
+      "char_count": 650
+    },
+    {
+      "chunk_idx": 85,
+      "text": "은07-08단자가ZCT 입력단자입니다.\nB2-52\n\nLeader in Electrics & Automation\n경제형Intelligent 인버터 STARVERT\n초소형사이즈에강력한파워와고기능탑재\n0.4~22kW 3Phase 200~230Volts\n0.4~22kW 3Phase 380~480Volts\nAutomation Equipment iG5A ▶\nC o n t e n t s\n4 특징\n8 기종및형명\n9 기본사양\n11 결선도\n13 단자기능\n14 로더기능\n15 각구룹및코드간의이동\n17 시운전순서\n19 외형치수\n22 제동저항및주변기기\n23 기능일람표\n32 보호기능\n33 이상대책및점검\n34 Starvert Series\n35 인버터교육일정 iG5A\nSpeed vs Torque Characteristics",
+      "header": "STARVERT",
+      "section_type": "점검",
+      "equipment": [
+        "연소가스처리"
+      ],
+      "company_id": "26",
+      "company_name": "연소가스처리설비",
+      "source_file": "기술 및 참고자료(CATALOGUE 등)",
+      "source_path": "D:\\기계도면\\기계도면\\26. 연소가스처리설비 (에스텍)\\준공도서-연소가스 처리설비(전기)\\16. 기술 및 참고자료(CATALOGUE 등)\\기술 및 참고자료(CATALOGUE 등).pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "f947561b7f1a413b",
+      "char_count": 392
+    },
+    {
+      "chunk_idx": 86,
+      "text": "기능\n33 이상대책및점검\n34 Starvert Series\n35 인버터교육일정 iG5A\nSpeed vs Torque Characteristics )%(\neuqroT\n)zH(\ndeepS\n센서리스벡터제어로저속에서도우수한토크성능확보 Sleep and Wake-Up기능\nLS산전의고유한센서리스벡터제어를통한우수한전동기제어능력으로 부하가작을경우에는인버터가자동으로정지하고, 부하가증가하면다시\n강력한토크성능을발휘합니다. 가동하여전체시스템에너지를절약하는기능을내장하고있습니다.\nPID reference\nWake-up Level\nPID feedback 시스템자동복귀\nOutput frequency Sleep mode\nSensorless Vector Control Mode : Auto tuning Measure maximum 부하감시기능을통한\ntorque(%) at each speed (1/5/10/20/30/40/50/60Hz)\n에너지절약\n운전중지락보호가능운전중지락보호가능 ▶\nStarvert iG5A는초소형임에도운전중에지락보호가가능하여사고를예방할 Run command\n수있습니다.\n▲\n아날로그신호로정∙역운전제어\n-10V~10V 입력이 가능하여 전압신호 만으로도 인버터의 속도지령 및 누설저감기능\n정∙역운전제어가가능합니다.\nLS 고유의저누설PWM 알고리즘을내장하여습기가많은냉각탑, 온실등\n누설전류가적은인버터를필요로하는환경에서도안심하고사용할수있습니다.\n향상된PID 제어기능내장\n●표준PWM ●Low Leakage PWM\n자체PID기능을내장하고있어별도의PID 컨트롤러없이유량, 유압, 레벨등의 영벡터 영벡터\n일정제어를수행할수있습니다.\nPID제어 유효벡터 유효벡터\nPI제어 전원사고시안정된시스템정지를위한KEB\n전원사고로부터주요설비를보호해주는KEB 기능은돌발적인전원단\n정전사고발생시입력전원없이도자동으로부하를정지시킴으로써고객의\n설비를안전하게보호합니다.\nDB회로를내장하여제동저항기접속가능\n옵션으로제동저항기를접속하면반송, 운반기계등회생력이큰부하에서도\nVin\n무리없이감속시간을줄일수있으며생산성, 제어성이향상됩니다. 정전시점\n�사양은제동저항및주변기기(22Page)를참고하십시오. Vdc KEB 기능동작시점\n속도 제동저항사용시 Mspeed KEB 기능정지시점\n제동저항미사용시\n시간 Iout\n감속시간감소\n회생력이큰부하에적용할경우",
+      "header": "STARVERT",
+      "section_type": "정지",
+      "equipment": [
+        "연소가스처리"
+      ],
+      "company_id": "26",
+      "company_name": "연소가스처리설비",
+      "source_file": "기술 및 참고자료(CATALOGUE 등)",
+      "source_path": "D:\\기계도면\\기계도면\\26. 연소가스처리설비 (에스텍)\\준공도서-연소가스 처리설비(전기)\\16. 기술 및 참고자료(CATALOGUE 등)\\기술 및 참고자료(CATALOGUE 등).pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "15a88200561712fb",
+      "char_count": 1115
+    },
+    {
+      "chunk_idx": 87,
+      "text": "dc KEB 기능동작시점\n속도 제동저항사용시 Mspeed KEB 기능정지시점\n제동저항미사용시\n시간 Iout\n감속시간감소\n회생력이큰부하에적용할경우 iG5A\n브레이크제어기능\n전자 브레이크를 이용하는 부하 시스템에서 인버터의 출력단자를\n이용하여브레이크ON,OFF제어가가능합니다.\n브레이크개방 브레이크\n닫힘주파수\n출력주파수\n출력전류\n브레이크열림지연시간 브레이크닫힘지연시간\n전동기속도\n브레이크출력단자\n운전지령\n브레이크 브레이크열림구간 브레이크\n닫힘구간 닫힘구간\nRS485 통신기능내장\n외부기기에서손쉽게통신을통한운전또는상태모니터링이가능합니다.\nXGT Panel과통신 PC와의통신\nRS485-232C 컨버터\n효율적인운전상태Monitoring 효율적인운전상태Monitoring\n●각장비별가동시간Check 가능 ●실시간운전상태Check 가능(전압, 전류, 주파수등)\n●경고메시지한글출력가능 ●변경파라메터확인가능\n●효율적인트립이력관리(트립발생시간, 해제시간, 상태등) ●Windows 지원\n●한∙영∙중문표시지원\n원격제어관리\n원격제어관리\n●운전지령가능(정∙역운전, 주파수변경등)\n●운전지령가능(정∙역운전, 주파수변경등) ●파라메터설정가능\n●파라메터설정가능 ●INV 31대제어가능\n●INV 31대제어가능 ●RS485, Modbus 통신가능\n●RS485, Modbus 통신가능 ※LS산전홈페이지에서DriverView를무료로Download 받으실수있습니다.",
+      "header": "STARVERT",
+      "section_type": "정지",
+      "equipment": [
+        "연소가스처리"
+      ],
+      "company_id": "26",
+      "company_name": "연소가스처리설비",
+      "source_file": "기술 및 참고자료(CATALOGUE 등)",
+      "source_path": "D:\\기계도면\\기계도면\\26. 연소가스처리설비 (에스텍)\\준공도서-연소가스 처리설비(전기)\\16. 기술 및 참고자료(CATALOGUE 등)\\기술 및 참고자료(CATALOGUE 등).pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "171f134a4a189f82",
+      "char_count": 689
+    },
+    {
+      "chunk_idx": 88,
+      "text": "485, Modbus 통신가능\n●RS485, Modbus 통신가능 ※LS산전홈페이지에서DriverView를무료로Download 받으실수있습니다. iG5A\n자기진단기능으로파워모듈의상태확인\n자기진단 기능을 내장하여 간단한 파라미터 설정만으로도 인버터의 중요\n부분인출력모듈의이상유무를Check 할수있습니다.\n간단한냉각팬교체\n인버터의커버를벗기지않고도간단하게팬을교체할수있는구조를채택\n하였습니다.\n냉각팬On/Off제어가능\n내부온도에따라냉각팬제어가가능하여팬소음을줄였으며이로인하여\n냉각팬의수명또한연장되었습니다.\n편리한4방향Key 채용으로파라메터설정용이\n인체공학적4방향Key 채용하여파라메터를더욱간단하고, 빠르게조작\n할수있으며, 인버터의상태모니터링역시편리하게확인하실수있습니다.\n판넬외부설치용별치형Loader(옵션)\n패널외부에서모니터링및제어가가능하며여러대의인버터에동일파라\n미터를간편하게복사적용할수있습니다.\n로더타입+외장형로더(옵션)\nnon 로더타입+외장형로더(옵션)\n�제품명에 N(non Loader)이라고 표시가 되어있으면 인버터에 로더가 없는 Type입니다.\n(ex:SV004iG5A-2N)\nINV, REMOTE KPD 2M(SV-iG5A) 원격조작옵션(2m)\nINV, REMOTE KPD 3M(SV-iG5A) 원격조작옵션(3m)\nINV, REMOTE KPD 5M(SV-iG5A) 원격조작옵션(5m) iG5A ▶\n세계규격대응(UL, CE)\n점점증가하는해외수출에대비하여UL, CE 규격을획득하여국내뿐아니라해외수출까지\n문제가없도록세계규격을취득하였습니다.\n해외Motor 대응(4kW 용량추가)\niG5A는4kW 용량의인버터를추가하여선택의폭을늘림으로써, 좀더쉽게적용가능하도록\n하였습니다.\n해외전압사양대응\n입력전압의폭을늘려380V~480V(+10, -15%)의전원을사용하실수있습니다.\nPNP/NPN입력선택가능\n입력단자의경우PNP또는NPN 타입의TR신호와연결이가능하므로제어신호단자의Type에\n관계없이간단한선택만으로이용이가능합니다.",
+      "header": "STARVERT",
+      "section_type": "운전",
+      "equipment": [
+        "팬"
+      ],
+      "company_id": "26",
+      "company_name": "연소가스처리설비",
+      "source_file": "기술 및 참고자료(CATALOGUE 등)",
+      "source_path": "D:\\기계도면\\기계도면\\26. 연소가스처리설비 (에스텍)\\준공도서-연소가스 처리설비(전기)\\16. 기술 및 참고자료(CATALOGUE 등)\\기술 및 참고자료(CATALOGUE 등).pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "12fd49b9f22158bd",
+      "char_count": 953
+    },
+    {
+      "chunk_idx": 89,
+      "text": "PNP/NPN입력선택가능\n입력단자의경우PNP또는NPN 타입의TR신호와연결이가능하므로제어신호단자의Type에\n관계없이간단한선택만으로이용이가능합니다. iG5A\n적용전동기 200V 계열 400V 계열\n0.4kW (0.5HP) SV004iG5A-2 SV004iG5A-4\n0.75kW (1HP) SV008iG5A-2 SV008iG5A-4\n1.5kW (2HP) SV015iG5A-2 SV015iG5A-4\n2.2kW (3HP) SV022iG5A-2 SV022iG5A-4\n3.7kW (5HP) SV037iG5A-2 SV037iG5A-4\n4.0kW (5.4HP) SV040iG5A-2 SV040iG5A-4\n5.5kW (7.5HP) SV055iG5A-2 SV055iG5A-4\n7.5kW (10HP) SV075iG5A-2 SV075iG5A-4\n11.0kW (15HP) SV110iG5A-2 SV110iG5A-4\n15.0kW (20HP) SV150iG5A-2 SV150iG5A-4\n18.5kW (25HP) SV185iG5A-2 SV185iG5A-4\n22.0kW (30HP) SV220iG5A-2 SV220iG5A-4\nSV 015 iG5A 2 N\nLS인버터STARVERT시리즈\n최대적용가능전동기용량(kW)\n(004 : 0.4kW ~ 220: 22kW)\n인버터시리즈명\n입력전원사양(200V급, 400V급)\nNON LOADER (로더없음)� 옵션",
+      "header": "STARVERT",
+      "section_type": "일반",
+      "equipment": [
+        "연소가스처리"
+      ],
+      "company_id": "26",
+      "company_name": "연소가스처리설비",
+      "source_file": "기술 및 참고자료(CATALOGUE 등)",
+      "source_path": "D:\\기계도면\\기계도면\\26. 연소가스처리설비 (에스텍)\\준공도서-연소가스 처리설비(전기)\\16. 기술 및 참고자료(CATALOGUE 등)\\기술 및 참고자료(CATALOGUE 등).pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "9be9cda4e4e7b908",
+      "char_count": 681
+    },
+    {
+      "chunk_idx": 90,
+      "text": "kW)\n(004 : 0.4kW ~ 220: 22kW)\n인버터시리즈명\n입력전원사양(200V급, 400V급)\nNON LOADER (로더없음)� 옵션 iG5A ▶\n200V급\nSV ���iG5A-2� 004 008 015 022 037 040 055 075 110 150 185 220\n주1) (HP) 0.5 1 2 3 5 5.4 7.5 10 15 20 25 30\n적용모터\n(kW) 0.4 0.75 1.5 2.2 3.7 4.0 5.5 7.5 11 15 18.5 22\n정격용량(kVA)주2) 0.95 1.9 3.0 4.5 6.1 6.5 9.1 12.2 17.5 22.9 28.2 33.5\n정격전류(A)주3) 2.5 5 8 12 16 17 24 32 46 60 74 88\n출력특성\n최대출력주파수 400 [Hz] 주4)\n최대출력전압(V) 3상 200 ~ 230V 주5)\n정격전압(V) 3상 200 ~ 230 VAC (+10%, -15%)\n입력전원\n정격주파수 50 ~ 60 [Hz] (±5%)\n냉각방식 자연냉각 강제풍냉\n인버터중량(kg) 0.76 0.77 1.12 1.84 1.89 1.89 3.66 3.66 9.00 9.00 13.3 13.3\n400V급\nSV ���iG5A-4� 004 008 015 022 037 040 055 075 110 150 185 220\n주1) (HP) 0.5 1 2 3 5 5.4 7.5 10 15 20 25 30\n적용모터\n(kW) 0.4 0.75 1.5 2.2 3.7 4.0 5.5 7.5 11 15 18.5 22\n정격용량(kVA)주2) 0.95 1.9 3.0 4.5 6.1 6.9 9.1 12.2 18.3 22.9 29.7 34.3\n정격전류(A)주3) 1.25 2.5 4 6 8 9 12 16 24 30 39 45\n출력특성\n최대출력주파수 400 [Hz] 주4)\n최대출력전압(V) 3상 380 ~ 480V 주5)\n정격전압(V) 3상 380 ~ 480 VAC (+10%, -15%)\n입력전원\n정격주파수 50 ~ 60 [Hz] (±5%)\n냉각방식 자연냉각 강제풍냉\n인버터중량(kg) 0.76 0.77 1.12 1.84 1.89 1.89 3.66 3.66 9.00 9.00 13.3 13.3\n주1) 적용모터는4극OTIS-LG표준모터를사용하는경우의최대적용용량을표시한것입니다.\n주2) 정격용량은200V급입력용량은220V, 400V 입력용량은440V를기준으로한것입니다.\n주3) 캐리어주파수(H39) 설정이3kHz 이상일경우Manual을참고하십시오.(Page 13-3)\n주4) H40(제어방식선택)을3번(센서리스벡터제어)으로선택하면최대주파수는300Hz까지설정할수있습니다.\n주5) 최대출력전압은전원전압이상으로올라가지않습니다. 출력전압은전원전압이하에서임의로설정할수있습니다.",
+      "header": "STARVERT",
+      "section_type": "일반",
+      "equipment": [
+        "연소가스처리"
+      ],
+      "company_id": "26",
+      "company_name": "연소가스처리설비",
+      "source_file": "기술 및 참고자료(CATALOGUE 등)",
+      "source_path": "D:\\기계도면\\기계도면\\26. 연소가스처리설비 (에스텍)\\준공도서-연소가스 처리설비(전기)\\16. 기술 및 참고자료(CATALOGUE 등)\\기술 및 참고자료(CATALOGUE 등).pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "f63f0bf63813d0bd",
+      "char_count": 1329
+    },
+    {
+      "chunk_idx": 91,
+      "text": "택하면최대주파수는300Hz까지설정할수있습니다.\n주5) 최대출력전압은전원전압이상으로올라가지않습니다. 출력전압은전원전압이하에서임의로설정할수있습니다. iG5A\n제어방식 V/F제어, 센서리스벡터제어\n디지털지령: 0.01Hz\n주파수설정분해능\n아날로그지령: 0.06Hz (최대 주파수: 60Hz)\n디지털지령운전: 최대출력주파수의0.01%\n주파수정도\n아날로그지령운전: 최대출력주파수의0.1%\n제어\nV/F 패턴 리니어, 2승저감, 사용자V/F\n과부하내량 150% 1분\n토오크부스트 수동토오크부스트, 자동토오크부스트\n회생제동 최대제동 20% (주1)\n토오크 시간/사용량 별도설치형제동저항사용시150%(주2)\n운전방식 로더/ 단자대/ 통신 운전/ 리모트 로더 중 선택\n아날로그방식:0 ~10[V], -10 ~10[V], 0~20[mA], 4~20[mA]\n주파수설정\n디지털방식: 로더\n운전기능 PID제어, 업-다운 운전, 3-와이어 운전\nNPN / PNP선택가능\n기능: 정방향운전, 역방향운전, 비상정지, 고장시리셋, 조그운전, 다단속주파수-상/중/하,\n다기능단자(8점)\n입력\n다단가감속-상/중/하, 정지중직류제동, 제2 전동기선택, 업-다운운전기능(주파수증가/감소),\n운전 P1 ~ P8\n3 와이어운전, 외부트립신호입력(A/B 접점), 자기진단, PID운전중일반운전으로절체,\n2ndSource, 아날로그지령주파수고정, 가감속중지, 업-다운주파수저장중선택, 조그정/역방향운전.\n다기능\n오픈컬랙터단자 고장출력및인버터 DC 24V 100mA이하\n운전상태출력\n출력\n다기능릴레이단자 (N.O., N.C.) AC250V 1A이하, DC 30V 1A이하\n0 ~10 Vdc (10mA이하) : 출력주파수, 출력전류, 출력전압,\n아날로그출력(AM)\n인버터직류전압중선택가능\n과전압, 저전압, 과전류, 과전류2, 지락전류검출, 인버터과열, 전동기과열, 출력결상,\n트립\n과부하보호, 통신오류, 주파수지령상실, 하드웨어이상, 냉각팬이상, 브레이크이상\n보호기능 경보 스톨방지, 과부하\n15 msec 이하: 운전 계속 (정격 입력 전압, 정격 출력 이내 일 것)\n순시정전\n15 msec 이상: 자동 재시동 운전 가능\n보호구조 개방형(IP 20), NEMA TYPE 1(Option)\n주위온도 -10℃~ 50℃\n보존온도 -20℃~ 65℃\n구조및\n주위습도 상대습도90% RH 이하(이슬맺힘현상없을것)\n사용환경",
+      "header": "STARVERT",
+      "section_type": "시동",
+      "equipment": [
+        "재열기",
+        "팬"
+      ],
+      "company_id": "26",
+      "company_name": "연소가스처리설비",
+      "source_file": "기술 및 참고자료(CATALOGUE 등)",
+      "source_path": "D:\\기계도면\\기계도면\\26. 연소가스처리설비 (에스텍)\\준공도서-연소가스 처리설비(전기)\\16. 기술 및 참고자료(CATALOGUE 등)\\기술 및 참고자료(CATALOGUE 등).pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "0a7905c4e68811b5",
+      "char_count": 1153
+    },
+    {
+      "chunk_idx": 92,
+      "text": "E 1(Option)\n주위온도 -10℃~ 50℃\n보존온도 -20℃~ 65℃\n구조및\n주위습도 상대습도90% RH 이하(이슬맺힘현상없을것)\n사용환경 고도, 진동 1,000m이하, 5.9m/sec (0.6G) 이하\n주위기압 70~106 kPa\n주위환경 실내에부식성가스, 인화성가스, 오일미스트, 먼지등이없을것\n주1) 회생제동토오크20%는감속정지시모터의손실에의한평균제동토오크를의미합니다.\n주2) 제동저항기의사양은22page를참조하십시오. iG5A\n0.4~7.5kW\n제동저항(옵션)\n3상교류입력\nB1 B2\n(입력정격전압)",
+      "header": "STARVERT",
+      "section_type": "정지",
+      "equipment": [
+        "재열기"
+      ],
+      "company_id": "26",
+      "company_name": "연소가스처리설비",
+      "source_file": "기술 및 참고자료(CATALOGUE 등)",
+      "source_path": "D:\\기계도면\\기계도면\\26. 연소가스처리설비 (에스텍)\\준공도서-연소가스 처리설비(전기)\\16. 기술 및 참고자료(CATALOGUE 등)\\기술 및 참고자료(CATALOGUE 등).pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "bec0e53658f90dea",
+      "char_count": 286
+    },
+    {
+      "chunk_idx": 93,
+      "text": "의미합니다.\n주2) 제동저항기의사양은22page를참조하십시오. iG5A\n0.4~7.5kW\n제동저항(옵션)\n3상교류입력\nB1 B2\n(입력정격전압) R U\nS V\nT W\nG\n접지단자\n24 24V출력",
+      "header": "R U\nS V\nT W\nG",
+      "section_type": "일반",
+      "equipment": [
+        "연소가스처리"
+      ],
+      "company_id": "26",
+      "company_name": "연소가스처리설비",
+      "source_file": "기술 및 참고자료(CATALOGUE 등)",
+      "source_path": "D:\\기계도면\\기계도면\\26. 연소가스처리설비 (에스텍)\\준공도서-연소가스 처리설비(전기)\\16. 기술 및 참고자료(CATALOGUE 등)\\기술 및 참고자료(CATALOGUE 등).pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "ed46773d18331b88",
+      "char_count": 108
+    },
+    {
+      "chunk_idx": 94,
+      "text": "AM\n다기능아날로그\nP1 FX(정방향운전지령) 출력신호단자\n(0~10V)",
+      "header": "AM",
+      "section_type": "운전",
+      "equipment": [
+        "연소가스처리"
+      ],
+      "company_id": "26",
+      "company_name": "연소가스처리설비",
+      "source_file": "기술 및 참고자료(CATALOGUE 등)",
+      "source_path": "D:\\기계도면\\기계도면\\26. 연소가스처리설비 (에스텍)\\준공도서-연소가스 처리설비(전기)\\16. 기술 및 참고자료(CATALOGUE 등)\\기술 및 참고자료(CATALOGUE 등).pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "46231ec830ea55af",
+      "char_count": 40
+    },
+    {
+      "chunk_idx": 95,
+      "text": "CM\nP2 RX(역방향운전지령)\nCM 입력신호공통단자\nP3 EST(비상정지)\nP4 RST(트립해제신호)\nP5 JOG(조그주파수운전) 3A A 접점출력\nCM 입력신호공통단자\n3C 접점공통단자\nP6 다단속주파수-하\n3B B 접점출력\nP7 다단속주파수-중\nP8 다단속주파수-상\nMO 다기능오픈콜렉터\n가변저항: 1~5[Kohm] 출력단자\n1/2W이상\nMG MO 공통단자\nVR 볼륨저항용10V출력단자\nV1 주파수설정용전압신호입력:-10~10V\nS+\nI 주파수설정용전류신호입력:0~20mA RS485통신신호연결단자\nS-\nCM 입력신호공통단자\n주) 각단자대의사양은단자기능(13Page)을참조하여주십시요.\n\niG5A\n11.0~22.0kW\n직류리액터 제동저항(옵션)\n3상교류입력 P1(+) B1 B2 N( )\n(입력정격전압)",
+      "header": "CM",
+      "section_type": "정지",
+      "equipment": [
+        "연소가스처리"
+      ],
+      "company_id": "26",
+      "company_name": "연소가스처리설비",
+      "source_file": "기술 및 참고자료(CATALOGUE 등)",
+      "source_path": "D:\\기계도면\\기계도면\\26. 연소가스처리설비 (에스텍)\\준공도서-연소가스 처리설비(전기)\\16. 기술 및 참고자료(CATALOGUE 등)\\기술 및 참고자료(CATALOGUE 등).pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "329a738ddacadfcf",
+      "char_count": 396
+    },
+    {
+      "chunk_idx": 96,
+      "text": "age)을참조하여주십시요.\n\niG5A\n11.0~22.0kW\n직류리액터 제동저항(옵션)\n3상교류입력 P1(+) B1 B2 N( )\n(입력정격전압) R U\nS V\nT W\nG\nG\n접지단자 접지단자\n24 24V출력",
+      "header": "R U\nS V\nT W\nG\nG",
+      "section_type": "일반",
+      "equipment": [
+        "연소가스처리"
+      ],
+      "company_id": "26",
+      "company_name": "연소가스처리설비",
+      "source_file": "기술 및 참고자료(CATALOGUE 등)",
+      "source_path": "D:\\기계도면\\기계도면\\26. 연소가스처리설비 (에스텍)\\준공도서-연소가스 처리설비(전기)\\16. 기술 및 참고자료(CATALOGUE 등)\\기술 및 참고자료(CATALOGUE 등).pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "6e1ff5e9e156c4a1",
+      "char_count": 115
+    },
+    {
+      "chunk_idx": 97,
+      "text": "AM\n다기능아날로그\nP1 FX(정방향운전지령) 출력신호단자\n(0~10V)",
+      "header": "AM",
+      "section_type": "운전",
+      "equipment": [
+        "연소가스처리"
+      ],
+      "company_id": "26",
+      "company_name": "연소가스처리설비",
+      "source_file": "기술 및 참고자료(CATALOGUE 등)",
+      "source_path": "D:\\기계도면\\기계도면\\26. 연소가스처리설비 (에스텍)\\준공도서-연소가스 처리설비(전기)\\16. 기술 및 참고자료(CATALOGUE 등)\\기술 및 참고자료(CATALOGUE 등).pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "46231ec830ea55af",
+      "char_count": 40
+    },
+    {
+      "chunk_idx": 98,
+      "text": "CM\nP2 RX(역방향운전지령)\nCM 입력신호공통단자\nP3 EST(비상정지)\nP4 RST(트립해제신호)\nP5 JOG(조그주파수운전) 3A A 접점출력\nCM 입력신호공통단자\n3C 접점공통단자\nP6 다단속주파수-하\n3B B 접점출력\nP7 다단속주파수-중\nP8 다단속주파수-상\nMO 다기능오픈콜렉터\n가변저항: 1~5[Kohm] 출력단자\n1/2W이상\nMG MO 공통단자\nVR 볼륨저항용10V출력단자\nV1 주파수설정용전압신호입력:-10~10V\nS+\nI 주파수설정용전류신호입력:0~20mA RS485통신신호연결단자\nS-\nCM 입력신호공통단자\n주) 각단자대의사양은단자기능(13Page)을참조하여주십시요.\n\niG5A\n파워 단자대 배선 사양\n●0.4 ~1.5kW ●5.5 ~7.5kW ●2.2 ~4.0kW\nR S T B1 B2 B1 B2 U V W R S T B1 B2 U V W\n●11.0 ~22.0kW",
+      "header": "CM",
+      "section_type": "정지",
+      "equipment": [
+        "연소가스처리"
+      ],
+      "company_id": "26",
+      "company_name": "연소가스처리설비",
+      "source_file": "기술 및 참고자료(CATALOGUE 등)",
+      "source_path": "D:\\기계도면\\기계도면\\26. 연소가스처리설비 (에스텍)\\준공도서-연소가스 처리설비(전기)\\16. 기술 및 참고자료(CATALOGUE 등)\\기술 및 참고자료(CATALOGUE 등).pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "329a738ddacadfcf",
+      "char_count": 441
+    },
+    {
+      "chunk_idx": 99,
+      "text": "●5.5 ~7.5kW ●2.2 ~4.0kW\nR S T B1 B2 B1 B2 U V W R S T B1 B2 U V W\n●11.0 ~22.0kW",
+      "header": "U V W R S T",
+      "section_type": "일반",
+      "equipment": [
+        "연소가스처리"
+      ],
+      "company_id": "26",
+      "company_name": "연소가스처리설비",
+      "source_file": "기술 및 참고자료(CATALOGUE 등)",
+      "source_path": "D:\\기계도면\\기계도면\\26. 연소가스처리설비 (에스텍)\\준공도서-연소가스 처리설비(전기)\\16. 기술 및 참고자료(CATALOGUE 등)\\기술 및 참고자료(CATALOGUE 등).pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "6f45aafead76893b",
+      "char_count": 79
+    },
+    {
+      "chunk_idx": 100,
+      "text": "●5.5 ~7.5kW ●2.2 ~4.0kW\nR S T B1 B2 B1 B2 U V W R S T B1 B2 U V W\n●11.0 ~22.0kW U V W R S T\nR(L1) S(L2) T(L3) P1(+) B1 B2 N(-) U V W\n단락편\nR, S, T 굵기 U, V, W 굵기 접지선굵기 단자나사크기 단자토크\nTerminal Screw Torque\nmm2 AWG mm2 AWG mm2 AWG Screw Size (Kgf.cm)/lb-in\nSV004iG5A-2 2 14 2 14 3.5 12 M3.5 10/8.7\nSV008iG5A-2 2 14 2 14 3.5 12 M3.5 10/8.7\nSV015iG5A-2 2 14 2 14 3.5 12 M3.5 10/8.7\nSV022iG5A-2 2 14 2 14 3.5 12 M4 15/13\nSV037iG5A-2 3.5 12 3.5 12 3.5 12 M4 15/13\nSV040iG5A-2 3.5 12 3.5 12 3.5 12 M4 15/13\nSV055iG5A-2 5.5 10 5.5 10 5.5 10 M5 32/28\nSV075iG5A-2 8 8 8 8 5.5 10 M5 32/28\nSV110iG5A-2 14 6 14 6 14 6 M6 32/28\nSV150iG5A-2 22 4 22 4 14 6 M6 32/28\nSV185iG5A-2 30 2 30 2 22 4 M8 45/39\nSV220iG5A-2 38 2 30 2 22 4 M8 45/39\nSV004iG5A-4 2 14 2 14 2 14 M3.5 10/8.7\nSV008iG5A-4 2 14 2 14 2 14 M3.5 10/8.7\nSV015iG5A-4 2 14 2 14 2 14 M4 15/13\nSV022iG5A-4 2 14 2 14 2 14 M4 15/13\nSV037iG5A-4 2 14 2 14 2 14 M4 15/13\nSV040iG5A-4 2 14 2 14 2 14 M4 15/13\nSV055iG5A-4 3.5 12 2 14 3.5 12 M5 32/28\nSV075iG5A-4 3.5 12 3.5 12 3.5 12 M5 32/28\nSV110iG5A-4 5.5 10 5.5 10 8 8 M5 32/28\nSV150iG5A-4 14 6 8 8 8 8 M5 32/28\nSV185iG5A-4 14 6 8 8 14 6 M6 45/39\nSV220iG5A-4 22 4 14 6 14 6 M6 45/39\n�압착단자를사용하지않을경우전선피복의제거길이\n제어회로 단자\nMO MG 24 P1 P2 CM P3 P4 S- S+\n3A 3B 3C P5 CM P6 P7 P8 VR V1 I AM\n배선굵기(mm²) 주2)\n단자종류 단자명칭 단자나사 토오크(Nm) 전기적사양\n단선 연선\nP1~P8 다기능입력단자1-8 1.0 1.5 M2.6 0.4\nCM 접점공통단자 1.0 1.5 M2.6 0.4\nVR 외부볼륨저항용전원단자 1.0 1.5 M2.6 0.4 출력전압: 12V 최대출력전류: 100mA 볼륨저항: 1 ~ 5kohm\nV1 전압운전용입력단자 1.0 1.5 M2.6 0.4 최대입력전압: -12V ~ +12V 입력\nI 전류운전용입력단자 1.0 1.5 M2.6 0.4 0 ~ 20mA 입력 내부저항: 250 ohm\nAM 다기능아날로그출력단자 1.0 1.5 M2.6 0.4 최대출력전압: 11[V] 최대출력전류: 10mA\nMO 다기능단자(오픈컬렉터) 1.0 1.5 M2.6 0.4 DC 26V,100mA 이하\nMG 외부전원용접지단자 1.0 1.5 M2.6 0.4\n24 외부24V 전원 1.0 1.5 M2.6 0.4 최대출력전류: 100mA\n3A 다기능릴레이출력A접점 1.0 1.5 M2.6 0.4 AC 250V, 1A 이하\n3B 다기능릴레이출력B접점 1.0 1.5 M2.6 0.4 DC 30V, 1A 이하\n3C 다기능릴레이접점공통단자 1.0 1.5 M2.6 0.4\n주1) 전선은600V, 75℃이상의동전선을사용하여주십시오.\n주2) 단자나사는규정토크를적용하여주십시오.\n※다기능입력단자(P1~P8)를외부24V 전원을통해구동할경우실제로12V 이상의전압이인가되어야동작을합니다. 제어단전선의전압강하에의해12V 이하로떨어지지않도록주의하십시오.\n※제어배선을케이블타이등을이용하여정리할경우제어단자대에서15cm 이상떨어진곳에작업하십시오. 그렇지않을경우전면덮개가조립되지않을수있습니다.",
+      "header": "U V W R S T",
+      "section_type": "운전",
+      "equipment": [
+        "연소가스처리"
+      ],
+      "company_id": "26",
+      "company_name": "연소가스처리설비",
+      "source_file": "기술 및 참고자료(CATALOGUE 등)",
+      "source_path": "D:\\기계도면\\기계도면\\26. 연소가스처리설비 (에스텍)\\준공도서-연소가스 처리설비(전기)\\16. 기술 및 참고자료(CATALOGUE 등)\\기술 및 참고자료(CATALOGUE 등).pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "42e1963606431344",
+      "char_count": 2081
+    },
+    {
+      "chunk_idx": 101,
+      "text": "의하십시오.\n※제어배선을케이블타이등을이용하여정리할경우제어단자대에서15cm 이상떨어진곳에작업하십시오. 그렇지않을경우전면덮개가조립되지않을수있습니다. iG5A\n구분 표시 기능명칭 기능설명\nRUN 운전키 운전지령\nSTOP/RESET 정지/리셋키 STOP : 운전시정지지령, RESET : 고장시리셋지령\n▲ 업키 코드를이동하거나파라미터설정값을증가시킬때사용\nKEY ▼ 다운키 코드를이동하거나파라미터설정값을감소시킬때사용\n▶ 우쉬프트키 그룹간의이동이나파라미터설정시자릿수를우측으로이동할때사용\n◀ 좌쉬프트키 그룹간의이동이나파라미터설정시자릿수를좌측으로이동할때사용\n● 엔터키 파라미터값을변경할때나변경된파라미터를저장하고자할때사용\nFWD 정방향표시 정방향운전중일때점등합니다.\nREV 역방향표시 역방향운전중일때점등합니다.",
+      "header": "U V W R S T",
+      "section_type": "정지",
+      "equipment": [
+        "연소가스처리"
+      ],
+      "company_id": "26",
+      "company_name": "연소가스처리설비",
+      "source_file": "기술 및 참고자료(CATALOGUE 등)",
+      "source_path": "D:\\기계도면\\기계도면\\26. 연소가스처리설비 (에스텍)\\준공도서-연소가스 처리설비(전기)\\16. 기술 및 참고자료(CATALOGUE 등)\\기술 및 참고자료(CATALOGUE 등).pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "8cf6858b54329660",
+      "char_count": 388
+    },
+    {
+      "chunk_idx": 102,
+      "text": "키 파라미터값을변경할때나변경된파라미터를저장하고자할때사용\nFWD 정방향표시 정방향운전중일때점등합니다.\nREV 역방향표시 역방향운전중일때점등합니다. LED\nRUN 운전중표시 가∙감속중인경우점멸하며정속인경우점등합니다.\nSET 설정중표시 파라미터를설정중에점등합니다.\n외장형 로더 외형도 및 치수",
+      "header": "LED",
+      "section_type": "운전",
+      "equipment": [
+        "연소가스처리"
+      ],
+      "company_id": "26",
+      "company_name": "연소가스처리설비",
+      "source_file": "기술 및 참고자료(CATALOGUE 등)",
+      "source_path": "D:\\기계도면\\기계도면\\26. 연소가스처리설비 (에스텍)\\준공도서-연소가스 처리설비(전기)\\16. 기술 및 참고자료(CATALOGUE 등)\\기술 및 참고자료(CATALOGUE 등).pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "68631f0994d36c6b",
+      "char_count": 160
+    },
+    {
+      "chunk_idx": 103,
+      "text": "RUN STOP\nRESET\nENT\n2.63\n4.27\n4.3\n6.56\n주1)\n주1) 트립시4개의LED가동시에점멸합니다.",
+      "header": "RUN STOP\nRESET\nENT",
+      "section_type": "비상",
+      "equipment": [
+        "연소가스처리"
+      ],
+      "company_id": "26",
+      "company_name": "연소가스처리설비",
+      "source_file": "기술 및 참고자료(CATALOGUE 등)",
+      "source_path": "D:\\기계도면\\기계도면\\26. 연소가스처리설비 (에스텍)\\준공도서-연소가스 처리설비(전기)\\16. 기술 및 참고자료(CATALOGUE 등)\\기술 및 참고자료(CATALOGUE 등).pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "7ce5330d7780dd28",
+      "char_count": 65
+    },
+    {
+      "chunk_idx": 104,
+      "text": "CL\n2-∅ 4.5\n5 13.9\n2.1 23.1 iG5A\n제어 파라메터 그룹\n인버터의원활한운전을위해운전상황에맞는\n파라미터를설정해야하는데파라미터그룹은\n4개의그룹으로나뉘어져있습니다.\n이그룹의명칭및주요내용은다음과같습니다.\n그룹명칭 주요내용\n운전그룹 목표주파수, 가∙감속시간등운전에필요한가장기본적인파라미터\n기능그룹1 출력주파수및전압을조정할수있는기본기능파라미터\n기능그룹2 PID 운전및제2전동기설정등응용기능파라미터\n입출력그룹 다기능단자설정등시퀀스구성에필요한파라미터\n그룹간의이동은아래그림에서와같이각그룹의첫번째코드에서만이동이가능합니다.\n우쉬프트키(▶)를이용하는경우 좌쉬프트키(◀)를이용하는경우\n(주1) (주1)\n주1) 운전그룹의첫번째코드는목표주파수를설정할수있는곳입니다. 따라서공장출하시에는0.00으로설정되어있으나사용자가운전주파수를변경한경우에는변경된운전주파수를표시합니다. iG5A\n그룹간의이동은아래그림에서와같이각그룹의첫번째코드에서만이동이가능합니다.\n가속시간을5.0초에서16.0초로변경하는경우\n∙운전그룹의첫번째코드정보를표시합니다. ∙업키(▲)를누릅니다.\n∙운전그룹의두번째코드인가속시간ACC를표시합니다. ∙엔터키(●)를누릅니다.\n∙5.0의0 밝기가5. 보다밝게표시됩니다. ∙좌쉬프트키(◀)를누릅니다.\n∙5.0 의0 밝기가흐려지며5.의값을변경할수있음을나타냅니다. ∙업키(▲)를누릅니다.\n∙6.0으로값이바뀝니다. ∙좌쉬프트키(◀)를누릅니다.\n∙6.0 밝기가흐려지며06.0을표시합니다. ∙업키(▲)를누릅니다.\n∙16.0을표시합니다.\n∙엔터키(●)를누릅니다. ∙16.0 이점멸합니다.(주1)\n∙엔터키(●)를누릅니다.\n8 ∙ACC를표시합니다. 가속시간이16.0초로변경됩니다.\n주1) 파라미터수정시깜박이는것은수정된값을입력시킬것인가를묻는것입니다. 이상태에서엔터키(●)를누르면입력이완료됩니다.\n만약수정된값을입력시키지않으려면점등상태에서엔터키(●)를제외한좌,우,업,다운키를(◀)(▶)(▲)(▼) 누르면입력을취소시킬수있습니다.\n운전그룹내코드간이동방법\n∙운전그룹의첫번째코드인0.00 을표시합니다.",
+      "header": "CL",
+      "section_type": "운전",
+      "equipment": [
+        "연소가스처리"
+      ],
+      "company_id": "26",
+      "company_name": "연소가스처리설비",
+      "source_file": "기술 및 참고자료(CATALOGUE 등)",
+      "source_path": "D:\\기계도면\\기계도면\\26. 연소가스처리설비 (에스텍)\\준공도서-연소가스 처리설비(전기)\\16. 기술 및 참고자료(CATALOGUE 등)\\기술 및 참고자료(CATALOGUE 등).pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "cdcd857c200e653e",
+      "char_count": 983
+    },
+    {
+      "chunk_idx": 105,
+      "text": "제외한좌,우,업,다운키를(◀)(▶)(▲)(▼) 누르면입력을취소시킬수있습니다.\n운전그룹내코드간이동방법\n∙운전그룹의첫번째코드인0.00 을표시합니다. ∙업키(▲)를누릅니다.\n∙운전그룹의두번째코드인ACC를표시합니다. ∙업키(▲)를누릅니다.\n∙운전그룹의세번째코드인dEC를표시합니다. ∙업키(▲)를 계속누릅니다.\n∙운전그룹의마지막코드인drC를표시합니다. ∙운전그룹의마지막코드에서업키(▲)를다시한번누릅니다.\n5 ∙운전그룹의첫번째코드로되돌아옵니다.\n∙다운키(▼)를이용하면위와반대순서로이동할수있습니다. 초고속, Compact, Open Network Solution을\n지향하는신개념의차세대PLC\nXGT Series\nProgrammable Logic Controller",
+      "header": "CL",
+      "section_type": "운전",
+      "equipment": [
+        "연소가스처리"
+      ],
+      "company_id": "26",
+      "company_name": "연소가스처리설비",
+      "source_file": "기술 및 참고자료(CATALOGUE 등)",
+      "source_path": "D:\\기계도면\\기계도면\\26. 연소가스처리설비 (에스텍)\\준공도서-연소가스 처리설비(전기)\\16. 기술 및 참고자료(CATALOGUE 등)\\기술 및 참고자료(CATALOGUE 등).pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "d52eeba18f71f3c2",
+      "char_count": 364
+    },
+    {
+      "chunk_idx": 106,
+      "text": ", Open Network Solution을\n지향하는신개념의차세대PLC\nXGT Series\nProgrammable Logic Controller XGT Series\n시스템구성\n입력모듈\n구분\nAC110V AC220V DC24V\n8점 - XGI-A21A XGI-D21A\nXGI-A12A XGI-A21C XGI-D22A\n16점\n- - XGI-D22B\n- - XGI-D24A\nUSB 케이블 32점 - - XGI-D24B\n또는\n- - XGI-D28A\nBattery CPU모듈 XG5000 64점 - - XGI-D28B\nRS-232C 출력모듈\n구분\n릴레이 트라이액 트랜지스터\n8점 XGQ-RY1A - XGQ-TR1C\nXGQ-RY2A XGQ-SS2A XGQ-TR2A\n16점\nXGQ-RY2B - XGQ-TR2B\n- - XGQ-TR4A\n32점\n- - XGQ-TR4B\n- - XGQ-TR8A\n64점\n- - XGQ-TR8B\n입출력혼합모듈(XGH-DT4A)\n입력: DC24V, 16점 출력: 트랜지스터, 16점\n전원모듈\n기본베이스(XGB-M��A) 구분 특수모듈\n(XGP-����)\nXGF-AV8A 전압, 8채널\n구분 형명 내용 XGF-AC8A 전류, 8채널\n아날로그 XGF-AD8A 전압/전류, 8채널\nXGC-E041 증설케이블0.4m\n입력 XGF-AD16A 전압/전류, 16채널\nXGC-E061 증설케이블0.6m XGF-AD4S 전압/전류, 4채널, 절연형\nXGC-E121 증설케이블1.2m XGF-AW4S 2-wire, 전압/전류, 4채널, 절연형\n증설케이블 XGC-E301 증설케이블3.0m XGF-DV4A 전압, 4채널\nXGC-E501 증설케이블5.0m XGF-DC4A 전류, 4채널\nXGC-E102 증설케이블10m 아날로그 XGF-DV8A 전압, 8채널\n증설케이블 XGC-E152 증설케이블15m 입력모듈 출력 XGF-DC8A 전류, 8채널\n(XGC-E���) 증설종단 XGT-TERA 증설베이스종단커넥터 (XGI-����) XGF-DV4S 전압, 4채널, 절연형\nXGF-DC4S 전류, 4채널, 절연형\n아날로그 입력: 4채널, 전압/전류\nXGF-AH6A\n입출력 출력: 2채널, 전압/전류\nXGF-AC4H 입력: 4채널\nXGF-DC4H 출력: 4채널\nXGF-HO2A 오픈컬렉터(전압), 2채널\nXGF-HD2A 라인드라이버, 2채널\n다채널고속카운터, 8채널\nXGF-PO1A~PO3A 오픈컬렉터(전압), 1~3축\nXGF-PD1A~PD3A 라인드라이버, 1~3축\n출력모듈 XGF-PO1H~PO4H 오픈컬렉터(전압), 1~4축\n(XGQ-����) XGF-PD1H~PD4H 라인드라이버, 1~4축\n증설베이스(XGB-E��A) XGF-PN8A LS전용EtherCAT 네크워크, 8축\nXGF-PN8B 표준EtherCAT 네크워크, 8축\nXGF-M16M MECHATROLINK-Ⅱ,16축\n구분 기본베이스 증설베이스 XGF-RD4A RTD, 4채널\n4 slot XGB-M04A XGB-E04A XGF-RD4S RTD, 4채널, 절연형\n6 slot XGB-M06A XGB-E06A XGF-TC4S TC, 4채널, 절연형\n8 slot XGB-M08A XGB-E08A 입력:4채널(전압/전류/RTD/TC)\n12 slot XGB-M12A XGB-E12A XGF-TC4UD 출력:8채널(TR/전류)\n제어: 4루프\n입력:4채널(RTD)\nXGF-TC4RT 출력: 4채널(TR)\n제어: 4루프\n�XG5000 케이블\nXGF-SOEA DC24V, 32점\n(RS-232C) XGF-DL16A USB2.0,CF2001,Max16Gbyte,\n32점1슬롯(입력22점, 출력10점)\n구분 통신모듈\nXGL-EIMT 산업용Ethernet, 전기2포트\n특수모듈 XGL-EIMF 산업용Ethernet, 광2포트\n(XGF-����) RAPIEnet XGL-EIMH 산업용Ethernet, 전기1포트,광1포트\nXOL-EIMT 산업용Ethernet, 전기2포트, PC용PCI카드\nXOL-EIMF 산업용Ethernet, 광2포트, PC용PCI카드\nXGL-EFMT Open Ethernet, 전기1포트\nXGL-EFMF Open Ethernet, 광1포트 FEnet\nXGL-ESHF Open Ethernet, 산업용광링스위치\nXGL-EH5T Open Ethernet, 전기5포트, 스위칭허브\nXGL-EDMT 전용Ethernet, 전기1포트\nFDEnet\nXGL-EDMF 전용Ethernet, 광1포트\nEtherNet/IP XGL-EIPT 산업용Ethernet, 전기2포트\nXGL-CH2A RS-232C 1채널, RS-422/485 1채널\nCnet XGL-C22A RS-232C 2채널\nXGL-C42A RS-422/485 2채널\nDnet XGL-DMEA DeviceNet, Master\nXGL-PMEA\nProfibus-DP, Master XGL-PMEC\nPnet 통신모듈 XGL-PSRA Profibus-DP Slave. Remote Interface\n(XGL-����) XGL-PSEA Profibus-DP, Slave(I/O Slot 장착제품)\nRnet XGL-RMEA 전용네트워크, Master\nFnet XGL-FMEA 전용네트워크\nProgrammable Logic Controller XGT Series 15",
+      "header": "CL",
+      "section_type": "일반",
+      "equipment": [
+        "연소가스처리"
+      ],
+      "company_id": "26",
+      "company_name": "연소가스처리설비",
+      "source_file": "기술 및 참고자료(CATALOGUE 등)",
+      "source_path": "D:\\기계도면\\기계도면\\26. 연소가스처리설비 (에스텍)\\준공도서-연소가스 처리설비(전기)\\16. 기술 및 참고자료(CATALOGUE 등)\\기술 및 참고자료(CATALOGUE 등).pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "65ce89ccd34e839e",
+      "char_count": 2542
+    },
+    {
+      "chunk_idx": 107,
+      "text": "전용네트워크, Master\nFnet XGL-FMEA 전용네트워크\nProgrammable Logic Controller XGT Series 15 CPU\nneXt Generation Technology\nHART I/F 아날로그/\n디지털변환모듈\n고속카운터\nXGF-HO8A\n위치결정\n위치결정\n(Network Type)\n모션제어\n온도입력\n온도제어\n이벤트입력\n데이터로그\nCPU 모듈\nXGK-CPUU,CPUH 6,144\nXGK XGK-CPUA,CPUS 3,072\nXGK-CPUE 1,536\nXGI-CPUU/D,CPUU,CPUH 6,144\nXGI XGI-CPUS 3,072\nXGI-CPUE 1,536\nCPU 접속케이블\nUSB-301A USB접속(다운로드)케이블\nK1C-050A RS-232C접속(다운로드)케이블\n전원모듈\nXGP-ACF1 AC110/220V DC5V 3A, DC24V 0.6A\nXGP-ACF2 AC110/220V DC5V 6A\nXGP-AC23 AC220V DC5V 8.5A\nXGP-DC42 DC24V DC5V 6A",
+      "header": "CPU",
+      "section_type": "일반",
+      "equipment": [
+        "연소가스처리"
+      ],
+      "company_id": "26",
+      "company_name": "연소가스처리설비",
+      "source_file": "기술 및 참고자료(CATALOGUE 등)",
+      "source_path": "D:\\기계도면\\기계도면\\26. 연소가스처리설비 (에스텍)\\준공도서-연소가스 처리설비(전기)\\16. 기술 및 참고자료(CATALOGUE 등)\\기술 및 참고자료(CATALOGUE 등).pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "e84051bb0294eeb3",
+      "char_count": 511
+    },
+    {
+      "chunk_idx": 108,
+      "text": ".6A\nXGP-ACF2 AC110/220V DC5V 6A\nXGP-AC23 AC220V DC5V 8.5A\nXGP-DC42 DC24V DC5V 6A XGT Series\n일반규격\n항목 규격 관련규격\n사용온도 0~55 �C\n보관온도 -25~+70 �C\n사용습도 5~95%RH, 이슬이맺히지않을것\n보관습도 5~95%RH, 이슬이맺히지않을것\n단속적인진동이있는경우 -\n주파수 가속도 진폭 횟수\n10 ≤f �57Hz - 0.075mm\n57 ≤f �150Hz 9.8m/s2 {1G} -\n내진동\n연속적인진동이있는경우 X,Y,Z IEC 61131-2\n주파수 가속도 진폭 각방향\n10 ≤f �57Hz - 0.035mm 10회\n57 ≤f �150Hz 4.9m/s2 {0.5G} -\n∙최대충격가속도: 147 m/s2{15G}\n내충격 ∙인가시간: 11ms IEC 61131-2\n∙펄스파형: 정현반파펄스(X, Y, Z 3방향각3회)\n방형파임펄스노이즈 ±1,500 V LS산전내부시험규격기준\n정전기방전 전압: 4kV (접촉방전) IEC 61131-2, IEC 61000-4-2\n내노이즈 방사전자계노이즈 27 ~ 500 MHz, 10 V/m IEC 61131-2, IEC 61000-4-3\n∙전원모듈: 2kV\n패스트트랜지언트/버스트노이즈 IEC 61131-2, IEC 61000-4-4\n∙디지털/아날로그입출력/통신인터페이스:1kV\n주위환경 부식성가스, 먼지가없을것\n사용고도 2,000m이하\n오염도 2 이하\n냉각방식 자연공랭식\n*오염도2란통상비전도성오염만발생하는상태를말합니다.\nXGK 성능규격\n16 LSIS Co.,Ltd.",
+      "header": "CPU",
+      "section_type": "일반",
+      "equipment": [
+        "재열기"
+      ],
+      "company_id": "26",
+      "company_name": "연소가스처리설비",
+      "source_file": "기술 및 참고자료(CATALOGUE 등)",
+      "source_path": "D:\\기계도면\\기계도면\\26. 연소가스처리설비 (에스텍)\\준공도서-연소가스 처리설비(전기)\\16. 기술 및 참고자료(CATALOGUE 등)\\기술 및 참고자료(CATALOGUE 등).pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "5cb6910cfe66646c",
+      "char_count": 777
+    },
+    {
+      "chunk_idx": 109,
+      "text": "000m이하\n오염도 2 이하\n냉각방식 자연공랭식\n*오염도2란통상비전도성오염만발생하는상태를말합니다.\nXGK 성능규격\n16 LSIS Co.,Ltd.",
+      "header": "CPU",
+      "section_type": "일반",
+      "equipment": [
+        "연소가스처리"
+      ],
+      "company_id": "26",
+      "company_name": "연소가스처리설비",
+      "source_file": "기술 및 참고자료(CATALOGUE 등)",
+      "source_path": "D:\\기계도면\\기계도면\\26. 연소가스처리설비 (에스텍)\\준공도서-연소가스 처리설비(전기)\\16. 기술 및 참고자료(CATALOGUE 등)\\기술 및 참고자료(CATALOGUE 등).pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "8e16fb99db884488",
+      "char_count": 80
+    },
+    {
+      "chunk_idx": 110,
+      "text": "000m이하\n오염도 2 이하\n냉각방식 자연공랭식\n*오염도2란통상비전도성오염만발생하는상태를말합니다.\nXGK 성능규격\n16 LSIS Co.,Ltd. CPU\n항목 XGK-CPUE XGK-CPUS XGK-CPUA XGK-CPUH XGK-CPUU 비고\n연산방식 반복연산, 정주기연산, 고정주기스캔\n입출력제어방식 스캔동기일괄처리방식(리프레시방식), 명령어에의한다이렉트방식\n래더다이어그램(Ladder Diagram)\n명령리스트(Instruction List)\n프로그램언어 SFC (Sequential Function Chart)\nST (Structured Text)\n명령 기본명령 약40개\n어수 응용명령 약700개\n연산 LD 0.084 μs/명령어 0.028 μs/명령어\n처리 MOVE 0.252 μs/명령어 0.084 μs/명령어\n속도 ±: 1.442μs(S), 2.87μs(D) ±: 0.602μs(S), 01.078 μs(D)\nS : 단장\n(기본 실수연산 ×: 1.948μs(S), 4.186μs(D) ×: 1.106μs(S), 2.394 μs(D)\nD : 배장\n명령) ÷: 1.442μs(S), 4.2μs(D) ÷: 1.134μs(S), 2.66μs(D)\n프로그램메모리용량 16Kstep 32Kstep 64Kstep 128Kstep\n입출력점수(설치가능) 1,536점 3,072점 6,144점\nP P00000 ~ P2047F (32, 768점)\nM M00000 ~ M2047F (32, 768점)\nK K00000 ~ K2047F (32, 768점)\nL L0000 ~ L11263F (180, 224점)\nF F0000 ~ F2047F (32, 768점)\n100ms: T0000 - T0999\n파라미터설정에\n10ms: T1000 - T1499\nT 의해영역변경\n1ms: T1500 - T1999\n데이터 가능\n0.1ms: T2000 - T2047\n영역 C C0000 ~ C2047\nS S00.00 ~S127.99\nD D0000 ~ D19999 D0000 ~ D32767\nU U00.0~ U1F.31 U00.0~ U3F.31 U00.0~ U3F.31 U00.0~ U7F.31 특수모듈데이터리프레시영역\nZ 128점\nN N00000 ~ N21503\n1블록당32k워드\nR 1블럭 2블럭\n(R0 ~ R32767)\n플래시영역 2MB, 32블록 R 디바이스를이용해제어가능\n총프로그램수 256개\n프로 초기화태스크 1개\n그램 정주기태스크 32개\n구성 내부디바이스태스크 32개\n운전모드 RUN, STOP, DEBUG\n자기진단가능 연산지연감시, 메모리이상, 입출력이상, 베터리이상, 전원이상등\nRS-232C 포트로\n프로그램포트 RS-232C (1CH), USB (1CH)\nModbus slave 지원\n정전시데이터보존방법 기본파라미터에서리테인영역설정\n최대증설베이스 1단 3단 7단 총연장15m\n내부소비전류 940mA 960mA\n중량 0.12kg",
+      "header": "CPU",
+      "section_type": "운전",
+      "equipment": [
+        "연소가스처리"
+      ],
+      "company_id": "26",
+      "company_name": "연소가스처리설비",
+      "source_file": "기술 및 참고자료(CATALOGUE 등)",
+      "source_path": "D:\\기계도면\\기계도면\\26. 연소가스처리설비 (에스텍)\\준공도서-연소가스 처리설비(전기)\\16. 기술 및 참고자료(CATALOGUE 등)\\기술 및 참고자료(CATALOGUE 등).pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "7c7400d4762fc6ab",
+      "char_count": 1404
+    },
+    {
+      "chunk_idx": 111,
+      "text": "정전시데이터보존방법 기본파라미터에서리테인영역설정\n최대증설베이스 1단 3단 7단 총연장15m\n내부소비전류 940mA 960mA\n중량 0.12kg neXt Generation Technology\nXGI 성능규격\n항목 XGI-CPUE XGI-CPUS XGI-CPUH XGI-CPUU XGI-CPUU/D 비고\n연산방식 반복연산, 정주기연산, 고정주기스캔\n스캔동기일괄처리방식(리프레시방식),\n입출력제어방식\n명령어에의한다이렉트방식\n래더다이어그램(Ladder Diagram)\n프로그램언어\nSFC (Sequential Function Chart), ST (Structured Text)\n연산자 18개\n기본펑션 136종+실수연산펑션\n명령어수\n기본펑션블록 43개\n전용펑션블록 특수기능모듈별전용펑션블록, 통신전용펑션블록(P2P)\n기본 0.084㎲/명령어 0.028㎲/명령어\nMOVE 0.252㎲/명령어 0.084㎲/명령어\n연산처리속도 ±: 1.442μs(S),\n2.87μs(D) ±:0.392㎲(S), 0.924㎲(D)\n(기본명령) 실수연산 ×: 1.948μs(S), ×:0.896㎲(S), 2.240㎲(D) S:단장\n4.186μs(D) D:배장\n÷:0.924㎲(S), 2.254㎲(D)\n÷: 1.442μs(S),\n4.2μs(D)\n프로그램메모리용량 64KB 128KB 512KB 1M\n입출력점수(설치가능) 1,536점 3,072점 6,144점\n최대입출력메모리점수 32,768점 131,072점\n64KB 128KB 512KB\n자동변수영역\n(최대32KB (최대64KB (최대256KB\n(A)\n리테인설정가능)리테인설정가능) 리테인설정가능)\n입력변수(I) 4KB 16KB\n출력변수(Q) 4KB 16KB\n32KB 128KB\n256KB\nM (최대16KB (최대64KB\n(최대128KB 리테인설정가능)\n리테인설정가능) 리테인설정가능)\n직접변수\n데이터메모리\nR 32KB ×1블록 64KB ×1블록 64KB ×2블록 6 1 4 6 K 블 B 록 ×\nW 32KB 64KB 128KB 1,024KByte R과동일영역\nF 4KB 시스템플래그\nK 4KB 16KB PID운전영역\n플래그 L 22KB 고속링크플래그\n변수 N 42KB P2P파라미터설정\n아날로그데이터\nU 2KB 4KB 8KB\n리플레시영역\n플래시영역 1M, 16블록 2MB, 32블록 R디바이스이용\n점수제한없음 1점당자동변수영역의\n타이머\n시간범위: 0.001초~ 4,294,967,295 초(1,193 시간) 8바이트점유\n점수제한없음 1점당자동변수영역의\n카운터\n계수범위: 64 비트표현범위 8바이트점유\n총프로그램수 256개\n초기화태스크 1개\n프로그램구성\n정주기태스크 32개\n내부디바이스태스크 32개\n운전모드 RUN, STOP, DEBUG\n리스타트모드 콜드, 웜\n자기진단기능 연산지연감시, 메모리이상, 입출력이상, 베터리이상, 전원이상등\n정전시데이터보존방법 기본파라미터에서리테인영역설정\n최대증설베이스 1단 3단 7단 총연장15m\n내부소비전류 940mA 960mA\n중량 0.12kg\nProgrammable Logic Controller XGT Series 17",
+      "header": "CPU",
+      "section_type": "운전",
+      "equipment": [
+        "연소가스처리"
+      ],
+      "company_id": "26",
+      "company_name": "연소가스처리설비",
+      "source_file": "기술 및 참고자료(CATALOGUE 등)",
+      "source_path": "D:\\기계도면\\기계도면\\26. 연소가스처리설비 (에스텍)\\준공도서-연소가스 처리설비(전기)\\16. 기술 및 참고자료(CATALOGUE 등)\\기술 및 참고자료(CATALOGUE 등).pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "5efed23953810d39",
+      "char_count": 1496
+    },
+    {
+      "chunk_idx": 112,
+      "text": "총연장15m\n내부소비전류 940mA 960mA\n중량 0.12kg\nProgrammable Logic Controller XGT Series 17",
+      "header": "CPU",
+      "section_type": "일반",
+      "equipment": [
+        "연소가스처리"
+      ],
+      "company_id": "26",
+      "company_name": "연소가스처리설비",
+      "source_file": "기술 및 참고자료(CATALOGUE 등)",
+      "source_path": "D:\\기계도면\\기계도면\\26. 연소가스처리설비 (에스텍)\\준공도서-연소가스 처리설비(전기)\\16. 기술 및 참고자료(CATALOGUE 등)\\기술 및 참고자료(CATALOGUE 등).pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "14d0221883f79043",
+      "char_count": 79
+    },
+    {
+      "chunk_idx": 113,
+      "text": "총연장15m\n내부소비전류 940mA 960mA\n중량 0.12kg\nProgrammable Logic Controller XGT Series 17 CPU\nXGT Series\nXGK기본시스템구성\n구분 XGK-CPUE XGK-CPUS XGK-CPUA XGK-CPUH,CPUU\n최대증설단수 1단 3단 3단 7단\n최대모듈장착수 24모듈 48모듈 48모듈 96모듈\n최대입출력점수 1,536 점 3,072 점 3,072 점 6,144 점\n최대증설거리 15m\n�베이스의각슬롯은모듈의장착여부및종류에관계없이64점씩할당합니다.\n�0번베이스의베이스의시작번호는P00000이됩니다.\n�한개의베이스에는16개의슬롯분의입출력번호가할당됩니다.\n�즉1번베이스의시작번호는P00640이됩니다.\n�12 Slot 베이스의입출력번호의할당예는아래와같습니다.\n입출력번호의할당\n슬롯번호: 0 1 2 3 4 5 6 7 8 9 10 11\n(고정식)\n전원 CPU\nP00 P40 P80 P120 P160 P200 P240 P280 P320 P360 P400 P440\n~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~\nP3F P7F P11F P15F P19F P23F P27F P31F P35F P39F P43F P47F\n�슬롯별장착모듈의지정에따라점수가자동할당됩니다.\n- I/O파라미터로장착모듈을지정하면됩니다.\n�0번베이스의시작번호는P00000이됩니다.\n�특수모듈, 통신모듈이장착된슬롯은16점으로자동할당됩니다.\n�12 Slot베이스의입출력번호의할당예는아래와같습니다.\n입출력번호의할당\n(가변식) 슬롯번호: 0 1 2 3 4 5 6 7 8 9 10 11\n전원 CPU 16점16점32점64점16점32점32점64점32점16점32점32점\nP00 P10 P20 P40 P80 P90 P110 P130 P170 P190 P200 P0220\n~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~\nP0F P1F P3F P7F P8F P10F P12F P16F P18F P19F P21F P23F\nXGI기본시스템구성\n구분 XGI-CPUE XGI-CPUS XGI-CPUH, CPUU, CPUU/D\n최대증설단수 1단 3단 7단\n최대입출력모듈장착수 24모듈 48모듈 96모듈\n최대입출력점수 1,536점 3,072점 6,144점\n최대증설거리 15m\n�입출력번호는베이스의슬롯당64점고정으로할당되어있습니다.\n�베이스의각슬롯은모듈의장착여부및종류에관계없이64점씩할당됩니다.\n�특수모듈의장착위치및사용개수에는제한이없습니다.\n�특수모듈은디지털입출력모듈과는달리고정된입출력번호가할당되지않습니다.\n�특수모듈은전용펑션블록에의해제어되며자동으로메모리가할당됩니다.\n�12 Slot베이스의입출력번호의할당예는아래와같습니다.\n슬롯번호: 0 1 2 3 4 5 6 7 8 9 10 11\n입출력번호의할당\n입 입 입 입 출 출 출 출 입 출 출 출\n전원 CPU 력 력 력 력 력 력 력 력 력 력 력 력\n16 16 32 64 16 32 32 64 32 16 32 32\n%Ⅰ×0.8.0~31\n%Q×0.9.0~15\n%Q×0.10.0~31\n%Q×0.11.0~31\n18 LSIS Co.,Ltd.",
+      "header": "CPU",
+      "section_type": "일반",
+      "equipment": [
+        "연소가스처리"
+      ],
+      "company_id": "26",
+      "company_name": "연소가스처리설비",
+      "source_file": "기술 및 참고자료(CATALOGUE 등)",
+      "source_path": "D:\\기계도면\\기계도면\\26. 연소가스처리설비 (에스텍)\\준공도서-연소가스 처리설비(전기)\\16. 기술 및 참고자료(CATALOGUE 등)\\기술 및 참고자료(CATALOGUE 등).pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "66bd981b3a4d9a36",
+      "char_count": 1482
+    },
+    {
+      "chunk_idx": 114,
+      "text": "4 32 16 32 32\n%Ⅰ×0.8.0~31\n%Q×0.9.0~15\n%Q×0.10.0~31\n%Q×0.11.0~31\n18 LSIS Co.,Ltd. CPU\nneXt Generation Technology\n증설시스템구성",
+      "header": "CPU",
+      "section_type": "일반",
+      "equipment": [
+        "연소가스처리"
+      ],
+      "company_id": "26",
+      "company_name": "연소가스처리설비",
+      "source_file": "기술 및 참고자료(CATALOGUE 등)",
+      "source_path": "D:\\기계도면\\기계도면\\26. 연소가스처리설비 (에스텍)\\준공도서-연소가스 처리설비(전기)\\16. 기술 및 참고자료(CATALOGUE 등)\\기술 및 참고자료(CATALOGUE 등).pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "584cc07ca0d5dcb1",
+      "char_count": 119
+    },
+    {
+      "chunk_idx": 115,
+      "text": "2. 입출력 접점의 주소는 XG5000파라미터에서 가변식 선택이 가능합니다. 베이스번호설정스위치 *주)\n1 2 3 4\n23 22 21 20\n*주) 베이스번호설정스위치: 1번베이스의경우20=1이므로20에해당하는스위치가ON이됩니다.\n기본베이스 슬롯번호: 0 1 2 3 4 5 6 7\n(베이스번호: 0)\n전원 CPU P0000P0040 P0080 P0120 P0160 P0200 P0240P0280\n~ ~ ~ ~ ~ ~ ~ ~\nP003FP007F P011F P015F P019F P023F P027F P031F\n증설케이블\n슬롯번호: 0 1 2 3 4 5 6 7\n증설베이스\n(베이스번호: 1)\nP0640 P0680 P0720 P0760 P0800P0840 P0880 P0920\n전원 ~ ~ ~ ~ ~ ~ ~ ~\nP067F P071F P075F P079F P083F P087F P091F P095F\n슬롯번호: 0 1 2 3 4 5 6 7\n증설베이스 P1280 P1320 P1360 P1400 P1440 P1480 P1520 P1560\n전원 ~ ~ ~ ~ ~ ~ ~ ~\nP131F P135F P139F P143F P147F P151F P155F P159F\n슬롯번호: 0 1 2 3 4 5 6 7\nXGT-TERA설치 P4480 P4520 P4560 P4600 P4640 P4680 P4720 P4760\n전원 ~ ~ ~ ~ ~ ~ ~ ~\nP451F P455F P459F P463F P467F P471F P475F P479F\n증설베이스를사용할경우마지막증설베이스에는종단저항(XGT-TERA)를장착하여야합니다.\nProgrammable Logic Controller XGT Series 19",
+      "header": "2. 입출력 접점의 주소는 XG5000파라미터에서 가변식 선택이 가능합니다. 베이스번호설정스위치 *주)",
+      "section_type": "일반",
+      "equipment": [
+        "연소가스처리"
+      ],
+      "company_id": "26",
+      "company_name": "연소가스처리설비",
+      "source_file": "기술 및 참고자료(CATALOGUE 등)",
+      "source_path": "D:\\기계도면\\기계도면\\26. 연소가스처리설비 (에스텍)\\준공도서-연소가스 처리설비(전기)\\16. 기술 및 참고자료(CATALOGUE 등)\\기술 및 참고자료(CATALOGUE 등).pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "01387ffb188b030d",
+      "char_count": 822
+    },
+    {
+      "chunk_idx": 116,
+      "text": "경우마지막증설베이스에는종단저항(XGT-TERA)를장착하여야합니다.\nProgrammable Logic Controller XGT Series 19 CPU\n입출력모듈\n특징\n�16, 32, 64점 입출력 모듈 구성\n�LED표시에 의한 동작 확인 가능\n�단자대 방식, 모듈의 원터치 부착방식으로 보수가 용이\n입력모듈사양\n20 LSIS Co.,Ltd.",
+      "header": "CPU",
+      "section_type": "일반",
+      "equipment": [
+        "연소가스처리"
+      ],
+      "company_id": "26",
+      "company_name": "연소가스처리설비",
+      "source_file": "기술 및 참고자료(CATALOGUE 등)",
+      "source_path": "D:\\기계도면\\기계도면\\26. 연소가스처리설비 (에스텍)\\준공도서-연소가스 처리설비(전기)\\16. 기술 및 참고자료(CATALOGUE 등)\\기술 및 참고자료(CATALOGUE 등).pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "3477a52e9c68c15f",
+      "char_count": 191
+    },
+    {
+      "chunk_idx": 117,
+      "text": "모듈 구성\n�LED표시에 의한 동작 확인 가능\n�단자대 방식, 모듈의 원터치 부착방식으로 보수가 용이\n입력모듈사양\n20 LSIS Co.,Ltd.",
+      "header": "CPU",
+      "section_type": "일반",
+      "equipment": [
+        "연소가스처리"
+      ],
+      "company_id": "26",
+      "company_name": "연소가스처리설비",
+      "source_file": "기술 및 참고자료(CATALOGUE 등)",
+      "source_path": "D:\\기계도면\\기계도면\\26. 연소가스처리설비 (에스텍)\\준공도서-연소가스 처리설비(전기)\\16. 기술 및 참고자료(CATALOGUE 등)\\기술 및 참고자료(CATALOGUE 등).pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "a09ad507dd8340d1",
+      "char_count": 80
+    },
+    {
+      "chunk_idx": 118,
+      "text": "모듈 구성\n�LED표시에 의한 동작 확인 가능\n�단자대 방식, 모듈의 원터치 부착방식으로 보수가 용이\n입력모듈사양\n20 LSIS Co.,Ltd. CPU\n규 격 DC입력 AC입력\n형명 XGI-D21A XGI-D22A XGI-D22B XGI-D24A XGI-D24B XGI-D28A XGI-D28B XGI-A12A XGI-A21A XGI-A21C\n입력점수 8점 16점 32점 64점 16점 8점 8점\n정격입력전압 DC24V AC100~120V AC100~240VAC100~240V\n정격입력전류 4mA 8mA 17mA 17mA\nAC80V이상 AC80V이상 AC80V이상\nOn전압/전류 DC19V이상 / 3mA이상\n/5mA이상 /5mA이상 /5mA이하\nAC30V이하 AC30V이하 AC30V이상\nOff전압/전류 DC11V이하 / 1.7mA이하\n/1mA이하 /2mA이하 /1mA이하\n응답 Off→On 1ms/3ms/5ms/10ms/20ms/70ms/100ms(I/O 파라미터에서 설정, 초기값:3ms) 15ms이하\n시간 On→Off 1ms/3ms/5ms/10ms/20ms/70ms/100ms(I/O 파라미터에서 설정, 초기값:3ms) 25ms이하\n공통(COM)방식 8점/1COM 16점/1COM 32점/1COM 16점/1COM 8점/1COM 1점/1COM\n절연방식 포토커플러 포토커플러\n소비전류(mA) 20 30 50 60 30 20 20\n중량(kg) 0.1 0.12 0.1 0.15 0.13 0.13 0.13\n※XGI-xxxA: 소스/싱크타입 XGI-xxxB: 소스타입\n출력모듈사양\n규 격 릴레이 트랜지스터 트라이액\n형명 XGQ-RY1AXGQ-RY2AXGQ-RY2B XGQ-TR1C XGQ-TR2A XGQ-TR2B XGQ-TR4A XGQ-TR4B XGQ-TR8A XGQ-TR8B XGQ-SS2A\n출력점수 8점 16점 8점 16점 32점 64점 16점\n정격부하전압 DC12/24V, AC110/220V DC12/24V AC110/220V\n정격입력 1점 2A 2A 0.5A 0.1A 0.6A\n전류 공통 5A - 4A 2A 4A\nOff→On 10ms이하 3ms이하 1ms이하 1ms 이하\n응답\n0.5Cycle+1\n시간 On→Off 12ms이하 10ms이하 1ms이하\nms이하\n공통(COM)방식 1점/1COM 16점/1COM 1점/1COM 16점/1COM 32점/1COM 16점/1COM\n절연방식 릴레이 포토커플러 포토커플러\n소비전류(mA) 260 500 100 70 130 230 300\n중량(kg) 0.13 0.17 0.19 0.11 0.11 0.1 0.15 0.2\n서지킬러 - 바리스터 제너다이오드 바리스터\n외부공급전원 - - DC 12/24V -\n※XGQ-RY2A: 서지킬러미장착 XGQ-RY2B: 서지킬러내장\n※XGQ-TRxA: 싱크타입 XGQ-TRxB: 소스타입",
+      "header": "CPU",
+      "section_type": "일반",
+      "equipment": [
+        "연소가스처리"
+      ],
+      "company_id": "26",
+      "company_name": "연소가스처리설비",
+      "source_file": "기술 및 참고자료(CATALOGUE 등)",
+      "source_path": "D:\\기계도면\\기계도면\\26. 연소가스처리설비 (에스텍)\\준공도서-연소가스 처리설비(전기)\\16. 기술 및 참고자료(CATALOGUE 등)\\기술 및 참고자료(CATALOGUE 등).pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "c8ee4d2bef3af1f9",
+      "char_count": 1376
+    },
+    {
+      "chunk_idx": 119,
+      "text": "- DC 12/24V -\n※XGQ-RY2A: 서지킬러미장착 XGQ-RY2B: 서지킬러내장\n※XGQ-TRxA: 싱크타입 XGQ-TRxB: 소스타입 neXt Generation Technology\n입력모듈외부결선도\nXGI-D21A XGI-D22A XGI-D22B XGI-D24A\nXGI-D24B XGI-D28A XGI-D28B\nXGI-A12A XGI-A21A XGI-A21C\nProgrammable Logic Controller XGT Series 21",
+      "header": "CPU",
+      "section_type": "일반",
+      "equipment": [
+        "연소가스처리"
+      ],
+      "company_id": "26",
+      "company_name": "연소가스처리설비",
+      "source_file": "기술 및 참고자료(CATALOGUE 등)",
+      "source_path": "D:\\기계도면\\기계도면\\26. 연소가스처리설비 (에스텍)\\준공도서-연소가스 처리설비(전기)\\16. 기술 및 참고자료(CATALOGUE 등)\\기술 및 참고자료(CATALOGUE 등).pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "2b878dbcb1cf3f2d",
+      "char_count": 251
+    },
+    {
+      "chunk_idx": 120,
+      "text": "XGI-D28B\nXGI-A12A XGI-A21A XGI-A21C\nProgrammable Logic Controller XGT Series 21 CPU\n입출력모듈\n출력모듈외부결선도\nXGQ-RY1A XGQ-RY2A/B XGQ-TR2A XGQ-TR2B\nXGQ-TR4A XGQ-TR4B XGQ-TR8A\nXGQ-TR8B XGQ-SS2A XGQ-TR1C\n22 LSIS Co.,Ltd.",
+      "header": "CPU",
+      "section_type": "일반",
+      "equipment": [
+        "연소가스처리"
+      ],
+      "company_id": "26",
+      "company_name": "연소가스처리설비",
+      "source_file": "기술 및 참고자료(CATALOGUE 등)",
+      "source_path": "D:\\기계도면\\기계도면\\26. 연소가스처리설비 (에스텍)\\준공도서-연소가스 처리설비(전기)\\16. 기술 및 참고자료(CATALOGUE 등)\\기술 및 참고자료(CATALOGUE 등).pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "dc68060fc1d8f0a3",
+      "char_count": 208
+    },
+    {
+      "chunk_idx": 121,
+      "text": "XGQ-TR2B\nXGQ-TR4A XGQ-TR4B XGQ-TR8A\nXGQ-TR8B XGQ-SS2A XGQ-TR1C\n22 LSIS Co.,Ltd. CPU\nneXt Generation Technology\nDC24V입력/ TR출력혼합모듈(XGH-DT4A)\nXGH-DT4A주1)\n입 력 출 력\n입력점수 16점 출력점수 16점\n절연방식 포토커플러 절연 절연방식 포토커플러 절연\n정격입력전압 DC 24V 정격부하전압 DC 12/24V\n정격입력전류 약 4mA 사용부하전압범위 DC 10.2~26.4V\n사용전압범위 DC 20.4~28.8V(리플율 5%이내) 최대부하전류 0.1A/1점, 1.6A/1COM\n절연내압 AC 560Vrms / 3Cycle(표고 2,000m) Off시누설전류 0.1mA이하\nOn 전압/ On 전류 DC 19V이상 / 3mA이상 최대돌입전류 0.7A / 10ms이하\nOff 전압/ Off 전류 DC 11V이하 / 1.7mA이하 서지킬러 제너 다이오드\n입력저항 약 5.6㏀ On시최대전압강하 DC 0.2V이하\n1ms/3ms/5ms/10ms/20ms/70ms/100ms\nOff→On (CPU파라미터로 설정) Off→On 1ms 이하\n응답 초기값:3ms 응답\n시간 1ms/3ms/5ms/10ms/20ms/70ms/100ms 시간\n1ms 이하\nOn→Off (CPU파라미터로 설정) On→Off (정격 부하, 저항 부하)\n초기값:3ms\n공통(COM)방식 16점/1COM 공통(COM)방식 16점/1COM\n동작표시 입력 On시 LED점등 동작표시 출력 On시 LED점등\n내부소비전류(mA) 110mA (전점 On시)\n외부접속방식 40점 커넥터\n중량(kg) 0.1\n혼합모듈외부결선도\nXGH-DT4A\n주1) XGH-DT4A가0번슬롯에장착되어있을경우CPU가XGK 일때입력은P00~P0F, 출력은P10~P1F이고\nCPU가XGI 일때입력은%Ⅰ×0.0.0~%Ⅰ×0.0.15,출력은%Q×0.0.16~%Q×0.0.31입니다.\nProgrammable Logic Controller XGT Series 23",
+      "header": "CPU",
+      "section_type": "일반",
+      "equipment": [
+        "연소가스처리"
+      ],
+      "company_id": "26",
+      "company_name": "연소가스처리설비",
+      "source_file": "기술 및 참고자료(CATALOGUE 등)",
+      "source_path": "D:\\기계도면\\기계도면\\26. 연소가스처리설비 (에스텍)\\준공도서-연소가스 처리설비(전기)\\16. 기술 및 참고자료(CATALOGUE 등)\\기술 및 참고자료(CATALOGUE 등).pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "ad45c88898df1029",
+      "char_count": 999
+    },
+    {
+      "chunk_idx": 122,
+      "text": "%Ⅰ×0.0.15,출력은%Q×0.0.16~%Q×0.0.31입니다.\nProgrammable Logic Controller XGT Series 23 CPU\n디지털입출력모듈선정시주의사항\nXGT 시리즈에사용되는디지털입출력모듈을\n선정하는경우의주의사항에대해설명합니다.\n�디지털입력의형식에는전류싱크입력및전류소스입력이있습니다.\nDC입력모듈의경우는이와같은입력형식에따라외부입력전원의배선방법이달라지므로입력접속기기의\n규격등을고려하여선정하여주십시오.\n�최대동시입력점수는모듈의종류에따라다릅니다. 적용할입력모듈의규격을검토하신후사용하여\n주십시오.\n�개폐빈도가높거나유도성부하개폐용으로사용하는경우, 릴레이출력모듈은수명이단축되므로\n트랜지스터출력모듈이나트라이액출력모듈을사용하여주십시오.\n�출력모듈에있어서, 유도성(L)부하를구동하는경우최대개폐빈도는1초On, 1초Off로사용하여\n주십시오.\n�출력모듈에있어서, 부하로서DC/DC 컨버터를사용한카운터∙타이머등을사용한경우On시또는\n동작중일정주기에서돌입전류가흐를수있기때문에평균전류로선정하면고장의원인이됩니다.\n따라서앞의부하를사용한경우에는돌입전류의영향을줄이기위하여부하에직렬로저항또는\nInductor를접속하든지아니면최대부하전류의값이큰모듈을사용해주십시오.\n부하\n저항\n출력\n모듈\n부하\nInductor\n출력\n모듈\n�출력모듈에Fuse는교환이불가능합니다. 모듈의출력이단락된경우에외부배선의소손을방지하기\n위한목적입니다. 따라서출력모듈의보호가되지않을수도있습니다. 출력모듈이단락이외의고장모드\n에서파괴된경우Fuse가동작하지않을수도있습니다.\n�입력모듈에동시On 점수는, 입력전압, 주위온도의조건에따라변합니다. 각입력모듈의규격을참조해\n주십시오.\n24 LSIS Co.,Ltd.",
+      "header": "CPU",
+      "section_type": "일반",
+      "equipment": [
+        "연소가스처리"
+      ],
+      "company_id": "26",
+      "company_name": "연소가스처리설비",
+      "source_file": "기술 및 참고자료(CATALOGUE 등)",
+      "source_path": "D:\\기계도면\\기계도면\\26. 연소가스처리설비 (에스텍)\\준공도서-연소가스 처리설비(전기)\\16. 기술 및 참고자료(CATALOGUE 등)\\기술 및 참고자료(CATALOGUE 등).pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "65a31f71acedc4e9",
+      "char_count": 812
+    },
+    {
+      "chunk_idx": 123,
+      "text": "도있습니다.\n�입력모듈에동시On 점수는, 입력전압, 주위온도의조건에따라변합니다. 각입력모듈의규격을참조해\n주십시오.\n24 LSIS Co.,Ltd. CPU\nneXt Generation Technology\n�Relay 출력 모듈의 Relay 수명을 아래 그림에 표시 합니다. 릴레이\n출력부의 사용된 릴레이 수명의 최대값을 아래 그림에 표시 합니다.\n개폐횟수 100\n(x1만회)\n\nAC 125V 저항부하\nDC 30V 저항부하\nAC 250V 저항부하\n0.5 1 2 3 5 10 100\n개폐전류(A)\n�XGT 단자대에는 Sleeve가 부착된 압착 단자는 사용할 수 없습니다.\n단자대에 접속하기에 적합한 압착 단자는 아래와 같습니다.\n6.0mm이하\n6.0mm이하\n�단자대에접속하는전선의Size는연선0.3~0.75mm2, 굵기가2.8mm이하의\n것을사용해주십시오.\n전선은절연두께등에의해허용전류가다를수있기때문에주의해주십시오.\n�모듈의고정나사, 단자대나사의체결Torque는아래의범위내에서실시해주십시오.\n체결부위 체결Torque 범위\n입출력모듈단자대나사(M3 나사) 42~58 N∙cm\n입출력모듈단자대고정나사(M3 나사) 66~89 N∙cm\n�트랜지스터출력모듈에는Thermal Protector기능이내장되어있습니다.\nThermal Protector기능은과부하과열보호기능입니다.\nProgrammable Logic Controller XGT Series 25",
+      "header": "CPU",
+      "section_type": "일반",
+      "equipment": [
+        "연소가스처리"
+      ],
+      "company_id": "26",
+      "company_name": "연소가스처리설비",
+      "source_file": "기술 및 참고자료(CATALOGUE 등)",
+      "source_path": "D:\\기계도면\\기계도면\\26. 연소가스처리설비 (에스텍)\\준공도서-연소가스 처리설비(전기)\\16. 기술 및 참고자료(CATALOGUE 등)\\기술 및 참고자료(CATALOGUE 등).pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "eecc89d183394789",
+      "char_count": 690
+    },
+    {
+      "chunk_idx": 124,
+      "text": "다.\nThermal Protector기능은과부하과열보호기능입니다.\nProgrammable Logic Controller XGT Series 25 CPU\nVoltage Transformer\n�1.15kV Voltage Transformer ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙372\n�1.15kV Earthed Voltage Transformer∙∙∙∙∙∙∙∙∙∙∙∙∙373\n�1.15kV Three Phase Voltage Transformer∙∙∙∙∙∙∙∙∙∙∙374\n�1.15kV Three Phase Earthed Voltage Transformer ∙∙∙∙∙∙∙375\n�3.45kV Voltage Transformer ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙376\n�3.45kV Earthed Voltage Transformer∙∙∙∙∙∙∙∙∙∙∙∙∙377\n�7.2kV Voltage Transformer ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙378\n�7.2kV Earthed Voltage Transformer ∙∙∙∙∙∙∙∙∙∙∙∙∙379\n�3.45kV Voltage Transformer ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙380\n�7.2kV Voltage Transformer ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙381\n�12kV Voltage Transformer ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙382\n�12kV Earthed Voltage Transformer∙∙∙∙∙∙∙∙∙∙∙∙∙∙383\n�25.8kV Voltage Transformer ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙384\n�25.8kV Earthed Voltage Transformer∙∙∙∙∙∙∙∙∙∙∙∙∙385\n�Standard Voltage Transformer ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙388\n�Voltage Transformer (Power Transformer)∙∙∙∙∙∙∙∙∙∙∙389\nVoltage Transformer_ 371",
+      "header": "CPU",
+      "section_type": "일반",
+      "equipment": [
+        "연소가스처리"
+      ],
+      "company_id": "26",
+      "company_name": "연소가스처리설비",
+      "source_file": "기술 및 참고자료(CATALOGUE 등)",
+      "source_path": "D:\\기계도면\\기계도면\\26. 연소가스처리설비 (에스텍)\\준공도서-연소가스 처리설비(전기)\\16. 기술 및 참고자료(CATALOGUE 등)\\기술 및 참고자료(CATALOGUE 등).pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "445fe4c2bb330bf5",
+      "char_count": 940
+    },
+    {
+      "chunk_idx": 125,
+      "text": "�Voltage Transformer (Power Transformer)∙∙∙∙∙∙∙∙∙∙∙389\nVoltage Transformer_ 371 Voltage Transformers (1.15kV)\n�Dimension\nunit : mm\n●(cid:13851)內(cid:14068)\nFor Indoor\n●(cid:9856)(cid:12183). (cid:11831)(cid:15212)(cid:15744)(cid:17453)\nSingle Phase,\nLine to Line Voltage Transformer\n●(cid:14675)(cid:11267)計器(cid:14068)및繼(cid:15191)器(cid:14068)\nFor Metering & Protective application\n●Epoxy Mold로(cid:15202)(cid:13524)(cid:16761)(cid:12407)强(cid:17541)\nInsulation : Epoxy Molding\nunit : mm\nType A B C D E F G I Weight(kg)\nLL22 120 102 65 92 20 ≒3.5\nLL23 114 122 62 112 100 ≒4.5\n132 70\nLL25 66 25 ≒6.5\n160 150\nLL26 142 145 90 128 ≒9.5\n�Specification\nStandard KS C 1706 JEC 1201 IEC 60044-2\nMax. Voltage 0.23 ~ 1.15kV 0.23 ~ 1.15kV 0.72 ~ 1.2kV\nPrimary Voltage 110 ~ 480V 110 ~ 480V 110 ~ 480V\nSecondary Voltage 110V\nInsulation Level 2 ~ 4kV 2 ~ 4kV 0.72 / 3 / - kV\nAccuracy Class 0.5 or 1.0 or 3.0 1P or 3P 0.5 or 1.0 or 3.0\nOver Voltage Factor - 1.1 Continuous 1.2 Continuous\nFrequency 60Hz ( Option : 50Hz )\n※상기의정격1차, 2차전압은표준형이며, 그이외의전압비의제품도생산가능합니다.\n※The specification of the rated primary / secondary voltage same as the above is our standardized voltage ratio. The other voltage ratio on request.\n※PT Fuse는별매품입니다.\n※Option : If user wants to change the fuse, can be make an extra cost.\n�1’ry / 2’ry Voltage : 생산전압비(option)\n1차전압( V ) 2차전압( V )\n63.5, 110, 190, 220, 240, 380, 440, 460, 480 63.5, 110, 120, 190, 220\n�Rated Output\nAccuracy Class Type & Rated Output (VA)\nKS C 1706 JEC 1201 IEC 60044-2 LL22 LL23 LL25 LL26\n0.5 - 0.5 15 or 25 50 100 200\n1.0 1P 1.0 50 100 200 300 or 500",
+      "header": "CPU",
+      "section_type": "일반",
+      "equipment": [
+        "연소가스처리"
+      ],
+      "company_id": "26",
+      "company_name": "연소가스처리설비",
+      "source_file": "기술 및 참고자료(CATALOGUE 등)",
+      "source_path": "D:\\기계도면\\기계도면\\26. 연소가스처리설비 (에스텍)\\준공도서-연소가스 처리설비(전기)\\16. 기술 및 참고자료(CATALOGUE 등)\\기술 및 참고자료(CATALOGUE 등).pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "8cb2319d98df0daa",
+      "char_count": 1581
+    },
+    {
+      "chunk_idx": 126,
+      "text": "22 LL23 LL25 LL26\n0.5 - 0.5 15 or 25 50 100 200\n1.0 1P 1.0 50 100 200 300 or 500 Earthed Voltage Transformers (1.15kV)\n�Dimension\nunit : mm\n●(cid:13851)內(cid:14068)\nFor Indoor\n●(cid:9856)(cid:12183). (cid:15212)(cid:15744)(cid:17453)\nSingle Phase,\nLine to Earth Voltage Transformer\n●(cid:14675)(cid:11267)計器(cid:14068)및繼(cid:15191)器(cid:14068)\nFor Metering & Protective application\n●Epoxy Mold로(cid:15202)(cid:13524)(cid:16761)(cid:12407)强(cid:17541)\nInsulation : Epoxy Molding\nunit : mm\nType A B C D E F G I Weight(kg)\nNL23 / NL23T 122 62 112 ≒4.5\n114 132 100\nNL25 / NL25T 66 25 70 ≒6.5",
+      "header": "CPU",
+      "section_type": "일반",
+      "equipment": [
+        "연소가스처리"
+      ],
+      "company_id": "26",
+      "company_name": "연소가스처리설비",
+      "source_file": "기술 및 참고자료(CATALOGUE 등)",
+      "source_path": "D:\\기계도면\\기계도면\\26. 연소가스처리설비 (에스텍)\\준공도서-연소가스 처리설비(전기)\\16. 기술 및 참고자료(CATALOGUE 등)\\기술 및 참고자료(CATALOGUE 등).pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "548c71899ed9a17d",
+      "char_count": 587
+    },
+    {
+      "chunk_idx": 127,
+      "text": "I Weight(kg)\nNL23 / NL23T 122 62 112 ≒4.5\n114 132 100\nNL25 / NL25T 66 25 70 ≒6.5 �Specification NL26 / NL26T 142 145 90 128 ≒9.5\nStandard KS C 1706 JEC 1201 IEC 60044-2\nMax. Voltage 0.23 ~ 1.15kV 0.23 ~ 1.15kV 0.72 ~ 1.2kV\nPrimary Voltage 110 ~ 480 /√3V 110 ~ 480 /√3V 110 ~ 480 /√3V\nSecondary Voltage 110 /√3 or 190 /√3V\nTertiary Voltage - 110 / 3 or 190 / 3V 110 / 3 or 190 / 3V\nInsulation Level 0.22 ~ 0.96kV 0.22 ~ 0.96kV 0.72 / 3 / - kV\nAccuracy Class 0.5 or 1.0 or 3.0 1P / 3G 1.0 / 3P\nOver Voltage Factor - 1.1 Continuous / 1.9(30min.) 1.2 Continuous / 1.9(30s)\nFrequency 60Hz ( Option : 50Hz )\n※상기의정격1차, 2차전압은표준형이며, 그이외의전압비의제품도생산가능합니다.\n※The specification of the rated primary / secondary voltage same as the above is our standardized voltage ratio. The other voltage ratio on request.\n※PT Fuse는별매품입니다. ※Option : If user wants to change the fuse, can be make an extra cost.\n�1’ry / 2’ry / 3’ry Voltage : 생산전압비(option)\n1차전압( V ) 2차전압( V ) 3차전압( V )\n63.5 /√3, 110 /√3, 190 /√3, 220 /√3, 380 /√3, 63.5 /√3, 110 /√3, 120 /√3, 63.5 / 3, 110 /3,\n440 /√3, 460 /√3, 480 /√3 190 /√3, 220 /√3 190 /3\n�Rated Output\nAccuracy Class Type & Rated Output (VA)\nKS C 1706 JEC 1201 IEC 60044-2 NL23 NL25 NL26 NL23T NL25T NL26T\n0.5 - 0.5 - 50 100 - - -\n1.0 1P 1.0 50 100 200 - - -\n3.0 3P 3.0 - - 500 - - -\n- 1P/3G 1.0/3P 1.2 Continuous / 1.9 (30s) 50/100 100/200 200/500\n- - 1.0/3P 1.2 Continuous / 1.9 (8h) - 50/100 200/200\nVoltage Transformer_ 373",
+      "header": "CPU",
+      "section_type": "일반",
+      "equipment": [
+        "연소가스처리"
+      ],
+      "company_id": "26",
+      "company_name": "연소가스처리설비",
+      "source_file": "기술 및 참고자료(CATALOGUE 등)",
+      "source_path": "D:\\기계도면\\기계도면\\26. 연소가스처리설비 (에스텍)\\준공도서-연소가스 처리설비(전기)\\16. 기술 및 참고자료(CATALOGUE 등)\\기술 및 참고자료(CATALOGUE 등).pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "caa94a2c80d132f0",
+      "char_count": 1436
+    },
+    {
+      "chunk_idx": 128,
+      "text": "0\n- - 1.0/3P 1.2 Continuous / 1.9 (8h) - 50/100 200/200\nVoltage Transformer_ 373 Three Phase Voltage Transformers (1.15kV)\n�Dimension\nunit : mm\n●(cid:13851)內(cid:14068)\nFor Indoor\n●3(cid:12183). (cid:11831)(cid:15212)(cid:15744)(cid:17453)\nThree Phase,\nLine to Line Voltage Transformer\n●(cid:14675)(cid:11267)計器(cid:14068)및繼(cid:15191)器(cid:14068)\nFor Metering & Protective application\n●Epoxy Mold로(cid:15202)(cid:13524)(cid:16761)(cid:12407)强(cid:17541)\nInsulation : Epoxy Molding\n�Specification\nStandard KS C 1706 JEC 1201 IEC 60044-2\nType 3LL1\nMax. Voltage 0.23 ~ 1.15kV 0.23 ~ 1.15kV 0.72kV\nPrimary Voltage 110 ~ 480V 110 ~ 480V 110 ~ 480V\nSecondary Voltage 110V\nInsulation Level 2 ~ 4kV 2 ~ 4kV 0.72 / 3 / - kV\nAccuracy Class 1.0 1P or 3P 0.5 or 1.0 or 3.0\nOver Voltage Factor - 1.1 Continuous 1.2 Continuous\nRated Burden 30VA ×2\nFrequency 60Hz ( Option : 50Hz )\nWeight ≒6.0kg\n※상기의정격1차, 2차전압은표준형이며, 그이외의전압비의제품도생산가능합니다.\n※The specification of the rated primary / secondary voltage same as the above is our standardized voltage ratio. The other voltage ratio on request.\n※PT Fuse는별매품입니다. ※Option : If user wants to change the fuse, can be make an extra cost.\n�1’ry / 2’ry Voltage : 생산전압비(option)\n1차전압( V ) 2차전압( V )\n220, 440, 460, 480 110, 120\n�Connection Diagram",
+      "header": "CPU",
+      "section_type": "일반",
+      "equipment": [
+        "연소가스처리"
+      ],
+      "company_id": "26",
+      "company_name": "연소가스처리설비",
+      "source_file": "기술 및 참고자료(CATALOGUE 등)",
+      "source_path": "D:\\기계도면\\기계도면\\26. 연소가스처리설비 (에스텍)\\준공도서-연소가스 처리설비(전기)\\16. 기술 및 참고자료(CATALOGUE 등)\\기술 및 참고자료(CATALOGUE 등).pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "c795e7356e5c178c",
+      "char_count": 1265
+    },
+    {
+      "chunk_idx": 129,
+      "text": "산전압비(option)\n1차전압( V ) 2차전압( V )\n220, 440, 460, 480 110, 120\n�Connection Diagram Three Phase Earthed Voltage Transformers (1.15kV)\n�Dimension\nunit : mm\n●(cid:13851)內(cid:14068)\nFor Indoor\n●3(cid:12183). (cid:15212)(cid:15744)(cid:17453)\nThree Phase,\nLine to Earth Voltage Transformer\n●(cid:14675)(cid:11267)計器(cid:14068)및繼(cid:15191)器(cid:14068)\nFor Metering &Protective application\n●Epoxy Mold로(cid:15202)(cid:13524)(cid:16761)(cid:12407)强(cid:17541)\nInsulation : Epoxy Molding\n�Specification\nStandard KS C 1706 JEC 1201 IEC 60044-2\nType 3NL1\nMax. Voltage 0.46kV 0.46kV 0.72kV\nPrimary Voltage 380 / √3V 380 / √3V 380 / √3V\nSecondary Voltage 190 / √3V\nInsulation Level 0.22 ~ 0.96kV 0.22 ~ 0.96kV 0.72 / 3 / - kV\nAccuracy Class 1.0 1P 1.0\nRated Burden 17VA ×3\nOver Voltage Factor 1.2 Continuous / 1.5(30s)\nFrequency 60Hz ( Option : 50Hz )\nWeight ≒6.0kg\n※상기의정격1차, 2차전압은표준형이며, 그이외의전압비의제품도생산가능합니다.\n※The specification of the rated primary / secondary voltage same as the above is our standardized voltage ratio. The other voltage ratio on request.\n※PT Fuse는별매품입니다.\n※Option : If user wants to change the fuse, can be make an extra cost.\n�Connection Diagram\n※N(접지)단자는중선선에연결하지마십\n시오. 지락사고시소손될수있습니다.\n※본제품은접지보호차단장치가없는선\n로에서접지사고발생시제품이소손될\n수있으니접지보호차단장치가없는선로\n에서의사용을삼가하여주시기바라며,\n단상GPT 3대를조합사용하시는것이\n보다효과적입니다.\nVoltage Transformer_ 375",
+      "header": "CPU",
+      "section_type": "일반",
+      "equipment": [
+        "연소가스처리"
+      ],
+      "company_id": "26",
+      "company_name": "연소가스처리설비",
+      "source_file": "기술 및 참고자료(CATALOGUE 등)",
+      "source_path": "D:\\기계도면\\기계도면\\26. 연소가스처리설비 (에스텍)\\준공도서-연소가스 처리설비(전기)\\16. 기술 및 참고자료(CATALOGUE 등)\\기술 및 참고자료(CATALOGUE 등).pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "e1a61639f28ea56d",
+      "char_count": 1315
+    },
+    {
+      "chunk_idx": 130,
+      "text": "단장치가없는선로\n에서의사용을삼가하여주시기바라며,\n단상GPT 3대를조합사용하시는것이\n보다효과적입니다.\nVoltage Transformer_ 375 Current Transformer\n�1.15kV Current Transformers∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙392\n�7.2kV Current Transformers ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙399\n�12kV Current Transformers ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙430\n�25.8kV Current Transformers∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙456\n�Standard Current Transformers∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙479\n�Zero Phase Current Transformers∙∙∙∙∙∙∙∙∙∙∙∙∙∙480\n�Bushing Type Current Transformers∙∙∙∙∙∙∙∙∙∙∙∙∙482\n�Split Type Current Transformers ∙∙∙∙∙∙∙∙∙∙∙∙∙∙491\nCurrent Transformer _ 391",
+      "header": "CPU",
+      "section_type": "일반",
+      "equipment": [
+        "연소가스처리"
+      ],
+      "company_id": "26",
+      "company_name": "연소가스처리설비",
+      "source_file": "기술 및 참고자료(CATALOGUE 등)",
+      "source_path": "D:\\기계도면\\기계도면\\26. 연소가스처리설비 (에스텍)\\준공도서-연소가스 처리설비(전기)\\16. 기술 및 참고자료(CATALOGUE 등)\\기술 및 참고자료(CATALOGUE 등).pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "13e26885ce1613b9",
+      "char_count": 518
+    },
+    {
+      "chunk_idx": 131,
+      "text": "482\n�Split Type Current Transformers ∙∙∙∙∙∙∙∙∙∙∙∙∙∙491\nCurrent Transformer _ 391 Round Type Current Transformers (1.15kV)\n�Dimension\n●(cid:13851)內(cid:14068)\nFor Indoor\n●1(cid:15945)貫(cid:16747)(cid:17657)(cid:17453)\nunit : mm\nFor Cable or Bus-bar Through Type\nType A B ∅C\n●(cid:14675)(cid:11267)計器(cid:14068)\nUR1 70 91 ∅25\nFor Metering UR2 88 108 ∅39\n●(cid:16504)(cid:11647)(cid:11388)(cid:17292)을90�(cid:17704)(cid:15186)可能함으로(cid:16504)(cid:11647)(cid:14059)(cid:14617) UR3 115 138 ∅60\n●1(cid:15945)(cid:9936)(cid:16209)貫(cid:16747)(cid:17704)(cid:12708)에따라(cid:10092)(cid:14675)AT에여러\n(cid:11570)(cid:10633)(cid:11831)로(cid:11979)(cid:14068)할수있다.\n�Specification\nType Primary Current Secondary Current Burden (VA) Accuracy Class Weight(kg) Remark\nUR - 1 5 ~ 300A 1 or 5A 5~15 1.0 or 3.0 ≒0.6\nUR - 2 10 ~ 800A 1 or 5A 5~40 1.0 or 3.0 ≒0.7\nUR - 3 400 ~ 1500A 1 or 5A 5~40 1.0 or 3.0 ≒1.0\n�Application Standard : KS C 1706, IEC 60044-1, JEC 1201, ANSI C 57.13 etc.\n�Maximum Line Voltage System : 1150 V\n�Rated Frequency : 60 Hz ( option : 50 Hz )\n�Over Current Strength : 40 In / 1 second\nThe value of rated current ×40In is not exceed the 40kA\n(Over current strength being subject to 25% rated burden connection at secondary side for all ratios)\n�(cid:15222)格Ampere Turn\n(cid:15222)格AT란(cid:15222)格1(cid:15945)(cid:15191)(cid:10633)(A)에1(cid:15945)(cid:9936)(cid:16209)의貫(cid:16747)(cid:17704)(cid:12708)인(turn)을곱한값을Ampere Turn으로나타낸다.\n따라서UR Type의(cid:15222)格1(cid:15945)(cid:15191)(cid:10633)는1(cid:15945)(cid:9936)(cid:16209)의貫(cid:16747)(cid:17704)(cid:12708)(Turn)에따라Primary Turn(cid:12708)(cid:16972)에서와같이여러(cid:11570)(cid:10633)(cid:11831)를얻을수있습니다.\nex) (cid:15222)格AT이 200AT 인(cid:11570)(cid:10633)器의경우貫(cid:16747)(cid:17704)(cid:12708)(Turn)에따른 (cid:11570)(cid:10633)(cid:11831)는?\n1(cid:15945)(cid:9936)(cid:16209)의貫(cid:16747)(cid:17704)(cid:12708)가1회인경우 : 200A((cid:15222)格1(cid:15945)(cid:15191)(cid:10633)) ×1 Turn ＝200 AT\n1(cid:15945)(cid:9936)(cid:16209)의貫(cid:16747)(cid:17704)(cid:12708)가2회인경우 : 100A((cid:15222)格1(cid:15945)(cid:15191)(cid:10633)) ×2 Turn ＝200 AT\n1(cid:15945)(cid:9936)(cid:16209)의貫(cid:16747)(cid:17704)(cid:12708)가4회인경우 : 50A((cid:15222)格1(cid:15945)(cid:15191)(cid:10633)) ×4 Turn ＝200 AT\n그러므로200 AT인(cid:11570)(cid:10633)器의1(cid:15945)貫(cid:16747)(cid:17704)(cid:12708)를(cid:15426)(cid:15230)하여얻고자하는(cid:15222)格1(cid:15945)(cid:15191)(cid:10633)를자유롭게얻을수있어매우經(cid:15375)(cid:15042)입니다.",
+      "header": "CPU",
+      "section_type": "일반",
+      "equipment": [
+        "연소가스처리"
+      ],
+      "company_id": "26",
+      "company_name": "연소가스처리설비",
+      "source_file": "기술 및 참고자료(CATALOGUE 등)",
+      "source_path": "D:\\기계도면\\기계도면\\26. 연소가스처리설비 (에스텍)\\준공도서-연소가스 처리설비(전기)\\16. 기술 및 참고자료(CATALOGUE 등)\\기술 및 참고자료(CATALOGUE 등).pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "2c2c5be02d2fead2",
+      "char_count": 2420
+    },
+    {
+      "chunk_idx": 132,
+      "text": "15222)格1(cid:15945)(cid:15191)(cid:10633)를자유롭게얻을수있어매우經(cid:15375)(cid:15042)입니다. �Primary Turn 수(표)\nType UR - 1 UR - 2 UR - 3\nClass\n3.0 1.0 1.0 1.0",
+      "header": "CPU",
+      "section_type": "일반",
+      "equipment": [
+        "연소가스처리"
+      ],
+      "company_id": "26",
+      "company_name": "연소가스처리설비",
+      "source_file": "기술 및 참고자료(CATALOGUE 등)",
+      "source_path": "D:\\기계도면\\기계도면\\26. 연소가스처리설비 (에스텍)\\준공도서-연소가스 처리설비(전기)\\16. 기술 및 참고자료(CATALOGUE 등)\\기술 및 참고자료(CATALOGUE 등).pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "e4d9971699ebd0d7",
+      "char_count": 147
+    },
+    {
+      "chunk_idx": 133,
+      "text": "id:15042)입니다. �Primary Turn 수(표)\nType UR - 1 UR - 2 UR - 3\nClass\n3.0 1.0 1.0 1.0",
+      "header": "VA",
+      "section_type": "일반",
+      "equipment": [
+        "연소가스처리"
+      ],
+      "company_id": "26",
+      "company_name": "연소가스처리설비",
+      "source_file": "기술 및 참고자료(CATALOGUE 등)",
+      "source_path": "D:\\기계도면\\기계도면\\26. 연소가스처리설비 (에스텍)\\준공도서-연소가스 처리설비(전기)\\16. 기술 및 참고자료(CATALOGUE 등)\\기술 및 참고자료(CATALOGUE 등).pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "6bedaddbad64a4c2",
+      "char_count": 80
+    },
+    {
+      "chunk_idx": 134,
+      "text": "id:15042)입니다. �Primary Turn 수(표)\nType UR - 1 UR - 2 UR - 3\nClass\n3.0 1.0 1.0 1.0 VA\nPrimary 5VA 5VA 15VA 5VA 15VA 40VA 5VA 15VA 40VA\nCurrent(A) AT Turn AT Turn AT Turn AT Turn AT Turn AT Turn AT Turn AT Turn AT Turn\n5 60 12 100 20 100 20\n10 60 6 100 10 100 10\n15 60 4 120 8 180 12 120 8 180 12\n20 60 3 100 5 180 9 100 5 180 9\n25 75 3 100 4 200 8 100 4 200 8\n30 60 2 120 4 180 6 120 4 180 6\n40 80 2 120 3 200 5 120 3 200 5 400 10\n50 100 2 100 2 200 4 100 2 200 4 400 8\n60 60 1 120 2 180 3 120 2 180 3 420 7\n75 75 1 150 2 225 3 150 2 225 3 450 6\n80 80 1 160 2 240 3 160 2 240 3 400 5\n90 90 1 180 2 180 2 180 2 180 2 450 5\n100 100 1 100 1 200 2 100 1 200 2 400 4\n120 120 1 120 1 240 2 120 1 240 2 480 4\n150 150 1 150 1 300 2 150 1 300 2 450 3\n180 180 1 180 1 180 1 180 1 180 1 540 3\n200 200 1 200 1 200 1 200 1 200 1 400 2\n240 240 1 240 1 240 1 240 1 240 1 480 2\n250 250 1 250 1 250 1 250 1 250 1 500 2\n300 300 1 300 1 300 1 300 1 300 1 600 2 300 1 300 1\n400 400 1 400 1 400 1 400 1 400 1 400 1\n500 500 1 500 1 500 1 500 1 500 1 500 1\n600 600 1 600 1 600 1 600 1 600 1 600 1\n750 750 1 750 1 750 1 750 1 750 1 750 1\n800 800 1 800 1 800 1 800 1 800 1 800 1\n1000 1000 1 1000 1 1000 1\n1200 1200 1 1200 1 1200 1\n1500 1500 1 1500 1 1500 1\nCurrent Transformer _ 393",
+      "header": "VA",
+      "section_type": "일반",
+      "equipment": [
+        "연소가스처리"
+      ],
+      "company_id": "26",
+      "company_name": "연소가스처리설비",
+      "source_file": "기술 및 참고자료(CATALOGUE 등)",
+      "source_path": "D:\\기계도면\\기계도면\\26. 연소가스처리설비 (에스텍)\\준공도서-연소가스 처리설비(전기)\\16. 기술 및 참고자료(CATALOGUE 등)\\기술 및 참고자료(CATALOGUE 등).pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "54870cbcf1114311",
+      "char_count": 1255
+    },
+    {
+      "chunk_idx": 135,
+      "text": "1\n1200 1200 1 1200 1 1200 1\n1500 1500 1 1500 1 1500 1\nCurrent Transformer _ 393 Winding Type Current Transformers (1.15kV)\n●(cid:13851)內(cid:14068)\nFor Indoor\n●1(cid:15945)捲(cid:12364)(cid:17453)\nWinding Type\n●(cid:14675)(cid:11267)計器(cid:14068)\nFor Metering\n●(cid:16504)(cid:11647)(cid:11388)(cid:17292)을90�(cid:17704)(cid:15186)可能함으로(cid:16504)(cid:11647)(cid:14059)(cid:14617)\n●1(cid:15945) (cid:15191)(cid:10633)가 낮아 많은 (cid:9936)(cid:16209)를 貫(cid:16747)하기 어려운\n(cid:15191)(cid:10633)(cid:14059)(cid:10297)에(cid:15056)(cid:17146)합니다.\n�Specification\nItem Type Primary Current Secondary Current Accuracy Class Burden(VA) Weight(kg) Remark\nWL 1 5 ~ 50A 5 ~ 40 ≒1.2\nB 40 ~ 150A 5 ~ 15 ≒1.0\nWL 2 C 200 ~ 300A 5 ~ 15 ≒1.0\nSingle Ratio\nD 400 ~ 500A 5 ~ 15 ≒1.0\nC.T\nB 40 ~ 150A 40 ≒1.2\nWL 3 C 200 ~ 300A 40 ≒1.2\nD 400 ~ 500A 40 ≒1.2\n10 50\nWL D1 ~ A 5 ~ 15 ≒1.2\n5 25\n40 150\nB ~ A 5 ≒1.0\n20 75 1 or 5A 1.0 or 3.0\n200 300\nWLD 2 C ~ A 5 ≒1.0\n100 150\nDouble Ratio 400 500\nD ~ A 5 ≒1.0\nC.T 200 250\n40 150\nB ~ A 15 ≒1.2\n20 75\n200 300\nWLD 3 C ~ A 15 ≒1.2\n100 150\n400 500\nD ~ A 15 ≒1.5\n200 250\n�Application Standard : KS C 1706, IEC 60044-1, JEC 1201, ANSI C 57.13 etc.\n�Maximum Line Voltage System : 1150 V\n�Rated Frequency : 60 Hz ( option : 50 Hz )\n�Insulation : 1.15 kV / 4 kV / -\n�Over Current Strength : 40 In / 1 second\n(Over current strength being subject to 25% rated burden connection at secondary side for all ratios)\n�(cid:15580)(cid:11086)(cid:11976)(cid:13310)에따라AccuracyClass는0.3, 0.5 Class등다양하게(cid:15380)(cid:14826)이可能합니다.",
+      "header": "VA",
+      "section_type": "일반",
+      "equipment": [
+        "연소가스처리"
+      ],
+      "company_id": "26",
+      "company_name": "연소가스처리설비",
+      "source_file": "기술 및 참고자료(CATALOGUE 등)",
+      "source_path": "D:\\기계도면\\기계도면\\26. 연소가스처리설비 (에스텍)\\준공도서-연소가스 처리설비(전기)\\16. 기술 및 참고자료(CATALOGUE 등)\\기술 및 참고자료(CATALOGUE 등).pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "071811a8614c1161",
+      "char_count": 1526
+    },
+    {
+      "chunk_idx": 136,
+      "text": "976)(cid:13310)에따라AccuracyClass는0.3, 0.5 Class등다양하게(cid:15380)(cid:14826)이可能합니다. Winding Type Current Transformers (1.15kV)\n�Dimension\n�WL 1 or WLD 1\n�WL(D) 2 or WL(D) 3\nunit : mm\nType A B C D E F G H I J\nB 125 100 76 46 25 ∅10 3.2 86 105\nWL 2\nC 135 105 76 46 30 ∅10 6 86 59 105\nWLD 2\nD 155 116 76 46 40 ∅12 8 86 105\nB 130 105 81 51 25 ∅10 3.2 95 114\nWL 3\nC 140 110 81 51 30 ∅10 6 95 64 114\nWLD 3\nD 160 120 81 51 40 ∅12 8 95 114\nCurrent Transformer _ 395",
+      "header": "VA",
+      "section_type": "일반",
+      "equipment": [
+        "연소가스처리"
+      ],
+      "company_id": "26",
+      "company_name": "연소가스처리설비",
+      "source_file": "기술 및 참고자료(CATALOGUE 등)",
+      "source_path": "D:\\기계도면\\기계도면\\26. 연소가스처리설비 (에스텍)\\준공도서-연소가스 처리설비(전기)\\16. 기술 및 참고자료(CATALOGUE 등)\\기술 및 참고자료(CATALOGUE 등).pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "58a8b6d51cdd2242",
+      "char_count": 454
+    },
+    {
+      "chunk_idx": 137,
+      "text": "∅10 6 95 64 114\nWLD 3\nD 160 120 81 51 40 ∅12 8 95 114\nCurrent Transformer _ 395 Window Type Current Transformers (1.15kV)\n●(cid:13851)內(cid:14068)\nFor Indoor\n●1(cid:15945)Bus-bar 貫(cid:16747)(cid:17453)\nFor Bus- bar Through Type\n●(cid:14675)(cid:11267)計器(cid:14068)및繼(cid:15191)器(cid:14068)\nFor Metering & Protective application\n●Bus-bar에(cid:15775)(cid:15212)(cid:16504)(cid:11647)可能함으로(cid:12388)(cid:16541)(cid:14059)(cid:14617)\n�Specification\nItem Sevice Type Primary / Secondary Current Accuracy Class Burden(VA) n� Hole size(mm) Weight(kg) Remark\nUS - 1 100 ~ 300/5A 44×7 ≒1.0\nUS - 3 200 ~ 600/5A 65×10 ≒1.0\nUS - 5 300 ~ 1000/5A 85×10 ≒1.2\nUS - 6 1000 ~ 2000/5A 105×20 ≒1.5\n3.0 5\nUS - 7 750 ~ 3000/5A 125×30 ≒1.9\nUS - 8 500 ~ 4000/5A 130×40 ≒2.5\nUS - 9 1000 ~ 5000/5A 160×45 ≒3.7\nUS - 10 1000 ~ 6000/5A 160×75 ≒4.1\n150 ~ 300/5A 5\nUS - 1 44×7 ≒1.0\n250 ~ 300/5A\nMetering 15 -\n200/5A\nUS - 2 44×7 ≒1.4\n300/5A 40\nUS - 3 5 or 15 65×10 ÷1.0\n300 ~ 600/5A\nUS - 4 40 65×10 ≒1.6\n1.0\nUS - 5 500 ~ 1000/5A 85×10 ≒1.2\nSingle\nUS - 6 1200 ~ 2000/5A 105×20 ≒1.5\nRatio C.T\nUS - 7 2500 ~ 3000/5A 5 or 15 or 125×30 ≒1.9\nUS - 8 1000 ~ 4000/5A 40 130×40 ≒2.5\nUS - 9 1000 ~ 5000/5A 160×45 ≒3.7\nUS - 10 3000 ~ 6000/5A 160×75 ≒4.1\nUS - 7R 750 ~ 3000/5A 125×30 ≒1.9\n15 10\n400 ~ 4000/5A\nUS - 8R 15 20 130×40 ≒3.5\n1200 ~ 4000/5A\n40 10\n400 ~ 5000/5A 1P(JEC) 15 10\nProtection US - 9R or 15 20 160×45 ≒4.7\n1000 ~ 5000/5A\n5P(IEC) 40 10\n400 ~ 5000/5A 15 10\n15 20\nUS - 10R 800 ~5000/5A 160×75 ≒5.1\n40 10\n1500 ~ 5000/5A 40 20\n�Application Standard : KS C 1706, IEC 60044-1, JEC 1201, ANSI C 57.13 etc.\n�Maximum Line Voltage System : 1150 V\n�Rated Frequency : 60 Hz ( option : 50 Hz )\n�Over Current Strength : 40 In / 1 second\nThe value of rated current ×40In is not exceed the 40kA\n(Over current strength being subject to 25% rated burden connection at secondary side for all ratios)\n�Secondary Current : 5 A or 1 A\n�(cid:15580)(cid:11086)(cid:11976)(cid:13310)에따라Accuracy Class는0.3, 0.5 Class등다양하게(cid:15380)(cid:14826)이可能합니다.\n�(cid:11595)(cid:17514)繼(cid:15191)(cid:14068)(For Protection)은(cid:15580)(cid:11086)(cid:11976)(cid:13310)에따라(cid:15380)(cid:14826)可能합니다.",
+      "header": "VA",
+      "section_type": "일반",
+      "equipment": [
+        "연소가스처리"
+      ],
+      "company_id": "26",
+      "company_name": "연소가스처리설비",
+      "source_file": "기술 및 참고자료(CATALOGUE 등)",
+      "source_path": "D:\\기계도면\\기계도면\\26. 연소가스처리설비 (에스텍)\\준공도서-연소가스 처리설비(전기)\\16. 기술 및 참고자료(CATALOGUE 등)\\기술 및 참고자료(CATALOGUE 등).pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "6b26c8f1418b0788",
+      "char_count": 2137
+    },
+    {
+      "chunk_idx": 138,
+      "text": "ion)은(cid:15580)(cid:11086)(cid:11976)(cid:13310)에따라(cid:15380)(cid:14826)可能합니다. Window Type Current Transformers (1.15kV)\n�Specification\nItem Sevice Type Primary / Secondary Current Accuracy Class Burden(VA) n� Hole size(mm) Weight(kg) Remark\n200 300\nUS - 1D /5A~ /5A 44×7 ≒1.0\n100 150\n400 600\nUS - 3D /5A~ /5A 65×10 ≒1.0\n200 300\n800 1000\nUS - 5D /5A~ /5A 85×10 ≒1.2\n400 500\n1200 2000\nUS - 6D /5A~ /5A 105×20 ≒1.5\n600 1000\n3.0 5\n2400 3000\nUS - 7D /5A~ /5A 125×30 ≒1.9\n1200 1500\n2000 4000\nUS - 8D /5A~ /5A 130×40 ≒2.5\n1000 2000\n2000 5000\nUS - 9D /5A~ /5A 160×45 ≒3.7\n1000 2500 US - 10D /5A 160×75 ≒4.1 US - 4D /5A 65×10 ≒1.6 Metering -\n800 1000\nUS - 5D /5A~ /5A 85×10 ≒1.2\n400 500\n1200 2000\nUS - 6D /5A~ /5A 105×20 ≒1.5\n600 1000\n2400 3000\nUS - 7D /5A~ /5A 15 125×30 ≒1.9\n1200 1500\n2000 4000\nDouble US - 8D 1000 /5A~ 2000 /5A 130×40 ≒2.5\n1.0\nRatio C.T US - 9D 2000 /5A~ 5000 /5A 160×45 ≒3.7\n1000 2500 US - 10D /5A 160×75 ≒4.1",
+      "header": "VA",
+      "section_type": "일반",
+      "equipment": [
+        "연소가스처리"
+      ],
+      "company_id": "26",
+      "company_name": "연소가스처리설비",
+      "source_file": "기술 및 참고자료(CATALOGUE 등)",
+      "source_path": "D:\\기계도면\\기계도면\\26. 연소가스처리설비 (에스텍)\\준공도서-연소가스 처리설비(전기)\\16. 기술 및 참고자료(CATALOGUE 등)\\기술 및 참고자료(CATALOGUE 등).pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "429a66e69ce7f592",
+      "char_count": 924
+    },
+    {
+      "chunk_idx": 139,
+      "text": "io C.T US - 9D 2000 /5A~ 5000 /5A 160×45 ≒3.7\n1000 2500 US - 10D /5A 160×75 ≒4.1 2000 4000\nUS - 8D /5A~ /5A 130×40 ≒2.5\n1000 2000\n2000 5000\nUS - 9D /5A~ /5A 40 160×45 ≒3.7\n1000 2500 US - 10D /5A 160×75 ≒4.1",
+      "header": "VA",
+      "section_type": "일반",
+      "equipment": [
+        "연소가스처리"
+      ],
+      "company_id": "26",
+      "company_name": "연소가스처리설비",
+      "source_file": "기술 및 참고자료(CATALOGUE 등)",
+      "source_path": "D:\\기계도면\\기계도면\\26. 연소가스처리설비 (에스텍)\\준공도서-연소가스 처리설비(전기)\\16. 기술 및 참고자료(CATALOGUE 등)\\기술 및 참고자료(CATALOGUE 등).pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "6df2869fb948f352",
+      "char_count": 206
+    },
+    {
+      "chunk_idx": 140,
+      "text": "000\n2000 5000\nUS - 9D /5A~ /5A 40 160×45 ≒3.7\n1000 2500 US - 10D /5A 160×75 ≒4.1 800 3000\nUS - 7DR /5A~ /5A 15 10/5 125×30 ≒1.9\n400 1500\n400 4000\n/5A~ /5A 15 10/5\nUS - 8DR 200 2000 130×40 ≒3.5\n1200 4000 15 20/10\n/5A~ /5A\n600 2000 40 10/10\n400 /5A~ 5000 /5A 1P(JEC) 15 10/10\nProtection US - 9DR 200 2500 or 160×45 ≒4.7\n1000 5000 15 20/10\n500 /5A~ 2500 /5A 5P(IEC) 40 10/5\n400 5000\n/5A~ /5A 15 10/5\n200 2500\n800 5000 15 20/10\nUS - 10DR /5A~ /5A 160×75 ≒5.1\n400 2500 40 10/5\n1500 5000\n/5A~ /5A 40 20/10\n750 2500\n�Application Standard : KS C 1706, IEC 60044-1, JEC 1201, ANSI C 57.13 etc.\n�Maximum Line Voltage System : 1150 V\n�Rated Frequency : 60 Hz ( option : 50 Hz )\n�Over Current Strength : 40 In / 1 second\nThe value of rated current ×40In is not exceed the 40kA\n(Over current strength being subject to 25% rated burden connection at secondary side for all ratios)\n�Secondary Current : 5 A or 1 A\n�(cid:15580)(cid:11086)(cid:11976)(cid:13310)에따라Accuracy Class는0.3, 0.5 Class등다양하게(cid:15380)(cid:14826)이可能합니다.\n�(cid:11595)(cid:17514)繼(cid:15191)(cid:14068)(For Protection)은(cid:15580)(cid:11086)(cid:11976)(cid:13310)에따라(cid:15380)(cid:14826)可能합니다.\nCurrent Transformer _ 397",
+      "header": "VA",
+      "section_type": "일반",
+      "equipment": [
+        "연소가스처리"
+      ],
+      "company_id": "26",
+      "company_name": "연소가스처리설비",
+      "source_file": "기술 및 참고자료(CATALOGUE 등)",
+      "source_path": "D:\\기계도면\\기계도면\\26. 연소가스처리설비 (에스텍)\\준공도서-연소가스 처리설비(전기)\\16. 기술 및 참고자료(CATALOGUE 등)\\기술 및 참고자료(CATALOGUE 등).pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "0aa4144a1c4b9eae",
+      "char_count": 1175
+    },
+    {
+      "chunk_idx": 141,
+      "text": ")(cid:11976)(cid:13310)에따라(cid:15380)(cid:14826)可能합니다.\nCurrent Transformer _ 397 Window Type Current Transformers (1.15kV)\n�Dimension\nunit : mm\nType A B C D Remark\nUS - 1, US - 1D 95 65 44 7\nUS - 2 110 80 44 7\nUS - 3, US - 3D 115 65 65 10\nUS - 4, US - 4D 125 75 65 10\nunit : mm\nType A B C D Remark\nUS - 5, US - 5D 135 70 85 10\nUS - 6, US - 6D 155 85 105 20\nUS - 7, US - 7D 185 100 125 30\nUS - 8, US - 8D 212 126 130 40\nUS - 9, US - 9D 245 140 160 45\nUS - 10, US - 10D 260 176 160 75",
+      "header": "VA",
+      "section_type": "일반",
+      "equipment": [
+        "연소가스처리"
+      ],
+      "company_id": "26",
+      "company_name": "연소가스처리설비",
+      "source_file": "기술 및 참고자료(CATALOGUE 등)",
+      "source_path": "D:\\기계도면\\기계도면\\26. 연소가스처리설비 (에스텍)\\준공도서-연소가스 처리설비(전기)\\16. 기술 및 참고자료(CATALOGUE 등)\\기술 및 참고자료(CATALOGUE 등).pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "c41f1369dbecdce2",
+      "char_count": 482
+    },
+    {
+      "chunk_idx": 142,
+      "text": "D 212 126 130 40\nUS - 9, US - 9D 245 140 160 45\nUS - 10, US - 10D 260 176 160 75 Panel & Switchboard Meters\n�안전을위한주의사항 ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙238\n�Ammeters ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙246\n�Voltmeters ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙250\n�Wattmeters∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙252\n�Varmeters ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙256\n�Power Factor meters∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙260\n�Frequency meters∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙263\n�Maximum Demand meters ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙264\n�Meter Relays ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙266\n�Insulation Resistance Meter Relays∙∙∙∙∙∙∙∙∙∙∙∙∙∙270\n�수신지시계((cid:12596)(cid:12957)(cid:15748)(cid:12930)計)∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙272\nPanel & Switchboard Meters_ 237 �Dimension(unit : mm)\n●SC Type\n주) 점선부분은주파수계에한함.\n●SB Type\n주) 점선부분은주파수계에한함.\n●SA Type\n주) 점선부분은주파수계에한함.\n●EXTERNAL TRANSDUCER(For meter)\n주) 단자수는형식에따라다름(결선도참고) �Dimension\n●WB Type(WB - A1, A2, V1, V2, H1)\n●WA Type\n●WA - TP Type\n●WA - TW4, TR4, UTW4, UTR4, UTP4, TP1, TW1 Type\n주) 단TW4, TR4는PO단자가없음\n●WA - TW2, TR2. TP2, TW3, TR3, UTP3 Type\nPanel & Switchboard Meters_ 245",
+      "header": "VA",
+      "section_type": "일반",
+      "equipment": [
+        "연소가스처리"
+      ],
+      "company_id": "26",
+      "company_name": "연소가스처리설비",
+      "source_file": "기술 및 참고자료(CATALOGUE 등)",
+      "source_path": "D:\\기계도면\\기계도면\\26. 연소가스처리설비 (에스텍)\\준공도서-연소가스 처리설비(전기)\\16. 기술 및 참고자료(CATALOGUE 등)\\기술 및 참고자료(CATALOGUE 등).pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "828737450c2bfb09",
+      "char_count": 992
+    },
+    {
+      "chunk_idx": 143,
+      "text": "PO단자가없음\n●WA - TW2, TR2. TP2, TW3, TR3, UTP3 Type\nPanel & Switchboard Meters_ 245 Ammeters ((cid:15191)(cid:10633)計)",
+      "header": "VA",
+      "section_type": "일반",
+      "equipment": [
+        "연소가스처리"
+      ],
+      "company_id": "26",
+      "company_name": "연소가스처리설비",
+      "source_file": "기술 및 참고자료(CATALOGUE 등)",
+      "source_path": "D:\\기계도면\\기계도면\\26. 연소가스처리설비 (에스텍)\\준공도서-연소가스 처리설비(전기)\\16. 기술 및 참고자료(CATALOGUE 등)\\기술 및 참고자료(CATALOGUE 등).pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "2c16a8f338b162fe",
+      "char_count": 115
+    },
+    {
+      "chunk_idx": 144,
+      "text": "R3, UTP3 Type\nPanel & Switchboard Meters_ 245 Ammeters ((cid:15191)(cid:10633)計) S TYPE W TYPE\n�DC Ammeters ((cid:15775)(cid:10633)(cid:15191)(cid:10633)計)\nOperating Accuracy\nType Size (㎜) Scale Form Input Burden Weight(g) Dimension\nPrinciple Class(%)\nSC - A1 80 × 80 2.5 ≒180\nSquare\nSB - A1 100 × 84 ≒200\n(角(cid:17453))\nDC 50mV 244~245page\nSA - A1 120 ×100 50mV Drop ≒250\n(option) 1.5 (cid:12151)(cid:15408)\nWB - A1 80 × 80 ≒350\nWide Angle\nWA - A1 110 ×110 (廣角(cid:17453)) ≒480\n�Scale Form\n�DC Input option\nScale Value Remark\n200, 300, 500 (㎂)\n(cid:15775)(cid:15212)(cid:13532)結 1, 2, 5, 10, 20, 4~20,\n(Direct 50, 100, 200, 500 (mA) Internal\nShunt\nConnection)\n1, 2, 5, 7.5, 10,\n(cid:15191)氣(cid:14695)(cid:10316)이0이아닌눈금(기계적0점의표기는생략) 15, 20, 30 (A)\n60 또는100 ㎷ DC 5A~10000 A ExternalShunt\n�Connection Diagram",
+      "header": "S TYPE W TYPE",
+      "section_type": "일반",
+      "equipment": [
+        "연소가스처리"
+      ],
+      "company_id": "26",
+      "company_name": "연소가스처리설비",
+      "source_file": "기술 및 참고자료(CATALOGUE 등)",
+      "source_path": "D:\\기계도면\\기계도면\\26. 연소가스처리설비 (에스텍)\\준공도서-연소가스 처리설비(전기)\\16. 기술 및 참고자료(CATALOGUE 등)\\기술 및 참고자료(CATALOGUE 등).pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "87bc25dca8b0e0d4",
+      "char_count": 807
+    },
+    {
+      "chunk_idx": 145,
+      "text": "표기는생략) 15, 20, 30 (A)\n60 또는100 ㎷ DC 5A~10000 A ExternalShunt\n�Connection Diagram �Description\n30A (cid:14606)(cid:12162)의 (cid:15775)(cid:10633) (cid:15191)(cid:10633)計는 (cid:13908)(cid:11779)에 (cid:11786)(cid:10633)器(Shunt)를 (cid:13532)結 (cid:11979)(cid:14068) For higher ranges than 30A, use external shunt with the\n하십시오. instrument.\nWhen DC Ammeter is used with a shunt, it is noted that a\n(cid:11786)(cid:10633)器(Shunt)를(cid:13908)(cid:11779)에(cid:11782)(cid:15955)(cid:11979)(cid:14068)할경우(cid:15191)(cid:10633)計의Full Scale(50 full scale and a terminal voltage(50 or 100mV) of the\n또는100mV)과(cid:11786)(cid:10633)器의2(cid:15945)(cid:15191)(cid:13148)(50 또는100mV)이(cid:14675)(cid:16542)하는지 ammeter are same as the rated primary current and\n(cid:17654)(cid:14669)하여야 하며, 또한 (cid:15191)(cid:10633)計의 최대눈금치와 (cid:11786)(cid:10633)器의 1(cid:15945) (cid:15191)(cid:10633)의 secondary voltage of the shunt respectively.\n(cid:14675)(cid:16542)(cid:13470)(cid:11652)도(cid:17654)(cid:14669)하여야합니다.\nUse any lead wire of which resistance is less than 0.05Ϊin\n(cid:11786)(cid:10633)器(Shunt) lead선의(cid:15061)(cid:16209)(cid:15011)(cid:17159)(cid:16525)는0.05Ϊ(cid:14606)(cid:17099)이어야합니다. total. If the shunt lead resistance is indefinite, The meters\n만약(cid:11786)(cid:10633)器의lead선의(cid:15061)(cid:16209)(cid:15011)(cid:17159)(cid:16525)가0.05Ϊ(cid:14606)(cid:12162)일경우에는(cid:15775)(cid:10633) may be set up with a available resistor(V.R) for sensitivity\n(cid:15191)(cid:10633)計의感(cid:9940)를(cid:15426)(cid:15230)할수있는(cid:15011)(cid:17159)을(cid:12388)(cid:16541)하여야합니다. adjustment.\n(cid:11786)(cid:10633)器의結(cid:12364)은(-)(cid:16518)에(cid:12388)(cid:16541)하여야합니다. The shunt should be connected to the negative side line.\n((cid:13908)(cid:11779)結(cid:12364)(cid:9933)(cid:15981)(cid:15408)) (Refer to page 246)\n(cid:11425)(cid:15191)(cid:11261)(cid:14068) (cid:15775)(cid:10633) (cid:15191)(cid:10633)計와 (cid:15420)(cid:17146)하여 (cid:11979)(cid:14068) 할 경우 (cid:11786)(cid:10633)器의 階級은 When the shunt is used with the panel-board meter. use the\n0.5% 또는1.0%의(cid:11786)(cid:10633)器를(cid:11979)(cid:14068)하십시오. 0.5% class or 1.0% class of shunt.\n(cid:11786)(cid:10633)器의(cid:12388)(cid:16541)는그림과같이(cid:12388)(cid:16541)하는것이바람직합니다. The shunt should be conneted such as figure\n받침대가없는Shunt\n통풍 통풍\n50㎝이상\n모선\n(바닥)\nShunt와모선의연결방식\n(Connection Method with Line)\n받침대가있는Shunt\n모선\n모선\n모선 모선\nPanel & Switchboard Meters_ 247",
+      "header": "S TYPE W TYPE",
+      "section_type": "일반",
+      "equipment": [
+        "연소가스처리"
+      ],
+      "company_id": "26",
+      "company_name": "연소가스처리설비",
+      "source_file": "기술 및 참고자료(CATALOGUE 등)",
+      "source_path": "D:\\기계도면\\기계도면\\26. 연소가스처리설비 (에스텍)\\준공도서-연소가스 처리설비(전기)\\16. 기술 및 참고자료(CATALOGUE 등)\\기술 및 참고자료(CATALOGUE 등).pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "ed0e5906157bb87b",
+      "char_count": 2391
+    },
+    {
+      "chunk_idx": 146,
+      "text": "ection Method with Line)\n받침대가있는Shunt\n모선\n모선\n모선 모선\nPanel & Switchboard Meters_ 247 Ammeters ((cid:15191)(cid:10633)計)",
+      "header": "S TYPE W TYPE",
+      "section_type": "일반",
+      "equipment": [
+        "연소가스처리"
+      ],
+      "company_id": "26",
+      "company_name": "연소가스처리설비",
+      "source_file": "기술 및 참고자료(CATALOGUE 등)",
+      "source_path": "D:\\기계도면\\기계도면\\26. 연소가스처리설비 (에스텍)\\준공도서-연소가스 처리설비(전기)\\16. 기술 및 참고자료(CATALOGUE 등)\\기술 및 참고자료(CATALOGUE 등).pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "15cba87da7b8d970",
+      "char_count": 115
+    },
+    {
+      "chunk_idx": 147,
+      "text": "t\n모선\n모선\n모선 모선\nPanel & Switchboard Meters_ 247 Ammeters ((cid:15191)(cid:10633)計) S TYPE W TYPE\n�AC Ammeters(交(cid:10633)(cid:15191)(cid:10633)計)\nOperating Accuracy Burden\nType Size (㎜) Scale Form Input Frequency Weight(g) Dimension\nPrinciple Class(%) (VA)\nSC - A2 80 × 80 2.5 ≒230\nSquare\nSB - A2 100 × 84 1.0 ≒260\n(角(cid:17453)) AC 5 A,\n244~245page\nSA - A2 120 ×100 or 50/60Hz ≒310\n1.5 (cid:12151)(cid:15408)\n1 A\nWB - A2 80 × 80 ≒370\nWide Angle\n1.5\nWA - A2 110 ×110 (廣角(cid:17453)) ≒500\n�Scale Form �Input option\nScale Value Extension Scale\n(cid:15775)(cid:15212)(cid:13532)結\n(Direct 1, 3, 5, 10, 15, 20, 30 A 정격눈금치의\nConnection) 200%~500%\n(500% 연장눈금계기는\n광각형에한함.)\nCT Ratio × 5 A\n�D.C Ammeter의눈금과동일함(단±눈금의계기를제외) CT (cid:13532)結 or\nCT Ratio × 1 A\n�Connection Diagram",
+      "header": "S TYPE W TYPE",
+      "section_type": "일반",
+      "equipment": [
+        "연소가스처리"
+      ],
+      "company_id": "26",
+      "company_name": "연소가스처리설비",
+      "source_file": "기술 및 참고자료(CATALOGUE 등)",
+      "source_path": "D:\\기계도면\\기계도면\\26. 연소가스처리설비 (에스텍)\\준공도서-연소가스 처리설비(전기)\\16. 기술 및 참고자료(CATALOGUE 등)\\기술 및 참고자료(CATALOGUE 등).pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "4d998df49b3a98ec",
+      "char_count": 762
+    },
+    {
+      "chunk_idx": 148,
+      "text": "Ammeter의눈금과동일함(단±눈금의계기를제외) CT (cid:13532)結 or\nCT Ratio × 1 A\n�Connection Diagram �Description\n5A (cid:14606)(cid:12162)인 (cid:15191)(cid:10633)(cid:17704)(cid:10478)에서는 (cid:15222)格2(cid:15945)(cid:15191)(cid:10633)가 5A(1A)의 C.T(計器(cid:14068) To deal with current exceeding 5A, use a 5A(1A) meter in\n(cid:11570)(cid:10633)器)를(cid:11979)(cid:14068)하십시오. combination with a C.T(Current Transformer).\n交(cid:10633)(cid:15191)(cid:10633)計의 (cid:11979)(cid:14068)(cid:12925) 計器(cid:14068) (cid:11570)(cid:10633)器를 (cid:13908)(cid:11779)에 (cid:11782)(cid:15955) (cid:11979)(cid:14068)하며, 특히 AC Ammeter is used with a Current Transformer externally\n(cid:15191)(cid:10633)計의 (cid:16356)(cid:9914)눈금치와 計器(cid:14068)(cid:11570)(cid:10633)器의 1(cid:15945)(cid:15191)(cid:10633)와의 (cid:14675)(cid:16542) (cid:13470)(cid:11652)를 mounted, and it is noted that primary current of a current-\n(cid:17654)(cid:14669)하여야한다. Transformer and a full scale of the meter are identical when\nused.\n(cid:17704)(cid:10478)(cid:15191)(cid:13148)이500V(cid:14606)(cid:12162)인경우에는5A (cid:14606)(cid:17099)인(cid:17704)(cid:10478)일지라도확실한 If the circuit voltage exceeds 500V, even when the current is\n(cid:15202)(cid:13524)을위하여計器(cid:14068)(cid:11570)(cid:10633)器와(cid:15420)(cid:17146)하여(cid:11979)(cid:14068)하십시오. less then 5A, use a 5A meter in combination with a C.T to\nensure insulation.\n(cid:15191)(cid:10091)機(Motor)에(cid:11979)(cid:14068)할(cid:15191)(cid:10633)計는(cid:15222)格(cid:15191)(cid:10633)의150 �500%에해당 The scale range of ammeter for motor circuit is extended up to\n하는(cid:13499)(cid:14886)눈금계기를사용하는것이(cid:15191)(cid:10091)機의起(cid:10091)(cid:15191)(cid:10633)의(cid:16402)擊을(cid:11405)(cid:15755) 150~500% of rated current. so that these meters are proteced\n하며(cid:15191)(cid:10633)計의(cid:12600)(cid:10996)을(cid:13499)(cid:14886)시킨다. from the impact of the starting current and ensured of long life.\n(500%는廣角(cid:17453)에한함)\n(cid:13499)(cid:14886)눈금計器의(cid:14305)(cid:17731)(cid:16522)(cid:15222)(cid:11456)(cid:14266)는(cid:15061)(cid:16209)눈금길이의약65%이며, (cid:13499)(cid:14886) An expanded scale has the normal maximum reading(upper\n눈금은약65�100%사이에서(cid:12388)(cid:15222)됩니다. limit of the effective measurement range) at the app. 65%\n((cid:13499)(cid:14886)눈금의(cid:13848)(cid:15944)(cid:17130)界는±8%) point on the scale, and the rest of it(65~100%) is devoted to\nextension reading (tolerance of extension area : ±8%)\n交(cid:10633)(cid:15191)(cid:10633)를(cid:14254)距(cid:10690)(cid:15060)(cid:12586)할경우에는(cid:15191)(cid:10316)(cid:14068)(cid:11570)(cid:17663)器(T/D)와(cid:15775)(cid:10633)計器를 When making remote measurement the AC current, the meter\n(cid:15420)(cid:17146)하여(cid:11979)(cid:14068)하십시오. should be used the DC meter with the Transducer(T/D)\n(cid:15191)(cid:10316)(cid:14068)(cid:11570)(cid:17663)器(T/D) (cid:11979)(cid:14068)(cid:12925)T/D의(cid:16395)(cid:10316)(cid:11976)(cid:13310)과(cid:15775)(cid:10633)計器의(cid:14695)(cid:10316)(cid:11976)(cid:13310) It is noted that the input value of DC meter to the output value\n을(cid:14675)(cid:16542)시켜(cid:11979)(cid:14068)하십시오. of Transducer.\n交(cid:10633)(cid:15191)(cid:10633)計의校(cid:15237)은(cid:15237)(cid:17317)(cid:16770)의(cid:15191)(cid:10633)로校(cid:15237)되어있습니다. Calibration has been made on sinusoidal wave.\n�CT (計器(cid:14068)(cid:11570)(cid:10633)器)의(cid:11774)(cid:9881)(cid:12388)(cid:15222)計(cid:12141)\n전선size : 3.5mm2 전선길이 : 100 m (편도)\nVA = 전선의저항치 × (5 A)2 ＋ 계기의소비VA\n2차5 A인CT의경우 27.9 VA = 1.076Ϊ × (5 A)2 ＋ 1.0 VA\nVA = 전선의저항치 × (1 A)2 ＋ 계기의소비VA\n2차1 A인CT의경우\n2.076 VA = 1.076Ϊ × (1 A)2 ＋ 1.0 VA\n＊전선의저항치는전선관련KS 규격또는전선제조업체의자료를참고하십시오.\nPanel & Switchboard Meters_ 249",
+      "header": "S TYPE W TYPE",
+      "section_type": "일반",
+      "equipment": [
+        "연소가스처리"
+      ],
+      "company_id": "26",
+      "company_name": "연소가스처리설비",
+      "source_file": "기술 및 참고자료(CATALOGUE 등)",
+      "source_path": "D:\\기계도면\\기계도면\\26. 연소가스처리설비 (에스텍)\\준공도서-연소가스 처리설비(전기)\\16. 기술 및 참고자료(CATALOGUE 등)\\기술 및 참고자료(CATALOGUE 등).pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "c4ccad96d47f5a23",
+      "char_count": 3603
+    },
+    {
+      "chunk_idx": 149,
+      "text": ")2 ＋ 1.0 VA\n＊전선의저항치는전선관련KS 규격또는전선제조업체의자료를참고하십시오.\nPanel & Switchboard Meters_ 249 Voltmeters ((cid:15191)(cid:13148)計)",
+      "header": "S TYPE W TYPE",
+      "section_type": "일반",
+      "equipment": [
+        "연소가스처리"
+      ],
+      "company_id": "26",
+      "company_name": "연소가스처리설비",
+      "source_file": "기술 및 참고자료(CATALOGUE 등)",
+      "source_path": "D:\\기계도면\\기계도면\\26. 연소가스처리설비 (에스텍)\\준공도서-연소가스 처리설비(전기)\\16. 기술 및 참고자료(CATALOGUE 등)\\기술 및 참고자료(CATALOGUE 등).pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "02dc1e787d0d02e3",
+      "char_count": 117
+    },
+    {
+      "chunk_idx": 150,
+      "text": "의자료를참고하십시오.\nPanel & Switchboard Meters_ 249 Voltmeters ((cid:15191)(cid:13148)計)",
+      "header": "S TYPE W TYPE",
+      "section_type": "일반",
+      "equipment": [
+        "연소가스처리"
+      ],
+      "company_id": "26",
+      "company_name": "연소가스처리설비",
+      "source_file": "기술 및 참고자료(CATALOGUE 등)",
+      "source_path": "D:\\기계도면\\기계도면\\26. 연소가스처리설비 (에스텍)\\준공도서-연소가스 처리설비(전기)\\16. 기술 및 참고자료(CATALOGUE 등)\\기술 및 참고자료(CATALOGUE 등).pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "3fad6ed086cdcd6c",
+      "char_count": 80
+    },
+    {
+      "chunk_idx": 151,
+      "text": "의자료를참고하십시오.\nPanel & Switchboard Meters_ 249 Voltmeters ((cid:15191)(cid:13148)計) S TYPE W TYPE\n�DC Voltmeters ((cid:15775)(cid:10633)(cid:15191)(cid:13148)計)\nOperating Accuracy\nType Size (㎜) Scale Form Input Burden Weight(g) Dimension\nPrinciple Class(%)\nSC - V1 80 × 80 2.5 ≒200\nSquare\nSB - V1 100 × 84 ≒250\n(角(cid:17453)) DC 50mV\n244~245page\nSA - V1 120 ×100 to 1kΪ/ V ≒300\n1.5 (cid:12151)(cid:15408)\nDC 750V\nWB - V1 80 × 80 ≒350\nWide Angle\nWA - V1 110 ×110 (廣角(cid:17453)) ≒480\n�Description\nDC 750V (cid:14606)(cid:12162)의(cid:17704)(cid:10478)에는F.S 1mA의計器에(cid:13908)(cid:11779)(cid:11407)(cid:14462)器를(cid:11782)(cid:15955) For higher ranges than 750V, use external multiplier or\n(cid:11979)(cid:14068)한다. voltage-dividing multiplier with a 1mA instrument.\n(cid:15775)(cid:10633)(cid:15191)(cid:13148)計의結(cid:12364)시(cid:11407)(cid:14462)器의結(cid:12364)은＋(cid:16518)에(cid:13532)結하십시오. The DC voltmeter should be connected to the positive-side\nline as connection diagram.\n(cid:15775)(cid:10633)(cid:15191)(cid:13148)計의(cid:15191)(cid:10633)感(cid:9940)는1mA를(cid:16968)(cid:15614)으로한다. (1kΪ/ V) The standard current consumption of these DC voltmeter is\n1mA.(1kΪ/ V)\n�Connection Diagram",
+      "header": "S TYPE W TYPE",
+      "section_type": "일반",
+      "equipment": [
+        "연소가스처리"
+      ],
+      "company_id": "26",
+      "company_name": "연소가스처리설비",
+      "source_file": "기술 및 참고자료(CATALOGUE 등)",
+      "source_path": "D:\\기계도면\\기계도면\\26. 연소가스처리설비 (에스텍)\\준공도서-연소가스 처리설비(전기)\\16. 기술 및 참고자료(CATALOGUE 등)\\기술 및 참고자료(CATALOGUE 등).pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "1a24b6e08a781b0c",
+      "char_count": 1185
+    },
+    {
+      "chunk_idx": 152,
+      "text": "rd current consumption of these DC voltmeter is\n1mA.(1kΪ/ V)\n�Connection Diagram �AC Voltmeters (交(cid:10633)(cid:15191)(cid:13148)計)\nOperating Accuracy Burden\nType Size (㎜) Scale Form Input Frequency Weight(g) Dimension\nPrinciple Class(%) (VA)\nSC-V2 80 × 80 2.5 ≒250\nAC 100V\nSB-V2 100 × 84 to 5.0 ≒300\nAC 300V 1.5\nSA-V2 120 ×100 Square ≒350\nSC-V2 80 × 80 (角(cid:17453)) 2.5 ≒250 244~245page\nSB-V2 100 ×84 AC 600V 50 / 60Hz ≒300 (cid:12151)(cid:15408)\nSA-V2 120 ×100 0.5 ≒350\n1.5\nWB-V2 80 × 80 Wide Angle AC 10V to ≒350\nWA-V2 110 ×110 (廣角(cid:17453)) AC 600V ≒480\n�Description\nAC 300V (cid:14606)(cid:12162)의(cid:17704)(cid:10478)에는가급적150V (cid:15191)(cid:13148)計에맞는V.T(計器(cid:14068)(cid:11570) For higher ranges than AC 300V, use the V.T (voltage -\n(cid:13148)器)를(cid:11979)(cid:14068)하십시오. 그러나사용자의(cid:15580)(cid:11086)에의하여AC 600V (cid:15191)(cid:13148) Transformer)with a 150V AC voltmeter, But the voltmeter of\n計의供給도可能합니다. 600V is abled to supply by order of the customer.\n(cid:15191)(cid:13148)計의(cid:16356)(cid:9914)눈금치는V.T(計器(cid:14068)(cid:11570)(cid:13148)器)를(cid:11979)(cid:14068)할경우AC 150V Full scale of voltmeter, When use the V.T the standard\n또는AC 300V로(cid:15380)(cid:14826)함을(cid:14233)(cid:16548)으로합니다. calibration value of voltmeters are 150V and/or 300V, therefore,\n따라서(cid:15191)(cid:13148)計의(cid:16356)(cid:9914)눈금치는31.2kV, 9000V, 4500V, 600V, 520V the full scale of voltmeters are indicated the 31.2kV, 9000V,\n등으로읽기에편리한눈금으로(cid:16972)(cid:12930)됩니다. 4500V, 600V and 520V etc.\nex 1) 3P 3W (in case of 6.6kV line) ex 2) 3P 4W (In case of 22.9kV line)\n(cid:16356)(cid:9914)눈금치 : 9000 V Full Scale : 31.2 kV\nV.T(P.T)(cid:11831) : 6600 V / 110 V V.T (P.T) Ratio : 22.9 kV / 110 V\n31.2 kV\n9000 V\nCalibration Value = = 150 V Calibration Value = = 150 V\n22.9kV / 110 V\n6600V / 110V\n交(cid:10633)(cid:15191)(cid:13148)을(cid:14254)距(cid:10690)(cid:15060)(cid:12586)할경우에는(cid:15191)(cid:10316)(cid:14068)(cid:11570)(cid:17663)器(T/D)와(cid:15775)(cid:10633)計器를 When making remote measurement the AC voltage, The meter\n(cid:15420)(cid:17146)하여(cid:11979)(cid:14068)하십시오. should be used the DC meter with the Transducer(T/D)\n(cid:15191)(cid:10316)(cid:14068)(cid:11570)(cid:17663)器(cid:16395)(cid:10316)과(cid:15775)(cid:10633)計器의(cid:14695)(cid:10316)을(cid:14675)(cid:16542)시켜(cid:11979)(cid:14068)하십시오. It is noted that the input of DC meter and the output of the\ntransducer(T/D)\n� Connection Diagram\nPanel & Switchboard Meters_ 251",
+      "header": "S TYPE W TYPE",
+      "section_type": "일반",
+      "equipment": [
+        "연소가스처리"
+      ],
+      "company_id": "26",
+      "company_name": "연소가스처리설비",
+      "source_file": "기술 및 참고자료(CATALOGUE 등)",
+      "source_path": "D:\\기계도면\\기계도면\\26. 연소가스처리설비 (에스텍)\\준공도서-연소가스 처리설비(전기)\\16. 기술 및 참고자료(CATALOGUE 등)\\기술 및 참고자료(CATALOGUE 등).pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "bb170aceaa74983a",
+      "char_count": 2438
+    },
+    {
+      "chunk_idx": 153,
+      "text": "tput of the\ntransducer(T/D)\n� Connection Diagram\nPanel & Switchboard Meters_ 251 RELAY\nKH-103 MINIATURE POWER RELAY 3A\nKH-103-4C KH-103-4CP",
+      "header": "RELAY",
+      "section_type": "일반",
+      "equipment": [
+        "연소가스처리"
+      ],
+      "company_id": "26",
+      "company_name": "연소가스처리설비",
+      "source_file": "기술 및 참고자료(CATALOGUE 등)",
+      "source_path": "D:\\기계도면\\기계도면\\26. 연소가스처리설비 (에스텍)\\준공도서-연소가스 처리설비(전기)\\16. 기술 및 참고자료(CATALOGUE 등)\\기술 및 참고자료(CATALOGUE 등).pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "923f146b5a463727",
+      "char_count": 139
+    },
+    {
+      "chunk_idx": 154,
+      "text": "FEATURES\nApproved by UL\nFile No. E117960\nKS C 4520 No. 5269\nContact configuration : 4c(4a4b)\nHigh sensibility, long life and high speed response\nLED type : option products\n(KH-103-4CL, KH-103-4CPL)\nKH-103-4C, 4CL, 4CPL(AC220V, AC230V, DC24V)\nCOIL RATINGS Contact Rating : AC250V 2.5A, DC30V 2.5A\nRated Current ( )±15% at 20℃ Coil Resistance( ) % of Rated Voltage\nRated Voltage\n(V) Maximum Maximum Drop-out\n50 60 ±10% at 20℃\nVoltage Operate Voltage Voltage\n6 238 200 9.6\n12 118 100 40.5\n80% max.\n24 59.7 50 156.7\n50 28.3 24 706 110% of Rated 30% min.",
+      "header": "FEATURES",
+      "section_type": "일반",
+      "equipment": [
+        "연소가스처리"
+      ],
+      "company_id": "26",
+      "company_name": "연소가스처리설비",
+      "source_file": "기술 및 참고자료(CATALOGUE 등)",
+      "source_path": "D:\\기계도면\\기계도면\\26. 연소가스처리설비 (에스텍)\\준공도서-연소가스 처리설비(전기)\\16. 기술 및 참고자료(CATALOGUE 등)\\기술 및 참고자료(CATALOGUE 등).pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "855c5376084de431",
+      "char_count": 549
+    },
+    {
+      "chunk_idx": 155,
+      "text": "12 118 100 40.5\n80% max.\n24 59.7 50 156.7\n50 28.3 24 706 110% of Rated 30% min. AC\nVoltage\n110 14.2 12 3,390\n220 7.2 6 13,920\n230 7.2 6 13,930\n240 6.6 5.5 15,210\n6 150 40 80% max.\n12 75 160 110% of Rated 15% min.\nDC 24 36.9 650\nVoltage\n48 18.5 2,600\n110 9.1 12,100",
+      "header": "AC",
+      "section_type": "일반",
+      "equipment": [
+        "연소가스처리"
+      ],
+      "company_id": "26",
+      "company_name": "연소가스처리설비",
+      "source_file": "기술 및 참고자료(CATALOGUE 등)",
+      "source_path": "D:\\기계도면\\기계도면\\26. 연소가스처리설비 (에스텍)\\준공도서-연소가스 처리설비(전기)\\16. 기술 및 참고자료(CATALOGUE 등)\\기술 및 참고자료(CATALOGUE 등).pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "a39f6084cfada01a",
+      "char_count": 264
+    },
+    {
+      "chunk_idx": 156,
+      "text": "5 160 110% of Rated 15% min.\nDC 24 36.9 650\nVoltage\n48 18.5 2,600\n110 9.1 12,100 SPECIFICATIONS\nOperate Time Max. 20mSec max.\nRelease Time Max. 20mSec max.\nContact Resistance Max. 50 (initial)\nInsulation Resistance Min. 100 at 500VDC\nDielectric Strength 1,500VAC (50/60 ) for 1minite\nVibration Resistance 0~6G at 55\nShock Resistance 20G (200 )\nCoil Max. 85℃\nTemperature Rising\nContact Max. 65℃\nMechanical Min. 50,000,000 operations\nLife\nElectrical Min. 500,000 operations\nAmbient Temperature ­5∼+40℃(at not freezing)\nWeight Apporx. 35g",
+      "header": "SPECIFICATIONS",
+      "section_type": "운전",
+      "equipment": [
+        "연소가스처리"
+      ],
+      "company_id": "26",
+      "company_name": "연소가스처리설비",
+      "source_file": "기술 및 참고자료(CATALOGUE 등)",
+      "source_path": "D:\\기계도면\\기계도면\\26. 연소가스처리설비 (에스텍)\\준공도서-연소가스 처리설비(전기)\\16. 기술 및 참고자료(CATALOGUE 등)\\기술 및 참고자료(CATALOGUE 등).pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "53020e32e8187fcf",
+      "char_count": 535
+    },
+    {
+      "chunk_idx": 157,
+      "text": "0,000 operations\nAmbient Temperature ­5∼+40℃(at not freezing)\nWeight Apporx. 35g RELAY\nKH-103 MINIATURE POWER RELAY 3A Type\nCONTACT RATINGS MATERIALS\nCase : Poly-carbonate Resin\nResistive Load Inductive Load\nLoad\n(COS(cid:8740)= 1) (COS(cid:8740)= 0.3, L/R =7 ) Base : PBT Glass Resin\n110VAC, 3A 110VAC, 1.5A Coil : Poly-urethane\nRated Load 220VAC, 3A 220VAC, 0.8A\nRelease Spring : Stainless Steel Wire\n24VDC, 3A 24VDC, 1A\nMovable Contact Plate : Phosphor Bronze\nCarry Current 3A\nTerminal : Bs(Silver plating)\nMax. AC : 660VA AC : 176VA\nOperating Voltage DC : 72W DC : 24W\nMax.\n3A\nOperating Current\nDIMENSIONS CIRCUIT DIAGRAMS\nKH-103-4C, 4CL\n※Socket : KH-RS-14, KH-RS-P14, KH-RS-PC14\nKH-103-4CP, 4CPL",
+      "header": "RELAY",
+      "section_type": "운전",
+      "equipment": [
+        "연소가스처리"
+      ],
+      "company_id": "26",
+      "company_name": "연소가스처리설비",
+      "source_file": "기술 및 참고자료(CATALOGUE 등)",
+      "source_path": "D:\\기계도면\\기계도면\\26. 연소가스처리설비 (에스텍)\\준공도서-연소가스 처리설비(전기)\\16. 기술 및 참고자료(CATALOGUE 등)\\기술 및 참고자료(CATALOGUE 등).pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "ca0e763e67c5e034",
+      "char_count": 700
+    },
+    {
+      "chunk_idx": 158,
+      "text": "AGRAMS\nKH-103-4C, 4CL\n※Socket : KH-RS-14, KH-RS-P14, KH-RS-PC14\nKH-103-4CP, 4CPL ILLUMINATED PUSH BUTTONS\nORDERING NO. : KBL 25 M – L 1A R 1 1\nNO. of NC contact\nNO. of NO contact\nACTUATOR LIGHT SOURCE INPUT VOLTAGE COLOR\nBuilt-in Transformer\nIP40\nKBL25M\nIP 65\nKBL25WM\nFull Voltage\nIP40\nFilament Lamp :\nKBL25AT\nBuilt-in Transformer Red : R\n110V AC : 1A Green : G\n220V AC : 2A Yellow : Y\nIP 65\nFilament :\n230V AC : 3A Blue : B\nKBL25WAT\nBlank\nWhite : W\nBuilt-in Transformer\nIP40\nFull Voltage\nLED : L\nKBL25MP\n6V : 1C LED Lamp :\n12V : 2C Red : R\n24V : 3C Green : G\nIP 65\nYellow : Y\nKBL25WMP\nFull Voltage\nIP40\nKBL25AP\nIP 65\nKBL25WAP ILLUMINATED PUSH BUTTONS",
+      "header": "RELAY",
+      "section_type": "일반",
+      "equipment": [
+        "연소가스처리"
+      ],
+      "company_id": "26",
+      "company_name": "연소가스처리설비",
+      "source_file": "기술 및 참고자료(CATALOGUE 등)",
+      "source_path": "D:\\기계도면\\기계도면\\26. 연소가스처리설비 (에스텍)\\준공도서-연소가스 처리설비(전기)\\16. 기술 및 참고자료(CATALOGUE 등)\\기술 및 참고자료(CATALOGUE 등).pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "46158f09dd7a2ec2",
+      "char_count": 651
+    },
+    {
+      "chunk_idx": 159,
+      "text": "w : Y\nKBL25WMP\nFull Voltage\nIP40\nKBL25AP\nIP 65\nKBL25WAP ILLUMINATED PUSH BUTTONS DIMENSION\nPanel Cut-out\n4 0\n0.2\n■The secondary voltage of built-in transformer is 6V\n■Material\n•Body : Nylon glass\n•Contact block : Nylon glass\n•Ring:ABS (Aluminum ring for KBL25M and\nKBL25AT is available)\n•Cab : AS\n■Contact block combinations\nMax. 4 contact block combination 2.0 25.5 0\n0.3 판매중 800x480 260 (Panel Cut)\n10.2\"\n7\"\n5\" )tuC\nlenaP( 197 (Panel Cut) )tuC\nlenaP( 64.7 45.6\n6 212\n41.8 6 150 136 (Panel Cut) )tuC\nlenaP( 10.2\"\n+1.0 0\n7\"\n5\"\n0.1+ 0\n+1.0 0.1+ 0\n+1.0",
+      "header": "DIMENSION",
+      "section_type": "일반",
+      "equipment": [
+        "연소가스처리"
+      ],
+      "company_id": "26",
+      "company_name": "연소가스처리설비",
+      "source_file": "기술 및 참고자료(CATALOGUE 등)",
+      "source_path": "D:\\기계도면\\기계도면\\26. 연소가스처리설비 (에스텍)\\준공도서-연소가스 처리설비(전기)\\16. 기술 및 참고자료(CATALOGUE 등)\\기술 및 참고자료(CATALOGUE 등).pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "fbd1c381a947e8d2",
+      "char_count": 550
+    },
+    {
+      "chunk_idx": 160,
+      "text": "1.8 6 150 136 (Panel Cut) )tuC\nlenaP( 10.2\"\n+1.0 0\n7\"\n5\"\n0.1+ 0\n+1.0 0.1+ 0\n+1.0 0.1+ 0\nStatus LED Specifications\nSD Card\nFunctional TOPRW1000WD TOPRW0700WD TOPRW0500WD\nDisplay Type 10.2\" TFT Color 7\" TFT Color 5\" TFT Color\nColor 16M Colors\nDisplay Area(mm) 222x132.48 154x86 108x64.8\nDisplay Resolution(dot) 800x480\nBrightness Level 10 Level(by software)\nBacklight Type LED\nEthernet Backlight Life 50,000 hours\nTouch Type Analog resistive film\nTouch Resolution(Cell) 800x480\nUSB Host\nTouch Life 1 million times or more\n• RS-232C Asynchronous +5V PWR\n• Data bit: 7/8 bits, Stop bit: 1/2 bits, Parity bit: None/Odd/Even\nSerial COM1\n• Baud rate: 2400~115.2k\n• Connector: DSUB 9pin 1 Channel\n• RS-232C, RS-422/485 Asynchronous\n• Data bit: 7/8 bits, Stop bit: 1/2 bits, Parity bit: None/Odd/Even\nPower input Serial COM2 • Baud rate: 2400~115.2k\n• Connector: DSUB 9pin 1 Channel\nSerial COM1\nLED USB OTG Interface Ethernet Channel • 1Channel IEEE802.3i/IEEE802.3u, 10BASE-T/100BASE-TX\nSerial COM2 • Connector: RJ-45 x 1\n• 1 Rear Channel USB 2.0: USB Storage(FAT16/FAT32), Output 5V/0.5A • 1 Rear USB OTG V2.0\nUSB Host • 1 Front OTG Host USB 2.0 • Support USB Barcode Scanner\n• Support USB Barcode Scanner(Standard Keyboard Protocol) (Standard Keyboard Protocol)\nV2.0 Compatible 1 Channel,\n베스트셀러 XTOP WIDE 시리즈의 명성에 이어 USB Device V2.0 Compatible 1 Channel, Max 5m, OTG(Front)\nMax 5m, OTG(Rear)\n최상급의 성능과 합리적인 가격을 갖춘 새로운 RW 시리즈 SD Card 1 Channel Micro SD, SDHC(MAX 32GB)\nPrinter Almost USB interface Printers, Roll Printer(EPSON protocol): RS-232C, COM1 port\nScreen Memory 128MB\n쿼드 코어를 채택한 최상급의 속도 지원\nBackup Memory 512KB: System buffer(10K Word), Including Alarm/Logging/Recipe\n화려한 1,677만 컬러 지원 Memory\nBackup Period Pernament\n& Others\n10\", 7\", 5\" 사이즈 모두 800x480 고해상도 지원\nReal Time Clock Built in\nStatus LED Built in\n세련된 일체형 디자인 Input Voltage DC24V(20~28V)\n원격 감시 제어 VNC 기능 지원(Mobile/Tablet/Laptop) Power Consumption 15W or less\nPower\n원격 데이터 교환 FTP 기능 지원 Voltage Sag 24V, Within 10㎳\n오브젝트의 다층구조(Layer) 지원 Insulation Resistance 500V DC, 10㏁\nOperation Temperature(℃) -10 ~ +50\nStorage Temperature(℃) -20 ~ +60\nOperation Humidity(%RH) 0 ~ 90(No dew)\nAtmosphere No corrosive gas\nVibration Endurance Amplitude: 10≤F<25㎐(2G) X,Y,Z each direction(for 30 minutes)\nEnvironment Noise Immunity 1000Vp-p(Pulse width 1㎲)\nStatic Electricity Discharge Connective discharge from EN61000-4-2: ±4㎸\nShock Endurance 10G X,Y,Z each direction(for 3 times)\nSurge Voltage 500V(Line-Line)\nTOPRW1000WD\nGround Connection Class 3(100Ω under)\nProtection Classification IP65(Front)\nPanel Cut(㎜) 260x202 197x127 136x100\nExternal Dimension(㎜) 274x216x64.7 211x143x43.8 150x114x41.8\nStructure Weight(㎏) 1.7 0.72 0.4\nCooling System Natural air circulation\nCase Material PC(Resistance to flame)\nTOPRW0700WD\n* 제품의 사양은 변경될 수 있습니다.\nTOPRW0500WD",
+      "header": "DIMENSION",
+      "section_type": "비상",
+      "equipment": [
+        "재열기",
+        "증기드럼"
+      ],
+      "company_id": "26",
+      "company_name": "연소가스처리설비",
+      "source_file": "기술 및 참고자료(CATALOGUE 등)",
+      "source_path": "D:\\기계도면\\기계도면\\26. 연소가스처리설비 (에스텍)\\준공도서-연소가스 처리설비(전기)\\16. 기술 및 참고자료(CATALOGUE 등)\\기술 및 참고자료(CATALOGUE 등).pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "318e835f321af43d",
+      "char_count": 2791
+    }
+  ]
+}

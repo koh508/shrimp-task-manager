@@ -437,6 +437,7 @@ def get_recent_context(max_entries=3):
         data   = _load_queue()
         active = [p for p in data.get("plans", [])
                   if p["status"] in ("pending", "running", "waiting_approval")]
+        has_waiting = any(p["status"] == "waiting_approval" for p in active)
         if active:
             lines.append("[현재 진행 중인 플래너 작업]")
             for p in active:
@@ -449,6 +450,12 @@ def get_recent_context(max_entries=3):
                     lines.append(f"   완료된 파일: {', '.join(done_files)}")
                 if pending_files:
                     lines.append(f"   예정된 파일: {', '.join(pending_files)}")
+            if has_waiting:
+                lines.append(
+                    "⛔ [Agent 지시] waiting_approval 플랜이 있습니다. "
+                    "Agent가 write_file/task_create로 직접 파일을 생성/수정하는 것은 엄격히 금지됩니다. "
+                    "사용자에게 '승인 또는 거부를 입력해 주세요' 라고만 안내하십시오."
+                )
     except Exception:
         pass
 

@@ -1,0 +1,322 @@
+{
+  "meta": {
+    "source_path": "D:\\기계도면\\기계도면\\32. 증기터빈 (정석)\\제주 VP\\전기\\19. Operation Manual\\GS Jeju operation procedure..pdf",
+    "company_id": "32",
+    "company_name": "증기터빈",
+    "equipment": "기타",
+    "doc_type": "MANUAL",
+    "rev": null,
+    "is_latest": true,
+    "extracted_at": "2026-03-27T20:28:58",
+    "chunk_count": 19,
+    "vision_pages": 0
+  },
+  "chunks": [
+    {
+      "chunk_idx": 0,
+      "text": "GS Jeju project\n( 1X 19.2MW STEAM TURBINE GENERATOR\nCONDENSING SYSTEM )\nINSTRUCTIONS FOR STARTING,\nSYNCHRONIZING, LOADING AND\nSTOPPING STEAM TURBINE-",
+      "header": "",
+      "section_type": "일반",
+      "equipment": [
+        "기타"
+      ],
+      "company_id": "32",
+      "company_name": "증기터빈",
+      "source_file": "GS Jeju operation procedure.",
+      "source_path": "D:\\기계도면\\기계도면\\32. 증기터빈 (정석)\\제주 VP\\전기\\19. Operation Manual\\GS Jeju operation procedure..pdf",
+      "rev": null,
+      "chunk_hash": "c9eafcdfa09ca163",
+      "char_count": 149
+    },
+    {
+      "chunk_idx": 1,
+      "text": ")\nINSTRUCTIONS FOR STARTING,\nSYNCHRONIZING, LOADING AND\nSTOPPING STEAM TURBINE- GENERATOR SET\nPage 1 of 11 Turbine start-up procedure\nBarring gear start-up procedure\nAOP and MOP\n First after logging into the system.\nmotor\n Click on the drop down list and open Lube oil system.\nEOP motor\n Then start AOP or MOP motor.\nDrop down\nlist\nVE motor\nLube Oil\ntransmitter\n\n Then put the other oil pump not running in Auto.\n Put EOP Motor also in auto.\n Check the oil pressure in the Lube Oil transmitter to be >2.5 bar.\n Keep the VE (Vapour Extraction) Motor in Auto (it should be running\nwhen any of the Oil motor is running).\n Then start the barring gear motor.\nPage 2 of 11",
+      "header": "GENERATOR SET",
+      "section_type": "시동",
+      "equipment": [
+        "펌프"
+      ],
+      "company_id": "32",
+      "company_name": "증기터빈",
+      "source_file": "GS Jeju operation procedure.",
+      "source_path": "D:\\기계도면\\기계도면\\32. 증기터빈 (정석)\\제주 VP\\전기\\19. Operation Manual\\GS Jeju operation procedure..pdf",
+      "rev": null,
+      "chunk_hash": "0999eb2ccb665e38",
+      "char_count": 675
+    },
+    {
+      "chunk_idx": 2,
+      "text": "of the Oil motor is running).\n Then start the barring gear motor.\nPage 2 of 11 Important note:-\nIf turbine is hot and Electrical Power Is shut down for 10 min start Hand\nbarring.\nHand Barring procedure\n Ensure that the barring gear motor is in Manual mode (as a safety\nmeasure).\n Install the Hand wheel on the barring gear motor.\n Rotate for 5 minutes and halt for 5 minutes (repeat this process until the\npower supply is up and normal).\nTurbine should be put on barring gear, at-least 24 hours before starting the\nsteam rolling of the turbine. This ensure free and smooth rolling of the turbine.\nTurbine start-up procedure.\n Check lube oil system as instructed in the Barring gear start-up\nprocedure.\n Check pressure in the Lube Oil transmitter to be >2.5 bar.\n Click on the drop down list and open Governing system.\nPage 3 of 11",
+      "header": "GENERATOR SET",
+      "section_type": "시동",
+      "equipment": [
+        "기타"
+      ],
+      "company_id": "32",
+      "company_name": "증기터빈",
+      "source_file": "GS Jeju operation procedure.",
+      "source_path": "D:\\기계도면\\기계도면\\32. 증기터빈 (정석)\\제주 VP\\전기\\19. Operation Manual\\GS Jeju operation procedure..pdf",
+      "rev": null,
+      "chunk_hash": "7b4c221d1145fd9e",
+      "char_count": 837
+    },
+    {
+      "chunk_idx": 3,
+      "text": ">2.5 bar.\n Click on the drop down list and open Governing system.\nPage 3 of 11 Control oil\npress\nACOP1 and\nACOP2 motor\n Start the ACOP pump and check the Control oil pressure to be >28 bar.\n Not put the other ACOP pump not running in Auto.\nSteam rolling:-\n Now click on the drop down menu and open the turbine trip page.\n\nPage 4 of 11",
+      "header": "GENERATOR SET",
+      "section_type": "비상",
+      "equipment": [
+        "펌프"
+      ],
+      "company_id": "32",
+      "company_name": "증기터빈",
+      "source_file": "GS Jeju operation procedure.",
+      "source_path": "D:\\기계도면\\기계도면\\32. 증기터빈 (정석)\\제주 VP\\전기\\19. Operation Manual\\GS Jeju operation procedure..pdf",
+      "rev": null,
+      "chunk_hash": "8d92b9211c340ca0",
+      "char_count": 339
+    },
+    {
+      "chunk_idx": 4,
+      "text": " Now click on the drop down menu and open the turbine trip page.\n\nPage 4 of 11  Now click on the Trip reset and check all the tripping annunciators are\nOK (indication green).\n If Turbine solenoid is green indication, then click on the “SOV RESET”,\nthen check the SOV RESET” and then check.\n If all the three LP reset conditions are OK (green), then reset the LP.\n Then if all the ESV reset conditions are OK (green), then reset the ESV\nand check for the “ESV open Feedback” is ok (green).\n Then check the “Governor Start permissive” conditions is healthy (green)\nand then click on governor rest and then click on run command.\n Governor starts the start-up procedure for the turbine and will take the\nturbine to the rated Speed of 8220 rpm.\nVoltage build-up and TG loading procedure:-\n After Turbine reaching rated speed. Check the Ready for excitation in the\nAVR panel.\n\n Reset the GRP relays in the relay panel. (press and then press 2 times\nPage 5 of 11",
+      "header": "GENERATOR SET",
+      "section_type": "시동",
+      "equipment": [
+        "기타"
+      ],
+      "company_id": "32",
+      "company_name": "증기터빈",
+      "source_file": "GS Jeju operation procedure.",
+      "source_path": "D:\\기계도면\\기계도면\\32. 증기터빈 (정석)\\제주 VP\\전기\\19. Operation Manual\\GS Jeju operation procedure..pdf",
+      "rev": null,
+      "chunk_hash": "c3f25abf41a57f58",
+      "char_count": 966
+    },
+    {
+      "chunk_idx": 5,
+      "text": "et the GRP relays in the relay panel. (press and then press 2 times\nPage 5 of 11 \n Reset all the Auxiliary relays in the relay panel.\n Reset the indications in the GRP relay. Press F10 button.\n\n Check the Auto mode is on then Press the “Excitation ON” button in the\nAVR panel.\n After Turbine attains rated Voltage of 6.6KV.\nPage 6 of 11 \n Check GCP panel NIS to be in close condition.\nSelector 1 Selector 2 Selector 3 Selector 4\n\n Select the TG breaker in the Selector switch1 (position 1),\n Select the “Live” mode in the Selector Switch2.\n Select the “Auto” mode in the Selector Switch3.\n Then select the Synchro scope “on” in the Selector Switch4.\n After turbine is Synchronized switch on the “PF ON” button in AVR.\nPage 7 of 11",
+      "header": "GENERATOR SET",
+      "section_type": "일반",
+      "equipment": [
+        "기타"
+      ],
+      "company_id": "32",
+      "company_name": "증기터빈",
+      "source_file": "GS Jeju operation procedure.",
+      "source_path": "D:\\기계도면\\기계도면\\32. 증기터빈 (정석)\\제주 VP\\전기\\19. Operation Manual\\GS Jeju operation procedure..pdf",
+      "rev": null,
+      "chunk_hash": "6cbdafc37049cc0b",
+      "char_count": 744
+    },
+    {
+      "chunk_idx": 6,
+      "text": "After turbine is Synchronized switch on the “PF ON” button in AVR.\nPage 7 of 11  Turbine base load is 2MW and on closing breaker turbine will attain\n2MW load.\n Use MW raise/ lower button to adjust the turbine load to the desired\nlevel as the steam availability condition.\n Follow the standard Turbine loading cure to load the turbine accordingly.\nDuring Turbine Operation or running condition.\n Keep monitoring the Lube oil pressure and Lube oil filter DP transmitter,\nif DP pressure> 0.6 Bar change the filter and clean for trouble free\noperation.\n Keep monitoring the CEP discharge pressure, if the discharge pressure\ndecreases then the other pump starts automatically.\n If the other pump starts, stop the pump in manual and clean the CEP\nsuction strainer and make it ready and then keep the standby pump in\nauto and ready for operation.\n If there is any decrease in Control oil pressure, check the control oil filter\nDP pressure and change the filter if it is > 0.6 bar.\n Press and check the ESV check valve once in a week for proper\nfunctioning of ESV.\n Monitor the Alternator winding temperature, if increases to alarm limits\ncheck the cooling water temperature, pressure and flow are in proper\nproportion as per design.\nTurbine Stopping procedure\n Gradually decrease the load to 2MW.\nPage 8 of 11",
+      "header": "GENERATOR SET",
+      "section_type": "비상",
+      "equipment": [
+        "펌프",
+        "필터",
+        "밸브"
+      ],
+      "company_id": "32",
+      "company_name": "증기터빈",
+      "source_file": "GS Jeju operation procedure.",
+      "source_path": "D:\\기계도면\\기계도면\\32. 증기터빈 (정석)\\제주 VP\\전기\\19. Operation Manual\\GS Jeju operation procedure..pdf",
+      "rev": null,
+      "chunk_hash": "12a96c7d1c04f97f",
+      "char_count": 1312
+    },
+    {
+      "chunk_idx": 7,
+      "text": "n.\nTurbine Stopping procedure\n Gradually decrease the load to 2MW.\nPage 8 of 11  Then open the generator breaker.\n Trip the turbine from the turbine trip button.\n Also close the gland sealing system control valve by taking it into manual\nand manual command to 0%.\n Open the Wheel chase and Nozzle chest drains.\n Open the Vacuum breaker valve to break the vacuum (Ensure that CEP\npumps are not running).\n After turbine attaining the barring gear RPM.\n Stop the ACOP 1 and 2 and change both the pumps to manual.\n Stop the CEP1 and CEP2 and change both the pumps to manual.\n Turbine should be running in barring gear for at least 24 hours after\nturbine is stopped.\nGeneral Notes:",
+      "header": "GENERATOR SET",
+      "section_type": "비상",
+      "equipment": [
+        "밸브"
+      ],
+      "company_id": "32",
+      "company_name": "증기터빈",
+      "source_file": "GS Jeju operation procedure.",
+      "source_path": "D:\\기계도면\\기계도면\\32. 증기터빈 (정석)\\제주 VP\\전기\\19. Operation Manual\\GS Jeju operation procedure..pdf",
+      "rev": null,
+      "chunk_hash": "825ed2fcd967fdb8",
+      "char_count": 686
+    },
+    {
+      "chunk_idx": 8,
+      "text": "g in barring gear for at least 24 hours after\nturbine is stopped.\nGeneral Notes: 1. Turbine Startup/Shutdown procedure as per Triveni Operation &\nMaintenance Manual shall be followed.",
+      "header": "1. Turbine Startup/Shutdown procedure as per Triveni Operation &",
+      "section_type": "시동",
+      "equipment": [
+        "기타"
+      ],
+      "company_id": "32",
+      "company_name": "증기터빈",
+      "source_file": "GS Jeju operation procedure.",
+      "source_path": "D:\\기계도면\\기계도면\\32. 증기터빈 (정석)\\제주 VP\\전기\\19. Operation Manual\\GS Jeju operation procedure..pdf",
+      "rev": null,
+      "chunk_hash": "a887e75f1d21ebd4",
+      "char_count": 183
+    },
+    {
+      "chunk_idx": 9,
+      "text": "tdown procedure as per Triveni Operation &\nMaintenance Manual shall be followed. 2. In addition to above manual, these instructions have been provided to\nunderstand the startup/shutdown as per the customized HMI/system at\nsite.",
+      "header": "2. In addition to above manual, these instructions have been provided to",
+      "section_type": "시동",
+      "equipment": [
+        "기타"
+      ],
+      "company_id": "32",
+      "company_name": "증기터빈",
+      "source_file": "GS Jeju operation procedure.",
+      "source_path": "D:\\기계도면\\기계도면\\32. 증기터빈 (정석)\\제주 VP\\전기\\19. Operation Manual\\GS Jeju operation procedure..pdf",
+      "rev": null,
+      "chunk_hash": "df4797dfb3fc98f7",
+      "char_count": 227
+    },
+    {
+      "chunk_idx": 10,
+      "text": "ded to\nunderstand the startup/shutdown as per the customized HMI/system at\nsite. 3. Startup curves, Loading curve, System P&I diagrams etc have to be\nstudied and followed in addition to below instructions.\nPage 9 of 11",
+      "header": "3. Startup curves, Loading curve, System P&I diagrams etc have to be",
+      "section_type": "시동",
+      "equipment": [
+        "기타"
+      ],
+      "company_id": "32",
+      "company_name": "증기터빈",
+      "source_file": "GS Jeju operation procedure.",
+      "source_path": "D:\\기계도면\\기계도면\\32. 증기터빈 (정석)\\제주 VP\\전기\\19. Operation Manual\\GS Jeju operation procedure..pdf",
+      "rev": null,
+      "chunk_hash": "6c981fe7433b3600",
+      "char_count": 218
+    },
+    {
+      "chunk_idx": 11,
+      "text": "have to be\nstudied and followed in addition to below instructions.\nPage 9 of 11 4. It is recommended that one operator can monitor from the control room\nin communication with other operator monitoring near the\nturbine/panel room\nIMPORTANT NOTES:",
+      "header": "4. It is recommended that one operator can monitor from the control room",
+      "section_type": "일반",
+      "equipment": [
+        "기타"
+      ],
+      "company_id": "32",
+      "company_name": "증기터빈",
+      "source_file": "GS Jeju operation procedure.",
+      "source_path": "D:\\기계도면\\기계도면\\32. 증기터빈 (정석)\\제주 VP\\전기\\19. Operation Manual\\GS Jeju operation procedure..pdf",
+      "rev": null,
+      "chunk_hash": "33918eb7d3d2ef28",
+      "char_count": 245
+    },
+    {
+      "chunk_idx": 12,
+      "text": "tion with other operator monitoring near the\nturbine/panel room\nIMPORTANT NOTES: 1. Barring gear should keep running for at least 8 hours after turbine trips. Also\nensure that barring gear is running for 8 hours before turbine start-up can be\ninitiated.",
+      "header": "1. Barring gear should keep running for at least 8 hours after turbine trips. Also",
+      "section_type": "시동",
+      "equipment": [
+        "기타"
+      ],
+      "company_id": "32",
+      "company_name": "증기터빈",
+      "source_file": "GS Jeju operation procedure.",
+      "source_path": "D:\\기계도면\\기계도면\\32. 증기터빈 (정석)\\제주 VP\\전기\\19. Operation Manual\\GS Jeju operation procedure..pdf",
+      "rev": null,
+      "chunk_hash": "0d4a213f02bb1bf0",
+      "char_count": 253
+    },
+    {
+      "chunk_idx": 13,
+      "text": "at barring gear is running for 8 hours before turbine start-up can be\ninitiated. 2. In case after the turbine trips, the Barring gear motor fails to run due to Power\nsupply failure, failure of Soft starter /Fuses/Fault in the motor/Over load etc,\nthen put the barring gear motor power isolator in off condition and turn the\nbarring gear hand wheel manually until the problem is solved or until the rotor\ncools down. At the manual turning process ensure that either AOP or EOP ( DC\nmotor) is in running condition.\n3.If for any reason, TG breaker trips ,turbine is running at rated speed and in\ncase turbine need to be loaded immediately.",
+      "header": "2. In case after the turbine trips, the Barring gear motor fails to run due to Power",
+      "section_type": "시동",
+      "equipment": [
+        "기타"
+      ],
+      "company_id": "32",
+      "company_name": "증기터빈",
+      "source_file": "GS Jeju operation procedure.",
+      "source_path": "D:\\기계도면\\기계도면\\32. 증기터빈 (정석)\\제주 VP\\전기\\19. Operation Manual\\GS Jeju operation procedure..pdf",
+      "rev": null,
+      "chunk_hash": "e68c0498a75cc60e",
+      "char_count": 636
+    },
+    {
+      "chunk_idx": 14,
+      "text": "ine is running at rated speed and in\ncase turbine need to be loaded immediately. 4. Smooth loading on TG set and as per loading curve, frequent sudden loading\n/ unloading to be avoided to ensure smooth running. In case of any sudden\nloading requirement, customer to inform TTL and take necessary suggestion.",
+      "header": "4. Smooth loading on TG set and as per loading curve, frequent sudden loading",
+      "section_type": "일반",
+      "equipment": [
+        "기타"
+      ],
+      "company_id": "32",
+      "company_name": "증기터빈",
+      "source_file": "GS Jeju operation procedure.",
+      "source_path": "D:\\기계도면\\기계도면\\32. 증기터빈 (정석)\\제주 VP\\전기\\19. Operation Manual\\GS Jeju operation procedure..pdf",
+      "rev": null,
+      "chunk_hash": "458d6db908b4657e",
+      "char_count": 307
+    },
+    {
+      "chunk_idx": 15,
+      "text": "udden\nloading requirement, customer to inform TTL and take necessary suggestion. 5. SEV freeness Test must be checked once in every week and also its\nobservation to be mentioned in log book. TTL engineer demonstrated the\ncustomer about its procedure and shown its working. (as applicable).",
+      "header": "5. SEV freeness Test must be checked once in every week and also its",
+      "section_type": "일반",
+      "equipment": [
+        "기타"
+      ],
+      "company_id": "32",
+      "company_name": "증기터빈",
+      "source_file": "GS Jeju operation procedure.",
+      "source_path": "D:\\기계도면\\기계도면\\32. 증기터빈 (정석)\\제주 VP\\전기\\19. Operation Manual\\GS Jeju operation procedure..pdf",
+      "rev": null,
+      "chunk_hash": "686cf84dc7868f64",
+      "char_count": 289
+    },
+    {
+      "chunk_idx": 16,
+      "text": "strated the\ncustomer about its procedure and shown its working. (as applicable). 6. Monitoring & maintaining wheel case pressure within design limit. Wheel\ncase pressure data to be monitor for continuous basis as any increase in the\nsame is indication of scaling in turbine.",
+      "header": "6. Monitoring & maintaining wheel case pressure within design limit. Wheel",
+      "section_type": "일반",
+      "equipment": [
+        "기타"
+      ],
+      "company_id": "32",
+      "company_name": "증기터빈",
+      "source_file": "GS Jeju operation procedure.",
+      "source_path": "D:\\기계도면\\기계도면\\32. 증기터빈 (정석)\\제주 VP\\전기\\19. Operation Manual\\GS Jeju operation procedure..pdf",
+      "rev": null,
+      "chunk_hash": "860f0b08dd9ae470",
+      "char_count": 274
+    },
+    {
+      "chunk_idx": 17,
+      "text": "ontinuous basis as any increase in the\nsame is indication of scaling in turbine. 7. Checking and ensuring the steam quality, oil quality as per interval given in\nTriveni O&M manual.",
+      "header": "7. Checking and ensuring the steam quality, oil quality as per interval given in",
+      "section_type": "일반",
+      "equipment": [
+        "기타"
+      ],
+      "company_id": "32",
+      "company_name": "증기터빈",
+      "source_file": "GS Jeju operation procedure.",
+      "source_path": "D:\\기계도면\\기계도면\\32. 증기터빈 (정석)\\제주 VP\\전기\\19. Operation Manual\\GS Jeju operation procedure..pdf",
+      "rev": null,
+      "chunk_hash": "b3f8ec8938848de9",
+      "char_count": 181
+    },
+    {
+      "chunk_idx": 18,
+      "text": "ring the steam quality, oil quality as per interval given in\nTriveni O&M manual. 9. Any abnormalities in the TG system must be intimated to Triveni and\nsuggestion is to be sought upon.\nPage 10 of 11",
+      "header": "9. Any abnormalities in the TG system must be intimated to Triveni and",
+      "section_type": "일반",
+      "equipment": [
+        "기타"
+      ],
+      "company_id": "32",
+      "company_name": "증기터빈",
+      "source_file": "GS Jeju operation procedure.",
+      "source_path": "D:\\기계도면\\기계도면\\32. 증기터빈 (정석)\\제주 VP\\전기\\19. Operation Manual\\GS Jeju operation procedure..pdf",
+      "rev": null,
+      "chunk_hash": "624b9385ffeb512f",
+      "char_count": 198
+    }
+  ]
+}

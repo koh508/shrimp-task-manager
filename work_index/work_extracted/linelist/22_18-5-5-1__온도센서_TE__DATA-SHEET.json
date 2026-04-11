@@ -1,0 +1,69 @@
+{
+  "meta": {
+    "source_path": "D:\\기계도면\\기계도면\\22. 시료수, 약품2, 침출수, 화격자 (조선내화E)\\시료수분석설비 외 준공도서\\01. [제주-기계] 승인서류 (19.11.) AS BUILT\\18. 기술 및 참고자료\\[18-5] 화격자 냉각설비\\18-5-5. 온도센서(TE)\\18-5-5-1. 온도센서(TE) DATA-SHEET.xlsx",
+    "company_id": "22",
+    "equipment": "화격자",
+    "doc_type": "LINELIST",
+    "rev": "AS_BUILT",
+    "is_latest": true,
+    "extracted_at": "2026-03-27T19:33:07",
+    "record_count": 5
+  },
+  "records": [
+    {
+      "tag": "",
+      "service": "",
+      "parameter": "온도",
+      "value": "2",
+      "unit": "℃",
+      "equipment": "화격자",
+      "row_idx": 7,
+      "sheet": "02 RTD ",
+      "chunk_hash": "ce7feebe8d4063bb"
+    },
+    {
+      "tag": "",
+      "service": "",
+      "parameter": "온도",
+      "value": "1",
+      "unit": "℃",
+      "equipment": "화격자",
+      "row_idx": 8,
+      "sheet": "02 RTD ",
+      "chunk_hash": "7e6b75a45bb5fd63"
+    },
+    {
+      "tag": "",
+      "service": "",
+      "parameter": "온도",
+      "value": "0",
+      "unit": "℃",
+      "equipment": "화격자",
+      "row_idx": 9,
+      "sheet": "02 RTD ",
+      "chunk_hash": "4d0a34e2caedd113"
+    },
+    {
+      "tag": "",
+      "service": "",
+      "parameter": "온도",
+      "value": "4",
+      "unit": "℃",
+      "equipment": "화격자",
+      "row_idx": 22,
+      "sheet": "02 RTD ",
+      "chunk_hash": "b80faaf51b65df59"
+    },
+    {
+      "tag": "",
+      "service": "",
+      "parameter": "온도",
+      "value": "45",
+      "unit": "℃",
+      "equipment": "화격자",
+      "row_idx": 36,
+      "sheet": "02 RTD ",
+      "chunk_hash": "77ff2e9598922396"
+    }
+  ]
+}

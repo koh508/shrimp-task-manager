@@ -1,0 +1,51 @@
+{
+  "meta": {
+    "source_path": "D:\\기계도면\\기계도면\\36. 폐열보일러, SB (조선내화E)\\보일러 준공도서\\보일러(기계)\\18.PIPING INFORMATION rev.0(●)\\18.PIPING INFORMATION rev.0.PDF",
+    "company_id": "36",
+    "equipment": "폐열보일러",
+    "doc_type": "LINELIST",
+    "rev": "0",
+    "is_latest": true,
+    "extracted_at": "2026-03-27T19:46:54",
+    "record_count": 4,
+    "vision_pages": 0
+  },
+  "records": [
+    {
+      "parameter": "PT-1301",
+      "value": "38",
+      "unit": "",
+      "equipment": "폐열보일러",
+      "source": "table",
+      "page": 20,
+      "chunk_hash": "7fc52eace287df71"
+    },
+    {
+      "parameter": "PT-2301",
+      "value": "38",
+      "unit": "",
+      "equipment": "폐열보일러",
+      "source": "table",
+      "page": 20,
+      "chunk_hash": "377cd46df837823e"
+    },
+    {
+      "parameter": "PT-0306",
+      "value": "22",
+      "unit": "",
+      "equipment": "폐열보일러",
+      "source": "table",
+      "page": 21,
+      "chunk_hash": "d292bce75221d351"
+    },
+    {
+      "parameter": "PIT-0302",
+      "value": "3",
+      "unit": "",
+      "equipment": "폐열보일러",
+      "source": "table",
+      "page": 21,
+      "chunk_hash": "b1aacb288a832adc"
+    }
+  ]
+}

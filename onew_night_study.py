@@ -23,6 +23,8 @@ STUDY_END_HOUR     = 6      # 야간 학습 종료 시각
 MORNING_HOUR       = 6      # 아침 브리핑 시각
 CHECK_INTERVAL_SEC = 300    # 5분마다 상태 체크
 MAX_NOTES_PER_RUN  = 5      # 1회 실행당 최대 처리 노트 수
+EXAM_DATE          = date(2026, 4, 18)  # 공조냉동기계기사 실기 시험일
+EXAM_ROTATION_PER_RUN = 2   # 시험 임박 시 합본에서 매 세션 추가 처리할 파트 수
 
 # 학습 대상 폴더 (우선순위 순) — 시험/자격증 직결 콘텐츠만 포함
 # ⚠️ 버그수정: 개발 로그(작업일지, 코드리뷰 등)는 시험과 무관 → 제거
@@ -143,6 +145,32 @@ def is_morning_briefing_time() -> bool:
 # ==============================================================================
 # 새 노트 탐색
 # ==============================================================================
+def _get_exam_rotation_notes(state: dict) -> list[str]:
+    """시험 30일 이내: 공조냉동 합본 파트를 rotation으로 강제 투입.
+    매 세션 다른 파트가 선택되도록 인덱스를 state에 저장."""
+    days_left = (EXAM_DATE - date.today()).days
+    if days_left < 0 or days_left > 30:
+        return []
+    if not os.path.isdir(_HVAC_BOOK_DIR):
+        return []
+
+    all_parts = sorted(
+        p for p in os.listdir(_HVAC_BOOK_DIR)
+        if p.endswith('.md') and 'part' in p.lower()
+    )
+    if not all_parts:
+        return []
+
+    idx = state.get('hvac_rotation_idx', 0) % len(all_parts)
+    selected = []
+    for i in range(EXAM_ROTATION_PER_RUN):
+        part = all_parts[(idx + i) % len(all_parts)]
+        selected.append(os.path.join(_HVAC_BOOK_DIR, part))
+
+    state['hvac_rotation_idx'] = (idx + EXAM_ROTATION_PER_RUN) % len(all_parts)
+    return selected
+
+
 def _find_new_notes(state: dict) -> list[str]:
     """24시간 이내 수정된 미처리 노트 탐색"""
     processed = set(state.get('processed_files', []))
@@ -204,13 +232,16 @@ def _find_related_links(content: str, note_title: str, generate_fn) -> list[str]
     except:
         return []
 
+# 공조냉동 실기 합본 폴더 (실제 경로)
+_HVAC_BOOK_DIR = os.path.join(OBSIDIAN_VAULT_PATH, 'OCU', '2024 공조냉동기계기사 실기 합본')
+
 # 공조냉동 과년도 참조 파일 목록 (우선순위 순)
 _PAST_EXAM_FILES = [
     os.path.join(OBSIDIAN_VAULT_PATH, '공조냉동기계기사', '공조냉동기계기사 실기 과년도 출제문제 (2025년) 클로드.md'),
     os.path.join(OBSIDIAN_VAULT_PATH, 'OCU', '공조냉동기계기사', '실기기출_25년1-3회.md'),
-    os.path.join(OBSIDIAN_VAULT_PATH, 'OCU', '공조냉동기계기사 2024 실기', '실기 합본_part1.md'),
-    os.path.join(OBSIDIAN_VAULT_PATH, 'OCU', '공조냉동기계기사 2024 실기', '실기 합본_part2.md'),
-    os.path.join(OBSIDIAN_VAULT_PATH, 'OCU', '공조냉동기계기사 2024 실기', '실기 합본_part3.md'),
+    os.path.join(_HVAC_BOOK_DIR, '2024 공조냉동기계기사 실기 합본_part1.md'),
+    os.path.join(_HVAC_BOOK_DIR, '2024 공조냉동기계기사 실기 합본_part2.md'),
+    os.path.join(_HVAC_BOOK_DIR, '2024 공조냉동기계기사 실기 합본_part3.md'),
 ]
 
 def _load_past_exam_sample(char_limit: int = 2000) -> str:
@@ -677,6 +708,13 @@ def run_study_session(generate_fn) -> list[str]:
 
     external_saved = anthropic_saved + google_devblog_saved
     new_notes = _find_new_notes(state)
+
+    # 시험 임박 시 합본 파트 순환 추가 (processed 여부 무관)
+    exam_notes = _get_exam_rotation_notes(state)
+    _save_state(state)  # rotation 인덱스 저장
+    for ep in exam_notes:
+        if ep not in new_notes:
+            new_notes.append(ep)
 
     if not new_notes and not external_saved:
         return []

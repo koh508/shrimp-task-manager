@@ -1,0 +1,198 @@
+{
+  "AI 최신 뉴스": {
+    "date": "2026-03-14",
+    "file": "2026-03-14_AI 최신 뉴스.md"
+  },
+  "LLM 기술 동향": {
+    "date": "2026-03-14",
+    "file": "2026-03-14_LLM 기술 동향.md"
+  },
+  "ChatGPT 활용법": {
+    "date": "2026-03-14",
+    "file": "2026-03-14_ChatGPT 활용법.md"
+  },
+  "Google AI 뉴스": {
+    "date": "2026-03-14",
+    "file": "2026-03-14_Google AI 뉴스.md"
+  },
+  "오픈소스 AI 도구": {
+    "date": "2026-03-14",
+    "file": "2026-03-14_오픈소스 AI 도구.md"
+  },
+  "AI 코딩 도구": {
+    "date": "2026-03-14",
+    "file": "2026-03-14_AI 코딩 도구.md"
+  },
+  "머신러닝 트렌드": {
+    "date": "2026-03-14",
+    "file": "2026-03-14_머신러닝 트렌드.md"
+  },
+  "생성형 AI 활용": {
+    "date": "2026-03-14",
+    "file": "2026-03-14_생성형 AI 활용.md"
+  },
+  "AI 스타트업 소식": {
+    "date": "2026-03-14",
+    "file": "2026-03-14_AI 스타트업 소식.md"
+  },
+  "AI 윤리 이슈": {
+    "date": "2026-03-14",
+    "file": "2026-03-14_AI 윤리 이슈.md"
+  },
+  "Claude AI 업데이트": {
+    "date": "2026-03-15",
+    "file": "2026-03-15_Claude AI 업데이트.md"
+  },
+  "Gemini AI 활용": {
+    "date": "2026-03-15",
+    "file": "2026-03-15_Gemini AI 활용.md"
+  },
+  "로컬 LLM 실행법": {
+    "date": "2026-03-15",
+    "file": "2026-03-15_로컬 LLM 실행법.md"
+  },
+  "AI 이미지 생성 도구": {
+    "date": "2026-03-15",
+    "file": "2026-03-15_AI 이미지 생성 도구.md"
+  },
+  "AI 음성 인식 기술": {
+    "date": "2026-03-15",
+    "file": "2026-03-15_AI 음성 인식 기술.md"
+  },
+  "파이썬 최신 트렌드": {
+    "date": "2026-03-15",
+    "file": "2026-03-15_파이썬 최신 트렌드.md"
+  },
+  "자동화 스크립트 팁": {
+    "date": "2026-03-15",
+    "file": "2026-03-15_자동화 스크립트 팁.md"
+  },
+  "4가지 추천": {
+    "date": "2026-03-15",
+    "file": "2026-03-15_4가지 추천.md"
+  },
+  "공조냉동기계기사 출제근황 정보": {
+    "date": "2026-03-15",
+    "file": "2026-03-15_공조냉동기계기사 출제근황 정보.md"
+  },
+  "Anthropic Claude 최신 연구 및 업데이트 anthropic.com": {
+    "date": "2026-03-20",
+    "file": "2026-03-20_Anthropic Claude 최신 연구 및 업데이트 anthropic.com.md",
+    "content_hash": "b486ae78e4e6c84675b41c46eb039707"
+  },
+  "Google DeepMind Gemini 연구 동향 deepmind.google": {
+    "date": "2026-03-20",
+    "file": "2026-03-20_Google DeepMind Gemini 연구 동향 deepmind.google.md",
+    "content_hash": "ba32337d035625fd19cd3826c32e7a22"
+  },
+  "Hugging Face 오픈소스 AI 모델 신규 출시 huggingface.co": {
+    "date": "2026-03-20",
+    "file": "2026-03-20_Hugging Face 오픈소스 AI 모델 신규 출시 huggingface.co.md",
+    "content_hash": "e8e496079855cddfa91a7347da208f04"
+  },
+  "LLM 에이전트 MCP 프로토콜 개발 최신 기법": {
+    "date": "2026-03-20",
+    "file": "2026-03-20_LLM 에이전트 MCP 프로토콜 개발 최신 기법.md",
+    "content_hash": "585a63d7b4f879b7b4819383f0f7bc6d"
+  },
+  "AI 개발자 도구 실전 활용 사례 2026": {
+    "date": "2026-03-20",
+    "file": "2026-03-20_AI 개발자 도구 실전 활용 사례 2026.md",
+    "content_hash": "5d9568bed300ba5e5c12d6c8aaa7d2e9"
+  },
+  "Anthropic Constitutional AI 정렬 연구 AI safety": {
+    "date": "2026-03-20",
+    "file": "2026-03-20_Anthropic Constitutional AI 정렬 연구 AI safety.md",
+    "content_hash": "be0b510bb825d19ffa238aca9faffd6b"
+  },
+  "Responsible Scaling Policy AI 안전성 거버넌스": {
+    "date": "2026-03-20",
+    "file": "2026-03-20_Responsible Scaling Policy AI 안전성 거버넌스.md",
+    "content_hash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  "AI 해석가능성 Interpretability 연구 mechanistic": {
+    "date": "2026-03-20",
+    "file": "2026-03-20_AI 해석가능성 Interpretability 연구 mechanistic.md",
+    "content_hash": "fa57ad072cfd124085f46e84bb5e5fa4"
+  },
+  "AI 윤리 정책 규범 국제 거버넌스 2026": {
+    "date": "2026-03-19",
+    "file": "2026-03-19_AI 윤리 정책 규범 국제 거버넌스 2026.md",
+    "content_hash": "a2be08a8b8abbc2f272c69f913c383ba"
+  },
+  "AI 복지 의식 연구 AI welfare consciousness": {
+    "date": "2026-03-19",
+    "file": "2026-03-19_AI 복지 의식 연구 AI welfare consciousness.md",
+    "content_hash": "52be4b8d0c53afa67d014fd149eeafff"
+  },
+  "소각로 연소 원리 화격자 연소실 온도제어 운전기술 심화": {
+    "date": "2026-03-19",
+    "file": "2026-03-19_소각로 연소 원리 화격자 연소실 온도제어 운전기술 심화.md",
+    "content_hash": "5392caaba89cf06f7cc7bb9f985083e7"
+  },
+  "소각장 배기가스 처리 집진기 스크러버 활성탄 반건식 습식 기술": {
+    "date": "2026-03-19",
+    "file": "2026-03-19_소각장 배기가스 처리 집진기 스크러버 활성탄 반건식 습식 기술.md",
+    "content_hash": "60c86baa7e51bb2b5fd81890c58442a6"
+  },
+  "폐기물 소각 환경부 법규 대기환경보전법 배출허용기준 한국환경공단": {
+    "date": "2026-03-19",
+    "file": "2026-03-19_폐기물 소각 환경부 법규 대기환경보전법 배출허용기준 한국환경공단.md",
+    "content_hash": "4dee30c6e41bc47cbabf82d92b7b166e"
+  },
+  "소각 폐열회수 보일러 증기터빈 열효율 향상 기술": {
+    "date": "2026-03-20",
+    "file": "2026-03-20_소각 폐열회수 보일러 증기터빈 열효율 향상 기술.md",
+    "content_hash": "db8d81a1a4abc9a10cc79f57eed92ad5"
+  },
+  "소각재 비산재 처리 매립 안정화 재활용 기준 폐기물관리법": {
+    "date": "2026-03-20",
+    "file": "2026-03-20_소각재 비산재 처리 매립 안정화 재활용 기준 폐기물관리법.md",
+    "content_hash": "c846809d9a008edf5f4c8ea9a9df0b80"
+  },
+  "제주환경자원순환센터 제주시설공단 설립": {
+    "date": "2026-03-18",
+    "file": "2026-03-18_제주환경자원순환센터 제주시설공단 설립.md",
+    "content_hash": "2b5ff9c19edee3276eb78e0a24970571"
+  },
+  "제주환경자원순환센터 시설공단 전환": {
+    "date": "2026-03-18",
+    "file": "2026-03-18_제주환경자원순환센터 시설공단 전환.md",
+    "content_hash": "a63e0213ea232cbe95da1bb159d07325"
+  },
+  "제주환경자원순환센터 운영 주체 변경": {
+    "date": "2026-03-18",
+    "file": "2026-03-18_제주환경자원순환센터 운영 주체 변경.md",
+    "content_hash": "88b7fe8b2ed033a55d5af74a06bbce58"
+  },
+  "제주환경자원순환센터 공단 설립 추진": {
+    "date": "2026-03-18",
+    "file": "2026-03-18_제주환경자원순환센터 공단 설립 추진.md",
+    "content_hash": "d139d7e13894aedfb8258acf5d052280"
+  },
+  "제주환경자원순환센터 최신 뉴스": {
+    "date": "2026-03-18",
+    "file": "2026-03-18_제주환경자원순환센터 최신 뉴스.md",
+    "content_hash": "a280df7c153b5185a3c8f70050b32218"
+  },
+  "제주환경자원순환센터 뉴스": {
+    "date": "2026-03-20",
+    "file": "2026-03-20_제주환경자원순환센터 뉴스.md",
+    "content_hash": "c8a5456406894601fe8ce87a27879e16"
+  },
+  "제주시설공단 설립 과정": {
+    "date": "2026-03-20",
+    "file": "2026-03-20_제주시설공단 설립 과정.md",
+    "content_hash": "9b5bf7722740e4fcc12c0a028094cb98"
+  },
+  "제주시설공단 설립": {
+    "date": "2026-03-21",
+    "file": "2026-03-21_제주시설공단 설립.md",
+    "content_hash": "9c487f1e460e9640c4a3e1b57666f891"
+  },
+  "제주시설공단 운영": {
+    "date": "2026-03-21",
+    "file": "2026-03-21_제주시설공단 운영.md",
+    "content_hash": "818edb1bd2619c3190049019075059f1"
+  }
+}

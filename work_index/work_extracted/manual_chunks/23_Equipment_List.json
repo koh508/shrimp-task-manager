@@ -1,0 +1,51 @@
+{
+  "meta": {
+    "source_path": "D:\\기계도면\\기계도면\\23. 실험실 (세나)\\실험실_AS-BUILT (1)\\16. 운전 및 유지관리 지침서\\Equipment List.pdf",
+    "company_id": "23",
+    "company_name": "실험실",
+    "equipment": "실험실설비",
+    "doc_type": "MANUAL",
+    "rev": "AS_BUILT",
+    "is_latest": true,
+    "extracted_at": "2026-03-27T20:24:49",
+    "chunk_count": 2,
+    "vision_pages": 0
+  },
+  "chunks": [
+    {
+      "chunk_idx": 0,
+      "text": "제주환경자원순환센터(소각시설) 조성공사\nEquipment List\nNo. Description Q'ty Maker Model Remark Page\n1 폐기물 성분 분석용\n1 Drying Oven(150L) 1 set SH Sci. SH-DO-149FGE O 4~23\n2 Calorimeter 1 set Parr 6100EF O 24~105\n3 Cutting Mill(Willy type) 1 set Jisico J-NCM O 106~116\n4 Digital Balance 1 set Radwag AS220.R2 O 117~281\nDigital Balance 1 set Radwag PS4500.R2 O\n5 Top Loading Balance 1 set Hansung HS150W N/A N/A\n6 Muffle Furnace 1 set SH Sci. SH-FU-14MG O 282~301\n7 Stop Watch 5 sets DH DS.TL2530 N/A N/A\n2 재의 열작 감량 분석기\n1 Pt Crucible 2 set Special Special N/A N/A\n2 Crucible 2 set DH F3.1102 N/A N/A\n3 Desicator 2 sets DH DH.DeLH N/A N/A\n4 Dry Oven 1 set SH Sci. SH-DO-100FGE O 302~321\n3 연소가스 분석기\n1 Orsat Gas Analyzer 1 set TPI TPI-714 O 322~359\n4 폐수 분석기\n1 BOD Bottle 20 sets DH WH.227497.01 N/A N/A\n2 COD Measuring Apparatus 1 set Humas HS-R200 O 360~361\n3 Vacuum Filtering Apparatus 1 set DH TJ.FA0202 N/A N/A\n4 pH Measuring Equipment 1 set Hanna HI2210 O 362~376\n5 Colony Counter 1 set DH C23-147-050 N/A N/A\n6 DO meter 1 set Thermo Orion STARA2235 O 377~420\n7 Shaking Water Bath 2 sets DH DH.WSB03030 O 421~442\n8 Spectrophotometer 1 set Humas HS 3700 O 443~485\n9 Vacuum Pump 1 set GAST DOA-P704-AC N/A N/A\n10 Incubator 1 set SH Sci. SH-CH-54R O 486~501\n11 Microscope 1 set SUNNY HB200 N/A N/A\n12 Turbidimeter 1 set HACH 2100Q O 502~517\n13 Auto Pipette N/A N/A\n- Auto Pipette (1ml) 3 sets HTL HHT-D1000\n- Auto Pipette (5ml) 3 sets HTL HHT-D5000\n- Auto Pipette (10ml) 3 sets HTL HHT-D10000\n14 Auto Pipette Tip 1 Lot Special Special N/A N/A\n15 Micro Pipette N/A N/A\n- Micro Pipette (10μL) 3 sets HTL HHT-D10\nSENA P&P",
+      "header": "",
+      "section_type": "일반",
+      "equipment": [
+        "과열기",
+        "펌프",
+        "필터"
+      ],
+      "company_id": "23",
+      "company_name": "실험실",
+      "source_file": "Equipment List",
+      "source_path": "D:\\기계도면\\기계도면\\23. 실험실 (세나)\\실험실_AS-BUILT (1)\\16. 운전 및 유지관리 지침서\\Equipment List.pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "af2070bda52fb331",
+      "char_count": 1593
+    },
+    {
+      "chunk_idx": 1,
+      "text": "N/A\n15 Micro Pipette N/A N/A\n- Micro Pipette (10μL) 3 sets HTL HHT-D10\nSENA P&P 제주환경자원순환센터(소각시설) 조성공사\nNo. Description Q'ty Maker Model Remark Page\n- Micro Pipette (100μL) 3 sets HTL HHT-D100\n16 Kjeldhal-Distilling Apparatus 4 sets DH MS.ES303 N/A N/A\n17 Hot Plate Magnetic Stirrer 2 sets DH DH.WMH03120 O 518~534\n18 Magnetic Stirrer 2 sets DH MS-20A O 535~556\n19 2 Stage Distillator 1 set Human PurePower I+ O 557~568\n20 Centrifuge 1 set CYROZEN 416 O 569~588\n21 Automic Absorbtion Spectrophoto Meter 1 set Shimadzu AA7000 O 589~988\n- Lamp (Cu, Fe, Pb, Cd)\n5 공통품목\n1 Center Table(with Sink) - 3000 x 1500 x 800/1800 1 set CNC Lab. T-CS-KP.3015A N/A N/A\n2 Side Table - 2400 x 750 x 800H 4 set CNC Lab. T-S.2475A N/A N/A\n3 Reagent Cabient - 900 x 450 x 1800L 2 set CNC Lab. RC-W.0945A N/A N/A\n4 Shalves - 1200 x 300 x 600H 1 set CNC Lab. RC-W.1245A N/A N/A\n5 Balance Table - 900 x 750 x 800H 1 set CNC Lab. T-B.0975-1 N/A N/A\n6 Draft Camber - 1200 x 750 x 2350H 1 set CNC Lab. H-GE.1280F N/A N/A\n7 Dryer - 1200 x 450 x 1600H 1 set DH KA44-25C N/A N/A\n8 Sink - 1200 x 750 x 800H 1 set CNC Lab. K-P.1275 N/A N/A\n9 Refrigerator - 200L 1 set Woosung WS-630R N/A N/A\n10 Distilling App - 4L/hr 1 set DH DH.WWS01004 O 989\n11 Gas Burner Rok 1 set DH LM.BN386A N/A N/A\n12 Water Bath 2 sets SH Sci. SH-WB-11GDN N/A N/A\n13 Chair 5 sets CNC Lab. L-CH.1 N/A N/A\n14 Arm hood 1 set CNC Lab. H-AM.75 N/A N/A\n< Below Empty >\nSENA P&P",
+      "header": "",
+      "section_type": "일반",
+      "equipment": [
+        "버너",
+        "과열기"
+      ],
+      "company_id": "23",
+      "company_name": "실험실",
+      "source_file": "Equipment List",
+      "source_path": "D:\\기계도면\\기계도면\\23. 실험실 (세나)\\실험실_AS-BUILT (1)\\16. 운전 및 유지관리 지침서\\Equipment List.pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "aca39bfbcbee3943",
+      "char_count": 1413
+    }
+  ]
+}

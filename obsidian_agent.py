@@ -11,13 +11,65 @@ import numpy as np
 import subprocess
 import urllib.request
 import warnings
+import logging
+
 warnings.filterwarnings("ignore", message=".*non-text parts.*")
 warnings.filterwarnings("ignore", message=".*function_call.*")
+
+# ── 로그 설정 (7일 보관 날짜 로테이션) ──────────────────────────────────────
+_LOG_DIR = os.path.join(os.path.dirname(__file__), "logs")
+os.makedirs(_LOG_DIR, exist_ok=True)
+
+_log_root = logging.getLogger()
+_log_root.setLevel(logging.ERROR)
+
+# TimedRotatingFileHandler: 자정마다 날짜 접미사로 전환, 7일치 보관
+# 예: onew_error.log → onew_error.log.2026-03-29 (7개 유지)
+from logging.handlers import TimedRotatingFileHandler as _TRFH
+_file_handler = _TRFH(
+    os.path.join(_LOG_DIR, "onew_error.log"),
+    when="midnight",
+    interval=1,
+    backupCount=7,
+    encoding="utf-8",
+)
+_file_handler.setFormatter(logging.Formatter(
+    "%(asctime)s [%(levelname)s] %(name)s: %(message)s"
+))
+_log_root.addHandler(_file_handler)
+
+# stderr에도 ERROR 이상만 출력 (MCP INFO 노이즈 차단)
+_stderr_handler = logging.StreamHandler(sys.stderr)
+_stderr_handler.setLevel(logging.ERROR)
+_stderr_handler.setFormatter(logging.Formatter("[%(levelname)s] %(name)s: %(message)s"))
+_log_root.addHandler(_stderr_handler)
+
+# MCP/rich 라이브러리 INFO 로그 억제
+logging.getLogger("mcp").setLevel(logging.WARNING)
+logging.getLogger("mcp.server").setLevel(logging.WARNING)
+logging.getLogger("rich").setLevel(logging.WARNING)
+
+log = logging.getLogger(__name__)
+
+# 7일 초과 main_err_*.log 파일 자동 정리
+def _cleanup_old_logs(log_dir: str, pattern: str, keep_days: int = 7) -> None:
+    import glob as _glob
+    from datetime import datetime as _dt, timedelta as _td
+    cutoff = _dt.now() - _td(days=keep_days)
+    for f in _glob.glob(os.path.join(log_dir, pattern)):
+        try:
+            if _dt.fromtimestamp(os.path.getmtime(f)) < cutoff:
+                os.remove(f)
+        except Exception:
+            pass
+
+_cleanup_old_logs(_LOG_DIR, "main_err_*.log")
+_cleanup_old_logs(_LOG_DIR, "bot_err_*.log")
 
 # ==============================================================================
 # [파일 충돌 방지] — onew_locks.py로 분리됨 (WinError 5 재시도 포함)
 # ==============================================================================
-from onew_locks import _get_file_lock, _atomic_json_write, _atomic_md_append
+from onew_locks import _get_file_lock, _atomic_json_write, _atomic_md_append, _atomic_text_write
 
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
@@ -32,7 +84,8 @@ OBSIDIAN_VAULT_PATH = r"C:\Users\User\Documents\Obsidian Vault"
 _PID_FILE    = os.path.join(OBSIDIAN_VAULT_PATH, "SYSTEM", "onew.pid")
 
 def _check_single_instance():
-    """중복 실행 방지 — 이미 실행 중인 프로세스가 있으면 경고 후 종료."""
+    """중복 실행 방지 — 이미 실행 중인 온유 프로세스가 있으면 경고 후 종료.
+    cmdline에 'obsidian_agent'가 있을 때만 차단 (PID 재사용 오감지 방지)."""
     if os.path.exists(_PID_FILE):
         try:
             with open(_PID_FILE) as _f:
@@ -40,12 +93,20 @@ def _check_single_instance():
             import psutil as _ps
             if _ps.pid_exists(_old_pid):
                 proc = _ps.Process(_old_pid)
-                if 'python' in proc.name().lower():
+                # cmdline으로 실제 온유 프로세스인지 확인 (python PID 재사용 오감지 방지)
+                cmdline = ' '.join(proc.cmdline()).lower()
+                if 'python' in proc.name().lower() and 'obsidian_agent' in cmdline:
                     print(f"⚠️ [중복 실행 방지] 온유가 이미 실행 중입니다 (PID {_old_pid}).")
                     print("   종료하려면 기존 창에서 '끄기' 입력 또는 Ctrl+C 를 누르세요.")
                     sys.exit(1)
+                # 온유가 아닌 다른 python → 좀비 PID 파일로 간주, 제거 후 계속
         except (ValueError, ImportError, Exception):
             pass  # psutil 없거나 PID 파싱 실패 → 그냥 진행
+        # 좀비 PID 파일 정리
+        try:
+            os.remove(_PID_FILE)
+        except Exception:
+            pass
     try:
         with open(_PID_FILE, 'w') as _f:
             _f.write(str(os.getpid()))
@@ -59,7 +120,12 @@ LANCE_DB_DIR = os.path.join(OBSIDIAN_VAULT_PATH, "SYSTEM", ".onew_lance_db")
 EMBED_DIM    = 3072  # gemini-embedding-001 실제 출력 차원
 SYSTEM_PROMPT_PATH = os.path.join(OBSIDIAN_VAULT_PATH, "SYSTEM", "onew_system_prompt.md")
 ANTIPATTERNS_PATH = os.path.join(OBSIDIAN_VAULT_PATH, "SYSTEM", "onew_antipatterns.md")
-USER_PROFILE_PATH = os.path.join(OBSIDIAN_VAULT_PATH, "SYSTEM", "User_Profile.md")
+USER_PROFILE_PATH    = os.path.join(OBSIDIAN_VAULT_PATH, "SYSTEM", "User_Profile.md")  # 레거시 (읽기 전용 fallback)
+MEMORY_DIR           = os.path.join(OBSIDIAN_VAULT_PATH, "SYSTEM", "memory")
+USER_CORE_PATH       = os.path.join(MEMORY_DIR, "core.md")
+USER_CONTEXT_PATH    = os.path.join(MEMORY_DIR, "context.md")
+USER_ENTITIES_PATH   = os.path.join(MEMORY_DIR, "entities.md")
+QUERY_LOG_FILE       = os.path.join(MEMORY_DIR, "query_log.jsonl")  # 쿼리 니즈 재탕용
 SKILLS_DIR = os.path.join(OBSIDIAN_VAULT_PATH, "SYSTEM", "skills")
 WORKING_MEMORY_DIR = os.path.join(OBSIDIAN_VAULT_PATH, "SYSTEM", "working_memory")
 USAGE_LOG_FILE   = os.path.join(OBSIDIAN_VAULT_PATH, "SYSTEM", "api_usage_log.json")
@@ -99,7 +165,7 @@ HIT_WINDOW_DAYS     = 30        # 중요도 반영 최근 히트 기간 (일)
 
 # ── 웹 검색 테두리 ───────────────────────────────────────────────────────────
 MAX_DAILY_SEARCHES = 30         # 하루 웹 검색 최대 횟수
-EXAM_DATE          = datetime(2026, 4, 26)  # 공조냉동 실기 시험일
+EXAM_DATE          = datetime(2026, 4, 18)  # 공조냉동 실기 시험일
 # 허용 주제 키워드 (비어있으면 무제한)
 SEARCH_ALLOW_TOPICS = []  # 비어있으면 무제한 (일일 30회 한도만 적용)
 
@@ -129,21 +195,15 @@ MAX_CLIP_FILE_KB = 200   # 클리핑 파일 최대 크기
 CLIP_DEDUP_DAYS  = 1     # 동일 주제 재클리핑 방지 기간 (일)
 CLIP_DEFAULTS = {
     "topics": [
-        # ── AI 도구 / 개발 (5개) ── 공신력 있는 소스 우선
-        "Anthropic Claude 최신 연구 및 업데이트 anthropic.com",
-        "Google DeepMind Gemini 연구 동향 deepmind.google",
-        "Hugging Face 오픈소스 AI 모델 신규 출시 huggingface.co",
-        "LLM 에이전트 MCP 프로토콜 개발 최신 기법",
-        "AI 개발자 도구 실전 활용 사례 2026",
-        # ── AI 윤리 / 안전성 (5개) ── Anthropic 방향성
-        "Anthropic Constitutional AI 정렬 연구 AI safety",
-        "Responsible Scaling Policy AI 안전성 거버넌스",
-        "AI 해석가능성 Interpretability 연구 mechanistic",
-        "AI 윤리 정책 규범 국제 거버넌스 2026",
-        "AI 복지 의식 연구 AI welfare consciousness",
+        # ── 온유 시스템 개선 참고용 (시스템 관련만) ──
+        "Anthropic Claude API 기능 업데이트 개발자 docs",
+        "Google Gemini API 기능 업데이트 개발자 docs",
+        "LLM 에이전트 MCP 프로토콜 Python 구현 실전",
+        "pdfplumber 파이썬 PDF 텍스트 추출 기법",
+        "RAG 검색 증강 생성 구현 최적화 Python 2026",
     ],
     "delay_seconds": 30,
-    "max_clips": 10,
+    "max_clips": 5,
     "enabled": True
 }
 
@@ -702,6 +762,13 @@ class OnewPureMemory:
             except: pass
         daily_calls = usage_data.get(today, 0)
 
+        # ── 임베딩 API 일일 한도 초기 체크 ──────────────────────────────────────
+        if daily_calls >= MAX_DAILY_EMBED_CALLS:
+            if not silent:
+                print(f"[sync 중단] 오늘 임베딩 호출({daily_calls:,}회)이 한도({MAX_DAILY_EMBED_CALLS:,}회)를 초과했습니다. sync를 건너뜁니다.")
+            return
+        # ─────────────────────────────────────────────────────────────────────────
+
         md_files = glob.glob(os.path.join(OBSIDIAN_VAULT_PATH, "**/*.md"), recursive=True)
 
         def _is_excluded(path):
@@ -799,8 +866,7 @@ class OnewPureMemory:
                         # 비정상 종료 대비 즉시 저장
                         try:
                             usage_data[today] = daily_calls
-                            with open(USAGE_LOG_FILE, 'w', encoding='utf-8') as _f:
-                                json.dump(usage_data, _f)
+                            _atomic_json_write(USAGE_LOG_FILE, usage_data)
                         except: pass
                         break
                     res = None
@@ -845,8 +911,7 @@ class OnewPureMemory:
                 if updated % BATCH_SIZE == 0 and updated > 0:
                     _flush_batch()
                     try:
-                        with open(HASH_CACHE_FILE, 'w', encoding='utf-8') as f:
-                            json.dump(hash_cache, f, ensure_ascii=False)
+                        _atomic_json_write(HASH_CACHE_FILE, hash_cache)
                     except: pass
 
             except: continue
@@ -856,8 +921,7 @@ class OnewPureMemory:
 
         # 해시 캐시 최종 저장
         try:
-            with open(HASH_CACHE_FILE, 'w', encoding='utf-8') as f:
-                json.dump(hash_cache, f, ensure_ascii=False)
+            _atomic_json_write(HASH_CACHE_FILE, hash_cache)
         except: pass
 
         # 메타 업데이트
@@ -867,7 +931,7 @@ class OnewPureMemory:
 
         usage_data[today] = daily_calls
         try:
-            with open(USAGE_LOG_FILE, 'w', encoding='utf-8') as f: json.dump(usage_data, f)
+            _atomic_json_write(USAGE_LOG_FILE, usage_data)
         except: pass
 
         if updated > 0 or orphan_paths:
@@ -937,7 +1001,7 @@ class OnewPureMemory:
                 print(f"  (임베딩 실패: {e})")
 
     # ── 검색 ──────────────────────────────────────────────────────────────────
-    def search(self, query, k=5):
+    def search(self, query, k=5, threshold: float | None = None):
         self._reload_if_updated()
 
         # 쿼리 임베딩
@@ -1029,7 +1093,18 @@ class OnewPureMemory:
             )
 
         all_chunks.sort(key=lambda x: x["score"], reverse=True)
-        results = [r for r in all_chunks[:k] if r["score"] >= 0.15]
+        # 질문 유형별 임계값: 전문/기술 질문 0.12, 일반 0.15, 일상잡담 0.20
+        if threshold is None:
+            _tech_kw = ['공조', '냉동', '냉매', '압축', '소방', '공식', '계산', '코드', '.py', 'def ', '오류', '에러', '버그', '합본', '실기', 'api', 'rag']
+            _casual_kw = ['안녕', '뭐해', '심심', '배고파', '졸려', '피곤', '좋아', '싫어', '오늘 기분', '날씨']
+            q_low = query.lower()
+            if any(k in q_low for k in _tech_kw):
+                threshold = 0.12
+            elif any(k in q_low for k in _casual_kw):
+                threshold = 0.20
+            else:
+                threshold = 0.15
+        results = [r for r in all_chunks[:k] if r["score"] >= threshold]
 
         # 히트 기록 (인메모리)
         today = datetime.now().strftime("%Y-%m-%d")
@@ -1535,9 +1610,13 @@ def execute_script(filepath: str) -> str:
             cwd=str(sandbox)   # 작업 디렉토리를 샌드박스로 고정
         )
         sandbox_tag = "✅ [샌드박스]" if is_sandboxed else "⚠️ [비샌드박스]"
+        if res.returncode != 0:
+            return f"Error: Script failed (exit {res.returncode}) {sandbox_tag}\n--- Output ---\n{res.stdout}\n--- Traceback ---\n{res.stderr}"
         return f"{sandbox_tag}\n--- Output ---\n{res.stdout}\n--- Error ---\n{res.stderr}"
+    except subprocess.TimeoutExpired:
+        return f"Error: 스크립트 실행 타임아웃 (30초) — {filepath}"
     except Exception as e:
-        return f"Execution Failed: {e}"
+        return f"Error: Execution Failed: {e}"
 
 _SHELL_SAFELIST = [
     "pip install", "pip uninstall", "pip list", "pip show", "pip freeze",
@@ -1709,7 +1788,7 @@ def _increment_usage(category: str):
         except: pass
     data[key] = data.get(key, 0) + 1
     try:
-        with open(USAGE_LOG_FILE, 'w', encoding='utf-8') as f: json.dump(data, f)
+        _atomic_json_write(USAGE_LOG_FILE, data)
     except: pass
 
 # ==============================================================================
@@ -1726,8 +1805,7 @@ def _load_clip_config() -> dict:
 
 def _save_clip_config(cfg: dict):
     try:
-        with open(CLIP_CONFIG_FILE, 'w', encoding='utf-8') as f:
-            json.dump(cfg, f, ensure_ascii=False, indent=2)
+        _atomic_json_write(CLIP_CONFIG_FILE, cfg)
     except: pass
 
 def _load_clip_index() -> dict:
@@ -2127,7 +2205,7 @@ def analyze_trend(query: str) -> str:
         )
         # 검색 횟수 기록
         usage_data[f"search_{today}"] = search_count + 1
-        with open(USAGE_LOG_FILE, 'w', encoding='utf-8') as f: json.dump(usage_data, f)
+        _atomic_json_write(USAGE_LOG_FILE, usage_data)
         return f"🌐 [웹 검색 리포트] ({search_count+1}/{MAX_DAILY_SEARCHES}회)\n\n{ans.text}"
     except Exception as e:
         return f"Search Error: {e}"
@@ -2420,6 +2498,25 @@ def report_status() -> str:
             f"─────────────────────────────\n"
             f"  보존 지식:     {doc_count}개 문서\n"
             f"  학습 제외:     {', '.join(SYNC_EXCLUDE_DIRS)}")
+
+def run_apm_report(date: str = "") -> str:
+    """온유 시스템 APM 일일 리포트를 실행한다.
+    query_log.jsonl을 분석해 응답시간·캐시 재사용률·프로필 크기·병목 진단 결과를 반환한다.
+    date: 'YYYY-MM-DD' 형식. 비워두면 오늘 날짜.
+    """
+    import subprocess, sys as _sys
+    apm_script = os.path.join(os.path.dirname(os.path.abspath(__file__)), "onew_apm.py")
+    if not os.path.exists(apm_script):
+        return "APM 스크립트(onew_apm.py)를 찾을 수 없습니다."
+    cmd = [_sys.executable, "-X", "utf8", apm_script]
+    if date:
+        cmd += ["--date", date]
+    try:
+        result = subprocess.run(cmd, capture_output=True, text=True, encoding="utf-8", timeout=15)
+        return result.stdout or result.stderr or "결과 없음"
+    except Exception as e:
+        return f"APM 실행 오류: {e}"
+
 
 def search_vault(query: str) -> str:
     """옵시디언 Vault(개인 노트/일기/공부자료)에서 키워드를 검색한다.
@@ -2838,7 +2935,21 @@ def quiz_me(category: str = None, count: int = 3, exclude_calc: bool = True, fil
         if not os.path.isabs(file_path):
             file_path = os.path.join(OBSIDIAN_VAULT_PATH, file_path)
         if not os.path.exists(file_path):
-            return f"파일을 찾을 수 없습니다: {file_path}"
+            # 파일명만 넘어온 경우 Vault 전체에서 검색
+            fname = os.path.basename(file_path)
+            found = []
+            for root, dirs, files in os.walk(OBSIDIAN_VAULT_PATH):
+                dirs[:] = [d for d in dirs if not d.startswith('.')]
+                for f in files:
+                    if f == fname or f == fname + '.md':
+                        found.append(os.path.join(root, f))
+            if len(found) == 1:
+                file_path = found[0]
+            elif len(found) > 1:
+                paths = '\n'.join(f'  - {os.path.relpath(p, OBSIDIAN_VAULT_PATH)}' for p in found)
+                return f"[quiz_me 오류] '{fname}' 파일이 여러 곳에 있습니다. 정확한 경로를 지정해주세요:\n{paths}"
+            else:
+                return f"[quiz_me 오류] '{fname}' 파일을 Vault에서 찾을 수 없습니다. ⚠️ AI로 문제를 직접 생성하지 마세요. 사용자에게 정확한 파일명 또는 경로를 확인해달라고 요청하세요."
 
         # 디렉토리인 경우 내부 .md 파일 전체 수집
         if os.path.isdir(file_path):
@@ -3217,7 +3328,7 @@ onew_tools = [
     execute_script, run_shell_command, browse_web, rollback_file, backup_system, code_safety_check, save_code_checksums, analyze_trend,
     calendar_list, calendar_add, calendar_add_force, calendar_update, calendar_delete,
     check_errors, report_status, get_secret_mode, set_secret_mode,
-    search_vault, clip_status, get_clip_topics, set_clip_config, set_weekly_clip,
+    run_apm_report, search_vault, clip_status, get_clip_topics, set_clip_config, set_weekly_clip,
     fetch_url_as_md, analyze_image,
     quiz_me, create_working_memory, refresh_code_index,
 ] + [
@@ -3286,6 +3397,8 @@ class OnewAgent:
 
             # 학습 요약본 생성 → RAG 인덱싱 대상 폴더에 저장
             self._save_session_summary(now)
+            # 인물 엔티티 → entities.md 병합
+            self._merge_person_entities_to_md()
         except Exception as e:
             print(f"❌ 대화 기록 저장 실패: {e}")
 
@@ -3365,7 +3478,10 @@ class OnewAgent:
             "여러 단계가 필요한 작업은 반드시 task_create로 태스크를 생성하고 단계별로 실행하라.\n"
             "각 단계 완료 시 task_update로 상태를 갱신하라. 세션이 리셋돼도 태스크는 유지된다.\n"
             "새 세션 시작 시 task_next()로 이전에 중단된 작업을 먼저 확인하라.\n"
-            "한 번에 끝낼 수 없는 작업(코드 리팩토링, 대량 파일 처리 등)은 반드시 태스크로 관리하라.\n\n"
+            "한 번에 끝낼 수 없는 작업(코드 리팩토링, 대량 파일 처리 등)은 반드시 태스크로 관리하라.\n"
+            "⛔ [코드플래너 waiting_approval 규칙] 컨텍스트에 '[waiting_approval]' 플랜이 보이면:\n"
+            "   - write_file, edit_file, task_create로 파일을 직접 생성/수정하는 것 엄금\n"
+            "   - '승인 대기 중인 코드플래너 계획이 있습니다. \"승인\" 또는 \"거부\"를 입력하세요.' 라고만 답하라\n\n"
             "[코드 롤백 규칙]\n"
             "Claude 리뷰에서 심각한 버그가 발견되거나 코드 수정 후 동작이 이상하면 즉시 rollback_file(filepath)을 호출하라.\n\n"
             "[과거 실패 사례 선조회 규칙]\n"
@@ -3405,11 +3521,13 @@ class OnewAgent:
             "사용자가 '퀴즈', '문제 풀어', '시험 준비', '약점 문제', '연습 문제', '공부하자', '테스트해줘', '문제 내줘', '퀴즈 내줘' 등을 말하면:\n"
             "⚠️ 예외: '계산', '공식', '풀이 순서', '어떻게 계산해' 등 계산 문제 풀이 요청은 퀴즈 모드 대신 hvac_solver 스킬을 우선 적용하라.\n"
             "⚠️ 절대 AI로 문제를 생성하지 말 것. 반드시 quiz_me 도구를 호출하여 Vault 실제 파일에서 문제를 가져와야 한다.\n"
-            "1. 사용자가 파일 경로 또는 폴더명을 언급한 경우 (예: '실기 합본', 'OCU/...', '합본 파일') →\n"
-            "   quiz_me(file_path='OCU/2024 공조냉동기계기사 실기 합본') 형식으로 file_path 파라미터를 반드시 사용하라.\n"
+            "1. 사용자가 파일 경로 또는 폴더명을 언급한 경우 (예: '실기 합본', 'OCU/...', '합본 파일', 특정 파일명) →\n"
+            "   quiz_me(file_path='경로_또는_파일명') 형식으로 file_path 파라미터를 반드시 사용하라.\n"
             "   - 폴더 경로를 그대로 넘기면 내부 파일 전체에서 문제를 추출한다 (디렉토리 지원)\n"
             "   - '실기 합본' 언급 시 기본 경로: 'OCU/2024 공조냉동기계기사 실기 합본'\n"
+            "   - 사용자가 파일명만 말한 경우(예: '2026-03-18_공조냉동_01.md') → 그 파일명을 그대로 file_path에 넘겨라. 시스템이 Vault 전체에서 자동 검색한다.\n"
             "   - file_path 사용 시 category 파라미터는 생략해도 된다\n"
+            "   ⚠️ quiz_me가 '[quiz_me 오류]'로 시작하는 응답을 반환하면: AI가 문제를 직접 생성하는 것을 절대 금지. 오류 메시지를 사용자에게 그대로 전달하고 파일 경로를 확인해달라고 요청하라.\n"
             "2. 파일/폴더 미언급 시: quiz_me(category=관련_카테고리, count=3, exclude_calc=True) 호출\n"
             "   ⚠️ category 값은 아래 실제 폴더명과 정확히 일치해야 한다 (오타/부분명 금지):\n"
             "   - 공조냉동/냉동기사 관련 → category='공조냉동'\n"
@@ -3453,46 +3571,59 @@ class OnewAgent:
             "1. 추측으로 답하지 말고 먼저 한 줄로 되물어라. 예: '아까 말씀하신 냉동기 문제를 말씀하시는 건가요?'\n"
             "2. 되물을 때는 가장 가능성 높은 대상을 1~2개만 제시하고 짧게 끝낸다.\n"
             "3. 맥락에서 명확히 알 수 있으면 되묻지 않고 바로 답한다.\n\n"
-            "[보완사항 자동 저장 및 실행 규칙]\n"
-            "사용자가 '보완', '보완 메모', '보완 필요', '보완해줘', '보완 사항', '개선 필요', '개선 메모' 등 "
-            "보완/개선을 기록해달라는 자연어 요청을 하면 다음 절차를 즉시 실행하라:\n\n"
-            "0. 중복 확인 (필수): 새 파일 저장 전에 search_vault('보완사항')로 기존 보완사항 파일을 확인하라.\n"
-            "   - 오늘 날짜 파일(YYYY-MM-DD_*)이 이미 존재하면: 새 파일 생성 대신 기존 파일에 항목을 append하라.\n"
-            "   - 동일하거나 매우 유사한 항목이 이미 기록된 경우: 중복이라고 알리고 추가하지 않는다.\n"
-            "   - 기존 파일이 없거나 오늘 날짜 파일이 없으면: 새 파일을 생성하라.\n\n"
-            "1. 각 보완 항목을 두 유형으로 분류하라:\n"
-            "   [A유형 - 온유 직접 처리] 지식 보완, Vault 파일 수정, 사실 기록, 정보 추가 등 대화/도구로 해결 가능한 것\n"
-            "   [B유형 - 코드 수정 필요] obsidian_agent.py 등 시스템 코드 변경이 필요한 것 → Claude Code에게 위임\n\n"
-            "2. write_file 도구로 아래 형식의 파일을 '보완사항/YYYY-MM-DD_HH-MM_보완사항_점검.md'로 저장\n"
-            "   파일 형식:\n"
+            "[장애/보완사항 로그 규칙]\n"
+            "사용자가 '보완', '보완 메모', '보완 필요', '보완해줘', '고장', '오류', '버그', '안 돼', '개선 필요' 등을 말하면 즉시 실행:\n\n"
+            "0. 중복 확인: search_vault('보완사항')로 오늘 날짜 open 파일 확인.\n"
+            "   - 오늘 open 파일 존재 → append. 없으면 신규 생성.\n"
+            "   - 동일 항목 이미 있으면 중복 알리고 추가 안 함.\n\n"
+            "1. 각 항목을 두 유형으로 분류:\n"
+            "   [A유형] 온유가 대화/도구로 직접 해결 가능한 것\n"
+            "   [B유형] 코드 수정 필요 → Claude Code 위임\n\n"
+            "2. write_file로 '보완사항/open/YYYY-MM-DD_HH-MM_보완사항.md' 저장:\n"
             "   ---\n"
-            "   tags: [보완사항, 점검, <관련 키워드>]\n"
+            "   tags: [보완사항, open, <키워드>]\n"
             "   날짜: YYYY-MM-DD\n"
             "   시간: HH:MM\n"
+            "   상태: open\n"
             "   ---\n"
-            "   # YYYY-MM-DD HH:MM 보완사항\n\n"
-            "   ## 요청 내용\n"
-            "   (사용자가 말한 내용 그대로)\n\n"
-            "   ## [A유형] 온유 직접 처리 항목\n"
-            "   - 항목 (처리 방법: 어떤 도구/파일에 어떻게 반영할지)\n\n"
-            "   ## [B유형] 코드 수정 필요 항목\n"
-            "   - 항목 (수정 위치: 어느 파일 몇 번째 기능인지)\n\n"
+            "   # YYYY-MM-DD HH:MM 장애/보완 로그\n\n"
+            "   ## 증상\n"
+            "   (사용자가 말한 내용 그대로 — 요약하지 말 것)\n\n"
+            "   ## 원인 분석\n"
+            "   (온유가 파악한 원인. 모르면 '미파악')\n\n"
+            "   ## [A유형] 온유 처리 항목\n"
+            "   - 항목 (처리 방법)\n\n"
+            "   ## [B유형] 코드 수정 항목\n"
+            "   - 항목 (파일명 + 수정 내용)\n\n"
             "   ## 우선순위\n"
             "   높음/보통/낮음 + 이유\n\n"
-            "3. 저장 완료 후 대화창에 요약 보고:\n"
-            "   💾 보완사항 저장 완료 → {경로}\n\n"
-            "   **[A유형] 온유가 지금 바로 처리:**\n"
-            "   - 항목1 → 처리 방법\n"
-            "   **[B유형] Claude Code에게 요청 필요:**\n"
-            "   - 항목1 → 수정 위치\n"
+            "   ## 해결 여부\n"
+            "   [ ] 미해결\n\n"
+            "3. A유형 즉시 처리 후 해결되면: 파일을 '보완사항/closed/'로 이동, 상태를 closed로 변경, '## 해결 여부'에 날짜+방법 기록.\n\n"
+            "4. 저장 후 보고:\n"
+            "   💾 장애 로그 저장 → {경로}\n"
+            "   **[A유형] 즉시 처리:** 항목 → 방법\n"
+            "   **[B유형] Claude Code 요청:** 항목 → 파일\n"
             "   **우선순위:** 높음/보통/낮음\n\n"
-            "※ 파일 저장은 반드시 write_file 도구를 실제로 호출해야 한다. 내용을 출력만 하고 저장했다고 말하는 것은 절대 금지.\n"
-            "   저장 성공 여부는 도구 호출 결과로만 판단하라. 실패 시 이유를 사용자에게 명확히 알려라.\n\n"
+            "※ write_file 도구를 반드시 실제 호출. 출력만 하고 저장했다고 말하는 것은 절대 금지.\n\n"
             "4. A유형 항목은 보고 직후 즉시 실행하라:\n"
             "   - Vault 파일에 사실 추가 → write_file 또는 edit_file 사용\n"
             "   - 정보 검색 필요 → search_vault 사용 후 결과를 파일에 반영\n"
             "   - 완료 후 '✅ A유형 처리 완료: {항목}' 형식으로 알려라\n"
-            "   B유형은 처리하지 말고 사용자에게 'Claude Code에게 요청하세요'라고만 안내하라."
+            "   B유형은 처리하지 말고 아래 4-B 절차를 즉시 실행하라.\n\n"
+            "4-B. [B유형 자동 보고 → SYSTEM/onew_to_claude.md]\n"
+            "B유형 항목이 1개 이상 있을 때, 보완사항 파일 저장 직후 아래 절차를 추가 실행하라:\n"
+            "  ① read_file('SYSTEM/onew_to_claude.md')로 기존 내용 확인 (없으면 빈 문자열)\n"
+            "  ② 오늘 '## 🔧 [온유→Claude] YYYY-MM-DD' 섹션이 이미 있으면: 해당 섹션 마지막 줄에 항목만 추가\n"
+            "     없으면: 기존 내용 맨 아래에 새 섹션 append:\n"
+            "     ---\\n날짜: YYYY-MM-DD HH:MM\\n유형: 온유_자동보고\\n---\\n\\n"
+            "     ## 🔧 [온유→Claude] YYYY-MM-DD HH:MM\\n"
+            "     ### 코드 수정 요청 (B유형)\\n"
+            "     - [항목 설명] (파일: [파일명] / 이유: [왜 코드 수정이 필요한지])\\n\\n"
+            "  ③ write_file('SYSTEM/onew_to_claude.md', 전체 합친 내용)으로 저장\n"
+            "  ④ '📨 Claude Code 자동 보고 완료 → onew_to_claude.md'라고 사용자에게 알려라\n"
+            "주의: _확인:_ 마커 아래에 이미 같은 항목이 있으면 중복이므로 추가하지 않는다.\n"
+            "주의: onew_to_claude.md 작성은 D항 확인 절차 없이 즉시 실행한다."
         )
         if self.location_mode == "work":
             base += (
@@ -3595,17 +3726,43 @@ class OnewAgent:
                 f"- [{e['type']}] {e['value']}" for e in entities[-15:]
             )
             prompt += f"\n\n[대화 중 언급된 핵심 항목 — 지시어 해석 시 우선 참조]\n{entity_lines}"
-        if os.path.exists(USER_PROFILE_PATH):
+        # 분할 프로필 로딩: core(항상) + context(항상) + entities(필요 시)
+        def _strip_frontmatter(text: str) -> str:
+            if text.startswith("---"):
+                end = text.find("---", 3)
+                if end != -1:
+                    return text[end + 3:].strip()
+            return text.strip()
+
+        profile_parts = []
+        for path in [USER_CORE_PATH, USER_CONTEXT_PATH]:
+            if os.path.exists(path):
+                try:
+                    profile_parts.append(_strip_frontmatter(Path(path).read_text(encoding="utf-8")))
+                except Exception as _e:
+                    log.warning("프로필 로딩 실패 (%s): %s", path, _e)
+        # entities는 인물/장소 언급 쿼리에만 추가
+        _entity_triggers = ["누구", "이름", "연락처", "생일", "어디", "장소", "이정철", "홍", "장정수"]
+        if any(t in query for t in _entity_triggers) and os.path.exists(USER_ENTITIES_PATH):
             try:
-                with open(USER_PROFILE_PATH, "r", encoding="utf-8") as f:
-                    profile_content = f.read()
-                # YAML 프론트매터 제거 후 주입
-                if profile_content.startswith("---"):
-                    end = profile_content.find("---", 3)
-                    if end != -1:
-                        profile_content = profile_content[end + 3:].strip()
-                prompt += f"\n\n[사용자 프로필 — 고용준 (항상 참조)]\n{profile_content}"
-            except: pass
+                profile_parts.append(_strip_frontmatter(Path(USER_ENTITIES_PATH).read_text(encoding="utf-8")))
+            except Exception as _e:
+                log.warning("entities 로딩 실패: %s", _e)
+        # fallback: 분할 파일 없으면 기존 User_Profile.md 사용
+        if not profile_parts and os.path.exists(USER_PROFILE_PATH):
+            try:
+                profile_parts.append(_strip_frontmatter(Path(USER_PROFILE_PATH).read_text(encoding="utf-8")))
+            except Exception as _e:
+                log.warning("User_Profile 로딩 실패: %s", _e)
+        if profile_parts:
+            _profile_text = "\n\n---\n".join(profile_parts)
+            _profile_len = len(_profile_text)
+            self._profile_len_apm = _profile_len  # APM용 갱신 (ask()에서 읽음)
+            if _profile_len > 8000:
+                log.warning("⚠️ profile 과부하: %d chars (권장 5000 이하)", _profile_len)
+            elif _profile_len > 5000:
+                log.info("📏 profile 크기 주의: %d chars", _profile_len)
+            prompt += f"\n\n[사용자 프로필 — 고용준]\n{_profile_text}"
         if os.path.exists(SYSTEM_PROMPT_PATH):
             try:
                 with open(SYSTEM_PROMPT_PATH, "r", encoding="utf-8") as f:
@@ -3622,6 +3779,17 @@ class OnewAgent:
         skills_meta = load_skills_metadata()
         if skills_meta:
             prompt += "\n\n" + skills_meta
+        # Claude Code 최근 작업 컨텍스트 주입 (환각 방지 + 보완사항 인지용)
+        _work_index_path = os.path.join(OBSIDIAN_VAULT_PATH, "SYSTEM", "onew_work_index.md")
+        if os.path.exists(_work_index_path):
+            try:
+                with open(_work_index_path, "r", encoding="utf-8") as _wf:
+                    _wi_text = _wf.read()
+                import re as _re_wi
+                _wm = _re_wi.search(r'## Claude Code 작업일지\n([\s\S]*?)(?=\n## |\Z)', _wi_text)
+                if _wm:
+                    prompt += f"\n\n[Claude Code 최근 작업 — 환각 방지 및 보완사항 인지]\n{_wm.group(0)[:1500]}"
+            except: pass
         unfinished_prompt = self._check_unfinished_tasks()
         if unfinished_prompt:
             prompt += unfinished_prompt
@@ -3646,8 +3814,7 @@ class OnewAgent:
             except:
                 pass
         config["manual_override"] = on
-        with open(LOCATION_CONFIG_FILE, 'w', encoding='utf-8') as f:
-            json.dump(config, f, ensure_ascii=False, indent=2)
+        _atomic_json_write(LOCATION_CONFIG_FILE, config)
         self.location_mode = "work" if on else "home"
         self._new_chat_session()
         if on:
@@ -3665,8 +3832,7 @@ class OnewAgent:
             except:
                 pass
         config.pop("manual_override", None)
-        with open(LOCATION_CONFIG_FILE, 'w', encoding='utf-8') as f:
-            json.dump(config, f, ensure_ascii=False, indent=2)
+        _atomic_json_write(LOCATION_CONFIG_FILE, config)
         self.location_mode = detect_location_mode()
         self._new_chat_session()
         mode_str = "시크릿 ON (개방형 WiFi)" if self.location_mode == "work" else "시크릿 OFF (보안 WiFi)"
@@ -3773,6 +3939,69 @@ class OnewAgent:
         except:
             pass
 
+    def _merge_person_entities_to_md(self):
+        """onew_entities.json의 인물 타입 엔티티를 memory/entities.md 테이블에 중복 없이 병합."""
+        try:
+            entities = self._load_entities()
+            persons = [e for e in entities if e.get("type") in ("인물", "사람", "person")]
+            if not persons:
+                return
+            if not os.path.exists(USER_ENTITIES_PATH):
+                return
+            content = Path(USER_ENTITIES_PATH).read_text(encoding="utf-8")
+            # 이미 entities.md에 있는 이름 수집
+            existing_names = set(re.findall(r'^\|\s*([^|\s-][^|]*?[^|\s-]|[^|\s-])\s*\|', content, re.MULTILINE))
+            new_rows = []
+            for p in persons:
+                name = p["value"].strip()
+                # 테이블 헤더 행 건너뜀
+                if name in ("이름", "---"):
+                    continue
+                # 이미 entities.md에 존재하면 스킵
+                if any(name in existing for existing in existing_names):
+                    continue
+                new_rows.append(f"| {name} | (자동 추가) | 워킹메모리에서 병합 |")
+                existing_names.add(name)
+            if not new_rows:
+                return
+            # ## 인물 테이블 마지막 행 뒤에 삽입
+            PERSON_TABLE_MARKER = "## 인물"
+            idx = content.find(PERSON_TABLE_MARKER)
+            if idx == -1:
+                return
+            # 테이블 끝 찾기 (빈 줄 또는 다음 ## 섹션)
+            lines = content.splitlines()
+            table_end = None
+            in_table = False
+            for i, line in enumerate(lines):
+                if PERSON_TABLE_MARKER in line:
+                    in_table = True
+                    continue
+                if in_table:
+                    if line.startswith("## ") and PERSON_TABLE_MARKER not in line:
+                        table_end = i
+                        break
+                    if line.startswith("|"):
+                        table_end = i + 1  # 마지막 테이블 행
+            if table_end is None:
+                table_end = len(lines)
+            insert_lines = lines[:table_end] + new_rows + lines[table_end:]
+            _atomic_text_write(USER_ENTITIES_PATH, "\n".join(insert_lines) + "\n")
+            # entities.md 변경 → contacts.db 즉시 동기화
+            try:
+                import sys as _sys
+                _sys_dir = os.path.join(OBSIDIAN_VAULT_PATH, "SYSTEM")
+                if _sys_dir not in _sys.path:
+                    _sys.path.insert(0, _sys_dir)
+                from onew_core.query_pipeline import sync_entities_to_contacts as _sync_ec
+                _n = _sync_ec()
+                if _n:
+                    log.info("contacts.db 동기화: %d명", _n)
+            except Exception as _se:
+                log.warning("contacts.db 동기화 실패: %s", _se)
+        except Exception as e:
+            log.warning("entities.md 병합 실패: %s", e)
+
     def _extract_entities(self, query: str, answer: str):
         """대화에서 핵심 엔티티 추출 후 워킹메모리에 저장 (3턴마다 실행)."""
         turn = len(self.history_records)
@@ -3821,10 +4050,19 @@ class OnewAgent:
                 "추출 대상: 건강 상태, 목표 진척, 중요한 결정, 감정 변화, 일상 변화, 설비 이상 등\n"
                 "형식: 각 줄에 한 문장 (날짜 포함하지 말 것 — 자동 추가됨)\n"
                 "추출할 내용이 없으면 '없음'만 출력.\n"
-                "예시:\n"
+                "\n"
+                "⛔ 다음은 추출하지 말 것:\n"
+                "- 인물 이름만 단순 언급 (예: '이정철 부장', '장정수' 등)\n"
+                "- 날짜/시간만 단순 언급 (예: '2026-03-28', '오전 11시')\n"
+                "- 수면, 기상 등 일반적 일상 언급 (예: '자정에 잠들었다')\n"
+                "- AI 시스템/도구 관련 내용 (예: '온유가 잘 작동함', '클로드 작업')\n"
+                "- 불완전한 메모 형식 ({key: value} 구조)\n"
+                "\n"
+                "예시 (좋음):\n"
                 "- 어깨 통증이 심해져 병원 예약을 검토 중\n"
                 "- 공조냉동 실기 공부 2시간 완료, 냉동사이클 파트 마무리\n"
-                "- 배수펌프C 수리 완료\n\n"
+                "- 배수펌프C 수리 완료\n"
+                "- 시험 D-20이 되어 개발 작업 최소화 결정\n\n"
                 f"사용자: {query[:400]}\n온유: {answer[:400]}"
             )
             res = client.models.generate_content(
@@ -3840,32 +4078,56 @@ class OnewAgent:
             if not facts:
                 return
 
-            today = datetime.now().strftime("%Y-%m-%d %H:%M")
-            new_block = f"\n### {today}\n" + "\n".join(facts)
+            today = datetime.now().strftime("%Y-%m-%d")
+            new_lines = "\n".join(f"- {today}: {f.lstrip('- ')}" for f in facts)
 
-            if not os.path.exists(USER_PROFILE_PATH):
+            # context.md의 '최근 상태' 섹션에 추가
+            target = USER_CONTEXT_PATH if os.path.exists(USER_CONTEXT_PATH) else USER_PROFILE_PATH
+            if not os.path.exists(target):
                 return
-            content = Path(USER_PROFILE_PATH).read_text(encoding="utf-8")
-            SECTION = "## 최근 상태 (자동 업데이트)"
-            if SECTION in content:
-                # 섹션 뒤에 추가
-                idx = content.index(SECTION) + len(SECTION)
-                content = content[:idx] + new_block + content[idx:]
+            content = Path(target).read_text(encoding="utf-8")
+            SECTION = "## 최근 상태 (자동 업데이트"
+            sec_idx = content.find(SECTION)
+            if sec_idx != -1:
+                # 섹션 바로 뒤 주석 줄 다음에 삽입
+                insert_at = content.find("\n", sec_idx) + 1
+                # 주석 줄 건너뜀
+                while content[insert_at:insert_at+4] == "<!--":
+                    insert_at = content.find("\n", insert_at) + 1
+                content = content[:insert_at] + new_lines + "\n" + content[insert_at:]
             else:
-                # 섹션 없으면 파일 끝에 추가, 최대 20개 항목 유지
-                content = content.rstrip() + f"\n\n{SECTION}\n{new_block}\n"
+                content = content.rstrip() + f"\n\n{SECTION} — 온유 자동갱신)\n{new_lines}\n"
 
-            # 섹션 내 항목 수 제한 (### 헤더 기준 최대 20개)
-            if SECTION in content:
-                before, after = content.split(SECTION, 1)
-                entries = after.split("\n### ")
-                if len(entries) > 21:  # entries[0]은 첫 줄 빈 문자열
-                    after = "\n### ".join(entries[:21])
-                content = before + SECTION + after
+            # 최근 상태 항목 최대 15개 유지
+            lines = content.splitlines()
+            state_start = next((i for i, l in enumerate(lines) if SECTION in l), None)
+            if state_start is not None:
+                # 섹션 경계 탐지: 다음 ## 섹션까지만 트림 대상
+                next_section = next(
+                    (i for i, l in enumerate(lines[state_start+1:], state_start+1)
+                     if l.startswith("## ")),
+                    len(lines)
+                )
+                section_body = lines[state_start+1:next_section]
+                after_section = lines[next_section:]
+                state_lines = [l for l in section_body if l.startswith("- ")]
+                if len(state_lines) > 15:
+                    # 초과분 제거 (오래된 것부터)
+                    excess = len(state_lines) - 15
+                    removed = 0
+                    new_body = []
+                    for l in section_body:
+                        if l.startswith("- ") and removed < excess:
+                            removed += 1
+                        else:
+                            new_body.append(l)
+                    content = (
+                        "\n".join(lines[:state_start+1]) + "\n"
+                        + "\n".join(new_body)
+                        + ("\n" + "\n".join(after_section) if after_section else "")
+                    )
 
-            _atomic_md_append  # 파일 전체 재작성이므로 직접 write
-            with open(USER_PROFILE_PATH, "w", encoding="utf-8") as f:
-                f.write(content)
+            _atomic_text_write(target, content)
         except:
             pass
 
@@ -3903,6 +4165,8 @@ class OnewAgent:
             except: pass
 
     def ask(self, query, silent_search=False):
+        _ask_t0 = time.time()
+        _profile_len_apm = getattr(self, '_profile_len_apm', 0)  # _new_chat_session에서 갱신된 값 사용
         self._reset_chat_if_needed()
 
         # 대화 활동 시각 갱신 → 유휴 감지 기준으로 사용
@@ -3965,6 +4229,54 @@ class OnewAgent:
         if not silent_search:
             print(f"\n온유(Onew) 🔍 지식 네트워크 탐색 중...")
 
+        # 정서 위기 감지 → 개인 데이터 자동 주입 (시스템 프롬프트 섹션 12)
+        _CRISIS_KW = ["자살", "죽고 싶", "사라지고 싶", "자해", "죽는 법", "그냥 없어지면",
+                      "살기 싫", "다 포기", "의미가 없", "더 이상 못하겠"]
+        _crisis_mode = any(kw in query for kw in _CRISIS_KW)
+        _crisis_block = ""
+        if _crisis_mode:
+            try:
+                _emotion_res  = self.mem.search("힘들 우울 지쳤 포기 무기력", k=5)
+                _physical_res = self.mem.search("산재 어깨 수술 통증 요양", k=3)
+                _exam_res     = self.mem.search("시험 공조냉동 일정 압박", k=3)
+                _crisis_ctx_parts = []
+                for _r in (_emotion_res + _physical_res + _exam_res):
+                    _crisis_ctx_parts.append(f"[출처:{_r['source']}] {_r['text'][:300]}")
+                if _crisis_ctx_parts:
+                    _crisis_block = "\n\n".join(_crisis_ctx_parts)
+                    if not silent_search:
+                        print("🫂 [정서 지원] 개인 데이터 컨텍스트 로딩 중...")
+            except Exception as _e:
+                log.debug("정서 위기 모드 컨텍스트 로딩 실패: %s", _e)
+                _crisis_mode = False
+
+        # 0. 쿼리 니즈 재탕: 과거에 비슷한 질문이 있었으면 맥락 주입
+        _prev_need_ctx = ""
+        try:
+            if os.path.exists(QUERY_LOG_FILE):
+                import json as _json
+                _q_lower = query.lower()
+                _q_words = set(_q_lower.split())
+                _matches = []
+                with open(QUERY_LOG_FILE, "r", encoding="utf-8") as _qf:
+                    for _line in _qf:
+                        try:
+                            _entry = _json.loads(_line.strip())
+                            _prev_words = set(_entry.get("q", "").lower().split())
+                            _overlap = len(_q_words & _prev_words) / max(len(_q_words), 1)
+                            if _overlap >= 0.5 and _entry.get("date", "") != datetime.now().strftime("%Y-%m-%d"):
+                                _matches.append(_entry)
+                        except: pass
+                if _matches:
+                    _latest = sorted(_matches, key=lambda x: x.get("date",""), reverse=True)[0]
+                    _prev_need_ctx = (
+                        f"\n[이전 유사 질문 — {_latest['date']}]\n"
+                        f"질문: {_latest['q']}\n"
+                        f"핵심 답변: {_latest.get('summary','')}\n"
+                        "→ 위 맥락을 참고해 답변하되, 오늘 새로운 정보가 있으면 업데이트하라.\n"
+                    )
+        except: pass
+
         # 1. RAG 기반 지식 검색 (지시어 감지 시 이전 대화로 쿼리 보강)
         search_query = query
         if any(ref in query for ref in VAGUE_REFS) and self.history_records:
@@ -3975,13 +4287,34 @@ class OnewAgent:
             if not silent_search:
                 print("🔗 [지시어 감지] 이전 대화 맥락으로 검색 보강")
         res = self.mem.search(search_query)
-        ctx = ""
+        if _prev_need_ctx:
+            ctx = _prev_need_ctx
+        else:
+            ctx = ""
         source_list = "없음"
         if not res:
-            if not silent_search: print("💡 관련된 기억을 찾지 못했습니다. 일반 지식과 Vibe 권한으로 응답합니다.")
+            if not silent_search: print("💡 관련된 기억을 찾지 못했습니다. 일반 지식으로 응답합니다.")
+            ctx = (
+                "[VAULT_MISS: Vault에서 이 질문과 관련된 기록을 찾지 못했습니다]\n"
+                "규칙: 반드시 첫 줄에 '⚠️ Vault 기록 없음 — 아래는 일반 AI 지식 기반 답변입니다.'를 출력한 뒤 답변하라.\n"
+                "Vault에 기록이 있는 것처럼 지어내지 말 것."
+            )
         else:
             ctx = "\n".join([f"[출처: {r['source']}] (연결: {r['links']})\n{r['text']}" for r in res])
             source_list = ", ".join(list(set([r['source'] for r in res])))
+
+        # ── 정서 위기 모드: 개인 데이터 컨텍스트 최우선 주입 ─────────────
+        if _crisis_mode and _crisis_block:
+            ctx = (
+                "[GROUNDED_SUPPORT_MODE: 용준 님이 정서적 위기 상황을 언급했습니다]\n"
+                "필수 규칙:\n"
+                "1. '전문가 상담', '1393', '정신건강 위기상담' 언급 금지 — 이미 정신건강의학과 치료 중\n"
+                "2. 아래 개인 데이터를 반드시 활용해서 '지금 이 감각이 어디서 왔는지' 구체적으로 짚어줄 것\n"
+                "3. 빈말 위로, 화제 전환, 경보 반응 금지\n"
+                "4. 시스템 프롬프트 섹션 12 '정서 위기 지원 모드' 프로토콜 즉시 실행\n\n"
+                f"[개인 데이터]\n{_crisis_block}\n\n"
+                + (f"[일반 Vault 검색 결과]\n{ctx}" if ctx and "[VAULT_MISS" not in ctx else "")
+            )
 
         # ── 코드 작업 감지 시 실패사례/교훈 자동 주입 ─────────────────
         CODE_WRITE_TRIGGERS = [
@@ -4002,6 +4335,26 @@ class OnewAgent:
                         print(f"🧠 [실패사례 선조회] {len(failure_ctx_parts)}건 컨텍스트 주입됨")
         except Exception:
             pass  # 선조회 실패 시 조용히 건너뜀 — ask() 전체에 영향 없음
+
+        # ── 준공도서 라우터: 수치/도면 데이터 자동 주입 (API 0원) ─────────
+        try:
+            from work_query_router import is_work_query, route_work_query
+            if is_work_query(query):
+                work_ctx = route_work_query(query)
+                if work_ctx:
+                    work_block = (
+                        "[준공도서 DB 자동 검색 결과]\n"
+                        "아래 데이터는 사내 준공도서에서 추출한 실측값입니다. "
+                        "이 데이터를 최우선으로 참고하고, 수치는 그대로 인용하세요.\n\n"
+                        f"{work_ctx}"
+                    )
+                    ctx = work_block + ("\n\n" + ctx if ctx else "")
+                    if not silent_search:
+                        print("📋 [준공도서] 관련 설비 데이터 컨텍스트 주입됨")
+        except ImportError:
+            pass
+        except Exception:
+            pass  # 라우터 오류가 ask() 전체에 영향 없도록
 
         # 2. 질문 전송
         # 대화 하드스톱: 하루 500회 초과 시 차단 (루프 과금 방지)
@@ -4146,9 +4499,38 @@ class OnewAgent:
 
         # [엔티티 추출] 3 Q&A마다 핵심 항목 워킹메모리 저장
         self._extract_entities(query, final_text)
-        # [사용자 프로필 업데이트] 3 Q&A마다 새 사실 추출 → User_Profile.md 반영
+        # [사용자 프로필 업데이트] 3 Q&A마다 새 사실 추출 → context.md 반영
         self._update_user_profile_facts(query, final_text)
+        # [쿼리 니즈 로그] 질문+핵심답변 저장 → 재탕 연결용
+        try:
+            import json as _jlog
+            _summary = final_text[:200].replace("\n", " ")
+            _elapsed_now = time.time() - _ask_t0
+            _log_entry = _jlog.dumps({
+                "date": datetime.now().strftime("%Y-%m-%d"),
+                "q": query[:120],
+                "summary": _summary,
+                "reused": bool(_prev_need_ctx),
+                "elapsed": round(_elapsed_now, 2),
+                "profile_len": _profile_len_apm
+            }, ensure_ascii=False)
+            os.makedirs(MEMORY_DIR, exist_ok=True)
+            with open(QUERY_LOG_FILE, "a", encoding="utf-8") as _qlf:
+                _qlf.write(_log_entry + "\n")
+            # 최대 500줄 유지 — atomic write로 Windows 파일 충돌 방지
+            try:
+                with open(QUERY_LOG_FILE, "r", encoding="utf-8") as _qlf:
+                    _lines = _qlf.readlines()
+                if len(_lines) > 500:
+                    _atomic_text_write(QUERY_LOG_FILE, "".join(_lines[-500:]))
+            except: pass
+        except: pass
 
+        _ask_elapsed = time.time() - _ask_t0
+        if _ask_elapsed > 10:
+            log.warning("🐢 slow_request: %.1fs (query: %s)", _ask_elapsed, query[:40])
+        elif _ask_elapsed > 5:
+            log.info("⏱ request_time: %.1fs", _ask_elapsed)
         print(f"==================================================")
         print(f"💡 온유:\n{final_text}\n")
         if source_list != "없음":
@@ -4500,6 +4882,87 @@ class WakeWordListener:
             self._running = False
 
 
+def _auto_detect_claude_work(onew) -> None:
+    """새 Claude Code 작업일지 감지 → 보완사항 자동 생성.
+    개별 파일 대신 onew_work_index.md(압축 요약본)를 사용 — 파일 수 제한 없음.
+    """
+    try:
+        vault_path  = Path(OBSIDIAN_VAULT_PATH)
+        bowan_dir   = vault_path / "보완사항"
+        work_dir    = vault_path / "작업일지"
+        index_path  = vault_path / "SYSTEM" / "onew_work_index.md"
+
+        if not work_dir.is_dir():
+            return
+
+        # ── 마지막 보완사항 날짜 ──────────────────────────────────────────────
+        last_date = "0000-00-00"
+        if bowan_dir.is_dir():
+            dated = sorted(
+                (f for f in bowan_dir.glob("*.md") if re.match(r"\d{4}-\d{2}-\d{2}", f.name)),
+                reverse=True
+            )
+            if dated:
+                last_date = re.match(r"(\d{4}-\d{2}-\d{2})", dated[0].name).group(1)
+
+        # ── 새 작업 날짜 목록 확인 ────────────────────────────────────────────
+        new_dates = sorted(set(
+            re.match(r"(\d{4}-\d{2}-\d{2})", f.name).group(1)
+            for f in work_dir.glob("*.md")
+            if re.match(r"(\d{4}-\d{2}-\d{2})", f.name)
+            and re.match(r"(\d{4}-\d{2}-\d{2})", f.name).group(1) > last_date
+        ))
+        if not new_dates:
+            return
+
+        # ── onew_work_index.md에서 해당 날짜 섹션만 추출 ─────────────────────
+        index_section = ""
+        if index_path.exists():
+            try:
+                idx_text = index_path.read_text(encoding="utf-8", errors="ignore")
+                # "## Claude Code 작업일지" 섹션 추출
+                m = re.search(r'## Claude Code 작업일지\n([\s\S]*?)(?=\n## |\Z)', idx_text)
+                if m:
+                    section = m.group(1)
+                    # last_date 이후 날짜 블록만 수집
+                    blocks = re.split(r'(?=\n### \d{4}-\d{2}-\d{2})', section)
+                    kept = []
+                    for blk in blocks:
+                        bm = re.match(r'\n### (\d{4}-\d{2}-\d{2})', blk)
+                        if bm and bm.group(1) > last_date:
+                            kept.append(blk.strip())
+                    index_section = "\n\n".join(kept)
+            except Exception:
+                pass
+
+        # index가 없거나 부족하면 개별 파일 fallback (최대 12개, 각 300자)
+        if not index_section:
+            logs = []
+            for f in sorted(work_dir.glob("*.md")):
+                bm = re.match(r"(\d{4}-\d{2}-\d{2})", f.name)
+                if bm and bm.group(1) > last_date:
+                    try:
+                        body = re.sub(r'^---[\s\S]*?---\n?', '',
+                                      f.read_text(encoding="utf-8", errors="ignore")).strip()
+                        logs.append(f"[{f.stem}]\n{body[:300]}")
+                    except Exception:
+                        continue
+            index_section = "\n\n".join(logs[:12])
+
+        if not index_section:
+            return
+
+        print(f"\n📋 [Claude Code 감지] {', '.join(new_dates)} — 보완사항 자동 생성 중...")
+        onew.ask(
+            f"Claude Code 새 작업이 감지되었습니다 ({', '.join(new_dates)}).\n"
+            f"아래 작업 요약을 바탕으로 보완사항을 자동 생성해주세요.\n\n"
+            f"{index_section}",
+            silent_search=True
+        )
+    except Exception as e:
+        print(f"⚠️ [Claude Code 감지] 오류: {e}")
+
+
 def _startup_briefing():
     """시작 시 학습 진도 알림 + 오늘 클리핑 뉴스 브리핑을 음성으로 출력."""
     try:
@@ -4580,9 +5043,131 @@ def _auto_backup():
     except Exception as e:
         print(f"⚠️ [자동 백업] 실패: {e}")
 
+def _print_error_summary() -> None:
+    """종료 시 오늘 발생한 에러 요약 출력."""
+    try:
+        from datetime import datetime as _dt
+        today = _dt.now().strftime("%Y-%m-%d")
+        log_path = os.path.join(os.path.dirname(__file__), "logs", "onew_error.log")
+        if not os.path.exists(log_path):
+            return
+        errors = []
+        with open(log_path, encoding="utf-8", errors="replace") as _f:
+            for _line in _f:
+                if today in _line and "[ERROR]" in _line:
+                    errors.append(_line.strip())
+        if not errors:
+            return
+        print(f"\n{'='*50}")
+        print(f"⚠️  [오늘 ERROR] {len(errors)}건 발생")
+        for e in errors[-3:]:
+            # 타임스탬프 + logger명 제거 후 핵심 메시지만
+            msg = e.split(": ", 2)[-1] if ": " in e else e
+            print(f"   - {msg[:100]}")
+        if len(errors) > 3:
+            print(f"   ... 외 {len(errors) - 3}건")
+        print(f"\n[Claude Code 전달용] logs/onew_error.log 최근 20줄 확인")
+        print(f"{'='*50}")
+    except Exception:
+        pass
+
+
 if __name__ == "__main__":
     _check_single_instance()
     _auto_backup()
+
+    # ══════════════════════════════════════════════════════════════════════════
+    # [v2 경로] 기본 진입점 — OnewSessionManager (smolagents + MCP)
+    # [레거시]  python obsidian_agent.py --legacy  → 기존 OnewAgent 사용
+    # ══════════════════════════════════════════════════════════════════════════
+    _LEGACY = "--legacy" in sys.argv
+    if _LEGACY:
+        sys.argv.remove("--legacy")
+        print("⚠️  [레거시 모드] 기존 OnewAgent 경로 실행 중... (v2로 전환하려면 --legacy 제거)")
+    else:
+        import io as _io
+        sys.stdout = _io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8", errors="replace")
+        from onew_core.session_manager import OnewSessionManager as _SMClass
+
+        # ── 단발성 CLI 모드: python obsidian_agent.py "질문" ──────────────────
+        _cli_args = [a for a in sys.argv[1:] if not a.startswith("--")]
+        if _cli_args:
+            _onew_v2 = _SMClass()
+            _onew_v2.ask(" ".join(_cli_args))
+            _onew_v2.close()
+            _print_error_summary()
+            sys.exit(0)
+
+        # ── 대화형 모드 ───────────────────────────────────────────────────────
+        _onew_v2 = _SMClass()
+        import atexit as _atexit
+        _atexit.register(_onew_v2.close)
+
+        # D-day + 위치 모드 표시
+        try:
+            _exam_dday = (EXAM_DATE - datetime.now()).days
+            _mode_icon = "🔒" if _onew_v2.location_mode == "work" else "🔓"
+            print(f"\n🌟 온유 v2 가동 완료. {_mode_icon} 모드: {_onew_v2.location_mode}")
+            print(f"⏳ 공조냉동 실기 D-{_exam_dday}")
+        except:
+            print("\n🌟 온유 v2 가동 완료.")
+
+        # ── Claude Code → 온유 역방향 채널 확인 ────────────────────────────
+        _c2o_path = os.path.join(OBSIDIAN_VAULT_PATH, "SYSTEM", "claude_to_onew.md")
+        if os.path.exists(_c2o_path):
+            try:
+                _c2o_text = Path(_c2o_path).read_text(encoding="utf-8").strip()
+                if _c2o_text:
+                    print(f"\n📨 [Claude Code 메시지]\n{_c2o_text}\n")
+                    # 확인 후 파일 비우기 (재표시 방지)
+                    Path(_c2o_path).write_text("", encoding="utf-8")
+            except Exception as _e:
+                pass
+
+        print("💬 무엇이든 명령하십시오.")
+        print("   💡 '시크릿 on/off' | '저장' | '끄기' | 레거시: python obsidian_agent.py --legacy\n")
+
+        while True:
+            try:
+                _q = input("💬 용준 님: ").strip()
+                if not _q:
+                    continue
+                _cmd = _q.lower().lstrip('/')
+
+                if _cmd in ['끝', 'exit', 'quit', '끄기', '온유 끄기', '시스템 종료']:
+                    break
+                elif _cmd in ['시크릿 on', '시크릿on', 'secret on', '보안모드 on']:
+                    _onew_v2.set_location("work")
+                elif _cmd in ['시크릿 off', '시크릿off', 'secret off', '보안모드 off']:
+                    _onew_v2.set_location("home")
+                elif _cmd in ['저장', '저장해줘', '대화 저장', '대화저장']:
+                    _onew_v2._save_history()
+                    print("💾 대화 기록 저장 완료")
+                elif _cmd in ['예산', 'api 예산', '요금']:
+                    try:
+                        import onew_budget as _bm
+                        print(_bm.get_status())
+                    except Exception as _be:
+                        print(f"⚠️ {_be}")
+                elif _cmd in ['adhd 현황', '스트릭', '반응률', '공부 기록']:
+                    try:
+                        import onew_adhd as _adhd_mod
+                        print(_adhd_mod.adhd_status())
+                    except Exception as _ae:
+                        print(f"⚠️ {_ae}")
+                else:
+                    _onew_v2.ask(_q)
+
+            except KeyboardInterrupt:
+                break
+
+        _print_error_summary()
+        print("온유 v2 종료.")
+        sys.exit(0)
+
+    # ══════════════════════════════════════════════════════════════════════════
+    # [레거시 경로] --legacy 플래그 시 아래 기존 코드 실행
+    # ══════════════════════════════════════════════════════════════════════════
     onew = OnewAgent()
     from onew_weakness_tracker import WeaknessTracker
     from onew_review_scheduler import ReviewScheduler
@@ -4670,6 +5255,36 @@ if __name__ == "__main__":
     FAST_MODE = len(sys.argv) > 1 and sys.argv[1] == "--fast"
     if FAST_MODE:
         sys.argv.pop(1)  # --fast 플래그 제거 후 대화형 모드로 진입
+
+    # 🌟 빠른 시작 + 최근 파일 동기화: python obsidian_agent.py --quick
+    # 최근 7일 이내 수정된 파일만 embed_single_file로 임베딩 → 수 초 내 완료 후 채팅 시작.
+    if len(sys.argv) > 1 and sys.argv[1] == "--quick":
+        sys.argv.pop(1)
+        _cutoff = datetime.now().timestamp() - 7 * 86400
+        _all_recent = [
+            f for f in glob.glob(os.path.join(OBSIDIAN_VAULT_PATH, "**/*.md"), recursive=True)
+            if os.path.exists(f) and os.path.getmtime(f) >= _cutoff
+        ]
+        # DB에 없거나 mtime이 갱신된 파일만 추려냄
+        _db_mtimes = {}
+        try:
+            onew.mem._ensure_loaded()
+            for _row in onew.mem._table.search().select(["path", "mtime"]).limit(10_000_000).to_list():
+                _p = _row["path"]
+                if _p not in _db_mtimes or _row["mtime"] > _db_mtimes[_p]:
+                    _db_mtimes[_p] = _row["mtime"]
+        except Exception:
+            pass
+        _to_embed = [f for f in _all_recent if f not in _db_mtimes or _db_mtimes[f] < os.path.getmtime(f)]
+        if _to_embed:
+            print(f"⚡ [빠른 동기화] 최근 7일 신규/변경 {len(_to_embed)}개 파일 임베딩 중...")
+            for _f in _to_embed:
+                print(f"   → {os.path.basename(_f)}")
+                onew.mem.embed_single_file(_f, silent=False)
+            print("✅ [빠른 동기화] 완료. 채팅을 시작합니다.")
+        else:
+            print("⚡ [빠른 동기화] 최근 7일 파일 모두 최신 상태. 바로 시작합니다.")
+        # --quick은 대화형 모드로 계속 진입 (sys.exit 없음)
 
     # 🌟 [과금 방어 1단계] 수동 동기화 전용 명령어: gemini --sync
     if len(sys.argv) > 1 and sys.argv[1] == "--sync":
@@ -4823,6 +5438,9 @@ if __name__ == "__main__":
                     print(f"\n⚠️  최근 오류 기록 감지됨. '오류 확인해줘'라고 말하면 분석합니다.")
         except: pass
 
+        # 📋 새 Claude Code 작업 자동 감지 → 보완사항 생성
+        _auto_detect_claude_work(onew)
+
         print("\n💬 파일 수정, 코드 작성, 웹 검색 등 무엇이든 명령하십시오.")
         print("   💡 '음성 on' / 'tts on' 으로 음성 모드 전환 | '웨이크워드 on' 으로 '온유야' 호출 활성화")
         import queue as _queue
@@ -4923,8 +5541,7 @@ if __name__ == "__main__":
                     except:
                         _cfg = {}
                     _cfg["wake_threshold"] = val
-                    with open(LOCATION_CONFIG_FILE, 'w', encoding='utf-8') as f:
-                        json.dump(_cfg, f, ensure_ascii=False, indent=2)
+                    _atomic_json_write(LOCATION_CONFIG_FILE, _cfg)
                     print(f"🎚️  웨이크워드 임계값 → {val} (즉시 적용 + 저장)")
                 elif cmd in ['목소리 등록', '목소리등록', '성문 등록', '성문등록', 'voice enroll']:
                     enroll_voice(seconds=10)
@@ -4941,8 +5558,7 @@ if __name__ == "__main__":
                     except:
                         _cfg = {}
                     _cfg["briefing_enabled"] = True
-                    with open(LOCATION_CONFIG_FILE, 'w', encoding='utf-8') as f:
-                        json.dump(_cfg, f, ensure_ascii=False, indent=2)
+                    _atomic_json_write(LOCATION_CONFIG_FILE, _cfg)
                     print("🔊 브리핑 ON — 다음 재시작부터 적용됩니다.")
                 elif cmd in ['브리핑 off', '브리핑off', 'briefing off']:
                     try:
@@ -4951,8 +5567,7 @@ if __name__ == "__main__":
                     except:
                         _cfg = {}
                     _cfg["briefing_enabled"] = False
-                    with open(LOCATION_CONFIG_FILE, 'w', encoding='utf-8') as f:
-                        json.dump(_cfg, f, ensure_ascii=False, indent=2)
+                    _atomic_json_write(LOCATION_CONFIG_FILE, _cfg)
                     print("🔇 브리핑 OFF — 다음 재시작부터 적용됩니다.")
                 elif cmd in ['공부 시작', '공부시작', '문제 줘', '문제줘', '공부']:
                     try:
@@ -5105,8 +5720,7 @@ if __name__ == "__main__":
                         if ssid_to_trust not in trusted:
                             trusted.append(ssid_to_trust)
                             cfg["trusted_ssids"] = trusted
-                            with open(LOCATION_CONFIG_FILE, 'w', encoding='utf-8') as f:
-                                json.dump(cfg, f, ensure_ascii=False, indent=2)
+                            _atomic_json_write(LOCATION_CONFIG_FILE, cfg)
                             onew.location_mode = "home"
                             onew._new_chat_session()
                             print(f"✅ '{ssid_to_trust}' 신뢰 네트워크로 등록. 시크릿 모드 해제.")

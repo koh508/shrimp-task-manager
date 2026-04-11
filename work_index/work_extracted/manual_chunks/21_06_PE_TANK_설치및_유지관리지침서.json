@@ -1,0 +1,144 @@
+{
+  "meta": {
+    "source_path": "D:\\기계도면\\기계도면\\21. 순수제조설비 (에스텍)\\JJ-M-VP-012-01_순수제조설비_기자재준공도서_R0(AS BUILT)\\원본\\016 운전 및 유지관리 지침서\\원본\\06 PE TANK\\06 PE TANK_설치및 유지관리지침서.pdf",
+    "company_id": "21",
+    "company_name": "순수제조설비",
+    "equipment": "순수제조설비",
+    "doc_type": "MANUAL",
+    "rev": "0",
+    "is_latest": true,
+    "extracted_at": "2026-03-27T20:21:17",
+    "chunk_count": 8,
+    "vision_pages": 0
+  },
+  "chunks": [
+    {
+      "chunk_idx": 0,
+      "text": "P.E TANK 설치시방서 및\nDOC.NO\n유지관리 지침서 P A G E 1 / 1",
+      "header": "",
+      "section_type": "일반",
+      "equipment": [
+        "탱크"
+      ],
+      "company_id": "21",
+      "company_name": "순수제조설비",
+      "source_file": "06 PE TANK_설치및 유지관리지침서",
+      "source_path": "D:\\기계도면\\기계도면\\21. 순수제조설비 (에스텍)\\JJ-M-VP-012-01_순수제조설비_기자재준공도서_R0(AS BUILT)\\원본\\016 운전 및 유지관리 지침서\\원본\\06 PE TANK\\06 PE TANK_설치및 유지관리지침서.pdf",
+      "rev": "0",
+      "chunk_hash": "b78c91bdde421f4b",
+      "char_count": 46
+    },
+    {
+      "chunk_idx": 1,
+      "text": "1. 탱크 이송시 접촉 부위는 완충제를 넣고 노즐이나 그외 부속품에 로프를 걸어서는\n안된다. 또한 10㎥ 이상의 탱크는 상.하차 및 설치시 크레인을 사용해야 한다.\n<탱크 파손주의>",
+      "header": "1. 탱크 이송시 접촉 부위는 완충제를 넣고 노즐이나 그외 부속품에 로프를 걸어서는",
+      "section_type": "일반",
+      "equipment": [
+        "탱크"
+      ],
+      "company_id": "21",
+      "company_name": "순수제조설비",
+      "source_file": "06 PE TANK_설치및 유지관리지침서",
+      "source_path": "D:\\기계도면\\기계도면\\21. 순수제조설비 (에스텍)\\JJ-M-VP-012-01_순수제조설비_기자재준공도서_R0(AS BUILT)\\원본\\016 운전 및 유지관리 지침서\\원본\\06 PE TANK\\06 PE TANK_설치및 유지관리지침서.pdf",
+      "rev": "0",
+      "chunk_hash": "0b219740235a158a",
+      "char_count": 101
+    },
+    {
+      "chunk_idx": 2,
+      "text": "넣고 노즐이나 그외 부속품에 로프를 걸어서는\n안된다. 또한 10㎥ 이상의 탱크는 상.하차 및 설치시 크레인을 사용해야 한다.\n<탱크 파손주의> 2. 탱크 설치시 바닥은 요철부분이 없도록 시멘트 몰탈로 마감을 해야하며, 가대위에\n설치 할 경우 스판간격 300mm 이하로서 수평한 가대를 만들어 그위에 10t 이상의\n철판을 놓아 주어야 한다.",
+      "header": "2. 탱크 설치시 바닥은 요철부분이 없도록 시멘트 몰탈로 마감을 해야하며, 가대위에",
+      "section_type": "일반",
+      "equipment": [
+        "탱크"
+      ],
+      "company_id": "21",
+      "company_name": "순수제조설비",
+      "source_file": "06 PE TANK_설치및 유지관리지침서",
+      "source_path": "D:\\기계도면\\기계도면\\21. 순수제조설비 (에스텍)\\JJ-M-VP-012-01_순수제조설비_기자재준공도서_R0(AS BUILT)\\원본\\016 운전 및 유지관리 지침서\\원본\\06 PE TANK\\06 PE TANK_설치및 유지관리지침서.pdf",
+      "rev": "0",
+      "chunk_hash": "6810aa07c658654d",
+      "char_count": 189
+    },
+    {
+      "chunk_idx": 3,
+      "text": "탈로 마감을 해야하며, 가대위에\n설치 할 경우 스판간격 300mm 이하로서 수평한 가대를 만들어 그위에 10t 이상의\n철판을 놓아 주어야 한다. 3. 탱크에 필요한 STRUCTURE나 장치를 설치 할 때는 탱크에 직열이 작용하여서는\n안되며 보강쇄에 용접을 할 경우에서 반드시 탱크로부터 보강쇄를 해체한 후 작업\n하여야 한다.",
+      "header": "3. 탱크에 필요한 STRUCTURE나 장치를 설치 할 때는 탱크에 직열이 작용하여서는",
+      "section_type": "일반",
+      "equipment": [
+        "탱크"
+      ],
+      "company_id": "21",
+      "company_name": "순수제조설비",
+      "source_file": "06 PE TANK_설치및 유지관리지침서",
+      "source_path": "D:\\기계도면\\기계도면\\21. 순수제조설비 (에스텍)\\JJ-M-VP-012-01_순수제조설비_기자재준공도서_R0(AS BUILT)\\원본\\016 운전 및 유지관리 지침서\\원본\\06 PE TANK\\06 PE TANK_설치및 유지관리지침서.pdf",
+      "rev": "0",
+      "chunk_hash": "bd12a73ad34dfb88",
+      "char_count": 181
+    },
+    {
+      "chunk_idx": 4,
+      "text": "나 장치를 설치 할 때는 탱크에 직열이 작용하여서는\n안되며 보강쇄에 용접을 할 경우에서 반드시 탱크로부터 보강쇄를 해체한 후 작업\n하여야 한다. 4. 탱크의 노즐 부위에 배관을 연결할 경우 하중으로 인한 노즐 부위가 파손될 수\n있으므로 반드시 지지대를 설치 하여야 한다",
+      "header": "4. 탱크의 노즐 부위에 배관을 연결할 경우 하중으로 인한 노즐 부위가 파손될 수",
+      "section_type": "일반",
+      "equipment": [
+        "탱크"
+      ],
+      "company_id": "21",
+      "company_name": "순수제조설비",
+      "source_file": "06 PE TANK_설치및 유지관리지침서",
+      "source_path": "D:\\기계도면\\기계도면\\21. 순수제조설비 (에스텍)\\JJ-M-VP-012-01_순수제조설비_기자재준공도서_R0(AS BUILT)\\원본\\016 운전 및 유지관리 지침서\\원본\\06 PE TANK\\06 PE TANK_설치및 유지관리지침서.pdf",
+      "rev": "0",
+      "chunk_hash": "6b41e7991dc10fbe",
+      "char_count": 150
+    },
+    {
+      "chunk_idx": 5,
+      "text": "5. 배관 자재가 STEEL 및 SUS일 경우에는 조립시 무리한 힘을 가하지 말고 후렉시블\n자재를 꼭 사용하여 수축 팽창으로 인한 하자를 예방하여야 한다",
+      "header": "5. 배관 자재가 STEEL 및 SUS일 경우에는 조립시 무리한 힘을 가하지 말고 후렉시블",
+      "section_type": "일반",
+      "equipment": [
+        "순수제조설비"
+      ],
+      "company_id": "21",
+      "company_name": "순수제조설비",
+      "source_file": "06 PE TANK_설치및 유지관리지침서",
+      "source_path": "D:\\기계도면\\기계도면\\21. 순수제조설비 (에스텍)\\JJ-M-VP-012-01_순수제조설비_기자재준공도서_R0(AS BUILT)\\원본\\016 운전 및 유지관리 지침서\\원본\\06 PE TANK\\06 PE TANK_설치및 유지관리지침서.pdf",
+      "rev": "0",
+      "chunk_hash": "a5c55393dc316a81",
+      "char_count": 85
+    },
+    {
+      "chunk_idx": 6,
+      "text": "자재가 STEEL 및 SUS일 경우에는 조립시 무리한 힘을 가하지 말고 후렉시블\n자재를 꼭 사용하여 수축 팽창으로 인한 하자를 예방하여야 한다 7. 충수 테스트에 사용한 물은 완전히 제거하고 말린후 약품을 투입하여야 한다.\n(특히, 황산일 경우 물과 반응하여 고열을 발생하기 때문)",
+      "header": "7. 충수 테스트에 사용한 물은 완전히 제거하고 말린후 약품을 투입하여야 한다.",
+      "section_type": "일반",
+      "equipment": [
+        "순수제조설비"
+      ],
+      "company_id": "21",
+      "company_name": "순수제조설비",
+      "source_file": "06 PE TANK_설치및 유지관리지침서",
+      "source_path": "D:\\기계도면\\기계도면\\21. 순수제조설비 (에스텍)\\JJ-M-VP-012-01_순수제조설비_기자재준공도서_R0(AS BUILT)\\원본\\016 운전 및 유지관리 지침서\\원본\\06 PE TANK\\06 PE TANK_설치및 유지관리지침서.pdf",
+      "rev": "0",
+      "chunk_hash": "de01993a7e667fc6",
+      "char_count": 157
+    },
+    {
+      "chunk_idx": 7,
+      "text": "9. P.E CHEMICAL TANK 상압사용이 원칙이므로 가압 및 감압은 하지 않도록 하고\nAIR VENT를 개방하여 수압이 걸리지 않도록 한다.",
+      "header": "9. P.E CHEMICAL TANK 상압사용이 원칙이므로 가압 및 감압은 하지 않도록 하고",
+      "section_type": "일반",
+      "equipment": [
+        "탱크"
+      ],
+      "company_id": "21",
+      "company_name": "순수제조설비",
+      "source_file": "06 PE TANK_설치및 유지관리지침서",
+      "source_path": "D:\\기계도면\\기계도면\\21. 순수제조설비 (에스텍)\\JJ-M-VP-012-01_순수제조설비_기자재준공도서_R0(AS BUILT)\\원본\\016 운전 및 유지관리 지침서\\원본\\06 PE TANK\\06 PE TANK_설치및 유지관리지침서.pdf",
+      "rev": "0",
+      "chunk_hash": "ee444448065521e6",
+      "char_count": 82
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "_comment": "온유 Q-Table Action Space — Phase 12.5. 고정 어휘. 함부로 추가하지 않는다.",
+  "version": "1.0",
+  "actions": {
+    "ANSWER_RAG":       "RAG 검색 결과로 직접 답변",
+    "ANSWER_FALLBACK":  "형태소 폴백 검색으로 답변",
+    "ANSWER_PROFILE":   "contacts.db 프로필로 답변",
+    "ANSWER_TEMPORAL":  "시간 재정렬(temporal rerank) 후 답변",
+    "ANSWER_PATTERN":   "Pattern RAG 주입으로 답변",
+    "ACTION_DELEGATED": "ACTION 명령 감지 → agent.run() 위임",
+    "UNKNOWN":          "컨텍스트 없음 → UNKNOWN 반환"
+  },
+  "intent_labels": ["FACT", "SEMANTIC", "HYBRID", "ACTION"],
+  "log_schema": {
+    "ts":            "ISO-8601 타임스탬프",
+    "qhash":         "query MD5 앞 8자 (개인정보 비저장)",
+    "intent":        "classify_intent 결과",
+    "action":        "위 actions 키 중 하나",
+    "search_hits":   "search_direct 반환 청크 수",
+    "context_chars": "LLM에 전달된 컨텍스트 문자 수",
+    "latency_ms":    "handle_query 전체 소요 ms",
+    "resp_chars":    "LLM 응답 문자 수 (None=0)"
+  }
+}

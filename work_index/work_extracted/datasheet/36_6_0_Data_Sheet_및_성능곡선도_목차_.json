@@ -1,0 +1,114 @@
+{
+  "meta": {
+    "source_path": "D:\\기계도면\\기계도면\\36. 폐열보일러, SB (조선내화E)\\보일러 준공도서\\보일러(기계)\\6. Data Sheet & 성능 곡선도 rev.0(●)\\원본\\6.0 Data Sheet 및 성능곡선도(목차).xlsx",
+    "company_id": "36",
+    "equipment": "폐열보일러",
+    "doc_type": "DATA_SHEET",
+    "rev": "0",
+    "is_latest": true,
+    "extracted_at": "2026-03-27T19:33:14",
+    "record_count": 10
+  },
+  "records": [
+    {
+      "parameter": "6.Data Sheet 및 성능곡선도",
+      "value": "-001",
+      "unit": "",
+      "design_value": "문서번호",
+      "equipment": "폐열보일러",
+      "row_idx": 0,
+      "sheet": "6.Data Sheet 및 성능곡선도",
+      "chunk_hash": "9de76933dd3824db"
+    },
+    {
+      "parameter": "6.1 폐열보일러",
+      "value": "2",
+      "unit": "",
+      "design_value": "",
+      "equipment": "폐열보일러",
+      "row_idx": 7,
+      "sheet": "6.Data Sheet 및 성능곡선도",
+      "chunk_hash": "1d5b28654b69699f"
+    },
+    {
+      "parameter": "6.2 블로우다운수 냉각기",
+      "value": "1",
+      "unit": "",
+      "design_value": "",
+      "equipment": "폐열보일러",
+      "row_idx": 9,
+      "sheet": "6.Data Sheet 및 성능곡선도",
+      "chunk_hash": "309a37a4d8eb60ff"
+    },
+    {
+      "parameter": "6.3 탈기기",
+      "value": "1",
+      "unit": "",
+      "design_value": "",
+      "equipment": "탈기기",
+      "row_idx": 11,
+      "sheet": "6.Data Sheet 및 성능곡선도",
+      "chunk_hash": "86c9535f1fa35444"
+    },
+    {
+      "parameter": "6.4 블로우다운탱크",
+      "value": "1",
+      "unit": "",
+      "design_value": "",
+      "equipment": "폐열보일러",
+      "row_idx": 13,
+      "sheet": "6.Data Sheet 및 성능곡선도",
+      "chunk_hash": "481b75ac36f50f72"
+    },
+    {
+      "parameter": "6.5 플래시탱크",
+      "value": "1",
+      "unit": "",
+      "design_value": "",
+      "equipment": "폐열보일러",
+      "row_idx": 15,
+      "sheet": "6.Data Sheet 및 성능곡선도",
+      "chunk_hash": "d6a986be8ae5a531"
+    },
+    {
+      "parameter": "6.6 고압증기분배기",
+      "value": "1",
+      "unit": "",
+      "design_value": "",
+      "equipment": "폐열보일러",
+      "row_idx": 17,
+      "sheet": "6.Data Sheet 및 성능곡선도",
+      "chunk_hash": "433a4ffb870b0f95"
+    },
+    {
+      "parameter": "6.8 저압증기분배기",
+      "value": "7",
+      "unit": "",
+      "design_value": "",
+      "equipment": "폐열보일러",
+      "row_idx": 21,
+      "sheet": "6.Data Sheet 및 성능곡선도",
+      "chunk_hash": "b09df73f324a67e4"
+    },
+    {
+      "parameter": "6.9 증기소음기",
+      "value": "3",
+      "unit": "",
+      "design_value": "",
+      "equipment": "폐열보일러",
+      "row_idx": 23,
+      "sheet": "6.Data Sheet 및 성능곡선도",
+      "chunk_hash": "84ab542d16c34e92"
+    },
+    {
+      "parameter": "6.10 슈트블로어",
+      "value": "3",
+      "unit": "",
+      "design_value": "",
+      "equipment": "폐열보일러",
+      "row_idx": 25,
+      "sheet": "6.Data Sheet 및 성능곡선도",
+      "chunk_hash": "45e6def7567469c0"
+    }
+  ]
+}

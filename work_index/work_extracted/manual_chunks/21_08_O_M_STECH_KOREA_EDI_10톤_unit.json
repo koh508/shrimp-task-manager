@@ -1,0 +1,645 @@
+{
+  "meta": {
+    "source_path": "D:\\기계도면\\기계도면\\21. 순수제조설비 (에스텍)\\JJ-M-VP-012-01_순수제조설비_기자재준공도서_R0(AS BUILT)\\원본\\016 운전 및 유지관리 지침서\\PDF\\08 O&M_STECH KOREA EDI 10톤 unit.pdf",
+    "company_id": "21",
+    "company_name": "순수제조설비",
+    "equipment": "순수제조설비",
+    "doc_type": "MANUAL",
+    "rev": "0",
+    "is_latest": true,
+    "extracted_at": "2026-03-27T20:20:54",
+    "chunk_count": 39,
+    "vision_pages": 0
+  },
+  "chunks": [
+    {
+      "chunk_idx": 0,
+      "text": "Operations & Maintenance Manual\nElectro-Deionization Machine\nModel # EDI-02-10-380VAC-3PH4W-60Hz\nSerial No:SDYYMMNNFor company name.\nSAM DUCK SCIENCES CO., LTD.\n39-14Buldang-ro,Yangchon-eup,Gimpo-si, Kyonggi-Do, KOREA\nTel:82-31-985-5192 Fax:82-31-985-5196e-mail: sdtop93@naver.com\nSam Duck Sciences.Co.,Ltd. Page 1/28\n\n목차\n1 일반설명 PAGE No\n1.1 소개 4\n1.2 EDI 원리 4\n1.3 용어 설명 6\n2장비사양 6\n3 서비스에대한요구사항 13\n4 설치 13\n4.1 수신 및 Uncrating 13\n4.2 장비의 위치 14\n4.3 설치 14\n5 시작&운영15\n5.1 초기 시작 16\n5.2 시작 16\n5.2.1 인입수를 시스템에 채움. 17\n5.2.2 인입수, 농축수, 전극수 유량을 설정 17\n5.2.3 모든 유량과 압력을 확인 18\n5.2.4 정류기 전원 on 18\n5.2.5 자동기능 19\n5.3 운영 19\n6클리닝 (CIP) 20\n7 EDI 보관 20\n8 절차의종료 21\n8.1 수동 조작의 종료 21\n8.2 자동 운전에서 종료 21\n8.3 장기적인 종료 21\n9 유지보수 22\n9.1 예방적 유지보수 22\n9.2 일일 유지관리 22\n10 문제해결가이드 22\nSam Duck Sciences.Co.,Ltd. Page 2/28\n\n11 START UP 자료 25\n12 일일로그시트 26\n13 E-CELL 상세자료 27",
+      "header": "",
+      "section_type": "시동",
+      "equipment": [
+        "순수제조설비"
+      ],
+      "company_id": "21",
+      "company_name": "순수제조설비",
+      "source_file": "08 O&M_STECH KOREA EDI 10톤 unit",
+      "source_path": "D:\\기계도면\\기계도면\\21. 순수제조설비 (에스텍)\\JJ-M-VP-012-01_순수제조설비_기자재준공도서_R0(AS BUILT)\\원본\\016 운전 및 유지관리 지침서\\PDF\\08 O&M_STECH KOREA EDI 10톤 unit.pdf",
+      "rev": "0",
+      "chunk_hash": "d870ef454b27a7bf",
+      "char_count": 829
+    },
+    {
+      "chunk_idx": 1,
+      "text": "ck Sciences.Co.,Ltd. Page 2/28\n\n11 START UP 자료 25\n12 일일로그시트 26\n13 E-CELL 상세자료 27 LIST OF FIGURES\nFigure 1 :인입수 Chamber 4\nFigure 2 :농축수 chamber 5\nFigure 3 :P&ID of EDI 장비 9\nFigure 4 :EDI-장비 Layout15\nFigure 5 :컨트롤판넬 및 EDI장비의 정류기 패널 16\nSam Duck Sciences.Co.,Ltd. Page 3/28",
+      "header": "LIST OF FIGURES",
+      "section_type": "시동",
+      "equipment": [
+        "순수제조설비"
+      ],
+      "company_id": "21",
+      "company_name": "순수제조설비",
+      "source_file": "08 O&M_STECH KOREA EDI 10톤 unit",
+      "source_path": "D:\\기계도면\\기계도면\\21. 순수제조설비 (에스텍)\\JJ-M-VP-012-01_순수제조설비_기자재준공도서_R0(AS BUILT)\\원본\\016 운전 및 유지관리 지침서\\PDF\\08 O&M_STECH KOREA EDI 10톤 unit.pdf",
+      "rev": "0",
+      "chunk_hash": "c4bcb728b9525052",
+      "char_count": 269
+    },
+    {
+      "chunk_idx": 2,
+      "text": "Layout15\nFigure 5 :컨트롤판넬 및 EDI장비의 정류기 패널 16\nSam Duck Sciences.Co.,Ltd. Page 3/28 1. 일반 설명:\n1.1 소개",
+      "header": "1. 일반 설명:",
+      "section_type": "일반",
+      "equipment": [
+        "순수제조설비"
+      ],
+      "company_id": "21",
+      "company_name": "순수제조설비",
+      "source_file": "08 O&M_STECH KOREA EDI 10톤 unit",
+      "source_path": "D:\\기계도면\\기계도면\\21. 순수제조설비 (에스텍)\\JJ-M-VP-012-01_순수제조설비_기자재준공도서_R0(AS BUILT)\\원본\\016 운전 및 유지관리 지침서\\PDF\\08 O&M_STECH KOREA EDI 10톤 unit.pdf",
+      "rev": "0",
+      "chunk_hash": "af123e4eb2576e5f",
+      "char_count": 97
+    },
+    {
+      "chunk_idx": 3,
+      "text": ":컨트롤판넬 및 EDI장비의 정류기 패널 16\nSam Duck Sciences.Co.,Ltd. Page 3/28 1. 일반 설명:\n1.1 소개 이 전기 탈이온화 시스템(EDI)는 10m /hr의 용량을 생산하도록 설계 되었습니다.EDI는 원수를 정제 하기\n위해 “이온교환수지”뿐만 아니라 “전기”를 포함 화학적 프로세스가 연속적으로 발생 됩니다. EDI\n시스템은 병렬로 조립한스택으로 구성되어 있습니다. 스택은“플레이트 및 프레임” 유형 입니다.\n각 스택의 구성:\nC Chamber –농축수 실\nD Chamber –인입수 실\nE Chamber - 전극수 실\n기존의 이온교환수지와 유사하며, 챔버는 양이온 음이온 교환 막에 의해 분리되어 있습니다.\n스택 내부의 이온교환 수지는 물에서 유입되는 “양이온“ 및 음이온”을 제거 합니다.\n스택을 흐르는 전류는 이온 교환 수지의 연속 재생이 발생됩니다. 기존의 이온교환수지 장비에 의해\n요구되는 화학적 재생, 수지 교체가 필요 하지 않고 고품질의 물을 생산 할 수 있습니다.\n1.2 EDI 원리\n정제 할 수 있는 공급수를“Dilute inlet water”라고 합니다. Dilute water는 유입구를 통해“D Chamber”로\n흐를 것이며,이챔버는“양이온”과 “음이온”교환수지를 포함합니다. 이온교환수지는 Diluted- water 라는\n고품질의 순수를 생산하며, 불순물을 제거 합니다.\nFigure 1: Dilute-chamber\n모든 챔버에 인가된 DC 전류는 “양극”과 음극”으로 배치되며,양극은이온교환수지에서 음이온을\n끌어당기며, 음극은 이온교환수지에서 양이온을 끌어당깁니다.\n이온은 각각의 전극으로 수지를 통해 이동 합니다. 이온은 농축 챔버로 이온교환 수지를 통해 막 전위에\n의해 구동됩니다. 인가되는 전류는 수소이온(H+)과 연속하여 공급수에서 불순물을 제거 하며,\n이온교환수지를 재생합니다.\n수산이온(OH-)을 생성하기 위해 물 분해 반응을 구동합니다.\nSam Duck Sciences.Co.,Ltd. Page 4/28",
+      "header": "1. 일반 설명:",
+      "section_type": "일반",
+      "equipment": [
+        "순수제조설비"
+      ],
+      "company_id": "21",
+      "company_name": "순수제조설비",
+      "source_file": "08 O&M_STECH KOREA EDI 10톤 unit",
+      "source_path": "D:\\기계도면\\기계도면\\21. 순수제조설비 (에스텍)\\JJ-M-VP-012-01_순수제조설비_기자재준공도서_R0(AS BUILT)\\원본\\016 운전 및 유지관리 지침서\\PDF\\08 O&M_STECH KOREA EDI 10톤 unit.pdf",
+      "rev": "0",
+      "chunk_hash": "be794248395022f7",
+      "char_count": 995
+    },
+    {
+      "chunk_idx": 4,
+      "text": "를 재생합니다.\n수산이온(OH-)을 생성하기 위해 물 분해 반응을 구동합니다.\nSam Duck Sciences.Co.,Ltd. Page 4/28 Figure 2: Concentrate chamber\n스케일링은 “C챔버”에서 발생 합니다. 예) :“칼슘과 마그네슘 등의 이온은 C챔버를 지나 음이온 막으로\n이동합니다. 음이온 막에서는 양극을 향해 음이온 막을 통해 이동하는 높은 함량의 OH- 가 있습니다.\nOH-가 다량으로 발생하면, 음이온 막 표면의 pH를 증가 시킵니다.\n스케일링 방지를 위해, 특정의 이온 특히 경도의 농도는 제한 되어야 합니다. 이러한 이온을 제어하는\n것은 공급 수질, recovery등, EDI 시스템의 운전조건을 포함 합니다.\nNote: 공급수 서비스 요구 사항을 참조 하십시오.\n전극수실 (E Chamber); 전극 스트림의 목적은 물을 전기분해 하여 전극에서 발생하는 가스 (수소, 산소,\n염소)를 운반하여 배출하며, 냉각 작용을 합니다.\n전극 스트림은 Dilute 공급 스트림으로부터 공급된다.\nCAUTION:EDI공급수 제한은 이온교환막에 스케일링을 피하기 위해 주의 해야 한다.\nSam Duck Sciences.Co.,Ltd. Page 5/28 1.3 용어설명:\nDilute Water :공급수는스택의‘D-챔버’를 통해 들어오고 PRODUCT WATER 가 됩니다.\nConcentrate Bleed :EDI시스템에서 농축 흐름의 일부분은 “C챔버”로부터드레인으로 보내집니다.\nElectrolyte :EDI 시스템 Dilute inlet 일부에서 “E-챔버”는 각 스택의 끝을 통해 드레인으로 보내집니다.\nProduct :“D챔버”에서 나갈 탈 이온수.\nRectifier :전원 공급 장치는 스택 내 수지의 재생을 위한 일정한 DC전류/DC전압을 생성합니다.",
+      "header": "1. 일반 설명:",
+      "section_type": "운전",
+      "equipment": [
+        "순수제조설비"
+      ],
+      "company_id": "21",
+      "company_name": "순수제조설비",
+      "source_file": "08 O&M_STECH KOREA EDI 10톤 unit",
+      "source_path": "D:\\기계도면\\기계도면\\21. 순수제조설비 (에스텍)\\JJ-M-VP-012-01_순수제조설비_기자재준공도서_R0(AS BUILT)\\원본\\016 운전 및 유지관리 지침서\\PDF\\08 O&M_STECH KOREA EDI 10톤 unit.pdf",
+      "rev": "0",
+      "chunk_hash": "2d54d29b5e1b339a",
+      "char_count": 891
+    },
+    {
+      "chunk_idx": 5,
+      "text": "ct :“D챔버”에서 나갈 탈 이온수.\nRectifier :전원 공급 장치는 스택 내 수지의 재생을 위한 일정한 DC전류/DC전압을 생성합니다. 2. 장비사양\nPerformance:\n생산수 설계 유량: 10㎥/hr\n공급수 유량: 11.66㎥/h\n농축수 inlet 1.0㎥/hr\n농축수 bleed: 1.0㎥/hr\n전해수outlet: 0.16㎥/hr\n회수율: 86~95 %\n생산수설계비저항: >16MΩ-cm\n실리카 보증: <0.5 ppm\n설계 온도: 4.4-38℃\n장비의 차압(Feed-Product) 1.4 to 2.4 bar\nControl:\nPANEL:\n수량: 1 Set(s)\n제조업자: 시스템즈\n모델:\n특징: 자동운전/수동운전\n위치: EDI 제어 판넬에 장착\nC/W\n부속품은다음과같다 :\n- 표시등\n- 셀렉터 스위치\n- 푸쉬 버튼\n제어판넬 전면에 로컬알람경보\nSam Duck Sciences.Co.,Ltd. Page 6/28",
+      "header": "2. 장비사양",
+      "section_type": "운전",
+      "equipment": [
+        "순수제조설비"
+      ],
+      "company_id": "21",
+      "company_name": "순수제조설비",
+      "source_file": "08 O&M_STECH KOREA EDI 10톤 unit",
+      "source_path": "D:\\기계도면\\기계도면\\21. 순수제조설비 (에스텍)\\JJ-M-VP-012-01_순수제조설비_기자재준공도서_R0(AS BUILT)\\원본\\016 운전 및 유지관리 지침서\\PDF\\08 O&M_STECH KOREA EDI 10톤 unit.pdf",
+      "rev": "0",
+      "chunk_hash": "5ab97386b7ce6b27",
+      "char_count": 462
+    },
+    {
+      "chunk_idx": 6,
+      "text": "다 :\n- 표시등\n- 셀렉터 스위치\n- 푸쉬 버튼\n제어판넬 전면에 로컬알람경보\nSam Duck Sciences.Co.,Ltd. Page 6/28 Instrumentations:\nFl스위치& FI\n수량: 4 Set(s)\n제조업체: Kometer, 한국\n모델: PA-601-A\n범위: 70-700 L/hr2set(s)(농축수inlet)\n특징: C/W – FI 스위치\nPA-601 1set(s) (전극수 outlet)\n30-300L/hr\nPA-601 1set(s) (농축수 outlet)\n0.25-2.5 m3/hr\n위치: 필드(파이프)에 장착\nFLOW meter:\n수량: 1 Set\n제조사: +GF+ SIGNET USA\n모델: 99001CH\n특징: 4 to 20 mA output signals\n위치: EDI 제어패널에장착\n기능: EDI 생산수Flow volume\nand Temperature\n생산수 outlet의낮은 유량에 경보신호\npH meter:\n수량: 1 Set\n제조사: +GF+ SIGNET USA\n모델: 99001CH\n특징: 4 to 20 mA output signals\n위치: EDI 제어패널에장착\n기능: EDI 생산수pH\nand Temperature\n생산수 outlet의낮거나 높은값에 경보신호\nResistivity meter:\n수량: 1 Set\n제조사: +GF+ SIGNET USA\n모델: 99001CH\n특징: 4 to 20 mA output signals\n위치: EDI 제어패널에장착\n기능: EDI 생산수Resistivity\nand Temperature\n생산수 outlet의낮은 비저항값에 경보신호\nSam Duck Sciences.Co.,Ltd. Page 7/28",
+      "header": "2. 장비사양",
+      "section_type": "경보",
+      "equipment": [
+        "순수제조설비"
+      ],
+      "company_id": "21",
+      "company_name": "순수제조설비",
+      "source_file": "08 O&M_STECH KOREA EDI 10톤 unit",
+      "source_path": "D:\\기계도면\\기계도면\\21. 순수제조설비 (에스텍)\\JJ-M-VP-012-01_순수제조설비_기자재준공도서_R0(AS BUILT)\\원본\\016 운전 및 유지관리 지침서\\PDF\\08 O&M_STECH KOREA EDI 10톤 unit.pdf",
+      "rev": "0",
+      "chunk_hash": "a3683df9f546dff0",
+      "char_count": 826
+    },
+    {
+      "chunk_idx": 7,
+      "text": "ty\nand Temperature\n생산수 outlet의낮은 비저항값에 경보신호\nSam Duck Sciences.Co.,Ltd. Page 7/28 압력계:\n수량: 5 Set(s)\n제조사: WISE, KOREA\n위치: 필드(파이프)에 장착\n기능: (1 Set) EDI공급수 inlet 압력0-10 bar\n(1 Set) EDI 농축수 inlet압력0-6 bar\n(1 Set) EDI 생산수outlet 압력 0-10 bar\n(1 Set) EDI 농축수 outlet 압력 0-6 bar\n(1 Set) EDI 전극수 outlet 압력 0-6 bar\n압력스위치:\n수량: 1 Set(s)\n제조사: WISE, KOREA\n(1)인입구: (1 Set))EDI 공급수 inlet 압력 0-10bar\n딜레이없음.\nEDI 알람:\n수량: 4 Set(s)\n(1 Set) 높은 입구 압력: 알람 및 경적, 종료 설정점: ＞6bar ,딜레이없음\n(1 Set) 1 Set) EDI 생산수의 낮은 비저항값 :알람 센서는 EDI장치의 생산수 라인에 장착되어 있습니다.\n비저항설정값은 (일반적으로 10㏁-cm) 5분이지나면 설정값 보다 작게 줄여야 할 필요가 있습니다.\n(2 Set) EDI 농축수입구낮은유량 : 스위치는 EDI 장치의 농축수 입구에 장착되어 있습니다. 설정 흐름은\n(일반적으로 4LPM) 4LPM미만이면 알람 경보 및 스택 DC전원의 공급을 종료합니다.\nNote :모든 경보 라이트 표시는 컨트롤판넬에 있습니다.\nControl Cabinet:\n외장: 방수처리\n재료: STS 304.\n위치: EDI skid 에 장착\nMaterials of Construction:\nFeed(공급수)배관 및 밸브 재료: CPVC, SEKISUI JAPAN\nProduct(생산수) 배관 및 밸브 재료: CPVC, SEKISUI JAPAN\nConcentrate(농축수) 배관 및 밸브 재료: CPVC, SEKISUI JAPAN\nElectrode(전극수) outlet: CPVC, SEKISUI JAPAN\nSam Duck Sciences.Co.,Ltd. Page 8/28",
+      "header": "2. 장비사양",
+      "section_type": "경보",
+      "equipment": [
+        "밸브"
+      ],
+      "company_id": "21",
+      "company_name": "순수제조설비",
+      "source_file": "08 O&M_STECH KOREA EDI 10톤 unit",
+      "source_path": "D:\\기계도면\\기계도면\\21. 순수제조설비 (에스텍)\\JJ-M-VP-012-01_순수제조설비_기자재준공도서_R0(AS BUILT)\\원본\\016 운전 및 유지관리 지침서\\PDF\\08 O&M_STECH KOREA EDI 10톤 unit.pdf",
+      "rev": "0",
+      "chunk_hash": "9591bb718ec01c14",
+      "char_count": 1021
+    },
+    {
+      "chunk_idx": 8,
+      "text": "Electrode(전극수) outlet: CPVC, SEKISUI JAPAN\nSam Duck Sciences.Co.,Ltd. Page 8/28 Frame material:\nSTS 304 각파이프\nStack:\n수량: 2 Set(s)\n제조업체: E-Cell corporations (GE)\n모델: E-Cell-3X Stack 설계유량: 5.0 m /h per stack 최대작동온도: 38 C\n최대사용압력 6.9 bar\n스택 당 필요한 최대사용전류: 5.2 Amps\n스택하우징: 알루미늄\nStack lining: 폴리에스터 파우더\nStack 양극/금극: 이리듐\n옥사이드-티타늄옥사옥사이드/스테인리스스틸\nMain Components:\nEDI 스택\n제조업체: E-Cell Corporations\n수량: 2스택(s)\n모델: E-Cell-3X Stack\n스택 평균 유량: 5.0m3/h\n정류기\n수량: 2 set(s)\n적용 암페어: 최대 5.2Amps\n요구 전압: 400 VDC\n스택 당 필요한 암페어: 평균 2.0-2.5\n전원 공급 장치: 220V, 1∅, 50/60Hz\nInternal Operating Pressure:\n최대 feed(공급) 압력: 6.0 bar\nEDI 시스템의공칭압력손실: 2.0 bar\nSam Duck Sciences.Co.,Ltd. Page 9/28",
+      "header": "2. 장비사양",
+      "section_type": "일반",
+      "equipment": [
+        "순수제조설비"
+      ],
+      "company_id": "21",
+      "company_name": "순수제조설비",
+      "source_file": "08 O&M_STECH KOREA EDI 10톤 unit",
+      "source_path": "D:\\기계도면\\기계도면\\21. 순수제조설비 (에스텍)\\JJ-M-VP-012-01_순수제조설비_기자재준공도서_R0(AS BUILT)\\원본\\016 운전 및 유지관리 지침서\\PDF\\08 O&M_STECH KOREA EDI 10톤 unit.pdf",
+      "rev": "0",
+      "chunk_hash": "8aa6c058a1d5444c",
+      "char_count": 651
+    },
+    {
+      "chunk_idx": 9,
+      "text": "eed(공급) 압력: 6.0 bar\nEDI 시스템의공칭압력손실: 2.0 bar\nSam Duck Sciences.Co.,Ltd. Page 9/28 Figure 3: P&ID of EDI unit\nValves:\nFeed inletvalveBV-001\n수량: 1 set(s)\n제조업체: SEKISUI, JAPAN\n타입: CPVC, 볼밸브\n직경: 50A\n사용압력: 1.0Mpa\nCIP inlet valve BV-006\n수량: 1 set(s)\n제조업체: CPVC, SEKISUI JAPAN\n타입: CPVC, 볼밸브\n직경: 40A\n사용압력: 1.0Mpa\nProduct outlet valve BFV-001\n수량: 1 set(s)\n제조업체: KITS, JAPAN\n타입: SUS316, 버터플라이밸브\n직경: 50A\n사용압력: 1.0Mpa\nSam Duck Sciences.Co.,Ltd. Page 10/28",
+      "header": "2. 장비사양",
+      "section_type": "일반",
+      "equipment": [
+        "밸브"
+      ],
+      "company_id": "21",
+      "company_name": "순수제조설비",
+      "source_file": "08 O&M_STECH KOREA EDI 10톤 unit",
+      "source_path": "D:\\기계도면\\기계도면\\21. 순수제조설비 (에스텍)\\JJ-M-VP-012-01_순수제조설비_기자재준공도서_R0(AS BUILT)\\원본\\016 운전 및 유지관리 지침서\\PDF\\08 O&M_STECH KOREA EDI 10톤 unit.pdf",
+      "rev": "0",
+      "chunk_hash": "59b52fa7f38836d7",
+      "char_count": 442
+    },
+    {
+      "chunk_idx": 10,
+      "text": "N\n타입: SUS316, 버터플라이밸브\n직경: 50A\n사용압력: 1.0Mpa\nSam Duck Sciences.Co.,Ltd. Page 10/28 CIP outlet valve BV-005\n수량: 1 set(s)\n제조업체: KITS, JAPAN\n타입: SUS316, 버터플라이밸브\n직경: 40A\n사용압력: 1.0 Mpa\nElectrode outlet valve DV-004\n수량: 1 set(s)\n제조업체: SEKISUI, JAPAN\n타입: CPVC, 다이아프람밸브\n직경: 15A\n사용압력: 1.0Mpa\nInstallation and Utility Requirements:\nFeed(공급) inlet: CPVC 50AFF FLANGE\nCIP inlet: CPVC 40AFF FLANGE\nProduct(생산수) outlet: CPVC 50AFF FLANGE\nCIP outlet: CPVC 40AFF FLANGE\nConcentrate (농축수)outlet CPVC 15A\nConcentrate CIP outlet: CPVC 15A\nElectrode(전극수) outlet CPVC 15A FF FLANGE\nElectrode CIP outlet: CPVC 15A\n전원공급창치: 3∅4W, 380VAC, 60Hz\n제어회로: 1∅, 220VAC, 60Hz\n스키드 사이즈: 1,460(W) x 1,850(H) x 1,400(D)\n무게: 1,000Kg\nWARNING:이 EDI 시스템이 정지하는 것이 허락되어서는 안됩니다. R/O 멤브레인을 포함한 다양한 구성요소에\n복구 할 수 없는 손해가 납니다. EDI장비는 실내에서의 동작만을 위해 설계 되어 있으며, 습환한경에서 작동하는\n경우에는 사용자/운영자의 결로에 의해 발생되는 것을 인식해야 합니다.\nSam Duck Sciences.Co.,Ltd. Page 11/28",
+      "header": "2. 장비사양",
+      "section_type": "정지",
+      "equipment": [
+        "밸브"
+      ],
+      "company_id": "21",
+      "company_name": "순수제조설비",
+      "source_file": "08 O&M_STECH KOREA EDI 10톤 unit",
+      "source_path": "D:\\기계도면\\기계도면\\21. 순수제조설비 (에스텍)\\JJ-M-VP-012-01_순수제조설비_기자재준공도서_R0(AS BUILT)\\원본\\016 운전 및 유지관리 지침서\\PDF\\08 O&M_STECH KOREA EDI 10톤 unit.pdf",
+      "rev": "0",
+      "chunk_hash": "499f2779c28f143c",
+      "char_count": 895
+    },
+    {
+      "chunk_idx": 11,
+      "text": "동하는\n경우에는 사용자/운영자의 결로에 의해 발생되는 것을 인식해야 합니다.\nSam Duck Sciences.Co.,Ltd. Page 11/28 3. 서비스에 대한 요구사항\n고객은 EDI 생산수 수질을 보장하기위해, 다음과 같은 EDI 급수 사양을 동등 or 초과 해야 합니다:\nConstituent Units Feed\nTEA ppmasCaCO * *AscalculatedbyE-Calc\n\nHardness ppmCaCO <1.0**\n\nSilica(reactive) ppm <1.0@MinimumtoNominalproductflow\nSilica(reactive) ppm <0.766@Maximumproductflow\nTOC ppm <0.5\nTotalchlorine ppm <0.05\nFe,Mn,H S ppm <0.01\n\nSDI15min. <1.0\nOil&Grease Nonedetectable\nTurbidity NTU <1.0\nOxidizingagents Nonedetectable\nColour APHA <5\nTEA–E-Cell-3X ppmasCaCO\n\n* <25@22gpm/5.0m3/h(Nominalflow)\n<49@10gpm/2.3m3/h(Minimumflow)\n<15@28gpm/6.4m3/h(Maximumflow)",
+      "header": "3. 서비스에 대한 요구사항",
+      "section_type": "일반",
+      "equipment": [
+        "순수제조설비"
+      ],
+      "company_id": "21",
+      "company_name": "순수제조설비",
+      "source_file": "08 O&M_STECH KOREA EDI 10톤 unit",
+      "source_path": "D:\\기계도면\\기계도면\\21. 순수제조설비 (에스텍)\\JJ-M-VP-012-01_순수제조설비_기자재준공도서_R0(AS BUILT)\\원본\\016 운전 및 유지관리 지침서\\PDF\\08 O&M_STECH KOREA EDI 10톤 unit.pdf",
+      "rev": "0",
+      "chunk_hash": "23e34db3ba87ec0d",
+      "char_count": 627
+    },
+    {
+      "chunk_idx": 12,
+      "text": "0m3/h(Nominalflow)\n<49@10gpm/2.3m3/h(Minimumflow)\n<15@28gpm/6.4m3/h(Maximumflow) 4. 설치\n4.1 Receiving and uncrating:\n일반적으로, 모든 skid 장비는 천 또는 판 으로 덮여 트럭으로 전달 됩니다.\nNote: 장비가 무거울시, 적절한 리프팅 장치를 사용합니다\n4.1.1상자의 내부가 손상되지 않도록 주의깊게 각 상자를 엽니다.\n4.1.2물건을 실수로 떨어뜨렸을시, 대비 신중하게 모든 포장재료를 검사 합니다.\n4.1.3 컨테이너 내부 재료에 손상이 있을 경우 운반손상 증거가 보고되어야 합니다.\nNote: 스택이 설치 될 때까지 포장재는 유지되어야 한다.\n4.1.4모든 볼트를 풀지 마십시오. 스택을 받거나 시스스템에서 설치 될 때, 볼트를 점검해야 할 경우\n모든 볼트가 느슨하면, 30-35피트 파운드(40-43nm) 토크로 체결되어야 합니다.\nWARNING:EDI 시스템의 전기적 특성으로 인해, 클리닝 동안 물이 튀거나 물을 뿌려서는 안됩니다.\nSam Duck Sciences.Co.,Ltd. Page 12/28\n\n4.2 장비의 위치:\n4.2.1 기반은 EDI 시스템의 운전 중량을 지원하도록 설계되어야 합니다. 배송 무게는 이규격의 제\n2항에 기재되어 있습니다.\n4.2.2 기반은 내화성 이어야 합니다.\n4.2.3 EDI 시스템은 평평하고 고르게 스키드에 설치해야 합니다. 제조 업체는 EDI 시스템이 고정 및\n/ 또는 지진 및 진동 요구 지역에 따라 구체적인 경로에 그라우팅 할 것을 권장합니다.\n4.2.4 필요한 전기와 물 공급이 용이한 EDI장비의 위치를 선택합니다.\n4.2.5 스택 교환을 위한 충분한 드레인의 간격이 제공되어야 합니다.\n4.2.6 EDI 시스템은 실내에서 사용하고 직사광선으로부터 피해 사용 할 것을 권장 합니다.\n4.3 설치:\n4.3.1 기반에 EDI장비를 두고 4.2 절에서 설명했듯이 적절한 앵커 볼트로 고정합니다.\n4.3.2 배송을 위해 제거했던 밸브 및 배",
+      "header": "4. 설치",
+      "section_type": "점검",
+      "equipment": [
+        "밸브"
+      ],
+      "company_id": "21",
+      "company_name": "순수제조설비",
+      "source_file": "08 O&M_STECH KOREA EDI 10톤 unit",
+      "source_path": "D:\\기계도면\\기계도면\\21. 순수제조설비 (에스텍)\\JJ-M-VP-012-01_순수제조설비_기자재준공도서_R0(AS BUILT)\\원본\\016 운전 및 유지관리 지침서\\PDF\\08 O&M_STECH KOREA EDI 10톤 unit.pdf",
+      "rev": "0",
+      "chunk_hash": "9e6fe00ab074e9e9",
+      "char_count": 1000
+    },
+    {
+      "chunk_idx": 13,
+      "text": "다.\n4.3.2 배송을 위해 제거했던 밸브 및 배관을 설치 합니다.\n4.3.3 EDI 시스템 급수 배관을 세척(일반적으로 EDI 공급수인입부분) 5. 시작 및 작동\nIMPORTANT:`접지 케이블, 장비 스키드 베이스에 용접 접지 볼트를 연결합니다(다른 사람에\n의해 제공)\n5.1 최초시작:\nWARNING:EDI 장비 또는 전원캐비닛을 열거나 제어, 작업 전에 정류기 전원 잠금.\n5.1.1 각종 컨넥터를 연결:\nA. EDI 입구(CPVC 50A FF FLANGE)에 급수를 연결합니다.\nNote:급수 압력이 6바를 초과하는 경우 압력 조정 밸브는 기존의 EDI시스텝에 설치\nB.EDI 생산수 배출구 연결 (다른 사람에 의해 제공)생산수 물 저장탱크 또는\n다운스트림장비(CPVC 50AFF FLANGE) 을 연결 합니다.\nC.배수구에농축수 배출구 (CPVC 15AFF FLANGE)를 연결 합니다.\nD.배수구에전극수 배출구 (CPVC 15AFF FLANGE)를 연결 합니다.\nSam Duck Sciences.Co.,Ltd. Page 13/28",
+      "header": "5. 시작 및 작동",
+      "section_type": "일반",
+      "equipment": [
+        "탱크",
+        "밸브"
+      ],
+      "company_id": "21",
+      "company_name": "순수제조설비",
+      "source_file": "08 O&M_STECH KOREA EDI 10톤 unit",
+      "source_path": "D:\\기계도면\\기계도면\\21. 순수제조설비 (에스텍)\\JJ-M-VP-012-01_순수제조설비_기자재준공도서_R0(AS BUILT)\\원본\\016 운전 및 유지관리 지침서\\PDF\\08 O&M_STECH KOREA EDI 10톤 unit.pdf",
+      "rev": "0",
+      "chunk_hash": "36c55fe7187b7d92",
+      "char_count": 527
+    },
+    {
+      "chunk_idx": 14,
+      "text": "D.배수구에전극수 배출구 (CPVC 15AFF FLANGE)를 연결 합니다.\nSam Duck Sciences.Co.,Ltd. Page 13/28 5.1.2 모든 볼트 및 나서 연결을 검사하고, EDI 셀 장비에 나사와 모든 것이 적절히 조여있는지 확인\n합니다.\n5.1.3 정류기에 단상 AC전원을 연결합니다. EDI시스템이 갖추어져 있으면 단상 전원을 공급해야\n합니다. 자세한 내용은 첨부 된 다이어그램을 참조하십시오.\n5.1.4 EDI DCS(WT)시스템 자동 스타트 업에서 “원격 실행 신호”(다른 사람에 의해 공급)를 연결\n합니다. EDI시스템은 시작/DCS제어에서 신호에 따라 자동으로 정지됩니다.\n알람이 종료 한 후, 경보 상태에 이전 오픈스위치(이상 경보 상태를) 다시 종료해야 합니다.\n다시 시작합니다\nNote: 자세한 내용은 전기 도표를 참조하십시오.\n비저항 측정기를 구성해야 할 수 있습니다. 자세한 내용은 저항 측정기의 작동 설명서를\n참조 하십시오. 프로브 셀 상수는 (일반적으로 공장에서 수행) 비저항 측정기에 입력해야\n합니다.\n5.1.5 세트 포인트에서 모든 유량 스위치를 배치합니다.\n5.1.6 EDI 자동 기능 중에 “S.SW”의 정상위치는 “AUTO”\n5.1.7 스택(힘으로) 재생이 필요한 경우가 있습니다.\n재생성 하기 위해 EDI 시스템은 시동 및 정상으로 동작하지만, 생산수의 품질이 요구\n비저항에 도달 할 때까지 생산수 물은 드레인으로 전환해야 합니다.\n재생시 생산 수질은 약1M.Ω-cm 미만에서 16M.Ω-cm으로 올라갑니다.\nFigure 4: EDI-장비 Layout\nSam Duck Sciences.Co.,Ltd. Page 14/28",
+      "header": "5. 시작 및 작동",
+      "section_type": "시동",
+      "equipment": [
+        "순수제조설비"
+      ],
+      "company_id": "21",
+      "company_name": "순수제조설비",
+      "source_file": "08 O&M_STECH KOREA EDI 10톤 unit",
+      "source_path": "D:\\기계도면\\기계도면\\21. 순수제조설비 (에스텍)\\JJ-M-VP-012-01_순수제조설비_기자재준공도서_R0(AS BUILT)\\원본\\016 운전 및 유지관리 지침서\\PDF\\08 O&M_STECH KOREA EDI 10톤 unit.pdf",
+      "rev": "0",
+      "chunk_hash": "cd18723880dbc6c0",
+      "char_count": 825
+    },
+    {
+      "chunk_idx": 15,
+      "text": "16M.Ω-cm으로 올라갑니다.\nFigure 4: EDI-장비 Layout\nSam Duck Sciences.Co.,Ltd. Page 14/28 5.2 시작: EDI시스템을 시작하기 전에 준비가 되면 반드시 다음을 수행합니다.\n적절한 품질, 용량 및 압력에서 사용 가능한 급수, 모든 밸브가 닫혀있는지(제 3장을 참조하십시오)\nEDI의 셀렉타 스위치 E-1, E-2는 “STOP” 위치에 있다.\nFigure 5: 제어판넬및 EDI 장치의정류기패널\n5.2.1. EDI 공급 품질의 물을 사용하여유입수유량을 조정합니다.\n다음과 같이, 스택의유입수 inlet밸브 및 모든 수동밸브를 확인, 생산수Outlet\n밸브,농축수Inlet밸브, 그리고농축수outlet 밸브를 엽니다.\na. 생산수 밸브를 엽니다(다이아프람 밸브)\nb. 농축수블리드 밸브를 엽니다–- 10-20% open\nc. 전극수 배출구 밸브를 엽니다–- 10-20% open\nd. 농축수 inlet 밸브를 엽니다. 농축수입구압력은생산수 압력보다 적어도 0.35바 낮은\nSam Duck Sciences.Co.,Ltd. Page 15/28 압력으로 조정됩니다.\ne. 유입수 inlet 밸브를 엽니다.Inlet 수동 입구 밸브 조정은 초기에 가깝습니다. E-CELL\n스택에 (4bar미만) 낮은 공급 압력 유량을 조정하고 유지하기 위해 천천히 엽니다.\n이것은 농축수 루프 및 델루트 루프를 채울수 있도록 느리게 여는 것 입니다.",
+      "header": "5. 시작 및 작동",
+      "section_type": "일반",
+      "equipment": [
+        "밸브"
+      ],
+      "company_id": "21",
+      "company_name": "순수제조설비",
+      "source_file": "08 O&M_STECH KOREA EDI 10톤 unit",
+      "source_path": "D:\\기계도면\\기계도면\\21. 순수제조설비 (에스텍)\\JJ-M-VP-012-01_순수제조설비_기자재준공도서_R0(AS BUILT)\\원본\\016 운전 및 유지관리 지침서\\PDF\\08 O&M_STECH KOREA EDI 10톤 unit.pdf",
+      "rev": "0",
+      "chunk_hash": "5ea96648617eca9d",
+      "char_count": 713
+    },
+    {
+      "chunk_idx": 16,
+      "text": "만) 낮은 공급 압력 유량을 조정하고 유지하기 위해 천천히 엽니다.\n이것은 농축수 루프 및 델루트 루프를 채울수 있도록 느리게 여는 것 입니다. f. 수동 inlet 조절 밸브는 10 m /h의 생산수 용량을 얻을 수 있습니다.\n5.2.2. 농축수, 전극수, 유입수 유량을 설정\na.생산수 밸브 오픈.개방 된 Feedinlet밸브, 이것은 필요한 생산수의 유량을 설정 하는\n것이다.\nb.Important : 농축수 입구 압력이 생산수 배출 압력보다 0.35bar 이하가 될 때 까지\n농축수유입구 압력을 조정합니다. (2 줄의 초기 설정은 이 요구사항을 충족 할 수 있습니다)\nc.생산수 유량의 약 10% 를 달성 하기 위해 농축수블리드 밸브를 조정 합니다.\nd.(160) LPH 또는 정격 유량 80 LPH/ 스택당 , 을 달성하기 위해 전극수 출구 밸브를 조정\n합니다.\ne.생산수out과농축수 inlet 사이의 압력차이가 적어도 0.35bar 없는경우농축수 압력을 다시\n읽어 보십시오.\nf.필요한 회수율을 달성하기 위해 농축수 유입 밸브를 설정한다. 회수율은 아래 식에 의해\n계산된다.\nRecovery = Product flow rate x 100%\n(Dilute+ConcentrateBleed+Electrode outlet)\nNote: 회수율은 공급 경도의 수준에 의해 결정된다\n농축 블리드 0.5m3/h으로 설정 보통 EDI 전처리 설비로 재순환 되도록 합니다.\n일반적으로 RO 공급수 보다 더 높은 품질의 물이며, 이것은 전체 EDI 의 시스템 회수율을\n향상 시킵니다.\n5.2.3.모든 유량과 압력을 확인\na.전극수 (160)LPH는 스택 당 80LPH 입니다\nb.생산수 유량은 시간 당10 m3/h 입니다.\nc.농축수블리드 유량은 90% 회수율 1.0m3/h 으로 설정된다.\nd.생산수 배출구의 압력은 농축수인입 압력보다 최소 0.35바 높아야 한다.\n5.2.4. 정류기 전원 power on\na.확인하십시오. EDI (정류기)의 전환 스위치 E-1, E-2 는 “STOP” 위치에 있습니다.\nb. 전원스위치를 올리고 개별로 DC정류기 전원 공급 장치의 전원을 켭니다.\nSam Duck Sciences.Co.,Ltd. Page 16/28",
+      "header": "5. 시작 및 작동",
+      "section_type": "일반",
+      "equipment": [
+        "밸브"
+      ],
+      "company_id": "21",
+      "company_name": "순수제조설비",
+      "source_file": "08 O&M_STECH KOREA EDI 10톤 unit",
+      "source_path": "D:\\기계도면\\기계도면\\21. 순수제조설비 (에스텍)\\JJ-M-VP-012-01_순수제조설비_기자재준공도서_R0(AS BUILT)\\원본\\016 운전 및 유지관리 지침서\\PDF\\08 O&M_STECH KOREA EDI 10톤 unit.pdf",
+      "rev": "0",
+      "chunk_hash": "2816c4fb995e8a63",
+      "char_count": 1089
+    },
+    {
+      "chunk_idx": 17,
+      "text": "b. 전원스위치를 올리고 개별로 DC정류기 전원 공급 장치의 전원을 켭니다.\nSam Duck Sciences.Co.,Ltd. Page 16/28 c.0%로 각 정류기의 현재 노브를 설정하고 디지털 디스플레이 (0암페어)에 손잡이를 시계\n반대 방향으로 돌립니다.\nd.각 정류기의 전압을 설정 디지털 판독에 최대 400볼트 DC에 도달하기 위해 전압\n손잡이를 시계 방향으로 돌립니다.\nCAUTION정류기는 첫 번째 시스템에서 수동모드에서 시작됩니다.\n수동모드에서 작동, 이것은 정류기의 동작을 확인하기 위한 유일한 임시 배치\n입니다.\n정류기는 스택에 유량이 없이 작동하는경우스택은 회복 할 수 없는 손상을\n입게 됩니다. (Heat)\n정류기 동작이 확인되면, 시스템은 종료하고 자동 모드에서 다시 시작해야\n합니다.PLC 시스템은 모니터링하고 필요한 경우 시스템을 종료합니다.\nWARNING생산수 배출구 연결이 아직도 생산수 탱크 드레인에 직접 연결되어 있는지 확인\n합니다.\nCAUTION만약 농축수가 “D-챔버”에 유입되면, 생산수의 수질은 즉시 영향을 받습니다.\nP\nu 생산수의 품질을 보장하기 위해 딜루트스트림은 항상 농축 스트림 보다 더\nt 높은 압력에서 작동되어야 합니다..\n컨트롤판넬에 “MANUAL”위치로 EDI(정류기) 3단셀렉타스위치 선택, 한 DC전원\n정류기의 각 스택 마다, E-1 , E-2 스위치가 있습니다.\nd.E-CELL STACK 전류는 2.0A 또는 2.5A로 설정해야 합니다.\nNote: 이 구성에서의 정류기는 전류가 제한되도록, 현재 정류기는 노브로 조정됩니다.\n만약 전류의 흐름이 없는 경우, 정류기와 전원을 끄고, EDI시스템을 종료합니다. 모든 스택의\n전원케이블이 연결되어있으며, 모든 퓨즈가 잘 되어 있는지 확인하십시오. 문제가 해결되지\n않으면 전기 회로도를 확인합니다.\ne.EDI 시스템은 흐름에 대해, 압력, 전류, 제품의 품질 을 확인하여, “자동”모드에서 작동할\n준비가 되어있다.\nf.작동시Start-up 데이터 시트에 기록.\n(Refer to section 12)\nNote: Start-up 데이터 시트 (11절) 뿐만 아니라 매일 로그 시트(section12 & 13)를 업데이트\n유지해야 합니다. 보증 문제가 발생하면, 로그시트를 공급업체에서 필요로 합니다.\ng. 3단셀렉타 스위치를 E-1, E-2 “자동”위치로 전환 합니다\n5.2.5자동기능\nDI 장비 자동운전이 준비되어 있다는 것은 EDI 제품 탱크의 저 수위를 의미하고, 외부\n입력신호(업체에 의한 공급)시에 시작됩니다. 이것은 EDI 원수 저장 탱크 내의 충분한\n수위를 가정하고 있습니다. “AUTO” 위치에 모든 셀렉터 스위치를 넣어주세요. EDI\nSam Duck Sciences.Co.,Ltd. Page 17/28",
+      "header": "5. 시작 및 작동",
+      "section_type": "시동",
+      "equipment": [
+        "탱크"
+      ],
+      "company_id": "21",
+      "company_name": "순수제조설비",
+      "source_file": "08 O&M_STECH KOREA EDI 10톤 unit",
+      "source_path": "D:\\기계도면\\기계도면\\21. 순수제조설비 (에스텍)\\JJ-M-VP-012-01_순수제조설비_기자재준공도서_R0(AS BUILT)\\원본\\016 운전 및 유지관리 지침서\\PDF\\08 O&M_STECH KOREA EDI 10톤 unit.pdf",
+      "rev": "0",
+      "chunk_hash": "2ee60c55793ad530",
+      "char_count": 1356
+    },
+    {
+      "chunk_idx": 18,
+      "text": "하고 있습니다. “AUTO” 위치에 모든 셀렉터 스위치를 넣어주세요. EDI\nSam Duck Sciences.Co.,Ltd. Page 17/28 자동기능은 생산수 저장탱크 레벨에 의해 주도되고 있습니다.\n5.3운영:\nNote:E-CELL STACK은 수지가 재생 된 형태로 제공되지만 물이 전류 없이 통과 할 때, 시작 활동을 하는 동안\n어느 정도 소진 될 수 있습니다. STACK의 완전한 재생과 요구되는 품질의 물을 생성 할 때까지 약간의\n시간이 걸릴 수 있습니다. (일반적 으로는몆분 정도 소요)\n5.3.1제품 물이 비저항 세트포인트에 도달; 예를 들어 16㏁-CM, 재생이 완료됩니다. 그\n시점에서 제품의 저장탱크로, 생산수 라인의 재 연결을 복원 할 수 있습니다.\n농축 스트림은 항상 높은 제품의 수질을 유지하기 위해 생산수스트림보다 낮은 압력에서\n작동합니다.\nNote: 농축수 입구 압력은 생산수 출구 압력보다 최소 0.35bar 이상 낮아야 합니다.\n농축수 입구 다이아프람 또는 제어 밸브는 입구 압력차를 제어합니다. 컨트롤\n밸브로 입구 압력을 제어하고 이를 통해 농축입구와 생산수 출구 압력차를\n제어합니다.농축블리드 밸브는 생산수출구와농축수 입구 사이의 압력을\n제어하지만 유량을 설정하기 위해도 사용됩니다. 밸브를 닫으면 농축블리드의\n압력을 감소시켜, 농축블리드와생산수 사이의 압력 차를 증가시킵니다.E-CELL\n급수 압력은 최대 6 bar 입니다.\n5.3.2일일 로그 시트(12 &13절 참조):\n일반적인 작동 조건 및 특별한 유지 보수(필요한경우cleaning)을 포함 일일 로그\n시트를 유지해야 합니다. 그것은 정확한 작동 데이터를 유지하는 것이 중요합니다.\n이는 시스템의 성능을 추적하고 가능한 빨리 모든 문제를 식별하기 위해\n사용되어야 합니다. 보증 문제가 발생시, 공급 업체에서 필요.\nSam Duck Sciences.Co.,Ltd. Page 18/28",
+      "header": "5. 시작 및 작동",
+      "section_type": "점검",
+      "equipment": [
+        "탱크",
+        "밸브"
+      ],
+      "company_id": "21",
+      "company_name": "순수제조설비",
+      "source_file": "08 O&M_STECH KOREA EDI 10톤 unit",
+      "source_path": "D:\\기계도면\\기계도면\\21. 순수제조설비 (에스텍)\\JJ-M-VP-012-01_순수제조설비_기자재준공도서_R0(AS BUILT)\\원본\\016 운전 및 유지관리 지침서\\PDF\\08 O&M_STECH KOREA EDI 10톤 unit.pdf",
+      "rev": "0",
+      "chunk_hash": "b3f846d6a12fa6c3",
+      "char_count": 939
+    },
+    {
+      "chunk_idx": 19,
+      "text": "식별하기 위해\n사용되어야 합니다. 보증 문제가 발생시, 공급 업체에서 필요.\nSam Duck Sciences.Co.,Ltd. Page 18/28",
+      "header": "6. CLEANING IN PLACE SYSTEM (CIP):",
+      "section_type": "일반",
+      "equipment": [
+        "순수제조설비"
+      ],
+      "company_id": "21",
+      "company_name": "순수제조설비",
+      "source_file": "08 O&M_STECH KOREA EDI 10톤 unit",
+      "source_path": "D:\\기계도면\\기계도면\\21. 순수제조설비 (에스텍)\\JJ-M-VP-012-01_순수제조설비_기자재준공도서_R0(AS BUILT)\\원본\\016 운전 및 유지관리 지침서\\PDF\\08 O&M_STECH KOREA EDI 10톤 unit.pdf",
+      "rev": "0",
+      "chunk_hash": "792c17114d7e9791",
+      "char_count": 80
+    },
+    {
+      "chunk_idx": 20,
+      "text": "식별하기 위해\n사용되어야 합니다. 보증 문제가 발생시, 공급 업체에서 필요.\nSam Duck Sciences.Co.,Ltd. Page 18/28 6. CLEANING IN PLACE SYSTEM (CIP):\n세척과 소독의 네 가지 기본 유형이 있습니다. 낮은pH, 높은 pH, 저농도의 산화소독/ 세척; 열소독.\n염화나트륨은 다른 화학 세척의 일부를 보조하는데 사용됩니다.\n낮은 pH, 높은 pH와 낮은 농도의 산화 살균/세척의 설명은 이 섹션에 배치됩니다.\n각각의 세척 및 살균 절차를 인입, 농축수, 전극 루프를 각각 기록합니다. 각 루프의 세척이나 살균은\n개별적으로 수행 할 수 있습니다. 개별 루프 절차는 총 세정 시간을 최소화하기 위해 동시에 수행 될 수\n있습니다. 이 때문에, 전극 루프는 낮은 세정 유량으로 대부분의 경우 농축 또는 인입 루프 세척중에\n용이하게 이루어 집니다.\nCAUTION :EDI 시스템운전 시 정류기를 만지지 마십시오. 인간의 건강에 유해한 높은 전압을 포함하고 있습니다.\nWARNING :생산수 출구 밸브 연결, CIP 시 누수 되는 곳이 있는지 확인. 각 챔버는동시에 세척 합니다.\nAll-Stream(Dilute,Concentrate+Electrode)CleaningandSanitization\nSteps\nFlowrangeforallAll-Streamcleaningstepsis2.5to5.7m3/h(10.8to25.1gpm.)\nSeesection“SettingUptheCIPandE-CellSystemsforCleaning”aboveonrampingupcleaningflo\nwandavoidingwater hammer, andsection “Safety” tosafely perform cleanings.\n· Step1.SodiumchlorideNaCl2%,280L(74gal).Circulatefor10minutes.\n· Step2.\na) LowpH:HydrochloricAcidHCl1.8%,351L(93gal).Circulatefor30minutes.OR\nb) HighpH:SodiumChlorideNaCl2%+SodiumHydroxideNaOH1%,385L(102gal).Circula\ntefor30minutes.",
+      "header": "6. CLEANING IN PLACE SYSTEM (CIP):",
+      "section_type": "운전",
+      "equipment": [
+        "밸브"
+      ],
+      "company_id": "21",
+      "company_name": "순수제조설비",
+      "source_file": "08 O&M_STECH KOREA EDI 10톤 unit",
+      "source_path": "D:\\기계도면\\기계도면\\21. 순수제조설비 (에스텍)\\JJ-M-VP-012-01_순수제조설비_기자재준공도서_R0(AS BUILT)\\원본\\016 운전 및 유지관리 지침서\\PDF\\08 O&M_STECH KOREA EDI 10톤 unit.pdf",
+      "rev": "0",
+      "chunk_hash": "bf45fc2439f50aab",
+      "char_count": 1098
+    },
+    {
+      "chunk_idx": 21,
+      "text": ":SodiumChlorideNaCl2%+SodiumHydroxideNaOH1%,385L(102gal).Circula\ntefor30minutes. OR\nc) Oxidant:PeraceticAcidCH COOOH0.04%+HydrogenPeroxideH O 0.2%,54L(14\n3 2 2\ngal).Circulatefor120minutes.\ni. FollowtheinstructionstomakesolutionforROsanitizationfromcommercialco\nncentrates(seeCleaningChemicalSpecificationsabove.)Generally,concent\nrateisdiluted1:100inwater.\n· Step3(followingsteps2aor2bonly;notrequiredafterstep2c.)Sodiumchlori\ndeNaCl2%,280L(74gal).Circulatefor10minutes.\n· Step4.WaterRinse\ni. DrainchemicalcleaningsolutionfromCIPtank,E-Cellskidandinterconnectingpiping.\nPassROqualitywaterthroughallstreamsuntiloutletresistivityis>0.02MOhm-cm(conductivity<50u\nS/cm)orequaltofeedwater.Thiswillrequireatleast100L(27gal)ifflowedonce-through,\normayrequireseveralrinsesifcirculatedfromtheCIPtank.",
+      "header": "OR",
+      "section_type": "청소",
+      "equipment": [
+        "순수제조설비"
+      ],
+      "company_id": "21",
+      "company_name": "순수제조설비",
+      "source_file": "08 O&M_STECH KOREA EDI 10톤 unit",
+      "source_path": "D:\\기계도면\\기계도면\\21. 순수제조설비 (에스텍)\\JJ-M-VP-012-01_순수제조설비_기자재준공도서_R0(AS BUILT)\\원본\\016 운전 및 유지관리 지침서\\PDF\\08 O&M_STECH KOREA EDI 10톤 unit.pdf",
+      "rev": "0",
+      "chunk_hash": "d1660545166f67d4",
+      "char_count": 790
+    },
+    {
+      "chunk_idx": 22,
+      "text": "27gal)ifflowedonce-through,\normayrequireseveralrinsesifcirculatedfromtheCIPtank. 7. EDI 보관\nSam Duck Sciences.Co.,Ltd. Page 19/28\n\nEDI 스택은 직사광선을 피하고 실내에 보관 하십시오.\nEDI 스택은 동결 되지 않아야 하고, 온도가 100°F (38°C)를 초과하지 않도록 저장하여야 합니다.\n스택 수지재료의 막은 탈수시키게 해서는 안됩니다. 3일 이내 저장된 경우 이를 보장하기 위해 스택은 물이\n가득한 상태를 유지해야 합니다.\n스택을 저장하는 경우는 뒷면 노즐이 위쪽으로 가르키고 있어야 합니다.\n먼지방지 캡은 공급수 및 농축수 라인에 설치해야 합니다.\n플러그는 전극수 라인에 설치해야 합니다. 이것은 스택을 설치하기 전에 제거 할 수 없습니다.\n스택은 서늘하고 건조한 어두운 환경에서 1년간 물 없이, 젖은 스택을 보관 할수 있습니다.",
+      "header": "7. EDI 보관",
+      "section_type": "일반",
+      "equipment": [
+        "순수제조설비"
+      ],
+      "company_id": "21",
+      "company_name": "순수제조설비",
+      "source_file": "08 O&M_STECH KOREA EDI 10톤 unit",
+      "source_path": "D:\\기계도면\\기계도면\\21. 순수제조설비 (에스텍)\\JJ-M-VP-012-01_순수제조설비_기자재준공도서_R0(AS BUILT)\\원본\\016 운전 및 유지관리 지침서\\PDF\\08 O&M_STECH KOREA EDI 10톤 unit.pdf",
+      "rev": "0",
+      "chunk_hash": "79952d1bd1222e66",
+      "char_count": 471
+    },
+    {
+      "chunk_idx": 23,
+      "text": "이것은 스택을 설치하기 전에 제거 할 수 없습니다.\n스택은 서늘하고 건조한 어두운 환경에서 1년간 물 없이, 젖은 스택을 보관 할수 있습니다. 8. 절차의 종료\nNote:시스템을종료 하기 전에, 일일로그시트가 완료 되었음을 확인. 그렇지 않을경우, 전체 로그시트를 확인.\n8.1 수동운전종료\n8.1.1 EDI 셀렉터 스위치의 위치를 “STOP”에 놓습니다.\n8.2 자동 운전 종료\nEDI 장비의 자동 종료는 다음의 경우에 발생 할 수 있습니다;\n8.2.1 정상 작동:\nEDI생산수 저장탱크에 설치된 (타인공급) 레벨 스위치 등의 외부 신호에 따라 달라집니다.\n8.2.2 알람 상황\nNote: 다양한 알람 설정. 포인트 섹션2 EDI 경보를 참조 하십시오\n8.2.3 정류기 실패\n시스템이 잠시 종료하는 것이고, 배관 구성은 시스템이 배출하는 것을 허용하는 경우는\n밸브의 일부가 닫혀 있지 않으면 안됩니다.\nSam Duck Sciences.Co.,Ltd. Page 20/28",
+      "header": "8. 절차의 종료",
+      "section_type": "운전",
+      "equipment": [
+        "탱크",
+        "밸브"
+      ],
+      "company_id": "21",
+      "company_name": "순수제조설비",
+      "source_file": "08 O&M_STECH KOREA EDI 10톤 unit",
+      "source_path": "D:\\기계도면\\기계도면\\21. 순수제조설비 (에스텍)\\JJ-M-VP-012-01_순수제조설비_기자재준공도서_R0(AS BUILT)\\원본\\016 운전 및 유지관리 지침서\\PDF\\08 O&M_STECH KOREA EDI 10톤 unit.pdf",
+      "rev": "0",
+      "chunk_hash": "34a7f8ca8a454c26",
+      "char_count": 487
+    },
+    {
+      "chunk_idx": 24,
+      "text": "이 배출하는 것을 허용하는 경우는\n밸브의 일부가 닫혀 있지 않으면 안됩니다.\nSam Duck Sciences.Co.,Ltd. Page 20/28 8.3 장기 종료\nEDI 시스템은 3일 이상 종료 된 경우에는, 생물 성장의 발달을 방지하기 위해 장기 종료\n및 저장을 위해 준비되어야 한다. 그 시점에서, 아래 단계를 확인 할 필요가 있습니다.\n8.3.1 물이 스택에 정체 되 있지 않도록 배출, 모든 밸브를 닫고 젖은 스택을 유지 합니다.\n다음에 나열된 밸브를 닫습니다:\n1.유입수 밸브\n2.생산수 배출 밸브\n3.농축수 배출 밸브\n4.전극수 배출 밸브\n8.3.2 장기 보관 종료후, 스택 재생을 필요로 할수 있습니다. 재생은 약 8-16시간이 필요합니다.\nWARNING :스택의 전기는 장기적인 종료 준비의 모든 단계동안 꺼야 합니다.\n9.유지보수\nEDI 시스템의 운영 및 유지 보수는 상대적으로 간단하지만 일반적인 데이터 레코딩 및 일상적인 예방\n정비가 필요합니다. 고객은 기기의 작동에 관련 사실을 포함하는 일일데이터 시트를 작성해야 합니다.\n운영 변화가 심할 경우 삼덕여과산업에 일일로그 시트의 중요성을 강조 할 수 없습니다. 이 기록은 장비\n또는 보증 문제의 성능을 진단하는데 매우 중요하고, 참조를 위해 보관 해야합니다.\n9.1예방 유지 보수:\na.압력게이지\n필요에 따라 검사하고, 12개월마다 보정 합니다.\nb.장비 센서\n센서를 체크 해야 합니다. 3개월마다 교정하고 모니터링 합니다\nc.유량 스위치(로타 미터 용)\n매 6개월 마다 검사 하고, 조정해야 합니다.\nd.EDI장비\n주당 적절한 회수율을 최소 한번 확인합니다. 정기적으로 급수 품질을 확인(급수의 질에 대해 제\n3장 참조). 모든 유량과 압력을 모니터링 합니다.\n정기적으로 누수가 있는지 확인 합니다.\n스택 볼트를 확인. 스택( 측면 판과 엔드 플레이트 사이의 녹색/황색선)에 접지 와이어를 확인,\nSam Duck Sciences.Co.,Ltd. Page 21/28",
+      "header": "8. 절차의 종료",
+      "section_type": "점검",
+      "equipment": [
+        "밸브"
+      ],
+      "company_id": "21",
+      "company_name": "순수제조설비",
+      "source_file": "08 O&M_STECH KOREA EDI 10톤 unit",
+      "source_path": "D:\\기계도면\\기계도면\\21. 순수제조설비 (에스텍)\\JJ-M-VP-012-01_순수제조설비_기자재준공도서_R0(AS BUILT)\\원본\\016 운전 및 유지관리 지침서\\PDF\\08 O&M_STECH KOREA EDI 10톤 unit.pdf",
+      "rev": "0",
+      "chunk_hash": "bf9d7859ee48631f",
+      "char_count": 971
+    },
+    {
+      "chunk_idx": 25,
+      "text": "스택( 측면 판과 엔드 플레이트 사이의 녹색/황색선)에 접지 와이어를 확인,\nSam Duck Sciences.Co.,Ltd. Page 21/28 볼트는 단단히 조여 확인 합니다. 분기 한 번 연결을 확인 합니다.\n9.2일일 유지 보수:\n일반적인 작동 조건을 포함하는 일일 로그 시트를 보관 해야 합니다. 시트의 사본은 템플릿( 제\n12&13)에서 할 수 있습니다.\n9.3정기 유지 보수:\n전해질 용액의 교체\n전기분해 특성상 +,- 이온의 원활한 보충을 위해, 전해질 용액을 주기적으로 확인 및 교체 해야 한다.\n- 교체 용액 (개미산, 전해질용액 각 1병) : 교체주기 3~4개월\n- 수시 확인사항 : 용액이 역류하여 흘러 넘치거나 또는 반대로 소진된 경우 교체한다.\nSam Duck Sciences.Co.,Ltd. Page 22/28 10.문제해결:\nSAFETY: 1. 고압 물질 분사를 피하기 위해 모든 공정 라인의 압력을 감소.",
+      "header": "8. 절차의 종료",
+      "section_type": "점검",
+      "equipment": [
+        "순수제조설비"
+      ],
+      "company_id": "21",
+      "company_name": "순수제조설비",
+      "source_file": "08 O&M_STECH KOREA EDI 10톤 unit",
+      "source_path": "D:\\기계도면\\기계도면\\21. 순수제조설비 (에스텍)\\JJ-M-VP-012-01_순수제조설비_기자재준공도서_R0(AS BUILT)\\원본\\016 운전 및 유지관리 지침서\\PDF\\08 O&M_STECH KOREA EDI 10톤 unit.pdf",
+      "rev": "0",
+      "chunk_hash": "66649dfac0f6ee07",
+      "char_count": 466
+    },
+    {
+      "chunk_idx": 26,
+      "text": "ences.Co.,Ltd. Page 22/28 10.문제해결:\nSAFETY: 1. 고압 물질 분사를 피하기 위해 모든 공정 라인의 압력을 감소. 2. EDI 시스템은 높은 전압에서 동작 합니다. 유지관리, 시작하기 전에 정류기 전원이 OFF로 되어있으면, 적절하게\ntagged 및/또는 locked out확보.\n문제해결가이드라인(Page 1 of 2)\n증상 가능한원인 해결책\n스택 높은 압력 강하 스택 오염 Foulant를 확인 합니다. 적절한 세척 절차를\n따르십시오.\n유량이 높음 운영 지침을 확인하고 유량 조정 필요\n스택 낮은 압력 강하 유량이 낮음 운영 지침을 확인하고 유량 조정 필요\n낮은 생산수 유량(낮은 스택 오염 Foulant를 확인 합니다. 적절한 세척 절차를\n공급수 유량) 따르십시오.\n밸브 닫힘 필요한 모든 밸브가 열려있는지 확인\n유량 스위치 스위치가 제대로 작동하는지 설정을 확인\n낮은 급수 압력 확인후 원인 해결\n잘못 설정된 유량 유량 설정 밸브를 조정\n품질이 낮은 생산수 원수의 수질 공급수를 확인합니다. CO2 가 제품 수질저하의\n흔한 원인 입니다.\n부적절한 전기 배선 DI 가동 시스템 배선을 즉시 확인\n하나이상의 낮은 전류의 모든 퓨즈, 배선,접지, 정류기 출력을 확인 합니다.\n스택 정류기 터미널을 확인.\n농축수 inlet 압력보다 생산수outlet 압력이 0.34-0.68bar 농축수inlet\n낮은 생산수outlet 압력 압력보다 높게 다시 설정\n스택미설치 스택이 설치되어 있지 않은 경우 레진만\n들어있습니다. 낮은 품질의 물이 생산수의\n레진에서침출 됩니다.\n죽은 레진을플러싱 합니다.\n온도 보정 온도보정확인, 저항 미터를 포함.\nSam Duck Sciences.Co.,Ltd. Page 23/28",
+      "header": "2. EDI 시스템은 높은 전압에서 동작 합니다. 유지관리, 시작하기 전에 정류기 전원이 OFF로 되어있으면, 적절하게",
+      "section_type": "일반",
+      "equipment": [
+        "밸브"
+      ],
+      "company_id": "21",
+      "company_name": "순수제조설비",
+      "source_file": "08 O&M_STECH KOREA EDI 10톤 unit",
+      "source_path": "D:\\기계도면\\기계도면\\21. 순수제조설비 (에스텍)\\JJ-M-VP-012-01_순수제조설비_기자재준공도서_R0(AS BUILT)\\원본\\016 운전 및 유지관리 지침서\\PDF\\08 O&M_STECH KOREA EDI 10톤 unit.pdf",
+      "rev": "0",
+      "chunk_hash": "3a45dfbf327179d3",
+      "char_count": 857
+    },
+    {
+      "chunk_idx": 27,
+      "text": "다.\n죽은 레진을플러싱 합니다.\n온도 보정 온도보정확인, 저항 미터를 포함.\nSam Duck Sciences.Co.,Ltd. Page 23/28 10a. 문제 해결 가이드 라인(Page 2 of 2)\nTrouble Shooting Guide Line:\nSymptom Possible Cause Remedies\n낮은 농축수 유량 스택 오염 Foulant를 확인하고 적절한 세척\n절차를 따르십시오\n유량 스위치 유량 스위치와 배선의 위치를 확인\n낮은 전극수 유량 유량 스위치 유량 스위치와 배선의 위치를 확인\n스택 오염 Foulant를 확인하고 적절한 세척\n절차를 따르십시오\n밸브 전극수 출구 밸브의 설정\n낮은 농축수블리드의 유량 유량 스위치 유량 스위치와 배선의 위치를 확인\n밸브 농축 블리드 출구 밸브의 설정을 확인\n정류기의 일시적 트립 정류기 내부의 높은 온도 공기 순환 팬이 작동되지 않으면\n정류기의 불량이 생길 수 있습니다.\n/팬 스크린필터 교체\n시스템이 자동모드로 정류기가 자동으로 동작하지 않음 셀렉타 스위치 E-1, E-2 를 자동으로\n시작하지 않습니다(정류기 선택 합니다\n미동작)\n정류기 전원이 들어와있지 않습니다 정류기스위치 ON을 확인합니다. 이\n기능에 있어 차단을 확인하기 위해\n손으로 정류기를 시작하십시오.\n낮은 전극수 유량 전극수 밸브가 제대로 설정되어있지\n않고, 올바르게 설정되지않은 유량\n스위치 및 배선 문제가 있을수\n있습니다.\n낮은 농축수 유량 농축수 밸브가 제대로 설정되어있지\n않고, 올바르게 설정되지 않은 유량\n스위치 및 배선 문제가 있을 수\n있습니다\n*이 문제 해결 가이드는 시스템에서 발생 할 수 있는 일반적인 작업에서 문제를 파악하는데 도움이 될 수\n있습니다. 이러한 문제의 대부분은 쉽게 조작에 의해 수정 될 수 있으니, 공장에 문의하십시오.\nSam Duck Sciences.Co.,Ltd. Page 24/28",
+      "header": "2. EDI 시스템은 높은 전압에서 동작 합니다. 유지관리, 시작하기 전에 정류기 전원이 OFF로 되어있으면, 적절하게",
+      "section_type": "비상",
+      "equipment": [
+        "팬",
+        "필터",
+        "밸브"
+      ],
+      "company_id": "21",
+      "company_name": "순수제조설비",
+      "source_file": "08 O&M_STECH KOREA EDI 10톤 unit",
+      "source_path": "D:\\기계도면\\기계도면\\21. 순수제조설비 (에스텍)\\JJ-M-VP-012-01_순수제조설비_기자재준공도서_R0(AS BUILT)\\원본\\016 운전 및 유지관리 지침서\\PDF\\08 O&M_STECH KOREA EDI 10톤 unit.pdf",
+      "rev": "0",
+      "chunk_hash": "d1e2a9ffa02e3d42",
+      "char_count": 921
+    },
+    {
+      "chunk_idx": 28,
+      "text": "문제의 대부분은 쉽게 조작에 의해 수정 될 수 있으니, 공장에 문의하십시오.\nSam Duck Sciences.Co.,Ltd. Page 24/28 11. Start up data sheet for Electro-Deionization machine (EDI)\nStart up data sheet for Electro-Deionization machine (EDI)\nCustomer\nStart up date:\nEDI model No\nEDI serial No\nQty/model of Stack\nFeed water source (Conductivity)\nFeed water Temperature\nInitial After 60 After 2 After 1\nData Parameters Units Remarks\nstart up minute hours Day\nRectifier voltage/stack Avg Volts\nSystem current/stackAvg Amps\nDilute Feed pressure Bar\nConcentrate Inlet pressure Bar\nDilute Product pressure Bar\nConcentrate Outlet\nBar\npressure\nElectrode Outlet pressure Bar\nDilute Product flow m 3 /h\nConcentrate Outlet flow m 3 /h\nElectrode Outlet flow m 3 /h\nProduct Resistivity MΩ-cm\nConcentrate Outlet oC\nTemperature\nDilute Product Outlet oC\nTemperature\nNote: 1. 새로운 또는 다른 언급 된 문제 해결 설명서를 참조 합니다.",
+      "header": "11. Start up data sheet for Electro-Deionization machine (EDI)",
+      "section_type": "시동",
+      "equipment": [
+        "순수제조설비"
+      ],
+      "company_id": "21",
+      "company_name": "순수제조설비",
+      "source_file": "08 O&M_STECH KOREA EDI 10톤 unit",
+      "source_path": "D:\\기계도면\\기계도면\\21. 순수제조설비 (에스텍)\\JJ-M-VP-012-01_순수제조설비_기자재준공도서_R0(AS BUILT)\\원본\\016 운전 및 유지관리 지침서\\PDF\\08 O&M_STECH KOREA EDI 10톤 unit.pdf",
+      "rev": "0",
+      "chunk_hash": "de4ce922f89390fb",
+      "char_count": 853
+    },
+    {
+      "chunk_idx": 29,
+      "text": "Dilute Product Outlet oC\nTemperature\nNote: 1. 새로운 또는 다른 언급 된 문제 해결 설명서를 참조 합니다. 2. 이것은 템플릿 입니다: 복사는 필요에 따라 실시합니다.\nSam Duck Sciences.Co.,Ltd. Page 25/28\n\n12.DAILY LOG SHEET\nDaily log sheet Electro-Deionization machine (EDI)\nStart up data sheet for Electro-Deionization machine (EDI unit #1)\nCustomer\nStart up date:\nEDI model No\nEDI serial No\nQty/model of Stack\nFeed water source (Conductivity)\nFeed water Temperature\nStack #1\nInitial start\nData Parameters Units\nup\nStack #2\nRectifier voltage/stack Avg Volts\nSystem current/stack Avg Amps\nDilute Feed Pressure Bar\nDilute Product Pressure Bar\nConcentrate InletPressure Bar\nConcentrate Bleed Pressure Bar\nElectrode BleedPressure Bar\nDilute Product Flow m 3 /h\nConcentrate Bleed Flow m 3 /h\nElectrode BleedFlow LPM\nProduct Resistivity MΩ-cm\nProduct Outlet Temperature oC\nNote:1. 새로운 또는 다른 언급 된 문제 해결 설명서를 참조 합니다.",
+      "header": "2. 이것은 템플릿 입니다: 복사는 필요에 따라 실시합니다.",
+      "section_type": "시동",
+      "equipment": [
+        "순수제조설비"
+      ],
+      "company_id": "21",
+      "company_name": "순수제조설비",
+      "source_file": "08 O&M_STECH KOREA EDI 10톤 unit",
+      "source_path": "D:\\기계도면\\기계도면\\21. 순수제조설비 (에스텍)\\JJ-M-VP-012-01_순수제조설비_기자재준공도서_R0(AS BUILT)\\원본\\016 운전 및 유지관리 지침서\\PDF\\08 O&M_STECH KOREA EDI 10톤 unit.pdf",
+      "rev": "0",
+      "chunk_hash": "8ac51fb88f882169",
+      "char_count": 857
+    },
+    {
+      "chunk_idx": 30,
+      "text": "ty MΩ-cm\nProduct Outlet Temperature oC\nNote:1. 새로운 또는 다른 언급 된 문제 해결 설명서를 참조 합니다. 2. 이것은 템플릿 입니다: 복사는 필요에 따라 실시합니다.\nSam Duck Sciences.Co.,Ltd. Page 26/28",
+      "header": "2. 이것은 템플릿 입니다: 복사는 필요에 따라 실시합니다.",
+      "section_type": "일반",
+      "equipment": [
+        "순수제조설비"
+      ],
+      "company_id": "21",
+      "company_name": "순수제조설비",
+      "source_file": "08 O&M_STECH KOREA EDI 10톤 unit",
+      "source_path": "D:\\기계도면\\기계도면\\21. 순수제조설비 (에스텍)\\JJ-M-VP-012-01_순수제조설비_기자재준공도서_R0(AS BUILT)\\원본\\016 운전 및 유지관리 지침서\\PDF\\08 O&M_STECH KOREA EDI 10톤 unit.pdf",
+      "rev": "0",
+      "chunk_hash": "23888d5bef86f798",
+      "char_count": 152
+    },
+    {
+      "chunk_idx": 31,
+      "text": "13. E CELL DATA SHEET_DETAILED\nDATE/TIME:\nFeed Water Data: Set 1 Set 2 COMMENTS:\n1-14 pH FEED pH\nmg/ltr/ppm FEED HARDNESS(mg/l as CaCO3)\nmg/ltr/ppm FEED CO2\nmS/cm FEED CONDUCTIVITY\nug/ltr/ppb FEED SILICA\nmS/cm CONCENTRATE LOOP COND.\nCSCyOsNtDemCO PNrDeUsCsTuIrVeIsT:Y Set 1 Set 2\npsi DILUTE IN( feed to EDI )\npsi DILUTE OUT ( product out )\npsi DILUTE DELTA P\npsi ELECTRODE-BLEED\npsi PUMP DISCHARGE\npsi CONCENTRATE IN\npsi CONCENTRATE BLEED\npsi CONCENTRATE DELTA P\nSystem Flows: Set 1 Set 2\ngpm/m³/hr DILUTE FEED FLOW PRODUCT FLOW + TOTAL",
+      "header": "13. E CELL DATA SHEET_DETAILED",
+      "section_type": "일반",
+      "equipment": [
+        "펌프"
+      ],
+      "company_id": "21",
+      "company_name": "순수제조설비",
+      "source_file": "08 O&M_STECH KOREA EDI 10톤 unit",
+      "source_path": "D:\\기계도면\\기계도면\\21. 순수제조설비 (에스텍)\\JJ-M-VP-012-01_순수제조설비_기자재준공도서_R0(AS BUILT)\\원본\\016 운전 및 유지관리 지침서\\PDF\\08 O&M_STECH KOREA EDI 10톤 unit.pdf",
+      "rev": "0",
+      "chunk_hash": "0e9b9315446afd34",
+      "char_count": 536
+    },
+    {
+      "chunk_idx": 32,
+      "text": "ELTA P\nSystem Flows: Set 1 Set 2\ngpm/m³/hr DILUTE FEED FLOW PRODUCT FLOW + TOTAL BLEED FLOW\ngpm/m³/hr CONCENTRATE INLET FLOW\ngpm/m³/hr DILUTE OUTLET FLOW\ngpm/m³/hr CONCENTRATE BLEED\ngpm/m³/hr ELECTRODE BLEED\ngpm/m³/hr TOTAL BLEED FLOW CONCENTRATE BLEED +",
+      "header": "BLEED FLOW",
+      "section_type": "일반",
+      "equipment": [
+        "순수제조설비"
+      ],
+      "company_id": "21",
+      "company_name": "순수제조설비",
+      "source_file": "08 O&M_STECH KOREA EDI 10톤 unit",
+      "source_path": "D:\\기계도면\\기계도면\\21. 순수제조설비 (에스텍)\\JJ-M-VP-012-01_순수제조설비_기자재준공도서_R0(AS BUILT)\\원본\\016 운전 및 유지관리 지침서\\PDF\\08 O&M_STECH KOREA EDI 10톤 unit.pdf",
+      "rev": "0",
+      "chunk_hash": "5bf29f6a3747d9ed",
+      "char_count": 254
+    },
+    {
+      "chunk_idx": 33,
+      "text": "E BLEED\ngpm/m³/hr ELECTRODE BLEED\ngpm/m³/hr TOTAL BLEED FLOW CONCENTRATE BLEED + ELECTRODE BLEED\nSystem % RECOVERY SYSTEM PRODUCT FLOW ¸ FEED",
+      "header": "ELECTRODE BLEED",
+      "section_type": "일반",
+      "equipment": [
+        "순수제조설비"
+      ],
+      "company_id": "21",
+      "company_name": "순수제조설비",
+      "source_file": "08 O&M_STECH KOREA EDI 10톤 unit",
+      "source_path": "D:\\기계도면\\기계도면\\21. 순수제조설비 (에스텍)\\JJ-M-VP-012-01_순수제조설비_기자재준공도서_R0(AS BUILT)\\원본\\016 운전 및 유지관리 지침서\\PDF\\08 O&M_STECH KOREA EDI 10톤 unit.pdf",
+      "rev": "0",
+      "chunk_hash": "89564cd6534224b9",
+      "char_count": 141
+    },
+    {
+      "chunk_idx": 34,
+      "text": "FLOW\nSystem Power: Set 1 Set 2\nVOLTS / PER STACK Avg",
+      "header": "FLOW",
+      "section_type": "일반",
+      "equipment": [
+        "순수제조설비"
+      ],
+      "company_id": "21",
+      "company_name": "순수제조설비",
+      "source_file": "08 O&M_STECH KOREA EDI 10톤 unit",
+      "source_path": "D:\\기계도면\\기계도면\\21. 순수제조설비 (에스텍)\\JJ-M-VP-012-01_순수제조설비_기자재준공도서_R0(AS BUILT)\\원본\\016 운전 및 유지관리 지침서\\PDF\\08 O&M_STECH KOREA EDI 10톤 unit.pdf",
+      "rev": "0",
+      "chunk_hash": "2a7e7d38e70f7330",
+      "char_count": 52
+    },
+    {
+      "chunk_idx": 35,
+      "text": "AMPS TOTAL\nSTACK # 1 AMP DRAW / VOLTS Nominal 1.0-2.0amp/stack\nSTACK # 2 AMP DRAW / VOLTS\nConductivities/Resistivities: Set 1 Set 2\nμS/cm CONCENTRATE INLET\nDeg/C˚ CONCENTRATE INLET\nμS/cm DILUTE INLET (FEED)\nDeg/C˚ DILUTE INLET (FEED)\nMOhm-cm DILUTE OUTLET (PRODUCT)\nDeg/C˚ DILUTE OUTLET (PRODUCT)\nProduct Water Analysis: Set 1 Set 2\nug/ltr/ppb DILUTE PRODUCT SILICA\nDILUTE PRODUCT pH",
+      "header": "AMPS TOTAL",
+      "section_type": "일반",
+      "equipment": [
+        "순수제조설비"
+      ],
+      "company_id": "21",
+      "company_name": "순수제조설비",
+      "source_file": "08 O&M_STECH KOREA EDI 10톤 unit",
+      "source_path": "D:\\기계도면\\기계도면\\21. 순수제조설비 (에스텍)\\JJ-M-VP-012-01_순수제조설비_기자재준공도서_R0(AS BUILT)\\원본\\016 운전 및 유지관리 지침서\\PDF\\08 O&M_STECH KOREA EDI 10톤 unit.pdf",
+      "rev": "0",
+      "chunk_hash": "9e392484c4cabe9c",
+      "char_count": 383
+    },
+    {
+      "chunk_idx": 36,
+      "text": "t Water Analysis: Set 1 Set 2\nug/ltr/ppb DILUTE PRODUCT SILICA\nDILUTE PRODUCT pH DILUTE PRODUCT TOC\nSam Duck Sciences.Co.,Ltd. Page 27/28\n\nE-Cell Information: SET 1 SET 2 COMMENTS:\nNUMBER OF CELLS IN SYSTEM",
+      "header": "DILUTE PRODUCT TOC",
+      "section_type": "일반",
+      "equipment": [
+        "순수제조설비"
+      ],
+      "company_id": "21",
+      "company_name": "순수제조설비",
+      "source_file": "08 O&M_STECH KOREA EDI 10톤 unit",
+      "source_path": "D:\\기계도면\\기계도면\\21. 순수제조설비 (에스텍)\\JJ-M-VP-012-01_순수제조설비_기자재준공도서_R0(AS BUILT)\\원본\\016 운전 및 유지관리 지침서\\PDF\\08 O&M_STECH KOREA EDI 10톤 unit.pdf",
+      "rev": "0",
+      "chunk_hash": "92eacb8b56e15eb9",
+      "char_count": 206
+    },
+    {
+      "chunk_idx": 37,
+      "text": "Page 27/28\n\nE-Cell Information: SET 1 SET 2 COMMENTS:\nNUMBER OF CELLS IN SYSTEM SERIAL NUMBERS\nAdditional Information: SET 1 SET 2 COMMENTS:\nSYSTEM ABNORMALITIES OR\nWARNING LAMPS:\nCOMMENTS:\nSYSTEM ALARMS:\nCOMMENTS:\nOPERATOR NAME: SIGNATURE/DATE\nNote: 1. Reference the Troubleshooting Guide where trends or differences are noted.",
+      "header": "SERIAL NUMBERS",
+      "section_type": "비상",
+      "equipment": [
+        "순수제조설비"
+      ],
+      "company_id": "21",
+      "company_name": "순수제조설비",
+      "source_file": "08 O&M_STECH KOREA EDI 10톤 unit",
+      "source_path": "D:\\기계도면\\기계도면\\21. 순수제조설비 (에스텍)\\JJ-M-VP-012-01_순수제조설비_기자재준공도서_R0(AS BUILT)\\원본\\016 운전 및 유지관리 지침서\\PDF\\08 O&M_STECH KOREA EDI 10톤 unit.pdf",
+      "rev": "0",
+      "chunk_hash": "19168b88bfe97b38",
+      "char_count": 328
+    },
+    {
+      "chunk_idx": 38,
+      "text": "e: 1. Reference the Troubleshooting Guide where trends or differences are noted. 1. This is a template: make copies as necessary.\nSam Duck Sciences.Co.,Ltd. Page 28/28",
+      "header": "1. This is a template: make copies as necessary.",
+      "section_type": "일반",
+      "equipment": [
+        "순수제조설비"
+      ],
+      "company_id": "21",
+      "company_name": "순수제조설비",
+      "source_file": "08 O&M_STECH KOREA EDI 10톤 unit",
+      "source_path": "D:\\기계도면\\기계도면\\21. 순수제조설비 (에스텍)\\JJ-M-VP-012-01_순수제조설비_기자재준공도서_R0(AS BUILT)\\원본\\016 운전 및 유지관리 지침서\\PDF\\08 O&M_STECH KOREA EDI 10톤 unit.pdf",
+      "rev": "0",
+      "chunk_hash": "97283539f2842913",
+      "char_count": 167
+    }
+  ]
+}

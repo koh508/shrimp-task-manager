@@ -1,0 +1,68 @@
+{
+  "meta": {
+    "tag": "H0-0401",
+    "file": "10. 시험 및 검사계획서_R0.pdf",
+    "company_id": "30",
+    "source_path": "D:\\기계도면\\기계도면\\30. 저압증기복수기 (DTS)\\감리 승인용 7차 문서 (201908) As built\\10. 시험 및 검사 절차서 & 계획서\\ATTACHMENT\\10. 시험 및 검사계획서_R0.pdf",
+    "extracted_at": "2026-03-27T22:31:20"
+  },
+  "tag": "H0-0401",
+  "records": [
+    {
+      "tag": "H0-0401",
+      "section": "MOTOR",
+      "position": null,
+      "parameter": "insulation_class",
+      "value": "Resistance",
+      "unit": "",
+      "match_type": "exact",
+      "source": {
+        "file": "10. 시험 및 검사계획서_R0.pdf",
+        "company": "30",
+        "page": 11
+      }
+    },
+    {
+      "tag": "H0-0401",
+      "section": "MOTOR",
+      "position": null,
+      "parameter": "insulation_class",
+      "value": "check",
+      "unit": "",
+      "match_type": "exact",
+      "source": {
+        "file": "10. 시험 및 검사계획서_R0.pdf",
+        "company": "30",
+        "page": 19
+      }
+    },
+    {
+      "tag": "H0-0401",
+      "section": "MOTOR",
+      "position": null,
+      "parameter": "insulation_class",
+      "value": "RESISTANCE",
+      "unit": "",
+      "match_type": "exact",
+      "source": {
+        "file": "10. 시험 및 검사계획서_R0.pdf",
+        "company": "30",
+        "page": 51
+      }
+    },
+    {
+      "tag": "H0-0401",
+      "section": "MOTOR",
+      "position": null,
+      "parameter": "insulation_class",
+      "value": "resistance",
+      "unit": "",
+      "match_type": "exact",
+      "source": {
+        "file": "10. 시험 및 검사계획서_R0.pdf",
+        "company": "30",
+        "page": 56
+      }
+    }
+  ]
+}

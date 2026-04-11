@@ -77,6 +77,43 @@ def _atomic_json_write(filepath: str, data: dict | list):
         raise last_exc  # type: ignore[misc]
 
 
+def _atomic_text_write(filepath: str, content: str):
+    """텍스트/마크다운 파일을 .tmp → os.replace로 원자적 전체 교체."""
+    lock = _get_file_lock(filepath)
+    with lock:
+        tmp = filepath + ".tmp"
+        try:
+            with open(tmp, "w", encoding="utf-8") as f:
+                f.write(content)
+        except Exception:
+            try:
+                os.remove(tmp)
+            except OSError:
+                pass
+            raise
+
+        last_exc = None
+        for attempt in range(_RETRY_MAX + 1):
+            try:
+                os.replace(tmp, filepath)
+                return
+            except OSError as e:
+                if getattr(e, "winerror", None) == _WINERROR_5 and attempt < _RETRY_MAX:
+                    last_exc = e
+                    time.sleep(_RETRY_BASE * (2 ** attempt))
+                else:
+                    try:
+                        os.remove(tmp)
+                    except OSError:
+                        pass
+                    raise
+        try:
+            os.remove(tmp)
+        except OSError:
+            pass
+        raise last_exc  # type: ignore[misc]
+
+
 def _atomic_md_append(filepath: str, content: str):
     """마크다운 파일에 내용을 안전하게 추가 (Lock + WinError 5 재시도)."""
     lock = _get_file_lock(filepath)

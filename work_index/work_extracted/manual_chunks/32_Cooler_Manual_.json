@@ -1,0 +1,993 @@
+{
+  "meta": {
+    "source_path": "D:\\기계도면\\기계도면\\32. 증기터빈 (정석)\\제주 VP\\전기\\19. Operation Manual\\Cooler Manual..pdf",
+    "company_id": "32",
+    "company_name": "증기터빈",
+    "equipment": "열교환기",
+    "doc_type": "MANUAL",
+    "rev": null,
+    "is_latest": true,
+    "extracted_at": "2026-03-27T20:28:57",
+    "chunk_count": 61,
+    "vision_pages": 0
+  },
+  "chunks": [
+    {
+      "chunk_idx": 0,
+      "text": "OPERATION AND MAINTENANCE MANUAL\nAir to Water Heat Exchanger Symbols used:",
+      "header": "",
+      "section_type": "점검",
+      "equipment": [
+        "열교환기"
+      ],
+      "company_id": "32",
+      "company_name": "증기터빈",
+      "source_file": "Cooler Manual.",
+      "source_path": "D:\\기계도면\\기계도면\\32. 증기터빈 (정석)\\제주 VP\\전기\\19. Operation Manual\\Cooler Manual..pdf",
+      "rev": null,
+      "chunk_hash": "a95afce82f903eeb",
+      "char_count": 74
+    },
+    {
+      "chunk_idx": 1,
+      "text": "OPERATION AND MAINTENANCE MANUAL\nAir to Water Heat Exchanger Symbols used: This symbol indicates a danger ignoring which causes serious\ndamage to the equipment\n~~~~\nThis symbol denoted situation with possibility of personal\ninjury\n(cid:1)(cid:1)(cid:1)(cid:1)\nThis symbol indicates when EXTREME caution has to be\nexercised\n(cid:2)(cid:2)(cid:2)(cid:2)\nThis symbol indicates any additional details.\nThis user manual describes the functions, operating procedures,\nprecautions and basic trouble shooting for the Air to Water Cooler for\nElectrical Machines.\nNote that some of the illustrations of the assembly used here maybe\ndifferent from what you actually see on your machine.\nPlease contact us for any further queries you might have with respect to\nthis manual.\nThis equipment has been designed according to the technical parameters\nand material of construction as specified by the manufacturer of the\nelectric machine.\nOUR COMPANY IS NOT LIABLE FOR ANY DIRECT, SPECIAL, INDIRECT\nOR CONSEQUENTIAL DAMAGES, PENALTIES, COST AND EXPENSES OR\nDAMAGES OF ANY KIND, INCLUDING BUT NOT LIMITED TO INJURY,\nLOSS OF USE OR PROFITS AND LIFE ARISING FROM USE OF OUR\nPRODUCTS.\nWarranty:\nProducts are guaranteed for duration of 12 months from date of\ncommissioning or 18 months from date of dispatch whichever is earlier,\nunless otherwise agreed upon.\nAll warranty claims are void if:\n(cid:3) Any part of the assembly is modified or changed in any manner without\nfirst seeking our advice.\n(cid:3) The procedures described in the manual are not strictly adhered to.\n(cid:3) The operating parameters are not maintained as stated in the technical\nparameters\n(cid:3) The procedures are carried out by untrained personnel.",
+      "header": "",
+      "section_type": "점검",
+      "equipment": [
+        "열교환기"
+      ],
+      "company_id": "32",
+      "company_name": "증기터빈",
+      "source_file": "Cooler Manual.",
+      "source_path": "D:\\기계도면\\기계도면\\32. 증기터빈 (정석)\\제주 VP\\전기\\19. Operation Manual\\Cooler Manual..pdf",
+      "rev": null,
+      "chunk_hash": "05d041ed1e8c48fd",
+      "char_count": 1701
+    },
+    {
+      "chunk_idx": 2,
+      "text": "hnical\nparameters\n(cid:3) The procedures are carried out by untrained personnel. Contents :",
+      "header": "",
+      "section_type": "일반",
+      "equipment": [
+        "열교환기"
+      ],
+      "company_id": "32",
+      "company_name": "증기터빈",
+      "source_file": "Cooler Manual.",
+      "source_path": "D:\\기계도면\\기계도면\\32. 증기터빈 (정석)\\제주 VP\\전기\\19. Operation Manual\\Cooler Manual..pdf",
+      "rev": null,
+      "chunk_hash": "5785d70a559d8505",
+      "char_count": 91
+    },
+    {
+      "chunk_idx": 3,
+      "text": "meters\n(cid:3) The procedures are carried out by untrained personnel. Contents : 1. Safety\n1.1 GENERAL\n1.2 PRECAUTIONS",
+      "header": "1. Safety",
+      "section_type": "일반",
+      "equipment": [
+        "열교환기"
+      ],
+      "company_id": "32",
+      "company_name": "증기터빈",
+      "source_file": "Cooler Manual.",
+      "source_path": "D:\\기계도면\\기계도면\\32. 증기터빈 (정석)\\제주 VP\\전기\\19. Operation Manual\\Cooler Manual..pdf",
+      "rev": null,
+      "chunk_hash": "ffcedb5a0e203da6",
+      "char_count": 118
+    },
+    {
+      "chunk_idx": 4,
+      "text": "2. GENERAL INFORMATION\n2.1 INTRODUCTION\n2.2 CONSTRUCTION\n2.3 SHROUD / AIR GUIDE COVER / HOUSING",
+      "header": "2. GENERAL INFORMATION",
+      "section_type": "일반",
+      "equipment": [
+        "열교환기"
+      ],
+      "company_id": "32",
+      "company_name": "증기터빈",
+      "source_file": "Cooler Manual.",
+      "source_path": "D:\\기계도면\\기계도면\\32. 증기터빈 (정석)\\제주 VP\\전기\\19. Operation Manual\\Cooler Manual..pdf",
+      "rev": null,
+      "chunk_hash": "42cad154addda80e",
+      "char_count": 95
+    },
+    {
+      "chunk_idx": 5,
+      "text": "RMATION\n2.1 INTRODUCTION\n2.2 CONSTRUCTION\n2.3 SHROUD / AIR GUIDE COVER / HOUSING 3. TRANSPORTATION HANDLING AND STORAGE\n3.1 GENERAL\n3.2 HANDLING OF LARGE COOLER ASSEMBLIES\n3.3 STORAGE",
+      "header": "3. TRANSPORTATION HANDLING AND STORAGE",
+      "section_type": "일반",
+      "equipment": [
+        "열교환기"
+      ],
+      "company_id": "32",
+      "company_name": "증기터빈",
+      "source_file": "Cooler Manual.",
+      "source_path": "D:\\기계도면\\기계도면\\32. 증기터빈 (정석)\\제주 VP\\전기\\19. Operation Manual\\Cooler Manual..pdf",
+      "rev": null,
+      "chunk_hash": "7a70bfc468e03bfd",
+      "char_count": 183
+    },
+    {
+      "chunk_idx": 6,
+      "text": "LING AND STORAGE\n3.1 GENERAL\n3.2 HANDLING OF LARGE COOLER ASSEMBLIES\n3.3 STORAGE 4. INSTALLATION\n4.1 PRE-INSTALLATION CHECKLIST\n4.2 INSTALLATION\n4.3 START-UP\n4.4 AFTER START-UP AND ROUTINE INSPECTION CHECKLIST",
+      "header": "4. INSTALLATION",
+      "section_type": "시동",
+      "equipment": [
+        "열교환기"
+      ],
+      "company_id": "32",
+      "company_name": "증기터빈",
+      "source_file": "Cooler Manual.",
+      "source_path": "D:\\기계도면\\기계도면\\32. 증기터빈 (정석)\\제주 VP\\전기\\19. Operation Manual\\Cooler Manual..pdf",
+      "rev": null,
+      "chunk_hash": "09f5b7d1d37cf2d1",
+      "char_count": 209
+    },
+    {
+      "chunk_idx": 7,
+      "text": ".2 INSTALLATION\n4.3 START-UP\n4.4 AFTER START-UP AND ROUTINE INSPECTION CHECKLIST 8. MAINTENANCE\n8.1 DISASSEMBLY OF THE AIR-WATER COOLER\n8.2 CLEANING THE HEAT EXCHANGER ON THE AIR-SIDE\n8.3 CLEANING OF TUBES\n\n8.4 CLEANING THE SHROUD",
+      "header": "8. MAINTENANCE",
+      "section_type": "시동",
+      "equipment": [
+        "열교환기"
+      ],
+      "company_id": "32",
+      "company_name": "증기터빈",
+      "source_file": "Cooler Manual.",
+      "source_path": "D:\\기계도면\\기계도면\\32. 증기터빈 (정석)\\제주 VP\\전기\\19. Operation Manual\\Cooler Manual..pdf",
+      "rev": null,
+      "chunk_hash": "ba40b0d80bd2aa11",
+      "char_count": 230
+    },
+    {
+      "chunk_idx": 8,
+      "text": "HE HEAT EXCHANGER ON THE AIR-SIDE\n8.3 CLEANING OF TUBES\n\n8.4 CLEANING THE SHROUD 9. RECTIFICATION, REPAIR & TESTING\n9.1 HYDRO PRESSURE TEST\n9.2 WELD LEAKAGE\n9.3 TUBE EXPANSION LEAKAGE",
+      "header": "9. RECTIFICATION, REPAIR & TESTING",
+      "section_type": "청소",
+      "equipment": [
+        "열교환기"
+      ],
+      "company_id": "32",
+      "company_name": "증기터빈",
+      "source_file": "Cooler Manual.",
+      "source_path": "D:\\기계도면\\기계도면\\32. 증기터빈 (정석)\\제주 VP\\전기\\19. Operation Manual\\Cooler Manual..pdf",
+      "rev": null,
+      "chunk_hash": "1ff961addd5a2cc0",
+      "char_count": 183
+    },
+    {
+      "chunk_idx": 9,
+      "text": "IR & TESTING\n9.1 HYDRO PRESSURE TEST\n9.2 WELD LEAKAGE\n9.3 TUBE EXPANSION LEAKAGE 1. SAFETY:\nGeneral\nPhysical Damage:\nPhysical damage to the assembly can be caused by\n\n• Improper Transportation\n• Improper Handling\n• Improper Installation\n• Corrosion/Fatigue\nPossible Injuries:\n~~~~\n• Cuts and Bruises from sharp edges\n• Electrocution\n• Trapping of cloth or any other loose objects\n(cid:1)(cid:1)(cid:1)(cid:1)\n• Injury\n• Burns\n• Death\nPrecautions:\n• Make sure that water is flowing through the tubes when the machine is in\noperation.\n• Do not touch hot parts of the heat exchanger during operation or\nimmediately after shutdown.\n• Secure any loose articles, jewellery or clothing on person.\n• Wear adequate noise protection gear to avoid damage to hearing during\noperation.\n• Do not subject the assembly to shock or sudden loads.\n• Make sure all electrical circuits are adequately earthed to prevent shock.\n• Do not drastically alter operating conditions.\n• Always safety helmets to prevent any injuri",
+      "header": "1. SAFETY:",
+      "section_type": "정지",
+      "equipment": [
+        "열교환기"
+      ],
+      "company_id": "32",
+      "company_name": "증기터빈",
+      "source_file": "Cooler Manual.",
+      "source_path": "D:\\기계도면\\기계도면\\32. 증기터빈 (정석)\\제주 VP\\전기\\19. Operation Manual\\Cooler Manual..pdf",
+      "rev": null,
+      "chunk_hash": "093265007e22ff5f",
+      "char_count": 1000
+    },
+    {
+      "chunk_idx": 10,
+      "text": "lly alter operating conditions.\n• Always safety helmets to prevent any injuries.",
+      "header": "2. GENERAL INFORMATION:",
+      "section_type": "일반",
+      "equipment": [
+        "열교환기"
+      ],
+      "company_id": "32",
+      "company_name": "증기터빈",
+      "source_file": "Cooler Manual.",
+      "source_path": "D:\\기계도면\\기계도면\\32. 증기터빈 (정석)\\제주 VP\\전기\\19. Operation Manual\\Cooler Manual..pdf",
+      "rev": null,
+      "chunk_hash": "894a555a015fee27",
+      "char_count": 80
+    },
+    {
+      "chunk_idx": 11,
+      "text": "lly alter operating conditions.\n• Always safety helmets to prevent any injuries. 2. GENERAL INFORMATION:\n2.1 Introduction:\nThe Closed Air Circuit Water (CACW) / Totally Enclosed Water Air Cooler\n(TEWAC) Heat exchanger cools the circulating air of the electrical machine\n(A.C Generator/ A.C Motor /Alternator / DC machine). The circulating air\nabsorbs the heat losses of the machine and dissipates it to the cooling\nwater through the Heat exchanger / Tube bundle.\nThe Heat exchanger consists of finned tube bundle. The hot air from the\nmachine is made to flow over finned tube bundle, which is cooled by the\ncooling water flowing inside the tubes.\nThe Tube bundle is housed in a Shroud/ Housing /Air Guide Cover with\nair inlet and outlet ducting to direct the air to and from the tube bundle.\n2.2 Construction:\nThe tube bundle consists of finned tubes which are expanded into the\nholes in the tube plates at both ends. The tube plates are fitted with\nHeader/Water boxes with inlet / outlet flanges which direct the flow of\nwater. The side frames fitted between tube plates at the end of tube\nbundle prevents air leakage in the lateral direction. The headers are\ngenerally of removable type to facilitate cleaning of tubes.",
+      "header": "2. GENERAL INFORMATION:",
+      "section_type": "청소",
+      "equipment": [
+        "열교환기"
+      ],
+      "company_id": "32",
+      "company_name": "증기터빈",
+      "source_file": "Cooler Manual.",
+      "source_path": "D:\\기계도면\\기계도면\\32. 증기터빈 (정석)\\제주 VP\\전기\\19. Operation Manual\\Cooler Manual..pdf",
+      "rev": null,
+      "chunk_hash": "ac14ddba68727d7c",
+      "char_count": 1221
+    },
+    {
+      "chunk_idx": 12,
+      "text": "on. The headers are\ngenerally of removable type to facilitate cleaning of tubes. Figure 1-Tube Bundle\nTTThhheee ssseeellleeeccctttiiiooonnn ooofff mmmaaattteeerrriiiaaalllsss fffooorrr cccooonnnssstttrrruuuccctttiiiooonnn ooofff tttuuubbbeeesss,,, fffiiinnn,,, tttuuubbbeee ppplllaaattteee aaannnddd\nhheeaaddeerrss ddeeppeennddss oonn ccuussttoommeerr''ss ssppeecciiffiicc rreeqquuiirreemmeennttss aanndd ccoooolliinngg wwaatteerr\nquality.\nTThhee ttuubbeess mmaayy bbee ooff CCooppppeerr,, CCopper alloys like Cupro-NNiicckkeell 9900//1100,,\n7700//3300,, AAddmmiirraallttyy BBrraassss,, AAlluummiinniiuumm BBrraassss , MMiilldd SStteeeell oorr SSttaaiinnlleessss SStteeeell..\nTTThhheee fffiiinnn mmmaaattteeerrriiiaaalllsss mmmaaayyy bbbeee ooofff CCCoooppppppeeerrr,,, SSStttaaaiiinnnllleeessssss SSSttteeeeeelll,,, CCCaaarrrbbbooonnn SSSttteeeeeelll ooorrr\nAluminium\nThe tube plaaattteeesss mmmaaayyy bbbeee ooofff CCCaaarrrbbbooonnn SSSttteeeeeelll,,, SSStttaaaiiinnnllleeessssss SSSttteeeeeelll,,, CCCoooppppppeeerrr AAAlllllloooyyy llliiikkkeee\n6600//4400 BBrraassss,, NNaavvaall BBrraassss eettcc\nTTThhheee HHHeeeaaadddeeerrr /// WWWaaattteeerrr bbboooxxx iiisss uuusssuuuaaallllllyyy mmmaaadddeee ooofff ppplllaaaiiinnn CCCaaarrrbbbooonnn SSSttteeeeeelll aaannnddd iiinnn\nssppeecciiaall rreeqquuiirreemmeennttss iitt iiss mmaaddee uupp ooff NNaavvaall BBrraassss,, BBrraassss,, BBrroonnzzee,,\nGGuunnmmeettaall,, SSttaaiinnlleessss SStteeeell oorr Cupro-Nickel.",
+      "header": "2. GENERAL INFORMATION:",
+      "section_type": "청소",
+      "equipment": [
+        "열교환기"
+      ],
+      "company_id": "32",
+      "company_name": "증기터빈",
+      "source_file": "Cooler Manual.",
+      "source_path": "D:\\기계도면\\기계도면\\32. 증기터빈 (정석)\\제주 VP\\전기\\19. Operation Manual\\Cooler Manual..pdf",
+      "rev": null,
+      "chunk_hash": "2b7b32f69b0671bf",
+      "char_count": 1467
+    },
+    {
+      "chunk_idx": 13,
+      "text": "rroonnzzee,,\nGGuunnmmeettaall,, SSttaaiinnlleessss SStteeeell oorr Cupro-Nickel. 2.3 SShhrroouudd // AAiirr GGuuiiddee CCoovveerr // HHoouussiinngg:\nTTThhheee HHHooouuusssiiinnnggg ooorrr ttthhheee SSShhhrrrooouuuddd fffooorrr ttthhheee tttuuubbbeee bbbuuunnndddllleee iiisss fffaaabbbrrriiicccaaattteeeddd wwwiiittthhh SSSttteeeeeelll\nplates and other ssttrruuccttuurraallss ttoo mmaakkee iitt aa rriiggiidd aanndd vviibbrraattiioonn ffrreeee ssttrruuccttuurree..\nEEaacchh ttuubbee bbuunnddllee hhoouusseedd iinn tthhee sshhrroouudd iiss pprroovviiddeedd wwiitthh ddrraaiinn ttrraayy or a\nbaffle aaarrrrrraaannngggeeemmmeeennnttt tttooo ppprrreeevvveeennnttt aaannnyyy ttthhheee llleeeaaakkkaaagggeee ooofff wwwaaattteeerrr,,, iiinnn cccaaassseee ooofff tttuuubbbeee\nffaaiilluurree,, ffrroomm eenntteerriinngg tthhee ggeenneerraattoorr or motor.. TThhee ddrraaiinn ttrraayy iiss pprroovviiddeedd\nwwwiiittthhh aaa ppprrrooobbbeee cccooonnnnnneeecccttteeeddd tttooo LLLeeeaaakkkaaagggeee DDDeeettteeeccctttooorrr mmmooouuunnnttteeeddd ooonnn ttthhheee ooouuuttteeerrr wwwaaallllll ooofff\nshroud which signaallss tthhee lleeaakkaaggee iiff aannyy ((ooppttiioonnaall aacccceessssoorryy))..\nTTThhheee iiinnnsssiiidddeee ooofff ttthhheee hhhooouuusssiiinnnggg iiisss aaaeeerrrooodddyyynnnaaammmiiicccaaallllllyyy dddeeesssiiigggnnneeeddd fffooorrr ttthhheee aaaiiirrr ssstttrrreeeaaammm tttooo\npppaaassssss aaacccrrrooossssss ttthhheee tttuuubbbeee bbbuuunnndddllleee wwwiiittthhh mmmiiinnniiimmmuuummm ppprrreeessssssuuurrreee lllooossssss aaannnddd for effective\nddiissttrriibbuuttiioonn ooff aaiirr ffllooww oovveerr tthhee ffaaccee ooff ttuubbee bbuunnddllee..\nFor largggeee aaannnddd hhheeeaaavvvyyy tttuuubbbeee bbbuuunnndddllleeesss sssllliiidddiiinnnggg aaarrrrrraaannngggeeemmmeeennnttt (((wwwiiittthhh bbbeeeaaarrriiinnngggsss))) iiisss\nppprrrooovvviiidddeeeddd iiinnn ttthhheee ssshhhrrrooouuuddd fffooorrr eeeaaasssyyy iiinnnssseeerrrtttiiiooonnn aaannnddd rrreeemmmooovvvaaalll ooofff tttuuubbbeee bbbuuunnndddllleee fffooorrr\nmaintenance purpose.\nFFiigguurree 2 - Shroud / Air Guide Cover",
+      "header": "2. GENERAL INFORMATION:",
+      "section_type": "점검",
+      "equipment": [
+        "열교환기"
+      ],
+      "company_id": "32",
+      "company_name": "증기터빈",
+      "source_file": "Cooler Manual.",
+      "source_path": "D:\\기계도면\\기계도면\\32. 증기터빈 (정석)\\제주 VP\\전기\\19. Operation Manual\\Cooler Manual..pdf",
+      "rev": null,
+      "chunk_hash": "c28057aa855bc2ef",
+      "char_count": 2097
+    },
+    {
+      "chunk_idx": 14,
+      "text": "dllleee fffooorrr\nmaintenance purpose.\nFFiigguurree 2 - Shroud / Air Guide Cover 3. TRANSPORTATION HANDLING AND STORAGE:\n3.1 General:\nLifting lugs/ hooks are provided on the heat exchanger and shroud/ air\nguide cover for handling. The lifting lugs should not be used to lift the electrical machine\n~~~~ assembly once the cooler assembly is bolted to the machine.\n3.2 Handling of large cooler assemblies:\nBecause of the large size and weight, each tube bundle is provided with\nrollers on the bottom of the side frame and handles on the front header.\nThe tube bundle slides in and out smoothly when pushed / pulled with the\nhandles and can be used for taking out bundles for maintenance purpose.\nAt each corner of the bundle, gussets with holes are provided. After the\ntube bundle is partially driven out, the lifting hook can be bolted to the\ncorner gussets with proper fasteners.",
+      "header": "3. TRANSPORTATION HANDLING AND STORAGE:",
+      "section_type": "점검",
+      "equipment": [
+        "열교환기"
+      ],
+      "company_id": "32",
+      "company_name": "증기터빈",
+      "source_file": "Cooler Manual.",
+      "source_path": "D:\\기계도면\\기계도면\\32. 증기터빈 (정석)\\제주 VP\\전기\\19. Operation Manual\\Cooler Manual..pdf",
+      "rev": null,
+      "chunk_hash": "0b5816234eb571a0",
+      "char_count": 879
+    },
+    {
+      "chunk_idx": 15,
+      "text": "out, the lifting hook can be bolted to the\ncorner gussets with proper fasteners. All lifting hooks have to be assembled for each tube bundle\n~~~~ before lifting.\nCare should be taken to ensure that proper shackle and wire ropes are\nassembled before lifting.\nThe lifting hooks have to be dismantled and kept aside, when not in use as\nthey interfere with the shroud / housing.\n3.3 Storage:\nIf the heat exchanger assembly is to be stored for short term upto 2\nmonths, it is recommended to cover the assembly with a suitable material\nlike tarpaulin or any other water proof material. All water must be\ncompletely drained out. Periodic inspections must be carried out to\nprevent rust and mildew formation.",
+      "header": "3. TRANSPORTATION HANDLING AND STORAGE:",
+      "section_type": "점검",
+      "equipment": [
+        "열교환기"
+      ],
+      "company_id": "32",
+      "company_name": "증기터빈",
+      "source_file": "Cooler Manual.",
+      "source_path": "D:\\기계도면\\기계도면\\32. 증기터빈 (정석)\\제주 VP\\전기\\19. Operation Manual\\Cooler Manual..pdf",
+      "rev": null,
+      "chunk_hash": "2853212fa67cd633",
+      "char_count": 700
+    },
+    {
+      "chunk_idx": 16,
+      "text": ". Periodic inspections must be carried out to\nprevent rust and mildew formation. For long term storage from 2 months and longer, the heat exchanger\nshould be completely drained out of water and thoroughly dried before\npreparing for storage. It should be made completely air tight and water\nabsorbent material like silica gel must be placed inside. Periodic\ninspections must be carried out to prevent rust and mildew formation.\nThe heat exchanger must not be stored continuously for more than 1 year\nfrom the date of manufacture. The heat exchanger must be replaced before\nthe device is put into operation.\nWhen the assembly is going to be installed after being stored for more than\n2 months, the entire assembly must be thoroughly inspected and cleaned\nas per Sec 6.\nAny assembly must be subjected to hydro pressure test before installation\nas per Sec 0 if in storage for more than 2 months.",
+      "header": "3. TRANSPORTATION HANDLING AND STORAGE:",
+      "section_type": "점검",
+      "equipment": [
+        "열교환기"
+      ],
+      "company_id": "32",
+      "company_name": "증기터빈",
+      "source_file": "Cooler Manual.",
+      "source_path": "D:\\기계도면\\기계도면\\32. 증기터빈 (정석)\\제주 VP\\전기\\19. Operation Manual\\Cooler Manual..pdf",
+      "rev": null,
+      "chunk_hash": "69517c437a673b8d",
+      "char_count": 891
+    },
+    {
+      "chunk_idx": 17,
+      "text": "sure test before installation\nas per Sec 0 if in storage for more than 2 months. 4. INSTALLATION:\n4.1 Pre-Installation Checklist:\n• Ensure adequate space around the machine for installation/disassembly.\n• Ensure adequate space so that the heat exchanger can be slid in and out of\nthe housing.\n• Ensure there is no transit damage to the assembly.\n• Check and remove any dirt, dust and loose particles in the assembly.\n• Clean the assembly.\n• Visually inspect all gaskets.\n• Replace the gaskets if they are more than 24 months old than the date of\nmanufacture irrespective of the fact that the tube bundle might have been in\nstorage\n• Check and retighten all bolts using a torque wrench.\n• The coolers are dispatched after thorough hydraulic pressure testing at our\nworks. It is mandatory that cooler is subjected to hydro pressure test before\ninstallation, if stored for more than 2 months. The procedure to carry out\nthe hydro pressure test is given separately in Sec 0.\n4.2 Installation:",
+      "header": "4. INSTALLATION:",
+      "section_type": "점검",
+      "equipment": [
+        "열교환기"
+      ],
+      "company_id": "32",
+      "company_name": "증기터빈",
+      "source_file": "Cooler Manual.",
+      "source_path": "D:\\기계도면\\기계도면\\32. 증기터빈 (정석)\\제주 VP\\전기\\19. Operation Manual\\Cooler Manual..pdf",
+      "rev": null,
+      "chunk_hash": "cbd274efbf049cd1",
+      "char_count": 988
+    },
+    {
+      "chunk_idx": 18,
+      "text": "arry out\nthe hydro pressure test is given separately in Sec 0.\n4.2 Installation: 1. Remove any blind/blanking flanges if provided on the water inlet and\noutlet nozzles.",
+      "header": "1. Remove any blind/blanking flanges if provided on the water inlet and",
+      "section_type": "일반",
+      "equipment": [
+        "열교환기"
+      ],
+      "company_id": "32",
+      "company_name": "증기터빈",
+      "source_file": "Cooler Manual.",
+      "source_path": "D:\\기계도면\\기계도면\\32. 증기터빈 (정석)\\제주 VP\\전기\\19. Operation Manual\\Cooler Manual..pdf",
+      "rev": null,
+      "chunk_hash": "e7a2a71e9650e5e6",
+      "char_count": 168
+    },
+    {
+      "chunk_idx": 19,
+      "text": "ve any blind/blanking flanges if provided on the water inlet and\noutlet nozzles. 2. The coolers are supplied as complete unit, fully assembled with\ninstruments and accessories. They are to be mounted and bolted on to\nthe electrical machines.\n\n• Gasket must be provided between the cooler housing and the\n(cid:2)(cid:2)(cid:2)(cid:2)\nmachine before bolting.\n• It is recommended to use anti vibration mounts to isolate the\nvibration of machine from the cooler.\n\nLifting of the cooler assembly should only be done using the lifting lugs.\nEnsure that all the provided lifting lugs are used for hoisting.",
+      "header": "2. The coolers are supplied as complete unit, fully assembled with",
+      "section_type": "일반",
+      "equipment": [
+        "열교환기"
+      ],
+      "company_id": "32",
+      "company_name": "증기터빈",
+      "source_file": "Cooler Manual.",
+      "source_path": "D:\\기계도면\\기계도면\\32. 증기터빈 (정석)\\제주 VP\\전기\\19. Operation Manual\\Cooler Manual..pdf",
+      "rev": null,
+      "chunk_hash": "233bc91bc45a03bb",
+      "char_count": 599
+    },
+    {
+      "chunk_idx": 20,
+      "text": "e lifting lugs.\nEnsure that all the provided lifting lugs are used for hoisting. 3. Connect the water pipes to the inlet and outlet nozzles. Check that the\nsupply and return lines are connected to the appropriate inlet and outlet\nnozzles/flange.",
+      "header": "3. Connect the water pipes to the inlet and outlet nozzles. Check that the",
+      "section_type": "일반",
+      "equipment": [
+        "열교환기"
+      ],
+      "company_id": "32",
+      "company_name": "증기터빈",
+      "source_file": "Cooler Manual.",
+      "source_path": "D:\\기계도면\\기계도면\\32. 증기터빈 (정석)\\제주 VP\\전기\\19. Operation Manual\\Cooler Manual..pdf",
+      "rev": null,
+      "chunk_hash": "9e473a2d8f8b9c60",
+      "char_count": 245
+    },
+    {
+      "chunk_idx": 21,
+      "text": "d return lines are connected to the appropriate inlet and outlet\nnozzles/flange. 4. If the heat exchanger has to operate in freezing conditions, ensure that\nanti-freeze is added to the water supply.",
+      "header": "4. If the heat exchanger has to operate in freezing conditions, ensure that",
+      "section_type": "일반",
+      "equipment": [
+        "열교환기"
+      ],
+      "company_id": "32",
+      "company_name": "증기터빈",
+      "source_file": "Cooler Manual.",
+      "source_path": "D:\\기계도면\\기계도면\\32. 증기터빈 (정석)\\제주 VP\\전기\\19. Operation Manual\\Cooler Manual..pdf",
+      "rev": null,
+      "chunk_hash": "9169e208c44b0ba1",
+      "char_count": 198
+    },
+    {
+      "chunk_idx": 22,
+      "text": "te in freezing conditions, ensure that\nanti-freeze is added to the water supply. 5. Connect any other accessories like water leakage detector, flow indicator\netc. to the electric supply.\nThe following precautions must be taken during installation:\n(cid:3) The pipes and flanges must be mounted stress-free to the heat\nexchanger and should have gaskets suitable for the type of\nwater, temperature and pressure.\n1111 (cid:3) The cooling water used should be neutral and free of suspended\nsolid particles. To prevent fouling of tubes, a suitable strainer\nmay be provided at the inlet of the cooler.\n(cid:3) Ensure that air is not trapped in the system as this causes\npulsation and hence a non-uniform flow. The pipe layouts\nshould therefore be free from air locks.\n(cid:3) It should be ensured that cooling water supply is under positive\npressure so as to completely flood the unit under all operating\nconditions.\n\n4.3 Start-up:",
+      "header": "5. Connect any other accessories like water leakage detector, flow indicator",
+      "section_type": "시동",
+      "equipment": [
+        "필터"
+      ],
+      "company_id": "32",
+      "company_name": "증기터빈",
+      "source_file": "Cooler Manual.",
+      "source_path": "D:\\기계도면\\기계도면\\32. 증기터빈 (정석)\\제주 VP\\전기\\19. Operation Manual\\Cooler Manual..pdf",
+      "rev": null,
+      "chunk_hash": "2d591b04eb5a7ce7",
+      "char_count": 925
+    },
+    {
+      "chunk_idx": 23,
+      "text": "o as to completely flood the unit under all operating\nconditions.\n\n4.3 Start-up: 1. Ensure that cooler assembly / shroud is properly assembled on the\nelectric machine with suitable gaskets and fasteners to avoid any air\nleakage.",
+      "header": "1. Ensure that cooler assembly / shroud is properly assembled on the",
+      "section_type": "시동",
+      "equipment": [
+        "열교환기"
+      ],
+      "company_id": "32",
+      "company_name": "증기터빈",
+      "source_file": "Cooler Manual.",
+      "source_path": "D:\\기계도면\\기계도면\\32. 증기터빈 (정석)\\제주 VP\\전기\\19. Operation Manual\\Cooler Manual..pdf",
+      "rev": null,
+      "chunk_hash": "db0e1d4b808e87e5",
+      "char_count": 228
+    },
+    {
+      "chunk_idx": 24,
+      "text": "e\nelectric machine with suitable gaskets and fasteners to avoid any air\nleakage. 2. Flush out the cooling water piping system leading to the cooler with clean\nwater. Connect the inlet/outlet pipes to the cooler.",
+      "header": "2. Flush out the cooling water piping system leading to the cooler with clean",
+      "section_type": "일반",
+      "equipment": [
+        "열교환기"
+      ],
+      "company_id": "32",
+      "company_name": "증기터빈",
+      "source_file": "Cooler Manual.",
+      "source_path": "D:\\기계도면\\기계도면\\32. 증기터빈 (정석)\\제주 VP\\전기\\19. Operation Manual\\Cooler Manual..pdf",
+      "rev": null,
+      "chunk_hash": "7cb8acf2396b642c",
+      "char_count": 211
+    },
+    {
+      "chunk_idx": 25,
+      "text": "ng to the cooler with clean\nwater. Connect the inlet/outlet pipes to the cooler. 3. Open-air vent plug which is provided at the highest point of the cooler\nheader/water box.",
+      "header": "3. Open-air vent plug which is provided at the highest point of the cooler",
+      "section_type": "일반",
+      "equipment": [
+        "열교환기"
+      ],
+      "company_id": "32",
+      "company_name": "증기터빈",
+      "source_file": "Cooler Manual.",
+      "source_path": "D:\\기계도면\\기계도면\\32. 증기터빈 (정석)\\제주 VP\\전기\\19. Operation Manual\\Cooler Manual..pdf",
+      "rev": null,
+      "chunk_hash": "f8e2c3becc22a19c",
+      "char_count": 173
+    },
+    {
+      "chunk_idx": 26,
+      "text": "vent plug which is provided at the highest point of the cooler\nheader/water box. 4. Open the cooling water inlet valve gradually to avoid water hammer. The\nflow of the cooling water should be controlled by regulating the outlet\nvalves while keeping inlet valves fully open. When all the air trapped has\nbeen removed with smooth and continuous flow of water, close the air\nvent plug.",
+      "header": "4. Open the cooling water inlet valve gradually to avoid water hammer. The",
+      "section_type": "일반",
+      "equipment": [
+        "밸브"
+      ],
+      "company_id": "32",
+      "company_name": "증기터빈",
+      "source_file": "Cooler Manual.",
+      "source_path": "D:\\기계도면\\기계도면\\32. 증기터빈 (정석)\\제주 VP\\전기\\19. Operation Manual\\Cooler Manual..pdf",
+      "rev": null,
+      "chunk_hash": "59c3a0ec1a3e5274",
+      "char_count": 382
+    },
+    {
+      "chunk_idx": 27,
+      "text": "been removed with smooth and continuous flow of water, close the air\nvent plug. 5. Ensure that the water leakage detector, water flow indicators and other\nsafety devices are connected to the proper electrical supply.",
+      "header": "5. Ensure that the water leakage detector, water flow indicators and other",
+      "section_type": "일반",
+      "equipment": [
+        "열교환기"
+      ],
+      "company_id": "32",
+      "company_name": "증기터빈",
+      "source_file": "Cooler Manual.",
+      "source_path": "D:\\기계도면\\기계도면\\32. 증기터빈 (정석)\\제주 VP\\전기\\19. Operation Manual\\Cooler Manual..pdf",
+      "rev": null,
+      "chunk_hash": "e67fa2cf9a332017",
+      "char_count": 216
+    },
+    {
+      "chunk_idx": 28,
+      "text": "dicators and other\nsafety devices are connected to the proper electrical supply. 6. Before starting, ensure proper pressure and flow rate of cooling water to\nthe cooler.\n4.4 After Start-up and Routine Inspection Checklist:\nCheck for the following:\n• Water leakages in all connections and areas.\n• Water pressure and flow rate\n• Any vibrations and unusual noises",
+      "header": "6. Before starting, ensure proper pressure and flow rate of cooling water to",
+      "section_type": "시동",
+      "equipment": [
+        "열교환기"
+      ],
+      "company_id": "32",
+      "company_name": "증기터빈",
+      "source_file": "Cooler Manual.",
+      "source_path": "D:\\기계도면\\기계도면\\32. 증기터빈 (정석)\\제주 VP\\전기\\19. Operation Manual\\Cooler Manual..pdf",
+      "rev": null,
+      "chunk_hash": "a7d820361f5e5d7c",
+      "char_count": 361
+    },
+    {
+      "chunk_idx": 29,
+      "text": "ns and areas.\n• Water pressure and flow rate\n• Any vibrations and unusual noises 5. OPERATION:\nThe cooler can perform efficiently only when the flow rate and temperature\nof air and water entering the cooler are at the specified values, particularly\nthe temperature difference between the cold-water inlet and air outlet.\nAny increase in temperature difference would indicate blocked cooler tubes\nor improper flow rates of air and/or water.\n1111 (cid:3) If the heat exchanger is going to be idle for more than 48 hours\nwithout any flow, all the water in the heat exchanger must be\ndrained out to prevent any corrosion.\n(cid:3) The heat exchanger must also not be exposed to freezing\ntemperatures while idle as the tubes, pipes etc might burst and\nthe headers might deform. All the water in the heat exchanger\nmust be drained out if there is a danger of freezing.",
+      "header": "5. OPERATION:",
+      "section_type": "운전",
+      "equipment": [
+        "열교환기"
+      ],
+      "company_id": "32",
+      "company_name": "증기터빈",
+      "source_file": "Cooler Manual.",
+      "source_path": "D:\\기계도면\\기계도면\\32. 증기터빈 (정석)\\제주 VP\\전기\\19. Operation Manual\\Cooler Manual..pdf",
+      "rev": null,
+      "chunk_hash": "f9a1018efea31805",
+      "char_count": 861
+    },
+    {
+      "chunk_idx": 30,
+      "text": "ater in the heat exchanger\nmust be drained out if there is a danger of freezing. The following precautions have to be observed during the\noperation of the cooler:\n(cid:3) Control the cooling water supply by regulating the outlet valves\nonly. Never throttle the inlet valves to control the flow of water\n.Always use the outlet valves for this purpose.\n(cid:3) At start up, open the air vent plug to expel entrapped air. Never\nallow the cooler to run with entrapped air.\n(cid:3) Whenever there is a leakage of water in the tube bundle, isolate\nthe cooler at once and repair / plug the leaking tube as per Sec 0\nat the first opportunity.\n(cid:3) Don't allow the cooler to have stagnant water in the tubes during\nshut down. Drain out water using drain provided and by",
+      "header": "5. OPERATION:",
+      "section_type": "시동",
+      "equipment": [
+        "열교환기"
+      ],
+      "company_id": "32",
+      "company_name": "증기터빈",
+      "source_file": "Cooler Manual.",
+      "source_path": "D:\\기계도면\\기계도면\\32. 증기터빈 (정석)\\제주 VP\\전기\\19. Operation Manual\\Cooler Manual..pdf",
+      "rev": null,
+      "chunk_hash": "40ae4a4ddf5e32c3",
+      "char_count": 763
+    },
+    {
+      "chunk_idx": 31,
+      "text": "water in the tubes during\nshut down. Drain out water using drain provided and by blowing compressed air.\n(cid:3) Do not operate the cooler if water leakage is detected.\n(cid:3) The satisfactory performance and efficiency of the cooler will\nconsiderably reduce if there is excessive fouling (scaling) inside\nthe tubes and accumulation of dust on the outer surfaces of the\ntube bundle. Hence periodic cleaning of the tubes is to be carried\nout.\nThe period between successive cleaning will depend upon the\nquality of the cooling water and the surrounding atmosphere.\nHence actual time can be determined from the experience only.\nHowever as a routine practice, inspection and maintenance of\nthe coolers should be carried out once at least every 6 months.",
+      "header": "5. OPERATION:",
+      "section_type": "정지",
+      "equipment": [
+        "열교환기"
+      ],
+      "company_id": "32",
+      "company_name": "증기터빈",
+      "source_file": "Cooler Manual.",
+      "source_path": "D:\\기계도면\\기계도면\\32. 증기터빈 (정석)\\제주 VP\\전기\\19. Operation Manual\\Cooler Manual..pdf",
+      "rev": null,
+      "chunk_hash": "9f1da757f67eda8d",
+      "char_count": 750
+    },
+    {
+      "chunk_idx": 32,
+      "text": "d maintenance of\nthe coolers should be carried out once at least every 6 months. 6. PERIODIC INSPECTION AND MAINTENANCE\nCHECKLIST:\nAs a routine practice, inspection and maintenance of the coolers should be\ncarried out once at least every 6 months.\nThe period between successive cleaning will depend upon the quality of the\ncooling water and the surrounding atmosphere. Hence the heat exchanger\nmust be inspected more frequently if the surrounding atmosphere is dusty\nor if the water quality is bad.\nThe following must be inspected:\n• General condition and visual check\n• Check for any fallen debris, dirt etc.\n• Fin surface for blockage and damage.\n• Tube fouling, blockage or leakage\n• Water leakages in all connections and areas.\n• Water pressure and flow rate\n• Removal of dust and debris from air filter if provided\n• Any vibrations and unusual noises\n• Corrosion\n• Operation of accessories and safety devices",
+      "header": "6. PERIODIC INSPECTION AND MAINTENANCE",
+      "section_type": "점검",
+      "equipment": [
+        "열교환기",
+        "필터"
+      ],
+      "company_id": "32",
+      "company_name": "증기터빈",
+      "source_file": "Cooler Manual.",
+      "source_path": "D:\\기계도면\\기계도면\\32. 증기터빈 (정석)\\제주 VP\\전기\\19. Operation Manual\\Cooler Manual..pdf",
+      "rev": null,
+      "chunk_hash": "456e107bcdede248",
+      "char_count": 913
+    },
+    {
+      "chunk_idx": 33,
+      "text": "ons and unusual noises\n• Corrosion\n• Operation of accessories and safety devices 2. Continue water supply to the tube bundle for some time until the heat\nexchanger cools down sufficiently.\n(cid:1)(cid:1)(cid:1)(cid:1)\nExtreme caution must be exercised when touching the heat exchanger\nwhen it is still hot as it might result in scalding and burn injuries.",
+      "header": "2. Continue water supply to the tube bundle for some time until the heat",
+      "section_type": "운전",
+      "equipment": [
+        "열교환기"
+      ],
+      "company_id": "32",
+      "company_name": "증기터빈",
+      "source_file": "Cooler Manual.",
+      "source_path": "D:\\기계도면\\기계도면\\32. 증기터빈 (정석)\\제주 VP\\전기\\19. Operation Manual\\Cooler Manual..pdf",
+      "rev": null,
+      "chunk_hash": "d7f8d714780bb5cb",
+      "char_count": 355
+    },
+    {
+      "chunk_idx": 34,
+      "text": "exchanger\nwhen it is still hot as it might result in scalding and burn injuries. 3. Slowly close the water outlet valves to the heat exchanger followed by the\ninlet valves.",
+      "header": "3. Slowly close the water outlet valves to the heat exchanger followed by the",
+      "section_type": "일반",
+      "equipment": [
+        "열교환기"
+      ],
+      "company_id": "32",
+      "company_name": "증기터빈",
+      "source_file": "Cooler Manual.",
+      "source_path": "D:\\기계도면\\기계도면\\32. 증기터빈 (정석)\\제주 VP\\전기\\19. Operation Manual\\Cooler Manual..pdf",
+      "rev": null,
+      "chunk_hash": "1bdd26e6b57d4f0b",
+      "char_count": 172
+    },
+    {
+      "chunk_idx": 35,
+      "text": "lose the water outlet valves to the heat exchanger followed by the\ninlet valves. 8. MAINTENANCE:\nIIIttt iiisss ssstttrrrooonnnggglllyyy rrreeecccooommmmmmeeennndddeeeddd ttthhhaaattt ttthhhiiisss ppprrroooccceeeddduuurrreee nnnooottt bbbeee cccaaarrrrrriiieeeddd ooouuuttt bbbyyy\nuunnttrraaiinneedd ppeerrssoonnnneell aass tthheerree aarree cchhaanncceess ooff ccaattaassttrroopphhiicc ffaaiilluurree..\nFigure 3 - Tube Bundle\n\n8.1 Disassembly of the Air-Water Cooler:",
+      "header": "8. MAINTENANCE:",
+      "section_type": "점검",
+      "equipment": [
+        "열교환기"
+      ],
+      "company_id": "32",
+      "company_name": "증기터빈",
+      "source_file": "Cooler Manual.",
+      "source_path": "D:\\기계도면\\기계도면\\32. 증기터빈 (정석)\\제주 VP\\전기\\19. Operation Manual\\Cooler Manual..pdf",
+      "rev": null,
+      "chunk_hash": "af8ee79d08704816",
+      "char_count": 467
+    },
+    {
+      "chunk_idx": 36,
+      "text": "faaiilluurree..\nFigure 3 - Tube Bundle\n\n8.1 Disassembly of the Air-Water Cooler: 3. Open the air vent and drain valves to drain out the water. It might be\nnecessary to provide a drip tray to collect the drained water.",
+      "header": "3. Open the air vent and drain valves to drain out the water. It might be",
+      "section_type": "일반",
+      "equipment": [
+        "열교환기"
+      ],
+      "company_id": "32",
+      "company_name": "증기터빈",
+      "source_file": "Cooler Manual.",
+      "source_path": "D:\\기계도면\\기계도면\\32. 증기터빈 (정석)\\제주 VP\\전기\\19. Operation Manual\\Cooler Manual..pdf",
+      "rev": null,
+      "chunk_hash": "789d1a099e8d02c2",
+      "char_count": 217
+    },
+    {
+      "chunk_idx": 37,
+      "text": "ater. It might be\nnecessary to provide a drip tray to collect the drained water. 5. Remove the bolts on the tube plate which connect the tube bundle to the\nair guide cover/shroud.",
+      "header": "5. Remove the bolts on the tube plate which connect the tube bundle to the",
+      "section_type": "일반",
+      "equipment": [
+        "열교환기"
+      ],
+      "company_id": "32",
+      "company_name": "증기터빈",
+      "source_file": "Cooler Manual.",
+      "source_path": "D:\\기계도면\\기계도면\\32. 증기터빈 (정석)\\제주 VP\\전기\\19. Operation Manual\\Cooler Manual..pdf",
+      "rev": null,
+      "chunk_hash": "aabaddbc7e6800d6",
+      "char_count": 179
+    },
+    {
+      "chunk_idx": 38,
+      "text": "s on the tube plate which connect the tube bundle to the\nair guide cover/shroud. 7. Remove the gasket.\n8.2 Cleaning the heat exchanger on the Air-side:",
+      "header": "7. Remove the gasket.",
+      "section_type": "청소",
+      "equipment": [
+        "열교환기"
+      ],
+      "company_id": "32",
+      "company_name": "증기터빈",
+      "source_file": "Cooler Manual.",
+      "source_path": "D:\\기계도면\\기계도면\\32. 증기터빈 (정석)\\제주 VP\\전기\\19. Operation Manual\\Cooler Manual..pdf",
+      "rev": null,
+      "chunk_hash": "1f050d788f393fc8",
+      "char_count": 151
+    },
+    {
+      "chunk_idx": 39,
+      "text": "2. Blow compressed air in the opposite direction to the normal airflow and\nparallel to the fins\n\nCaution must be exercised when blowing compressed air so as not to\ndamage the fins\n8.3 Cleaning of Tubes:",
+      "header": "2. Blow compressed air in the opposite direction to the normal airflow and",
+      "section_type": "청소",
+      "equipment": [
+        "열교환기"
+      ],
+      "company_id": "32",
+      "company_name": "증기터빈",
+      "source_file": "Cooler Manual.",
+      "source_path": "D:\\기계도면\\기계도면\\32. 증기터빈 (정석)\\제주 VP\\전기\\19. Operation Manual\\Cooler Manual..pdf",
+      "rev": null,
+      "chunk_hash": "5a9f2abaf905cd09",
+      "char_count": 202
+    },
+    {
+      "chunk_idx": 40,
+      "text": "when blowing compressed air so as not to\ndamage the fins\n8.3 Cleaning of Tubes: 2. Disassemble the header / water boxes at both the ends by loosening the\nbolts. This will expose the tube ends.",
+      "header": "2. Disassemble the header / water boxes at both the ends by loosening the",
+      "section_type": "청소",
+      "equipment": [
+        "열교환기"
+      ],
+      "company_id": "32",
+      "company_name": "증기터빈",
+      "source_file": "Cooler Manual.",
+      "source_path": "D:\\기계도면\\기계도면\\32. 증기터빈 (정석)\\제주 VP\\전기\\19. Operation Manual\\Cooler Manual..pdf",
+      "rev": null,
+      "chunk_hash": "67ac635d4945c4e0",
+      "char_count": 192
+    },
+    {
+      "chunk_idx": 41,
+      "text": "r boxes at both the ends by loosening the\nbolts. This will expose the tube ends. 3. If considerable accumulation of deposits is visible in the tubes, tubes\nshould be flushed out using high-pressure water jet, in the direction\nopposite to the normal water flow.",
+      "header": "3. If considerable accumulation of deposits is visible in the tubes, tubes",
+      "section_type": "일반",
+      "equipment": [
+        "열교환기"
+      ],
+      "company_id": "32",
+      "company_name": "증기터빈",
+      "source_file": "Cooler Manual.",
+      "source_path": "D:\\기계도면\\기계도면\\32. 증기터빈 (정석)\\제주 VP\\전기\\19. Operation Manual\\Cooler Manual..pdf",
+      "rev": null,
+      "chunk_hash": "9adccd2817bc19e7",
+      "char_count": 260
+    },
+    {
+      "chunk_idx": 42,
+      "text": "ing high-pressure water jet, in the direction\nopposite to the normal water flow. 4. If reversed flow method proves to be inadequate, clean the insides of\ntubes by bristle brush or a brush made out of soft brass wire or nylon in\na direction opposite to the normal flow of water.",
+      "header": "4. If reversed flow method proves to be inadequate, clean the insides of",
+      "section_type": "일반",
+      "equipment": [
+        "열교환기"
+      ],
+      "company_id": "32",
+      "company_name": "증기터빈",
+      "source_file": "Cooler Manual.",
+      "source_path": "D:\\기계도면\\기계도면\\32. 증기터빈 (정석)\\제주 VP\\전기\\19. Operation Manual\\Cooler Manual..pdf",
+      "rev": null,
+      "chunk_hash": "08b69443deb720ad",
+      "char_count": 277
+    },
+    {
+      "chunk_idx": 43,
+      "text": "of soft brass wire or nylon in\na direction opposite to the normal flow of water. 5. Chemical treatment is recommended for hard scale deposits.\n1111 The chemical treatment should be carried out under the supervision of\nchemist, who will decide the nature and strength of cleaning solution\nsuitable for the type of scale present and tube material. Ensure that\nafter cleaning with chemical all the traces of chemicals are removed by\nthorough flushing out with water",
+      "header": "5. Chemical treatment is recommended for hard scale deposits.",
+      "section_type": "청소",
+      "equipment": [
+        "열교환기"
+      ],
+      "company_id": "32",
+      "company_name": "증기터빈",
+      "source_file": "Cooler Manual.",
+      "source_path": "D:\\기계도면\\기계도면\\32. 증기터빈 (정석)\\제주 VP\\전기\\19. Operation Manual\\Cooler Manual..pdf",
+      "rev": null,
+      "chunk_hash": "5003276fe8788421",
+      "char_count": 462
+    },
+    {
+      "chunk_idx": 44,
+      "text": "ical all the traces of chemicals are removed by\nthorough flushing out with water 6. Reassemble the Header / Water boxes with a new set of gaskets and\ntighten the bolts using a torque wrench.",
+      "header": "6. Reassemble the Header / Water boxes with a new set of gaskets and",
+      "section_type": "일반",
+      "equipment": [
+        "열교환기"
+      ],
+      "company_id": "32",
+      "company_name": "증기터빈",
+      "source_file": "Cooler Manual.",
+      "source_path": "D:\\기계도면\\기계도면\\32. 증기터빈 (정석)\\제주 VP\\전기\\19. Operation Manual\\Cooler Manual..pdf",
+      "rev": null,
+      "chunk_hash": "a78e4b4e2d3fd739",
+      "char_count": 190
+    },
+    {
+      "chunk_idx": 45,
+      "text": "ter boxes with a new set of gaskets and\ntighten the bolts using a torque wrench. 7. Conduct a Hydro pressure test as per Sec 0 to ensure leak proof\nassembly.\n\n8.4 Cleaning the Shroud:",
+      "header": "7. Conduct a Hydro pressure test as per Sec 0 to ensure leak proof",
+      "section_type": "청소",
+      "equipment": [
+        "열교환기"
+      ],
+      "company_id": "32",
+      "company_name": "증기터빈",
+      "source_file": "Cooler Manual.",
+      "source_path": "D:\\기계도면\\기계도면\\32. 증기터빈 (정석)\\제주 VP\\전기\\19. Operation Manual\\Cooler Manual..pdf",
+      "rev": null,
+      "chunk_hash": "f1331ceb1186a605",
+      "char_count": 183
+    },
+    {
+      "chunk_idx": 46,
+      "text": "ssure test as per Sec 0 to ensure leak proof\nassembly.\n\n8.4 Cleaning the Shroud:",
+      "header": "9. RECTIFICATION, REPAIR & TESTING:",
+      "section_type": "청소",
+      "equipment": [
+        "열교환기"
+      ],
+      "company_id": "32",
+      "company_name": "증기터빈",
+      "source_file": "Cooler Manual.",
+      "source_path": "D:\\기계도면\\기계도면\\32. 증기터빈 (정석)\\제주 VP\\전기\\19. Operation Manual\\Cooler Manual..pdf",
+      "rev": null,
+      "chunk_hash": "318f1b989cad9ec2",
+      "char_count": 80
+    },
+    {
+      "chunk_idx": 47,
+      "text": "ssure test as per Sec 0 to ensure leak proof\nassembly.\n\n8.4 Cleaning the Shroud: 9. RECTIFICATION, REPAIR & TESTING:\nProblem Cause Solution\n(cid:3) The incorrect conditions\nhave to be altered\nThe operating conditions (cid:3) The heat exchanger has\nare different from design to be replaced with one\nconditions which suits the current\noperating conditions.\nPerformance of the heat\n(cid:3) Increase the frequency of\nexchanger is not\ncleaning of tubes\nsatisfactory\n(cid:3) Soften the water before it\nTubes are fouling\nenters the heat\nfrequently\nexchanger by using a\nwater softener.\nIncrease the frequency of\nFins foul frequently\ncleaning of fins.\n(cid:3) Check heat exchanger for\ntube leakage.\n(cid:3) Follow procedure in Sec 0\nto arrest tube expansion\nWater Leakage Detector\nleakage.\nis tripping or tube is\n(cid:3) If tube is leaking in the\nleaking.\nmiddle, identify and plug\nHeat Exchanger is the tube. Get in touch\nleaking with us immediately\nFollow procedure in Sec 0 to\nWeld Leakage\narrest weld leakage.\nReplace with a new set of\nGasket Leakage\ngaskets and tighten all bolts\nBolts tightened Tighten bolts with torque wrench\ninsufficiently",
+      "header": "9. RECTIFICATION, REPAIR & TESTING:",
+      "section_type": "비상",
+      "equipment": [
+        "열교환기"
+      ],
+      "company_id": "32",
+      "company_name": "증기터빈",
+      "source_file": "Cooler Manual.",
+      "source_path": "D:\\기계도면\\기계도면\\32. 증기터빈 (정석)\\제주 VP\\전기\\19. Operation Manual\\Cooler Manual..pdf",
+      "rev": null,
+      "chunk_hash": "b0df207c375a3b7e",
+      "char_count": 1139
+    },
+    {
+      "chunk_idx": 48,
+      "text": "ighten all bolts\nBolts tightened Tighten bolts with torque wrench\ninsufficiently 9.1 Hydro Pressure Test:\n1111 This procedure must be carried out only by trained personnel at our\nworks. It is strongly recommended that this procedure not be\ncarried out by untrained personnel as there are chances of\ncatastrophic failure.\nThe Hydro pressure test of cooler is carried out to ensure that there is no\nleakage through the expansion joints, gasket and welded joints and also to\ndetect any leaking tubes. A water pump facility which is capable of\npressurizing the cooler up to the specified test pressure and a calibrated\npressure gauge are required to conduct this test.\nThe procedure for conducting the test is as follows:",
+      "header": "9. RECTIFICATION, REPAIR & TESTING:",
+      "section_type": "일반",
+      "equipment": [
+        "펌프"
+      ],
+      "company_id": "32",
+      "company_name": "증기터빈",
+      "source_file": "Cooler Manual.",
+      "source_path": "D:\\기계도면\\기계도면\\32. 증기터빈 (정석)\\제주 VP\\전기\\19. Operation Manual\\Cooler Manual..pdf",
+      "rev": null,
+      "chunk_hash": "6de7a0d97663a0ed",
+      "char_count": 717
+    },
+    {
+      "chunk_idx": 49,
+      "text": "uired to conduct this test.\nThe procedure for conducting the test is as follows: 2. Connect a calibrated pressure gauge to outlet water connection of the\ncooler.",
+      "header": "2. Connect a calibrated pressure gauge to outlet water connection of the",
+      "section_type": "일반",
+      "equipment": [
+        "열교환기"
+      ],
+      "company_id": "32",
+      "company_name": "증기터빈",
+      "source_file": "Cooler Manual.",
+      "source_path": "D:\\기계도면\\기계도면\\32. 증기터빈 (정석)\\제주 VP\\전기\\19. Operation Manual\\Cooler Manual..pdf",
+      "rev": null,
+      "chunk_hash": "4cc2ce1b4e329980",
+      "char_count": 161
+    },
+    {
+      "chunk_idx": 50,
+      "text": "3. Assemble other parts as shown in the Error! Reference source not\nfound. on Page Error! Bookmark not defined.",
+      "header": "3. Assemble other parts as shown in the Error! Reference source not",
+      "section_type": "일반",
+      "equipment": [
+        "열교환기"
+      ],
+      "company_id": "32",
+      "company_name": "증기터빈",
+      "source_file": "Cooler Manual.",
+      "source_path": "D:\\기계도면\\기계도면\\32. 증기터빈 (정석)\\제주 VP\\전기\\19. Operation Manual\\Cooler Manual..pdf",
+      "rev": null,
+      "chunk_hash": "fa315e0ffbda2d90",
+      "char_count": 111
+    },
+    {
+      "chunk_idx": 51,
+      "text": "n in the Error! Reference source not\nfound. on Page Error! Bookmark not defined. 4. Slowly pressurize the cooler by pumping water through inlet connection\nto the specified test pressure.",
+      "header": "4. Slowly pressurize the cooler by pumping water through inlet connection",
+      "section_type": "일반",
+      "equipment": [
+        "열교환기"
+      ],
+      "company_id": "32",
+      "company_name": "증기터빈",
+      "source_file": "Cooler Manual.",
+      "source_path": "D:\\기계도면\\기계도면\\32. 증기터빈 (정석)\\제주 VP\\전기\\19. Operation Manual\\Cooler Manual..pdf",
+      "rev": null,
+      "chunk_hash": "bb8fa5b1d3ee9d5f",
+      "char_count": 186
+    },
+    {
+      "chunk_idx": 52,
+      "text": "cooler by pumping water through inlet connection\nto the specified test pressure. 6. Thoroughly examine all the welds, gasket joints for leakage through tube\nto tube plate joints. The cooler should not exhibit any drop in pressure.\n\n9.2 Weld Leakage:\n\nDP test must be carried out only by qualified personnel\n1111 This procedure must be carried out only by trained personnel at our\nworks. It is strongly recommended that this procedure not be\ncarried out by untrained personnel as there are chances of\ncatastrophic failure.",
+      "header": "6. Thoroughly examine all the welds, gasket joints for leakage through tube",
+      "section_type": "일반",
+      "equipment": [
+        "열교환기"
+      ],
+      "company_id": "32",
+      "company_name": "증기터빈",
+      "source_file": "Cooler Manual.",
+      "source_path": "D:\\기계도면\\기계도면\\32. 증기터빈 (정석)\\제주 VP\\전기\\19. Operation Manual\\Cooler Manual..pdf",
+      "rev": null,
+      "chunk_hash": "1706612858d48631",
+      "char_count": 521
+    },
+    {
+      "chunk_idx": 53,
+      "text": "carried out by untrained personnel as there are chances of\ncatastrophic failure. 1. In the pressurized conditions, mark the leaking portion with a chalk or\npaint.",
+      "header": "1. In the pressurized conditions, mark the leaking portion with a chalk or",
+      "section_type": "일반",
+      "equipment": [
+        "열교환기"
+      ],
+      "company_id": "32",
+      "company_name": "증기터빈",
+      "source_file": "Cooler Manual.",
+      "source_path": "D:\\기계도면\\기계도면\\32. 증기터빈 (정석)\\제주 VP\\전기\\19. Operation Manual\\Cooler Manual..pdf",
+      "rev": null,
+      "chunk_hash": "14645ee51f86f76a",
+      "char_count": 162
+    },
+    {
+      "chunk_idx": 54,
+      "text": ". In the pressurized conditions, mark the leaking portion with a chalk or\npaint. 2. Release the pressure and drain out water. If required, blow out with\ncompressed air to remove all moisture.",
+      "header": "2. Release the pressure and drain out water. If required, blow out with",
+      "section_type": "일반",
+      "equipment": [
+        "열교환기"
+      ],
+      "company_id": "32",
+      "company_name": "증기터빈",
+      "source_file": "Cooler Manual.",
+      "source_path": "D:\\기계도면\\기계도면\\32. 증기터빈 (정석)\\제주 VP\\전기\\19. Operation Manual\\Cooler Manual..pdf",
+      "rev": null,
+      "chunk_hash": "5670dbd7b2c646de",
+      "char_count": 191
+    },
+    {
+      "chunk_idx": 55,
+      "text": "ain out water. If required, blow out with\ncompressed air to remove all moisture. 3. Ascertain if there is any crack. Grind / Gouge the defective portion and\nweld. Perform a DP test to check that the weld quality..",
+      "header": "3. Ascertain if there is any crack. Grind / Gouge the defective portion and",
+      "section_type": "일반",
+      "equipment": [
+        "열교환기"
+      ],
+      "company_id": "32",
+      "company_name": "증기터빈",
+      "source_file": "Cooler Manual.",
+      "source_path": "D:\\기계도면\\기계도면\\32. 증기터빈 (정석)\\제주 VP\\전기\\19. Operation Manual\\Cooler Manual..pdf",
+      "rev": null,
+      "chunk_hash": "965a951f04bdf6ea",
+      "char_count": 213
+    },
+    {
+      "chunk_idx": 56,
+      "text": "e defective portion and\nweld. Perform a DP test to check that the weld quality.. 4. Assemble the cooler and subject it to hydro pressure test as per Sec 0.\n9.3 Tube expansion leakage:\n1111 This procedure must be carried out only by trained personnel at our\nworks. It is strongly recommended that this procedure not be\ncarried out by untrained personnel as there are chances of\ncatastrophic failure of tubes.\nDuring hydro pressure testing of the coolers, if the tube to tube plate joint\nis found to be leaking, the following procedure should be done to arrest the\nleakage:",
+      "header": "4. Assemble the cooler and subject it to hydro pressure test as per Sec 0.",
+      "section_type": "일반",
+      "equipment": [
+        "열교환기"
+      ],
+      "company_id": "32",
+      "company_name": "증기터빈",
+      "source_file": "Cooler Manual.",
+      "source_path": "D:\\기계도면\\기계도면\\32. 증기터빈 (정석)\\제주 VP\\전기\\19. Operation Manual\\Cooler Manual..pdf",
+      "rev": null,
+      "chunk_hash": "8224f35af4c60418",
+      "char_count": 571
+    },
+    {
+      "chunk_idx": 57,
+      "text": "und to be leaking, the following procedure should be done to arrest the\nleakage: 3. Check the bore of the tube and re-expand the joint. Recheck the bore to\nconfirm that the expansion has taken place.",
+      "header": "3. Check the bore of the tube and re-expand the joint. Recheck the bore to",
+      "section_type": "일반",
+      "equipment": [
+        "열교환기"
+      ],
+      "company_id": "32",
+      "company_name": "증기터빈",
+      "source_file": "Cooler Manual.",
+      "source_path": "D:\\기계도면\\기계도면\\32. 증기터빈 (정석)\\제주 VP\\전기\\19. Operation Manual\\Cooler Manual..pdf",
+      "rev": null,
+      "chunk_hash": "cdeb759bd39e5277",
+      "char_count": 199
+    },
+    {
+      "chunk_idx": 58,
+      "text": "xpand the joint. Recheck the bore to\nconfirm that the expansion has taken place. 4. Reassemble the water boxes. Fill water and Hydro pressure test the\ncooler as per Sec 0",
+      "header": "4. Reassemble the water boxes. Fill water and Hydro pressure test the",
+      "section_type": "일반",
+      "equipment": [
+        "열교환기"
+      ],
+      "company_id": "32",
+      "company_name": "증기터빈",
+      "source_file": "Cooler Manual.",
+      "source_path": "D:\\기계도면\\기계도면\\32. 증기터빈 (정석)\\제주 VP\\전기\\19. Operation Manual\\Cooler Manual..pdf",
+      "rev": null,
+      "chunk_hash": "447c75e5180751d9",
+      "char_count": 170
+    },
+    {
+      "chunk_idx": 59,
+      "text": "mble the water boxes. Fill water and Hydro pressure test the\ncooler as per Sec 0 5. If joint continues to leak, dismantle the water boxes and plug the tube\nwith tapered copper plug. The hole and plug should be brazed / welded.\nSuitable epoxy compound could also be used.",
+      "header": "5. If joint continues to leak, dismantle the water boxes and plug the tube",
+      "section_type": "일반",
+      "equipment": [
+        "열교환기"
+      ],
+      "company_id": "32",
+      "company_name": "증기터빈",
+      "source_file": "Cooler Manual.",
+      "source_path": "D:\\기계도면\\기계도면\\32. 증기터빈 (정석)\\제주 VP\\전기\\19. Operation Manual\\Cooler Manual..pdf",
+      "rev": null,
+      "chunk_hash": "2820d9b0f31c9cc5",
+      "char_count": 270
+    },
+    {
+      "chunk_idx": 60,
+      "text": "and plug should be brazed / welded.\nSuitable epoxy compound could also be used. 10. SPARE PARTS:\nWhen ordering for spares, please provide us with the as much data as\npossible. The data required is:\n• Project Name and Purchase order number with date.\n• Serial number of the heat exchanger along with year of manufacture as\non the name plate.\n• Manufacturer, Rating and Frame Size of the Electric Machine.\n• Heat Load to be dissipated.\n• Water Flow rate and inlet temperature.\n• Air Flow rate and temperatures.\n• Allowable pressure drops.\n• Dimensions of the heat exchanger.\n• Type of fin and Material of Construction of the heat exchanger.\n• Any accessories provided along with the assembly.",
+      "header": "10. SPARE PARTS:",
+      "section_type": "일반",
+      "equipment": [
+        "열교환기"
+      ],
+      "company_id": "32",
+      "company_name": "증기터빈",
+      "source_file": "Cooler Manual.",
+      "source_path": "D:\\기계도면\\기계도면\\32. 증기터빈 (정석)\\제주 VP\\전기\\19. Operation Manual\\Cooler Manual..pdf",
+      "rev": null,
+      "chunk_hash": "5ae9ae5468a509e5",
+      "char_count": 690
+    }
+  ]
+}

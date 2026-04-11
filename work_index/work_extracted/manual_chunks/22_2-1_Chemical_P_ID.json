@@ -1,0 +1,208 @@
+{
+  "meta": {
+    "source_path": "D:\\기계도면\\기계도면\\22. 시료수, 약품2, 침출수, 화격자 (조선내화E)\\시료수분석설비 외 준공도서\\01. [제주-기계] 승인서류 (19.11.) AS BUILT\\16. 운전 및 유지관리 지침서\\16-2. 보일러약품주입설비\\도면&메뉴얼\\2-1.Chemical P&ID.pdf",
+    "company_id": "22",
+    "company_name": "시료수, 약품2, 침출수, 화격자",
+    "equipment": "보일러",
+    "doc_type": "MANUAL",
+    "rev": "AS_BUILT",
+    "is_latest": true,
+    "extracted_at": "2026-03-27T20:21:37",
+    "chunk_count": 12,
+    "vision_pages": 0
+  },
+  "chunks": [
+    {
+      "chunk_idx": 1,
+      "text": "IX\nAX\nSH\nP.V\nW.H 비설입주품약\n러일보\nA1S-2080-0-WMD-A52\n프펌급공수순\n반어제장현\n4-D\n,131-M-JJ\n1030-0-PCL",
+      "header": "IX\nAX\nSH",
+      "section_type": "일반",
+      "equipment": [
+        "과열기"
+      ],
+      "company_id": "22",
+      "company_name": "시료수, 약품2, 침출수, 화격자",
+      "source_file": "2-1.Chemical P&ID",
+      "source_path": "D:\\기계도면\\기계도면\\22. 시료수, 약품2, 침출수, 화격자 (조선내화E)\\시료수분석설비 외 준공도서\\01. [제주-기계] 승인서류 (19.11.) AS BUILT\\16. 운전 및 유지관리 지침서\\16-2. 보일러약품주입설비\\도면&메뉴얼\\2-1.Chemical P&ID.pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "062266800dbd5f2f",
+      "char_count": 84
+    },
+    {
+      "chunk_idx": 2,
+      "text": "X\nSH\nP.V\nW.H 비설입주품약\n러일보\nA1S-2080-0-WMD-A52\n프펌급공수순\n반어제장현\n4-D\n,131-M-JJ\n1030-0-PCL AL\nGP\nVSP\nL\nⅠ",
+      "header": "AL\nGP\nVSP\nL",
+      "section_type": "일반",
+      "equipment": [
+        "과열기"
+      ],
+      "company_id": "22",
+      "company_name": "시료수, 약품2, 침출수, 화격자",
+      "source_file": "2-1.Chemical P&ID",
+      "source_path": "D:\\기계도면\\기계도면\\22. 시료수, 약품2, 침출수, 화격자 (조선내화E)\\시료수분석설비 외 준공도서\\01. [제주-기계] 승인서류 (19.11.) AS BUILT\\16. 운전 및 유지관리 지침서\\16-2. 보일러약품주입설비\\도면&메뉴얼\\2-1.Chemical P&ID.pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "b16e01672e22fe7f",
+      "char_count": 94
+    },
+    {
+      "chunk_idx": 4,
+      "text": "M\n제관청\n단후\n프펌수급러일보\nA4B-2030-1-OCB-A51\nM\n기반교\n크탱장저\n5-C\n,211-M-JJ\nP\nA4B-1030-1-OCB-A51",
+      "header": "M",
+      "section_type": "일반",
+      "equipment": [
+        "보일러"
+      ],
+      "company_id": "22",
+      "company_name": "시료수, 약품2, 침출수, 화격자",
+      "source_file": "2-1.Chemical P&ID",
+      "source_path": "D:\\기계도면\\기계도면\\22. 시료수, 약품2, 침출수, 화격자 (조선내화E)\\시료수분석설비 외 준공도서\\01. [제주-기계] 승인서류 (19.11.) AS BUILT\\16. 운전 및 유지관리 지침서\\16-2. 보일러약품주입설비\\도면&메뉴얼\\2-1.Chemical P&ID.pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "44c91c4b05f58596",
+      "char_count": 81
+    },
+    {
+      "chunk_idx": 5,
+      "text": "제관청\n단후\n프펌수급러일보\nA4B-2030-1-OCB-A51\nM\n기반교\n크탱장저\n5-C\n,211-M-JJ\nP\nA4B-1030-1-OCB-A51 GP\nVSP\nⅠ M\nGL 5030\nA4B-3030-0-OCB-A51\nP\nA4B-2030-0-OCB-A51",
+      "header": "GP\nVSP",
+      "section_type": "일반",
+      "equipment": [
+        "보일러"
+      ],
+      "company_id": "22",
+      "company_name": "시료수, 약품2, 침출수, 화격자",
+      "source_file": "2-1.Chemical P&ID",
+      "source_path": "D:\\기계도면\\기계도면\\22. 시료수, 약품2, 침출수, 화격자 (조선내화E)\\시료수분석설비 외 준공도서\\01. [제주-기계] 승인서류 (19.11.) AS BUILT\\16. 운전 및 유지관리 지침서\\16-2. 보일러약품주입설비\\도면&메뉴얼\\2-1.Chemical P&ID.pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "4a4c29ac472f08e3",
+      "char_count": 138
+    },
+    {
+      "chunk_idx": 6,
+      "text": "GP\nVSP\nⅠ\n5030-0T\n크탱장저\n제관청\n)기호2(\nM\n단후\n프펌수급러일보\nA4B-2030-2-OCB-A51\nA4B-1030-0-OCB-A51\n5-C\n,311-M-JJ\nP\nA4B-1030-2-OCB-A51\nC~A\n3030-0P\n프펌급공\n제관청\nAL 2030\nL\nSL 2030",
+      "header": "GP\nVSP",
+      "section_type": "일반",
+      "equipment": [
+        "보일러"
+      ],
+      "company_id": "22",
+      "company_name": "시료수, 약품2, 침출수, 화격자",
+      "source_file": "2-1.Chemical P&ID",
+      "source_path": "D:\\기계도면\\기계도면\\22. 시료수, 약품2, 침출수, 화격자 (조선내화E)\\시료수분석설비 외 준공도서\\01. [제주-기계] 승인서류 (19.11.) AS BUILT\\16. 운전 및 유지관리 지침서\\16-2. 보일러약품주입설비\\도면&메뉴얼\\2-1.Chemical P&ID.pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "937356f57cca5fad",
+      "char_count": 156
+    },
+    {
+      "chunk_idx": 7,
+      "text": "CB-A51\n5-C\n,311-M-JJ\nP\nA4B-1030-2-OCB-A51\nC~A\n3030-0P\n프펌급공\n제관청\nAL 2030\nL\nSL 2030 GP\nVSP\nⅠ M\nD\nA1S-2030-0-HCB-A51",
+      "header": "GP\nVSP",
+      "section_type": "일반",
+      "equipment": [
+        "보일러"
+      ],
+      "company_id": "22",
+      "company_name": "시료수, 약품2, 침출수, 화격자",
+      "source_file": "2-1.Chemical P&ID",
+      "source_path": "D:\\기계도면\\기계도면\\22. 시료수, 약품2, 침출수, 화격자 (조선내화E)\\시료수분석설비 외 준공도서\\01. [제주-기계] 승인서류 (19.11.) AS BUILT\\16. 운전 및 유지관리 지침서\\16-2. 보일러약품주입설비\\도면&메뉴얼\\2-1.Chemical P&ID.pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "693f67d02b4f3cb8",
+      "char_count": 112
+    },
+    {
+      "chunk_idx": 8,
+      "text": "GL\n단전 5-\n프 C 펌 ,7 수 11\n급 -\n러 M\n일 -J 보 J\nA1S-4030-0-HCB-A51\n7 G 13\nP 0\n8 V 0 S 3 P 0\nⅠ\n\nM\n6030-0T\nA1S-3030-0-HCB-A51\nD\nA1S-2030-0-HCB-A51\n크탱장저\n제산탈\nA1S-1030-0-HCB-A51\nB/A\n4030-0P\n프펌급공\n제산탈\nAL 3030\nL\nSL 3030",
+      "header": "GL",
+      "section_type": "일반",
+      "equipment": [
+        "보일러"
+      ],
+      "company_id": "22",
+      "company_name": "시료수, 약품2, 침출수, 화격자",
+      "source_file": "2-1.Chemical P&ID",
+      "source_path": "D:\\기계도면\\기계도면\\22. 시료수, 약품2, 침출수, 화격자 (조선내화E)\\시료수분석설비 외 준공도서\\01. [제주-기계] 승인서류 (19.11.) AS BUILT\\16. 운전 및 유지관리 지침서\\16-2. 보일러약품주입설비\\도면&메뉴얼\\2-1.Chemical P&ID.pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "3d90291666ce70b6",
+      "char_count": 203
+    },
+    {
+      "chunk_idx": 9,
+      "text": "030-0-HCB-A51\n크탱장저\n제산탈\nA1S-1030-0-HCB-A51\nB/A\n4030-0P\n프펌급공\n제산탈\nAL 3030\nL\nSL 3030 GP\nVSP\nⅠ M\nD\nA1S-6030-0-HCB-A51",
+      "header": "GP\nVSP",
+      "section_type": "일반",
+      "equipment": [
+        "보일러"
+      ],
+      "company_id": "22",
+      "company_name": "시료수, 약품2, 침출수, 화격자",
+      "source_file": "2-1.Chemical P&ID",
+      "source_path": "D:\\기계도면\\기계도면\\22. 시료수, 약품2, 침출수, 화격자 (조선내화E)\\시료수분석설비 외 준공도서\\01. [제주-기계] 승인서류 (19.11.) AS BUILT\\16. 운전 및 유지관리 지침서\\16-2. 보일러약품주입설비\\도면&메뉴얼\\2-1.Chemical P&ID.pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "dfabc519d46461cd",
+      "char_count": 112
+    },
+    {
+      "chunk_idx": 10,
+      "text": "GL\n단전\n5-\n프 B\n펌 ,7\n수 11\n급 -\n러 M 일 -J 보 J\nA1S-8030-0-HCB-A51\n8 G 13\nP 0\n9 V 0 S 3 P 0\nⅠ\n\n---\n---\n---\n---",
+      "header": "GL",
+      "section_type": "일반",
+      "equipment": [
+        "보일러"
+      ],
+      "company_id": "22",
+      "company_name": "시료수, 약품2, 침출수, 화격자",
+      "source_file": "2-1.Chemical P&ID",
+      "source_path": "D:\\기계도면\\기계도면\\22. 시료수, 약품2, 침출수, 화격자 (조선내화E)\\시료수분석설비 외 준공도서\\01. [제주-기계] 승인서류 (19.11.) AS BUILT\\16. 운전 및 유지관리 지침서\\16-2. 보일러약품주입설비\\도면&메뉴얼\\2-1.Chemical P&ID.pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "51e2d031258866c8",
+      "char_count": 102
+    },
+    {
+      "chunk_idx": 11,
+      "text": "급 -\n러 M 일 -J 보 J\nA1S-8030-0-HCB-A51\n8 G 13\nP 0\n9 V 0 S 3 P 0\nⅠ\n\n---\n---\n---\n--- NOITCURTSNOC\n80.01.81\n\nM\n인\n승\n토\n검\n계\n설\n도\n제\n용\n내\n짜\n날\n정\n수\n7030-0T",
+      "header": "NOITCURTSNOC",
+      "section_type": "일반",
+      "equipment": [
+        "보일러"
+      ],
+      "company_id": "22",
+      "company_name": "시료수, 약품2, 침출수, 화격자",
+      "source_file": "2-1.Chemical P&ID",
+      "source_path": "D:\\기계도면\\기계도면\\22. 시료수, 약품2, 침출수, 화격자 (조선내화E)\\시료수분석설비 외 준공도서\\01. [제주-기계] 승인서류 (19.11.) AS BUILT\\16. 운전 및 유지관리 지침서\\16-2. 보일러약품주입설비\\도면&메뉴얼\\2-1.Chemical P&ID.pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "6ff415ec48cf8481",
+      "char_count": 140
+    },
+    {
+      "chunk_idx": 12,
+      "text": "D\nNOITPIRCSED\nETADON.VER\nA1S-7030-0-HCB-A51\nD\nA1S-6030-0-HCB-A51\n크탱장저\n제절조Hp\n업사성조\n)설시각소(터센환순원자경환주제\nB/A\n5030-0P\nA1S-5030-0-HCB-A51\n프펌급공\n제절조Hp\n도치자별특주제\n소무사사축건합종한신)주(\n소무사사축건합종인제)주(\n링어니지엔성수)주(\n링어니지엔진웅)주(\n사공술기일동)주(\n사회식주\n설건합종영두\n사회식주\n설건합종도대\n사회식주\n설건보영\n사회식주\n설건합종강벽\n사회식주\n설건림성\n설건웅대\n사회식주\n도통계\n비설입주품약\n.ON",
+      "header": "D\nNOITPIRCSED",
+      "section_type": "일반",
+      "equipment": [
+        "보일러"
+      ],
+      "company_id": "22",
+      "company_name": "시료수, 약품2, 침출수, 화격자",
+      "source_file": "2-1.Chemical P&ID",
+      "source_path": "D:\\기계도면\\기계도면\\22. 시료수, 약품2, 침출수, 화격자 (조선내화E)\\시료수분석설비 외 준공도서\\01. [제주-기계] 승인서류 (19.11.) AS BUILT\\16. 운전 및 유지관리 지침서\\16-2. 보일러약품주입설비\\도면&메뉴얼\\2-1.Chemical P&ID.pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "989d748bd604040a",
+      "char_count": 288
+    },
+    {
+      "chunk_idx": 13,
+      "text": "사회식주\n설건합종영두\n사회식주\n설건합종도대\n사회식주\n설건보영\n사회식주\n설건합종강벽\n사회식주\n설건림성\n설건웅대\n사회식주\n도통계\n비설입주품약\n.ON GNIWARD\n.veR",
+      "header": "GNIWARD",
+      "section_type": "일반",
+      "equipment": [
+        "보일러"
+      ],
+      "company_id": "22",
+      "company_name": "시료수, 약품2, 침출수, 화격자",
+      "source_file": "2-1.Chemical P&ID",
+      "source_path": "D:\\기계도면\\기계도면\\22. 시료수, 약품2, 침출수, 화격자 (조선내화E)\\시료수분석설비 외 준공도서\\01. [제주-기계] 승인서류 (19.11.) AS BUILT\\16. 운전 및 유지관리 지침서\\16-2. 보일러약품주입설비\\도면&메뉴얼\\2-1.Chemical P&ID.pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "b8c7fa4f6eea181d",
+      "char_count": 93
+    }
+  ]
+}

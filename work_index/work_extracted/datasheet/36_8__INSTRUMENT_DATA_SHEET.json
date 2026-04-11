@@ -1,0 +1,24 @@
+{
+  "meta": {
+    "source_path": "D:\\기계도면\\기계도면\\36. 폐열보일러, SB (조선내화E)\\보일러 준공도서\\보일러(전기)\\8.INSTRUMNET DATA SHEET\\8. INSTRUMENT DATA SHEET.pdf",
+    "company_id": "36",
+    "equipment": "폐열보일러",
+    "doc_type": "DATA_SHEET",
+    "rev": "AS_BUILT",
+    "is_latest": true,
+    "extracted_at": "2026-03-27T19:43:42",
+    "record_count": 1,
+    "vision_pages": 0
+  },
+  "records": [
+    {
+      "parameter": "제작사명: (주)조선내화이엔지",
+      "value": "2019",
+      "unit": "",
+      "equipment": "폐열보일러",
+      "source": "table",
+      "page": 1,
+      "chunk_hash": "57b20fc1b32118bf"
+    }
+  ]
+}

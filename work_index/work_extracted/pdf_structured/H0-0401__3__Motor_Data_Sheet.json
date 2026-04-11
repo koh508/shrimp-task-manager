@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "tag": "H0-0401",
+    "file": "3. Motor Data Sheet.pdf",
+    "company_id": "30",
+    "source_path": "D:\\기계도면\\기계도면\\30. 저압증기복수기 (DTS)\\감리 승인용 7차 문서 (201908) As built\\6. Data Sheet 및 성능 곡선도\\첨부\\3. Motor Data Sheet.pdf",
+    "extracted_at": "2026-03-27T22:18:48"
+  },
+  "tag": "H0-0401",
+  "records": [
+    {
+      "tag": "H0-0401",
+      "section": "MOTOR",
+      "position": null,
+      "parameter": "motor_poles",
+      "value": "4",
+      "unit": "pole",
+      "match_type": "exact",
+      "source": {
+        "file": "3. Motor Data Sheet.pdf",
+        "company": "30",
+        "page": 1
+      }
+    },
+    {
+      "tag": "H0-0401",
+      "section": "MOTOR",
+      "position": null,
+      "parameter": "ip_rating",
+      "value": "IP55",
+      "unit": "",
+      "match_type": "exact",
+      "source": {
+        "file": "3. Motor Data Sheet.pdf",
+        "company": "30",
+        "page": 1
+      }
+    },
+    {
+      "tag": "H0-0401",
+      "section": "MOTOR",
+      "position": null,
+      "parameter": "motor_voltage_V",
+      "value": "380",
+      "unit": "V",
+      "match_type": "exact",
+      "source": {
+        "file": "3. Motor Data Sheet.pdf",
+        "company": "30",
+        "page": 1
+      }
+    },
+    {
+      "tag": "H0-0401",
+      "section": "MOTOR",
+      "position": null,
+      "parameter": "insulation_class",
+      "value": "F",
+      "unit": "",
+      "match_type": "exact",
+      "source": {
+        "file": "3. Motor Data Sheet.pdf",
+        "company": "30",
+        "page": 1
+      }
+    },
+    {
+      "tag": "H0-0401",
+      "section": "LUBRICATION",
+      "position": null,
+      "parameter": "grease_type",
+      "value": "GUN GREASE GUN",
+      "unit": "",
+      "match_type": "exact",
+      "source": {
+        "file": "3. Motor Data Sheet.pdf",
+        "company": "30",
+        "page": 6
+      }
+    },
+    {
+      "tag": "H0-0401",
+      "section": "LUBRICATION",
+      "position": null,
+      "parameter": "grease_type",
+      "value": "and Maker",
+      "unit": "",
+      "match_type": "exact",
+      "source": {
+        "file": "3. Motor Data Sheet.pdf",
+        "company": "30",
+        "page": 6
+      }
+    }
+  ]
+}

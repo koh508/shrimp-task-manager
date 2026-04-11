@@ -1,0 +1,41 @@
+{
+  "meta": {
+    "tag": "P0-0201A",
+    "file": "펌프류 도서_As Built.pdf",
+    "company_id": "34",
+    "source_path": "D:\\기계도면\\기계도면\\34. 펌프류 (청우하이드로)\\펌프류 도서_As Built.pdf",
+    "split_from": "P0-0301",
+    "extracted_at": "2026-03-28T13:31:31"
+  },
+  "tag": "P0-0201A",
+  "records": [
+    {
+      "tag": "P0-0201A",
+      "section": "MOTOR",
+      "position": null,
+      "parameter": "motor_kw",
+      "value": "5.5",
+      "unit": "kW",
+      "match_type": "exact",
+      "source": {
+        "file": "펌프류 도서_As Built.pdf",
+        "company": "34",
+        "page": 143
+      }
+    },
+    {
+      "tag": "P0-0201A",
+      "section": "PERFORMANCE",
+      "position": null,
+      "parameter": "head_m",
+      "value": "30",
+      "unit": "m",
+      "match_type": "exact",
+      "source": {
+        "file": "펌프류 도서_As Built.pdf",
+        "company": "34",
+        "page": 143
+      }
+    }
+  ]
+}

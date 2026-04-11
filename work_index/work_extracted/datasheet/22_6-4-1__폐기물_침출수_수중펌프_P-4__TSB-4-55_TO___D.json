@@ -1,0 +1,374 @@
+{
+  "meta": {
+    "source_path": "D:\\기계도면\\기계도면\\22. 시료수, 약품2, 침출수, 화격자 (조선내화E)\\시료수분석설비 외 준공도서\\01. [제주-기계] 승인서류 (19.11.) AS BUILT\\6. DATA SHEET 및 성능곡선도\\[6-4] 폐기물 침출수 설비\\6-4-1. 폐기물 침출수 수중펌프(P-4. TSB-4-55(TO)) Data-Sheet & 성능곡선.xls",
+    "company_id": "22",
+    "equipment": "펌프",
+    "doc_type": "DATA_SHEET",
+    "rev": "AS_BUILT",
+    "is_latest": true,
+    "extracted_at": "2026-03-27T19:33:07",
+    "record_count": 36
+  },
+  "records": [
+    {
+      "parameter": "SUBMERSIBLE PUMP  DATA SHEET",
+      "value": "0",
+      "unit": "",
+      "design_value": "REV. No",
+      "equipment": "펌프",
+      "row_idx": 0,
+      "sheet": "데이타",
+      "chunk_hash": "8270257c934ffd25"
+    },
+    {
+      "parameter": "CUSTOMER",
+      "value": "MADE BY",
+      "unit": "",
+      "design_value": "제주 특별 자치도",
+      "equipment": "펌프",
+      "row_idx": 3,
+      "sheet": "데이타",
+      "chunk_hash": "61172b953e6363b3"
+    },
+    {
+      "parameter": "PROJECT NAME",
+      "value": "KWON, Y.M.",
+      "unit": "",
+      "design_value": "제주 환경 자원 순환센터(소각시설)조성공사",
+      "equipment": "펌프",
+      "row_idx": 4,
+      "sheet": "데이타",
+      "chunk_hash": "5415770fe686d5af"
+    },
+    {
+      "parameter": "LOCATION",
+      "value": "ITEM NO.",
+      "unit": "",
+      "design_value": "제주시 구좌읍 동복리 산 56-34",
+      "equipment": "펌프",
+      "row_idx": 5,
+      "sheet": "데이타",
+      "chunk_hash": "5be84cf734639e36"
+    },
+    {
+      "parameter": "SERVICE",
+      "value": "Q'TY",
+      "unit": "",
+      "design_value": "폐기물 침출수 이송펌프",
+      "equipment": "펌프",
+      "row_idx": 6,
+      "sheet": "데이타",
+      "chunk_hash": "0facfc5f95a6b7ff"
+    },
+    {
+      "parameter": "LIQUID",
+      "value": "SUMP DEPTH",
+      "unit": "m",
+      "design_value": "WATER",
+      "equipment": "펌프",
+      "row_idx": 8,
+      "sheet": "데이타",
+      "chunk_hash": "750ce5786a109e87"
+    },
+    {
+      "parameter": "WATER TEMPERATURE",
+      "value": "℃",
+      "unit": "℃",
+      "design_value": "MAX       40",
+      "equipment": "펌프",
+      "row_idx": 9,
+      "sheet": "데이타",
+      "chunk_hash": "0472bed8dfed80fd"
+    },
+    {
+      "parameter": "SPECIFIC GRAVITY",
+      "value": "DISCHARGE PRESSURE",
+      "unit": "",
+      "design_value": "1",
+      "equipment": "펌프",
+      "row_idx": 10,
+      "sheet": "데이타",
+      "chunk_hash": "97333864df0f69cd"
+    },
+    {
+      "parameter": "VISCOSITY",
+      "value": "CP",
+      "unit": "",
+      "design_value": "1",
+      "equipment": "펌프",
+      "row_idx": 11,
+      "sheet": "데이타",
+      "chunk_hash": "6fcbaf5b5af8cd10"
+    },
+    {
+      "parameter": "DESIGN DATA",
+      "value": "MOTOR DESIGN DATA",
+      "unit": "",
+      "design_value": "",
+      "equipment": "펌프",
+      "row_idx": 12,
+      "sheet": "데이타",
+      "chunk_hash": "68e5d83bcf240f65"
+    },
+    {
+      "parameter": "TOTAL HEAD",
+      "value": "m",
+      "unit": "m",
+      "design_value": "30",
+      "equipment": "펌프",
+      "row_idx": 13,
+      "sheet": "데이타",
+      "chunk_hash": "32ac35daaf9316da"
+    },
+    {
+      "parameter": "CAPACITY",
+      "value": "㎥/min",
+      "unit": "Hz",
+      "design_value": "0.04",
+      "equipment": "펌프",
+      "row_idx": 14,
+      "sheet": "데이타",
+      "chunk_hash": "cc3f08070f6af2f1"
+    },
+    {
+      "parameter": "DISCHARGE DIA",
+      "value": "mm",
+      "unit": "mm",
+      "design_value": "100",
+      "equipment": "펌프",
+      "row_idx": 15,
+      "sheet": "데이타",
+      "chunk_hash": "f4cc15a43f28410d"
+    },
+    {
+      "parameter": "SHAFT POWER",
+      "value": "kW",
+      "unit": "kW",
+      "design_value": "0.4445454545454546",
+      "equipment": "펌프",
+      "row_idx": 16,
+      "sheet": "데이타",
+      "chunk_hash": "cbaa0b223e4607e8"
+    },
+    {
+      "parameter": "EFFICIENCY",
+      "value": "%",
+      "unit": "%",
+      "design_value": "33",
+      "equipment": "펌프",
+      "row_idx": 17,
+      "sheet": "데이타",
+      "chunk_hash": "71ce20acbebf3688"
+    },
+    {
+      "parameter": "PUMP CONSTRUCTIONS",
+      "value": "SYSTEM MATERIALS",
+      "unit": "",
+      "design_value": "",
+      "equipment": "펌프",
+      "row_idx": 18,
+      "sheet": "데이타",
+      "chunk_hash": "17b5f6297dd6eb0b"
+    },
+    {
+      "parameter": "TYPE OF IMPELLER",
+      "value": "PART",
+      "unit": "",
+      "design_value": "NON-CLOG   TYPE",
+      "equipment": "펌프",
+      "row_idx": 19,
+      "sheet": "데이타",
+      "chunk_hash": "7b6b76e06df32623"
+    },
+    {
+      "parameter": "DISCHARGE",
+      "value": "Frame",
+      "unit": "",
+      "design_value": "DISCHARGE\n  SYSTEM",
+      "equipment": "펌프",
+      "row_idx": 20,
+      "sheet": "데이타",
+      "chunk_hash": "84905dfe2b13095d"
+    },
+    {
+      "parameter": "M / SEAL",
+      "value": "-",
+      "unit": "",
+      "design_value": "MODEL",
+      "equipment": "펌프",
+      "row_idx": 26,
+      "sheet": "데이타",
+      "chunk_hash": "a9cd267673913ceb"
+    },
+    {
+      "parameter": "BEARING\n  NUMBER",
+      "value": "6305",
+      "unit": "",
+      "design_value": "UPPER",
+      "equipment": "펌프",
+      "row_idx": 30,
+      "sheet": "데이타",
+      "chunk_hash": "ac5e66a0b46830ac"
+    },
+    {
+      "parameter": "CABTYRE CABLE",
+      "value": "x",
+      "unit": "",
+      "design_value": "PNCT",
+      "equipment": "펌프",
+      "row_idx": 32,
+      "sheet": "데이타",
+      "chunk_hash": "b541b5dcb39fa2f9"
+    },
+    {
+      "parameter": "CONTROL  CABLE",
+      "value": "x",
+      "unit": "",
+      "design_value": "PNCT",
+      "equipment": "펌프",
+      "row_idx": 33,
+      "sheet": "데이타",
+      "chunk_hash": "0aae002541ca747f"
+    },
+    {
+      "parameter": "PAINTING",
+      "value": "Black",
+      "unit": "",
+      "design_value": "COLOR",
+      "equipment": "펌프",
+      "row_idx": 34,
+      "sheet": "데이타",
+      "chunk_hash": "97c501b3a5ab8d4a"
+    },
+    {
+      "parameter": "WEIGHT",
+      "value": "Monitoring Unit",
+      "unit": "",
+      "design_value": "Kg",
+      "equipment": "펌프",
+      "row_idx": 36,
+      "sheet": "데이타",
+      "chunk_hash": "37f4f3e120ba23dd"
+    },
+    {
+      "parameter": "SPARE PARTS",
+      "value": "SPARE PARTS",
+      "unit": "",
+      "design_value": "수량",
+      "equipment": "펌프",
+      "row_idx": 38,
+      "sheet": "데이타",
+      "chunk_hash": "b4c2efa0656d802c"
+    },
+    {
+      "parameter": "NOZZLE TIP",
+      "value": "SOL /",
+      "unit": "V",
+      "design_value": "2",
+      "equipment": "펌프",
+      "row_idx": 39,
+      "sheet": "데이타",
+      "chunk_hash": "457cecc08ce84f2b"
+    },
+    {
+      "parameter": "FLEXIBLE HOSE",
+      "value": "이송펌프\nSEAL AND SLEEVE",
+      "unit": "",
+      "design_value": "1",
+      "equipment": "펌프",
+      "row_idx": 40,
+      "sheet": "데이타",
+      "chunk_hash": "be4a6095b759595a"
+    },
+    {
+      "parameter": "CUSTOMER",
+      "value": "MADE BY",
+      "unit": "",
+      "design_value": "제주 특별 자치도",
+      "equipment": "펌프",
+      "row_idx": 46,
+      "sheet": "데이타",
+      "chunk_hash": "7d963fb12ed32632"
+    },
+    {
+      "parameter": "PROJECT NAME",
+      "value": "KWON, Y.M.",
+      "unit": "",
+      "design_value": "제주 환경 자원 순환센터(소각시설)조성공사",
+      "equipment": "펌프",
+      "row_idx": 47,
+      "sheet": "데이타",
+      "chunk_hash": "5e78dfdf3533dd20"
+    },
+    {
+      "parameter": "LOCATION",
+      "value": "ITEM NO.",
+      "unit": "",
+      "design_value": "제주시 구좌읍 동복리 산 56-34",
+      "equipment": "펌프",
+      "row_idx": 48,
+      "sheet": "데이타",
+      "chunk_hash": "7d2673f2d0a43915"
+    },
+    {
+      "parameter": "SERVICE",
+      "value": "Q'TY",
+      "unit": "",
+      "design_value": "폐기물 침출수 이송펌프",
+      "equipment": "펌프",
+      "row_idx": 49,
+      "sheet": "데이타",
+      "chunk_hash": "b513425cf3588ed6"
+    },
+    {
+      "parameter": "PUMP DESIGN DATA",
+      "value": "MOTOR DESIGN DATA",
+      "unit": "",
+      "design_value": "",
+      "equipment": "펌프",
+      "row_idx": 50,
+      "sheet": "데이타",
+      "chunk_hash": "69149a8439d915c8"
+    },
+    {
+      "parameter": "TOTAL HEAD",
+      "value": "m",
+      "unit": "m",
+      "design_value": "30",
+      "equipment": "펌프",
+      "row_idx": 51,
+      "sheet": "데이타",
+      "chunk_hash": "374e80a5e495d1ef"
+    },
+    {
+      "parameter": "CAPACITY",
+      "value": "㎥/min",
+      "unit": "Hz",
+      "design_value": "0.03",
+      "equipment": "펌프",
+      "row_idx": 52,
+      "sheet": "데이타",
+      "chunk_hash": "8117fb03c758d4de"
+    },
+    {
+      "parameter": "EFFICIENCY",
+      "value": "%",
+      "unit": "%",
+      "design_value": "33",
+      "equipment": "펌프",
+      "row_idx": 53,
+      "sheet": "데이타",
+      "chunk_hash": "70b658fda3b8b46f"
+    },
+    {
+      "parameter": "SHAFT POWER",
+      "value": "kW",
+      "unit": "kW",
+      "design_value": "0.4445454545454546",
+      "equipment": "펌프",
+      "row_idx": 54,
+      "sheet": "데이타",
+      "chunk_hash": "3a23b4127d961051"
+    }
+  ]
+}

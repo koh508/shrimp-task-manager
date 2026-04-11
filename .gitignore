@@ -42,9 +42,9 @@ test_out.txt
 test_sync_log.txt
 
 # 대용량 / DB
-onew_lance_db/
+.onew_lance_db/
 onew_test_db/
-db_backup/
+.db_backup/
 __pycache__/
 *.pyc
 *.pyo

@@ -279,6 +279,11 @@ class LearningGoalCatcher:
 
         return f"📌 [{topic}] 학습 목표로 등록했어. 오늘 밤 자율학습에서 자료 찾아볼게."
 
+    # 개인 기억/일상 판별 키워드 — topic에 포함되면 학습 목표 아님
+    _PERSONAL_KW = re.compile(
+        r'(어제|오늘|아까|저번|지난|내일|엄마|아빠|형|누나|동생|친구|나|내가|우리|같이|먹은|먹었|먹을|마신|갔던|했던)'
+    )
+
     def _extract_topic(self, query: str) -> str | None:
         """정규식으로 학습 주제 추출. 매칭 실패 시 None."""
         for pattern in _LEARN_PATTERNS:
@@ -289,6 +294,10 @@ class LearningGoalCatcher:
                 topic = re.sub(r'(이|가|을|를|은|는|의|에|로|으로|과|와)$', '', topic).strip()
                 # 너무 짧거나 불용어면 제외
                 if len(topic) < 2 or topic in ("이게", "그게", "저게", "이거", "그거"):
+                    continue
+                # 개인 기억/일상 쿼리 → 학습 목표 오탐 방지
+                # "어제 엄마랑 먹은 게 뭐지?" 같은 질문이 등록되는 문제 수정
+                if self._PERSONAL_KW.search(topic):
                     continue
                 return topic
         return None

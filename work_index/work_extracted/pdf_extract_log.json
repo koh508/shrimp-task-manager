@@ -1,0 +1,118 @@
+{
+  "run_at": "2026-03-27T19:49:02",
+  "args": {
+    "company": "36",
+    "limit": null,
+    "force": true,
+    "no_vision": true,
+    "vision_budget": 50,
+    "latest_only": true
+  },
+  "stats": {
+    "processed": 14,
+    "skipped": 0,
+    "failed": 0,
+    "total_records": 508,
+    "vision_calls": 0
+  },
+  "entries": [
+    {
+      "path": "D:\\기계도면\\기계도면\\36. 폐열보일러, SB (조선내화E)\\보일러 준공도서\\보일러(기계)\\18.PIPING INFORMATION rev.0(●)\\18.PIPING INFORMATION rev.0.PDF",
+      "ok": true,
+      "doc_type": "LINELIST",
+      "records": 4,
+      "vision_pages": 0
+    },
+    {
+      "path": "D:\\기계도면\\기계도면\\36. 폐열보일러, SB (조선내화E)\\보일러 준공도서\\보일러(기계)\\18.PIPING INFORMATION rev.0(●)\\원본\\GS제주_ISO.DWG.pdf",
+      "ok": true,
+      "doc_type": "LINELIST",
+      "records": 0,
+      "vision_pages": 0
+    },
+    {
+      "path": "D:\\기계도면\\기계도면\\36. 폐열보일러, SB (조선내화E)\\보일러 준공도서\\보일러(기계)\\18.PIPING INFORMATION rev.0(●)\\원본\\ISO PDF\\01.pdf",
+      "ok": true,
+      "doc_type": "LINELIST",
+      "records": 0,
+      "vision_pages": 0
+    },
+    {
+      "path": "D:\\기계도면\\기계도면\\36. 폐열보일러, SB (조선내화E)\\보일러 준공도서\\보일러(기계)\\18.PIPING INFORMATION rev.0(●)\\원본\\ISO PDF\\02.pdf",
+      "ok": true,
+      "doc_type": "LINELIST",
+      "records": 0,
+      "vision_pages": 0
+    },
+    {
+      "path": "D:\\기계도면\\기계도면\\36. 폐열보일러, SB (조선내화E)\\보일러 준공도서\\보일러(기계)\\18.PIPING INFORMATION rev.0(●)\\원본\\ISO PDF\\03.pdf",
+      "ok": true,
+      "doc_type": "LINELIST",
+      "records": 0,
+      "vision_pages": 0
+    },
+    {
+      "path": "D:\\기계도면\\기계도면\\36. 폐열보일러, SB (조선내화E)\\보일러 준공도서\\보일러(기계)\\18.PIPING INFORMATION rev.0(●)\\원본\\ISO PDF\\04.pdf",
+      "ok": true,
+      "doc_type": "LINELIST",
+      "records": 0,
+      "vision_pages": 0
+    },
+    {
+      "path": "D:\\기계도면\\기계도면\\36. 폐열보일러, SB (조선내화E)\\보일러 준공도서\\보일러(기계)\\18.PIPING INFORMATION rev.0(●)\\원본\\ISO PDF\\05.pdf",
+      "ok": true,
+      "doc_type": "LINELIST",
+      "records": 0,
+      "vision_pages": 0
+    },
+    {
+      "path": "D:\\기계도면\\기계도면\\36. 폐열보일러, SB (조선내화E)\\보일러 준공도서\\보일러(기계)\\18.PIPING INFORMATION rev.0(●)\\원본\\ISO PDF\\06.pdf",
+      "ok": true,
+      "doc_type": "LINELIST",
+      "records": 0,
+      "vision_pages": 0
+    },
+    {
+      "path": "D:\\기계도면\\기계도면\\36. 폐열보일러, SB (조선내화E)\\보일러 준공도서\\보일러(기계)\\18.PIPING INFORMATION rev.0(●)\\원본\\ISO PDF\\07.pdf",
+      "ok": true,
+      "doc_type": "LINELIST",
+      "records": 0,
+      "vision_pages": 0
+    },
+    {
+      "path": "D:\\기계도면\\기계도면\\36. 폐열보일러, SB (조선내화E)\\보일러 준공도서\\보일러(기계)\\18.PIPING INFORMATION rev.0(●)\\원본\\ISO PDF\\08.pdf",
+      "ok": true,
+      "doc_type": "LINELIST",
+      "records": 0,
+      "vision_pages": 0
+    },
+    {
+      "path": "D:\\기계도면\\기계도면\\36. 폐열보일러, SB (조선내화E)\\보일러 준공도서\\보일러(기계)\\6. Data Sheet & 성능 곡선도 rev.0(●)\\6. Data Sheet & 성능 곡선도 rev.0(●).pdf",
+      "ok": true,
+      "doc_type": "DATA_SHEET",
+      "records": 504,
+      "vision_pages": 0
+    },
+    {
+      "path": "D:\\기계도면\\기계도면\\36. 폐열보일러, SB (조선내화E)\\보일러 준공도서\\보일러(기계)\\7. 도면 rev.0(●)\\18. Evaporator(2호기)\\18. Evaporator(2호기).pdf",
+      "ok": true,
+      "doc_type": "LINELIST",
+      "records": 0,
+      "vision_pages": 0
+    },
+    {
+      "path": "D:\\기계도면\\기계도면\\36. 폐열보일러, SB (조선내화E)\\보일러 준공도서\\보일러(기계)\\7. 도면 rev.0(●)\\18. Evaporator(2호기)\\pdf\\JJ-2-EV-001_ASSEMBLY DRAWING OF NO.1,2&3 EVAPORATOR TUBES.pdf",
+      "ok": true,
+      "doc_type": "LINELIST",
+      "records": 0,
+      "vision_pages": 0
+    },
+    {
+      "path": "D:\\기계도면\\기계도면\\36. 폐열보일러, SB (조선내화E)\\보일러 준공도서\\보일러(전기)\\8.INSTRUMNET DATA SHEET\\8. INSTRUMENT DATA SHEET.pdf",
+      "ok": true,
+      "doc_type": "DATA_SHEET",
+      "records": 0,
+      "vision_pages": 0
+    }
+  ]
+}

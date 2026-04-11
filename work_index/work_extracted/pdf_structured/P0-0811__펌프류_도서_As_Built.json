@@ -1,0 +1,55 @@
+{
+  "meta": {
+    "tag": "P0-0811",
+    "file": "펌프류 도서_As Built.pdf",
+    "company_id": "34",
+    "source_path": "D:\\기계도면\\기계도면\\34. 펌프류 (청우하이드로)\\펌프류 도서_As Built.pdf",
+    "split_from": "P0-0301",
+    "extracted_at": "2026-03-28T13:31:31"
+  },
+  "tag": "P0-0811",
+  "records": [
+    {
+      "tag": "P0-0811",
+      "section": "MOTOR",
+      "position": null,
+      "parameter": "motor_poles",
+      "value": "4",
+      "unit": "pole",
+      "match_type": "exact",
+      "source": {
+        "file": "펌프류 도서_As Built.pdf",
+        "company": "34",
+        "page": 108
+      }
+    },
+    {
+      "tag": "P0-0811",
+      "section": "FAN",
+      "position": null,
+      "parameter": "air_flow_m3h",
+      "value": "390.0",
+      "unit": "M3/H",
+      "match_type": "exact",
+      "source": {
+        "file": "펌프류 도서_As Built.pdf",
+        "company": "34",
+        "page": 109
+      }
+    },
+    {
+      "tag": "P0-0811",
+      "section": "MOTOR",
+      "position": null,
+      "parameter": "motor_kw",
+      "value": "110.0",
+      "unit": "kW",
+      "match_type": "exact",
+      "source": {
+        "file": "펌프류 도서_As Built.pdf",
+        "company": "34",
+        "page": 109
+      }
+    }
+  ]
+}

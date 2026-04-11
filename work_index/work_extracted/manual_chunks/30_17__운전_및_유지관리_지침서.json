@@ -1,0 +1,354 @@
+{
+  "meta": {
+    "source_path": "D:\\기계도면\\기계도면\\30. 저압증기복수기 (DTS)\\감리 승인용 7차 문서 (201908) As built\\17. 운전 및 유지관리 지침서\\17. 운전 및 유지관리 지침서.pdf",
+    "company_id": "30",
+    "company_name": "저압증기복수기",
+    "equipment": "기타",
+    "doc_type": "MANUAL",
+    "rev": "AS_BUILT",
+    "is_latest": true,
+    "extracted_at": "2026-03-27T20:27:04",
+    "chunk_count": 21,
+    "vision_pages": 0
+  },
+  "chunks": [
+    {
+      "chunk_idx": 1,
+      "text": "17. 운전 및 유지관리 지침서\n0 2019.11.30 As-built 김영환 남흥순 김정식\n개정번호 일자 내용 작 성 자 검 토 자 승 인 자\n공사명 : 제주환경자원순환센터(소각시설) 조성공사 도 서 명 : 운전 및 유지관리 지침서\n분 야 : 폐기물 및 기계분야 도서 번호 : JJ-M-VP-006-017\n품 명 : AIR COOLED CONDENSER PACKAGE 도서 상태 : As-built\n제작사명: (주)디티에스 작 성 일 : 2019년 11월\n\nAIR COOLED CONDENSER PACKAGE\nContents",
+      "header": "17. 운전 및 유지관리 지침서",
+      "section_type": "운전",
+      "equipment": [
+        "기타"
+      ],
+      "company_id": "30",
+      "company_name": "저압증기복수기",
+      "source_file": "17. 운전 및 유지관리 지침서",
+      "source_path": "D:\\기계도면\\기계도면\\30. 저압증기복수기 (DTS)\\감리 승인용 7차 문서 (201908) As built\\17. 운전 및 유지관리 지침서\\17. 운전 및 유지관리 지침서.pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "eff493dd9c577f0e",
+      "char_count": 294
+    },
+    {
+      "chunk_idx": 2,
+      "text": "As-built\n제작사명: (주)디티에스 작 성 일 : 2019년 11월\n\nAIR COOLED CONDENSER PACKAGE\nContents 1) Operation and Maintenance Manual\nJJ-M-VP-006-017\nDoc. No.\nOperation and\nMaintenance Manual Rev. No. 0\nPage\n*** 차 례 ***",
+      "header": "1) Operation and Maintenance Manual",
+      "section_type": "점검",
+      "equipment": [
+        "기타"
+      ],
+      "company_id": "30",
+      "company_name": "저압증기복수기",
+      "source_file": "17. 운전 및 유지관리 지침서",
+      "source_path": "D:\\기계도면\\기계도면\\30. 저압증기복수기 (DTS)\\감리 승인용 7차 문서 (201908) As built\\17. 운전 및 유지관리 지침서\\17. 운전 및 유지관리 지침서.pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "870d478d4aec3150",
+      "char_count": 201
+    },
+    {
+      "chunk_idx": 3,
+      "text": "VP-006-017\nDoc. No.\nOperation and\nMaintenance Manual Rev. No. 0\nPage\n*** 차 례 *** 2. 안전상의 주의\n2.1 각 기기별 사양\n2.2 증기복수기의 운전요령\n2.3 Fan\n2.4 기어감속기/커플링",
+      "header": "2. 안전상의 주의",
+      "section_type": "점검",
+      "equipment": [
+        "팬"
+      ],
+      "company_id": "30",
+      "company_name": "저압증기복수기",
+      "source_file": "17. 운전 및 유지관리 지침서",
+      "source_path": "D:\\기계도면\\기계도면\\30. 저압증기복수기 (DTS)\\감리 승인용 7차 문서 (201908) As built\\17. 운전 및 유지관리 지침서\\17. 운전 및 유지관리 지침서.pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "51e7855b07453fd1",
+      "char_count": 142
+    },
+    {
+      "chunk_idx": 4,
+      "text": "3. 증기복수기의 개요\n3.1 일반사항\n3.2 시동전 확인사항\n3.3 시동 수순\n3.4 시동후 관리\n3.5 정지시 보관요령",
+      "header": "3. 증기복수기의 개요",
+      "section_type": "시동",
+      "equipment": [
+        "기타"
+      ],
+      "company_id": "30",
+      "company_name": "저압증기복수기",
+      "source_file": "17. 운전 및 유지관리 지침서",
+      "source_path": "D:\\기계도면\\기계도면\\30. 저압증기복수기 (DTS)\\감리 승인용 7차 문서 (201908) As built\\17. 운전 및 유지관리 지침서\\17. 운전 및 유지관리 지침서.pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "f02d14d50879f532",
+      "char_count": 68
+    },
+    {
+      "chunk_idx": 5,
+      "text": "4. 각 기기별 취급요령서\n: MOTOR & FAN & GEAR REDUCER 는 19번 기술 및 참고 자료 참고.\n\nJJ-M-VP-006-017\nDoc. No.\nOperation and\nMaintenance Manual Rev. No. 0\nPage",
+      "header": "4. 각 기기별 취급요령서",
+      "section_type": "점검",
+      "equipment": [
+        "팬"
+      ],
+      "company_id": "30",
+      "company_name": "저압증기복수기",
+      "source_file": "17. 운전 및 유지관리 지침서",
+      "source_path": "D:\\기계도면\\기계도면\\30. 저압증기복수기 (DTS)\\감리 승인용 7차 문서 (201908) As built\\17. 운전 및 유지관리 지침서\\17. 운전 및 유지관리 지침서.pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "b85b5ed3dbbfec52",
+      "char_count": 139
+    },
+    {
+      "chunk_idx": 6,
+      "text": "료 참고.\n\nJJ-M-VP-006-017\nDoc. No.\nOperation and\nMaintenance Manual Rev. No. 0\nPage 1. 전문\n본 취급설명서는 저압증기복수기 사용을 위한 가이드북입니다. 본 취급 설명서을 잘 읽으시고 내용을 충분히\n이해하신 기술자만 사용해 주십시오.",
+      "header": "1. 전문",
+      "section_type": "점검",
+      "equipment": [
+        "기타"
+      ],
+      "company_id": "30",
+      "company_name": "저압증기복수기",
+      "source_file": "17. 운전 및 유지관리 지침서",
+      "source_path": "D:\\기계도면\\기계도면\\30. 저압증기복수기 (DTS)\\감리 승인용 7차 문서 (201908) As built\\17. 운전 및 유지관리 지침서\\17. 운전 및 유지관리 지침서.pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "320fbb2f6510eb49",
+      "char_count": 164
+    },
+    {
+      "chunk_idx": 7,
+      "text": "전문\n본 취급설명서는 저압증기복수기 사용을 위한 가이드북입니다. 본 취급 설명서을 잘 읽으시고 내용을 충분히\n이해하신 기술자만 사용해 주십시오. 2. 안전상의 주의\n2.1 각 기기별 사양\n• 본 사양과 다른 운전을 실시하는 경우 폐사로 연락바랍니다.\n- 기기의 손상, 노설 등의 사고를 발생시킬 우려가 있습니다.\n2.2 터빈증기복수기의 운전요령\n• 전동기의 전원이 꺼져있는 것을 확인해주십시오\n- 작업 중에 팬이 회전하여 인사사고 등의 중대사고가 될 우려가 있습니다.\n• 팬 회전방지를 해 주십시오.\n- 팬링 내부에 들어가는 경우 로프 등으로 Fan Blade를 고정하는 등의 회전방지대책을 실시해 주십시오\n• Fan 을 기동하는 경우는 Plenum chamber 내부에 사람이나 작업용 공구 등이 없는 것을 반드시 확인한\n후에 기동해 주십시오.\n- 인사사고나 Fan이 파손되는 등의 중대사고가 될 우려가 있습니다.\n• Tube Bundle에 증기를 흐르게 한 후에 header 및 fin tube에 직접 접촉하지 말아 주십시오.\n- 화상의 우려가 있습니다.\n- 인사사고, 화재 등의 우려가 있습니다.\n- 보수대책에 대해서는 폐사에 문의바랍니다.\n• [보수점검리스트]에 따라서 보수점검을 실시해 주십시오\n- 보수점검을 게을리하면 중대사고가 발생하는 원인이 됩니다.\n2.3 Fan",
+      "header": "2. 안전상의 주의",
+      "section_type": "시동",
+      "equipment": [
+        "팬"
+      ],
+      "company_id": "30",
+      "company_name": "저압증기복수기",
+      "source_file": "17. 운전 및 유지관리 지침서",
+      "source_path": "D:\\기계도면\\기계도면\\30. 저압증기복수기 (DTS)\\감리 승인용 7차 문서 (201908) As built\\17. 운전 및 유지관리 지침서\\17. 운전 및 유지관리 지침서.pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "b781f310011f42b7",
+      "char_count": 659
+    },
+    {
+      "chunk_idx": 8,
+      "text": "의바랍니다.\n• [보수점검리스트]에 따라서 보수점검을 실시해 주십시오\n- 보수점검을 게을리하면 중대사고가 발생하는 원인이 됩니다.\n2.3 Fan JJ-M-VP-006-017\nDoc. No.\nOperation and\nMaintenance Manual Rev. No. 0\nPage\n• 전동기의 전원이 꺼져있는 것을 확인해 주십시오.\n- 작업 중에 팬이 회전하여, 인사사고 등의 중대사고가 될 우려가 있습니다.\n• 팬은 회전방지를 해 주십시오.\n- 이후의 유지 및 보수 작업시 fan ring 의 내부로 들어가는 경우 로프 등으로 fan blade 를 고정하는\n등의 회전방지수단을 실시해 주십시오.\n- 작업 중에 팬이 바람에 의해 회전하여 다칠 우려가 있습니다.\n• Fan blade의 선단(tip)을 잡고, 상하로 움직여보고 느슨함이 없는 것을 확인해 주십시오.\n- 느슨함이 있다면 fan hub의 bolt를 올바른 torque 값으로 체결하여 주십시오.\n- 팬의 비산 등의 중대사고의 우려가 있습니다.\n2.4 기어감속기 / 커플링\n• 전동기의 전원이 꺼져있는 것을 확인해 주십시오.\n- 작업 중에 팬이 회전하여 인사사고 등의 중대사고가 될 우려가 있습니다.",
+      "header": "2. 안전상의 주의",
+      "section_type": "점검",
+      "equipment": [
+        "팬"
+      ],
+      "company_id": "30",
+      "company_name": "저압증기복수기",
+      "source_file": "17. 운전 및 유지관리 지침서",
+      "source_path": "D:\\기계도면\\기계도면\\30. 저압증기복수기 (DTS)\\감리 승인용 7차 문서 (201908) As built\\17. 운전 및 유지관리 지침서\\17. 운전 및 유지관리 지침서.pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "c6dc39eb31a466e8",
+      "char_count": 590
+    },
+    {
+      "chunk_idx": 9,
+      "text": "감속기 / 커플링\n• 전동기의 전원이 꺼져있는 것을 확인해 주십시오.\n- 작업 중에 팬이 회전하여 인사사고 등의 중대사고가 될 우려가 있습니다. 3. 공냉식 복수기의 개요\n3.1 일반사항\n증기복수기는 증기터빈에서 배기되는 저압의 증기를 응축시키는 장치입니다. 따라서, 복수기의 운전압력은\n매우 낮으며, 높은 진공상태에서 운전됩니다. 이 복수기는 대기온도가 33°C 일 때, 압력이 0.1735\nbar(A)로 운전하도록 설계 되었습니다. 대기온도가 낮아지면 그 운전압력도 동시에 낮아지는 것이\n특징입니다. 이와 같이 진공상태에서 운전되기 때문에 플랜지로 관을 연결하는 부위에 소량의 공기가\n유입하게 되고, 이 유입된 공기는 수증기가 응축된 후에 Ejector Condenser 의해서 대기로 방출됩니다.\n과 냉각된 응축수와 공기가 접촉하면 공기의 일부가 과 냉각된 응축수에 용해됩니다. 이 때 용해도는 물의",
+      "header": "3. 공냉식 복수기의 개요",
+      "section_type": "운전",
+      "equipment": [
+        "팬"
+      ],
+      "company_id": "30",
+      "company_name": "저압증기복수기",
+      "source_file": "17. 운전 및 유지관리 지침서",
+      "source_path": "D:\\기계도면\\기계도면\\30. 저압증기복수기 (DTS)\\감리 승인용 7차 문서 (201908) As built\\17. 운전 및 유지관리 지침서\\17. 운전 및 유지관리 지침서.pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "2d361f26d16a2a19",
+      "char_count": 450
+    },
+    {
+      "chunk_idx": 10,
+      "text": "ndenser 의해서 대기로 방출됩니다.\n과 냉각된 응축수와 공기가 접촉하면 공기의 일부가 과 냉각된 응축수에 용해됩니다. 이 때 용해도는 물의 JJ-M-VP-006-017\nDoc. No.\nOperation and\nMaintenance Manual Rev. No. 0\nPage\n포화온도에서 0 이 되므로 응축수가 과 냉각 되는 것을 최소화 할 수 있도록 이 복수기는 설계 되어\n있습니다. 복수기의 운전 압력은 DCS 의 Control Panel 에 붙어 있는 진공게이지에 표시됩니다. 이\n진공게이지의 표시가 장시간에 걸쳐서 0.1735bar(A) 이상으로 표시되면 Ejector의 동작에 문제의 원인이\n있다고 할 수 있습니다.\nEjector Condenser Package 는 고압의 증기를 이용하여 저압의 기체를 고압으로 압축시켜, 대기에 방출하는\n장치이며 일종의 진공펌프입니다. Ejector Condenser Package 의 핵심부품은 Converging-\nDiverging 노즐입니다. 고압수증기가 이 노즐을 통과하면 초음속의 유체로 변합니다. 오래 사용하면 마모가\n발생하는 일도 있을 수 있습니다. 수리방법은 노즐을 교체합니다. Ejector 가 정상적으로 기능하고\n있는지에 대한 확인은 DCS 에 붙어있는 진공게이지의 표시 진공도에 의해서 알 수 있습니다. Ejector\nCondenser Package의 기능이 떨어지면 이 진공게이지의 표시진공도가 낮아집니다.\n3.2 시동전의 확인",
+      "header": "3. 공냉식 복수기의 개요",
+      "section_type": "시동",
+      "equipment": [
+        "펌프"
+      ],
+      "company_id": "30",
+      "company_name": "저압증기복수기",
+      "source_file": "17. 운전 및 유지관리 지침서",
+      "source_path": "D:\\기계도면\\기계도면\\30. 저압증기복수기 (DTS)\\감리 승인용 7차 문서 (201908) As built\\17. 운전 및 유지관리 지침서\\17. 운전 및 유지관리 지침서.pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "8b7f71de3342b4b4",
+      "char_count": 725
+    },
+    {
+      "chunk_idx": 11,
+      "text": "알 수 있습니다. Ejector\nCondenser Package의 기능이 떨어지면 이 진공게이지의 표시진공도가 낮아집니다.\n3.2 시동전의 확인 10) 증기복수기의 모든 배관에 누수가 없는 지를 확인바랍니다.\nJJ-M-VP-006-017\nDoc. No.\nOperation and\nMaintenance Manual Rev. No. 0\nPage\n3.3 시동수순",
+      "header": "10) 증기복수기의 모든 배관에 누수가 없는 지를 확인바랍니다.",
+      "section_type": "시동",
+      "equipment": [
+        "기타"
+      ],
+      "company_id": "30",
+      "company_name": "저압증기복수기",
+      "source_file": "17. 운전 및 유지관리 지침서",
+      "source_path": "D:\\기계도면\\기계도면\\30. 저압증기복수기 (DTS)\\감리 승인용 7차 문서 (201908) As built\\17. 운전 및 유지관리 지침서\\17. 운전 및 유지관리 지침서.pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "3b4043935311cba5",
+      "char_count": 199
+    },
+    {
+      "chunk_idx": 12,
+      "text": "-M-VP-006-017\nDoc. No.\nOperation and\nMaintenance Manual Rev. No. 0\nPage\n3.3 시동수순 1) P&ID 와 같이 VALVE 들을 셋팅(*참고)한 후, ACC Condensate Tank 와 Duct Drain Pot 에 NORMAL\nLEVEL까지 물을 채웁니다.",
+      "header": "1) P&ID 와 같이 VALVE 들을 셋팅(*참고)한 후, ACC Condensate Tank 와 Duct Drain Pot 에 NORMAL",
+      "section_type": "시동",
+      "equipment": [
+        "탱크",
+        "밸브"
+      ],
+      "company_id": "30",
+      "company_name": "저압증기복수기",
+      "source_file": "17. 운전 및 유지관리 지침서",
+      "source_path": "D:\\기계도면\\기계도면\\30. 저압증기복수기 (DTS)\\감리 승인용 7차 문서 (201908) As built\\17. 운전 및 유지관리 지침서\\17. 운전 및 유지관리 지침서.pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "9e33fd3d8b7647be",
+      "char_count": 177
+    },
+    {
+      "chunk_idx": 13,
+      "text": "VE 들을 셋팅(*참고)한 후, ACC Condensate Tank 와 Duct Drain Pot 에 NORMAL\nLEVEL까지 물을 채웁니다. 2) 복수펌프를 기동하여 Ejector Condenser 내부(Tube Side)에 물을 채웁니다. 이 물은 추기용\nEjector Condenser 를 기동시킬 때에 Ejector 유도스팀을 응축시키기 위한 것입니다.",
+      "header": "2) 복수펌프를 기동하여 Ejector Condenser 내부(Tube Side)에 물을 채웁니다. 이 물은 추기용",
+      "section_type": "시동",
+      "equipment": [
+        "펌프",
+        "탱크"
+      ],
+      "company_id": "30",
+      "company_name": "저압증기복수기",
+      "source_file": "17. 운전 및 유지관리 지침서",
+      "source_path": "D:\\기계도면\\기계도면\\30. 저압증기복수기 (DTS)\\감리 승인용 7차 문서 (201908) As built\\17. 운전 및 유지관리 지침서\\17. 운전 및 유지관리 지침서.pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "d2c09c7abafdac9c",
+      "char_count": 202
+    },
+    {
+      "chunk_idx": 14,
+      "text": "ide)에 물을 채웁니다. 이 물은 추기용\nEjector Condenser 를 기동시킬 때에 Ejector 유도스팀을 응축시키기 위한 것입니다. 4) 기동용 Ejector Condenser Package 를 작동시켜 열교환기와 관내부에 있는 공기를 배기시킵니다.\n기동용 Ejector Condenser 는 단일스테이지로 되어 있어서 Ejector Condenser 를 작동시키는 스팀을\n밖으로 방출합니다. 이 때 흡입구쪽에 붙어 있는 압력계로 진공도의 변화를 확인합니다.",
+      "header": "4) 기동용 Ejector Condenser Package 를 작동시켜 열교환기와 관내부에 있는 공기를 배기시킵니다.",
+      "section_type": "시동",
+      "equipment": [
+        "열교환기"
+      ],
+      "company_id": "30",
+      "company_name": "저압증기복수기",
+      "source_file": "17. 운전 및 유지관리 지침서",
+      "source_path": "D:\\기계도면\\기계도면\\30. 저압증기복수기 (DTS)\\감리 승인용 7차 문서 (201908) As built\\17. 운전 및 유지관리 지침서\\17. 운전 및 유지관리 지침서.pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "c9fc0612cca77424",
+      "char_count": 263
+    },
+    {
+      "chunk_idx": 15,
+      "text": "어서 Ejector Condenser 를 작동시키는 스팀을\n밖으로 방출합니다. 이 때 흡입구쪽에 붙어 있는 압력계로 진공도의 변화를 확인합니다. 5) Ejector Condenser Package 로 스팀을 배출하고 있는 동안에 팬을 작동시킵니다. 이때 팬 설치\n후의 점검사항을 재점검합니다.\n• 모터의 전력소모를 점검한다.\n• 진동이 설계범위내인지를 점검한다.",
+      "header": "5) Ejector Condenser Package 로 스팀을 배출하고 있는 동안에 팬을 작동시킵니다. 이때 팬 설치",
+      "section_type": "점검",
+      "equipment": [
+        "팬"
+      ],
+      "company_id": "30",
+      "company_name": "저압증기복수기",
+      "source_file": "17. 운전 및 유지관리 지침서",
+      "source_path": "D:\\기계도면\\기계도면\\30. 저압증기복수기 (DTS)\\감리 승인용 7차 문서 (201908) As built\\17. 운전 및 유지관리 지침서\\17. 운전 및 유지관리 지침서.pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "660edb2c86e65e32",
+      "char_count": 202
+    },
+    {
+      "chunk_idx": 16,
+      "text": "는 동안에 팬을 작동시킵니다. 이때 팬 설치\n후의 점검사항을 재점검합니다.\n• 모터의 전력소모를 점검한다.\n• 진동이 설계범위내인지를 점검한다. 6) 스팀 라인의 압력이 운전압력까지 도달했을 때 기동용 Ejector Condenser 에서 추기용 Ejector\nCondenser 로 전환합니다.",
+      "header": "6) 스팀 라인의 압력이 운전압력까지 도달했을 때 기동용 Ejector Condenser 에서 추기용 Ejector",
+      "section_type": "시동",
+      "equipment": [
+        "팬"
+      ],
+      "company_id": "30",
+      "company_name": "저압증기복수기",
+      "source_file": "17. 운전 및 유지관리 지침서",
+      "source_path": "D:\\기계도면\\기계도면\\30. 저압증기복수기 (DTS)\\감리 승인용 7차 문서 (201908) As built\\17. 운전 및 유지관리 지침서\\17. 운전 및 유지관리 지침서.pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "7275dc1abffc7a84",
+      "char_count": 164
+    },
+    {
+      "chunk_idx": 17,
+      "text": "스팀 라인의 압력이 운전압력까지 도달했을 때 기동용 Ejector Condenser 에서 추기용 Ejector\nCondenser 로 전환합니다. 7) 추기용 Ejector 를 작동시킨다. 이 Ejector 는 2 단계로 되어 있고, 각 Ejector 의 끝에 콘덴서가\n부착되어 있습니다. 1 단계 Ejector 의 흡입구에 있는 압력계는 ACC 의 운전압력을 표시하고, 2 단계\nEjector 의 흡입구에 있는 압력계는 1단계 Ejector 출구의 압력을 표시합니다.",
+      "header": "7) 추기용 Ejector 를 작동시킨다. 이 Ejector 는 2 단계로 되어 있고, 각 Ejector 의 끝에 콘덴서가",
+      "section_type": "시동",
+      "equipment": [
+        "기타"
+      ],
+      "company_id": "30",
+      "company_name": "저압증기복수기",
+      "source_file": "17. 운전 및 유지관리 지침서",
+      "source_path": "D:\\기계도면\\기계도면\\30. 저압증기복수기 (DTS)\\감리 승인용 7차 문서 (201908) As built\\17. 운전 및 유지관리 지침서\\17. 운전 및 유지관리 지침서.pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "75a365bb41722378",
+      "char_count": 261
+    },
+    {
+      "chunk_idx": 18,
+      "text": "있는 압력계는 ACC 의 운전압력을 표시하고, 2 단계\nEjector 의 흡입구에 있는 압력계는 1단계 Ejector 출구의 압력을 표시합니다. 8) 상기의 1에서 7까지의 항목을 완료하면 ACC의 운전준비는 완료한 것이 됩니다.\n3.4 시동 후 관리",
+      "header": "8) 상기의 1에서 7까지의 항목을 완료하면 ACC의 운전준비는 완료한 것이 됩니다.",
+      "section_type": "시동",
+      "equipment": [
+        "기타"
+      ],
+      "company_id": "30",
+      "company_name": "저압증기복수기",
+      "source_file": "17. 운전 및 유지관리 지침서",
+      "source_path": "D:\\기계도면\\기계도면\\30. 저압증기복수기 (DTS)\\감리 승인용 7차 문서 (201908) As built\\17. 운전 및 유지관리 지침서\\17. 운전 및 유지관리 지침서.pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "8b4c25d1e3317045",
+      "char_count": 140
+    },
+    {
+      "chunk_idx": 19,
+      "text": "1) 추기용 Ejector의 흡입구를 감시해주십시오\nJJ-M-VP-006-017\nDoc. No.\nOperation and\nMaintenance Manual Rev. No. 0\nPage",
+      "header": "1) 추기용 Ejector의 흡입구를 감시해주십시오",
+      "section_type": "점검",
+      "equipment": [
+        "기타"
+      ],
+      "company_id": "30",
+      "company_name": "저압증기복수기",
+      "source_file": "17. 운전 및 유지관리 지침서",
+      "source_path": "D:\\기계도면\\기계도면\\30. 저압증기복수기 (DTS)\\감리 승인용 7차 문서 (201908) As built\\17. 운전 및 유지관리 지침서\\17. 운전 및 유지관리 지침서.pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "18c892e32cbde4f9",
+      "char_count": 102
+    },
+    {
+      "chunk_idx": 20,
+      "text": "시해주십시오\nJJ-M-VP-006-017\nDoc. No.\nOperation and\nMaintenance Manual Rev. No. 0\nPage 2) 일상감시항목\n• 터빈과 Steam Duct의 압력과 온도, 유량\n• 복수탱크온도, 압력 및 레벨\n• DUCT DRAIN POT의 레벨\n• 전동기의 전류\n• Ejector System의 냉각수 입구, 출구 온도 및 유량 / Motive Steam의 온도, 압력, 유량\n3.5. 정지시의 보관요령",
+      "header": "2) 일상감시항목",
+      "section_type": "정지",
+      "equipment": [
+        "탱크"
+      ],
+      "company_id": "30",
+      "company_name": "저압증기복수기",
+      "source_file": "17. 운전 및 유지관리 지침서",
+      "source_path": "D:\\기계도면\\기계도면\\30. 저압증기복수기 (DTS)\\감리 승인용 7차 문서 (201908) As built\\17. 운전 및 유지관리 지침서\\17. 운전 및 유지관리 지침서.pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "4966ff1054f2b1fe",
+      "char_count": 247
+    },
+    {
+      "chunk_idx": 21,
+      "text": "류\n• Ejector System의 냉각수 입구, 출구 온도 및 유량 / Motive Steam의 온도, 압력, 유량\n3.5. 정지시의 보관요령 1) 장시간 정지시에는 배관 및 모든 기기류의 DRAIN을 배출합니다.\n* 주의 : 특히, 동절기에는 단시간 기기 정지시라도 동파 방지를 위하여,\n필히 모든 기기와 배관의 DRAIN을 배출해 주십시오.\n► 첨부의 유지보수 및 정기점검 항목표를 참고하시기 바랍니다.\n\nJJ-M-VP-006-017\nDoc. No.\nOperation and\nMaintenance Manual Rev. No. 0\nPage\nInspection and Maintenance Schedule (유지보수 점검 리스트 및 스케쥴)",
+      "header": "1) 장시간 정지시에는 배관 및 모든 기기류의 DRAIN을 배출합니다.",
+      "section_type": "정지",
+      "equipment": [
+        "기타"
+      ],
+      "company_id": "30",
+      "company_name": "저압증기복수기",
+      "source_file": "17. 운전 및 유지관리 지침서",
+      "source_path": "D:\\기계도면\\기계도면\\30. 저압증기복수기 (DTS)\\감리 승인용 7차 문서 (201908) As built\\17. 운전 및 유지관리 지침서\\17. 운전 및 유지관리 지침서.pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "16cec70428857229",
+      "char_count": 359
+    }
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "meta": {
+    "tag": "P0-0801",
+    "file": "펌프류 도서_As Built.pdf",
+    "company_id": "34",
+    "company_name": "펌프류 (청우하이드로)",
+    "source_path": "D:\\기계도면\\기계도면\\34. 펌프류 (청우하이드로)\\펌프류 도서_As Built.pdf",
+    "source_pages": "95-96,101-103",
+    "service": "공정수이송펌프",
+    "service_aliases": ["공정수 이송 펌프", "plant water transfer pump", "공정수펌프", "공장수리 신호펌프"],
+    "extracted_at": "2026-03-28T00:00:00"
+  },
+  "tag": "P0-0801",
+  "records": [
+    {
+      "tag": "P0-0801",
+      "section": "PERFORMANCE",
+      "position": "A/B",
+      "parameter": "flow_rate",
+      "value": "36.0",
+      "unit": "m³/h",
+      "match_type": "manual",
+      "source": {"file": "펌프류 도서_As Built.pdf", "company": "34", "page": 95}
+    },
+    {
+      "tag": "P0-0801",
+      "section": "PERFORMANCE",
+      "position": null,
+      "parameter": "head_m",
+      "value": "60.0",
+      "unit": "m",
+      "match_type": "manual",
+      "source": {"file": "펌프류 도서_As Built.pdf", "company": "34", "page": 95}
+    },
+    {
+      "tag": "P0-0801",
+      "section": "MOTOR",
+      "position": null,
+      "parameter": "motor_kw",
+      "value": "18.5",
+      "unit": "kW",
+      "match_type": "manual",
+      "source": {"file": "펌프류 도서_As Built.pdf", "company": "34", "page": 101}
+    },
+    {
+      "tag": "P0-0801",
+      "section": "MOTOR",
+      "position": null,
+      "parameter": "motor_rpm",
+      "value": "3540",
+      "unit": "rpm",
+      "match_type": "manual",
+      "source": {"file": "펌프류 도서_As Built.pdf", "company": "34", "page": 101}
+    },
+    {
+      "tag": "P0-0801",
+      "section": "MOTOR",
+      "position": null,
+      "parameter": "motor_voltage_V",
+      "value": "380",
+      "unit": "V",
+      "match_type": "manual",
+      "source": {"file": "펌프류 도서_As Built.pdf", "company": "34", "page": 101}
+    },
+    {
+      "tag": "P0-0801",
+      "section": "MOTOR",
+      "position": null,
+      "parameter": "motor_poles",
+      "value": "2",
+      "unit": "P",
+      "match_type": "manual",
+      "source": {"file": "펌프류 도서_As Built.pdf", "company": "34", "page": 101}
+    },
+    {
+      "tag": "P0-0801",
+      "section": "MOTOR",
+      "position": null,
+      "parameter": "insulation_class",
+      "value": "F",
+      "unit": "",
+      "match_type": "manual",
+      "source": {"file": "펌프류 도서_As Built.pdf", "company": "34", "page": 101}
+    },
+    {
+      "tag": "P0-0801",
+      "section": "MOTOR",
+      "position": null,
+      "parameter": "ip_rating",
+      "value": "IP54",
+      "unit": "",
+      "match_type": "manual",
+      "source": {"file": "펌프류 도서_As Built.pdf", "company": "34", "page": 101}
+    },
+    {
+      "tag": "P0-0801",
+      "section": "BEARING",
+      "position": "NDE",
+      "parameter": "bearing_no",
+      "value": "6207ZZ",
+      "unit": "",
+      "match_type": "manual",
+      "source": {"file": "펌프류 도서_As Built.pdf", "company": "34", "page": 101}
+    },
+    {
+      "tag": "P0-0801",
+      "section": "BEARING",
+      "position": "DE",
+      "parameter": "bearing_no",
+      "value": "6309ZZ",
+      "unit": "",
+      "match_type": "manual",
+      "source": {"file": "펌프류 도서_As Built.pdf", "company": "34", "page": 101}
+    }
+  ]
+}

@@ -1,0 +1,1534 @@
+{
+  "meta": {
+    "source_path": "D:\\기계도면\\기계도면\\22. 시료수, 약품2, 침출수, 화격자 (조선내화E)\\시료수분석설비 외 준공도서\\01. [제주-기계] 승인서류 (19.11.) AS BUILT\\6. DATA SHEET 및 성능곡선도\\[6-2] 보일러 약품주입설비\\6-2-1. DATA SHEET.xls",
+    "company_id": "22",
+    "equipment": "보일러",
+    "doc_type": "DATA_SHEET",
+    "rev": "AS_BUILT",
+    "is_latest": true,
+    "extracted_at": "2026-03-27T19:33:07",
+    "record_count": 152
+  },
+  "records": [
+    {
+      "parameter": "1",
+      "value": "제주특별자치도",
+      "unit": "",
+      "design_value": "CUSTOMER",
+      "equipment": "보일러",
+      "row_idx": 3,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "16e1101146a2c74e"
+    },
+    {
+      "parameter": "2",
+      "value": "56",
+      "unit": "",
+      "design_value": "LOCATION",
+      "equipment": "보일러",
+      "row_idx": 4,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "6322cf80239e9b28"
+    },
+    {
+      "parameter": "3",
+      "value": "CHOSUN REFRACTORIES.ENG.CO.,LTD",
+      "unit": "",
+      "design_value": "SUPPLIER",
+      "equipment": "보일러",
+      "row_idx": 5,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "0f56f00f83f5ef18"
+    },
+    {
+      "parameter": "4",
+      "value": "시료수분석설비 외",
+      "unit": "",
+      "design_value": "ITEM NAME",
+      "equipment": "보일러",
+      "row_idx": 6,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "42eedbe1e1f61f96"
+    },
+    {
+      "parameter": "5",
+      "value": "0",
+      "unit": "",
+      "design_value": "ITEM NO.",
+      "equipment": "보일러",
+      "row_idx": 7,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "779497b7f8a28086"
+    },
+    {
+      "parameter": "6",
+      "value": "청관제주입장치",
+      "unit": "",
+      "design_value": "SERVICE",
+      "equipment": "보일러",
+      "row_idx": 8,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "7ec69b6adaafea75"
+    },
+    {
+      "parameter": "7",
+      "value": "TOTAL",
+      "unit": "",
+      "design_value": "NO.  REQ'D",
+      "equipment": "보일러",
+      "row_idx": 9,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "abb5c28c9663afcc"
+    },
+    {
+      "parameter": "9",
+      "value": "CONDITION OF INJECTION LIQUID",
+      "unit": "",
+      "design_value": "",
+      "equipment": "보일러",
+      "row_idx": 11,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "dc867f99abe88d9f"
+    },
+    {
+      "parameter": "10",
+      "value": "3000",
+      "unit": "",
+      "design_value": "LIQUID :",
+      "equipment": "보일러",
+      "row_idx": 12,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "2b31d18f5591ebdc"
+    },
+    {
+      "parameter": "11",
+      "value": "72",
+      "unit": "℃",
+      "design_value": "VISCOSITY :",
+      "equipment": "보일러",
+      "row_idx": 13,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "32d4f2e0f7340d91"
+    },
+    {
+      "parameter": "13",
+      "value": "DOSING TANK DATA",
+      "unit": "",
+      "design_value": "DOSING PUMP DATA",
+      "equipment": "보일러",
+      "row_idx": 15,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "4b63fc3e7ad7d9c3"
+    },
+    {
+      "parameter": "14",
+      "value": "-0303",
+      "unit": "A",
+      "design_value": "ITEM NO.",
+      "equipment": "보일러",
+      "row_idx": 16,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "4bf9630dd15e1647"
+    },
+    {
+      "parameter": "15",
+      "value": "-162",
+      "unit": "",
+      "design_value": "MODEL NO.",
+      "equipment": "보일러",
+      "row_idx": 17,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "18ea8b70d251297a"
+    },
+    {
+      "parameter": "16",
+      "value": "PHOSPHATE DOSING PUMP",
+      "unit": "",
+      "design_value": "SERVICE.",
+      "equipment": "보일러",
+      "row_idx": 18,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "ad824a86b1ec4e8f"
+    },
+    {
+      "parameter": "17",
+      "value": "3",
+      "unit": "℃",
+      "design_value": "Q'TY.",
+      "equipment": "보일러",
+      "row_idx": 19,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "a34fe742b6377401"
+    },
+    {
+      "parameter": "18",
+      "value": "(㎖/min)",
+      "unit": "℃",
+      "design_value": "CAPACITY.",
+      "equipment": "보일러",
+      "row_idx": 20,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "4b104194faffbe06"
+    },
+    {
+      "parameter": "19",
+      "value": "(Bar G)",
+      "unit": "",
+      "design_value": "DISC. PRESSURE",
+      "equipment": "보일러",
+      "row_idx": 21,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "5e9b0525913bfa21"
+    },
+    {
+      "parameter": "20",
+      "value": "HYDRAULIC DIAPHRAGM",
+      "unit": "",
+      "design_value": "TYPE.",
+      "equipment": "보일러",
+      "row_idx": 22,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "3993bd3055fc4dce"
+    },
+    {
+      "parameter": "21",
+      "value": "GEAR",
+      "unit": "",
+      "design_value": "DIAPHRAGM",
+      "equipment": "보일러",
+      "row_idx": 23,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "c98249904732116f"
+    },
+    {
+      "parameter": "22",
+      "value": "THICKNESS.",
+      "unit": "",
+      "design_value": "PLUNGER",
+      "equipment": "보일러",
+      "row_idx": 24,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "509f23bff1b892f8"
+    },
+    {
+      "parameter": "23",
+      "value": "SIMPLEX",
+      "unit": "",
+      "design_value": "PISTON NO.",
+      "equipment": "보일러",
+      "row_idx": 25,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "89088f494d0c97c1"
+    },
+    {
+      "parameter": "24",
+      "value": "ACCESSORIES",
+      "unit": "",
+      "design_value": "PLUNGER/DIAPHRAM DIA.",
+      "equipment": "보일러",
+      "row_idx": 26,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "a99fdcb7173f84bb"
+    },
+    {
+      "parameter": "25",
+      "value": "116",
+      "unit": "",
+      "design_value": "STROKE SPEED. (SPM)",
+      "equipment": "보일러",
+      "row_idx": 27,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "f79762dbca896cfa"
+    },
+    {
+      "parameter": "26",
+      "value": "PUMP HEAD",
+      "unit": "A/C FILTER",
+      "design_value": "MATERIAL.",
+      "equipment": "보일러",
+      "row_idx": 28,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "5bad6a81652e6704"
+    },
+    {
+      "parameter": "27",
+      "value": ":",
+      "unit": "",
+      "design_value": "PLUNGER",
+      "equipment": "보일러",
+      "row_idx": 29,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "230ddb3e254f667d"
+    },
+    {
+      "parameter": "28",
+      "value": ":",
+      "unit": "",
+      "design_value": "CHECK BALL",
+      "equipment": "보일러",
+      "row_idx": 30,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "d00e0ba3737f4087"
+    },
+    {
+      "parameter": "29",
+      "value": ":",
+      "unit": "",
+      "design_value": "SEAT",
+      "equipment": "보일러",
+      "row_idx": 31,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "71c95b5d74680664"
+    },
+    {
+      "parameter": "30",
+      "value": "AGITATOR DATA",
+      "unit": "",
+      "design_value": "CAPACITY CONTROL",
+      "equipment": "보일러",
+      "row_idx": 32,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "dd39bf241ae57b2d"
+    },
+    {
+      "parameter": "31",
+      "value": "AUTOMATIC",
+      "unit": "",
+      "design_value": "MANUAL",
+      "equipment": "보일러",
+      "row_idx": 33,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "fbe5d80283c2337b"
+    },
+    {
+      "parameter": "32",
+      "value": "MOTOR RPM CONTROL",
+      "unit": "",
+      "design_value": "STROKE ADJUSTMENT",
+      "equipment": "보일러",
+      "row_idx": 34,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "faf6908bda037c1c"
+    },
+    {
+      "parameter": "33",
+      "value": "STROKE CONTROL",
+      "unit": "",
+      "design_value": "DURING OPERATION",
+      "equipment": "보일러",
+      "row_idx": 35,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "3dddd20cc18a34b6"
+    },
+    {
+      "parameter": "34",
+      "value": "TYPE.",
+      "unit": "",
+      "design_value": "CAPACITY CONTROL RANGE  : 20 - 100 %",
+      "equipment": "보일러",
+      "row_idx": 36,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "17f7b5fd568bed57"
+    },
+    {
+      "parameter": "35",
+      "value": "SHAFT SEAL.",
+      "unit": "",
+      "design_value": "MOTOR DATA FOR DOSING PUMP",
+      "equipment": "보일러",
+      "row_idx": 37,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "f96c20241f9b9f34"
+    },
+    {
+      "parameter": "36",
+      "value": "2",
+      "unit": "",
+      "design_value": "Q'TY.                    :",
+      "equipment": "보일러",
+      "row_idx": 38,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "a303a65f9bcdc7ad"
+    },
+    {
+      "parameter": "37",
+      "value": "SHINKWANG",
+      "unit": "",
+      "design_value": "MFR.               :",
+      "equipment": "보일러",
+      "row_idx": 39,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "0c65a11596c5a670"
+    },
+    {
+      "parameter": "38",
+      "value": "0.2",
+      "unit": "",
+      "design_value": "RATED OUTPUT.  :",
+      "equipment": "보일러",
+      "row_idx": 40,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "632a7a01b0cc0463"
+    },
+    {
+      "parameter": "39",
+      "value": "4",
+      "unit": "\"F\"",
+      "design_value": "POLE.                   :",
+      "equipment": "보일러",
+      "row_idx": 41,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "c633f82daddfb42a"
+    },
+    {
+      "parameter": "40",
+      "value": "3",
+      "unit": "",
+      "design_value": "PHASE.",
+      "equipment": "보일러",
+      "row_idx": 42,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "5de8b29a66466891"
+    },
+    {
+      "parameter": "41",
+      "value": "3",
+      "unit": "",
+      "design_value": "PHASE.",
+      "equipment": "보일러",
+      "row_idx": 43,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "e37c2f9f73e8916b"
+    },
+    {
+      "parameter": "43",
+      "value": "ACCESSORIES",
+      "unit": "",
+      "design_value": "",
+      "equipment": "보일러",
+      "row_idx": 45,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "90e065c8cdf6b069"
+    },
+    {
+      "parameter": "44",
+      "value": "REDUCER FOR TERMINAL POINT",
+      "unit": "",
+      "design_value": "MANUAL VALVE",
+      "equipment": "보일러",
+      "row_idx": 46,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "3b686e9fdc73b83f"
+    },
+    {
+      "parameter": "45",
+      "value": "PRESSURE SWITCH",
+      "unit": "",
+      "design_value": "CHECK VALVE",
+      "equipment": "보일러",
+      "row_idx": 47,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "5ad7b7e3e2b65a8d"
+    },
+    {
+      "parameter": "46",
+      "value": "PRESSURE GAUGE",
+      "unit": "",
+      "design_value": "STRAINER",
+      "equipment": "보일러",
+      "row_idx": 48,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "0ed2531eb98979bc"
+    },
+    {
+      "parameter": "47",
+      "value": "NAME PLATE",
+      "unit": "",
+      "design_value": "BASE SKID",
+      "equipment": "보일러",
+      "row_idx": 49,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "e58e1817050fcec8"
+    },
+    {
+      "parameter": "48",
+      "value": "COMPANION FLANGE BOLT & NUT",
+      "unit": "",
+      "design_value": "CONTROL PANEL",
+      "equipment": "보일러",
+      "row_idx": 50,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "5d7ae634b1ea5027"
+    },
+    {
+      "parameter": "49",
+      "value": "21",
+      "unit": "",
+      "design_value": "PUMP WEIGHT",
+      "equipment": "보일러",
+      "row_idx": 51,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "ea0925344f938828"
+    },
+    {
+      "parameter": "50",
+      "value": "2000",
+      "unit": "",
+      "design_value": "TANK WEIGHT",
+      "equipment": "보일러",
+      "row_idx": 52,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "abedd05d6b365aa8"
+    },
+    {
+      "parameter": "51",
+      "value": "수량",
+      "unit": "",
+      "design_value": "청관제/탈산제/PH조절제 주입펌프\nSPARE PARTS",
+      "equipment": "보일러",
+      "row_idx": 53,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "c2f3b2cd651c7cd7"
+    },
+    {
+      "parameter": "52",
+      "value": "7",
+      "unit": "",
+      "design_value": "Diaphragm",
+      "equipment": "보일러",
+      "row_idx": 54,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "cf23f06772d9095f"
+    },
+    {
+      "parameter": "53",
+      "value": "7",
+      "unit": "",
+      "design_value": "Check Ball",
+      "equipment": "보일러",
+      "row_idx": 55,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "ebaddcd7e340587a"
+    },
+    {
+      "parameter": "54",
+      "value": "2",
+      "unit": "",
+      "design_value": "교반기 베어링",
+      "equipment": "보일러",
+      "row_idx": 56,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "d16402c8f3fe30fe"
+    },
+    {
+      "parameter": "PREPARED BY.                 H.S.KIM",
+      "value": "APPROVED BY.                 S.W.CHOI",
+      "unit": "",
+      "design_value": "",
+      "equipment": "보일러",
+      "row_idx": 57,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "e64423ac1a46d04e"
+    },
+    {
+      "parameter": "CHECKED BY.                 J.H.KIM",
+      "value": "00",
+      "unit": "",
+      "design_value": "DATE.2019.11.",
+      "equipment": "보일러",
+      "row_idx": 60,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "14b955b920a0bc35"
+    },
+    {
+      "parameter": "1",
+      "value": "제주특별자치도",
+      "unit": "",
+      "design_value": "CUSTOMER",
+      "equipment": "보일러",
+      "row_idx": 66,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "66ca1c486a0b3954"
+    },
+    {
+      "parameter": "2",
+      "value": "56",
+      "unit": "",
+      "design_value": "LOCATION",
+      "equipment": "보일러",
+      "row_idx": 67,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "b286a69bb8e27822"
+    },
+    {
+      "parameter": "3",
+      "value": "CHOSUN REFRACTORIES.ENG.CO.,LTD",
+      "unit": "",
+      "design_value": "SUPPLIER",
+      "equipment": "보일러",
+      "row_idx": 68,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "2e92b1acd3558661"
+    },
+    {
+      "parameter": "4",
+      "value": "시료수분석설비 외",
+      "unit": "",
+      "design_value": "ITEM NAME",
+      "equipment": "보일러",
+      "row_idx": 69,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "62c481746ca311da"
+    },
+    {
+      "parameter": "5",
+      "value": "0",
+      "unit": "",
+      "design_value": "ITEM NO.",
+      "equipment": "보일러",
+      "row_idx": 70,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "e89a466b6c52cff5"
+    },
+    {
+      "parameter": "6",
+      "value": "탈산제주입장치",
+      "unit": "",
+      "design_value": "SERVICE",
+      "equipment": "보일러",
+      "row_idx": 71,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "000ded887a811341"
+    },
+    {
+      "parameter": "7",
+      "value": "TOTAL",
+      "unit": "",
+      "design_value": "NO.  REQ'D",
+      "equipment": "보일러",
+      "row_idx": 72,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "f8181167f6503254"
+    },
+    {
+      "parameter": "9",
+      "value": "CONDITION OF INJECTION LIQUID",
+      "unit": "",
+      "design_value": "",
+      "equipment": "보일러",
+      "row_idx": 74,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "348e0c991658aea4"
+    },
+    {
+      "parameter": "10",
+      "value": "HYDRIZINE",
+      "unit": "",
+      "design_value": "LIQUID :",
+      "equipment": "보일러",
+      "row_idx": 75,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "c162fc86bd0c9eb0"
+    },
+    {
+      "parameter": "11",
+      "value": "12",
+      "unit": "mm",
+      "design_value": "VAPOR PRESS    :",
+      "equipment": "보일러",
+      "row_idx": 76,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "6558c31ed1b3a5b1"
+    },
+    {
+      "parameter": "13",
+      "value": "DOSING TANK DATA",
+      "unit": "",
+      "design_value": "DOSING PUMP DATA",
+      "equipment": "보일러",
+      "row_idx": 78,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "05ec04846204efbb"
+    },
+    {
+      "parameter": "14",
+      "value": "-0304",
+      "unit": "A",
+      "design_value": "ITEM NO.",
+      "equipment": "보일러",
+      "row_idx": 79,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "33c8c359e5de73ae"
+    },
+    {
+      "parameter": "15",
+      "value": "-61",
+      "unit": "",
+      "design_value": "MODEL NO.",
+      "equipment": "보일러",
+      "row_idx": 80,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "ba8505f5c562c658"
+    },
+    {
+      "parameter": "16",
+      "value": "탈산제주입펌프",
+      "unit": "",
+      "design_value": "SERVICE.",
+      "equipment": "보일러",
+      "row_idx": 81,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "1d5aee2fd5a6d469"
+    },
+    {
+      "parameter": "17",
+      "value": "2",
+      "unit": "℃",
+      "design_value": "Q'TY.",
+      "equipment": "보일러",
+      "row_idx": 82,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "064c045df54f8269"
+    },
+    {
+      "parameter": "18",
+      "value": "(㎖/min)",
+      "unit": "℃",
+      "design_value": "CAPACITY.",
+      "equipment": "보일러",
+      "row_idx": 83,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "6f4cf0ce921d0a66"
+    },
+    {
+      "parameter": "19",
+      "value": "(Bar G)",
+      "unit": "",
+      "design_value": "DISC. PRESSURE",
+      "equipment": "보일러",
+      "row_idx": 84,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "e7e8e84abfb933d2"
+    },
+    {
+      "parameter": "20",
+      "value": "HYDRAULIC DIAPHRAGM",
+      "unit": "",
+      "design_value": "TYPE.",
+      "equipment": "보일러",
+      "row_idx": 85,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "eab200ed5e098a7a"
+    },
+    {
+      "parameter": "21",
+      "value": "GEAR",
+      "unit": "",
+      "design_value": "DIAPHRAGM",
+      "equipment": "보일러",
+      "row_idx": 86,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "1c154a1ab7e7d76a"
+    },
+    {
+      "parameter": "22",
+      "value": "THICKNESS.",
+      "unit": "",
+      "design_value": "PLUNGER",
+      "equipment": "보일러",
+      "row_idx": 87,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "88b810c33ca9b895"
+    },
+    {
+      "parameter": "23",
+      "value": "SIMPLEX",
+      "unit": "",
+      "design_value": "PISTON NO.",
+      "equipment": "보일러",
+      "row_idx": 88,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "091b58efc9575fdf"
+    },
+    {
+      "parameter": "24",
+      "value": "ACCESSORIES",
+      "unit": "",
+      "design_value": "PLUNGER/DIAPHRAM DIA.",
+      "equipment": "보일러",
+      "row_idx": 89,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "1229ee13d45f2f7e"
+    },
+    {
+      "parameter": "25",
+      "value": "58",
+      "unit": "",
+      "design_value": "STROKE SPEED. (SPM)",
+      "equipment": "보일러",
+      "row_idx": 90,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "f85d0b5a65941349"
+    },
+    {
+      "parameter": "26",
+      "value": "PUMP HEAD",
+      "unit": "A/C FILTER",
+      "design_value": "MATERIAL.",
+      "equipment": "보일러",
+      "row_idx": 91,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "243dac707ede3bda"
+    },
+    {
+      "parameter": "27",
+      "value": ":",
+      "unit": "",
+      "design_value": "DIAPHRAGM",
+      "equipment": "보일러",
+      "row_idx": 92,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "62d65412ffec18c9"
+    },
+    {
+      "parameter": "28",
+      "value": ":",
+      "unit": "",
+      "design_value": "CHECK BALL",
+      "equipment": "보일러",
+      "row_idx": 93,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "c1aa38ae668028b7"
+    },
+    {
+      "parameter": "29",
+      "value": ":",
+      "unit": "",
+      "design_value": "SEAT",
+      "equipment": "보일러",
+      "row_idx": 94,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "c3b4138dbd4b8249"
+    },
+    {
+      "parameter": "30",
+      "value": "AGITATOR DATA",
+      "unit": "",
+      "design_value": "CAPACITY CONTROL",
+      "equipment": "보일러",
+      "row_idx": 95,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "68c8ecdff2385927"
+    },
+    {
+      "parameter": "31",
+      "value": "AUTOMATIC",
+      "unit": "",
+      "design_value": "MANUAL",
+      "equipment": "보일러",
+      "row_idx": 96,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "aa71f88bea3ba9c2"
+    },
+    {
+      "parameter": "32",
+      "value": "MOTOR RPM CONTROL",
+      "unit": "",
+      "design_value": "STROKE ADJUSTMENT",
+      "equipment": "보일러",
+      "row_idx": 97,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "f93635600e98fb2b"
+    },
+    {
+      "parameter": "33",
+      "value": "STROKE CONTROL",
+      "unit": "",
+      "design_value": "DURING OPERATION",
+      "equipment": "보일러",
+      "row_idx": 98,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "e012c331215f4e64"
+    },
+    {
+      "parameter": "34",
+      "value": "TYPE.",
+      "unit": "",
+      "design_value": "CAPACITY CONTROL RANGE  : 20 - 100 %",
+      "equipment": "보일러",
+      "row_idx": 99,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "18d14a57322d28ff"
+    },
+    {
+      "parameter": "35",
+      "value": "SHAFT SEAL.",
+      "unit": "",
+      "design_value": "MOTOR DATA FOR DOSING PUMP",
+      "equipment": "보일러",
+      "row_idx": 100,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "fc7c4ae4eb9d44d3"
+    },
+    {
+      "parameter": "36",
+      "value": "2",
+      "unit": "",
+      "design_value": "Q'TY.                    :",
+      "equipment": "보일러",
+      "row_idx": 101,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "c80671461d917571"
+    },
+    {
+      "parameter": "37",
+      "value": "SHINKWANG",
+      "unit": "",
+      "design_value": "MFR.               :",
+      "equipment": "보일러",
+      "row_idx": 102,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "d3cd3238c2fd5260"
+    },
+    {
+      "parameter": "38",
+      "value": "0.2",
+      "unit": "",
+      "design_value": "RATED OUTPUT.  :",
+      "equipment": "보일러",
+      "row_idx": 103,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "fabc5cc5d6301f96"
+    },
+    {
+      "parameter": "39",
+      "value": "4",
+      "unit": "",
+      "design_value": "POLE.                   :",
+      "equipment": "보일러",
+      "row_idx": 104,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "3b1a3da16df81997"
+    },
+    {
+      "parameter": "40",
+      "value": "3",
+      "unit": "",
+      "design_value": "PHASE.",
+      "equipment": "보일러",
+      "row_idx": 105,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "5e8589a33b31412a"
+    },
+    {
+      "parameter": "41",
+      "value": "CYCLE",
+      "unit": "",
+      "design_value": "PHASE.",
+      "equipment": "보일러",
+      "row_idx": 106,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "ebb28d23b3b9c0ee"
+    },
+    {
+      "parameter": "43",
+      "value": "ACCESSORIES",
+      "unit": "",
+      "design_value": "",
+      "equipment": "보일러",
+      "row_idx": 108,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "17eb55cc1151e33f"
+    },
+    {
+      "parameter": "44",
+      "value": "REDUCER FOR TERMINAL POINT",
+      "unit": "",
+      "design_value": "MANUAL VALVE",
+      "equipment": "보일러",
+      "row_idx": 109,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "a97c96e8725f6651"
+    },
+    {
+      "parameter": "45",
+      "value": "PRESSURE SWITCH",
+      "unit": "",
+      "design_value": "CHECK VALVE",
+      "equipment": "보일러",
+      "row_idx": 110,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "395f37df316c33de"
+    },
+    {
+      "parameter": "46",
+      "value": "PRESSURE GAUGE",
+      "unit": "",
+      "design_value": "STRAINER",
+      "equipment": "보일러",
+      "row_idx": 111,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "031de95aae905598"
+    },
+    {
+      "parameter": "47",
+      "value": "NAME PLATE",
+      "unit": "",
+      "design_value": "BASE SKID",
+      "equipment": "보일러",
+      "row_idx": 112,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "5fdf2e341bcfff63"
+    },
+    {
+      "parameter": "48",
+      "value": "COMPANION FLANGE BOLT & NUT",
+      "unit": "",
+      "design_value": "CONTROL PANEL",
+      "equipment": "보일러",
+      "row_idx": 113,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "e690dffb8d732787"
+    },
+    {
+      "parameter": "49",
+      "value": "14",
+      "unit": "",
+      "design_value": "PUMP WEIGHT",
+      "equipment": "보일러",
+      "row_idx": 114,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "94d0e687b00976e4"
+    },
+    {
+      "parameter": "50",
+      "value": "2000",
+      "unit": "",
+      "design_value": "TANK WEIGHT",
+      "equipment": "보일러",
+      "row_idx": 115,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "690b1f2fdf5a8f08"
+    },
+    {
+      "parameter": "PREPARED BY.                 H.S.KIM",
+      "value": "APPROVED BY.                 S.W.CHOI",
+      "unit": "",
+      "design_value": "",
+      "equipment": "보일러",
+      "row_idx": 120,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "c6ce79f61a16789f"
+    },
+    {
+      "parameter": "CHECKED BY.                 J.H.KIM",
+      "value": "00",
+      "unit": "",
+      "design_value": "DATE.2019.11.",
+      "equipment": "보일러",
+      "row_idx": 123,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "5a8314e7b9bf2948"
+    },
+    {
+      "parameter": "1",
+      "value": "제주특별자치도",
+      "unit": "",
+      "design_value": "CUSTOMER",
+      "equipment": "보일러",
+      "row_idx": 129,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "92840064ab1c8215"
+    },
+    {
+      "parameter": "2",
+      "value": "56",
+      "unit": "",
+      "design_value": "LOCATION",
+      "equipment": "보일러",
+      "row_idx": 130,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "6034e89fa88a7665"
+    },
+    {
+      "parameter": "3",
+      "value": "CHOSUN REFRACTORIES.ENG.CO.,LTD",
+      "unit": "",
+      "design_value": "SUPPLIER",
+      "equipment": "보일러",
+      "row_idx": 131,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "0f9b2c1460e4ab63"
+    },
+    {
+      "parameter": "4",
+      "value": "시료수분석설비 외",
+      "unit": "",
+      "design_value": "ITEM NAME",
+      "equipment": "보일러",
+      "row_idx": 132,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "8b1fefc60158ee0c"
+    },
+    {
+      "parameter": "5",
+      "value": "0",
+      "unit": "",
+      "design_value": "ITEM NO.",
+      "equipment": "보일러",
+      "row_idx": 133,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "76e8d78fe5ac3aa5"
+    },
+    {
+      "parameter": "6",
+      "value": "PH 조절제 주입설비",
+      "unit": "",
+      "design_value": "SERVICE",
+      "equipment": "보일러",
+      "row_idx": 134,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "411b7a07f0d1f200"
+    },
+    {
+      "parameter": "7",
+      "value": "TOTAL",
+      "unit": "",
+      "design_value": "NO.  REQ'D",
+      "equipment": "보일러",
+      "row_idx": 135,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "62e71c002e908708"
+    },
+    {
+      "parameter": "9",
+      "value": "CONDITION OF INJECTION LIQUID",
+      "unit": "",
+      "design_value": "",
+      "equipment": "보일러",
+      "row_idx": 137,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "3a02a604d04c8607"
+    },
+    {
+      "parameter": "10",
+      "value": "AMMONIA",
+      "unit": "",
+      "design_value": "LIQUID :",
+      "equipment": "보일러",
+      "row_idx": 138,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "9b3cffb543cda5ee"
+    },
+    {
+      "parameter": "11",
+      "value": "68",
+      "unit": "℃",
+      "design_value": "VAPOR PRESS    :",
+      "equipment": "보일러",
+      "row_idx": 139,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "b6aca894bda38ed1"
+    },
+    {
+      "parameter": "12",
+      "value": "100",
+      "unit": "℃",
+      "design_value": "",
+      "equipment": "보일러",
+      "row_idx": 140,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "ee2da9f5e72c9ee2"
+    },
+    {
+      "parameter": "13",
+      "value": "DOSING TANK DATA",
+      "unit": "",
+      "design_value": "DOSING PUMP DATA",
+      "equipment": "보일러",
+      "row_idx": 141,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "456f5963d36351f7"
+    },
+    {
+      "parameter": "14",
+      "value": "-0305",
+      "unit": "A",
+      "design_value": "ITEM NO.",
+      "equipment": "보일러",
+      "row_idx": 142,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "975300130ce1763e"
+    },
+    {
+      "parameter": "15",
+      "value": "-61",
+      "unit": "",
+      "design_value": "MODEL NO.",
+      "equipment": "보일러",
+      "row_idx": 143,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "c883e99d4446c184"
+    },
+    {
+      "parameter": "16",
+      "value": "PH 조절제 주입펌프",
+      "unit": "",
+      "design_value": "SERVICE.",
+      "equipment": "보일러",
+      "row_idx": 144,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "9b5d18357cb2ba55"
+    },
+    {
+      "parameter": "17",
+      "value": "2",
+      "unit": "℃",
+      "design_value": "Q'TY.",
+      "equipment": "보일러",
+      "row_idx": 145,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "3cb593bc3b5f78f7"
+    },
+    {
+      "parameter": "18",
+      "value": "(㎖/min)",
+      "unit": "℃",
+      "design_value": "CAPACITY.",
+      "equipment": "보일러",
+      "row_idx": 146,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "b85340771bd78945"
+    },
+    {
+      "parameter": "19",
+      "value": "(Bar G)",
+      "unit": "",
+      "design_value": "DISC. PRESSURE",
+      "equipment": "보일러",
+      "row_idx": 147,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "5f0ef86ed19cfeed"
+    },
+    {
+      "parameter": "20",
+      "value": "HYDRAULIC DIAPHRAGM",
+      "unit": "",
+      "design_value": "TYPE.",
+      "equipment": "보일러",
+      "row_idx": 148,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "82cd01816f96a954"
+    },
+    {
+      "parameter": "21",
+      "value": "GEAR",
+      "unit": "",
+      "design_value": "DIAPHRAGM",
+      "equipment": "보일러",
+      "row_idx": 149,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "68b453bd208155ec"
+    },
+    {
+      "parameter": "22",
+      "value": "THICKNESS.",
+      "unit": "",
+      "design_value": "PLUNGER",
+      "equipment": "보일러",
+      "row_idx": 150,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "98c0e4f1fbd62314"
+    },
+    {
+      "parameter": "23",
+      "value": "SIMPLEX",
+      "unit": "",
+      "design_value": "PISTON NO.",
+      "equipment": "보일러",
+      "row_idx": 151,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "eefe2cd3f07ff0ee"
+    },
+    {
+      "parameter": "24",
+      "value": "ACCESSORIES",
+      "unit": "",
+      "design_value": "PLUNGER/DIAPHRAM DIA.",
+      "equipment": "보일러",
+      "row_idx": 152,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "68f1996f2402cbb5"
+    },
+    {
+      "parameter": "25",
+      "value": "58",
+      "unit": "",
+      "design_value": "STROKE SPEED. (SPM)",
+      "equipment": "보일러",
+      "row_idx": 153,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "1de8942cfac7fa58"
+    },
+    {
+      "parameter": "26",
+      "value": "PUMP HEAD",
+      "unit": "A/C FILTER",
+      "design_value": "MATERIAL.",
+      "equipment": "보일러",
+      "row_idx": 154,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "b70c27ab89939e1b"
+    },
+    {
+      "parameter": "27",
+      "value": ":",
+      "unit": "",
+      "design_value": "DIAPHRAGM",
+      "equipment": "보일러",
+      "row_idx": 155,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "1cd30ffb05738f67"
+    },
+    {
+      "parameter": "28",
+      "value": ":",
+      "unit": "",
+      "design_value": "CHECK BALL",
+      "equipment": "보일러",
+      "row_idx": 156,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "b27ac6676c3bd55c"
+    },
+    {
+      "parameter": "29",
+      "value": ":",
+      "unit": "",
+      "design_value": "SEAT",
+      "equipment": "보일러",
+      "row_idx": 157,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "291f62de553b02a7"
+    },
+    {
+      "parameter": "30",
+      "value": "AGITATOR DATA",
+      "unit": "",
+      "design_value": "CAPACITY CONTROL",
+      "equipment": "보일러",
+      "row_idx": 158,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "0d79fcfeba77992d"
+    },
+    {
+      "parameter": "31",
+      "value": "AUTOMATIC",
+      "unit": "",
+      "design_value": "MANUAL",
+      "equipment": "보일러",
+      "row_idx": 159,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "c5a7ed0a0b94ff7b"
+    },
+    {
+      "parameter": "32",
+      "value": "MOTOR RPM CONTROL",
+      "unit": "",
+      "design_value": "STROKE ADJUSTMENT",
+      "equipment": "보일러",
+      "row_idx": 160,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "0726434f3ba709fc"
+    },
+    {
+      "parameter": "33",
+      "value": "STROKE CONTROL",
+      "unit": "",
+      "design_value": "DURING OPERATION",
+      "equipment": "보일러",
+      "row_idx": 161,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "29c351504671e0c3"
+    },
+    {
+      "parameter": "34",
+      "value": "TYPE.",
+      "unit": "",
+      "design_value": "CAPACITY CONTROL RANGE  : 20 - 100 %",
+      "equipment": "보일러",
+      "row_idx": 162,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "d2391bd70d578586"
+    },
+    {
+      "parameter": "35",
+      "value": "SHAFT SEAL.",
+      "unit": "",
+      "design_value": "MOTOR DATA FOR DOSING PUMP",
+      "equipment": "보일러",
+      "row_idx": 163,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "88b015a104301c3c"
+    },
+    {
+      "parameter": "36",
+      "value": "2",
+      "unit": "",
+      "design_value": "Q'TY.                    :",
+      "equipment": "보일러",
+      "row_idx": 164,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "9c109583d99de3e0"
+    },
+    {
+      "parameter": "37",
+      "value": "SHINKANG",
+      "unit": "",
+      "design_value": "MFR.               :",
+      "equipment": "보일러",
+      "row_idx": 165,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "f3599aca27a297f7"
+    },
+    {
+      "parameter": "38",
+      "value": "0.2",
+      "unit": "",
+      "design_value": "RATED OUTPUT.  :",
+      "equipment": "보일러",
+      "row_idx": 166,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "74847ad1c85958c9"
+    },
+    {
+      "parameter": "39",
+      "value": "4",
+      "unit": "",
+      "design_value": "POLE.                   :",
+      "equipment": "보일러",
+      "row_idx": 167,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "577e03972e7c0f43"
+    },
+    {
+      "parameter": "40",
+      "value": "3",
+      "unit": "",
+      "design_value": "PHASE.",
+      "equipment": "보일러",
+      "row_idx": 168,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "b74510ce1b3cc1bc"
+    },
+    {
+      "parameter": "41",
+      "value": "CYCLE",
+      "unit": "",
+      "design_value": "PHASE.",
+      "equipment": "보일러",
+      "row_idx": 169,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "749c0c0be33f8a88"
+    },
+    {
+      "parameter": "43",
+      "value": "ACCESSORIES",
+      "unit": "",
+      "design_value": "",
+      "equipment": "보일러",
+      "row_idx": 171,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "7a34392fcc591a83"
+    },
+    {
+      "parameter": "44",
+      "value": "REDUCER FOR TERMINAL POINT",
+      "unit": "",
+      "design_value": "MANUAL VALVE",
+      "equipment": "보일러",
+      "row_idx": 172,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "c778aca41ce3f460"
+    },
+    {
+      "parameter": "45",
+      "value": "PRESSURE SWITCH",
+      "unit": "",
+      "design_value": "CHECK VALVE",
+      "equipment": "보일러",
+      "row_idx": 173,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "5fc66d81d82351a6"
+    },
+    {
+      "parameter": "46",
+      "value": "PRESSURE GAUGE",
+      "unit": "",
+      "design_value": "STRAINER",
+      "equipment": "보일러",
+      "row_idx": 174,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "5d7adfee3a13f728"
+    },
+    {
+      "parameter": "47",
+      "value": "NAME PLATE",
+      "unit": "",
+      "design_value": "BASE SKID",
+      "equipment": "보일러",
+      "row_idx": 175,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "9e36f9a29ae3cd87"
+    },
+    {
+      "parameter": "48",
+      "value": "COMPANION FLANGE BOLT & NUT",
+      "unit": "",
+      "design_value": "CONTROL PANEL",
+      "equipment": "보일러",
+      "row_idx": 176,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "496782ec75a579db"
+    },
+    {
+      "parameter": "49",
+      "value": "14",
+      "unit": "",
+      "design_value": "PUMP WEIGHT",
+      "equipment": "보일러",
+      "row_idx": 177,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "560dc25e4fc13c9a"
+    },
+    {
+      "parameter": "50",
+      "value": "2000",
+      "unit": "",
+      "design_value": "TANK WEIGHT",
+      "equipment": "보일러",
+      "row_idx": 178,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "c3c5987dc66d06df"
+    },
+    {
+      "parameter": "PREPARED BY.                H.S.KIM",
+      "value": "APPROVED BY.                 S.W.CHOI",
+      "unit": "",
+      "design_value": "",
+      "equipment": "보일러",
+      "row_idx": 183,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "b7bf849305a73190"
+    },
+    {
+      "parameter": "CHECKED BY.                  J.H.KIM",
+      "value": "00",
+      "unit": "",
+      "design_value": "DATE.2019.11.",
+      "equipment": "보일러",
+      "row_idx": 186,
+      "sheet": "CHEMICAL",
+      "chunk_hash": "45ba31c6cd9ce9f0"
+    }
+  ]
+}

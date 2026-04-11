@@ -1,0 +1,128 @@
+{
+  "meta": {
+    "source_path": "D:\\기계도면\\기계도면\\32. 증기터빈 (정석)\\제주 VP\\기계\\16. 운전 및 유지관리 지침서\\GS Jeju steam blowing procedure.pdf",
+    "company_id": "32",
+    "company_name": "증기터빈",
+    "equipment": "기타",
+    "doc_type": "MANUAL",
+    "rev": null,
+    "is_latest": true,
+    "extracted_at": "2026-03-27T20:27:05",
+    "chunk_count": 7,
+    "vision_pages": 0
+  },
+  "chunks": [
+    {
+      "chunk_idx": 0,
+      "text": "#T-1105, 170, Seohyeon-ro, Bundang-gu, Seongnam-si,\nGyeonggi-do, 463-862, Korea\nTel: +82 (0)31 706 8798,\nFax: +82 (0)31 706 8798\nProject: GS Jeju incineration\nSubject: Steam blowing procedure\n스팀 블로잉",
+      "header": "",
+      "section_type": "일반",
+      "equipment": [
+        "기타"
+      ],
+      "company_id": "32",
+      "company_name": "증기터빈",
+      "source_file": "GS Jeju steam blowing procedure",
+      "source_path": "D:\\기계도면\\기계도면\\32. 증기터빈 (정석)\\제주 VP\\기계\\16. 운전 및 유지관리 지침서\\GS Jeju steam blowing procedure.pdf",
+      "rev": null,
+      "chunk_hash": "cd8ec473bd113480",
+      "char_count": 198
+    },
+    {
+      "chunk_idx": 1,
+      "text": "1 706 8798\nProject: GS Jeju incineration\nSubject: Steam blowing procedure\n스팀 블로잉 1. 목적\n배관 내에 붙어있는 잔여물, 찌꺼기 등을 운전 조건과 동일한 조건으로 불어내어\n청소하는 절차.",
+      "header": "1. 목적",
+      "section_type": "운전",
+      "equipment": [
+        "기타"
+      ],
+      "company_id": "32",
+      "company_name": "증기터빈",
+      "source_file": "GS Jeju steam blowing procedure",
+      "source_path": "D:\\기계도면\\기계도면\\32. 증기터빈 (정석)\\제주 VP\\기계\\16. 운전 및 유지관리 지침서\\GS Jeju steam blowing procedure.pdf",
+      "rev": null,
+      "chunk_hash": "38bf3cd682ab8cc9",
+      "char_count": 139
+    },
+    {
+      "chunk_idx": 2,
+      "text": "2. 시기\n터빈의 main steam inlet에 설치되는 배관이 완료 및 운전 조건에 맞는 증기 제\n공이 준비 되면 steam blowing 절차 시작.",
+      "header": "2. 시기",
+      "section_type": "운전",
+      "equipment": [
+        "기타"
+      ],
+      "company_id": "32",
+      "company_name": "증기터빈",
+      "source_file": "GS Jeju steam blowing procedure",
+      "source_path": "D:\\기계도면\\기계도면\\32. 증기터빈 (정석)\\제주 VP\\기계\\16. 운전 및 유지관리 지침서\\GS Jeju steam blowing procedure.pdf",
+      "rev": null,
+      "chunk_hash": "87cae861864208ee",
+      "char_count": 86
+    },
+    {
+      "chunk_idx": 3,
+      "text": "터빈의 main steam inlet에 설치되는 배관이 완료 및 운전 조건에 맞는 증기 제\n공이 준비 되면 steam blowing 절차 시작. 3. steam blowing 조건\n설계 운전 조건의 80% 이상으로 증기를 불어내어 steam blowing을 시행.",
+      "header": "3. steam blowing 조건",
+      "section_type": "운전",
+      "equipment": [
+        "기타"
+      ],
+      "company_id": "32",
+      "company_name": "증기터빈",
+      "source_file": "GS Jeju steam blowing procedure",
+      "source_path": "D:\\기계도면\\기계도면\\32. 증기터빈 (정석)\\제주 VP\\기계\\16. 운전 및 유지관리 지침서\\GS Jeju steam blowing procedure.pdf",
+      "rev": null,
+      "chunk_hash": "6afd4133ecfdc94d",
+      "char_count": 147
+    },
+    {
+      "chunk_idx": 4,
+      "text": "4. 가배관 설치\nMain inlet nozzle에 가깝게 가배관 및 , silence에 가배관 체결.\n가배관에 수동 밸브 및 Test box를 설치, Test box에 타겟 플레이트를 삽입하여\n현장 배관 상태 점검.\n5.검사 절차 판정\nTrvieni 사의 엔지니어 합격 기준에 의하여 판정.\n다음의 기준은 트리베니 기계 기술자의 입회 시 적용되는 것이며, 기술자 방문\n전 발주처의 스팀 블로잉은 자체 절차에 따라 실시한다.\nTriveni 기계 기수라는 Target plate의 표면이 매끄럽다고 판단되면 터빈 시운전\n에 동의하는 것이 일반적이다. 스팀 블로잉이 올바로 실시되지 않으면 터빈 내부\n부품의 파손이 발생할 수 있으므로 주의가 필요하다.",
+      "header": "4. 가배관 설치",
+      "section_type": "점검",
+      "equipment": [
+        "밸브"
+      ],
+      "company_id": "32",
+      "company_name": "증기터빈",
+      "source_file": "GS Jeju steam blowing procedure",
+      "source_path": "D:\\기계도면\\기계도면\\32. 증기터빈 (정석)\\제주 VP\\기계\\16. 운전 및 유지관리 지침서\\GS Jeju steam blowing procedure.pdf",
+      "rev": null,
+      "chunk_hash": "804d7a8f687fd2ce",
+      "char_count": 362
+    },
+    {
+      "chunk_idx": 5,
+      "text": "터빈 시운전\n에 동의하는 것이 일반적이다. 스팀 블로잉이 올바로 실시되지 않으면 터빈 내부\n부품의 파손이 발생할 수 있으므로 주의가 필요하다. -. Proper support to be provided in steam blow off line (스팀 블로잉 배출 라인\n(가배관)에 적절한 지지대가 있어야 함)\n-. All instrument probe including thermowell to be disconnected from steam\nline and plugged during blowing (모든 계기와 써모웰 등은 증기 공급 라인에서\n분리하고 플러그로 막아 둔다)\n-. Arrange separate pressure gauge & temperature gauge to monitor the steam\nblowing activities (별도의 압력계와 온도계를 설치하여 스팀 블로잉 상황을 모니\n터한다)\n-. Adequate drain to be provided in main steam inlet line (주증기 인입 배관에\n적절한 드레인이 설치되어 있어야 한다)\n-. Arrange Aluminum mirror finish target plate of 50 mm width x 10 mm thick\n& to be fitted at least after 1.5 meters straight pipe (표면이 매끄러운 타겟용 알\n루미늄 판 (50 mm 폭 x 10 mm 두께)을 적어도 직선 배관 길이 1.5 미터 이상에\n설치한다. 타겟 플레이트의 폭은 배관경에 따라 트리베니 기술자와 협의하여 조\n정한다.)\n-. During blowing, steam pressure to be maintained 70 to 80% of working\npressure (스팀 블로잉 시 증기 압력은 운전 압력의 70 – 80% 수준으로 한다)\n-. During blowing, blow off valve should be 60 to 80% open (스팀 블로잉 시 블\n로우 오프 밸브는 60 – 80% 개방한다)\n-. Each blow should be 4 minutes duration when Triveni Engineer witness\nsteam blowing. (트리베니 기술자 입회 하에 각 스팀 블로잉은 4분씩 실시한다)\n-. Allow pipe to cool down for 2.5 hours after each blow (40 deg.C above\nambient temperature) (각 스팀 블로잉 실시 후 배관 라인을 2.5 시간 정도 냉각\n한다 (대기 온도에서 40도 정도까지). 배관 라인의 냉각과 가열이 반복되어 내면\n의 이물질이 탈착될 수 있도록 하기 위한 것임.\n-. Indentation exceeding 0.2 mm to number not more than 10% per 2500 mm2\nof the target plate surfaces (0.2 mm 이상 크기의 이물질 자국은 2500 mm2 면\n적의 10%를 넘지 말아야 한다)",
+      "header": "4. 가배관 설치",
+      "section_type": "운전",
+      "equipment": [
+        "밸브"
+      ],
+      "company_id": "32",
+      "company_name": "증기터빈",
+      "source_file": "GS Jeju steam blowing procedure",
+      "source_path": "D:\\기계도면\\기계도면\\32. 증기터빈 (정석)\\제주 VP\\기계\\16. 운전 및 유지관리 지침서\\GS Jeju steam blowing procedure.pdf",
+      "rev": null,
+      "chunk_hash": "d554656f4be8d174",
+      "char_count": 1495
+    },
+    {
+      "chunk_idx": 6,
+      "text": "f the target plate surfaces (0.2 mm 이상 크기의 이물질 자국은 2500 mm2 면\n적의 10%를 넘지 말아야 한다) -. Indentation less than 0.2 mm to be well dispersed & nowhere present in\nconcentration (0.2 mm 이하 크기의 이물질 자국은 고르게 분포되어 있어야 하며\n타겟 플레이트의 어느 한 지점에 집중되어 있으면 안 된다)\n-. Two successive plates to be cleared & meet the above specific criteria (두\n개의 연속되는 타겟 플레이트가 상기 기준을 만족해야 한다)\n-. After cooling down at least 12 hours, two more successive steam blowing to\nbe given & target to be cleared according to the specific criteria (적어도 12시\n간 동안 인입 배관을 냉각한 다음 두 번의 스팀 블로잉을 실시하고 상기 기준에\n따라 타겟 플레이트를 검증한다)",
+      "header": "4. 가배관 설치",
+      "section_type": "일반",
+      "equipment": [
+        "기타"
+      ],
+      "company_id": "32",
+      "company_name": "증기터빈",
+      "source_file": "GS Jeju steam blowing procedure",
+      "source_path": "D:\\기계도면\\기계도면\\32. 증기터빈 (정석)\\제주 VP\\기계\\16. 운전 및 유지관리 지침서\\GS Jeju steam blowing procedure.pdf",
+      "rev": null,
+      "chunk_hash": "edc7afc3b9171f62",
+      "char_count": 566
+    }
+  ]
+}

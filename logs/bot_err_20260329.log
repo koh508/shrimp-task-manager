@@ -1,0 +1,23 @@
+C:\Users\User\AppData\Roaming\Python\Python314\site-packages\requests\__init__.py:113: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (7.4.0.post1)/charset_normalizer (3.4.5) doesn't match a supported version!
+  warnings.warn(
+C:\Python314\Lib\contextlib.py:141: FutureWarning: Parameter 'structured_output' was not specified. Currently it defaults to False, but in version 1.25, the default will change to True. To suppress this warning, explicitly set structured_output=True (new behavior) or structured_output=False (legacy behavior). See documentation at https://huggingface.co/docs/smolagents/tutorials/tools#structured-output-and-output-schema-support for more details.
+  return next(self.gen)
+[03/29/26 16:13:30] INFO     Processing request of type           server.py:720
+                             ListToolsRequest                                  
+                    INFO     Processing request of type           server.py:720
+                             ListToolsRequest                                  
+[03/29/26 16:13:31] INFO     Processing request of type           server.py:720
+                             ListToolsRequest                                  
+                    INFO     Processing request of type           server.py:720
+                             ListToolsRequest                                  
+[03/29/26 16:13:31] INFO     Processing request of type           server.py:720
+                             ListToolsRequest                                  
+                    INFO     Processing request of type           server.py:720
+                             ListToolsRequest                                  
+[03/29/26 16:13:32] INFO     [SKILL_LOAD] skills_server    skills_server.py:223
+                             초기화 완료 (14개 로드)                           
+                    INFO     Processing request of type           server.py:720
+                             ListToolsRequest                                  
+                    INFO     Processing request of type           server.py:720
+                             ListToolsRequest                                  
+^C

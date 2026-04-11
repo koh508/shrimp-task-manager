@@ -1,0 +1,58 @@
+{
+  "meta": {
+    "source_path": "D:\\기계도면\\기계도면\\22. 시료수, 약품2, 침출수, 화격자 (조선내화E)\\시료수분석설비 외 준공도서\\01. [제주-기계] 승인서류 (19.11.) AS BUILT\\18. 기술 및 참고자료\\[18-5] 화격자 냉각설비\\18-5-6. 온도계\\18-5-6-1. DATASHEET (TG).xls",
+    "company_id": "22",
+    "equipment": "화격자",
+    "doc_type": "LINELIST",
+    "rev": "AS_BUILT",
+    "is_latest": true,
+    "extracted_at": "2026-03-27T19:33:07",
+    "record_count": 4
+  },
+  "records": [
+    {
+      "tag": "",
+      "service": "",
+      "parameter": "온도",
+      "value": "3",
+      "unit": "℃",
+      "equipment": "화격자",
+      "row_idx": 4,
+      "sheet": "TG",
+      "chunk_hash": "58bdd1550037651b"
+    },
+    {
+      "tag": "",
+      "service": "",
+      "parameter": "온도",
+      "value": "2",
+      "unit": "℃",
+      "equipment": "화격자",
+      "row_idx": 5,
+      "sheet": "TG",
+      "chunk_hash": "437a4d26dea04e95"
+    },
+    {
+      "tag": "",
+      "service": "",
+      "parameter": "온도",
+      "value": "1",
+      "unit": "℃",
+      "equipment": "화격자",
+      "row_idx": 6,
+      "sheet": "TG",
+      "chunk_hash": "281517c9496d72e9"
+    },
+    {
+      "tag": "",
+      "service": "",
+      "parameter": "온도",
+      "value": "0",
+      "unit": "℃",
+      "equipment": "화격자",
+      "row_idx": 7,
+      "sheet": "TG",
+      "chunk_hash": "f5ef6426aa03e415"
+    }
+  ]
+}

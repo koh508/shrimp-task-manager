@@ -1,0 +1,115 @@
+{
+  "meta": {
+    "source_path": "D:\\기계도면\\기계도면\\32. 증기터빈 (정석)\\제주 VP\\기계\\16. 운전 및 유지관리 지침서\\STEAM BLOWING.pdf",
+    "company_id": "32",
+    "company_name": "증기터빈",
+    "equipment": "기타",
+    "doc_type": "MANUAL",
+    "rev": null,
+    "is_latest": true,
+    "extracted_at": "2026-03-27T20:27:05",
+    "chunk_count": 6,
+    "vision_pages": 0
+  },
+  "chunks": [
+    {
+      "chunk_idx": 0,
+      "text": "ERECTION AND COMMISSIONING\n• This involves the following action.\n• Remove the bottom bearings and inspect. Clean/polish both top &\nbottom halves. Ensure their correct fitting. Clean the holes provided in\nThrust Bearings Pads holder & Journal Bearing holes also.\n• Turbine and gearbox bearings clearances should be checked.\n• Position the bearing caps and tightens the cap studs as per torque\nrecommended, ref instruction manual for Torque details.\n• Rotor fronts, rotor rear pedestal covers, Gearbox cover to be positioned\nwith silicon sealant/Ana bond 666 T.\n• All the pressure, temperature gauges, vibration probes, etc. to be fixed.\n• Remove the mesh /PRV’s to be taken in line. Replace the filter element\nwith new one.\n• Ensure all joints are fitted correctly and are oil tight.\n• Drain the flushed oil from the oil tank, coolers and filters. Inspect/\nclean the oil tank. Fill the oil tank with fresh oil.\n(Passing of oil to be ensured in all the bearing during/after final box up).\nDocumentation:\n• Oil flushing protocol.\n• Turbine Box-Up Protocol Formats\nTools/material required:\n• Dial gauge\n• Micrometer\n• Lead wire\n• Feeler gauge\n• Vernier Calipers\nOpen inspection:\nRefer Section-O, Overhaul and inspection\nSteam Blowing\nA steam turbine is vulnerable to damage of the blading, if any debris is\nfed into the machine with the steam supply.\nIt is essential, therefore, that the steam line to the turbine is completely\nclean and free of any clinging matter, particularly weld splatter, before\nsteam is fed to the turbine on commissioning. This also applies after\nany repairs to the piping or boiler.",
+      "header": "",
+      "section_type": "점검",
+      "equipment": [
+        "탱크",
+        "필터"
+      ],
+      "company_id": "32",
+      "company_name": "증기터빈",
+      "source_file": "STEAM BLOWING",
+      "source_path": "D:\\기계도면\\기계도면\\32. 증기터빈 (정석)\\제주 VP\\기계\\16. 운전 및 유지관리 지침서\\STEAM BLOWING.pdf",
+      "rev": null,
+      "chunk_hash": "91351eb6d3fe8bb5",
+      "char_count": 1604
+    },
+    {
+      "chunk_idx": 1,
+      "text": "e on commissioning. This also applies after\nany repairs to the piping or boiler. ERECTION AND COMMISSIONING\n• The purpose of blowing the steam lines prior to starting up a new unit is\nto remove any foreign matter remaining in the equipment (i.e., super\nheater) and steam piping after erection is completed. Considerable\ndamage could result if such foreign matter was allowed to enter the\nplant steam system during initial operation.\n• On older units the need for steam line blowing should be considered\nfollowing major pressure parts repairs, where the possibility of\nintroduction of foreign material into the system exists.\n• Since prevention of damage to the plant steam system is the prime\nconcern, the responsibility for determining the effectiveness of the steam\nline blowing operation rests with the plant operator. During the steam\nline blowing process the unit should be operated in accordance with the\nvendor recommended procedures, with all control systems & protective\ninterlocks functioning.\n• It is strongly recommended that blowing of steam to be witnessed\nby a Triveni service engineer.\n• The principle behind steam blowing is that the thermal cycling\n(heating/cooling) and high velocity gas flowing through the line will\n“shock” the pipe & tend to break the mill scale & weld slag away from\nthe pipe wall. Ideally, steam blowing should be done prior to the system\nbeing insulated to maximize the thermal cycling of the equipment. If the\nsystem is insulated, a greater time between blows may be necessary to\nallow the system to cool.\n• Ideally, to obtain optimum cleaning, the flow conditions in the\nsystem during steam line blowing should equal those during normal\noperation at maximum load. Since it is impossible to exactly\nduplicate these conditions when blowing through the piping to\natmosphere, it is desirable to produce equivalent conditions by\nusing lower pressure steam with a flow rate such that friction force\nduring blow out condition will be 1.5 or more times of the friction\nforce under normal full load condions. This ratio is commonly\nknown as the disturbance factor or cleaning force ratio (CFR)\n• Steam flow quantity during blowing to be calculated as below\n(W2 x V)\nCFR = ------------ > 1.5\n(Wr2 x Vr)\n• Where:-\nW = Mass flow rate during steam blow out condition (TPH)\nWr = Mass flow rate during normal operation, or the maximum\nvalve (TPH)\nV = specific volume during steam blow out condition.\nVr = specific volume during normal operation.",
+      "header": "",
+      "section_type": "운전",
+      "equipment": [
+        "밸브"
+      ],
+      "company_id": "32",
+      "company_name": "증기터빈",
+      "source_file": "STEAM BLOWING",
+      "source_path": "D:\\기계도면\\기계도면\\32. 증기터빈 (정석)\\제주 VP\\기계\\16. 운전 및 유지관리 지침서\\STEAM BLOWING.pdf",
+      "rev": null,
+      "chunk_hash": "0e59fb59dc4fa0d2",
+      "char_count": 2474
+    },
+    {
+      "chunk_idx": 2,
+      "text": "e during steam blow out condition.\nVr = specific volume during normal operation. ERECTION AND COMMISSIONING\n• The temporary piping is normally equipped with a shutoff valve that is\nused as a blowing valve. With this arrangement, the super heater\nand the upstream portion of the temporary piping are maintained at\ndrum pressure at all times when not actually blowing.\nSAFETY WHILE STEAM BLOWING\nSafety Precautions\nNecessary safety precautions must be taken such as fencing off the\narea and providing ear protection against the inevitable noise\ngenerated during the blowing down process.\nThe process of steam blowing imposes abnormal and severe conditions\nupon the boiler, steam equipment and steam piping. Large, rapid\ntemperature changes occur during each blowing cycle. This cycling of\ntemperature is far more severe than is incurred in normal operation.\nThermal stresses may be excessive in the heavy wall portions of the\nsystem such as steam drums, headers and piping. It is prudent to\nconsider this fact when performing the blowing procedure and to limit\nthe number of blows to the minimum consistent with cleaning the\nsystem.\nSince the temporary steam blowing piping may be designed for lower\npressure than the boiler, care must be used to prevent over pressuring\nthis piping during the entire steam line blowing operation. The pressure\nin the temporary piping should be monitored continuously and\noperators need to be alert to prevent over pressure.\nIt is recommended that a means of over pressure protection be provided\nin the temporary piping, such as, safety valves set at the design\npressure of the temporary piping.\nNoise levels will be very high during the steam blow. Hearing\nprotection is mandatory for those in the immediate vicinity of the steam\noutlet. An area at least 100 mtr. from the blow point must be roped off\nto prevent personnel from approaching too close.\nEquipment:\nThe following will be required for steam blowing\n• Temporary piping\n• Temporary piping support a restraints\n• Blow off valve with quick opening actuator\n• Silencer\n• Target Plate – Aluminum plate with mirror finish\nProcedure:\nThe unit is started in the normal manner. All normal recommendations\nand limitations with respect to fuel firing equipment, air handling\nequipment, drains and vents, etc., should be followed, as if the unit",
+      "header": "",
+      "section_type": "운전",
+      "equipment": [
+        "증기드럼",
+        "밸브"
+      ],
+      "company_id": "32",
+      "company_name": "증기터빈",
+      "source_file": "STEAM BLOWING",
+      "source_path": "D:\\기계도면\\기계도면\\32. 증기터빈 (정석)\\제주 VP\\기계\\16. 운전 및 유지관리 지침서\\STEAM BLOWING.pdf",
+      "rev": null,
+      "chunk_hash": "85efbb305bb6c3db",
+      "char_count": 2326
+    },
+    {
+      "chunk_idx": 3,
+      "text": "r handling\nequipment, drains and vents, etc., should be followed, as if the unit ERECTION AND COMMISSIONING\nwere being started for normal operation. As for any new unit, the steam\nblowing operation is the first occasion that the unit is fired at any\nsignificant rate. Consequently, the startup as well as the steam line\nblowing must be conducted with great care. The normal startup rate\ndoes not apply; the unit must be brought up much slower, while all\nequipment is checked and expansion movements monitored closely. If\nthe unit is equipped with a fired super heater, the 1000 deg. F\n(538deg.C) furnace exit gas temperature limitation must not be\nexceeded when the unit is fired. The same general precautions taken on\nany new unit for this period of operation apply equally here.\nGeneral pre cleaning Procedure:\n• Check all pipe anchors and the pipes for the adequate support of piping,\nincluding the temporary vent pipe.\n• Insure that all the lines have been inspected and hydro tested.\n• Remove all the control valves, de-super heater nozzles, flow elements,\nthermo well, pressure gauge, orifice plate, safety valves and instruments\nthat may be damaged during the steam blow.\n• Insure all vents pipes have adequate drains and that these drains are\nrouted to a safe location.\n• Install temporary pressure gauge as required to monitor the progress of\nthe steam blow and make arrangements for to record pressure reading.\n• Establish adequate radio communication between the control room and\nthe operator at the shutoff valve. Back this up with a system of visual\ncommunication, such as lights or flags, since audio communication may\nbe difficult due to high noise levels at the steam shutoff valves.\n• Insure personnel controlled in area during steam blow. Insure the area\nnear the vent pipe is clear of personnel during the steam blow. Protect\nneighboring equipment from damage due to the steam vents.\n• Individuals operating the steam blow valves (especially near the vent\npipe) should wear double ear protection.\nSteam Blow Operation\nMaximum effectiveness of steam blowing operation will be\nachieved by starting the blow at maximum possible flow &\nmaintaining the said CFR value.\nCaution:\n• The first blow should be done at reduced pressure, In order to\ncheck the temporary piping system, its supports and the anchors.",
+      "header": "",
+      "section_type": "시동",
+      "equipment": [
+        "밸브"
+      ],
+      "company_id": "32",
+      "company_name": "증기터빈",
+      "source_file": "STEAM BLOWING",
+      "source_path": "D:\\기계도면\\기계도면\\32. 증기터빈 (정석)\\제주 VP\\기계\\16. 운전 및 유지관리 지침서\\STEAM BLOWING.pdf",
+      "rev": null,
+      "chunk_hash": "3f747e95fc804d5c",
+      "char_count": 2321
+    },
+    {
+      "chunk_idx": 4,
+      "text": "re, In order to\ncheck the temporary piping system, its supports and the anchors. ERECTION AND COMMISSIONING\n• With no target plate in place, bring the boiler up to working pressure.\nGenerally there is always issue for rated pressure and temperature\nduring blow down. Blow steam down the line for 20 minutes or until\npressure has dropped to 50% of initial pressure and then allows the line\nto cool (half to one hour for bare pipes, 1 ½ to 2 hours for lagged pipes).\n• Repeat this three times as the heating & cooling helps to loosen clinging\nmatter from the internal pipe surface due to thermal expansion and\ncontraction.\n• Now place the Mirror finished Aluminum target plate. Run a series of\nblow downs for 10 minutes allowing cooling between each cycle. Stamp\nthe cycle number on the receiving face of the target piece.\nPost Cleaning Procedures:\nDrain the temporary and permanent piping.\nRemove temporary spools, blind flanges, temporary bend piping, etc,\nand re-install all components removed prior to steam blow.\nCleanliness criteria:\nTwo successive targets must result in mirror finishes that meet the\nspecified criteria.\nAfter a cooling down period of at least 12 hours, two more successive\nsteams blows must result in mirror surfaces that meet the specified\ncriteria.\nCriteria:\nNo indentation exceeding 0.8 mm diameter.\nIndentation exceeding 0.4 mm diameter to number not more than 2 per\n2500 mm2 of the target plate surface.\nIndentations exceeding 0.2 mm to number, not more than 10 per 2500\nmm2 of the target plate surfaces.\nIndentation less than 0.2mm to be well dispersed and nowhere present\nin concentration.\nIf a separator is included in the steam inlet pipe to the turbine then it\nshould be emptied after the last ‘Blowdown’.\nChecking of Safety Trips\nProcedure:\n• Before starting AOP, ensure all oil pipeline instruments are fitted and\nfinal box up of the turbine is completed.",
+      "header": "",
+      "section_type": "비상",
+      "equipment": [
+        "기타"
+      ],
+      "company_id": "32",
+      "company_name": "증기터빈",
+      "source_file": "STEAM BLOWING",
+      "source_path": "D:\\기계도면\\기계도면\\32. 증기터빈 (정석)\\제주 VP\\기계\\16. 운전 및 유지관리 지침서\\STEAM BLOWING.pdf",
+      "rev": null,
+      "chunk_hash": "2cc7e32cb01baa4b",
+      "char_count": 1890
+    },
+    {
+      "chunk_idx": 5,
+      "text": "il pipeline instruments are fitted and\nfinal box up of the turbine is completed. ERECTION AND COMMISSIONING\n• Check the functioning of AOP and discharge pressure is set to as per\nData provided in the Technical Data in the Instruction Manual. ( Refer\nTurbine Operation and Maintenance Manual).\n• Ensure visually that there is no oil leakage in the oil system.\n• Set the control oil pressure and lube oil pressure through pressure relief\nvalve. (Refer Turbine Operation and Maintenance Manual).\n• Check the functioning of L.P Trip, SEV and Throttle valve. (Reset the LP\ntrip ,open the SEV hand wheel manually & lift the linkages assembly\nto check the throttle valve operation . check the LP trip pressure by\nmoving the hand trip to trip position slowly ensure the LP trip pressure\nis around 0.5 to 0.8 Bar(g). Also ensure closing of SEV & throttle valve\nwhen hand trip is activated to trip position).\n• Check the functioning of SEV and TV when Hand trip actuated.\n• Check the functioning of vibration monitoring system and the alarm and\ntrip set points are configured as recommended, (Refer SECTION-B\nINSTRUMENT SETTINGS).\n• Check the function of all the pressure switches and pressure\ntransmitter at TCP with reference to field mounted instruments.\n• Set the pressure switch set points given in the instruction manual (Refer\nSECTION-B INSTRUMENT SETTINGS).\n(Trip circuit oil pressure to be less by 0.3/0.4 Bar(g). from the lube oil\npressure).\nAOP, COP, Barring gear & EOP inter locks & function to be checked and\nensure.\nCheck the function of GVC blower.(if applicable) (Check the rotation of\nmotor & airflow at the out let).\nBarring Gear Trials\n– (If applicable)\nProcedure:\n• Start AOP and check the oil pressure and oil flow to Turbine, Gear Box\nand Alternator bearings is as per recommendations mentioned earlier.\n• Check the functioning of barring gear and lube oil pressure interlocks.\n(Ensure barring gear motor should not be started when AOP in off\nmode.\n• Switch off AOP when barring gear motor in operation, ensure the\nbarring gear get stopped because of low lube oil pressure.",
+      "header": "",
+      "section_type": "점검",
+      "equipment": [
+        "팬",
+        "밸브"
+      ],
+      "company_id": "32",
+      "company_name": "증기터빈",
+      "source_file": "STEAM BLOWING",
+      "source_path": "D:\\기계도면\\기계도면\\32. 증기터빈 (정석)\\제주 VP\\기계\\16. 운전 및 유지관리 지침서\\STEAM BLOWING.pdf",
+      "rev": null,
+      "chunk_hash": "3f38360dbec3c396",
+      "char_count": 2085
+    }
+  ]
+}

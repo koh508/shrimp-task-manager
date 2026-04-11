@@ -1,0 +1,150 @@
+{
+  "mood": {
+    "불안/스트레스": {
+      "total": 89,
+      "days": 22,
+      "avg_per_day": 3.07,
+      "frequency_pct": 76
+    },
+    "긍정/활기": {
+      "total": 23,
+      "days": 11,
+      "avg_per_day": 0.79,
+      "frequency_pct": 38
+    },
+    "우울/슬픔": {
+      "total": 72,
+      "days": 13,
+      "avg_per_day": 2.48,
+      "frequency_pct": 45
+    },
+    "분노/짜증": {
+      "total": 24,
+      "days": 14,
+      "avg_per_day": 0.83,
+      "frequency_pct": 48
+    },
+    "피로/무기력": {
+      "total": 69,
+      "days": 18,
+      "avg_per_day": 2.38,
+      "frequency_pct": 62
+    }
+  },
+  "activity": {
+    "공부": {
+      "total": 900,
+      "days": 28,
+      "avg_per_day": 31.03,
+      "frequency_pct": 97
+    },
+    "운동": {
+      "total": 123,
+      "days": 16,
+      "avg_per_day": 4.24,
+      "frequency_pct": 55
+    },
+    "식사": {
+      "total": 202,
+      "days": 27,
+      "avg_per_day": 6.97,
+      "frequency_pct": 93
+    },
+    "독서": {
+      "total": 112,
+      "days": 23,
+      "avg_per_day": 3.86,
+      "frequency_pct": 79
+    },
+    "수면": {
+      "total": 321,
+      "days": 24,
+      "avg_per_day": 11.07,
+      "frequency_pct": 83
+    },
+    "개발": {
+      "total": 296,
+      "days": 25,
+      "avg_per_day": 10.21,
+      "frequency_pct": 86
+    }
+  },
+  "sleep": {
+    "avg_bedtime_hour": 5.2,
+    "samples": 8,
+    "avg_wake_hour": 7.3
+  },
+  "delta": {
+    "불안/스트레스": {
+      "recent_7d_avg": 1.71,
+      "older_avg": 3.5,
+      "delta": -1.79,
+      "direction": "▼"
+    },
+    "긍정/활기": {
+      "recent_7d_avg": 0.29,
+      "older_avg": 0.95,
+      "delta": -0.66,
+      "direction": "▼"
+    },
+    "우울/슬픔": {
+      "recent_7d_avg": 1.0,
+      "older_avg": 2.95,
+      "delta": -1.95,
+      "direction": "▼"
+    },
+    "분노/짜증": {
+      "recent_7d_avg": 0.86,
+      "older_avg": 0.82,
+      "delta": 0.04,
+      "direction": "→"
+    },
+    "공부": {
+      "recent_7d_avg": 14.43,
+      "older_avg": 36.32,
+      "delta": -21.89,
+      "direction": "▼"
+    },
+    "운동": {
+      "recent_7d_avg": 0.29,
+      "older_avg": 5.5,
+      "delta": -5.21,
+      "direction": "▼"
+    },
+    "식사": {
+      "recent_7d_avg": 3.29,
+      "older_avg": 8.14,
+      "delta": -4.85,
+      "direction": "▼"
+    },
+    "독서": {
+      "recent_7d_avg": 1.0,
+      "older_avg": 4.77,
+      "delta": -3.77,
+      "direction": "▼"
+    },
+    "수면": {
+      "recent_7d_avg": 7.0,
+      "older_avg": 12.36,
+      "delta": -5.36,
+      "direction": "▼"
+    },
+    "개발": {
+      "recent_7d_avg": 9.29,
+      "older_avg": 10.5,
+      "delta": -1.21,
+      "direction": "▼"
+    },
+    "피로/무기력": {
+      "recent_7d_avg": 1.29,
+      "older_avg": 2.73,
+      "delta": -1.44,
+      "direction": "▼"
+    }
+  },
+  "meta": {
+    "period_days": 30,
+    "total_files": 29,
+    "generated_at": "2026-03-25 20:27"
+  }
+}

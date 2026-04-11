@@ -1,0 +1,504 @@
+{
+  "meta": {
+    "source_path": "D:\\기계도면\\기계도면\\22. 시료수, 약품2, 침출수, 화격자 (조선내화E)\\시료수분석설비 외 준공도서\\01. [제주-기계] 승인서류 (19.11.) AS BUILT\\6. DATA SHEET 및 성능곡선도\\[6-1] 시료수 분석설비\\6-1-1. Sampling Data-Sheet.xls",
+    "company_id": "22",
+    "equipment": "화격자",
+    "doc_type": "DATA_SHEET",
+    "rev": "AS_BUILT",
+    "is_latest": true,
+    "extracted_at": "2026-03-27T19:33:07",
+    "record_count": 49
+  },
+  "records": [
+    {
+      "parameter": "1",
+      "value": "제주특별자치도",
+      "unit": "",
+      "design_value": "CUSTOMER",
+      "equipment": "화격자",
+      "row_idx": 3,
+      "sheet": "SAMPLING DATA",
+      "chunk_hash": "dd54d925a916f3fe"
+    },
+    {
+      "parameter": "2",
+      "value": "56",
+      "unit": "",
+      "design_value": "LOCATION",
+      "equipment": "화격자",
+      "row_idx": 4,
+      "sheet": "SAMPLING DATA",
+      "chunk_hash": "4d9f7252c7412116"
+    },
+    {
+      "parameter": "3",
+      "value": "CHOSUN REFRACTORIES CO.,LTD.",
+      "unit": "",
+      "design_value": "SUPPLIER",
+      "equipment": "화격자",
+      "row_idx": 5,
+      "sheet": "SAMPLING DATA",
+      "chunk_hash": "054ed14b3d1c9864"
+    },
+    {
+      "parameter": "4",
+      "value": "SAMPLING SYSTEM",
+      "unit": "",
+      "design_value": "ITEM NAME",
+      "equipment": "화격자",
+      "row_idx": 6,
+      "sheet": "SAMPLING DATA",
+      "chunk_hash": "17feec3d2906d702"
+    },
+    {
+      "parameter": "5",
+      "value": "-013",
+      "unit": "",
+      "design_value": "DOC NO.",
+      "equipment": "화격자",
+      "row_idx": 7,
+      "sheet": "SAMPLING DATA",
+      "chunk_hash": "dee2d08e5aef714e"
+    },
+    {
+      "parameter": "6",
+      "value": "DATASHEET FOR SAMPLING SYSTEM(시료수분석설비)",
+      "unit": "",
+      "design_value": "SERVICE",
+      "equipment": "화격자",
+      "row_idx": 8,
+      "sheet": "SAMPLING DATA",
+      "chunk_hash": "3dbb26019c04b751"
+    },
+    {
+      "parameter": "7",
+      "value": "TOTAL",
+      "unit": "",
+      "design_value": "NO.  REQ'D",
+      "equipment": "화격자",
+      "row_idx": 9,
+      "sheet": "SAMPLING DATA",
+      "chunk_hash": "1a0f81682aecddeb"
+    },
+    {
+      "parameter": "9",
+      "value": "SPECIFICATION OF SAMPLING EQUIPMENT",
+      "unit": "",
+      "design_value": "",
+      "equipment": "화격자",
+      "row_idx": 11,
+      "sheet": "SAMPLING DATA",
+      "chunk_hash": "4914c5c3cdac5c9a"
+    },
+    {
+      "parameter": "10",
+      "value": "1",
+      "unit": "",
+      "design_value": "SAMPLING Q'TY",
+      "equipment": "화격자",
+      "row_idx": 12,
+      "sheet": "SAMPLING DATA",
+      "chunk_hash": "353c8970320effc0"
+    },
+    {
+      "parameter": "11",
+      "value": "주증기시료수",
+      "unit": "",
+      "design_value": "SAMPLING POINT DESCRIPTION",
+      "equipment": "화격자",
+      "row_idx": 13,
+      "sheet": "SAMPLING DATA",
+      "chunk_hash": "224ad96e1853fcb2"
+    },
+    {
+      "parameter": "12",
+      "value": "2",
+      "unit": "",
+      "design_value": "SAMPLING POINT Q'TY",
+      "equipment": "화격자",
+      "row_idx": 14,
+      "sheet": "SAMPLING DATA",
+      "chunk_hash": "34a06a9d19a8eecc"
+    },
+    {
+      "parameter": "13",
+      "value": "1",
+      "unit": "",
+      "design_value": "ANALYSIS",
+      "equipment": "화격자",
+      "row_idx": 15,
+      "sheet": "SAMPLING DATA",
+      "chunk_hash": "89569fd0620c409e"
+    },
+    {
+      "parameter": "14",
+      "value": "1",
+      "unit": "",
+      "design_value": "ITEM NO.",
+      "equipment": "화격자",
+      "row_idx": 16,
+      "sheet": "SAMPLING DATA",
+      "chunk_hash": "3de273dda8c704a4"
+    },
+    {
+      "parameter": "16",
+      "value": "(L/HR)",
+      "unit": "",
+      "design_value": "SAMPLE FLOW RATE",
+      "equipment": "화격자",
+      "row_idx": 18,
+      "sheet": "SAMPLING DATA",
+      "chunk_hash": "36cfb81a3f3c0fa6"
+    },
+    {
+      "parameter": "17",
+      "value": "SAMPLE WATER INLET CONDITION",
+      "unit": "",
+      "design_value": "",
+      "equipment": "화격자",
+      "row_idx": 19,
+      "sheet": "SAMPLING DATA",
+      "chunk_hash": "1205faa121ec0942"
+    },
+    {
+      "parameter": "18",
+      "value": "(BarG)",
+      "unit": "",
+      "design_value": "DES. PRESS",
+      "equipment": "화격자",
+      "row_idx": 20,
+      "sheet": "SAMPLING DATA",
+      "chunk_hash": "0555483660a4fd2e"
+    },
+    {
+      "parameter": "19",
+      "value": "(BarG)",
+      "unit": "",
+      "design_value": "NOR. PRESS",
+      "equipment": "화격자",
+      "row_idx": 21,
+      "sheet": "SAMPLING DATA",
+      "chunk_hash": "1bc50ef1598daa69"
+    },
+    {
+      "parameter": "20",
+      "value": "()",
+      "unit": "℃",
+      "design_value": "DES. TEMP.",
+      "equipment": "화격자",
+      "row_idx": 22,
+      "sheet": "SAMPLING DATA",
+      "chunk_hash": "21b2f0aad1ec5756"
+    },
+    {
+      "parameter": "21",
+      "value": "()",
+      "unit": "℃",
+      "design_value": "NOR. TEMP.",
+      "equipment": "화격자",
+      "row_idx": 23,
+      "sheet": "SAMPLING DATA",
+      "chunk_hash": "5ca20a29f9746f04"
+    },
+    {
+      "parameter": "22",
+      "value": "SAMPLE WATER OUTLET CONDITION",
+      "unit": "",
+      "design_value": "",
+      "equipment": "화격자",
+      "row_idx": 24,
+      "sheet": "SAMPLING DATA",
+      "chunk_hash": "17ac9ba5caff9abf"
+    },
+    {
+      "parameter": "23",
+      "value": "(BarG)",
+      "unit": "",
+      "design_value": "DES. PRESS",
+      "equipment": "화격자",
+      "row_idx": 25,
+      "sheet": "SAMPLING DATA",
+      "chunk_hash": "03354cacd1188814"
+    },
+    {
+      "parameter": "24",
+      "value": "(BarG)",
+      "unit": "",
+      "design_value": "NOR. PRESS",
+      "equipment": "화격자",
+      "row_idx": 26,
+      "sheet": "SAMPLING DATA",
+      "chunk_hash": "e41a88947603f795"
+    },
+    {
+      "parameter": "25",
+      "value": "()",
+      "unit": "℃",
+      "design_value": "DES. TEMP.",
+      "equipment": "화격자",
+      "row_idx": 27,
+      "sheet": "SAMPLING DATA",
+      "chunk_hash": "fd95db5bd54bdfb7"
+    },
+    {
+      "parameter": "26",
+      "value": "()",
+      "unit": "℃",
+      "design_value": "NOR. TEMP.",
+      "equipment": "화격자",
+      "row_idx": 28,
+      "sheet": "SAMPLING DATA",
+      "chunk_hash": "275d68b83f9d16b7"
+    },
+    {
+      "parameter": "27",
+      "value": "1",
+      "unit": "",
+      "design_value": "",
+      "equipment": "화격자",
+      "row_idx": 29,
+      "sheet": "SAMPLING DATA",
+      "chunk_hash": "522000a60a1ed15b"
+    },
+    {
+      "parameter": "28",
+      "value": "POTABLE WATER",
+      "unit": "",
+      "design_value": "COOLING WATER",
+      "equipment": "화격자",
+      "row_idx": 30,
+      "sheet": "SAMPLING DATA",
+      "chunk_hash": "bc1a71b0006b7551"
+    },
+    {
+      "parameter": "29",
+      "value": "(ton/HR)",
+      "unit": "",
+      "design_value": "FLOW RATE",
+      "equipment": "화격자",
+      "row_idx": 31,
+      "sheet": "SAMPLING DATA",
+      "chunk_hash": "a57b3b1dad6ec0d9"
+    },
+    {
+      "parameter": "30",
+      "value": "(BarG)",
+      "unit": "",
+      "design_value": "IN/OUT PRESS.",
+      "equipment": "화격자",
+      "row_idx": 32,
+      "sheet": "SAMPLING DATA",
+      "chunk_hash": "80e3c5e408ef2926"
+    },
+    {
+      "parameter": "31",
+      "value": "()",
+      "unit": "℃",
+      "design_value": "IN/OUT TEMP.",
+      "equipment": "화격자",
+      "row_idx": 33,
+      "sheet": "SAMPLING DATA",
+      "chunk_hash": "74b1db94286478b1"
+    },
+    {
+      "parameter": "32",
+      "value": "수량",
+      "unit": "",
+      "design_value": "SPARE PARTS",
+      "equipment": "화격자",
+      "row_idx": 34,
+      "sheet": "SAMPLING DATA",
+      "chunk_hash": "3ab8018f88b36947"
+    },
+    {
+      "parameter": "33",
+      "value": "1",
+      "unit": "",
+      "design_value": "PH SENSOR",
+      "equipment": "화격자",
+      "row_idx": 35,
+      "sheet": "SAMPLING DATA",
+      "chunk_hash": "ed55dd8bda5785ad"
+    },
+    {
+      "parameter": "34",
+      "value": "3",
+      "unit": "",
+      "design_value": "CD SENSOR",
+      "equipment": "화격자",
+      "row_idx": 36,
+      "sheet": "SAMPLING DATA",
+      "chunk_hash": "b99616f4e1e7e4b4"
+    },
+    {
+      "parameter": "35",
+      "value": "1",
+      "unit": "",
+      "design_value": "DO SENSOR",
+      "equipment": "화격자",
+      "row_idx": 37,
+      "sheet": "SAMPLING DATA",
+      "chunk_hash": "1481a9254450e8e4"
+    },
+    {
+      "parameter": "36",
+      "value": "1",
+      "unit": "",
+      "design_value": "SILICA 계측시약(SPARE KIT)",
+      "equipment": "화격자",
+      "row_idx": 38,
+      "sheet": "SAMPLING DATA",
+      "chunk_hash": "5f3503a4c04f9b4c"
+    },
+    {
+      "parameter": "38",
+      "value": "SAMPLING COOLER DATA",
+      "unit": "",
+      "design_value": "SAMPLING RACK DATA",
+      "equipment": "화격자",
+      "row_idx": 40,
+      "sheet": "SAMPLING DATA",
+      "chunk_hash": "639fdbedc29afb58"
+    },
+    {
+      "parameter": "39",
+      "value": "SELF-STANDING",
+      "unit": "",
+      "design_value": "TYPE",
+      "equipment": "화격자",
+      "row_idx": 41,
+      "sheet": "SAMPLING DATA",
+      "chunk_hash": "0b33f68fde80605a"
+    },
+    {
+      "parameter": "40",
+      "value": "STRCTURE",
+      "unit": "",
+      "design_value": "MAT'L",
+      "equipment": "화격자",
+      "row_idx": 42,
+      "sheet": "SAMPLING DATA",
+      "chunk_hash": "ea3922d797111cd7"
+    },
+    {
+      "parameter": "41",
+      "value": "304",
+      "unit": "",
+      "design_value": "FRONT",
+      "equipment": "화격자",
+      "row_idx": 43,
+      "sheet": "SAMPLING DATA",
+      "chunk_hash": "123b0e0249d9aea6"
+    },
+    {
+      "parameter": "42",
+      "value": "SAMPLE WATER LINE DATA",
+      "unit": "",
+      "design_value": "COOLING WATER LINE DATA",
+      "equipment": "화격자",
+      "row_idx": 44,
+      "sheet": "SAMPLING DATA",
+      "chunk_hash": "430105a3ad869f7d"
+    },
+    {
+      "parameter": "43",
+      "value": "15",
+      "unit": "",
+      "design_value": "PIPING/VALVE SIZE",
+      "equipment": "화격자",
+      "row_idx": 45,
+      "sheet": "SAMPLING DATA",
+      "chunk_hash": "623f9e7a952a48bb"
+    },
+    {
+      "parameter": "44",
+      "value": "304",
+      "unit": "",
+      "design_value": "PIPING/VALVE MAT'L",
+      "equipment": "화격자",
+      "row_idx": 46,
+      "sheet": "SAMPLING DATA",
+      "chunk_hash": "002f7321fe00560a"
+    },
+    {
+      "parameter": "45",
+      "value": "ACCESSORIES",
+      "unit": "",
+      "design_value": "",
+      "equipment": "화격자",
+      "row_idx": 47,
+      "sheet": "SAMPLING DATA",
+      "chunk_hash": "d3ac6d1aebe5a76d"
+    },
+    {
+      "parameter": "46",
+      "value": "FLOW INDICATING TRANSMITTER",
+      "unit": "",
+      "design_value": "FLOW SIGHT",
+      "equipment": "화격자",
+      "row_idx": 48,
+      "sheet": "SAMPLING DATA",
+      "chunk_hash": "a8896ab24ba23cef"
+    },
+    {
+      "parameter": "47",
+      "value": "HEAD VESSEL",
+      "unit": "",
+      "design_value": "LINE FILTER",
+      "equipment": "화격자",
+      "row_idx": 49,
+      "sheet": "SAMPLING DATA",
+      "chunk_hash": "5531f831415e77b0"
+    },
+    {
+      "parameter": "48",
+      "value": "PRESSURE GAUGE",
+      "unit": "",
+      "design_value": "SINK",
+      "equipment": "화격자",
+      "row_idx": 50,
+      "sheet": "SAMPLING DATA",
+      "chunk_hash": "439968f524266923"
+    },
+    {
+      "parameter": "49",
+      "value": "TEMP. GAUGE",
+      "unit": "",
+      "design_value": "SAMPLE COCK",
+      "equipment": "화격자",
+      "row_idx": 51,
+      "sheet": "SAMPLING DATA",
+      "chunk_hash": "3e5a367823fc8d5a"
+    },
+    {
+      "parameter": "50",
+      "value": "TEMP. SWITCH",
+      "unit": "",
+      "design_value": "FLOW INDICATOR",
+      "equipment": "화격자",
+      "row_idx": 52,
+      "sheet": "SAMPLING DATA",
+      "chunk_hash": "c98b6d8f860152af"
+    },
+    {
+      "parameter": "51",
+      "value": "350",
+      "unit": "",
+      "design_value": "EMPTY WEIGHT",
+      "equipment": "화격자",
+      "row_idx": 53,
+      "sheet": "SAMPLING DATA",
+      "chunk_hash": "8262f748a1c1c9c3"
+    },
+    {
+      "parameter": "PREPARED BY.               H.S.KIM",
+      "value": "APPROVED BY.                 S.W.CHOI",
+      "unit": "",
+      "design_value": "CHECKED BY.               J.H.KIM",
+      "equipment": "화격자",
+      "row_idx": 54,
+      "sheet": "SAMPLING DATA",
+      "chunk_hash": "3554b06a598ea163"
+    }
+  ]
+}

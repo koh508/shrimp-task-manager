@@ -1,0 +1,291 @@
+{
+  "meta": {
+    "source_path": "D:\\기계도면\\기계도면\\32. 증기터빈 (정석)\\제주 VP\\기계\\16. 운전 및 유지관리 지침서\\GS Jeju operation procedure_Kor..pdf",
+    "company_id": "32",
+    "company_name": "증기터빈",
+    "equipment": "기타",
+    "doc_type": "MANUAL",
+    "rev": null,
+    "is_latest": true,
+    "extracted_at": "2026-03-27T20:27:05",
+    "chunk_count": 17,
+    "vision_pages": 0
+  },
+  "chunks": [
+    {
+      "chunk_idx": 0,
+      "text": "GS Jeju project\n( 1X 19.2MW STEAM TURBINE GENERATOR\nCONDENSING SYSTEM )\nINSTRUCTIONS FOR STARTING,\nSYNCHRONIZING, LOADING AND\nSTOPPING STEAM TURBINE-",
+      "header": "",
+      "section_type": "일반",
+      "equipment": [
+        "기타"
+      ],
+      "company_id": "32",
+      "company_name": "증기터빈",
+      "source_file": "GS Jeju operation procedure_Kor.",
+      "source_path": "D:\\기계도면\\기계도면\\32. 증기터빈 (정석)\\제주 VP\\기계\\16. 운전 및 유지관리 지침서\\GS Jeju operation procedure_Kor..pdf",
+      "rev": null,
+      "chunk_hash": "100b0b950719220e",
+      "char_count": 149
+    },
+    {
+      "chunk_idx": 1,
+      "text": ")\nINSTRUCTIONS FOR STARTING,\nSYNCHRONIZING, LOADING AND\nSTOPPING STEAM TURBINE- GENERATOR SET\nPage 1 of 10 터빈 초기기동 절차\nBarring gear 기동 절차\n 시스템에 로그인을 한다.\nAOP and MOP\n drop down list 눌러 Lube oil system 화면을 연다. motor\nEOP motor\n AOP 또는 MOP 를 기동한다\nDrop down\nlist\nVE motor\nLube Oil\ntransmitter\n\n 다른 오일 펌프들은 Auto 에서 운전되지 않는다.\n EOP 모터 또한 Auto 로 위치한다.\n Lube oil pressure transmitter 를 통해 오일 압력이 >2.5 bar 이상인지 확인한다\n VE (Vapour Extraction) 모터를 Auto 로 유지한다. (오일관련 모터가 동작하면\nVE 모터도 함께 작동 되어야 한다.).\n 다음 작동 후 barring gear 모터를 작동 시킨다.\nPage 2 of 10",
+      "header": "GENERATOR SET",
+      "section_type": "시동",
+      "equipment": [
+        "펌프"
+      ],
+      "company_id": "32",
+      "company_name": "증기터빈",
+      "source_file": "GS Jeju operation procedure_Kor.",
+      "source_path": "D:\\기계도면\\기계도면\\32. 증기터빈 (정석)\\제주 VP\\기계\\16. 운전 및 유지관리 지침서\\GS Jeju operation procedure_Kor..pdf",
+      "rev": null,
+      "chunk_hash": "848d41f92bb48fbb",
+      "char_count": 538
+    },
+    {
+      "chunk_idx": 2,
+      "text": "모터가 동작하면\nVE 모터도 함께 작동 되어야 한다.).\n 다음 작동 후 barring gear 모터를 작동 시킨다.\nPage 2 of 10 주의사항:-\n터빈이 가열된 상태에서 정전이 된다면, 10 분간 손으로 barring gear 를 돌린다.\nHand Barring 절차\n barring gear motor 가 Manual mode 인지 확인한다. (안정적인 방법).\n Hand wheel 을 barring gear motor 위에 설치한다.\n 5 분동안 돌리고 5 분 정지. (이 절차를 전력이 다시 공급되기 전까지 반복한다)\nbarring gear 를 터빈 초기 기동 전 최소 24 시간을 기동한다. 이는 순조로운 터빈 기동을\n이룬다.\n초기 기동 절차\n Lube oil system 을 Barring gear 초기 기동 절차와 같이 확인한다.\n Lube oil pressure transmitter 를 통해 오일 압력이 >2.5 bar 이상인지 확인한다\n drop down list 눌러 Governing system 화면을 연다.\nPage 3 of 10 Control oil\npress\nACOP1 and\nACOP2 motor\n ACOP 펌프를 기동하여 Control oil 압력이>28 bar 인지 확인한다.\n 대기용 ACOP 모터가 Auto 에서 운전되지 않는지 확인한다.\n초기 기동:-\n drop down menu 눌러 turbine trip page 화면을 연다.\n\nPage 4 of 10",
+      "header": "GENERATOR SET",
+      "section_type": "시동",
+      "equipment": [
+        "펌프"
+      ],
+      "company_id": "32",
+      "company_name": "증기터빈",
+      "source_file": "GS Jeju operation procedure_Kor.",
+      "source_path": "D:\\기계도면\\기계도면\\32. 증기터빈 (정석)\\제주 VP\\기계\\16. 운전 및 유지관리 지침서\\GS Jeju operation procedure_Kor..pdf",
+      "rev": null,
+      "chunk_hash": "89123a8f76d881f7",
+      "char_count": 740
+    },
+    {
+      "chunk_idx": 3,
+      "text": "지 않는지 확인한다.\n초기 기동:-\n drop down menu 눌러 turbine trip page 화면을 연다.\n\nPage 4 of 10  Trip reset 눌러all the tripping 경보가 정상인지 확인한다. (indication green).\n Turbine solenoid 녹색을 나타내면, then click on the “SOV RESET” 눌러, Solenoid\n상태를 확인한다.\n LP 리셋 조건이 준비된 상태 (green)면, LP 를 리셋한다..\n ESV 리셋 조건이 준비된 상태 (green)면, ESV 를 리셋하고 “ESV open Feedback” 이\n녹색으로 나타나는지 확인한다.\n “Governor Start permissive” 조건이 정상 (green)인지 확인하고 governor 리셋을\n누른다. 그 후 “Run” 버튼을 누른다.\n Governor 가 초기 기동 운전을 시작하며 정격속도에 도달 할 것이다.\n전압 생성 및 터빈 부하 절차:-\n 터빈의 정격 속도 도달 후, AVR 패널의 여자기 (Excitation) 상태가 준비가 되어\n있는지 확인한다.\n\n Relay 패널의 GRP relay 를 리셋한다. ( 누르고 를 2 번 누른다)\nPage 5 of 10 \nRelay 패널의 모든 보조 relay 들을 리셋한다.\n GRP relay 의 알람창을 리셋한다. F10 버튼을 누른다.\n\n AVR panel 에 Auto mode 에 불이 들어오는지 확인하고 “Excitation ON” 버튼을\n누른다.\n 그 후, 터빈은 정격 전압 6.6KV 를 생성한다.\nPage 6 of 10",
+      "header": "GENERATOR SET",
+      "section_type": "시동",
+      "equipment": [
+        "기타"
+      ],
+      "company_id": "32",
+      "company_name": "증기터빈",
+      "source_file": "GS Jeju operation procedure_Kor.",
+      "source_path": "D:\\기계도면\\기계도면\\32. 증기터빈 (정석)\\제주 VP\\기계\\16. 운전 및 유지관리 지침서\\GS Jeju operation procedure_Kor..pdf",
+      "rev": null,
+      "chunk_hash": "447f022136928be3",
+      "char_count": 810
+    },
+    {
+      "chunk_idx": 4,
+      "text": "들어오는지 확인하고 “Excitation ON” 버튼을\n누른다.\n 그 후, 터빈은 정격 전압 6.6KV 를 생성한다.\nPage 6 of 10 \n GCP 패널의 NIS 가 Close 상태에 있는지 확인한다.\nSelector 1 Selector 2 Selector 3 Selector 4\n\n Selector switch1 를 TG breaker 로 선택한다.\n Selector switch2 를 “Live” 모드로 선택한다.\n Selector Switch3 를 “Auto” 모드로 선택한다.\n Selector Switch4 의 Synchro scope “on”으로 선택한다.\n 터빈이 동기화가 된 후 AVR 의 “PF ON” 버튼을 누른다.\nPage 7 of 10",
+      "header": "GENERATOR SET",
+      "section_type": "일반",
+      "equipment": [
+        "기타"
+      ],
+      "company_id": "32",
+      "company_name": "증기터빈",
+      "source_file": "GS Jeju operation procedure_Kor.",
+      "source_path": "D:\\기계도면\\기계도면\\32. 증기터빈 (정석)\\제주 VP\\기계\\16. 운전 및 유지관리 지침서\\GS Jeju operation procedure_Kor..pdf",
+      "rev": null,
+      "chunk_hash": "54733979259162e1",
+      "char_count": 378
+    },
+    {
+      "chunk_idx": 5,
+      "text": "의 Synchro scope “on”으로 선택한다.\n 터빈이 동기화가 된 후 AVR 의 “PF ON” 버튼을 누른다.\nPage 7 of 10  터빈 기저 부하는 2MW 이며 차단기가 close 되면 2MW 부하를 생성한다.\n MW raise/lower 버튼을 사용하여 터빈 부하를 바라는 부하로 조정한다.\n 터빈 규정에 따라 터빈 부하를 올린다.\n터빈 운전 또는 운전 조건 기간\n Lube oil 압력과 Lube oil filter DP 트랜스미터를 계속하여 주시한다. DP 압력이 >\n0.6 Bar 이상이면 필터를 교체하고 문제점을 해결한다.\n CEP discharge 압력을 감시하여 압력이 떨어지면 다른 펌프를 자동으로 기동하게\n설정한다.\n 다른 펌프가 가동하면, 수동으로 펌프를 정지시키고 CEP suction strainer 를\n세척한다. 대기 펌프를 자동으로 설정하고 운전 준비가 되게 만든다.\n Control oil 압력에 감소가 있다면, Control oil filter DP 압력을 확인하고 압력이\n>0.6 bar 이상이면 filter 를 교체한다.\n ESV 기능 상태를 확인하기 위해ESV check valve 를 일주일에 한번 눌러주어\n점검한다.\n 발전기 권선온도를 주시한다. 알람이 발생하면 냉각수 온도, 압력 및 유량을\n점검한다.\n터빈 정지 절차\n 부하를 점차적으로 2MW 까지 감소시킨다.\n 발전기 차단기를 open 시킨다\nPage 8 of 10",
+      "header": "GENERATOR SET",
+      "section_type": "시동",
+      "equipment": [
+        "펌프",
+        "필터",
+        "밸브"
+      ],
+      "company_id": "32",
+      "company_name": "증기터빈",
+      "source_file": "GS Jeju operation procedure_Kor.",
+      "source_path": "D:\\기계도면\\기계도면\\32. 증기터빈 (정석)\\제주 VP\\기계\\16. 운전 및 유지관리 지침서\\GS Jeju operation procedure_Kor..pdf",
+      "rev": null,
+      "chunk_hash": "ef5a16d26414167e",
+      "char_count": 723
+    },
+    {
+      "chunk_idx": 6,
+      "text": "및 유량을\n점검한다.\n터빈 정지 절차\n 부하를 점차적으로 2MW 까지 감소시킨다.\n 발전기 차단기를 open 시킨다\nPage 8 of 10  터빈 trip 버튼으로 터빈을 trip 시킨다.\n Gland sealing system control 밸브를 닫는다.\n Wheel case and nozzle chest 드래인 밸브를 개방한다.\n Vacuum breaker valve 를 개방한다. (CEP 펌프가 멈춰 있는지 확인한다)\n 터빈은 barring gear RPM 에 도달한다.\n ACOP-1 과 2 를 정지시키고 수동으로 전환한다.\n CEP 1 과 CEP2 를 정지시키고 수동으로 전환한다.\n 터빈 정지 후 최소 24 시간 동안 barring gear 로 터빈이 운전되어야 한다.\n일반 사항:",
+      "header": "GENERATOR SET",
+      "section_type": "정지",
+      "equipment": [
+        "펌프",
+        "밸브"
+      ],
+      "company_id": "32",
+      "company_name": "증기터빈",
+      "source_file": "GS Jeju operation procedure_Kor.",
+      "source_path": "D:\\기계도면\\기계도면\\32. 증기터빈 (정석)\\제주 VP\\기계\\16. 운전 및 유지관리 지침서\\GS Jeju operation procedure_Kor..pdf",
+      "rev": null,
+      "chunk_hash": "8b34c9c705d5e94f",
+      "char_count": 400
+    },
+    {
+      "chunk_idx": 7,
+      "text": "EP2 를 정지시키고 수동으로 전환한다.\n 터빈 정지 후 최소 24 시간 동안 barring gear 로 터빈이 운전되어야 한다.\n일반 사항: 1. Triveni Operation & Maintenance 매뉴얼에 따른 터빈 기동/정지 절차서를 따라야\n한다.",
+      "header": "1. Triveni Operation & Maintenance 매뉴얼에 따른 터빈 기동/정지 절차서를 따라야",
+      "section_type": "시동",
+      "equipment": [
+        "기타"
+      ],
+      "company_id": "32",
+      "company_name": "증기터빈",
+      "source_file": "GS Jeju operation procedure_Kor.",
+      "source_path": "D:\\기계도면\\기계도면\\32. 증기터빈 (정석)\\제주 VP\\기계\\16. 운전 및 유지관리 지침서\\GS Jeju operation procedure_Kor..pdf",
+      "rev": null,
+      "chunk_hash": "afee8ea8bbd52181",
+      "char_count": 145
+    },
+    {
+      "chunk_idx": 8,
+      "text": "3. 하기의 지침 외에 Startup curve, loading curve, system P&ID 등을 함께 따라야\n한다.",
+      "header": "3. 하기의 지침 외에 Startup curve, loading curve, system P&ID 등을 함께 따라야",
+      "section_type": "시동",
+      "equipment": [
+        "기타"
+      ],
+      "company_id": "32",
+      "company_name": "증기터빈",
+      "source_file": "GS Jeju operation procedure_Kor.",
+      "source_path": "D:\\기계도면\\기계도면\\32. 증기터빈 (정석)\\제주 VP\\기계\\16. 운전 및 유지관리 지침서\\GS Jeju operation procedure_Kor..pdf",
+      "rev": null,
+      "chunk_hash": "6fdcdc8c8c3045e5",
+      "char_count": 68
+    },
+    {
+      "chunk_idx": 9,
+      "text": "4. 운전자 한명이 제어실에서 관측하는 동안 다른 한명이 터빈실 또는 조작반에서\n의사소통을 하며 관측하는 것을 권장한다.\nPage 9 of 10\n\nIMPORTANT NOTES:",
+      "header": "4. 운전자 한명이 제어실에서 관측하는 동안 다른 한명이 터빈실 또는 조작반에서",
+      "section_type": "운전",
+      "equipment": [
+        "기타"
+      ],
+      "company_id": "32",
+      "company_name": "증기터빈",
+      "source_file": "GS Jeju operation procedure_Kor.",
+      "source_path": "D:\\기계도면\\기계도면\\32. 증기터빈 (정석)\\제주 VP\\기계\\16. 운전 및 유지관리 지침서\\GS Jeju operation procedure_Kor..pdf",
+      "rev": null,
+      "chunk_hash": "9571208b7456b566",
+      "char_count": 98
+    },
+    {
+      "chunk_idx": 10,
+      "text": "측하는 동안 다른 한명이 터빈실 또는 조작반에서\n의사소통을 하며 관측하는 것을 권장한다.\nPage 9 of 10\n\nIMPORTANT NOTES: 1. Barring gear는 터빈 trip 후 최소 8시간동안 가동 되어야 한다. 또한 barring gear는\n초기 기동전 8시간 동안 가동되어야 한다.",
+      "header": "1. Barring gear는 터빈 trip 후 최소 8시간동안 가동 되어야 한다. 또한 barring gear는",
+      "section_type": "시동",
+      "equipment": [
+        "기타"
+      ],
+      "company_id": "32",
+      "company_name": "증기터빈",
+      "source_file": "GS Jeju operation procedure_Kor.",
+      "source_path": "D:\\기계도면\\기계도면\\32. 증기터빈 (정석)\\제주 VP\\기계\\16. 운전 및 유지관리 지침서\\GS Jeju operation procedure_Kor..pdf",
+      "rev": null,
+      "chunk_hash": "409a0de7c916f09b",
+      "char_count": 168
+    },
+    {
+      "chunk_idx": 11,
+      "text": "ing gear는 터빈 trip 후 최소 8시간동안 가동 되어야 한다. 또한 barring gear는\n초기 기동전 8시간 동안 가동되어야 한다. 2. 터빈 trip 후 barring gear모터가 전력공급 문제 또는 내부 장치 문제로 가동되지 않는\n경우 barring gear 모터 전력 아이솔레이터를 off조건으로 한 뒤 barring gear hand\nwheel을 수동으로 돌린다. 문제가 해결 되거나 또는 로터가 온도가 식을 때까지\n돌려준다. 수동으로 돌리는 과정은 AOP 또는 EOP 운전 조건 중이어야 한다.",
+      "header": "2. 터빈 trip 후 barring gear모터가 전력공급 문제 또는 내부 장치 문제로 가동되지 않는",
+      "section_type": "시동",
+      "equipment": [
+        "기타"
+      ],
+      "company_id": "32",
+      "company_name": "증기터빈",
+      "source_file": "GS Jeju operation procedure_Kor.",
+      "source_path": "D:\\기계도면\\기계도면\\32. 증기터빈 (정석)\\제주 VP\\기계\\16. 운전 및 유지관리 지침서\\GS Jeju operation procedure_Kor..pdf",
+      "rev": null,
+      "chunk_hash": "ec7729a93a712e2a",
+      "char_count": 289
+    },
+    {
+      "chunk_idx": 12,
+      "text": "로 돌린다. 문제가 해결 되거나 또는 로터가 온도가 식을 때까지\n돌려준다. 수동으로 돌리는 과정은 AOP 또는 EOP 운전 조건 중이어야 한다. 3. 어떠한 이유에서, 차단기가 trip되면 터빈은 정격속도에서 운전 중이며 이 경우\n터빈은 즉시 부하를 걸어야 한다.",
+      "header": "3. 어떠한 이유에서, 차단기가 trip되면 터빈은 정격속도에서 운전 중이며 이 경우",
+      "section_type": "비상",
+      "equipment": [
+        "기타"
+      ],
+      "company_id": "32",
+      "company_name": "증기터빈",
+      "source_file": "GS Jeju operation procedure_Kor.",
+      "source_path": "D:\\기계도면\\기계도면\\32. 증기터빈 (정석)\\제주 VP\\기계\\16. 운전 및 유지관리 지침서\\GS Jeju operation procedure_Kor..pdf",
+      "rev": null,
+      "chunk_hash": "5528d18f198b29a9",
+      "char_count": 147
+    },
+    {
+      "chunk_idx": 13,
+      "text": "4. 순조로운 운전을 위해 갑작스러운 부하 운전을 피하고 부드러운 부하운전을 한다.\n갑작스러운 부하 운전이 필요한 경우, 고객사는 Triveni에 이를 알리고 필요한 제안을\n받는다.",
+      "header": "4. 순조로운 운전을 위해 갑작스러운 부하 운전을 피하고 부드러운 부하운전을 한다.",
+      "section_type": "운전",
+      "equipment": [
+        "기타"
+      ],
+      "company_id": "32",
+      "company_name": "증기터빈",
+      "source_file": "GS Jeju operation procedure_Kor.",
+      "source_path": "D:\\기계도면\\기계도면\\32. 증기터빈 (정석)\\제주 VP\\기계\\16. 운전 및 유지관리 지침서\\GS Jeju operation procedure_Kor..pdf",
+      "rev": null,
+      "chunk_hash": "d0b56665886aa30e",
+      "char_count": 101
+    },
+    {
+      "chunk_idx": 14,
+      "text": "부하 운전을 피하고 부드러운 부하운전을 한다.\n갑작스러운 부하 운전이 필요한 경우, 고객사는 Triveni에 이를 알리고 필요한 제안을\n받는다. 5. SEV 상태를 일주일에 한 번씩 점검하고 log sheet에 기록한다. TTL 엔지니어는\n고객사에 이 절차를 보여줄 것이다.",
+      "header": "5. SEV 상태를 일주일에 한 번씩 점검하고 log sheet에 기록한다. TTL 엔지니어는",
+      "section_type": "점검",
+      "equipment": [
+        "기타"
+      ],
+      "company_id": "32",
+      "company_name": "증기터빈",
+      "source_file": "GS Jeju operation procedure_Kor.",
+      "source_path": "D:\\기계도면\\기계도면\\32. 증기터빈 (정석)\\제주 VP\\기계\\16. 운전 및 유지관리 지침서\\GS Jeju operation procedure_Kor..pdf",
+      "rev": null,
+      "chunk_hash": "022411452194cc0a",
+      "char_count": 153
+    },
+    {
+      "chunk_idx": 15,
+      "text": "6. Wheel case 압력을 설계 조건으로 유지하고 관측한다. Wheel case 압력 정보는\n꾸준하게 관측되어야 하며, 압력의 증가는 터빈내에 스케일이 쌓임을 의미한다.",
+      "header": "6. Wheel case 압력을 설계 조건으로 유지하고 관측한다. Wheel case 압력 정보는",
+      "section_type": "일반",
+      "equipment": [
+        "기타"
+      ],
+      "company_id": "32",
+      "company_name": "증기터빈",
+      "source_file": "GS Jeju operation procedure_Kor.",
+      "source_path": "D:\\기계도면\\기계도면\\32. 증기터빈 (정석)\\제주 VP\\기계\\16. 운전 및 유지관리 지침서\\GS Jeju operation procedure_Kor..pdf",
+      "rev": null,
+      "chunk_hash": "7813b82718fb9ec2",
+      "char_count": 97
+    },
+    {
+      "chunk_idx": 16,
+      "text": "설계 조건으로 유지하고 관측한다. Wheel case 압력 정보는\n꾸준하게 관측되어야 하며, 압력의 증가는 터빈내에 스케일이 쌓임을 의미한다. 8. 터빈 시스템의 어느 비정상적인 상황은 Triveni에 알려 의견을 받도록 한다.\nPage 10 of 10",
+      "header": "8. 터빈 시스템의 어느 비정상적인 상황은 Triveni에 알려 의견을 받도록 한다.",
+      "section_type": "일반",
+      "equipment": [
+        "기타"
+      ],
+      "company_id": "32",
+      "company_name": "증기터빈",
+      "source_file": "GS Jeju operation procedure_Kor.",
+      "source_path": "D:\\기계도면\\기계도면\\32. 증기터빈 (정석)\\제주 VP\\기계\\16. 운전 및 유지관리 지침서\\GS Jeju operation procedure_Kor..pdf",
+      "rev": null,
+      "chunk_hash": "4a71a4c2d0330fa4",
+      "char_count": 141
+    }
+  ]
+}

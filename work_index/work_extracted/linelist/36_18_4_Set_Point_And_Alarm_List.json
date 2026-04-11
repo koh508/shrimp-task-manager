@@ -1,0 +1,289 @@
+{
+  "meta": {
+    "source_path": "D:\\기계도면\\기계도면\\36. 폐열보일러, SB (조선내화E)\\보일러 준공도서\\보일러(기계)\\18.PIPING INFORMATION rev.0(●)\\원본\\18.4 Set Point And Alarm List.xlsx",
+    "company_id": "36",
+    "equipment": "폐열보일러",
+    "doc_type": "LINELIST",
+    "rev": "0",
+    "is_latest": true,
+    "extracted_at": "2026-03-27T19:33:12",
+    "record_count": 25
+  },
+  "records": [
+    {
+      "tag": "LT-1301",
+      "service": "",
+      "parameter": "값",
+      "value": "0",
+      "unit": "mm",
+      "equipment": "폐열보일러",
+      "row_idx": 4,
+      "sheet": "SETPOINT",
+      "chunk_hash": "955c18a0bd5416b7"
+    },
+    {
+      "tag": "LT-1302",
+      "service": "",
+      "parameter": "값",
+      "value": "0",
+      "unit": "mm",
+      "equipment": "폐열보일러",
+      "row_idx": 5,
+      "sheet": "SETPOINT",
+      "chunk_hash": "dbdb7fc966395cb3"
+    },
+    {
+      "tag": "LT-1303",
+      "service": "",
+      "parameter": "값",
+      "value": "0",
+      "unit": "mm",
+      "equipment": "폐열보일러",
+      "row_idx": 6,
+      "sheet": "SETPOINT",
+      "chunk_hash": "7af2f7ea00cdf73a"
+    },
+    {
+      "tag": "PT-1301",
+      "service": "",
+      "parameter": "값",
+      "value": "44",
+      "unit": "",
+      "equipment": "폐열보일러",
+      "row_idx": 7,
+      "sheet": "SETPOINT",
+      "chunk_hash": "bee386885707e52a"
+    },
+    {
+      "tag": "LT-2301",
+      "service": "",
+      "parameter": "값",
+      "value": "0",
+      "unit": "mm",
+      "equipment": "폐열보일러",
+      "row_idx": 8,
+      "sheet": "SETPOINT",
+      "chunk_hash": "cb3908df30baa487"
+    },
+    {
+      "tag": "LT-2302",
+      "service": "",
+      "parameter": "값",
+      "value": "0",
+      "unit": "mm",
+      "equipment": "폐열보일러",
+      "row_idx": 9,
+      "sheet": "SETPOINT",
+      "chunk_hash": "8850273f6c5c2f6e"
+    },
+    {
+      "tag": "LT-2303",
+      "service": "",
+      "parameter": "값",
+      "value": "0",
+      "unit": "mm",
+      "equipment": "폐열보일러",
+      "row_idx": 10,
+      "sheet": "SETPOINT",
+      "chunk_hash": "71bfa8293a6f8a11"
+    },
+    {
+      "tag": "PT-2301",
+      "service": "",
+      "parameter": "값",
+      "value": "44",
+      "unit": "",
+      "equipment": "폐열보일러",
+      "row_idx": 11,
+      "sheet": "SETPOINT",
+      "chunk_hash": "bf2c00f9224cdb49"
+    },
+    {
+      "tag": "TE-1303",
+      "service": "",
+      "parameter": "값",
+      "value": "290",
+      "unit": "℃",
+      "equipment": "폐열보일러",
+      "row_idx": 12,
+      "sheet": "SETPOINT",
+      "chunk_hash": "0d9b9a342de9066b"
+    },
+    {
+      "tag": "TE-1304",
+      "service": "",
+      "parameter": "값",
+      "value": "400",
+      "unit": "℃",
+      "equipment": "폐열보일러",
+      "row_idx": 13,
+      "sheet": "SETPOINT",
+      "chunk_hash": "bf1ebbfc49561e09"
+    },
+    {
+      "tag": "PT-1302",
+      "service": "",
+      "parameter": "값",
+      "value": "40",
+      "unit": "",
+      "equipment": "폐열보일러",
+      "row_idx": 14,
+      "sheet": "SETPOINT",
+      "chunk_hash": "c9052ac88b3e2f8b"
+    },
+    {
+      "tag": "TE-2303",
+      "service": "",
+      "parameter": "값",
+      "value": "290",
+      "unit": "℃",
+      "equipment": "폐열보일러",
+      "row_idx": 15,
+      "sheet": "SETPOINT",
+      "chunk_hash": "fc6051900a1df634"
+    },
+    {
+      "tag": "TE-2304",
+      "service": "",
+      "parameter": "값",
+      "value": "400",
+      "unit": "℃",
+      "equipment": "폐열보일러",
+      "row_idx": 16,
+      "sheet": "SETPOINT",
+      "chunk_hash": "910883f2b7811843"
+    },
+    {
+      "tag": "PT-2302",
+      "service": "",
+      "parameter": "값",
+      "value": "40",
+      "unit": "",
+      "equipment": "폐열보일러",
+      "row_idx": 17,
+      "sheet": "SETPOINT",
+      "chunk_hash": "43299f9a9ffcc2d2"
+    },
+    {
+      "tag": "PIT-0301A",
+      "service": "",
+      "parameter": "값",
+      "value": "40",
+      "unit": "",
+      "equipment": "폐열보일러",
+      "row_idx": 18,
+      "sheet": "SETPOINT",
+      "chunk_hash": "052afc75ad5ab43f"
+    },
+    {
+      "tag": "PIT-0301B",
+      "service": "",
+      "parameter": "값",
+      "value": "40",
+      "unit": "",
+      "equipment": "폐열보일러",
+      "row_idx": 19,
+      "sheet": "SETPOINT",
+      "chunk_hash": "60719b5ee075e5c7"
+    },
+    {
+      "tag": "TAG NO.",
+      "service": "",
+      "parameter": "값",
+      "value": "NOR.OPER. VALUE",
+      "unit": "",
+      "equipment": "폐열보일러",
+      "row_idx": 23,
+      "sheet": "SETPOINT",
+      "chunk_hash": "7c2b058574e80b12"
+    },
+    {
+      "tag": "TE-0301",
+      "service": "",
+      "parameter": "값",
+      "value": "400",
+      "unit": "℃",
+      "equipment": "폐열보일러",
+      "row_idx": 25,
+      "sheet": "SETPOINT",
+      "chunk_hash": "168c6e6925ebd2b4"
+    },
+    {
+      "tag": "PT-0306",
+      "service": "",
+      "parameter": "값",
+      "value": "30",
+      "unit": "",
+      "equipment": "폐열보일러",
+      "row_idx": 26,
+      "sheet": "SETPOINT",
+      "chunk_hash": "96317ee71c01d1ac"
+    },
+    {
+      "tag": "PIT-0302",
+      "service": "",
+      "parameter": "값",
+      "value": "8",
+      "unit": "",
+      "equipment": "폐열보일러",
+      "row_idx": 27,
+      "sheet": "SETPOINT",
+      "chunk_hash": "e9676647934b3fb6"
+    },
+    {
+      "tag": "LT-0303",
+      "service": "",
+      "parameter": "값",
+      "value": "0",
+      "unit": "",
+      "equipment": "폐열보일러",
+      "row_idx": 28,
+      "sheet": "SETPOINT",
+      "chunk_hash": "2cb704f6c51692b9"
+    },
+    {
+      "tag": "LIT-0301",
+      "service": "",
+      "parameter": "값",
+      "value": "0",
+      "unit": "",
+      "equipment": "폐열보일러",
+      "row_idx": 29,
+      "sheet": "SETPOINT",
+      "chunk_hash": "0f644d2e3a317978"
+    },
+    {
+      "tag": "PT-0303",
+      "service": "",
+      "parameter": "값",
+      "value": "2.7",
+      "unit": "",
+      "equipment": "폐열보일러",
+      "row_idx": 30,
+      "sheet": "SETPOINT",
+      "chunk_hash": "0bfbdba6013b8472"
+    },
+    {
+      "tag": "PS-1302",
+      "service": "",
+      "parameter": "값",
+      "value": "7",
+      "unit": "",
+      "equipment": "폐열보일러",
+      "row_idx": 31,
+      "sheet": "SETPOINT",
+      "chunk_hash": "d69deed3b3b92349"
+    },
+    {
+      "tag": "PS-2302",
+      "service": "",
+      "parameter": "값",
+      "value": "7",
+      "unit": "",
+      "equipment": "폐열보일러",
+      "row_idx": 32,
+      "sheet": "SETPOINT",
+      "chunk_hash": "8676e392353b82a3"
+    }
+  ]
+}

@@ -1,0 +1,988 @@
+{
+  "meta": {
+    "source_path": "D:\\기계도면\\기계도면\\22. 시료수, 약품2, 침출수, 화격자 (조선내화E)\\시료수분석설비 외 준공도서\\01. [제주-기계] 승인서류 (19.11.) AS BUILT\\16. 운전 및 유지관리 지침서\\16-4. 폐기물침출수설비\\도면 및 Manual\\5-4 AZUD AA모델 메뉴얼 한글판.pdf",
+    "company_id": "22",
+    "company_name": "시료수, 약품2, 침출수, 화격자",
+    "equipment": "화격자",
+    "doc_type": "MANUAL",
+    "rev": "AS_BUILT",
+    "is_latest": true,
+    "extracted_at": "2026-03-27T20:22:40",
+    "chunk_count": 60,
+    "vision_pages": 0
+  },
+  "chunks": [
+    {
+      "chunk_idx": 0,
+      "text": "92000002-03\nUSER’S MANUAL\nWater Filtration Solutions\nAZUD HELIX AUTOOMATICC SSERIE 220000 AA\nSistema Azud, S.A. / CJK 얼라이언스㈜ Tel:+82) 31-479-6960~3 Fax: +82) 31-479-6964 Water Filtration Solutions\n본 매뉴얼에 사용되는표시:\n본본 매매뉴뉴얼얼에에서서 위위험험을을 경경고고하하고고 알알 수수 있있게게 해해주주는는 아아래래의의 표표식식을을 접접할할 것것입입니니다다..\n이 표식은 아래의 의미를 포함합니다.\n지침 및 주의사항을 따르지 않으면 인적, 재산 및 주변에 손상을 야기할 수\n있습니다.\n본매뉴얼은사전경고없이변경될수있습니다.",
+      "header": "",
+      "section_type": "일반",
+      "equipment": [
+        "화격자"
+      ],
+      "company_id": "22",
+      "company_name": "시료수, 약품2, 침출수, 화격자",
+      "source_file": "5-4 AZUD AA모델 메뉴얼 한글판",
+      "source_path": "D:\\기계도면\\기계도면\\22. 시료수, 약품2, 침출수, 화격자 (조선내화E)\\시료수분석설비 외 준공도서\\01. [제주-기계] 승인서류 (19.11.) AS BUILT\\16. 운전 및 유지관리 지침서\\16-4. 폐기물침출수설비\\도면 및 Manual\\5-4 AZUD AA모델 메뉴얼 한글판.pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "d291c60ffec23403",
+      "char_count": 381
+    },
+    {
+      "chunk_idx": 1,
+      "text": "의미를 포함합니다.\n지침 및 주의사항을 따르지 않으면 인적, 재산 및 주변에 손상을 야기할 수\n있습니다.\n본매뉴얼은사전경고없이변경될수있습니다. 목 차\nWater Filtration Solutions\n1.소개 4\n2.AZUD시스템의특징 4\n22.11장장비비의의전전용용.\n2.2제품인증.\n2.3운전개요.\n2.4구성품들과부품들.\n2.4.1AZUDHELIXAUTOMATIC필터.\n2.4.2역세밸브.\n2.4.3.Manifolds\n3.기술자료 13\n3.1AZUDHELIXAUTOMATIC일반특성.\n3.2치수.\n3.3AzudHelixAutomatic필터.\n44.안안전전정정보보 1155\n5.설치지침. 16\n5.1.Pallet에서장비분리.\n5.2장비support조정\n5.3지면에장비를고정.\n5.4장비의manifold의연결.\n5.5장비의control연결.\n6.OPERATION지침. 19\n6.1AZUDHELIXAUTOMATIC장비운전.\n6.2AZUD필터의개,폐.\n7.MAINTENANCE지침. 20\n7.1Maintenance챠챠트.\n7.2.장비의일반점검\n7.3.필터의점검\n7.3.1disc세척\n7.3.2gasket점검.\n77..33..33필필터터bbaassee구구성성품품에에서서가가변변구구성성품품점점검검..\n7.3.4piston구성품점검\n7.4구성품점검.\n7.4.1¼”Intake필터점검.\n7.4.2Groovedcouplingsmaintenance.\n8.발생가능문제점들에대한원인과해결책. 25\n9.WARRANTY. 28",
+      "header": "",
+      "section_type": "점검",
+      "equipment": [
+        "필터",
+        "밸브"
+      ],
+      "company_id": "22",
+      "company_name": "시료수, 약품2, 침출수, 화격자",
+      "source_file": "5-4 AZUD AA모델 메뉴얼 한글판",
+      "source_path": "D:\\기계도면\\기계도면\\22. 시료수, 약품2, 침출수, 화격자 (조선내화E)\\시료수분석설비 외 준공도서\\01. [제주-기계] 승인서류 (19.11.) AS BUILT\\16. 운전 및 유지관리 지침서\\16-4. 폐기물침출수설비\\도면 및 Manual\\5-4 AZUD AA모델 메뉴얼 한글판.pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "077babbddba48ea7",
+      "char_count": 729
+    },
+    {
+      "chunk_idx": 2,
+      "text": "ke필터점검.\n7.4.2Groovedcouplingsmaintenance.\n8.발생가능문제점들에대한원인과해결책. 25\n9.WARRANTY. 28 Water Filtration Solutions\n11.. 소소개개..\nAZUD HELIX AUTOMATIC 시스템의신뢰에감사를드립니다.\n매뉴얼을주의깊게읽어주십시오, 시스템에대한질문의해답을해결하실수있습니다.\n궁금사항이나추가정보의요청이있으시면AZUD社로문의바랍니다.\nAAZZUUDD社社에에서서 제제작작되되는는 모모든든 장장비비는는 엄엄격격한한 품품질질관관리리하하에에서서 제제작작이이 되되며며, 또또한한 표표준준 IISSOO 99000011//22000000에에\n준해서제작됩니다.\nAZUD社는환경을생각하고,환경관리시스템의표준ISO14001을준수합니다.\n이매뉴얼은올바른설치, 운전또는유지보수를위하여반드시준수하여야하는지침과\n경고를보여줍니다.\n22.. AAZZUUDD 시시스스템템의의 특특징징..\n2.1. 장비의전용\nAZUD社 필터 장비는 장비에 부착된 라벨과 technical data에 지시된 운전조건에 따라서\n물만 필터링 하도록 고안된 제품입니다. 유해물질(예를 들면, article 2, chapter2의\n“Directive 67/548/CEE, of 27th of June of 1967)) 또는 음용 목적의 필터링 제품은\n아닙니다.\nCLASSIFICATION ACCORDING TO THE DIRECTIVE OF PRESSURE\nEQUIPMENTS.\nPPEEDD 9977//2233//CCEEEE:: AArrtt.. 33..33 ––FFlluuiidd GGrroouupp 22",
+      "header": "",
+      "section_type": "점검",
+      "equipment": [
+        "필터"
+      ],
+      "company_id": "22",
+      "company_name": "시료수, 약품2, 침출수, 화격자",
+      "source_file": "5-4 AZUD AA모델 메뉴얼 한글판",
+      "source_path": "D:\\기계도면\\기계도면\\22. 시료수, 약품2, 침출수, 화격자 (조선내화E)\\시료수분석설비 외 준공도서\\01. [제주-기계] 승인서류 (19.11.) AS BUILT\\16. 운전 및 유지관리 지침서\\16-4. 폐기물침출수설비\\도면 및 Manual\\5-4 AZUD AA모델 메뉴얼 한글판.pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "11014463d700e747",
+      "char_count": 795
+    },
+    {
+      "chunk_idx": 3,
+      "text": "UIPMENTS.\nPPEEDD 9977//2233//CCEEEE:: AArrtt.. 33..33 ––FFlluuiidd GGrroouupp 22 Water Filtration Solutions\n2.2. 제품 인증.\nIIn AAZZUUDD社社의의 각각 설설비비는는 maiin maniiffolldd에에 부부착착되되어어 있있으으며며, seriiall no가가 적적혀혀있있는는 라라벨벨에에 의의해해서서 제제품품이이\n인증됩니다.이serialno로제조사는설비를인증확인합니다.\n라벨의변경또는제거시에는warranty가되지않으며,장비의인증을지연시킵니다.\n라라벨벨은은 제제조조사사, 주주소소, 모모델델명명, 제제조조년년월월일일, seriiall NNo, 최최대대압압력력, 최최대대온온도도를를 보보여여줍줍니니다다. DDiirecttiive\nofPressureEquipments97/23/CEE을준수합니다.",
+      "header": "",
+      "section_type": "일반",
+      "equipment": [
+        "화격자"
+      ],
+      "company_id": "22",
+      "company_name": "시료수, 약품2, 침출수, 화격자",
+      "source_file": "5-4 AZUD AA모델 메뉴얼 한글판",
+      "source_path": "D:\\기계도면\\기계도면\\22. 시료수, 약품2, 침출수, 화격자 (조선내화E)\\시료수분석설비 외 준공도서\\01. [제주-기계] 승인서류 (19.11.) AS BUILT\\16. 운전 및 유지관리 지침서\\16-4. 폐기물침출수설비\\도면 및 Manual\\5-4 AZUD AA모델 메뉴얼 한글판.pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "2523c99196f2eb20",
+      "char_count": 440
+    },
+    {
+      "chunk_idx": 4,
+      "text": "대압압력력, 최최대대온온도도를를 보보여여줍줍니니다다. DDiirecttiive\nofPressureEquipments97/23/CEE을준수합니다. MODEL\nMax P Date",
+      "header": "MODEL",
+      "section_type": "일반",
+      "equipment": [
+        "화격자"
+      ],
+      "company_id": "22",
+      "company_name": "시료수, 약품2, 침출수, 화격자",
+      "source_file": "5-4 AZUD AA모델 메뉴얼 한글판",
+      "source_path": "D:\\기계도면\\기계도면\\22. 시료수, 약품2, 침출수, 화격자 (조선내화E)\\시료수분석설비 외 준공도서\\01. [제주-기계] 승인서류 (19.11.) AS BUILT\\16. 운전 및 유지관리 지침서\\16-4. 폐기물침출수설비\\도면 및 Manual\\5-4 AZUD AA모델 메뉴얼 한글판.pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "70ffabe8184bae3c",
+      "char_count": 97
+    },
+    {
+      "chunk_idx": 5,
+      "text": "SERIAL NUMBER\n상기의 라벨로 모델명,\n제조년월일, serial No, 최대\n압력을알수있습니다.\n2.3. 운전개요.\nAZUD HELIX AUTOMATIC은 홈이 파진 disc들로 구성 된 필터장비이며, 필터의\nmicron grade보다 더 큰 이물질 들을 걸러 줍니다. 이 필터는 원심효과를 더하는\n장점을가지고있습니다.\nAZUD社의 홈이 파진 disc는 필터링 효과를 최대화 하기 위해, 표면 여과와 심층\n여과의합해진개념입니다. 이물질들은disc의홈에포집됩니다.",
+      "header": "SERIAL NUMBER",
+      "section_type": "운전",
+      "equipment": [
+        "필터"
+      ],
+      "company_id": "22",
+      "company_name": "시료수, 약품2, 침출수, 화격자",
+      "source_file": "5-4 AZUD AA모델 메뉴얼 한글판",
+      "source_path": "D:\\기계도면\\기계도면\\22. 시료수, 약품2, 침출수, 화격자 (조선내화E)\\시료수분석설비 외 준공도서\\01. [제주-기계] 승인서류 (19.11.) AS BUILT\\16. 운전 및 유지관리 지침서\\16-4. 폐기물침출수설비\\도면 및 Manual\\5-4 AZUD AA모델 메뉴얼 한글판.pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "48bdc4b913474483",
+      "char_count": 263
+    },
+    {
+      "chunk_idx": 6,
+      "text": "AZUD社의 홈이 파진 disc는 필터링 효과를 최대화 하기 위해, 표면 여과와 심층\n여과의합해진개념입니다. 이물질들은disc의홈에포집됩니다. DISCS\nWater Filtration Solutions",
+      "header": "DISCS",
+      "section_type": "일반",
+      "equipment": [
+        "필터"
+      ],
+      "company_id": "22",
+      "company_name": "시료수, 약품2, 침출수, 화격자",
+      "source_file": "5-4 AZUD AA모델 메뉴얼 한글판",
+      "source_path": "D:\\기계도면\\기계도면\\22. 시료수, 약품2, 침출수, 화격자 (조선내화E)\\시료수분석설비 외 준공도서\\01. [제주-기계] 승인서류 (19.11.) AS BUILT\\16. 운전 및 유지관리 지침서\\16-4. 폐기물침출수설비\\도면 및 Manual\\5-4 AZUD AA모델 메뉴얼 한글판.pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "3ca4421d8c980d14",
+      "char_count": 112
+    },
+    {
+      "chunk_idx": 7,
+      "text": "TECNOLOGY\n이 system은, 각 필터에서 독립적인 두 개의 공정이 동시에 진행된다. 이 두 공정을 “필터링 공정”과\n“역세공정”이라합니다.\n필터링공정\n보조VALVE\n역세 VALVE\n필터링 공정(정상공정)에서, 원수는 역세 밸브를\n통하여 필터링 공정(정상공정)이 행해지는 모든 필터\n내부로inletmanifold를통하여유입됩니다.\n일단 필터 내부로 유입된 원수는, disc의 홈으로만\n통통과과할할수수있있습습니니다다.\nOutlet manifold는 필터링 된 원수를 모아서 외부로\n배출합니다.\n역세공정\n역세공정의시작은Controlunit에서다음의4가지조건중의설정에의해역세가시작되며,\n4가지조건은차압설정,시간설정,keyboard에서수동설정,외부신호입니다.\n역세는순차적으로진행됩니다.\nControl Unit의 프로그램 작동으로 NC solenoid 밸브에 전기가 접속이 되면, 역세 공정이 시작됩니다.\nSolenoid 밸브는 전기적인 신호로 역세 밸브와 보조 밸브를 조정하여 유입을 조절합니다. 3-way 밸브로\n유입되고,필터로의원수inlet은잠기고,배수manifold와필터내부가연결이되면서,역세는시작됩니다.",
+      "header": "TECNOLOGY",
+      "section_type": "일반",
+      "equipment": [
+        "필터",
+        "밸브"
+      ],
+      "company_id": "22",
+      "company_name": "시료수, 약품2, 침출수, 화격자",
+      "source_file": "5-4 AZUD AA모델 메뉴얼 한글판",
+      "source_path": "D:\\기계도면\\기계도면\\22. 시료수, 약품2, 침출수, 화격자 (조선내화E)\\시료수분석설비 외 준공도서\\01. [제주-기계] 승인서류 (19.11.) AS BUILT\\16. 운전 및 유지관리 지침서\\16-4. 폐기물침출수설비\\도면 및 Manual\\5-4 AZUD AA모델 메뉴얼 한글판.pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "c2a57b40d140a363",
+      "char_count": 565
+    },
+    {
+      "chunk_idx": 8,
+      "text": "조정하여 유입을 조절합니다. 3-way 밸브로\n유입되고,필터로의원수inlet은잠기고,배수manifold와필터내부가연결이되면서,역세는시작됩니다. Water Filtration Solutions\n3-ways\nSolenoid밸브는 공기를 필터링된 물쪽으로 유입하여 머무르게\nvalve\n됩니다.\n공기와 섞여진 물은 –공기가 압력을 유발하고 – 압력을 만들며,\n이 압력은 disc stack위에 있는 spring 힘을 들어 올릴 정도의\nFiltration Backflushing\n힘을 발생시킵니다. 또한 piston을 들어 올려 압력을 해제할\nstage\nstage\n정도의힘을발생시킵니다.\n모든 수압의 힘은 disc\nstack위에 눌려있는 spring의\n힘을해제하는데사용됩니다.\nDisc들의 풀림은 원수로부터 들어오는 압력의 힘으로 자유로운\n유동(움직임)을 가능하게 합니다. 동시에 원수의 압력은 disc\nstack의구조물을지지하는힘으로사용됩니다.\nBar에 있는 구멍을 통하여 disc들로 골고루 물이 분사가 되어\ndisc들의 회전, 진동되면서 disc 표면에 있던 이물질들이 역세\nvalve를통하여배출manifold로배출됩니다.",
+      "header": "TECNOLOGY",
+      "section_type": "일반",
+      "equipment": [
+        "필터",
+        "밸브"
+      ],
+      "company_id": "22",
+      "company_name": "시료수, 약품2, 침출수, 화격자",
+      "source_file": "5-4 AZUD AA모델 메뉴얼 한글판",
+      "source_path": "D:\\기계도면\\기계도면\\22. 시료수, 약품2, 침출수, 화격자 (조선내화E)\\시료수분석설비 외 준공도서\\01. [제주-기계] 승인서류 (19.11.) AS BUILT\\16. 운전 및 유지관리 지침서\\16-4. 폐기물침출수설비\\도면 및 Manual\\5-4 AZUD AA모델 메뉴얼 한글판.pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "4dc2b23adaa1ce31",
+      "char_count": 570
+    },
+    {
+      "chunk_idx": 9,
+      "text": "로 골고루 물이 분사가 되어\ndisc들의 회전, 진동되면서 disc 표면에 있던 이물질들이 역세\nvalve를통하여배출manifold로배출됩니다. SPRING\n역세 공정의 단계는 끝이 납니다. 단계가 완전히 끝이 나면,\n순차적으로이런공정들은반복됩니다.\n역세의 끝남과 동시에 drain outlet은 잠기게 되고, inlet manifold는\n열리게 됩니다. 이런 방법으로 최초의 상황으로 돌아가고, 다시\n필터링공정으로됩니다.",
+      "header": "SPRING",
+      "section_type": "일반",
+      "equipment": [
+        "필터"
+      ],
+      "company_id": "22",
+      "company_name": "시료수, 약품2, 침출수, 화격자",
+      "source_file": "5-4 AZUD AA모델 메뉴얼 한글판",
+      "source_path": "D:\\기계도면\\기계도면\\22. 시료수, 약품2, 침출수, 화격자 (조선내화E)\\시료수분석설비 외 준공도서\\01. [제주-기계] 승인서류 (19.11.) AS BUILT\\16. 운전 및 유지관리 지침서\\16-4. 폐기물침출수설비\\도면 및 Manual\\5-4 AZUD AA모델 메뉴얼 한글판.pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "6b9258f1843c2fe5",
+      "char_count": 236
+    },
+    {
+      "chunk_idx": 10,
+      "text": "n outlet은 잠기게 되고, inlet manifold는\n열리게 됩니다. 이런 방법으로 최초의 상황으로 돌아가고, 다시\n필터링공정으로됩니다. THE FILTERING\nELEMENT\nWater Filtration Solutions\n2.4.AZUD HELIXAUTOMATIC SERIE 200AA구성품및 부품. 6 3 전개도 E1\nE2\nE3\nE4\nEE55 S1 S2 S3 S4 S5\nP1\nP2 Water Filtration Solutions\nAZUD HELIX AUTOMATIC 설비의구성품\nNÚMERO CÓDIGO DESCRIPCIÓN MATERIAL\n1 AZUD HELIX AUTOOMATICC 2”SS FILTER --\n2 AUXILIARY DEPOSIT HDPE\n3 - INLET MANIFOLD HDPE\n4 - OUTLET MANIFOLD HDPE\n5 - DRAINAGE MANIFOLD HDPE\n6 - PRESSURE MANIFOLD HDPE\n7 - SUPPORTS METAL\n8 - 3 WAYS HYDRAULIC VALVE 2” -\n9 8660121D AUXILIARY VALVE -\n10 RETENTION VALVE -\n11 8660121D GROOVED COUPLING 2” -\n12 8660131D GROOVED COUPLING 3” -\n13 17C30VPO GROOVED COUPLING PV 3” -\n14 COMMAND COIL 8x6 mm –12 mm PE *: OPTION\nRPA: POLYAMIDE REINFORCED WITH GLASS FIBER\nPP: POLYPROPYLENE\nNBR: NITRIL RUBBER\nRPP: REINFORCE POLYPROPYLENE WITH GLASS FIBER\nPE: POLYETHYLENE\nA, INOX.: STAINLESS STEEL AAZZUUDD HHEELLIIXX AAUUTTOOMMAATTIICC FFIILLTTEERR의의구구성성품품및및SSPPAARREE\nNº CODE DESCRIPCTION MATERIAL un",
+      "header": "THE FILTERING\nELEMENT",
+      "section_type": "일반",
+      "equipment": [
+        "필터",
+        "밸브"
+      ],
+      "company_id": "22",
+      "company_name": "시료수, 약품2, 침출수, 화격자",
+      "source_file": "5-4 AZUD AA모델 메뉴얼 한글판",
+      "source_path": "D:\\기계도면\\기계도면\\22. 시료수, 약품2, 침출수, 화격자 (조선내화E)\\시료수분석설비 외 준공도서\\01. [제주-기계] 승인서류 (19.11.) AS BUILT\\16. 운전 및 유지관리 지침서\\16-4. 폐기물침출수설비\\도면 및 Manual\\5-4 AZUD AA모델 메뉴얼 한글판.pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "2f7229c494b01521",
+      "char_count": 1000
+    },
+    {
+      "chunk_idx": 11,
+      "text": "TTOOMMAATTIICC FFIILLTTEERR의의구구성성품품및및SSPPAARREE\nNº CODE DESCRIPCTION MATERIAL un 16 17RXP010 PLASTIC LID 3\" RPA 1\n18C3R0X0 FILTERING ELEMENT AZUD HELIX AUTOMATIC 200M - 1 18C3R0X6 FILTERING ELEMENT AZUD HELIX AUTOMATIC 130M - 1\n17 18C3R0X8 FILTERING ELEMENT AZUD HELIX AUTOMATIC 100M - 1\n18C3R0X2 FILTERING ELEMENT AZUD HELIX AUTOMATIC 50M - 1\n18C3R0X1 FILTERING ELEMENT AZUD HELIX AUTOMATIC 20M - 1 36\n18* 70RX0001 CLAMP AZUD HELIX AUTOMATIC A. INOX. 1\n18 17RXP012 CLAMP SAFETY AZUD HELIX AUTOMATIC NBR 1 35\n19 18R60003 SEALING GASKET BASE RPA 1\n20 17RXP013 BASE 2NV\n35 BASE CAP\n36 O-RING BASE CAP 2”\nPlease indicate the serial number of the equipment when requesting spares. Water Filtration Solutions\nAZUD HELIX AUTOMATIC 필터 부속품\nAZUD HELIX AUTOMATIC FILTER의구성품및SPARE\nNUMBER CODE DESCRIPTION MATERIAL un\n21 18R60016 FRAME PISTON AZUD HELIX AUTOMATIC - 1",
+      "header": "THE FILTERING\nELEMENT",
+      "section_type": "일반",
+      "equipment": [
+        "필터"
+      ],
+      "company_id": "22",
+      "company_name": "시료수, 약품2, 침출수, 화격자",
+      "source_file": "5-4 AZUD AA모델 메뉴얼 한글판",
+      "source_path": "D:\\기계도면\\기계도면\\22. 시료수, 약품2, 침출수, 화격자 (조선내화E)\\시료수분석설비 외 준공도서\\01. [제주-기계] 승인서류 (19.11.) AS BUILT\\16. 운전 및 유지관리 지침서\\16-4. 폐기물침출수설비\\도면 및 Manual\\5-4 AZUD AA모델 메뉴얼 한글판.pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "ddfa12c1cd0505ba",
+      "char_count": 855
+    },
+    {
+      "chunk_idx": 12,
+      "text": "R CODE DESCRIPTION MATERIAL un\n21 18R60016 FRAME PISTON AZUD HELIX AUTOMATIC - 1 18R60012 DISCS KIT AZUD HELIX AUTOMATIC 200 MICRON PP 1\n18R60011 DISCS KIT AZUD HELIX AUTOMATIC 130 MICRON PP 1\n22 18R60010 DISCS KIT AZUD HELIX AUTOMATIC 100 MICRON PP 1\n18R60014 DISCS KIT AZUD HELIX AUTOMATIC 50 MICRON PP 1\n2222 1188RR6600001133 DDIISSCCSS KKIITT AAZZUUDD HHEELLIIXX AAUUTTOOMMAATTIICC 2200 MMIICCRROONN PPPP 11\n23 ---------- PISTON GASKET 92,6 x 100 x 4 mm HDPE 1\n24 ---------- FILTERING ELEMENT FRAME WITHOUT CHECK VALVE RPA 1\n25 ---------- G -CHECK VALVE RPA+NBR 1\n23 26 ---------- SPRING 65x18.5x1.6/12 ESP A. INOX. 1\n27 ---------- PIEZA F PORTARESORTE RPA 1\n28 ---------- SCREW O M14x1 A. INOX. 4\n2299 ---------- OO-RRIINNGG 110033XX44 NNBBRR 22",
+      "header": "THE FILTERING\nELEMENT",
+      "section_type": "일반",
+      "equipment": [
+        "필터",
+        "밸브"
+      ],
+      "company_id": "22",
+      "company_name": "시료수, 약품2, 침출수, 화격자",
+      "source_file": "5-4 AZUD AA모델 메뉴얼 한글판",
+      "source_path": "D:\\기계도면\\기계도면\\22. 시료수, 약품2, 침출수, 화격자 (조선내화E)\\시료수분석설비 외 준공도서\\01. [제주-기계] 승인서류 (19.11.) AS BUILT\\16. 운전 및 유지관리 지침서\\16-4. 폐기물침출수설비\\도면 및 Manual\\5-4 AZUD AA모델 메뉴얼 한글판.pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "254d1b09481366b8",
+      "char_count": 750
+    },
+    {
+      "chunk_idx": 13,
+      "text": "------ SCREW O M14x1 A. INOX. 4\n2299 ---------- OO-RRIINNGG 110033XX44 NNBBRR 22 30 ---------- PIECE A HEAD FOR DISCS FASTENING RPA+A. INOX. 1\n31 ---------- WASHER 14,5x25x15 A. INOX. 2\n24 32 ---------- PISTON SPRING PISTÓN 64x24x4.5/9 ESP. A. INOX. 1\n33 ---------- O-RING 13X2 NBR 2\n34 ---------- PIECE B CAP HEAD BARS FASTENING RPA+A. INOX. 1\n35 ---------- ELASTIC RINGDIN-471 D12 A. INOX. 1 *: OPTION\n26 RPA: POLYAMIDE REINFORCED WITH GLASS FIBER\nPP: POLYPROPYLENE NBR: NITRIL RUBBER\n28 RPP: REINFORCE POLYPROPYLENE WITH GLASS FIBER\nPE: POLYETHYLENE\nA, INOX.: STAINLESS STEEL KIT NUMBER CODE DESCRIPTION\nA From 23 to 29 18R60015 FILTERIN ELEMENT COMPLETE GRID + GASKETS B 25 , 26 18R60022 CHECK VALVE WITH ACCESSORIES",
+      "header": "THE FILTERING\nELEMENT",
+      "section_type": "청소",
+      "equipment": [
+        "필터",
+        "밸브"
+      ],
+      "company_id": "22",
+      "company_name": "시료수, 약품2, 침출수, 화격자",
+      "source_file": "5-4 AZUD AA모델 메뉴얼 한글판",
+      "source_path": "D:\\기계도면\\기계도면\\22. 시료수, 약품2, 침출수, 화격자 (조선내화E)\\시료수분석설비 외 준공도서\\01. [제주-기계] 승인서류 (19.11.) AS BUILT\\16. 운전 및 유지관리 지침서\\16-4. 폐기물침출수설비\\도면 및 Manual\\5-4 AZUD AA모델 메뉴얼 한글판.pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "e5a6b942690ec99f",
+      "char_count": 720
+    },
+    {
+      "chunk_idx": 14,
+      "text": "ELEMENT COMPLETE GRID + GASKETS B 25 , 26 18R60022 CHECK VALVE WITH ACCESSORIES 21 31 C 23, 2x33 y 35 18R60018 SET OF PISTON GASKETS\n33 D 26 y 32 18R60019 COMPLETE SET OF SPRINGS\nE 23, 25, 26, 2x29, 32, 2x33, 35 18R60020 KIT MAINTENANCE AUTOMATIC FILTER\n34 F 23, 2x29, 35 18R60021 FILTERING ELEMENT O-RINGS FRAME KIT\nGG 1100xx2299 1188RR6600002266 FFRRAAMMEE OO-RRIINNGG\n35 H 10x23 18R60037 PISTON GASKET Water Filtration Solutions\n2.4.2 Backflushing Grooved valve 2”x2”x2”.\n역세밸브는장비제조사인AZUD社에서결정하며, 설비마다다를수있습니다.\nE1 E1\nS1\n33 wwaayyss AAuuxxiilliiaarryy\nHydraulic Valve 3 ways valve Cod: 18CE1008\n2.4.3 Main inlet and outlet manifolds.\n여과설비의manifoldmodel명은아래와같이명명됩니다.\n연결구형태\nF FLANGE ; V GROOVED\n203/4 FX\nFILTER Ø\nManifold 재질\nX HDPE ; E EPOXY STEEL\nFILTER의수 MANIFOLD Ø",
+      "header": "THE FILTERING\nELEMENT",
+      "section_type": "점검",
+      "equipment": [
+        "필터",
+        "밸브"
+      ],
+      "company_id": "22",
+      "company_name": "시료수, 약품2, 침출수, 화격자",
+      "source_file": "5-4 AZUD AA모델 메뉴얼 한글판",
+      "source_path": "D:\\기계도면\\기계도면\\22. 시료수, 약품2, 침출수, 화격자 (조선내화E)\\시료수분석설비 외 준공도서\\01. [제주-기계] 승인서류 (19.11.) AS BUILT\\16. 운전 및 유지관리 지침서\\16-4. 폐기물침출수설비\\도면 및 Manual\\5-4 AZUD AA모델 메뉴얼 한글판.pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "115e903fa0887311",
+      "char_count": 769
+    },
+    {
+      "chunk_idx": 15,
+      "text": "OOVED\n203/4 FX\nFILTER Ø\nManifold 재질\nX HDPE ; E EPOXY STEEL\nFILTER의수 MANIFOLD Ø FLANGE CONECTION\n2.4.4 Drainage manifold.\nddrraaiinnaaggee mmaanniiffoolldd 참참조조번번호호는는 다다음음과과 같같이이 “1177ZZ11DDXX3300””의의 88자자리리로로 표표시시되되는는데데, 여여섯섯번번 째째 자자리리수수\n“X”에는 필터의 개수를 쓰면 된다. 예를 들면, 장비 모델명이 “203/4 FX”이면, 이 장비는 3개의 필터를\n사용하므로,“X”대신에“3”으로표시된“17Z1D330“,이번호가manifold의참조번호가된다.\n\nWater Filtration Solutions\n2.4.2 Backflushing Grooved valve 2”x2”x2”.\n역세밸브는장비제조사인AZUD社에서결정하며, 설비마다다를수있습니다.\nE1 E1\nS1\n3 ways Auxiliary\nHydraulic Valve 3 ways valve Cod: 18CE1008\nScheme\nSn ----pressure\nINTAKE CONTROL UNIT T A ----pressure\nEn ----signal En ----signal\nValve Auxiliary vavle\nSn ----pressure\nDrainage Pressure",
+      "header": "FLANGE CONECTION",
+      "section_type": "일반",
+      "equipment": [
+        "필터",
+        "밸브"
+      ],
+      "company_id": "22",
+      "company_name": "시료수, 약품2, 침출수, 화격자",
+      "source_file": "5-4 AZUD AA모델 메뉴얼 한글판",
+      "source_path": "D:\\기계도면\\기계도면\\22. 시료수, 약품2, 침출수, 화격자 (조선내화E)\\시료수분석설비 외 준공도서\\01. [제주-기계] 승인서류 (19.11.) AS BUILT\\16. 운전 및 유지관리 지침서\\16-4. 폐기물침출수설비\\도면 및 Manual\\5-4 AZUD AA모델 메뉴얼 한글판.pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "d4f4fb67dbe29d5d",
+      "char_count": 677
+    },
+    {
+      "chunk_idx": 16,
+      "text": "----signal En ----signal\nValve Auxiliary vavle\nSn ----pressure\nDrainage Pressure FILTER\nmanifold manifold\nInlet Manifold Outlet manifold",
+      "header": "FILTER",
+      "section_type": "일반",
+      "equipment": [
+        "필터",
+        "밸브"
+      ],
+      "company_id": "22",
+      "company_name": "시료수, 약품2, 침출수, 화격자",
+      "source_file": "5-4 AZUD AA모델 메뉴얼 한글판",
+      "source_path": "D:\\기계도면\\기계도면\\22. 시료수, 약품2, 침출수, 화격자 (조선내화E)\\시료수분석설비 외 준공도서\\01. [제주-기계] 승인서류 (19.11.) AS BUILT\\16. 운전 및 유지관리 지침서\\16-4. 폐기물침출수설비\\도면 및 Manual\\5-4 AZUD AA모델 메뉴얼 한글판.pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "a6e4822c7c243c8c",
+      "char_count": 136
+    },
+    {
+      "chunk_idx": 17,
+      "text": "essure\nDrainage Pressure FILTER\nmanifold manifold\nInlet Manifold Outlet manifold Water Filtration Solutions\n33.. 기기술술 자자료료\n3.1AZUDHELIXAUTOMATIC200AA특징및요구조건.\nFILTRATION Maximum flow per filter\nAZUD HELIX AUTOMATIC 필터의표면적: 1492 cm2\nQUALITY OF micron 200 130 100 50 20\nWATER mesh 75 120 150 필터당backflushing유량 10 l / 2.64 gallons\nGOOD m3/h 23 17 9 최소압력0.8 bar / 11.60 psi\ngpm 101 77 38\nAVERAGE m3/h 20 14 7 PPaarraa eell ffuunncciioonnaammiieennttoo ccoorrrreeccttoo ddeell eeqquuiippoo ddeebbeemmooss\ngpm 88 61 31\ntenercomomínimo6bara1200l/minenelprocesode\nPOOR m3/h 18 10 5\ncontralavado.\ngpm 79 46 23\nLa presión máxima de toma de aire no debe\nVERY POOR m3/h 12 7 3\nsobrepasarlos7bar.\ngpm 53 31 15\npH>4\n최대압력10 bar / 145 psi\n최고온도60ºC / 140 F\n뉴매틱명령의 회로에따라공기주입량을 조절해주십시요.\n공기흡입관의 주입구 압력을 조절하기 위하여, 여과 설비에 물의 주입구 압력을 고려 해야 합니다.\n공기흡입관의최대압력은물의주입구최대압력에 1bar를더한값과 같아야합니다.\n공공기기흡흡인인관관 P = 물물주주입입구구 P + 1bbaar\n뉴매틱 명령의 공기 처리에서 윤활의 사용은 필요하지 않습니다. 오히려 일부 구성품에 손상을 줄 수\n있습니다.\n설비의 올바른 설치, 운전 등을 하기 위해서는 지침 및 주의사항들을 숙지 하십시요. 따르지 않으면, 설비\n작동시고장이나손상의원인이될수있습니다.\n3.2.AZUDHELIXAUTOMATIC필터의일반적인특징\nE\n지침 및 주의사항을 따르지 않으면 인적, 재산\n및및주주변변에에손손상상을을야야기기할할수수있있습습니니다다.",
+      "header": "FILTER",
+      "section_type": "운전",
+      "equipment": [
+        "필터"
+      ],
+      "company_id": "22",
+      "company_name": "시료수, 약품2, 침출수, 화격자",
+      "source_file": "5-4 AZUD AA모델 메뉴얼 한글판",
+      "source_path": "D:\\기계도면\\기계도면\\22. 시료수, 약품2, 침출수, 화격자 (조선내화E)\\시료수분석설비 외 준공도서\\01. [제주-기계] 승인서류 (19.11.) AS BUILT\\16. 운전 및 유지관리 지침서\\16-4. 폐기물침출수설비\\도면 및 Manual\\5-4 AZUD AA모델 메뉴얼 한글판.pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "0e6a302a6c6add87",
+      "char_count": 1128
+    },
+    {
+      "chunk_idx": 18,
+      "text": "IXAUTOMATIC필터의일반적인특징\nE\n지침 및 주의사항을 따르지 않으면 인적, 재산\n및및주주변변에에손손상상을을야야기기할할수수있있습습니니다다. H\nM\nA C\nCLASSIFICATION ACCORDING TO THE DIRECTIVE OF\nX PRESSURIZED EQUIPMENTS\nB PPEEDD 9977//2233//CCEE:: AArrtt.. 33..33 ––FFlluuiidd GGrroouupp 22\nW\nConnections Dimensions (mm)",
+      "header": "H\nM\nA C",
+      "section_type": "일반",
+      "equipment": [
+        "필터"
+      ],
+      "company_id": "22",
+      "company_name": "시료수, 약품2, 침출수, 화격자",
+      "source_file": "5-4 AZUD AA모델 메뉴얼 한글판",
+      "source_path": "D:\\기계도면\\기계도면\\22. 시료수, 약품2, 침출수, 화격자 (조선내화E)\\시료수분석설비 외 준공도서\\01. [제주-기계] 승인서류 (19.11.) AS BUILT\\16. 운전 및 유지관리 지침서\\16-4. 폐기물침출수설비\\도면 및 Manual\\5-4 AZUD AA모델 메뉴얼 한글판.pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "d56fcc687306b5bd",
+      "char_count": 259
+    },
+    {
+      "chunk_idx": 19,
+      "text": "/CCEE:: AArrtt.. 33..33 ––FFlluuiidd GGrroouupp 22\nW\nConnections Dimensions (mm) A B C E M H W X D\nD\n2” VIC 2” VIC 2” BSP ¾” BSP ¼” BSP 721 309 133 245\n\nWater Filtration Solutions\n3.3 AZUDHELIXAUTOMATIC설비치수",
+      "header": "A B C E M H W X D\nD",
+      "section_type": "일반",
+      "equipment": [
+        "화격자"
+      ],
+      "company_id": "22",
+      "company_name": "시료수, 약품2, 침출수, 화격자",
+      "source_file": "5-4 AZUD AA모델 메뉴얼 한글판",
+      "source_path": "D:\\기계도면\\기계도면\\22. 시료수, 약품2, 침출수, 화격자 (조선내화E)\\시료수분석설비 외 준공도서\\01. [제주-기계] 승인서류 (19.11.) AS BUILT\\16. 운전 및 유지관리 지침서\\16-4. 폐기물침출수설비\\도면 및 Manual\\5-4 AZUD AA모델 메뉴얼 한글판.pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "db0b4b28c668775d",
+      "char_count": 206
+    },
+    {
+      "chunk_idx": 20,
+      "text": "SP ¼” BSP 721 309 133 245\n\nWater Filtration Solutions\n3.3 AZUDHELIXAUTOMATIC설비치수 H\nTT\nR\nLL\nE\nColector drenaje\nDrainage manifold\nColector entrada\nInlet manifold",
+      "header": "H\nTT\nR\nLL\nE",
+      "section_type": "일반",
+      "equipment": [
+        "화격자"
+      ],
+      "company_id": "22",
+      "company_name": "시료수, 약품2, 침출수, 화격자",
+      "source_file": "5-4 AZUD AA모델 메뉴얼 한글판",
+      "source_path": "D:\\기계도면\\기계도면\\22. 시료수, 약품2, 침출수, 화격자 (조선내화E)\\시료수분석설비 외 준공도서\\01. [제주-기계] 승인서류 (19.11.) AS BUILT\\16. 운전 및 유지관리 지침서\\16-4. 폐기물침출수설비\\도면 및 Manual\\5-4 AZUD AA모델 메뉴얼 한글판.pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "1bc494c5c0c0356a",
+      "char_count": 159
+    },
+    {
+      "chunk_idx": 21,
+      "text": "F W\nColector salida\nOutlet manifold\nCCoolleeccttoorr ttoommaa pprreessii??\nInlet pressure manifold",
+      "header": "F W",
+      "section_type": "일반",
+      "equipment": [
+        "화격자"
+      ],
+      "company_id": "22",
+      "company_name": "시료수, 약품2, 침출수, 화격자",
+      "source_file": "5-4 AZUD AA모델 메뉴얼 한글판",
+      "source_path": "D:\\기계도면\\기계도면\\22. 시료수, 약품2, 침출수, 화격자 (조선내화E)\\시료수분석설비 외 준공도서\\01. [제주-기계] 승인서류 (19.11.) AS BUILT\\16. 운전 및 유지관리 지침서\\16-4. 폐기물침출수설비\\도면 및 Manual\\5-4 AZUD AA모델 메뉴얼 한글판.pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "2fe88b387bced7d7",
+      "char_count": 98
+    },
+    {
+      "chunk_idx": 22,
+      "text": "a\nOutlet manifold\nCCoolleeccttoorr ttoommaa pprreessii??\nInlet pressure manifold P\nD\nDimensions",
+      "header": "P\nD",
+      "section_type": "일반",
+      "equipment": [
+        "화격자"
+      ],
+      "company_id": "22",
+      "company_name": "시료수, 약품2, 침출수, 화격자",
+      "source_file": "5-4 AZUD AA모델 메뉴얼 한글판",
+      "source_path": "D:\\기계도면\\기계도면\\22. 시료수, 약품2, 침출수, 화격자 (조선내화E)\\시료수분석설비 외 준공도서\\01. [제주-기계] 승인서류 (19.11.) AS BUILT\\16. 운전 및 유지관리 지침서\\16-4. 폐기물침출수설비\\도면 및 Manual\\5-4 AZUD AA모델 메뉴얼 한글판.pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "46b40600185048de",
+      "char_count": 95
+    },
+    {
+      "chunk_idx": 23,
+      "text": "AA L H T R D\nmm “ mm “ mm “ mm “ mm “\n202/3FX AA 992 39.05 1275 50.20 451 17.75 257 10.11 960 37.79\n202/3VX AA 992 39.05 1275 50.20 451 17.75 257 10.11 820 32.28\n203/4FX AA 1267 49.88 1295 50.98 511 20.11 267 10.51 1135 44.68\n203/4VX AA 1267 49.88 1295 50.98 511 20.11 267 10.51 1035 40.74\n204/6FX AA 1562 61.50 1345 52.95 561 22.08 292 11.50 1140 56.70\n204/6VX AA 1562 61.50 1345 52.95 561 22.08 292 11.50 1390 54.72\n205/6FX AA 1837 72.32 1345 52.95 561 22.08 292 11.50 1795 70.70\n205/6VX AA 1837 72.32 1345 52.95 561 22.08 292 11.50 1695 66.73\n206/6FX AA 2112 83.15 1345 52.95 561 22.08 292 11.50 2070 81.50\n206/6FX AA 2112 83.15 1345 52.95 561 22.08 292 11.50 1970 77.56\n207/6FX AA 2387 93.97 1345 52.95 561 22.08 292 11.50 2345 92.32\n207/6VX AA 2387 93.97 1345 52.95 561 22.08 292 11.50 245 88.38\n208/8FX AA 2662 104.80 1385 54.52 601 23.66 292 11.50 2620 103.15\n208/8VX AA 2662 104.8 1385 54.52 601 23.66 292 11.50 2520 99.21\nW= 1075 mm –42.32” E = 204 mm –8.03” F = 542 mm –21.33” P = 227 mm –8.93”",
+      "header": "AA L H T R D",
+      "section_type": "일반",
+      "equipment": [
+        "화격자"
+      ],
+      "company_id": "22",
+      "company_name": "시료수, 약품2, 침출수, 화격자",
+      "source_file": "5-4 AZUD AA모델 메뉴얼 한글판",
+      "source_path": "D:\\기계도면\\기계도면\\22. 시료수, 약품2, 침출수, 화격자 (조선내화E)\\시료수분석설비 외 준공도서\\01. [제주-기계] 승인서류 (19.11.) AS BUILT\\16. 운전 및 유지관리 지침서\\16-4. 폐기물침출수설비\\도면 및 Manual\\5-4 AZUD AA모델 메뉴얼 한글판.pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "711f690bbeb6c5c7",
+      "char_count": 1004
+    },
+    {
+      "chunk_idx": 24,
+      "text": "99.21\nW= 1075 mm –42.32” E = 204 mm –8.03” F = 542 mm –21.33” P = 227 mm –8.93” Water Filtration Solutions\n44.. 안안전전 정정보보\nAZUD 필터시스템은제시된technical data에준하여운전하도록되어있으며, 물을여과할\n수있도록설계되었습니다.\n위험한유체에대해서는사용을하여서는안됩니다.\nAZUD 필터시스템은표준형필터가아니며, 고객과제조사의요구조건에의해설계\n디자인되었으며, 사용자에의한어떤추가적인부분이나변경이있었을경우보증이되지\n않으며또한손상을야기합니다.\n사용자가시스템에익숙해지기위하여manual을잘보관을해야합니다. 아래에는\n시스템의운전상에필요한일반적인지침이있습니다. 이사항들은유사항목이아니며,\n사용자는가능한한많은안전조치를하여야합니다.\nmanual에표시된지침을준수하십시오.\n장비가가압이되었을경우clamp를열지마십시오. 만약열었을경우인사사고또는\n제품또는주위장비에치명적인손상을줄수있습니다.\n적적당당한한개개인인보보호호장장구구((장장갑갑, 보보호호안안경경등등))를를사사용용하하십십시시오오.\n필터소재와여과할액체의화학적호환성을고려하십시오.\n운전시작전에모든연결구들이잘연결되었는지, cover가확실하게잠겨져있는지\n반드시확인하십시오.\n압력계를통하여유체가필터로유입되기전에대기압의상태로풀려있는지반드시\n확인하십시오.\nccllaammpp에에안안전전장장치치채채우우는는것것을을반반드드시시확확인인하하십십시시오오. 돌돌발발적적으으로로열열리리는는것것을을방방지지해해\n줍니다.\nTechnical data에지시되어있는최대, 운전간격(압력, 온도, pH, 유량)을초과하지\n마십시오.\n동파위험지역에서는필터의손상을막기위하여필터내부를비워주십시오.\n경고와안전에대한정보는단지guide line이며, 사고를방지와안전을위하여사용자는\n가능한많은안전조치를위하십시오.\n부적절한필터의사용은인적, 재산과주위에손상을야기합니다. 부적절한사용과모방의\n보증을할수없습니다. Water Filtration Solutions",
+      "header": "AA L H T R D",
+      "section_type": "운전",
+      "equipment": [
+        "필터"
+      ],
+      "company_id": "22",
+      "company_name": "시료수, 약품2, 침출수, 화격자",
+      "source_file": "5-4 AZUD AA모델 메뉴얼 한글판",
+      "source_path": "D:\\기계도면\\기계도면\\22. 시료수, 약품2, 침출수, 화격자 (조선내화E)\\시료수분석설비 외 준공도서\\01. [제주-기계] 승인서류 (19.11.) AS BUILT\\16. 운전 및 유지관리 지침서\\16-4. 폐기물침출수설비\\도면 및 Manual\\5-4 AZUD AA모델 메뉴얼 한글판.pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "cf2d4b395148e7c4",
+      "char_count": 980
+    },
+    {
+      "chunk_idx": 25,
+      "text": ".\n부적절한필터의사용은인적, 재산과주위에손상을야기합니다. 부적절한사용과모방의\n보증을할수없습니다. Water Filtration Solutions INLETS\n4.1단일신호압력계",
+      "header": "INLETS",
+      "section_type": "일반",
+      "equipment": [
+        "필터"
+      ],
+      "company_id": "22",
+      "company_name": "시료수, 약품2, 침출수, 화격자",
+      "source_file": "5-4 AZUD AA모델 메뉴얼 한글판",
+      "source_path": "D:\\기계도면\\기계도면\\22. 시료수, 약품2, 침출수, 화격자 (조선내화E)\\시료수분석설비 외 준공도서\\01. [제주-기계] 승인서류 (19.11.) AS BUILT\\16. 운전 및 유지관리 지침서\\16-4. 폐기물침출수설비\\도면 및 Manual\\5-4 AZUD AA모델 메뉴얼 한글판.pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "5a99d366e018e265",
+      "char_count": 98
+    },
+    {
+      "chunk_idx": 26,
+      "text": "COMUN OUTLETS\nINLETS\n1 2 3 4\n단단일일 신신호호 압압력력계계는는 설설비비를를 통통하하는는 물물이이 없없을을 경경우우 역역세세 펌펌프프의의 활활동동을을\n막습니다. 압력계는 시간에 의한 역세를 막고, 시간에 의한 control unit 신호에\n연결 됩니다. 왜냐하면 그 카운팅 된 시간이 물이 설비를 흐를 때 설비의 실제\n작동시간입니다.(controlunit매뉴얼참조)\n시간을 측정하기 위해 electrical connections, common 그리고 FBC Azud Control Unit을 위한 inlet 1\n사사이이에에 vollttage-ffree 접접촉촉이이 반반드드시시 존존재재 합합니니다다. ((ellecttriicall connecttiions 참참고고)) 이이럴럴 경경우우, 설설비비는는 시시간간에에\n의해서역세가됩니다.\n실제 여과시간을 측정하기 위해서는보조릴레이펌프의접촉이나 물의 흐름을(최소압력계 등)을감지할수\n있는다른장치가사용되어져야합니다.\nccoommmmoonn 그그리리고고 EE11 사사이이의의 jjuummppeerr를를 제제거거하하십십시시오오.. 기기존존에에 표표시시된된 단단일일 신신호호 압압력력계계의의 두두개개의의 와와이이어어를를\n연연결결하하십십시시오오..iinnlleettssccoommmmoonn은은BBRROOWWNNWWIIRREE를를,, 11은은BBLLUUEEWWIIRREE를를연연결결하하십십시시오오..\nLP구성장비에서ControlUnit이실제여과시간을측정하는것이필수적입니다.그렇지않을경우,역세\n펌프가작동하지않는설비와연결될수있습니다.(시간에의해역세가활성화되었을때)\n이러면역세펌프에치명적인영향을줄수있습니다.\nControlUnit의경우실제여과시간을측정하기위해,단일신호압력계를이inlet에연결해야합니다.이\n경우여과설비에수압이없을때시간에의해역세가되지않는것을확인해야합니다.\n압력이 RANGE scale에서 조절된 값을 초과하는 동안과 RANGE scale 값과 DIFF scale에서 조절된 값\n을 뺀 결과값에 도달 할 때까지 단일 신호 압력계는 접촉을 닫습니다. 그래서 압력이 이 두 값 사이에\n있는동안ControlUnit은시간에따른역세활성화시간을측정합니다.(Figure1).\n압력이 RANGE scale 값과 DIFF scale 값 사이를 뺀 결과 값 아래로 떨어지면, 압력계가 접촉을\n오오픈픈합합니니다다.이이것것이이CConttrollUUniitt이이시시간간측측정정을을멈멈췄췄을을때때입입니니다다.",
+      "header": "COMUN OUTLETS\nINLETS",
+      "section_type": "일반",
+      "equipment": [
+        "펌프"
+      ],
+      "company_id": "22",
+      "company_name": "시료수, 약품2, 침출수, 화격자",
+      "source_file": "5-4 AZUD AA모델 메뉴얼 한글판",
+      "source_path": "D:\\기계도면\\기계도면\\22. 시료수, 약품2, 침출수, 화격자 (조선내화E)\\시료수분석설비 외 준공도서\\01. [제주-기계] 승인서류 (19.11.) AS BUILT\\16. 운전 및 유지관리 지침서\\16-4. 폐기물침출수설비\\도면 및 Manual\\5-4 AZUD AA모델 메뉴얼 한글판.pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "f257ba59083e425f",
+      "char_count": 1199
+    },
+    {
+      "chunk_idx": 27,
+      "text": "아래로 떨어지면, 압력계가 접촉을\n오오픈픈합합니니다다.이이것것이이CConttrollUUniitt이이시시간간측측정정을을멈멈췄췄을을때때입입니니다다. INLETS INLETS\nCOMMON INLETS COMMON INLETS",
+      "header": "INLETS INLETS",
+      "section_type": "일반",
+      "equipment": [
+        "화격자"
+      ],
+      "company_id": "22",
+      "company_name": "시료수, 약품2, 침출수, 화격자",
+      "source_file": "5-4 AZUD AA모델 메뉴얼 한글판",
+      "source_path": "D:\\기계도면\\기계도면\\22. 시료수, 약품2, 침출수, 화격자 (조선내화E)\\시료수분석설비 외 준공도서\\01. [제주-기계] 승인서류 (19.11.) AS BUILT\\16. 운전 및 유지관리 지침서\\16-4. 폐기물침출수설비\\도면 및 Manual\\5-4 AZUD AA모델 메뉴얼 한글판.pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "5376cce12559f972",
+      "char_count": 122
+    },
+    {
+      "chunk_idx": 28,
+      "text": "INLETS INLETS\n1 2 3 4 1 2 3 4\nOne signal\nOne signal pressure gauge\npressure gauge contacts\ncontacts 4\n\n1 2\n\nFig. 2. 여과 설비 비작동중. 접촉을 닫기 위한 Pressure\nFig. 1. 여과 설비 작동중. 접촉을 닫기 위한 Pressure condition이 발생하지 않습니다. Control Unit이 그 시간을\ncondition이 발생합니다. Control Unit이 그 시간을 측정하지 않습니다. 이런 상태에서 역세 펌프의 시작을막을\n측정합니다.시간에따른역세활성화가가능합니다. 때,역세사이클의활성화는가능하지 않습니다.\n\nWater Filtration Solutions\nDIFFandRANGEscales의압력값은사진에보여진압력계의윗쪽에두가지나사에의해조절됩니다.\n압압력력계계는는 RRAANNGGEE ssccaallee에에서서 11BBaarr 압압력력과과 DDIIFFFF ssccaallee에에서서 00.77 BBaarr에에\n의해 조절됩니다. The Control Unit begins to count time with this",
+      "header": "INLETS INLETS",
+      "section_type": "일반",
+      "equipment": [
+        "펌프"
+      ],
+      "company_id": "22",
+      "company_name": "시료수, 약품2, 침출수, 화격자",
+      "source_file": "5-4 AZUD AA모델 메뉴얼 한글판",
+      "source_path": "D:\\기계도면\\기계도면\\22. 시료수, 약품2, 침출수, 화격자 (조선내화E)\\시료수분석설비 외 준공도서\\01. [제주-기계] 승인서류 (19.11.) AS BUILT\\16. 운전 및 유지관리 지침서\\16-4. 폐기물침출수설비\\도면 및 Manual\\5-4 AZUD AA모델 메뉴얼 한글판.pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "ed861d8d6c3170d8",
+      "char_count": 570
+    },
+    {
+      "chunk_idx": 29,
+      "text": "lee에에서서 00.77 BBaarr에에\n의해 조절됩니다. The Control Unit begins to count time with this DIFF\nvalueswhen여과설비가1Bar를초과하고압력이1-0.7=0.3Bar로",
+      "header": "DIFF",
+      "section_type": "일반",
+      "equipment": [
+        "화격자"
+      ],
+      "company_id": "22",
+      "company_name": "시료수, 약품2, 침출수, 화격자",
+      "source_file": "5-4 AZUD AA모델 메뉴얼 한글판",
+      "source_path": "D:\\기계도면\\기계도면\\22. 시료수, 약품2, 침출수, 화격자 (조선내화E)\\시료수분석설비 외 준공도서\\01. [제주-기계] 승인서류 (19.11.) AS BUILT\\16. 운전 및 유지관리 지침서\\16-4. 폐기물침출수설비\\도면 및 Manual\\5-4 AZUD AA모델 메뉴얼 한글판.pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "a20d381b1264bf38",
+      "char_count": 126
+    },
+    {
+      "chunk_idx": 30,
+      "text": "RANGE\n떨어지게되고,설비가꺼질때,controlunit은이값들과함께시간을\n세기시작합니다.\n설비는자격을갖춘작업자가다뤄야합니다.\n55.. 설설치치 지지침침\n- 설치는전문가에의해서할수있도록합니다.\n- 설비가놓일장소는단단한지면을권장합니다.\n- 끈을 이용하여 장비를 옮길 경우 장비 무게를\n고려하여야합니다.\n- 끈을 이용할 경우 장비가 수평상태에서 움직일 수\n있도록해야합니다.\n- 사고를 방지하기 위하여 지게차를 이용하는 방법도\n있습니다.\n- 제품이동 또는 상,하차시 안전지침을 준수해야\n합니다.\n1-리프트트럭이나비슷한장비로팔레트와같이설비를옮깁니다.\n2-설비를조심스럽게꺼내고손상된부분이없나점검합니다.\n33-명명시시된된모모든든부부품품이이장장비비의의정정위위치치에에있있는는지지확확인인합합니니다다.\n4-설비를들어올립니다:\n“movement and raising” 시스템은 설비의 무게에 따라 적절하게 천정크레인 같은 것으로 사용 되어야\n합니다. 4개 벨트 또는 합성 벨트를 배치합니다, inlet manifold에 2개 그리고 outlet manifold에 나머지\n두개를 놓습니다. 벨트는 Manifold 지지대의 u-bolts의 옆에 놓습니다. 그러면 설비를 수평을 유지하며\n들어올릴수있습니다.",
+      "header": "RANGE",
+      "section_type": "점검",
+      "equipment": [
+        "화격자"
+      ],
+      "company_id": "22",
+      "company_name": "시료수, 약품2, 침출수, 화격자",
+      "source_file": "5-4 AZUD AA모델 메뉴얼 한글판",
+      "source_path": "D:\\기계도면\\기계도면\\22. 시료수, 약품2, 침출수, 화격자 (조선내화E)\\시료수분석설비 외 준공도서\\01. [제주-기계] 승인서류 (19.11.) AS BUILT\\16. 운전 및 유지관리 지침서\\16-4. 폐기물침출수설비\\도면 및 Manual\\5-4 AZUD AA모델 메뉴얼 한글판.pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "828aa66ad8959471",
+      "char_count": 605
+    },
+    {
+      "chunk_idx": 31,
+      "text": "d에 나머지\n두개를 놓습니다. 벨트는 Manifold 지지대의 u-bolts의 옆에 놓습니다. 그러면 설비를 수평을 유지하며\n들어올릴수있습니다. Water Filtration Solutions\n5.1팔레트로부터설비분리\n팔레트로부터 설비를 분리하기 위해서는 올리는 장치나 설비의 적절한 높이가 필요하다. 설비는 Lag\nscrew로로팔팔레레트트에에고고정정되되어어있있다다.다다음음단단계계를를따따라라주주십십시시오오.\nA-Spanner를이용해lagscrews를풀어주십시오.\nB-4의지시에따라조정발로설비를들어올리십시오.\nC-팔레트를제거하십시오.\nD-최종적인장소에설비를놓으십시오.\nE-설비가제대로평평하게있는지확인하십시오.\n5.2설비지지대의규정.\n지지대의M10나사를푸르기전에,설비가조정발에잘받쳐지고있는지확인하십시오.\n조절 가능한지지대로 설비의 높이를바꿀 수 있습니다. 그 전에 조정발로 설비가 확실히잘 받쳐져야\n하는 것이 중요합니다. 이게 확인 되면, 지지대의 나사를 풀고 조정발로 높이를 조절합니다. 그러면\n설비는수평을유지할수있습니다.\n5.3지면에설비고정\n지면에 고정하기 전에 설비의 높이를 반드시 확인하여야 합니다. 지면의 종류에 적절한 lag screw에\n의해 설비를 지면에 고정시키는게 좋습니다. Screw는 manifold hole 지름 10mm에 위치하는게\n좋습니다.\n5.4Mainmanifolds,inlet,outlet,drainage그리고pressuremanifolds의연결.\nMain manifolds 연결은 (inlet & outlet manifolds) 두가지 타입이다.: Grooved 또는 Flanged (DIN\n2576).설비연결을위해필수적이고표준적인요소들을사용해야합니다.\nDrainage manifold는 3” PVC pipe로 연결하기 위해 PVC grooved coupling을 포함한다. 해당하는\n연결방법으로inlet,outlet그리고drainagemanifolds를연결하십시오.\n* 용어집\nSTATION ControlUnit의같은신호에서다같이역세하는필터들의각각의그룹입니다.\nStation은하나또는몇몇의필터들로구성될수있습니다.\nPRESSURE 단계적영역에서Intake P1 과P2 사이에차압값을나타낼뿐만아니라역세의\nDIFFERENTIAL 활성화로접촉이형성되면서규정값을나타냅니다.",
+      "header": "RANGE",
+      "section_type": "일반",
+      "equipment": [
+        "필터"
+      ],
+      "company_id": "22",
+      "company_name": "시료수, 약품2, 침출수, 화격자",
+      "source_file": "5-4 AZUD AA모델 메뉴얼 한글판",
+      "source_path": "D:\\기계도면\\기계도면\\22. 시료수, 약품2, 침출수, 화격자 (조선내화E)\\시료수분석설비 외 준공도서\\01. [제주-기계] 승인서류 (19.11.) AS BUILT\\16. 운전 및 유지관리 지침서\\16-4. 폐기물침출수설비\\도면 및 Manual\\5-4 AZUD AA모델 메뉴얼 한글판.pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "d0cfa9d60210d5ed",
+      "char_count": 1117
+    },
+    {
+      "chunk_idx": 32,
+      "text": "SURE 단계적영역에서Intake P1 과P2 사이에차압값을나타낼뿐만아니라역세의\nDIFFERENTIAL 활성화로접촉이형성되면서규정값을나타냅니다.",
+      "header": "GAUGE",
+      "section_type": "일반",
+      "equipment": [
+        "화격자"
+      ],
+      "company_id": "22",
+      "company_name": "시료수, 약품2, 침출수, 화격자",
+      "source_file": "5-4 AZUD AA모델 메뉴얼 한글판",
+      "source_path": "D:\\기계도면\\기계도면\\22. 시료수, 약품2, 침출수, 화격자 (조선내화E)\\시료수분석설비 외 준공도서\\01. [제주-기계] 승인서류 (19.11.) AS BUILT\\16. 운전 및 유지관리 지침서\\16-4. 폐기물침출수설비\\도면 및 Manual\\5-4 AZUD AA모델 메뉴얼 한글판.pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "49582798c53c97c1",
+      "char_count": 80
+    },
+    {
+      "chunk_idx": 33,
+      "text": "SURE 단계적영역에서Intake P1 과P2 사이에차압값을나타낼뿐만아니라역세의\nDIFFERENTIAL 활성화로접촉이형성되면서규정값을나타냅니다. GAUGE\nWater Filtration Solutions\n5.5ControlUnit에설비연결\n아래의명명법에따라서microtube에라벨링됩니다.\nCOMMAND 상세내용\nT\nPRESSURE TAP: 전회로의공급에대해서, 장비의최대압력점은같아야하며, 보통inlet\nmanifold(보조필터로부터공급되는)에있습니다.\nTA AUXILIARY AIR INTAKE: 밸브의개,폐(작동)를담당하는공압회로\nHH AAUUXXIILLIIAARRYY LLEEAAKK : 보보조조의의공공압압으으로로함함께께채채워워져져있있는는물물에에서서배배출출을을할할수수있있게게도도와와주주는는공공압압력력\nP1 Pressure tap in inlet manifold, 높은압력의차압게이지에연결되어있는\nP2 Pressure tap in outlet manifold, 낮은압력의차압게이지에연결되어있고, ¼”필터와command와\n1/8” male 엘보로outlet manifold안에intake가있다.\nEA Auxiliary Station: 역세공정이일어날때장비에air 공급을담당하는공압command, 이때동시에\n전동밸브(eletrovalve)는잠긴다.\nEA1 Auxiliary Station 1: 여분의air 압력공급을담당하는공압command.\nEA2 Auxiliary Station 2: Injector를통하여필터에air 공급을담당하는공압command.\nE1 Station 1: 역세공정1단계를활성화하는3way 밸브에수압을담당하는command\n-\nS1\n압력조절기를사용하여Control Unit에공기흡입관을연결하십시오.\n뉴뉴매매틱틱명명령령의의 회회로로에에따따라라 공공기기주주입입량량을을 조조절절해해주주십십시시요요.\nSi tiene alguna duda póngase en contacto con nosotros.\nConnect the air intake to the Control Unit using a pressure regulator\nVERY IMPORTANT: 수압 밸브 chamber의 채우는 것과 비우는 것은 의무적이지\n않습니다.부적절한사용은인적,재산과주위에손상을야기합니다.\n공기흡입관의 주입구 압력을 조절하기 위하여, 여과 설비에 물의 주입구 압력을 고려 해야 합니다.\n공기흡입관의최대압력은물의주입구최대압력에 1bar를더한값과 같아야합니다.\n공기흡인관 P = 물주입구 P + 1bar\n뉴매틱 명령의 공기 처리에서 윤활의 사용은 필요하지 않습니다. 오히려 일부 구성품에 손상을 줄 수\n있습니다.\n설설비비의의 올올바바른른 설설치치,, 운운전전 등등을을 하하기기 위위해해서서는는 지지침침 및및 주주의의사사항항들들을을 숙숙지지 하하십십시시요요.. 따따르르지지 않않으으면면,, 설설비비\n작동시고장이나손상의원인이될수있습니다.",
+      "header": "GAUGE",
+      "section_type": "운전",
+      "equipment": [
+        "필터",
+        "밸브"
+      ],
+      "company_id": "22",
+      "company_name": "시료수, 약품2, 침출수, 화격자",
+      "source_file": "5-4 AZUD AA모델 메뉴얼 한글판",
+      "source_path": "D:\\기계도면\\기계도면\\22. 시료수, 약품2, 침출수, 화격자 (조선내화E)\\시료수분석설비 외 준공도서\\01. [제주-기계] 승인서류 (19.11.) AS BUILT\\16. 운전 및 유지관리 지침서\\16-4. 폐기물침출수설비\\도면 및 Manual\\5-4 AZUD AA모델 메뉴얼 한글판.pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "f6b1cc858d20cd9f",
+      "char_count": 1412
+    },
+    {
+      "chunk_idx": 34,
+      "text": "는 지지침침 및및 주주의의사사항항들들을을 숙숙지지 하하십십시시요요.. 따따르르지지 않않으으면면,, 설설비비\n작동시고장이나손상의원인이될수있습니다. Water Filtration Solutions\n66.. 작작동동 지지침침\n66.11--SSttaarrtt--uuppAAZZUUDDHHEELLIIXXAAUUTTOOMMAATTIICC.\n-운전조건의범위를넘어선경우에는가동을하지마십시오.\n-설비기동전,보조필터키가열려있는지확인하십시오.\n설비작동지침\n기동전준비사항\n•유량, 압력, 온도 pH가 technical data에 표시된 요구 조건의 범위인지 확인합니다.\n•모든 필터가 체결이 잘 되었는지, 누수는 없는지 확인합니다.\n•보조필터키가열려있는지확인합니다.\n기동\n유입수에pumpingg설비를연결합니다.\n운전조건(압력,온도,유량,pH)이요구조건의범위인지확인합니다.\n필터headloss를고려하십시오.\n설비Controlunit매뉴얼의지침을따르십시오.\n6.2-필터개폐\nClamp를열기전에압력이풀렸는지확인하십시오.\n아래의필터여는방법을준수하세요.",
+      "header": "GAUGE",
+      "section_type": "시동",
+      "equipment": [
+        "필터"
+      ],
+      "company_id": "22",
+      "company_name": "시료수, 약품2, 침출수, 화격자",
+      "source_file": "5-4 AZUD AA모델 메뉴얼 한글판",
+      "source_path": "D:\\기계도면\\기계도면\\22. 시료수, 약품2, 침출수, 화격자 (조선내화E)\\시료수분석설비 외 준공도서\\01. [제주-기계] 승인서류 (19.11.) AS BUILT\\16. 운전 및 유지관리 지침서\\16-4. 폐기물침출수설비\\도면 및 Manual\\5-4 AZUD AA모델 메뉴얼 한글판.pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "564f1c3513e36ac9",
+      "char_count": 521
+    },
+    {
+      "chunk_idx": 35,
+      "text": ".\n설비Controlunit매뉴얼의지침을따르십시오.\n6.2-필터개폐\nClamp를열기전에압력이풀렸는지확인하십시오.\n아래의필터여는방법을준수하세요. 1. Clamp를제거하시오 2. 필터뚜껑을제거하시오\n개봉방지기구나사",
+      "header": "1. Clamp를제거하시오 2. 필터뚜껑을제거하시오",
+      "section_type": "일반",
+      "equipment": [
+        "필터"
+      ],
+      "company_id": "22",
+      "company_name": "시료수, 약품2, 침출수, 화격자",
+      "source_file": "5-4 AZUD AA모델 메뉴얼 한글판",
+      "source_path": "D:\\기계도면\\기계도면\\22. 시료수, 약품2, 침출수, 화격자 (조선내화E)\\시료수분석설비 외 준공도서\\01. [제주-기계] 승인서류 (19.11.) AS BUILT\\16. 운전 및 유지관리 지침서\\16-4. 폐기물침출수설비\\도면 및 Manual\\5-4 AZUD AA모델 메뉴얼 한글판.pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "11b4e88ba718d0f0",
+      "char_count": 118
+    },
+    {
+      "chunk_idx": 36,
+      "text": "SAFETY CLAMP\n개봉방지\n레버\n기구\n개봉방지기구나사\n11-나나사사를를돌돌려려서서 22-레레버버를를열열고고\n개봉방지기구를 볼트를빼냅니다.\n제거합니다.",
+      "header": "SAFETY CLAMP",
+      "section_type": "일반",
+      "equipment": [
+        "화격자"
+      ],
+      "company_id": "22",
+      "company_name": "시료수, 약품2, 침출수, 화격자",
+      "source_file": "5-4 AZUD AA모델 메뉴얼 한글판",
+      "source_path": "D:\\기계도면\\기계도면\\22. 시료수, 약품2, 침출수, 화격자 (조선내화E)\\시료수분석설비 외 준공도서\\01. [제주-기계] 승인서류 (19.11.) AS BUILT\\16. 운전 및 유지관리 지침서\\16-4. 폐기물침출수설비\\도면 및 Manual\\5-4 AZUD AA모델 메뉴얼 한글판.pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "c388de25de7ab482",
+      "char_count": 86
+    },
+    {
+      "chunk_idx": 37,
+      "text": "CLAMP\n개봉방지\n레버\n기구\n개봉방지기구나사\n11-나나사사를를돌돌려려서서 22-레레버버를를열열고고\n개봉방지기구를 볼트를빼냅니다.\n제거합니다. CLAMP\nManeta\n필터를 닫을 때, 먼저 base O-ring 주변에 이상한 요소들이 없는 지와 상태를 확인합니다. 뚜껑을\n조심스럽게 놓고 clamp를 체결 하여 필터를 닫습니다. Clamp 체결 시에, 볼트가 정위치에 있는지\n확확인인하하고고레레버버를를조조절절한한뒤뒤,개개봉봉방방지지기기구구를를끼끼우우고고안안전전볼볼트트를를약약하하게게체체결결합합니니다다.\n추가궁금한사항은문의해주십시오.\n\nWater Filtration Solutions\n-압력관련장비:Clamp의개봉전에필터내부에압력이풀렸는지확인합니다.\n-가동시에는적당한개인보호장구(장갑,보호안경등)를착용합니다.\n-Clamp의안전장치를체결하는것을명심하십시오.우발적인개봉을방지합니다.\n-유지 보수 시, 시스템을 분리하기 위해 upstream 및 downstream 밸브의 설치를\n추천합니다.\n77.. 유유지지 보보수수 지지침침\n-모든작업을하기전에필터의압력이풀렸는지확인합니다.\n-유지보수는자격을갖춘사람이합니다.\n계획적인 유지 보수에 필요한 매우 유용한 활동들을 알려주고 있습니다. 항목 확인 기간은 운전조건,\n원수의 특징, 운전 시간, 역세 횟수, 역세 공정 후 차압 회복에 따라 달라집니다. AZUD社에서는 필터\n부품의 분해 조립을 포함하여 확인 주기를 3달을 권장합니다. 확인 주기는 설치 후 특징에 따라 사용자에\n의해결정되어져야합니다.\n구성품리스트는매뉴얼의section 2.5을확인하십시오.\n7.1 유지 보수요약.\n일일점검",
+      "header": "CLAMP",
+      "section_type": "점검",
+      "equipment": [
+        "필터",
+        "밸브"
+      ],
+      "company_id": "22",
+      "company_name": "시료수, 약품2, 침출수, 화격자",
+      "source_file": "5-4 AZUD AA모델 메뉴얼 한글판",
+      "source_path": "D:\\기계도면\\기계도면\\22. 시료수, 약품2, 침출수, 화격자 (조선내화E)\\시료수분석설비 외 준공도서\\01. [제주-기계] 승인서류 (19.11.) AS BUILT\\16. 운전 및 유지관리 지침서\\16-4. 폐기물침출수설비\\도면 및 Manual\\5-4 AZUD AA모델 메뉴얼 한글판.pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "9095df02dcf52f6a",
+      "char_count": 794
+    },
+    {
+      "chunk_idx": 38,
+      "text": "는 설치 후 특징에 따라 사용자에\n의해결정되어져야합니다.\n구성품리스트는매뉴얼의section 2.5을확인하십시오.\n7.1 유지 보수요약.\n일일점검 4. 필필터터 head loss의의경경계계를를 점검 ((P1 - P2))\n주기적인점검",
+      "header": "4. 필필터터 head loss의의경경계계를를 점검 ((P1 - P2))",
+      "section_type": "점검",
+      "equipment": [
+        "필터"
+      ],
+      "company_id": "22",
+      "company_name": "시료수, 약품2, 침출수, 화격자",
+      "source_file": "5-4 AZUD AA모델 메뉴얼 한글판",
+      "source_path": "D:\\기계도면\\기계도면\\22. 시료수, 약품2, 침출수, 화격자 (조선내화E)\\시료수분석설비 외 준공도서\\01. [제주-기계] 승인서류 (19.11.) AS BUILT\\16. 운전 및 유지관리 지침서\\16-4. 폐기물침출수설비\\도면 및 Manual\\5-4 AZUD AA모델 메뉴얼 한글판.pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "4ae60a3858821c35",
+      "char_count": 128
+    },
+    {
+      "chunk_idx": 39,
+      "text": "7. Grooved coupling의 보수\n* : P1과P2 는inlet과outlet 각각의압력이며, 그차이는head loss 입니다.\n-주기적인점검기간은설치특징에따라서사용자에의해서결정되어져야합니다.",
+      "header": "7. Grooved coupling의 보수",
+      "section_type": "점검",
+      "equipment": [
+        "화격자"
+      ],
+      "company_id": "22",
+      "company_name": "시료수, 약품2, 침출수, 화격자",
+      "source_file": "5-4 AZUD AA모델 메뉴얼 한글판",
+      "source_path": "D:\\기계도면\\기계도면\\22. 시료수, 약품2, 침출수, 화격자 (조선내화E)\\시료수분석설비 외 준공도서\\01. [제주-기계] 승인서류 (19.11.) AS BUILT\\16. 운전 및 유지관리 지침서\\16-4. 폐기물침출수설비\\도면 및 Manual\\5-4 AZUD AA모델 메뉴얼 한글판.pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "59bf4247711c5e75",
+      "char_count": 111
+    },
+    {
+      "chunk_idx": 40,
+      "text": "P2 는inlet과outlet 각각의압력이며, 그차이는head loss 입니다.\n-주기적인점검기간은설치특징에따라서사용자에의해서결정되어져야합니다. Water Filtration Solutions\n7.2. General Revision of the Equipment.\n일반적인유지보수활동을아래에서보여줍니다.\n매매번번시시작작하하기기전전육육안안으으로로먼먼저저점점검검을을합합니니다다.\nDisc에 이물질이 건조한 상태로 있게 해서는 안됩니다. 만약 장기간 동안 운전을 정지를 해야 하는\n경우,역세과정을한후disc에이물질을제거하십시오.\n필터의headloss를점검하십시오.또한역세공정후headloss의회복상태도점검해야합니다.\n7.3. 필터 체크하기.\n7.3.1.-디스크세척.\n-필터개봉전에필터내부에압력이풀렸는지확인합니다.\n-만약필요하다면산용액으로disc만세척하십시오.\n-만약 산용액으로 disc를 세척 할 경우 적당한 개인 보호 장구(장갑, 안경 등)를 착용\n하십시오.\n-세척시에산용액으로disc를제외한어떠한부분도접촉을하여서는안됩니다.\n11..클클램램프프를를열열고고뚜뚜껑껑을을 22..필필터터eelleemmeenntt를를 3.피피스톤톤이이느슨슨해해질질 4.디스크를제거합니다.\n제거합니다. 조심스럽게제거 때까지돌리고\n합니다. 제거합니다.\n5.깨끗한물을이용하여disc를세척합니다. 만약이물질이제거되지않을경우산용액으로세척합니다.\n산용액으로세척을할경우산사용에대한safety sheet에준해서보호조치를따라야합니다.\nPolyamide재질의disc는산용액을사용하여서는안됩니다. 대신Sodium hydroxide(soda<10%)의\n희석용액으로disc를세척할수있습니다. Section2.5 \"Components and spares \" 에서디스크재질을\n확인하십시오.\n6.Filteringelement조립.\n-다른필터와섞일경우disc의수량에차이가있을수도있기때문에섞이지않도록\n합니다.\n-부정확한filtering element의위치는파손을초래할수도있습니다.\n-Filtering element의base에사용되는윤활제와필터의재질이화학적으로호환이\n되는지를점검합니다.\n6.1 모든disc를끼웁니다.6.2.피스톤을끼우고, 6.3.Filtering element의 6.4.Filtering element를\n천천히피스톤을 base O-ring에중성 아래쪽으로조심스럽게\n누르면서돌립니다. vaseline을바릅니다. 밀어넣습니다.\nVaseline\n7.필터를닫아주십시오.(참고:Chapter6.2“OpeningandClosureofAZUDfilters.)",
+      "header": "7. Grooved coupling의 보수",
+      "section_type": "정지",
+      "equipment": [
+        "필터"
+      ],
+      "company_id": "22",
+      "company_name": "시료수, 약품2, 침출수, 화격자",
+      "source_file": "5-4 AZUD AA모델 메뉴얼 한글판",
+      "source_path": "D:\\기계도면\\기계도면\\22. 시료수, 약품2, 침출수, 화격자 (조선내화E)\\시료수분석설비 외 준공도서\\01. [제주-기계] 승인서류 (19.11.) AS BUILT\\16. 운전 및 유지관리 지침서\\16-4. 폐기물침출수설비\\도면 및 Manual\\5-4 AZUD AA모델 메뉴얼 한글판.pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "c9acb9ce7226d93a",
+      "char_count": 1235
+    },
+    {
+      "chunk_idx": 41,
+      "text": "니다. 밀어넣습니다.\nVaseline\n7.필터를닫아주십시오.(참고:Chapter6.2“OpeningandClosureofAZUDfilters.) Water Filtration Solutions\n7.3.2.-Filteringelement92,6x100x4및103x4O-rings점검\n92,6x100x4 O-RING",
+      "header": "7. Grooved coupling의 보수",
+      "section_type": "점검",
+      "equipment": [
+        "필터"
+      ],
+      "company_id": "22",
+      "company_name": "시료수, 약품2, 침출수, 화격자",
+      "source_file": "5-4 AZUD AA모델 메뉴얼 한글판",
+      "source_path": "D:\\기계도면\\기계도면\\22. 시료수, 약품2, 침출수, 화격자 (조선내화E)\\시료수분석설비 외 준공도서\\01. [제주-기계] 승인서류 (19.11.) AS BUILT\\16. 운전 및 유지관리 지침서\\16-4. 폐기물침출수설비\\도면 및 Manual\\5-4 AZUD AA모델 메뉴얼 한글판.pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "835366e550e32915",
+      "char_count": 174
+    },
+    {
+      "chunk_idx": 42,
+      "text": "ion Solutions\n7.3.2.-Filteringelement92,6x100x4및103x4O-rings점검\n92,6x100x4 O-RING 1. Clamp를 열고 필터의 뚜껑을 조심스럽게 제거 합니다. Filtering element를\n꺼내고 느슨해 질 때까지 피스톤을 돌린 후 빼냅니다. (참고: chapter 7.3.1\nCleaningofdiscs-section1,2and3).",
+      "header": "1. Clamp를 열고 필터의 뚜껑을 조심스럽게 제거 합니다. Filtering element를",
+      "section_type": "점검",
+      "equipment": [
+        "필터"
+      ],
+      "company_id": "22",
+      "company_name": "시료수, 약품2, 침출수, 화격자",
+      "source_file": "5-4 AZUD AA모델 메뉴얼 한글판",
+      "source_path": "D:\\기계도면\\기계도면\\22. 시료수, 약품2, 침출수, 화격자 (조선내화E)\\시료수분석설비 외 준공도서\\01. [제주-기계] 승인서류 (19.11.) AS BUILT\\16. 운전 및 유지관리 지침서\\16-4. 폐기물침출수설비\\도면 및 Manual\\5-4 AZUD AA모델 메뉴얼 한글판.pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "63db969cdc379274",
+      "char_count": 216
+    },
+    {
+      "chunk_idx": 43,
+      "text": "내고 느슨해 질 때까지 피스톤을 돌린 후 빼냅니다. (참고: chapter 7.3.1\nCleaningofdiscs-section1,2and3). 3. 피스톤을 끼우고 천천히 피스톤을 돌리면서 누릅니다. (참고: chapter 7.3.1\nCleaningofdiscs-section6.2)\n4.오링에윤활유를바릅니다.(오른쪽그림참조).",
+      "header": "3. 피스톤을 끼우고 천천히 피스톤을 돌리면서 누릅니다. (참고: chapter 7.3.1",
+      "section_type": "청소",
+      "equipment": [
+        "화격자"
+      ],
+      "company_id": "22",
+      "company_name": "시료수, 약품2, 침출수, 화격자",
+      "source_file": "5-4 AZUD AA모델 메뉴얼 한글판",
+      "source_path": "D:\\기계도면\\기계도면\\22. 시료수, 약품2, 침출수, 화격자 (조선내화E)\\시료수분석설비 외 준공도서\\01. [제주-기계] 승인서류 (19.11.) AS BUILT\\16. 운전 및 유지관리 지침서\\16-4. 폐기물침출수설비\\도면 및 Manual\\5-4 AZUD AA모델 메뉴얼 한글판.pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "664061f35abf2a44",
+      "char_count": 184
+    },
+    {
+      "chunk_idx": 44,
+      "text": "면서 누릅니다. (참고: chapter 7.3.1\nCleaningofdiscs-section6.2)\n4.오링에윤활유를바릅니다.(오른쪽그림참조). 5. Filtering element를 필필터터 베베이이스에에 조심심스럽럽게게 밀밀어어 넣넣어어줍니니다다. (참참고: chapter\n7.3.1.CleaningofDiscs-section6.3).",
+      "header": "5. Filtering element를 필필터터 베베이이스에에 조심심스럽럽게게 밀밀어어 넣넣어어줍니니다다. (참참고: chapter",
+      "section_type": "청소",
+      "equipment": [
+        "필터"
+      ],
+      "company_id": "22",
+      "company_name": "시료수, 약품2, 침출수, 화격자",
+      "source_file": "5-4 AZUD AA모델 메뉴얼 한글판",
+      "source_path": "D:\\기계도면\\기계도면\\22. 시료수, 약품2, 침출수, 화격자 (조선내화E)\\시료수분석설비 외 준공도서\\01. [제주-기계] 승인서류 (19.11.) AS BUILT\\16. 운전 및 유지관리 지침서\\16-4. 폐기물침출수설비\\도면 및 Manual\\5-4 AZUD AA모델 메뉴얼 한글판.pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "4eaa735b2d9fc408",
+      "char_count": 189
+    },
+    {
+      "chunk_idx": 45,
+      "text": "베이이스에에 조심심스럽럽게게 밀밀어어 넣넣어어줍니니다다. (참참고: chapter\n7.3.1.CleaningofDiscs-section6.3). 6. 뚜껑을 놓고 Clamp로 체결합니다. (참고: 6.2 Opening and closure of the\n103x4.00 O-RINGS\nfilters).\n7.3.3.-Filteringelementbase의유동요소점검(디스크캡,스프링과스프링홀더)\n1.Clamp를열고필터의뚜껑을조심스럽게제거합니다.Filteringelement를꺼냅니다.(참고:chapter\n7.3.1Cleaningofdiscs-section1and2).\n2.Filtering element base의 3.스프링, 4.물로조심스럽게 5.제자리에다시\n나사를 nº17 box 스패너로 스프링홀더와 씻어줍니다. 끼워줍니다.\n풀러줍니다. 항상대각선 디스크캡을\n방향으로두나사를먼저풀러 제거합니다.\n줍줍니니다다. 풀풀르르는는동동안안\n스프링홀더를잡고\n있으십시오.\n나사체결시너무무리한힘으로체결을하면나사산에손상이갈수도있습니다.",
+      "header": "6. 뚜껑을 놓고 Clamp로 체결합니다. (참고: 6.2 Opening and closure of the",
+      "section_type": "점검",
+      "equipment": [
+        "필터"
+      ],
+      "company_id": "22",
+      "company_name": "시료수, 약품2, 침출수, 화격자",
+      "source_file": "5-4 AZUD AA모델 메뉴얼 한글판",
+      "source_path": "D:\\기계도면\\기계도면\\22. 시료수, 약품2, 침출수, 화격자 (조선내화E)\\시료수분석설비 외 준공도서\\01. [제주-기계] 승인서류 (19.11.) AS BUILT\\16. 운전 및 유지관리 지침서\\16-4. 폐기물침출수설비\\도면 및 Manual\\5-4 AZUD AA모델 메뉴얼 한글판.pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "9458705683cd0770",
+      "char_count": 514
+    },
+    {
+      "chunk_idx": 46,
+      "text": "먼저풀러 제거합니다.\n줍줍니니다다. 풀풀르르는는동동안안\n스프링홀더를잡고\n있으십시오.\n나사체결시너무무리한힘으로체결을하면나사산에손상이갈수도있습니다. 66. 먼먼저저 대대각각선선 방방향향으으로로 나나사사를를 꼽꼽은은 후후 스스패패너너로로 조조입입니니다다. 나나머머지지 나나사사들들도도 꼬꼬인인 후후 스스패패너너로로 조조여여\n줍니다.\n7.Filtering element O-ring의base를필터재질과화학적으로호환성이있는윤활제를사용하여\n도포합니다. Filtering element를조심스럽게밀면서삽입합니다.\n(참고:chapter 7.3.1 Cleaning of discs -sections 6.3and 6.4).\n8.뚜껑을놓고Clamp로체결합니다.(참고:6.2Openingandclosureofthefilters).\n구성품리스트는매뉴얼에서chapter 2.5를참고해주십시오.\n추가궁금한사항은문의해주십시오.\n\nWater Filtration Solutions\n7.3.4.-Pistonelements점검.\n1.Clamp를열고필터의뚜껑을조심스럽게제거합니다.Filteringelement를꺼내고느슨해질때까지\n피피스스톤톤을을돌돌린린후후빼빼냅냅니니다다.((참참고고:chhaptter77.33.11CClleaniingoffddiiscs-secttiion11,22andd33)).\n2.분리하고피스톤구성품들을점검하십시오.\n2.1.10-25mm DIN 5254 2.2.“A”부분으로 2.3.“B”부분에위치한 2.4.“A”부분의\nwasher를plier로elastic 부터“B”부분을 두개의O-ring을 나사봉에윤활제를\nring을분리합니다. 분리합니다. 점검합니다. 또한 바릅니다.\n“AA”부부분분의의스스프프링링과과\nwasher도점검합니다.\nB\nVaseline",
+      "header": "66. 먼먼저저 대대각각선선 방방향향으으로로 나나사사를를 꼽꼽은은 후후 스스패패너너로로 조조입입니니다다. 나나머머지지 나나사사들들도도 꼬꼬인인 후후 스스패패너너로로 조조여여",
+      "section_type": "점검",
+      "equipment": [
+        "필터"
+      ],
+      "company_id": "22",
+      "company_name": "시료수, 약품2, 침출수, 화격자",
+      "source_file": "5-4 AZUD AA모델 메뉴얼 한글판",
+      "source_path": "D:\\기계도면\\기계도면\\22. 시료수, 약품2, 침출수, 화격자 (조선내화E)\\시료수분석설비 외 준공도서\\01. [제주-기계] 승인서류 (19.11.) AS BUILT\\16. 운전 및 유지관리 지침서\\16-4. 폐기물침출수설비\\도면 및 Manual\\5-4 AZUD AA모델 메뉴얼 한글판.pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "254d51c909539941",
+      "char_count": 856
+    },
+    {
+      "chunk_idx": 47,
+      "text": "를\nring을분리합니다. 분리합니다. 점검합니다. 또한 바릅니다.\n“AA”부부분분의의스스프프링링과과\nwasher도점검합니다.\nB\nVaseline A\nB A\n3.체결:\n-Piston의구성부품에원활한체결을위하여윤활제를바릅니다. AZUD社에서는\n중중성성bbaasseelliinnee을을추추천천합합니니다다.\n-Filter재질과윤활제의화학적으로호환성이되는지를확인바랍니다.\n3.1.워셔를스프링에하나, 3.2.“B”부분의하우징내부에 3.3.“A”부분의중심축위에“B”부분을\n“A”부분의막대에다른 두오링을넣습니다. 넣습니다.Pliers를사용하여막대의\n하나를넣습니다. 홈에맞을때까지“B”부분의중심축에\nElastic ring을끼웁니다.",
+      "header": "A\nB A",
+      "section_type": "점검",
+      "equipment": [
+        "필터"
+      ],
+      "company_id": "22",
+      "company_name": "시료수, 약품2, 침출수, 화격자",
+      "source_file": "5-4 AZUD AA모델 메뉴얼 한글판",
+      "source_path": "D:\\기계도면\\기계도면\\22. 시료수, 약품2, 침출수, 화격자 (조선내화E)\\시료수분석설비 외 준공도서\\01. [제주-기계] 승인서류 (19.11.) AS BUILT\\16. 운전 및 유지관리 지침서\\16-4. 폐기물침출수설비\\도면 및 Manual\\5-4 AZUD AA모델 메뉴얼 한글판.pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "8d0c8f83f9ecf39a",
+      "char_count": 344
+    },
+    {
+      "chunk_idx": 48,
+      "text": "대에다른 두오링을넣습니다. 넣습니다.Pliers를사용하여막대의\n하나를넣습니다. 홈에맞을때까지“B”부분의중심축에\nElastic ring을끼웁니다. 3. Piston을 Filtering element에 놓고 Filtering element 의 base를 필터 재질과 화학적으로 호환성이\n있는 윤활제를 사용하여 도포합니다. Filtering element를filter base에 조심스럽게 삽입합니다.\n(참고:chapter7.3.1Cleaningofdiscs-sections6.3and6.4).\n4.뚜껑을놓고Clamp를체결합니다.(참고:6.2Openingandclosureofthefilters).\n구성품리스트는매뉴얼에서chapter 2.4를참고해주십시오.\n추가궁금한사항은문의해주십시오. Water Filtration Solutions\n7.4 구성품점검\n대대기기와와 접접촉촉하하는는 설설비비 내내부부에에서서 어어떠떠한한 유유지지보보수수 작작업업을을 하하기기 전전에에 필필터터의의 압압력력이이\n풀렸는지확인합니다.\n7.4.1.-¼”intakefilter점검\n너무많은seal tape 또는무리한힘을가해서조이게되면손상을줄수있습니다.\n1.P1과P2 2.각intake의 3.필터들을 4.Seal tape을나사에 5. Command\nmicrotube를 ¼”filter를inlet, outlet 씻어냅니다. 사용하고,N.13 microtubes P1 &\n분리합니다. manifold, sustaining spanner를이용하여 P2를8x1/8” male\n밸브로부터N.13 ¼” filter를manifold에 elbows에\nspanner를이용하여 체결합니다. 연결합니다.\n분리합니다.\n7.4.2.-Groovedcoupling유지보수.\n11.스스패패너너로로groovedd couplliing을을 22.CCouplliingjjoiintt에에 3.Coupling을재조립합니다.\n분리합니다. 윤활유를발라줍니다.\n.",
+      "header": "3. Piston을 Filtering element에 놓고 Filtering element 의 base를 필터 재질과 화학적으로 호환성이",
+      "section_type": "점검",
+      "equipment": [
+        "필터",
+        "밸브"
+      ],
+      "company_id": "22",
+      "company_name": "시료수, 약품2, 침출수, 화격자",
+      "source_file": "5-4 AZUD AA모델 메뉴얼 한글판",
+      "source_path": "D:\\기계도면\\기계도면\\22. 시료수, 약품2, 침출수, 화격자 (조선내화E)\\시료수분석설비 외 준공도서\\01. [제주-기계] 승인서류 (19.11.) AS BUILT\\16. 운전 및 유지관리 지침서\\16-4. 폐기물침출수설비\\도면 및 Manual\\5-4 AZUD AA모델 메뉴얼 한글판.pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "550b9e7dedbea522",
+      "char_count": 943
+    },
+    {
+      "chunk_idx": 49,
+      "text": "edd couplliing을을 22.CCouplliingjjoiintt에에 3.Coupling을재조립합니다.\n분리합니다. 윤활유를발라줍니다.\n. Water Filtration Solutions\n88.. PPoossssiibbllee pprroobblleemmss--ccaauusseess--ssoolluuttiioonnss\n역세공정이 되지 않을 경우\n역세공정이전혀 역세공정일부가\n안될경우 안될경우\nCONTROL UNIT이안될\n경우\nCONTROL에에서서main공공급급이이\n가능한지를확인하고feeding\nfuse를확인하십시오.\nOutput fuse를확인하십시오.\nSolenoid valve를확인하십시오.\n수압valve를확인하십시오.\n여전히문제가발생이되면제품\n공급원에확인해주십시오.\n구구성성품품리리스스트트는는매매뉴뉴얼얼에에서서“CCoommppoonneennttss FFuusseess관관련련자자료료는는CCoonnttrrooll UUnniitt 매매뉴뉴얼얼에에서서\nand Spare parts” 부분을참고해주십시오. “Electric Circuits” 부분을참고해주십시오. Water Filtration Solutions\n잦은역세 또는\n역역세세가가계계속속 될될경경우우\n역세를가동하고outlet\nmanifold의압력을\n확인하십시오.\n최소요구압력보다낮은경우 최소요구압력보다높거나또는동일압력일경우\n참고:여과설비매뉴얼의“Technical Data” 참고:여과설비매뉴얼의“Technical Data”\n“Low Pressure ”용\n입니까? Control unit의 차압계문제 설계시 설계시\nProgramming 오류 예상치보다낮은 예상치보다많은\n유입수수질 유량",
+      "header": "3. Piston을 Filtering element에 놓고 Filtering element 의 base를 필터 재질과 화학적으로 호환성이",
+      "section_type": "일반",
+      "equipment": [
+        "화격자"
+      ],
+      "company_id": "22",
+      "company_name": "시료수, 약품2, 침출수, 화격자",
+      "source_file": "5-4 AZUD AA모델 메뉴얼 한글판",
+      "source_path": "D:\\기계도면\\기계도면\\22. 시료수, 약품2, 침출수, 화격자 (조선내화E)\\시료수분석설비 외 준공도서\\01. [제주-기계] 승인서류 (19.11.) AS BUILT\\16. 운전 및 유지관리 지침서\\16-4. 폐기물침출수설비\\도면 및 Manual\\5-4 AZUD AA모델 메뉴얼 한글판.pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "8823277a046216be",
+      "char_count": 808
+    },
+    {
+      "chunk_idx": 50,
+      "text": "sure ”용\n입니까? Control unit의 차압계문제 설계시 설계시\nProgramming 오류 예상치보다낮은 예상치보다많은\n유입수수질 유량 NO YES\nSSuussttaaiinniinngg vvaallvvee가가 역역세세공공정정의의펌펌프프\n있습니까? 시스템을\n확인하십시오. 너무짧은역세시간 차압계에서\nregulate valve를\nRise the value. 확인하십시오.\nNO YES (참조: control unit\n매뉴얼의“Backflushing (참조: control unit\n장비를 time of each station”) 매뉴얼의“Differential\n확인하십시오. Sustaining valve가 pressure gauge\n제대로작동하지 regulation”)\n(누수의가능성이 않습니다.\n있습니다.)\n((매매뉴뉴얼얼의의유유지지보보수수\n지침에준해sustaining\n너무짧은역세\n공급펌프의선정이 va 치 lve 침 의 에 구 준 성 해 품 R 과 el 작 ief 동 공정간의시간\n부적절할수가\n있습니다. 점 Pil 검 ot 하 의 십 규 시 정 오 을 ) Rise the value.\n(참조: control unit 차압계의연결\n매뉴얼의“Time 상태를\nbetween backflushes 확인하십시오\nphases”)\n설계시예상치보다\n훨훨씬씬많많은은유유입입유유량량\n여전히문제가발생이되면제품공급원에\n확인해주십시오.\n구성품리스트는매뉴얼에서“Components and Spare parts” 부분을참고해주십시오.",
+      "header": "NO YES",
+      "section_type": "일반",
+      "equipment": [
+        "펌프"
+      ],
+      "company_id": "22",
+      "company_name": "시료수, 약품2, 침출수, 화격자",
+      "source_file": "5-4 AZUD AA모델 메뉴얼 한글판",
+      "source_path": "D:\\기계도면\\기계도면\\22. 시료수, 약품2, 침출수, 화격자 (조선내화E)\\시료수분석설비 외 준공도서\\01. [제주-기계] 승인서류 (19.11.) AS BUILT\\16. 운전 및 유지관리 지침서\\16-4. 폐기물침출수설비\\도면 및 Manual\\5-4 AZUD AA모델 메뉴얼 한글판.pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "55d91d69ed46148c",
+      "char_count": 737
+    },
+    {
+      "chunk_idx": 51,
+      "text": "여전히문제가발생이되면제품공급원에\n확인해주십시오.\n구성품리스트는매뉴얼에서“Components and Spare parts” 부분을참고해주십시오. Water Filtration Solutions\nDrainagge manifold로 물이배출\nControl 제어판의상태를\n확인하십시오.\nCONTROL UNIT 에서 CONTROL UNIT 에서\n역역세세공공정정 정정상상여여과과공공정정\n(역세공정이종료될때까지\n기다립니다.)\n수압밸브chamber로공급되는\nDrainage manifold에물이여전히 각각의command microtube를점검\n있을경우\n수압밸브chamber로 수압밸브chamber로\n공급되는microtube를 공급되는microtube를\n통해서물이흐를경우 통해서물이흐르지않을\n경경우우\n해당solenoid valve를점검 해당수압valve를점검\n여전히문제가발생이되면제품\n공급원에확인해주십시오.\n구성품리스트는매뉴얼에서“Components and Spare parts” 부분을참고해주십시오. Water Filtration Solutions\n99.. WWaarrrraannttyy..",
+      "header": "NO YES",
+      "section_type": "점검",
+      "equipment": [
+        "밸브"
+      ],
+      "company_id": "22",
+      "company_name": "시료수, 약품2, 침출수, 화격자",
+      "source_file": "5-4 AZUD AA모델 메뉴얼 한글판",
+      "source_path": "D:\\기계도면\\기계도면\\22. 시료수, 약품2, 침출수, 화격자 (조선내화E)\\시료수분석설비 외 준공도서\\01. [제주-기계] 승인서류 (19.11.) AS BUILT\\16. 운전 및 유지관리 지침서\\16-4. 폐기물침출수설비\\도면 및 Manual\\5-4 AZUD AA모델 메뉴얼 한글판.pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "69858a6e795ccc82",
+      "char_count": 546
+    },
+    {
+      "chunk_idx": 52,
+      "text": "and Spare parts” 부분을참고해주십시오. Water Filtration Solutions\n99.. WWaarrrraannttyy.. 1. AZUD社는 공식적으로 부품 결함에 대한 보상 또는 제품의 자체 결함에 대해서는 수리가\n가능합니다. 단, 제품 구매일로부터 최대 1년 내에 제품 결함에 대해서는 제조사에 통보를 하여야\n합니다. 만약 기간이 경과하였을 경우 보상 또는 claim을 할 수 없습니다. 물류비, 제품의 분해,\n조립에사용된어떠한비용도보증할수없습니다",
+      "header": "1. AZUD社는 공식적으로 부품 결함에 대한 보상 또는 제품의 자체 결함에 대해서는 수리가",
+      "section_type": "일반",
+      "equipment": [
+        "화격자"
+      ],
+      "company_id": "22",
+      "company_name": "시료수, 약품2, 침출수, 화격자",
+      "source_file": "5-4 AZUD AA모델 메뉴얼 한글판",
+      "source_path": "D:\\기계도면\\기계도면\\22. 시료수, 약품2, 침출수, 화격자 (조선내화E)\\시료수분석설비 외 준공도서\\01. [제주-기계] 승인서류 (19.11.) AS BUILT\\16. 운전 및 유지관리 지침서\\16-4. 폐기물침출수설비\\도면 및 Manual\\5-4 AZUD AA모델 메뉴얼 한글판.pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "7546f17c5f103943",
+      "char_count": 263
+    },
+    {
+      "chunk_idx": 53,
+      "text": "여야\n합니다. 만약 기간이 경과하였을 경우 보상 또는 claim을 할 수 없습니다. 물류비, 제품의 분해,\n조립에사용된어떠한비용도보증할수없습니다 2. 유효기간 내에 서면으로 통보된 claim과 결함 발견 후 30일내 소인된 claim인 경우에는 유효한\n것것으로합합니니다다.",
+      "header": "2. 유효기간 내에 서면으로 통보된 claim과 결함 발견 후 30일내 소인된 claim인 경우에는 유효한",
+      "section_type": "일반",
+      "equipment": [
+        "화격자"
+      ],
+      "company_id": "22",
+      "company_name": "시료수, 약품2, 침출수, 화격자",
+      "source_file": "5-4 AZUD AA모델 메뉴얼 한글판",
+      "source_path": "D:\\기계도면\\기계도면\\22. 시료수, 약품2, 침출수, 화격자 (조선내화E)\\시료수분석설비 외 준공도서\\01. [제주-기계] 승인서류 (19.11.) AS BUILT\\16. 운전 및 유지관리 지침서\\16-4. 폐기물침출수설비\\도면 및 Manual\\5-4 AZUD AA모델 메뉴얼 한글판.pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "316bafb81713adc0",
+      "char_count": 152
+    },
+    {
+      "chunk_idx": 54,
+      "text": "3. 결점이 제품선정의 오류와 재질선정의 오류에 기인될 경우, 사용자 매뉴얼에 위반된 운전 또는\n조작미숙일경우보증되지않습니다.일반적으로정상운전을무시한어떠한변칙 운전일경우도\n보증이되지않습니다.",
+      "header": "3. 결점이 제품선정의 오류와 재질선정의 오류에 기인될 경우, 사용자 매뉴얼에 위반된 운전 또는",
+      "section_type": "운전",
+      "equipment": [
+        "화격자"
+      ],
+      "company_id": "22",
+      "company_name": "시료수, 약품2, 침출수, 화격자",
+      "source_file": "5-4 AZUD AA모델 메뉴얼 한글판",
+      "source_path": "D:\\기계도면\\기계도면\\22. 시료수, 약품2, 침출수, 화격자 (조선내화E)\\시료수분석설비 외 준공도서\\01. [제주-기계] 승인서류 (19.11.) AS BUILT\\16. 운전 및 유지관리 지침서\\16-4. 폐기물침출수설비\\도면 및 Manual\\5-4 AZUD AA모델 메뉴얼 한글판.pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "8c8b740c94a75a05",
+      "char_count": 106
+    },
+    {
+      "chunk_idx": 55,
+      "text": "기인될 경우, 사용자 매뉴얼에 위반된 운전 또는\n조작미숙일경우보증되지않습니다.일반적으로정상운전을무시한어떠한변칙 운전일경우도\n보증이되지않습니다. 44. 최최적적의의 결결과과를를 얻얻기기 위위해해 적적절절한한 조조건건 및및 특특징징을을 고고려려 하하지지 않않을을 시시, 장장소소, 설설비비, 주주변변 환환경경이이나나\n목적에의해제품이작동될때발생된손상은보증되지않습니다.",
+      "header": "44. 최최적적의의 결결과과를를 얻얻기기 위위해해 적적절절한한 조조건건 및및 특특징징을을 고고려려 하하지지 않않을을 시시, 장장소소, 설설비비, 주주변변 환환경경이이나나",
+      "section_type": "운전",
+      "equipment": [
+        "화격자"
+      ],
+      "company_id": "22",
+      "company_name": "시료수, 약품2, 침출수, 화격자",
+      "source_file": "5-4 AZUD AA모델 메뉴얼 한글판",
+      "source_path": "D:\\기계도면\\기계도면\\22. 시료수, 약품2, 침출수, 화격자 (조선내화E)\\시료수분석설비 외 준공도서\\01. [제주-기계] 승인서류 (19.11.) AS BUILT\\16. 운전 및 유지관리 지침서\\16-4. 폐기물침출수설비\\도면 및 Manual\\5-4 AZUD AA모델 메뉴얼 한글판.pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "7273fb3944bba0a8",
+      "char_count": 202
+    },
+    {
+      "chunk_idx": 56,
+      "text": "특특징징을을 고고려려 하하지지 않않을을 시시, 장장소소, 설설비비, 주주변변 환환경경이이나나\n목적에의해제품이작동될때발생된손상은보증되지않습니다. 6. AZUD社에서 생산된 제품과 재질에 대해서만 보증되며, AZUD社로부터 구매된 제품으로 한정\n한다.AZUD社대리점을제외한일반구매고객일경우에는보증되지않습니다.",
+      "header": "6. AZUD社에서 생산된 제품과 재질에 대해서만 보증되며, AZUD社로부터 구매된 제품으로 한정",
+      "section_type": "일반",
+      "equipment": [
+        "화격자"
+      ],
+      "company_id": "22",
+      "company_name": "시료수, 약품2, 침출수, 화격자",
+      "source_file": "5-4 AZUD AA모델 메뉴얼 한글판",
+      "source_path": "D:\\기계도면\\기계도면\\22. 시료수, 약품2, 침출수, 화격자 (조선내화E)\\시료수분석설비 외 준공도서\\01. [제주-기계] 승인서류 (19.11.) AS BUILT\\16. 운전 및 유지관리 지침서\\16-4. 폐기물침출수설비\\도면 및 Manual\\5-4 AZUD AA모델 메뉴얼 한글판.pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "597894d65ba611ce",
+      "char_count": 170
+    },
+    {
+      "chunk_idx": 57,
+      "text": "생산된 제품과 재질에 대해서만 보증되며, AZUD社로부터 구매된 제품으로 한정\n한다.AZUD社대리점을제외한일반구매고객일경우에는보증되지않습니다. 7. 특별히 이런 경우에도 보증 사항에서 제외됩니다. 우연히 또는 불가항력적으로 판매된 자재로\n인해 피해를 당한 경우, 특별한 제한이 없고, 확실하게 곤충, 설치류에 의한 피해, 권장 압력보다\n높은 압력에서 사용한 경우로 인한 피해, 부적당한 전기 사양으로 인한 피해, 품질관리상\n권장사항과다른 조건에서의 운전중으로 인한 피해, 전처리의부족으로인해 제품이 파손된 경우,\nwater hammer의 보호장치가 없어서 제품이 파손된 경우, 수압 또는 전기로 인한 사건인 경우에\n보증에서제외됩니다.",
+      "header": "7. 특별히 이런 경우에도 보증 사항에서 제외됩니다. 우연히 또는 불가항력적으로 판매된 자재로",
+      "section_type": "운전",
+      "equipment": [
+        "화격자"
+      ],
+      "company_id": "22",
+      "company_name": "시료수, 약품2, 침출수, 화격자",
+      "source_file": "5-4 AZUD AA모델 메뉴얼 한글판",
+      "source_path": "D:\\기계도면\\기계도면\\22. 시료수, 약품2, 침출수, 화격자 (조선내화E)\\시료수분석설비 외 준공도서\\01. [제주-기계] 승인서류 (19.11.) AS BUILT\\16. 운전 및 유지관리 지침서\\16-4. 폐기물침출수설비\\도면 및 Manual\\5-4 AZUD AA모델 메뉴얼 한글판.pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "92f33983c3f63c8c",
+      "char_count": 354
+    },
+    {
+      "chunk_idx": 58,
+      "text": "제품이 파손된 경우,\nwater hammer의 보호장치가 없어서 제품이 파손된 경우, 수압 또는 전기로 인한 사건인 경우에\n보증에서제외됩니다. 8. AZUD社의 manual에 따르지 않고 수정, 설치 또는 사용된 경우, 비전문가에 의해 수정되거나\n수리된자재에대해서는보증되지않습니다.",
+      "header": "8. AZUD社의 manual에 따르지 않고 수정, 설치 또는 사용된 경우, 비전문가에 의해 수정되거나",
+      "section_type": "일반",
+      "equipment": [
+        "화격자"
+      ],
+      "company_id": "22",
+      "company_name": "시료수, 약품2, 침출수, 화격자",
+      "source_file": "5-4 AZUD AA모델 메뉴얼 한글판",
+      "source_path": "D:\\기계도면\\기계도면\\22. 시료수, 약품2, 침출수, 화격자 (조선내화E)\\시료수분석설비 외 준공도서\\01. [제주-기계] 승인서류 (19.11.) AS BUILT\\16. 운전 및 유지관리 지침서\\16-4. 폐기물침출수설비\\도면 및 Manual\\5-4 AZUD AA모델 메뉴얼 한글판.pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "28aaeec1101cc1bf",
+      "char_count": 157
+    },
+    {
+      "chunk_idx": 59,
+      "text": "9. AZUD社는적당하다고판단되는범위에서구매자에기인된제품결함을어떤경우에도점검할수\n있으며, 구매자는 AZUD社에서 권한이 주어진 사람이 일을 진행 하는데 방해를 하여서는\n안됩니다.\n10.AZUD社는기계의오작동또는사용하지않은기간동안,직간접적,부수적,결과적인손해에대한\n법적책임이없습니다.AZUD社는사용자의부주의로인한피해손실,재산손실에대해서는법적\n책임이없습니다.\n1111.어어떠떠한한 일일반반인인이이나나 기기관관이이라라도도 현현재재 안안내내된된 보보증증 사사항항을을 수수정정해해서서 소소개개할할 수수 없없습습니니다다. 이이\n보증사항에소개된명확한도덕적의무사항을제외하고는어떠한부수적인피해에대해서도법적\n책임이없습니다.\n\nWater Filtration Solutions\n장비또는spare part에대한질문요청이있을경우아래공란을작성해주십시오.\nSERIAL NUMBER _________________________\nMODEL___________________________________\nMANUFACTURING YEAR_________________________\nRequest your spares to:\nSSIISSTTEEMMAA AAZZUUDD,, SS..AA..\nPolígono Industrial Oeste • Avda. de las\nAméricas P. 6/6\n30820 ALCANTARILLA – MURCIA- SPAIN\nTel. + 34 968 80 84 02\nFax: +34 968 80 83 02\nE-mail: azud@azud.com\nhttp:// www.azud.com",
+      "header": "9. AZUD社는적당하다고판단되는범위에서구매자에기인된제품결함을어떤경우에도점검할수",
+      "section_type": "점검",
+      "equipment": [
+        "화격자"
+      ],
+      "company_id": "22",
+      "company_name": "시료수, 약품2, 침출수, 화격자",
+      "source_file": "5-4 AZUD AA모델 메뉴얼 한글판",
+      "source_path": "D:\\기계도면\\기계도면\\22. 시료수, 약품2, 침출수, 화격자 (조선내화E)\\시료수분석설비 외 준공도서\\01. [제주-기계] 승인서류 (19.11.) AS BUILT\\16. 운전 및 유지관리 지침서\\16-4. 폐기물침출수설비\\도면 및 Manual\\5-4 AZUD AA모델 메뉴얼 한글판.pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "3b736eb42616a979",
+      "char_count": 770
+    }
+  ]
+}

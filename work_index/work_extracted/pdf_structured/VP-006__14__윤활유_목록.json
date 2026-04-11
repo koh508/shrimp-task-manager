@@ -1,0 +1,68 @@
+{
+  "meta": {
+    "tag": "VP-006",
+    "file": "14. 윤활유 목록.pdf",
+    "company_id": "30",
+    "source_path": "D:\\기계도면\\기계도면\\30. 저압증기복수기 (DTS)\\감리 승인용 7차 문서 (201908) As built\\14. 윤활유 목록\\14. 윤활유 목록.pdf",
+    "extracted_at": "2026-03-27T22:31:27"
+  },
+  "tag": "VP-006",
+  "records": [
+    {
+      "tag": "VP-006",
+      "section": "LUBRICATION",
+      "position": null,
+      "parameter": "grease_type",
+      "value": "List",
+      "unit": "",
+      "match_type": "exact",
+      "source": {
+        "file": "14. 윤활유 목록.pdf",
+        "company": "30",
+        "page": 2
+      }
+    },
+    {
+      "tag": "VP-006",
+      "section": "LUBRICATION",
+      "position": null,
+      "parameter": "grease_type",
+      "value": "LS2",
+      "unit": "",
+      "match_type": "exact",
+      "source": {
+        "file": "14. 윤활유 목록.pdf",
+        "company": "30",
+        "page": 3
+      }
+    },
+    {
+      "tag": "VP-006",
+      "section": "BEARING",
+      "position": "DE",
+      "parameter": "bearing_no",
+      "value": "SIDE",
+      "unit": "",
+      "match_type": "pattern",
+      "source": {
+        "file": "14. 윤활유 목록.pdf",
+        "company": "30",
+        "page": 4
+      }
+    },
+    {
+      "tag": "VP-006",
+      "section": "BEARING",
+      "position": "NDE",
+      "parameter": "bearing_no",
+      "value": "SIDE",
+      "unit": "",
+      "match_type": "pattern",
+      "source": {
+        "file": "14. 윤활유 목록.pdf",
+        "company": "30",
+        "page": 4
+      }
+    }
+  ]
+}

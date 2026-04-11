@@ -1,0 +1,561 @@
+{
+  "meta": {
+    "source_path": "D:\\기계도면\\기계도면\\21. 순수제조설비 (에스텍)\\JJ-M-VP-012-01_순수제조설비_기자재준공도서_R0(AS BUILT)\\원본\\016 운전 및 유지관리 지침서\\원본\\03 여과기 CONTROL VALVE\\03-2 F21 Manual.pdf",
+    "company_id": "21",
+    "company_name": "순수제조설비",
+    "equipment": "순수제조설비",
+    "doc_type": "MANUAL",
+    "rev": "0",
+    "is_latest": true,
+    "extracted_at": "2026-03-27T20:21:17",
+    "chunk_count": 34,
+    "vision_pages": 0
+  },
+  "chunks": [
+    {
+      "chunk_idx": 0,
+      "text": "Table of Contents\nGeneral Installation Check List ................................................................01\nValve Start-up Procedure ........................................................................03\nDimensional Drawings ............................................................................07\n......................................................................................12\nTimerAssembly\nControl DriveAssembly...........................................................................18\nValve BodyAssembly..............................................................................28\nBrine ValveAssembly..............................................................................38\nMeterAssembly......................................................................................41\nWiring Diagram ....................................................................................45\nTrouble Shooting ....................................................................................49",
+      "header": "",
+      "section_type": "시동",
+      "equipment": [
+        "밸브"
+      ],
+      "company_id": "21",
+      "company_name": "순수제조설비",
+      "source_file": "03-2 F21 Manual",
+      "source_path": "D:\\기계도면\\기계도면\\21. 순수제조설비 (에스텍)\\JJ-M-VP-012-01_순수제조설비_기자재준공도서_R0(AS BUILT)\\원본\\016 운전 및 유지관리 지침서\\원본\\03 여과기 CONTROL VALVE\\03-2 F21 Manual.pdf",
+      "rev": "0",
+      "chunk_hash": "443b16b2d5dc99c4",
+      "char_count": 1025
+    },
+    {
+      "chunk_idx": 1,
+      "text": "..............................................................................49 General Installation Check List",
+      "header": "",
+      "section_type": "점검",
+      "equipment": [
+        "순수제조설비"
+      ],
+      "company_id": "21",
+      "company_name": "순수제조설비",
+      "source_file": "03-2 F21 Manual",
+      "source_path": "D:\\기계도면\\기계도면\\21. 순수제조설비 (에스텍)\\JJ-M-VP-012-01_순수제조설비_기자재준공도서_R0(AS BUILT)\\원본\\016 운전 및 유지관리 지침서\\원본\\03 여과기 CONTROL VALVE\\03-2 F21 Manual.pdf",
+      "rev": "0",
+      "chunk_hash": "c9ea7ddb1bd6d35f",
+      "char_count": 112
+    },
+    {
+      "chunk_idx": 2,
+      "text": "..............................................49 General Installation Check List 1. The Surroundings Of Installation\nWaterPressure Aminiumof0.2Mpaofwaterpressureisrequiredforvalvetooperateeffectively.\nElectricalFacilities Acontinuouscurrentsupplyisrequired,checkvoltagecompatibility.\nExistingPlumbing Conditionofexistingplumbingshouldbefreefromanydepositsuchaslimeand\nironbuildup.Pipingthatiscloggedheavilywiththesedepositshouldbecleanedin\ntimeandconnectaccordingtoplumbingcodes.\nLocationOfInstallation Thesoftenershouldbelocatedclosetoadrainpipe\nBy-passValves Alwaysprovidefortheinstallationofaby-passvalve",
+      "header": "1. The Surroundings Of Installation",
+      "section_type": "점검",
+      "equipment": [
+        "순수제조설비"
+      ],
+      "company_id": "21",
+      "company_name": "순수제조설비",
+      "source_file": "03-2 F21 Manual",
+      "source_path": "D:\\기계도면\\기계도면\\21. 순수제조설비 (에스텍)\\JJ-M-VP-012-01_순수제조설비_기자재준공도서_R0(AS BUILT)\\원본\\016 운전 및 유지관리 지침서\\원본\\03 여과기 CONTROL VALVE\\03-2 F21 Manual.pdf",
+      "rev": "0",
+      "chunk_hash": "c77dba13f685970f",
+      "char_count": 607
+    },
+    {
+      "chunk_idx": 3,
+      "text": "edclosetoadrainpipe\nBy-passValves Alwaysprovidefortheinstallationofaby-passvalve CAUTION\nWaterpressureisnottoexceed0.8Mpa\nWatertemperatureisnottoexceed38℃",
+      "header": "CAUTION",
+      "section_type": "일반",
+      "equipment": [
+        "순수제조설비"
+      ],
+      "company_id": "21",
+      "company_name": "순수제조설비",
+      "source_file": "03-2 F21 Manual",
+      "source_path": "D:\\기계도면\\기계도면\\21. 순수제조설비 (에스텍)\\JJ-M-VP-012-01_순수제조설비_기자재준공도서_R0(AS BUILT)\\원본\\016 운전 및 유지관리 지침서\\원본\\03 여과기 CONTROL VALVE\\03-2 F21 Manual.pdf",
+      "rev": "0",
+      "chunk_hash": "cf630fee9420d1d7",
+      "char_count": 154
+    },
+    {
+      "chunk_idx": 4,
+      "text": "WARNING\nTheunitcannotbesubjectedtofreezingconditions.",
+      "header": "WARNING",
+      "section_type": "일반",
+      "equipment": [
+        "순수제조설비"
+      ],
+      "company_id": "21",
+      "company_name": "순수제조설비",
+      "source_file": "03-2 F21 Manual",
+      "source_path": "D:\\기계도면\\기계도면\\21. 순수제조설비 (에스텍)\\JJ-M-VP-012-01_순수제조설비_기자재준공도서_R0(AS BUILT)\\원본\\016 운전 및 유지관리 지침서\\원본\\03 여과기 CONTROL VALVE\\03-2 F21 Manual.pdf",
+      "rev": "0",
+      "chunk_hash": "28834fab94178c2d",
+      "char_count": 53
+    },
+    {
+      "chunk_idx": 5,
+      "text": "2. Instruction Of Valve Installation And Resin Filling\n①Fitthedistrubutorfirmlytothebottomofthecentraltube,cutthetubefromthepoint\nthatis0.5mmlowerthanthetopofthetankandchamfer,theninsertitintothecentral\nofresintank,andsealthecentraltubewithtapeincaseoftheresinleakage.\n②Addsandtofillthespacearoundthecentraltubeunititis20mmabovethebottom\ndistributor.Thesandshouldbepavedbasedonthegradedparticlesizeinorderto\ndistributethewater.Noneedtofillthetankwithsandifthediameterofthetankisless\nthan500mm.\n③Fillthetankevenlywithsandtothestandardheightthenadd10%saltwateruntilit\noverflowstheresin.Letresinfullyexpands.thentakeoffthetapeonthecentraltube\nandkeepitalwaysinthemiddleoftank.\n④Toinstallthetopdistributoronthevalve,theninsertthecentraltubeintovalve\nthroughtopdistributor,andcarefullyturnsthevalveclockwiseuntilitscrewstightly\nonthetank.(Payattention:valveandtankmouth,topdistributorandvalve、central\ntube,buttomdistributorandcentraltubemustbesealed,incaseoftheresinleakage;\ncentraltubeandvalvemustbesealed,otherwisethewaterwillleak).",
+      "header": "2. Instruction Of Valve Installation And Resin Filling",
+      "section_type": "일반",
+      "equipment": [
+        "밸브"
+      ],
+      "company_id": "21",
+      "company_name": "순수제조설비",
+      "source_file": "03-2 F21 Manual",
+      "source_path": "D:\\기계도면\\기계도면\\21. 순수제조설비 (에스텍)\\JJ-M-VP-012-01_순수제조설비_기자재준공도서_R0(AS BUILT)\\원본\\016 운전 및 유지관리 지침서\\원본\\03 여과기 CONTROL VALVE\\03-2 F21 Manual.pdf",
+      "rev": "0",
+      "chunk_hash": "0b833ef217bca4ba",
+      "char_count": 1029
+    },
+    {
+      "chunk_idx": 6,
+      "text": "seoftheresinleakage;\ncentraltubeandvalvemustbesealed,otherwisethewaterwillleak). General Installation Check List",
+      "header": "2. Instruction Of Valve Installation And Resin Filling",
+      "section_type": "점검",
+      "equipment": [
+        "순수제조설비"
+      ],
+      "company_id": "21",
+      "company_name": "순수제조설비",
+      "source_file": "03-2 F21 Manual",
+      "source_path": "D:\\기계도면\\기계도면\\21. 순수제조설비 (에스텍)\\JJ-M-VP-012-01_순수제조설비_기자재준공도서_R0(AS BUILT)\\원본\\016 운전 및 유지관리 지침서\\원본\\03 여과기 CONTROL VALVE\\03-2 F21 Manual.pdf",
+      "rev": "0",
+      "chunk_hash": "31a8402034335478",
+      "char_count": 112
+    },
+    {
+      "chunk_idx": 7,
+      "text": "andvalvemustbesealed,otherwisethewaterwillleak). General Installation Check List 3. Pipe Connection\n①Toconnectthein-outletpipeaccordingtothevalve'sdimension(watersupplypipe\nshouldnotlessthaninletpipeforkeepingsufficientflow).\n②Themanualvalveshouldbeinstalledonthein-outletpipe,thebypassvalveshouldbe\ninstalledbetweenin-outletpipe,thesamplingvalveshouldbeinstalledbeforethe\noutletpipe,theYfilterisrecommendedtoinstalledontheinletpipe;incaseofthe\ndepositinthepipewouldclogthevalveandmakethesystemcan'tworkwell.\n③Thelengthofdrainpipeshouldnotexceed6m,trytoavoidbending.\n④Thelengthofthepipeforbrinewatershouldbelessthan2meters,keepthepipes\nsealedingoodcondition,otherwiseitmayinfluencetheregenerationeffect.",
+      "header": "3. Pipe Connection",
+      "section_type": "점검",
+      "equipment": [
+        "필터"
+      ],
+      "company_id": "21",
+      "company_name": "순수제조설비",
+      "source_file": "03-2 F21 Manual",
+      "source_path": "D:\\기계도면\\기계도면\\21. 순수제조설비 (에스텍)\\JJ-M-VP-012-01_순수제조설비_기자재준공도서_R0(AS BUILT)\\원본\\016 운전 및 유지관리 지침서\\원본\\03 여과기 CONTROL VALVE\\03-2 F21 Manual.pdf",
+      "rev": "0",
+      "chunk_hash": "c2f7d3e13a1380aa",
+      "char_count": 703
+    },
+    {
+      "chunk_idx": 8,
+      "text": "keepthepipes\nsealedingoodcondition,otherwiseitmayinfluencetheregenerationeffect. 4. System Adjustment\n①Washthedepositawayfromthepipe.Tosetthebypassvalveinbypassposition,wash\nthedepositawayfromthepipeuntilthewaterrunsclean.Thenclosetheinlet-outlet\nvalve,andsetthebypaassvalvetoserviceposition.\n②Tosetthevalveontheserviceposition,opentheinletvalve,torefillthewaterintothe\nresintankuntilthewaterstopflowing.Opentheoutletvalvetocleanuptheairand\ndepositoftheresintank.\n③Tosetthevalveonbackwashposition,andthewateroutflowfromdrainagefor3-4\nminutes.Keepdrainingoffthewateruntilthewaterisclean.\n④Tosetthevalveonthebrineposition,andsuckthewaterfrombrinetankuntilstop.\n⑤Tosetthevalveonrefillpostion,refillthesaltandwaterintothetankuntilexceedthe\naircheckvalve.Note:keepthesaltwaterfor6hours.\n⑥Tosetthevalveonservicepostion,checkifthebypassvalveisinservicepostionand\ntheoutwaterisqualified.",
+      "header": "4. System Adjustment",
+      "section_type": "청소",
+      "equipment": [
+        "밸브"
+      ],
+      "company_id": "21",
+      "company_name": "순수제조설비",
+      "source_file": "03-2 F21 Manual",
+      "source_path": "D:\\기계도면\\기계도면\\21. 순수제조설비 (에스텍)\\JJ-M-VP-012-01_순수제조설비_기자재준공도서_R0(AS BUILT)\\원본\\016 운전 및 유지관리 지침서\\원본\\03 여과기 CONTROL VALVE\\03-2 F21 Manual.pdf",
+      "rev": "0",
+      "chunk_hash": "6c70235f37831caa",
+      "char_count": 879
+    },
+    {
+      "chunk_idx": 9,
+      "text": "ervicepostion,checkifthebypassvalveisinservicepostionand\ntheoutwaterisqualified. Valve Start-up Procedure\nMechanicalvalvehas3type:timer,meterimmediately,meterdelayed.\nThecurrenttimeofdayshouldbesetbeforeoperatingthetimerormeterdelayedvalves,but no\nneedsformeterimmediatevalve.\nHowtosetthetimeofday:\n①Pressandholdthetimesetbuttontodisengagethe24hourgear.\n②Turnthe24hourgearuntiltheactualtimeofdayisatthetimeofdaypointer.\nNOTE:the24hourgearwouldstoprunningwhenpowerfails,itneedsto reset thetimeofday\nwhenthepowerswitchedon.\n24HourGear\nTimeIndication\nTimeSetButton",
+      "header": "4. System Adjustment",
+      "section_type": "시동",
+      "equipment": [
+        "밸브"
+      ],
+      "company_id": "21",
+      "company_name": "순수제조설비",
+      "source_file": "03-2 F21 Manual",
+      "source_path": "D:\\기계도면\\기계도면\\21. 순수제조설비 (에스텍)\\JJ-M-VP-012-01_순수제조설비_기자재준공도서_R0(AS BUILT)\\원본\\016 운전 및 유지관리 지침서\\원본\\03 여과기 CONTROL VALVE\\03-2 F21 Manual.pdf",
+      "rev": "0",
+      "chunk_hash": "99b63b5517860817",
+      "char_count": 561
+    },
+    {
+      "chunk_idx": 10,
+      "text": "set thetimeofday\nwhenthepowerswitchedon.\n24HourGear\nTimeIndication\nTimeSetButton 1. Model timer\nManual\nRegenerationKnob\n24HourGear Regeneration TimerPointer Screw\nTOSETTIMEOFDAY-\nPRESSWHITEBUTTONAND TOSETTIMEOFDAY-\nTURNLARGEDIALUNTIL PRESSWHITEBUTTONAND\nTIMEISATARROW. TURNLARGEDIALUNTIL\nTOMANUALLYSTART TIMEISATARROW.\nCYCLE-TURNKNOB TOMANUALLYSTART\nCLOCKWISE. CYCLE-TURNKNOB\nCLOCKWISE.\nGap\nRedpointer",
+      "header": "1. Model timer",
+      "section_type": "일반",
+      "equipment": [
+        "순수제조설비"
+      ],
+      "company_id": "21",
+      "company_name": "순수제조설비",
+      "source_file": "03-2 F21 Manual",
+      "source_path": "D:\\기계도면\\기계도면\\21. 순수제조설비 (에스텍)\\JJ-M-VP-012-01_순수제조설비_기자재준공도서_R0(AS BUILT)\\원본\\016 운전 및 유지관리 지침서\\원본\\03 여과기 CONTROL VALVE\\03-2 F21 Manual.pdf",
+      "rev": "0",
+      "chunk_hash": "843a78264d5a8db0",
+      "char_count": 401
+    },
+    {
+      "chunk_idx": 11,
+      "text": "CLE-TURNKNOB TOMANUALLYSTART\nCLOCKWISE. CYCLE-TURNKNOB\nCLOCKWISE.\nGap\nRedpointer YADFOEMIT\nYADFOEMIT\nTimeIndication\nTimeSetButton SkipperWheel\nMechanicalvalve wasdefautsettheregenerationtimeat2:00AMbeforeleavefactory,itmeansafter\nsettingtimeofday,theregenerationstartswhen2:00AMonthe24hourgearandtimeindicationarrow\ninsamepoint.",
+      "header": "YADFOEMIT\nYADFOEMIT",
+      "section_type": "일반",
+      "equipment": [
+        "순수제조설비"
+      ],
+      "company_id": "21",
+      "company_name": "순수제조설비",
+      "source_file": "03-2 F21 Manual",
+      "source_path": "D:\\기계도면\\기계도면\\21. 순수제조설비 (에스텍)\\JJ-M-VP-012-01_순수제조설비_기자재준공도서_R0(AS BUILT)\\원본\\016 운전 및 유지관리 지침서\\원본\\03 여과기 CONTROL VALVE\\03-2 F21 Manual.pdf",
+      "rev": "0",
+      "chunk_hash": "d38e55c0495cea7c",
+      "char_count": 328
+    },
+    {
+      "chunk_idx": 12,
+      "text": "heregenerationstartswhen2:00AMonthe24hourgearandtimeindicationarrow\ninsamepoint. Valve Start-up Procedure\n1.1.Howtoadjusttheregenerationtime\n①Disconnectthepowersource.\n②Locatethethreescrewsbehindthemanualregenerationknobbypushingtheredbuttoninandrotating\nthe24hourdialuntileachscrewappearinthecutoutportionofthemanualregenerationknob.\n③Looseneachscrewslightlytoreleasethepressureonthetimeplatefromthe24hourgear.\n④Locatethegenerationtimepointerontheinsideof24hourdialinthecutout.\n⑤Turnthetimeplatesothedesiredregenerationtimealignsnexttotheraisedarrow.\n⑥Pushtheredbuttoninandrotatethe24hoursdial.Tighteneachofthethreescrews.\n⑦Pushtheredbuttonandlocatethepointeronemoretimetoensurethedesiredregenerationtimeis\ncorrect.\n⑧Resetthetimeofdayandrestorepowertotheunit.\nNOTE:the24hourgearwouldstoprunningwhenpoweroff,itshouldbereset whenthepowerswitchedon.\n1.2.Howtosettheintervaldaysofregeneration\nTheskipperwheelindicates12daysonthetimermodel,everytabpresentsoneday.thetabatthered\npointeristoday.Pullorpushthetabtosettheregenerationdate.Forexample,firstlypushdownallthe\ntabsthenpullupthetabeveryotherone,thevalvewillregenerateeveryotherday. Forexample,pullall\ntheskipperwheelpiecesfirstly,thenpickupeveryotherone,thatmeanstheregenerationdateis\nregenerateonetimeeveryotherday.",
+      "header": "YADFOEMIT\nYADFOEMIT",
+      "section_type": "시동",
+      "equipment": [
+        "밸브"
+      ],
+      "company_id": "21",
+      "company_name": "순수제조설비",
+      "source_file": "03-2 F21 Manual",
+      "source_path": "D:\\기계도면\\기계도면\\21. 순수제조설비 (에스텍)\\JJ-M-VP-012-01_순수제조설비_기자재준공도서_R0(AS BUILT)\\원본\\016 운전 및 유지관리 지침서\\원본\\03 여과기 CONTROL VALVE\\03-2 F21 Manual.pdf",
+      "rev": "0",
+      "chunk_hash": "e426677b3cfd22b0",
+      "char_count": 1268
+    },
+    {
+      "chunk_idx": 13,
+      "text": "ckupeveryotherone,thatmeanstheregenerationdateis\nregenerateonetimeeveryotherday. 2. Model Meter\n24HourGear ManualRegenerationKnob\nTOSETTIMEOFDAY-",
+      "header": "2. Model Meter",
+      "section_type": "일반",
+      "equipment": [
+        "순수제조설비"
+      ],
+      "company_id": "21",
+      "company_name": "순수제조설비",
+      "source_file": "03-2 F21 Manual",
+      "source_path": "D:\\기계도면\\기계도면\\21. 순수제조설비 (에스텍)\\JJ-M-VP-012-01_순수제조설비_기자재준공도서_R0(AS BUILT)\\원본\\016 운전 및 유지관리 지침서\\원본\\03 여과기 CONTROL VALVE\\03-2 F21 Manual.pdf",
+      "rev": "0",
+      "chunk_hash": "dc1d899e026c110f",
+      "char_count": 145
+    },
+    {
+      "chunk_idx": 14,
+      "text": "TURNLARGEDIALUNTIL\nTIMEISATARROW.",
+      "header": "TURNLARGEDIALUNTIL",
+      "section_type": "일반",
+      "equipment": [
+        "순수제조설비"
+      ],
+      "company_id": "21",
+      "company_name": "순수제조설비",
+      "source_file": "03-2 F21 Manual",
+      "source_path": "D:\\기계도면\\기계도면\\21. 순수제조설비 (에스텍)\\JJ-M-VP-012-01_순수제조설비_기자재준공도서_R0(AS BUILT)\\원본\\016 운전 및 유지관리 지침서\\원본\\03 여과기 CONTROL VALVE\\03-2 F21 Manual.pdf",
+      "rev": "0",
+      "chunk_hash": "7c4665a4ea567d52",
+      "char_count": 33
+    },
+    {
+      "chunk_idx": 15,
+      "text": "TOMANUALLYSTART\nCYCLE-TURNKNOB\nCLOCKWISE. Capacity\nCCKCC A AA A AP PP P PA AA A A G C CC C ZI A I II I TT TD T L AA .E A .TY D (g P a r l o lo g n r s am rem wh ai e n e i l ngorM remaining)",
+      "header": "TOMANUALLYSTART",
+      "section_type": "일반",
+      "equipment": [
+        "순수제조설비"
+      ],
+      "company_id": "21",
+      "company_name": "순수제조설비",
+      "source_file": "03-2 F21 Manual",
+      "source_path": "D:\\기계도면\\기계도면\\21. 순수제조설비 (에스텍)\\JJ-M-VP-012-01_순수제조설비_기자재준공도서_R0(AS BUILT)\\원본\\016 운전 및 유지관리 지침서\\원본\\03 여과기 CONTROL VALVE\\03-2 F21 Manual.pdf",
+      "rev": "0",
+      "chunk_hash": "ac5c46bea08d0ec8",
+      "char_count": 190
+    },
+    {
+      "chunk_idx": 16,
+      "text": "L AA .E A .TY D (g P a r l o lo g n r s am rem wh ai e n e i l ngorM remaining) YADFOEMIT\nTimeSetButton\nWhiteDot GallonLabel(orM label)\nNOTE:Immediateregenerationtimesdonothave24hoursgear,notimeofdaycanbeset.Andtheyhave\nsamewaytosettheregeneration.\n2.1.Howtosettheregenerationcycleprogram\n①Pulloutthecablefromthemeter.\n②Setprogramwheelbyliftingthemiddlesmalldialandrotatingituntilthedesiredcapacityonthe\nlabelalignedwiththewhitedot.\n③Releasethemiddlesmalldialandcheckforfirmengagementatsetting.\n④Rotatethemanualregenerationknobandlettheprogramwheelreturntotheposition.\n⑤Re-insertthemetercableback.\n\nValve Start-up Procedure",
+      "header": "YADFOEMIT",
+      "section_type": "시동",
+      "equipment": [
+        "밸브"
+      ],
+      "company_id": "21",
+      "company_name": "순수제조설비",
+      "source_file": "03-2 F21 Manual",
+      "source_path": "D:\\기계도면\\기계도면\\21. 순수제조설비 (에스텍)\\JJ-M-VP-012-01_순수제조설비_기자재준공도서_R0(AS BUILT)\\원본\\016 운전 및 유지관리 지침서\\원본\\03 여과기 CONTROL VALVE\\03-2 F21 Manual.pdf",
+      "rev": "0",
+      "chunk_hash": "0caa992a7e73c4f4",
+      "char_count": 623
+    },
+    {
+      "chunk_idx": 17,
+      "text": "wheelreturntotheposition.\n⑤Re-insertthemetercableback.\n\nValve Start-up Procedure 3. How to manual regenerate\nTurnthemanualregenerationknobclockwiseuntilheartheclatter.Thissightmovementwillswitchon\nthemicroswitchattachedandstartstheregeneration.Programwheelwouldspendabout3hoursfor\nrotateacycle.it'salsoavailabletoclockwiserotatemanualregenerationknobuntiltothenextdesired\nregenerationsteps,butbeforenextstep,pleasewaitthemotorrunningtocorrespondingregeneration\nstepandstop.\nNOTE:Don'trotatethemanualregenerationknobbeforethemotorstop.Iftheprogramwheeland\npistononthevalverunsindifferentposition,pleasecutthepowerandcheckthevalvepositionfirst,\nthenrotatethemanualregenerationknobtocorrespondingposition,thenapplythepoweragain.",
+      "header": "3. How to manual regenerate",
+      "section_type": "시동",
+      "equipment": [
+        "밸브"
+      ],
+      "company_id": "21",
+      "company_name": "순수제조설비",
+      "source_file": "03-2 F21 Manual",
+      "source_path": "D:\\기계도면\\기계도면\\21. 순수제조설비 (에스텍)\\JJ-M-VP-012-01_순수제조설비_기자재준공도서_R0(AS BUILT)\\원본\\016 운전 및 유지관리 지침서\\원본\\03 여과기 CONTROL VALVE\\03-2 F21 Manual.pdf",
+      "rev": "0",
+      "chunk_hash": "035c9a8f9988d820",
+      "char_count": 725
+    },
+    {
+      "chunk_idx": 18,
+      "text": "enrotatethemanualregenerationknobtocorrespondingposition,thenapplythepoweragain. 4. How to set the regeneration cycle program\nPinStorage\nBrine&RinseSection\nProgramWheel\n(2Min.PerHole)\nRepidRinseSection\n(2Min.PerPin)\nBackWash\nBrineTank\n(2Min.PerPin)\n(2Min.PerHole)\nthebackoftimer\n①Theregenerationcycleprogramonyourwaterconditionerhasbeenfactorypreset,however,\nportionsofthecycleorprogrammaybelengthenedorshortenedintimetosuitlocalconditions.\n②Toexposecycleprogramwheel,grasptimerinupperleft-handcornerandpull,releasingsnap\nretainerandswingingtimertotheright.\nTochangetheregenerationcycleprogramtheprogramwheelmustberemoved.Graspprogram\nwheelandsqueezeprotrudinglugstowardscenter,liftprogramwheelofftimer.(Switcharmsmay\nrequiremovementtofacilitateremoval.)\nReturntimertoclosedpositionsengagingsnapretainerinbackplate.Makecertainallelectrical\nwireslocateabovesnapretainerpost.",
+      "header": "4. How to set the regeneration cycle program",
+      "section_type": "청소",
+      "equipment": [
+        "순수제조설비"
+      ],
+      "company_id": "21",
+      "company_name": "순수제조설비",
+      "source_file": "03-2 F21 Manual",
+      "source_path": "D:\\기계도면\\기계도면\\21. 순수제조설비 (에스텍)\\JJ-M-VP-012-01_순수제조설비_기자재준공도서_R0(AS BUILT)\\원본\\016 운전 및 유지관리 지침서\\원본\\03 여과기 CONTROL VALVE\\03-2 F21 Manual.pdf",
+      "rev": "0",
+      "chunk_hash": "4f2ed79355b53641",
+      "char_count": 873
+    },
+    {
+      "chunk_idx": 19,
+      "text": "apretainerinbackplate.Makecertainallelectrical\nwireslocateabovesnapretainerpost. Valve Start-up Procedure\nHowToChangeTheLengthOfTheBackwashTime:\nTheprogramwheelasshowninthedrawingisintheserviceposition.Asyoulookatthenumbered\nsideoftheprogramwheel,thegroupofpinsstartingatzerodeterminesthelengthoftimeyour\nunitwillbackwash.\nFOREXAMPLE:Iftherearesixpinsinthissection,thetimeofbackwashtimewillbe12min.(2min.\nPerpin).Tochangethelengthofbackwashtime,addorremovepinsasrequired.Thenumberofpins\ntimestwoequalsthebackwashtimeinminutes.\nHowToChangeTheLengthOfBrineAndRinseTime:\nThegroupofholesbetweenthelastpininthebackwashsectionandthesecondgroupofpins\ndeterminesthelengthoftimethatyourunitwillbrineandrinse(2min.Perhole.)\nTochangethelengthofbrineandrinsetime,movetherapidrinsegroupofpinstogivemoreof\nfewerholesinthebrineandrinsesection.Numberofholestimetwoequalsbrineandrinsetimein\ntheminutes.\nHowToChangeTheLengthOfRapidRinse:\nThesecondgroupofpinsontheprogramwheeldeterminesthelengthoftimethatyourwater\nconditionerwillrapidrinse.(2min.Perpin.)\nTochangethelengthofrapidtime,addorremovepinsatthehighernumberedendofthissection\nasrequired.Thenumberofpinstimestwoequalstherapidrinsetimeinminutes.\nHowToChangeTheLengthOfBrineTankRefillTime:\nThesecondgroup ofholesintheprogramwheeldeterminesthelengthoftimethatyourwater\nconditionerwillrefillthebrinetank.(2min.Perhole.)\nTochangethelengthofrefilltime,movethetwopinsattheendofthesecondgroupofholesas\nrequired.\nTheregenerationcycleiscompletewhentheoutermicro-switchistrippedbythetwopinsetatend\nofthebrinetankrefillsection.Theprogramwheel,however,willcontinuetorotateuntiltheinner\nmicro-switchdropsintothenotchontheprogramwheel.",
+      "header": "4. How to set the regeneration cycle program",
+      "section_type": "시동",
+      "equipment": [
+        "밸브"
+      ],
+      "company_id": "21",
+      "company_name": "순수제조설비",
+      "source_file": "03-2 F21 Manual",
+      "source_path": "D:\\기계도면\\기계도면\\21. 순수제조설비 (에스텍)\\JJ-M-VP-012-01_순수제조설비_기자재준공도서_R0(AS BUILT)\\원본\\016 운전 및 유지관리 지침서\\원본\\03 여과기 CONTROL VALVE\\03-2 F21 Manual.pdf",
+      "rev": "0",
+      "chunk_hash": "81e7e5e4855561a5",
+      "char_count": 1660
+    },
+    {
+      "chunk_idx": 20,
+      "text": "illcontinuetorotateuntiltheinner\nmicro-switchdropsintothenotchontheprogramwheel. Dimensional Drawing\nF21\nTheunitofthenumberinbracketsisinch,restismillimeter.",
+      "header": "4. How to set the regeneration cycle program",
+      "section_type": "일반",
+      "equipment": [
+        "순수제조설비"
+      ],
+      "company_id": "21",
+      "company_name": "순수제조설비",
+      "source_file": "03-2 F21 Manual",
+      "source_path": "D:\\기계도면\\기계도면\\21. 순수제조설비 (에스텍)\\JJ-M-VP-012-01_순수제조설비_기자재준공도서_R0(AS BUILT)\\원본\\016 운전 및 유지관리 지침서\\원본\\03 여과기 CONTROL VALVE\\03-2 F21 Manual.pdf",
+      "rev": "0",
+      "chunk_hash": "c73bb7ee07d0e40c",
+      "char_count": 157
+    },
+    {
+      "chunk_idx": 21,
+      "text": "el. Dimensional Drawing\nF21\nTheunitofthenumberinbracketsisinch,restismillimeter. Timer Assembly\nTime-Clock Timer\nItemNo. Quantity PartNo. Description\n1 ……………………… 1 ……………………… 13206 ……………………… Idershaft\n2 ……………………… 1 ……………………… 13253 ……………………… Spring\n3 ……………………… 1 ……………………… 13205 ……………………… Idergear\n4 ……………………… 1 ……………………… 13204 ……………………… Drivegear\n5 ……………………… 1 ……………………… 15650 ……………………… Motormountingplate\n6 ……………………… 1 ……………………… 07057 ……………………… Wire\n7 ……………………… 2 ……………………… 07011 ……………………… Terminal\n8 ……………………… 4 ……………………… 02106 ……………………… Screw\n9 ……………………… 3 ……………………… 02008 ……………………… Screw\n※10 ……………………… 1 …………………………………………………………… Motor\n11 ……………………… 2 ……………………… 02081 ……………………… Screw\n12 ……………………… 1 ……………………… 33104 ……………………… Switchassy\n13 ……………………… 1 ……………………… 06051 ……………………… Insulator\n14 ……………………… 1 ……………………… 06002 ……………………… Switch\n15 ……………………… 1 ……………………… 13214 ……………………… Stretchpin\n16 ……………………… 1 ……………………… 13211 ……………………… Cycleactuatorstaff\n※17 ……………………… 1 ……………………… B0006 ……………………… Timegearassy\n18 ……………………… 1 ……………………… 13215 ……………………… Knob\n19 ……………………… 1 ……………………… 13281 ……………………… Label\n20 ……………………… 1 ……………………… 02107 ……………………… Screw\n21 ……………………… 1 ……………………… 13210 ……………………… Pointer\n22 ……………………… 1 ……………………… 66109 ……………………… Skipperwheelassy\n23 ……………………… 3 ……………………… 09001 ……………………… Ball\n24 ……………………… 2 ……………………… 13254 ……………………… Spring\n25 ……………………… 1 ……………………… 13208 ……………………… Skipperwheelring\n26 ……………………… 1 ……………………… 13250 ……………………… Hingebracket\n27 ……………………… 2 ……………………… 02004 ……………………… Screw\n28 ……………………… 1 ……………………… 13212 ……………………… Timerhousing\n29 ……………………… 1 ……………………… B0003 ……………………… Programwheelassy\n30 ……………………… 1 ……………………… 13203 ……………………… Maindrivegear\n31 ……………………… 1 ……………………… 13252 ……………………… Spring\n※Formoreoptions",
+      "header": "4. How to set the regeneration cycle program",
+      "section_type": "일반",
+      "equipment": [
+        "순수제조설비"
+      ],
+      "company_id": "21",
+      "company_name": "순수제조설비",
+      "source_file": "03-2 F21 Manual",
+      "source_path": "D:\\기계도면\\기계도면\\21. 순수제조설비 (에스텍)\\JJ-M-VP-012-01_순수제조설비_기자재준공도서_R0(AS BUILT)\\원본\\016 운전 및 유지관리 지침서\\원본\\03 여과기 CONTROL VALVE\\03-2 F21 Manual.pdf",
+      "rev": "0",
+      "chunk_hash": "c7eaebbd0f53163a",
+      "char_count": 1732
+    },
+    {
+      "chunk_idx": 22,
+      "text": "…… Maindrivegear\n31 ……………………… 1 ……………………… 13252 ……………………… Spring\n※Formoreoptions Timer Assembly\nMeter Imm. Timer\nItemNo. Quantity PartNo. Description\n1 ……………………… 1 ……………………… 13206 ……………………… Idershaft\n2 ……………………… 1 ……………………… 13154 ……………………… Spring\n3 ……………………… 1 ……………………… 13205 ……………………… Idergear\n4 ……………………… 1 ……………………… 13204 ……………………… Drivegear\n5 ……………………… 1 ……………………… 15650 ……………………… Motormountingplate\n6 ……………………… 1 ……………………… 07057 ……………………… Wire\n7 ……………………… 2 ……………………… 07011 ……………………… Terminal\n8 ……………………… 5 ……………………… 02106 ……………………… Screw\n9 ……………………… 3 ……………………… 02008 ……………………… Screw\n※10 ……………………… 1 …………………………………… ……………………… Motor\n11 ……………………… 1 ……………………… 12271 ……………………… Softshaft\n12 ……………………… 1 ……………………… 13106 ……………………… Springretainer\n13 ……………………… 1 ……………………… 13151 ……………………… Spring\n14 ……………………… 1 ……………………… 13110 ……………………… Clutch\n15 ……………………… 1 ……………………… 13111 ……………………… Drivepinion\n16 ……………………… 1 ……………………… 06002 ……………………… Switch\n17 ……………………… 1 ……………………… 06051 ……………………… Insulator\n18 ……………………… 1 ……………………… 33104 ……………………… Switchassy\n19 ……………………… 2 ……………………… 02081 ……………………… Screw\n20 ……………………… 1 ……………………… 13214 ……………………… Stretchpin\n21 ……………………… 1 ……………………… 13212 ……………………… Timerhousing\n22 ……………………… 1 ……………………… 13102 ……………………… Cycleactuatorgear\n※23 ……………………… 1 ……………………… 13215 ……………………… Knob\n24 ……………………… 2 ……………………… 13281 ……………………… Lable\n25 ……………………… 1 ……………………… 13109 ……………………… Programwheelassy\n26 ……………………… 1 ……………………… B0004 ……………………… Flowgearassy\n27 ……………………… 1 ……………………… 13250 ……………………… Hingebracket\n28 ……………………… 2 ……………………… 02004 ……………………… Screw\n29 ……………………… 1 ……………………… B0003 ……………………… Programwheelassy\n30 ……………………… 1 ……………………… 13101 ……………………… Maindrivegear\n※Formoreoptions",
+      "header": "4. How to set the regeneration cycle program",
+      "section_type": "일반",
+      "equipment": [
+        "순수제조설비"
+      ],
+      "company_id": "21",
+      "company_name": "순수제조설비",
+      "source_file": "03-2 F21 Manual",
+      "source_path": "D:\\기계도면\\기계도면\\21. 순수제조설비 (에스텍)\\JJ-M-VP-012-01_순수제조설비_기자재준공도서_R0(AS BUILT)\\원본\\016 운전 및 유지관리 지침서\\원본\\03 여과기 CONTROL VALVE\\03-2 F21 Manual.pdf",
+      "rev": "0",
+      "chunk_hash": "d30359554dd7e6b3",
+      "char_count": 1692
+    },
+    {
+      "chunk_idx": 23,
+      "text": "wheelassy\n30 ……………………… 1 ……………………… 13101 ……………………… Maindrivegear\n※Formoreoptions Timer Assembly\nMeter Delay Timer\nItemNo. Quantity PartNo. Description\n1 ……………………… 1 ……………………… 13026 ……………………… Idershaft\n2 ……………………… 1 ……………………… 13253 ……………………… Spring\n3 ……………………… 1 ……………………… 13205 ……………………… Idergear\n4 ……………………… 1 ……………………… 13204 ……………………… Drivegear\n5 ……………………… 1 ……………………… 15650 ……………………… Motormountingplate\n6 ……………………… 1 ……………………… 07057 ……………………… Wire\n7 ……………………… 2 ……………………… 07011 ……………………… Terminal\n8 ……………………… 5 ……………………… 02106 ……………………… Screw\n9 ……………………… 3 ……………………… 02008 ……………………… Screw\n※10 ……………………… 1 …………………………………… ……………………… Motor\n11 ……………………… 1 ……………………… 12271 ……………………… Softshaft\n12 ……………………… 1 ……………………… 13106 ……………………… Springretainer\n13 ……………………… 1 ……………………… 13151 ……………………… Spring\n14 ……………………… 2 ……………………… 13110 ……………………… Clutch\n15 ……………………… 1 ……………………… 13111 ……………………… Drivepinion\n16 ……………………… 1 ……………………… 06002 ……………………… Switch\n17 ……………………… 1 ……………………… 06051 ……………………… Insulator\n18 ……………………… 1 ……………………… 33104 ……………………… Switchassy\n19 ……………………… 2 ……………………… 02081 ……………………… Screw\n20 ……………………… 1 ……………………… 13214 ……………………… Stretchpin\n21 ……………………… 1 ……………………… 13212 ……………………… Timerhousing\n22 ……………………… 1 ……………………… 13102 ……………………… Cycleactuatorgear\n※23 ……………………… 1 ……………………… B0006 ……………………… Timegearassy\n24 ……………………… 1 ……………………… 13215 ……………………… Knob\n25 ……………………… 2 ……………………… 13281 ……………………… Lable\n26 ……………………… 1 ……………………… 13109 ……………………… Programwheelassy\n※27 ……………………… 1 ……………………… B0004 ……………………… Flowgearassy\n28 ……………………… 1 ……………………… 13250 ……………………… Hingebracket\n29 ……………………… 2 ……………………… 02004 ……………………… Screw\n30 ……………………… 1 ……………………… B0003 ……………………… Programwheelassy\n31 ……………………… 1 ……………………… 13203 ……………………… Maindrivegear\n32 ……………………… 1 ……………………… 09001 ……………………… Ball\n33 ……………………… 1 ……………………… 13252 ……………………… Spring\n※Formoreoptions",
+      "header": "4. How to set the regeneration cycle program",
+      "section_type": "일반",
+      "equipment": [
+        "순수제조설비"
+      ],
+      "company_id": "21",
+      "company_name": "순수제조설비",
+      "source_file": "03-2 F21 Manual",
+      "source_path": "D:\\기계도면\\기계도면\\21. 순수제조설비 (에스텍)\\JJ-M-VP-012-01_순수제조설비_기자재준공도서_R0(AS BUILT)\\원본\\016 운전 및 유지관리 지침서\\원본\\03 여과기 CONTROL VALVE\\03-2 F21 Manual.pdf",
+      "rev": "0",
+      "chunk_hash": "bc07a05809649231",
+      "char_count": 1842
+    },
+    {
+      "chunk_idx": 24,
+      "text": "1 ……………………… Ball\n33 ……………………… 1 ……………………… 13252 ……………………… Spring\n※Formoreoptions Control Drive Assembly\nF15、F21、F31 upper\nItemNo. Quantity PartNo. Description\n※1 ……………………… 1 …………………………………………………………… Powercord\n2 ……………………… 1 ……………………… 07003 ……………………… Strainrelief\n3 ……………………… 1 ……………………… 13200 ……………………… Timer13200\n……………………… 1 ……………………… 13100 ……………………… Timer13100\n……………………… 1 ……………………… 13100E……………………… Timer13100E\n4 ……………………… 1 ……………………… 07012 ……………………… Strainrelief\n5 ……………………… 2 ……………………… 06051 ……………………… Insulator\n▲ ……………………… 1 ……………………… 06051 ……………………… Insulator\n6 ……………………… 2 ……………………… 06003 ……………………… Switch\n▲ ……………………… 1 ……………………… 06003 ……………………… Switch\n7 ……………………… 2 ……………………… 02081 ……………………… Screw\n8 ……………………… 1 ……………………… 10003 ……………………… Connectinglink\n9 ……………………… 1 ……………………… 10005 ……………………… Connectinglinkpin\n10 ……………………… 1 ……………………… 10030 ……………………… Drivecam\n11 ……………………… 2 ……………………… 00103 ……………………… Pin\n12 ……………………… 1 ……………………… 10004 ……………………… Pin\n13 ……………………… 8 ……………………… 02006 ……………………… Screw\n14 ……………………… 2 ……………………… 02056 ……………………… Screw\n15 ……………………… 1 ……………………… 10001 ……………………… Bracket\n16 ……………………… 1 ……………………… 19041 ……………………… Cover\n17 ……………………… 1 ……………………… 19042 ……………………… Platecover\n▲18 ……………………… 2 ……………………… 02054 ……………………… Screw\n19 ……………………… 1 ……………………… 10031 ……………………… Brinevalvecam\n20 ……………………… 1 ……………………… 10002 ……………………… Brinevalvebracket\n※21 ……………………… 1 …………………………………… ……………………… Motor\n▲22 ……………………… 1 ……………………… 33106 ……………………… Terminalassy\n▲23 ……………………… 2 ……………………… 02106 ……………………… Screw\n24 ……………………… 1 ……………………… 19001 ……………………… Backplate\n25 ……………………… 2 ……………………… 19043 ……………………… Plateplug(small)\n26 ……………………… 2 ……………………… 19044 ……………………… Plateplug(middle)\n27 ……………………… 4 ……………………… 02103 ……………………… Screw\n28 ……………………… 1 ……………………… 19045 ……………………… Plateplug(big)\n29 ……………………… 1 ……………………… 19048 ……………………… Screwcap\n※Formoreoptions\n▲OnlyfoF31",
+      "header": "4. How to set the regeneration cycle program",
+      "section_type": "일반",
+      "equipment": [
+        "순수제조설비"
+      ],
+      "company_id": "21",
+      "company_name": "순수제조설비",
+      "source_file": "03-2 F21 Manual",
+      "source_path": "D:\\기계도면\\기계도면\\21. 순수제조설비 (에스텍)\\JJ-M-VP-012-01_순수제조설비_기자재준공도서_R0(AS BUILT)\\원본\\016 운전 및 유지관리 지침서\\원본\\03 여과기 CONTROL VALVE\\03-2 F21 Manual.pdf",
+      "rev": "0",
+      "chunk_hash": "9cdca4e17c6cde51",
+      "char_count": 1858
+    },
+    {
+      "chunk_idx": 25,
+      "text": "ig)\n29 ……………………… 1 ……………………… 19048 ……………………… Screwcap\n※Formoreoptions\n▲OnlyfoF31 Valve Body Assembly\nF21\nItemNo. Quantity PartNo. Description\n1 ……………………… 1 ……………………… 19040 ……………………… Spacer\n2 ……………………… 1 ……………………… 28554-1 …………………… Pistonrod\n3 ……………………… 1 ……………………… 66121 ……………………… End-plugassembly\n4 ……………………… 1 ……………………… 28552-1 …………………… Piston\n5 ……………………… 6 ……………………… 28555 ……………………… Spacer\n6 ……………………… 6 ……………………… 28530 ……………………… Seal\n7 ……………………… 1 ……………………… 28550 ……………………… Valvebody\n※ 8 ……………………… 1 …………………………………………………………… DLFC\n9 ……………………… 1 ……………………… 28556 ……………………… Drainconnector\n10 ……………………… 1 ……………………… 17052 ……………………… Brinevalveconnector\n※11 ……………………… 1 …………………………………………………………… Nozzle\n12 ……………………… 2 ……………………… 02051 ……………………… Bolt\n13 ……………………… 1 ……………………… 17056 ……………………… Injectorcover\n14 ……………………… 1 ……………………… 17031 ……………………… Injectorcovergasket\n15 ……………………… 1 ……………………… 17059 ……………………… Injectorscreen\n16 ……………………… 1 ……………………… 17051 ……………………… Injector\n※17 ……………………… 1 …………………………………………………………… Throat\n18 ……………………… 2 ……………………… 02053 ……………………… Bolt\n19 ……………………… 1 ……………………… 17003 ……………………… Airdisperser\n20 ……………………… 1 ……………………… 17030 ……………………… Injectorbodygasket\n21 ……………………… 1 ……………………… 28531 ……………………… Seal\n22 ……………………… 1 ……………………… 28551 ……………………… Adapterbase\n23 ……………………… 1 ……………………… 01104 ……………………… O-ring\n24 ……………………… 1 ……………………… 01012 ……………………… O-ring\n25 ……………………… 2 ……………………… 02082 ……………………… Bolt\n26 ……………………… 1 ……………………… 28557-1 …………………… Filterpiston\n27 ……………………… 1 ……………………… 66123 ……………………… Nohardwaterbypasspistonassy\n※Formoreoptions",
+      "header": "4. How to set the regeneration cycle program",
+      "section_type": "일반",
+      "equipment": [
+        "필터",
+        "밸브"
+      ],
+      "company_id": "21",
+      "company_name": "순수제조설비",
+      "source_file": "03-2 F21 Manual",
+      "source_path": "D:\\기계도면\\기계도면\\21. 순수제조설비 (에스텍)\\JJ-M-VP-012-01_순수제조설비_기자재준공도서_R0(AS BUILT)\\원본\\016 운전 및 유지관리 지침서\\원본\\03 여과기 CONTROL VALVE\\03-2 F21 Manual.pdf",
+      "rev": "0",
+      "chunk_hash": "f27cba000905fd5b",
+      "char_count": 1550
+    },
+    {
+      "chunk_idx": 26,
+      "text": "…………………… 1 ……………………… 66123 ……………………… Nohardwaterbypasspistonassy\n※Formoreoptions Brine System Assembly\n1600 series brine system assembly\nItemNo. Quantity PartNo. Description\n1 ……………………… 1 ……………………… 04053 ……………………… Retainingring\n2 ……………………… 1 ……………………… 16080 ……………………… Spring\n3 ……………………… 1 ……………………… 66122 ……………………… Brinestemassembly\n4 ……………………… 1 ……………………… 16053 ……………………… Stemguide\n5 ……………………… 1 ……………………… 16051 ……………………… Brinevalvebody\n6 ……………………… 1 ……………………… 01004 ……………………… O-ring\n7 ……………………… 1 ……………………… 16054 ……………………… Endplug,brinevalve\n※ 8 ……………………… 1 ……………………………………………………………… BLFCbutton\n9 ……………………… 1 ……………………… 56015 ……………………… Brinedispenser\n10 ……………………… 1 ……………………… 16050 ……………………… Fitting,Elbow\n11 ……………………… 1 ……………………… 66124 ……………………… Brinetube\n12 ……………………… 1 ……………………… 17056 ……………………… Injectorcover\n13 ……………………… 2 ……………………… 02060 ……………………… Screw\n14 ……………………… 1 ……………………… 17031 ……………………… Injectorcovergasket\n※15 ……………………… 1 ……………………………………………………………… Injectornozzle\n※16 ……………………… 1 ……………………………………………………………… Injectorthroat\n17 ……………………… 1 ……………………… 56059 ……………………… Screen\n18 ……………………… 1 ……………………… 16001 ……………………… Injectorbody\n19 ……………………… 1 ……………………… 17030 ……………………… Injectorcovergasket\n※Formoreoptions",
+      "header": "4. How to set the regeneration cycle program",
+      "section_type": "일반",
+      "equipment": [
+        "순수제조설비"
+      ],
+      "company_id": "21",
+      "company_name": "순수제조설비",
+      "source_file": "03-2 F21 Manual",
+      "source_path": "D:\\기계도면\\기계도면\\21. 순수제조설비 (에스텍)\\JJ-M-VP-012-01_순수제조설비_기자재준공도서_R0(AS BUILT)\\원본\\016 운전 및 유지관리 지침서\\원본\\03 여과기 CONTROL VALVE\\03-2 F21 Manual.pdf",
+      "rev": "0",
+      "chunk_hash": "e48ac7477d2936ec",
+      "char_count": 1210
+    },
+    {
+      "chunk_idx": 27,
+      "text": "ody\n19 ……………………… 1 ……………………… 17030 ……………………… Injectorcovergasket\n※Formoreoptions Brine System Assembly\n1700 series brine system assembly\nItemNo. Quantity PartNo. Description\n1 ……………………… 1 ……………………… 04052 ……………………… Retainingring\n2 ……………………… 1 ……………………… 04003 ……………………… Washer\n3 ……………………… 1 ……………………… 17058 ……………………… Spring\n4 ……………………… 1 ……………………… 66128 ……………………… Brinestemassembly\n5 ……………………… 1 ……………………… 17053 ……………………… Brinevalvebody\n6 ……………………… 1 ……………………… 01081 ……………………… O-ring\n7 ……………………… 1 ……………………… 17055 ……………………… Endplug,brinevalve\n※ 8 ……………………… 1 ……………………………………………………………… BLFCbutton\n9 ……………………… 1 ……………………… 17052 ……………………… Fitting,Elbow\n10 ……………………… 1 ……………………… 66160 ……………………… Brinetube\n※11 ……………………… 1 ……………………………………………………………… Injectornozzle\n12 ……………………… 1 ……………………… 17031 ……………………… Injectorcovergasket\n13 ……………………… 1 ……………………… 17056 ……………………… Injectorcover\n14 ……………………… 2 ……………………… 02051 ……………………… Screw\n15 ……………………… 1 ……………………… 17059 ……………………… Screen\n16 ……………………… 1 ……………………… 17051 ……………………… Injectorbody\n※17 ……………………… 1 ……………………………………………………………… Injectorthroat\n18 ……………………… 1 ……………………… 17030 ……………………… Injectorcovergasket\n※Formoreoptions",
+      "header": "4. How to set the regeneration cycle program",
+      "section_type": "청소",
+      "equipment": [
+        "순수제조설비"
+      ],
+      "company_id": "21",
+      "company_name": "순수제조설비",
+      "source_file": "03-2 F21 Manual",
+      "source_path": "D:\\기계도면\\기계도면\\21. 순수제조설비 (에스텍)\\JJ-M-VP-012-01_순수제조설비_기자재준공도서_R0(AS BUILT)\\원본\\016 운전 및 유지관리 지침서\\원본\\03 여과기 CONTROL VALVE\\03-2 F21 Manual.pdf",
+      "rev": "0",
+      "chunk_hash": "6d3ca192ba398438",
+      "char_count": 1151
+    },
+    {
+      "chunk_idx": 28,
+      "text": "oat\n18 ……………………… 1 ……………………… 17030 ……………………… Injectorcovergasket\n※Formoreoptions Brine System Assembly\n1800 series brine system assembly\nItemNo. Quantity PartNo. Description\n1 ……………………… 1 ……………………… 66161 ……………………… Brinetube\n2 ……………………… 2 ……………………… 31513 ……………………… Tubefitting\n3 ……………………… 6 ……………………… 02002 ……………………… Screw\n4 ……………………… 1 ……………………… 18058 ……………………… Injectorcover\n5 ……………………… 2 ……………………… 01030 ……………………… O-ring\n※ 6 ……………………… 1 ……………………………………………………………… Injectornozzle\n7 ……………………… 1 ……………………… 18056 ……………………… Injectorbody\n8 ……………………… 2 ……………………… 02011 ……………………… Screw\n※ 9 ……………………… 1 ……………………………………………………………… Injectorthroat\n10 ……………………… 1 ……………………… 31509 ……………………… Nut\n11 ……………………… 1 ……………………… 31506 ……………………… Cover\n12 ……………………… 1 ……………………… 01031 ……………………… O-ring\n13 ……………………… 1 ……………………… K1006 ……………………… Brinestemassembly\n14 ……………………… 1 ……………………… 18057 ……………………… Brinevalvebody\n15 ……………………… 1 ……………………… 18051 ……………………… Spring\n16 ……………………… 1 ……………………… 04056 ……………………… Retainingring\n17 ……………………… 1 ……………………… 66163 ……………………… Stemguideassembly\n※18 ……………………… 1 ……………………………………………………………… BLFCbutton\n19 ……………………… 1 ……………………… 18059 ……………………… Brinefitting\n※Formoreoptions",
+      "header": "4. How to set the regeneration cycle program",
+      "section_type": "일반",
+      "equipment": [
+        "순수제조설비"
+      ],
+      "company_id": "21",
+      "company_name": "순수제조설비",
+      "source_file": "03-2 F21 Manual",
+      "source_path": "D:\\기계도면\\기계도면\\21. 순수제조설비 (에스텍)\\JJ-M-VP-012-01_순수제조설비_기자재준공도서_R0(AS BUILT)\\원본\\016 운전 및 유지관리 지침서\\원본\\03 여과기 CONTROL VALVE\\03-2 F21 Manual.pdf",
+      "rev": "0",
+      "chunk_hash": "c010b56927fbeb61",
+      "char_count": 1172
+    },
+    {
+      "chunk_idx": 29,
+      "text": "BLFCbutton\n19 ……………………… 1 ……………………… 18059 ……………………… Brinefitting\n※Formoreoptions Meter Assembly\n1'' meter assembly\nItemNo. Quantity PartNo. Description\n1 ……………………… 1 ……………………… 12003 ……………………… Screw\n2 ……………………… 1 ……………………… 12002 ……………………… Tube\n3 ……………………… 1 ……………………… 01031 ……………………… O-ring\n4 ……………………… 1 ……………………… 56013 ……………………… Flowstraightener\n5 ……………………… 1 ……………………… 12001 ……………………… Body\n6 ……………………… 1 ……………………… 12101 ……………………… Impellerspindle\n7 ……………………… 1 ……………………… 12204A …………………… Impellerassembly\n8 ……………………… 1 ……………………… 01014 ……………………… O-ring\n9 ……………………… 1 ……………………… 1220D ……………………… Metercoverassembly\n10 ……………………… 4 ……………………… 02082 ……………………… Screw",
+      "header": "4. How to set the regeneration cycle program",
+      "section_type": "일반",
+      "equipment": [
+        "순수제조설비"
+      ],
+      "company_id": "21",
+      "company_name": "순수제조설비",
+      "source_file": "03-2 F21 Manual",
+      "source_path": "D:\\기계도면\\기계도면\\21. 순수제조설비 (에스텍)\\JJ-M-VP-012-01_순수제조설비_기자재준공도서_R0(AS BUILT)\\원본\\016 운전 및 유지관리 지침서\\원본\\03 여과기 CONTROL VALVE\\03-2 F21 Manual.pdf",
+      "rev": "0",
+      "chunk_hash": "997ea8d39a3cc52a",
+      "char_count": 657
+    },
+    {
+      "chunk_idx": 30,
+      "text": "220D ……………………… Metercoverassembly\n10 ……………………… 4 ……………………… 02082 ……………………… Screw Meter Assembly\n1.5'' meter assembly\nItemNo. Quantity PartNo. Description\n1 ……………………… 1 ……………………… 12122 ……………………… Screw\n2 ……………………… 1 ……………………… 12121 ……………………… Tube\n3 ……………………… 1 ……………………… 01008 ……………………… O-ring\n4 ……………………… 1 ……………………… 17004 ……………………… Flowstraightener\n5 ……………………… 1 ……………………… 12120 ……………………… Body\n6 ……………………… 1 ……………………… 12101 ……………………… Impellerspindle\n7 ……………………… 1 ……………………… 12204A …………………… Impellerassembly\n8 ……………………… 1 ……………………… 01014 ……………………… O-ring\n9 ……………………… 1 ……………………… 1220D ……………………… Metercoverassembly\n10 ……………………… 4 ……………………… 02082 ……………………… Screw",
+      "header": "4. How to set the regeneration cycle program",
+      "section_type": "일반",
+      "equipment": [
+        "순수제조설비"
+      ],
+      "company_id": "21",
+      "company_name": "순수제조설비",
+      "source_file": "03-2 F21 Manual",
+      "source_path": "D:\\기계도면\\기계도면\\21. 순수제조설비 (에스텍)\\JJ-M-VP-012-01_순수제조설비_기자재준공도서_R0(AS BUILT)\\원본\\016 운전 및 유지관리 지침서\\원본\\03 여과기 CONTROL VALVE\\03-2 F21 Manual.pdf",
+      "rev": "0",
+      "chunk_hash": "7c0a577527f270db",
+      "char_count": 659
+    },
+    {
+      "chunk_idx": 31,
+      "text": "220D ……………………… Metercoverassembly\n10 ……………………… 4 ……………………… 02082 ……………………… Screw Meter Assembly\n2'' meter assembly\nItemNo. Quantity PartNo. Description\n1 ……………………… 1 ……………………… 12303 ……………………… Screw\n2 ……………………… 1 ……………………… 12302 ……………………… Tube\n3 ……………………… 1 ……………………… 01032 ……………………… O-ring\n4 ……………………… 1 ……………………… 12330 ……………………… Flowstraightener\n5 ……………………… 1 ……………………… 12301 ……………………… Body\n6 ……………………… 1 ……………………… 12101 ……………………… Impellerspindle\n7 ……………………… 1 ……………………… 12331 ……………………… Impellerassembly\n8 ……………………… 1 ……………………… 01014 ……………………… O-ring\n9 ……………………… 1 ……………………… 1220D ……………………… Metercoverassembly\n10 ……………………… 4 ……………………… 02082 ……………………… Screw",
+      "header": "4. How to set the regeneration cycle program",
+      "section_type": "일반",
+      "equipment": [
+        "순수제조설비"
+      ],
+      "company_id": "21",
+      "company_name": "순수제조설비",
+      "source_file": "03-2 F21 Manual",
+      "source_path": "D:\\기계도면\\기계도면\\21. 순수제조설비 (에스텍)\\JJ-M-VP-012-01_순수제조설비_기자재준공도서_R0(AS BUILT)\\원본\\016 운전 및 유지관리 지침서\\원본\\03 여과기 CONTROL VALVE\\03-2 F21 Manual.pdf",
+      "rev": "0",
+      "chunk_hash": "3f7eaf734a0cf1a6",
+      "char_count": 657
+    },
+    {
+      "chunk_idx": 32,
+      "text": "220D ……………………… Metercoverassembly\n10 ……………………… 4 ……………………… 02082 ……………………… Screw Meter Assembly\n3'' meter assembly\nItemNo. Quantity PartNo. Description\n1 ……………………… 8 ……………………… 02058 ……………………… Screw\n2 ……………………… 2 ……………………… 12402 ……………………… Connectingflange\n3 ……………………… 3 ……………………… 01041 ……………………… O-ring\n4 ……………………… 8 ……………………… 03006 ……………………… Screw\n5 ……………………… 1 ……………………… 12401 ……………………… Body\n6 ……………………… 1 ……………………… 12404 ……………………… Flowstraightener\n7 ……………………… 6 ……………………… 02106 ……………………… Screw\n8 ……………………… 1 ……………………… 1220C-E …………………… Metercoverassembly\n9 ……………………… 1 ……………………… 12405 ……………………… Impellerassembly\n10 ……………………… 1 ……………………… 12408 ……………………… Impellerspindle Wiring Diagram\nF15/21\nTimer,meterdelaycontrolvalve\nMeterImm.controlvalve\nTM-TimeMotor\nVDM-ValveDriveMotor\nSW1-TimerHomingSwitch\nSW2-TimerProgramSwitch\nSW3-ValveHomingSwitch\nSW4-ValveStepSwitch\nTPCAM-TimerProgramCam\nTHCAM-TimerHomingCam\nSCAM-ValveStepCam\nHCAM-ValveHomingCam",
+      "header": "4. How to set the regeneration cycle program",
+      "section_type": "일반",
+      "equipment": [
+        "순수제조설비"
+      ],
+      "company_id": "21",
+      "company_name": "순수제조설비",
+      "source_file": "03-2 F21 Manual",
+      "source_path": "D:\\기계도면\\기계도면\\21. 순수제조설비 (에스텍)\\JJ-M-VP-012-01_순수제조설비_기자재준공도서_R0(AS BUILT)\\원본\\016 운전 및 유지관리 지침서\\원본\\03 여과기 CONTROL VALVE\\03-2 F21 Manual.pdf",
+      "rev": "0",
+      "chunk_hash": "f4c599843e800b5b",
+      "char_count": 943
+    },
+    {
+      "chunk_idx": 33,
+      "text": "TPCAM-TimerProgramCam\nTHCAM-TimerHomingCam\nSCAM-ValveStepCam\nHCAM-ValveHomingCam Trouble Shooting\nProblem Cause Correction\nA.Disconnectedmetercable. A.Reconnectthemetercable.\n1.Thecontrolfailsto B.Transformerdamaged. B.Replacethetransformer.\nRegenerateautomatically C.Electroniccontrollerorsensor C.Replaceorrepair.\ndamaged.\n2.Regenerationatwrong A.Timerimproperlyset,dueto\nA.Resettimer.\nTime powerfailure.\nA.resetunittothenewcapacity.\nA.Increasedrawwaterhardness B.Keepbrinetankfullofsaltatalltimes.Cleanit\nB.Brineconcentrationor yearly.Saltmaybebridged.Ifusingasaltgrid\nquantity. Plateinsurerefillwaterisoverit.\nC.Rinsefouling. C.Consolidatetherinsetank,cleantherinseand\npreventfuturefouling..\nD.Poordistribution,channeling\n3.lossofcapacity D.checkdistributorsandbackwashflow\n(Unevenbedservice).\nE.Replacethespacer,sealorpiston\nE. Internalcontrolleak. F.CheckforresinoxidationcausedbyChlorine.\nF. Ageingofrinse. Mushyresin.\nG.Lossofrinse. G.checkforcorrectbeddepth.Broken\ndistributors.Airorgasinbed:Wellgas\nEliminatorloosebrineline.\nA.Checkitemslistedin3. B.Closethebypass\n4.Poorwaterquality B.Bypassisopen. C.Checkfortoosloworhighservice\nC.Channeling. flow.\nA.Highsaltsetting. A.adjustsaltsetting\n5.Excessivesaltuse\nB Excessivewaterinbrinetank. B.refertoproblem7tank.\nA.Foulingofinletpipe. A.Cleanorreplacethepipeline\n6.Lossofwaterpressure B.Fouledresin. B.Cleantheresin.Pretreattoprevent.\nC.Improperbackwash. C.Toomanyresinfines.Resettheflow\nRateandtimeofbackwash.\nA.Pluggeddrainline. A.Checkdrainlineandcleanflowcontrol\nB.Brinevalvepluggedor B.Cleanorreplacethebrinevalve\n7.excessivewaterinbrine\ndamaged. C.Cleaninjector,replaceinjectorscreen\ntank\nC.Injectorplugged. D.Increasewaterpressuretoallow\nD.Lowinletwaterpressure. Injectortoperformproperly.\nA.Pluggeddrainline. A.Cleandrainlineandflowcontrol\nB.Pluggedinjector. B.Cleanorreplacetheinjectorandscreen\n8.Softenerfailstobrine C.Nowaterinthebrinetank. C.CheckforrestrictioninBLFC.Ensure\nDraw D.Lowwaterpressure. Safetyfloatisnotstuck.\nE.Brinelineinjectsairduring D.Increasewaterpressure\nbrinedraw. E.Checkbrinelineforairleaks.\nF.Internalcontrolleak. F.checkseal,spacerandpistonfor\nscratchesanddents.\n9.Controlcyclescontinuously A.Faultytimer. A.Replacetimer\nA.Foreignmaterialinthecontrol A.calldealer.Cleanvalve,rebuild\n10.continuousflowtodrain B.Internalcontrolleak. unit\nC.Pistonjammedinbrineorback B.sameasabove\nwashposition. C.sameasabove",
+      "header": "4. How to set the regeneration cycle program",
+      "section_type": "청소",
+      "equipment": [
+        "탱크"
+      ],
+      "company_id": "21",
+      "company_name": "순수제조설비",
+      "source_file": "03-2 F21 Manual",
+      "source_path": "D:\\기계도면\\기계도면\\21. 순수제조설비 (에스텍)\\JJ-M-VP-012-01_순수제조설비_기자재준공도서_R0(AS BUILT)\\원본\\016 운전 및 유지관리 지침서\\원본\\03 여과기 CONTROL VALVE\\03-2 F21 Manual.pdf",
+      "rev": "0",
+      "chunk_hash": "69c411f3c72281ce",
+      "char_count": 2400
+    }
+  ]
+}

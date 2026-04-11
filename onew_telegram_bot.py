@@ -5,20 +5,30 @@
 """
 import sys
 import os
+import re
+import json
 import asyncio
 import logging
 import tempfile
 import time
-from datetime import datetime
+from datetime import datetime, time as dtime, timezone, timedelta
 from pathlib import Path
 from collections import defaultdict
 
 SYSTEM_DIR = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, SYSTEM_DIR)
 
-from telegram import Update
+from onew_core import bg_task_manager as _bg
+from onew_core import claude_bridge as _cb
+
+MAX_BG_TASKS = 3   # 동시 최대 백그라운드 작업 수
+
+# "클로드:" prefix 감지 패턴
+_CLAUDE_PREFIXES = ("클로드:", "클로드야", "claude:", "!claude")
+
+from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import (
-    Application, CommandHandler, MessageHandler,
+    Application, CommandHandler, MessageHandler, CallbackQueryHandler,
     filters, ContextTypes
 )
 
@@ -45,6 +55,17 @@ BOT_TOKEN = _get_env('TELEGRAM_BOT_TOKEN')
 ALLOWED_USER_IDS: list[int] = []
 
 ALLOWED_IDS_FILE = os.path.join(SYSTEM_DIR, 'telegram_allowed_ids.json')
+
+# ==============================================================================
+# 인박스 승인 시스템 경로
+# ==============================================================================
+VAULT_PATH    = os.path.dirname(SYSTEM_DIR)
+INBOX_DIR     = os.path.join(VAULT_PATH, "inbox_filtered")
+APPROVED_DIR  = os.path.join(VAULT_PATH, "클리핑", "승인됨")
+EMBED_QUEUE   = os.path.join(SYSTEM_DIR, "embed_queue.json")
+
+os.makedirs(INBOX_DIR, exist_ok=True)
+os.makedirs(APPROVED_DIR, exist_ok=True)
 
 # ==============================================================================
 # 허용 ID 관리
@@ -313,11 +334,359 @@ async def cmd_rollback(update: Update, ctx: ContextTypes.DEFAULT_TYPE):
 
 
 # ==============================================================================
+# 백그라운드 작업 명령어
+# ==============================================================================
+
+async def cmd_sync(update: Update, ctx: ContextTypes.DEFAULT_TYPE):
+    """/sync — 백그라운드 임베딩 동기화. 완료 시 알림."""
+    if not is_allowed(update.effective_user.id):
+        return
+
+    if _bg.count_running() >= MAX_BG_TASKS:
+        await update.message.reply_text(
+            f"⚠️ 백그라운드 작업이 이미 {MAX_BG_TASKS}개 실행 중입니다.\n/tasks 로 확인하세요."
+        )
+        return
+
+    chat_id = update.effective_chat.id
+
+    def _do_sync():
+        import io, contextlib
+        agent = get_agent()
+        buf = io.StringIO()
+        with contextlib.redirect_stdout(buf):
+            agent.mem.sync(silent=False)
+        output = buf.getvalue()
+        # 핵심 줄만 추출 (최대 5줄)
+        keywords = ('완료', '처리', '스킵', '한도', '청크', '파일', '학습')
+        lines = [l.strip() for l in output.splitlines() if any(k in l for k in keywords)]
+        return '\n'.join(lines[-5:]) if lines else "(로그 없음)"
+
+    task_id = _bg.submit("임베딩 sync", _do_sync, chat_id, ctx.application)
+    await update.message.reply_text(
+        f"⚙️ *임베딩 sync* 시작 (`{task_id}`)\n완료되면 알림을 보내드립니다.",
+        parse_mode="Markdown"
+    )
+
+
+async def cmd_bg(update: Update, ctx: ContextTypes.DEFAULT_TYPE):
+    """/bg <질문> — 백그라운드 질의. 완료 시 알림."""
+    if not is_allowed(update.effective_user.id):
+        return
+
+    query = ' '.join(ctx.args) if ctx.args else ''
+    if not query:
+        await update.message.reply_text(
+            "사용법: `/bg 질문내용`\n예: `/bg 냉동사이클 4단계 설명해줘`",
+            parse_mode="Markdown"
+        )
+        return
+
+    if _bg.count_running() >= MAX_BG_TASKS:
+        await update.message.reply_text(
+            f"⚠️ 백그라운드 작업이 이미 {MAX_BG_TASKS}개 실행 중입니다.\n/tasks 로 확인하세요."
+        )
+        return
+
+    chat_id = update.effective_chat.id
+    _query = query  # 클로저 캡처
+
+    def _do_ask():
+        agent = get_agent()
+        prev_len = len(agent.history_records)
+        agent.ask(_query, silent_search=True)
+        if len(agent.history_records) > prev_len:
+            return agent.history_records[-1].get('text', '응답 없음')
+        return '응답 없음'
+
+    label = query[:20] + ("..." if len(query) > 20 else "")
+    task_id = _bg.submit(f"질의: {label}", _do_ask, chat_id, ctx.application)
+    await update.message.reply_text(
+        f"⚙️ *백그라운드 질의* 시작 (`{task_id}`)\n\"{label}\"\n완료되면 알림을 보내드립니다.",
+        parse_mode="Markdown"
+    )
+
+
+async def cmd_tasks(update: Update, ctx: ContextTypes.DEFAULT_TYPE):
+    """/tasks — 백그라운드 작업 목록 조회"""
+    if not is_allowed(update.effective_user.id):
+        return
+
+    tasks = _bg.list_tasks()
+    if not tasks:
+        await update.message.reply_text("실행 중인 백그라운드 작업이 없습니다.")
+        return
+
+    icon = {"실행중": "⚙️", "완료": "✅", "실패": "❌"}
+    lines = ["*백그라운드 작업 현황*\n"]
+    for tid, t in tasks.items():
+        i = icon.get(t["status"], "•")
+        lines.append(f"{i} `{tid}` {t['name']} — {t['started']} ({t['status']})")
+
+    await update.message.reply_text('\n'.join(lines), parse_mode='Markdown')
+
+
+# ==============================================================================
+# Claude Code 릴레이
+# ==============================================================================
+
+async def _handle_claude_relay(
+    update: Update,
+    ctx: ContextTypes.DEFAULT_TYPE,
+    raw_request: str,
+    tool_preset: str = "standard",
+):
+    """공통 처리: 프롬프트 래핑 → subprocess → 스트리밍 업데이트 → 완료 알림."""
+    if _cb.is_running():
+        await update.message.reply_text(
+            "⚠️ Claude Code가 이미 작업 중입니다.\n`/claude_cancel` 로 취소하세요.",
+            parse_mode="Markdown",
+        )
+        return
+
+    # prefix 제거
+    request = raw_request.strip()
+    for p in _CLAUDE_PREFIXES:
+        if request.lower().startswith(p.lower()):
+            request = request[len(p):].strip()
+            break
+
+    prompt = _cb.build_prompt(request)
+
+    # 시작 메시지 (즉시 응답)
+    status_msg = await update.message.reply_text(
+        f"⚙️ *Claude Code 실행 중...*\n\n"
+        f"요청: {request[:60]}{'...' if len(request) > 60 else ''}\n\n"
+        f"취소: `/claude_cancel`",
+        parse_mode="Markdown",
+    )
+
+    # 스트리밍 버퍼 + 4초 throttle
+    buf: list[str] = []
+    loop = asyncio.get_running_loop()
+    last_edit = [loop.time()]
+
+    async def on_chunk(text: str):
+        buf.append(text)
+        if loop.time() - last_edit[0] >= 4.0:
+            last_edit[0] = loop.time()
+            preview = "".join(buf)[-500:]
+            try:
+                await status_msg.edit_text(
+                    f"⚙️ *Claude Code 실행 중...*\n```\n{preview}\n```\n취소: `/claude_cancel`",
+                    parse_mode="Markdown",
+                )
+            except Exception:
+                pass
+
+    chat_id = update.effective_chat.id
+
+    async def _run():
+        ok, result = await _cb.run_async(
+            prompt,
+            workdir=SYSTEM_DIR,
+            tool_preset=tool_preset,
+            on_chunk=on_chunk,
+        )
+        icon = "✅" if ok else "❌"
+        label = "완료" if ok else "오류"
+        header = f"{icon} *Claude Code {label}*\n\n"
+
+        full_reply = header + (result or "(응답 없음)")
+        try:
+            await status_msg.edit_text(full_reply[:4096], parse_mode="Markdown")
+        except Exception:
+            await ctx.bot.send_message(chat_id, full_reply[:4096], parse_mode="Markdown")
+
+        # 4096자 초과 분할 전송
+        if len(result) > 4096 - len(header):
+            for i in range(4096 - len(header), len(result), 4096):
+                await ctx.bot.send_message(chat_id, result[i:i+4096])
+
+    asyncio.create_task(_run())
+
+
+async def cmd_claude(update: Update, ctx: ContextTypes.DEFAULT_TYPE):
+    """/claude <요청> — Claude Code에 작업 지시 (또는 대화에서 '클로드: 요청')"""
+    if not is_allowed(update.effective_user.id):
+        return
+    request = " ".join(ctx.args) if ctx.args else ""
+    if not request:
+        await update.message.reply_text(
+            "*Claude Code 릴레이 사용법*\n\n"
+            "1️⃣ 명령어: `/claude 요청내용`\n"
+            "2️⃣ 대화: `클로드: 요청내용`\n"
+            "3️⃣ 읽기전용: `/claude_ro 요청내용`\n\n"
+            "취소: `/claude_cancel`\n"
+            "상태: `/claude_status`",
+            parse_mode="Markdown",
+        )
+        return
+    await _handle_claude_relay(update, ctx, request, tool_preset="standard")
+
+
+async def cmd_claude_ro(update: Update, ctx: ContextTypes.DEFAULT_TYPE):
+    """/claude_ro <요청> — 읽기 전용 모드 (파일 수정 없음)"""
+    if not is_allowed(update.effective_user.id):
+        return
+    request = " ".join(ctx.args) if ctx.args else ""
+    if not request:
+        await update.message.reply_text("사용법: `/claude_ro 질문내용`", parse_mode="Markdown")
+        return
+    await _handle_claude_relay(update, ctx, request, tool_preset="readonly")
+
+
+async def cmd_claude_cancel(update: Update, ctx: ContextTypes.DEFAULT_TYPE):
+    """/claude_cancel — 실행 중인 Claude Code 작업 취소"""
+    if not is_allowed(update.effective_user.id):
+        return
+    cancelled = await _cb.cancel()
+    if cancelled:
+        await update.message.reply_text("🛑 Claude Code 작업을 취소했습니다.")
+    else:
+        await update.message.reply_text("실행 중인 Claude Code 작업이 없습니다.")
+
+
+async def cmd_claude_status(update: Update, ctx: ContextTypes.DEFAULT_TYPE):
+    """/claude_status — Claude Code 실행 상태 확인"""
+    if not is_allowed(update.effective_user.id):
+        return
+    if _cb.is_running():
+        await update.message.reply_text(
+            "⚙️ Claude Code 작업 *실행 중*\n취소: `/claude_cancel`",
+            parse_mode="Markdown",
+        )
+    else:
+        await update.message.reply_text("✅ 대기 중 (실행 중인 작업 없음)")
+
+
+# ==============================================================================
+# 인박스 승인 시스템
+# ==============================================================================
+
+def _get_inbox_files() -> list[str]:
+    """inbox_filtered/ 의 대기 중인 .md 파일 목록"""
+    if not os.path.isdir(INBOX_DIR):
+        return []
+    return sorted(f for f in os.listdir(INBOX_DIR) if f.endswith(".md"))
+
+
+def _add_to_embed_queue(fpath: str):
+    """승인된 파일을 embed_queue.json에 추가 → LanceDB 자동 인덱싱"""
+    try:
+        import json
+        queue = []
+        if os.path.exists(EMBED_QUEUE):
+            with open(EMBED_QUEUE, "r", encoding="utf-8") as f:
+                queue = json.load(f)
+        if fpath not in queue:
+            queue.append(fpath)
+        with open(EMBED_QUEUE, "w", encoding="utf-8") as f:
+            json.dump(queue, f, ensure_ascii=False, indent=2)
+    except Exception as e:
+        logging.warning("embed_queue 추가 실패: %s", e)
+
+
+async def cmd_inbox(update: Update, ctx: ContextTypes.DEFAULT_TYPE):
+    """/inbox — 승인 대기 파일 목록 전송 (인라인 버튼)"""
+    if not is_allowed(update.effective_user.id):
+        return
+
+    files = _get_inbox_files()
+    if not files:
+        await update.message.reply_text("📭 승인 대기 중인 항목이 없습니다.")
+        return
+
+    await update.message.reply_text(
+        f"🧠 *주니어 연구원 학습 리포트*\n\n"
+        f"승인 대기 {len(files)}건. 결재를 진행해 주세요.",
+        parse_mode="Markdown",
+    )
+
+    for filename in files[:10]:  # 한 번에 최대 10건
+        fpath = os.path.join(INBOX_DIR, filename)
+        try:
+            with open(fpath, "r", encoding="utf-8") as f:
+                content = f.read()
+        except Exception:
+            continue
+
+        # YAML 프론트매터에서 점수·주제 추출
+        score_m = re.search(r"점수:\s*(\d)/5", content)
+        topic_m = re.search(r"주제:\s*(.+)", content)
+        score = score_m.group(1) if score_m else "?"
+        topic = topic_m.group(1).strip() if topic_m else ""
+
+        preview = content[:500] + ("\n...[중략]" if len(content) > 500 else "")
+
+        keyboard = [[
+            InlineKeyboardButton("✅ Vault 저장", callback_data=f"approve|{filename}"),
+            InlineKeyboardButton("🗑 삭제",       callback_data=f"reject|{filename}"),
+        ]]
+        reply_markup = InlineKeyboardMarkup(keyboard)
+
+        header = f"📄 *{filename[:50]}*"
+        if topic:
+            header += f"\n주제: {topic} | 점수: {score}/5"
+
+        await update.message.reply_text(
+            f"{header}\n\n{preview}",
+            reply_markup=reply_markup,
+            parse_mode="Markdown",
+        )
+
+
+async def handle_approval_callback(update: Update, ctx: ContextTypes.DEFAULT_TYPE):
+    """인라인 버튼 클릭 → 승인(이동+RAG 인덱싱) / 반려(삭제)"""
+    query = update.callback_query
+    await query.answer()
+
+    if not is_allowed(query.from_user.id):
+        await query.edit_message_text("접근 권한이 없습니다.")
+        return
+
+    try:
+        action, filename = query.data.split("|", 1)
+    except ValueError:
+        await query.edit_message_text("⚠️ 잘못된 버튼 데이터입니다.")
+        return
+
+    source_path = os.path.join(INBOX_DIR, filename)
+    if not os.path.exists(source_path):
+        await query.edit_message_text("⚠️ 이미 처리되었거나 파일이 없습니다.")
+        return
+
+    if action == "approve":
+        # 승인: 클리핑/승인됨/ 으로 이동 + embed_queue 등록
+        today_month = datetime.now().strftime("%Y-%m")
+        dest_dir = os.path.join(APPROVED_DIR, today_month)
+        os.makedirs(dest_dir, exist_ok=True)
+        dest_path = os.path.join(dest_dir, filename)
+        os.rename(source_path, dest_path)
+        _add_to_embed_queue(dest_path)
+        logging.info("[APPROVED] %s → 클리핑/승인됨/%s/", filename, today_month)
+        await query.edit_message_text(
+            f"✅ *Vault 저장 완료*\n"
+            f"`클리핑/승인됨/{today_month}/{filename}`\n"
+            f"RAG 인덱싱 대기열에 등록됨.",
+            parse_mode="Markdown",
+        )
+
+    elif action == "reject":
+        os.remove(source_path)
+        logging.info("[REJECTED] %s 삭제됨", filename)
+        await query.edit_message_text(
+            f"🗑 *삭제 완료*\n`{filename}`",
+            parse_mode="Markdown",
+        )
+
+
+# ==============================================================================
 # 대화 Vault 저장 (5턴마다)
 # ==============================================================================
 _conv_buffer: list = []   # [{"time": "HH:MM", "q": str, "a": str}, ...]
 _turn_count: int = 0
-SAVE_EVERY_N_TURNS = 5
+SAVE_EVERY_N_TURNS = 1    # 매 턴마다 저장 (5→1: 봇 강제 종료 시 유실 방지)
 
 def _save_conv_to_vault():
     """버퍼의 대화를 오늘 날짜 파일에 추가 저장 후 버퍼 초기화."""
@@ -385,6 +754,30 @@ async def handle_text(update: Update, ctx: ContextTypes.DEFAULT_TYPE):
     if not query:
         return
 
+    # Claude Code 릴레이 (최우선 처리)
+    if any(query.lower().startswith(p.lower()) for p in _CLAUDE_PREFIXES):
+        await _handle_claude_relay(update, ctx, query)
+        return
+
+    # 오답 추적: 직전 시험 문제 풀이 결과에 대한 정답/오답 응답 감지
+    chat_id = update.effective_chat.id
+    _exam_action = None
+    async with _last_exam_lock:
+        if chat_id in _last_exam:
+            q_lower = query.lower()
+            if any(kw in q_lower for kw in _WRONG_KW):
+                _save_wrong_answer(chat_id, correct=False)
+                _exam_action = "wrong"
+            elif any(kw in q_lower for kw in _CORRECT_KW):
+                _save_wrong_answer(chat_id, correct=True)
+                _exam_action = "correct"
+    if _exam_action == "wrong":
+        await update.message.reply_text("오답 기록했습니다. 아침 브리핑에서 복습 알림을 드릴게요.")
+        return
+    if _exam_action == "correct":
+        await update.message.reply_text("정답 확인했습니다.")
+        return
+
     # 코드 플래너 명령 처리 (ADHD 코치보다 먼저)
     if query.startswith('계획:') or query.startswith('계획 '):
         goal = query.split(':', 1)[-1].strip() if ':' in query else query[3:].strip()
@@ -402,10 +795,22 @@ async def handle_text(update: Update, ctx: ContextTypes.DEFAULT_TYPE):
         except Exception as _e:
             await update.message.reply_text(f"⚠️ {_e}")
         return
-    elif query in ('승인', '플래너승인', 'plan approve'):
+    elif query.lower() in (
+        '승인', '플래너승인', 'plan approve',
+        '실행', '실행해', '실행해줘', '실행할게',
+        '진행', '진행해', '진행해줘',
+        '시작', '시작해', '시작해줘',
+    ):
         try:
             import onew_code_planner as _ocp
             await update.message.reply_text(_ocp.approve_plan())
+        except Exception as _e:
+            await update.message.reply_text(f"⚠️ {_e}")
+        return
+    elif query.lower() in ('거부', '취소', '거부해', '취소해', 'plan reject', 'plan cancel'):
+        try:
+            import onew_code_planner as _ocp
+            await update.message.reply_text(_ocp.reject_plan())
         except Exception as _e:
             await update.message.reply_text(f"⚠️ {_e}")
         return
@@ -448,7 +853,7 @@ async def handle_text(update: Update, ctx: ContextTypes.DEFAULT_TYPE):
     })
     _turn_count += 1
     if _turn_count % SAVE_EVERY_N_TURNS == 0:
-        loop.run_in_executor(None, _save_conv_to_vault)
+        await loop.run_in_executor(None, _save_conv_to_vault)
 
 
 # 앨범(미디어그룹) 버퍼: {media_group_id: {'files': [], 'caption': '', 'time': float, 'chat_id': int}}
@@ -471,6 +876,8 @@ async def handle_photo(update: Update, ctx: ContextTypes.DEFAULT_TYPE):
     if media_group_id:
         # 앨범 모드: 버퍼에 수집 후 대기
         buf = _album_buffer[media_group_id]
+        if len(buf['files']) >= 20:  # 최대 20장 제한
+            return
         buf['files'].append(photo.file_id)
         buf['time'] = time.time()
         buf['msg'] = update.message
@@ -516,10 +923,10 @@ async def _process_album_after_delay(media_group_id: str, ctx):
         for fid in file_ids:
             file = await ctx.bot.get_file(fid)
             with tempfile.NamedTemporaryFile(suffix='.jpg', delete=False) as tmp:
-                await file.download_to_drive(tmp.name)
-                tmp_paths.append(tmp.name)
-                with open(tmp.name, 'rb') as f:
-                    img_bytes_list.append(f.read())
+                tmp_paths.append(tmp.name)  # 파일 생성 직후 등록 → 예외 시도 정리 보장
+            await file.download_to_drive(tmp_paths[-1])
+            with open(tmp_paths[-1], 'rb') as f:
+                img_bytes_list.append(f.read())
 
         from onew_field_analyzer import analyze_multiple_field_images
         loop = asyncio.get_event_loop()
@@ -545,22 +952,46 @@ async def _process_album_after_delay(media_group_id: str, ctx):
 
 
 async def _process_single_photo(message, file_id: str, caption: str, ctx):
-    """단일 사진 3중 분석"""
-    await message.reply_text("📡 3중 분석 시작 (사진·Vault·웹)... 잠시 기다려주세요.")
+    """단일 사진 처리 — 시험 문제(exam) / 현장 안전 분석(field) 자동 분기"""
+    from onew_field_analyzer import is_exam_photo, analyze_exam_image, analyze_field_image
+
     file = await ctx.bot.get_file(file_id)
     with tempfile.NamedTemporaryFile(suffix='.jpg', delete=False) as tmp:
         await file.download_to_drive(tmp.name)
         tmp_path = tmp.name
 
     try:
-        from onew_field_analyzer import analyze_field_image
         loop = asyncio.get_event_loop()
 
-        def _analyze():
-            return analyze_field_image(tmp_path, caption, get_agent())
+        if is_exam_photo(caption):
+            # ── 시험 문제 풀이 모드 ──────────────────────────────────────
+            await message.reply_text("📚 문제 분석 중...")
 
-        result = await loop.run_in_executor(None, _analyze)
-        report = result['report']
+            def _exam():
+                return analyze_exam_image(tmp_path, caption, get_agent())
+
+            result = await loop.run_in_executor(None, _exam)
+            report = result['answer']
+
+            # 오답 추적: 마지막 시험 응답 저장
+            chat_id = message.chat.id
+            async with _last_exam_lock:
+                _last_exam[chat_id] = {
+                    "question": (caption or result.get("vision", ""))[:120],
+                    "answer":   report[:200],
+                    "date":     datetime.now(KST).strftime("%Y-%m-%d"),
+                }
+            report += "\n\n맞았나요? (맞아 / 틀렸어)"
+
+        else:
+            # ── 현장 안전 분석 모드 (기존) ───────────────────────────────
+            await message.reply_text("📡 3중 분석 시작 (사진·Vault·웹)... 잠시 기다려주세요.")
+
+            def _field():
+                return analyze_field_image(tmp_path, caption, get_agent())
+
+            result = await loop.run_in_executor(None, _field)
+            report = result['report']
 
         with open(tmp_path, 'rb') as f:
             img_bytes = f.read()
@@ -611,6 +1042,131 @@ async def handle_document(update: Update, ctx: ContextTypes.DEFAULT_TYPE):
 
 
 # ==============================================================================
+# 아침 브리핑 + 오답 추적
+# ==============================================================================
+
+KST = timezone(timedelta(hours=9))
+
+# 공조냉동기계기사 실기 시험일 (변경 필요 시 여기만 수정)
+EXAM_DATE = datetime(2026, 4, 18).date()
+
+WRONG_ANSWERS_FILE = Path(SYSTEM_DIR) / "exam_wrong_answers.json"
+
+# 마지막 시험 문제 응답 버퍼 {chat_id: {"question": str, "answer": str, "date": str}}
+_last_exam: dict = {}
+_last_exam_lock = asyncio.Lock()
+
+# 오답 확인 키워드
+_WRONG_KW  = ("틀렸어", "틀렸다", "오답", "틀림", "아니야", "아니에요", "다시", "잘못됐", "wrong")
+_CORRECT_KW = ("맞아", "맞다", "정답", "정확해", "맞았어", "ㅇㅇ", "correct")
+
+
+def _load_wrong_answers() -> list:
+    if WRONG_ANSWERS_FILE.exists():
+        try:
+            return json.load(WRONG_ANSWERS_FILE.open(encoding="utf-8")).get("wrong_answers", [])
+        except Exception:
+            pass
+    return []
+
+
+def _save_wrong_answer(chat_id: int, correct: bool):
+    """마지막 시험 응답 결과를 오답 파일에 기록."""
+    entry = _last_exam.get(chat_id)
+    if not entry:
+        return
+    data = {"wrong_answers": _load_wrong_answers()}
+    record = {
+        "date":             entry["date"],
+        "question_summary": entry["question"][:120],
+        "answer_given":     entry["answer"][:200],
+        "correct":          correct,
+        "reviewed":         False,
+    }
+    data["wrong_answers"].append(record)
+    WRONG_ANSWERS_FILE.write_text(
+        json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8"
+    )
+    _last_exam.pop(chat_id, None)
+
+
+def _build_morning_briefing() -> str:
+    """아침 브리핑 텍스트 생성 (API 0원, 파일 읽기만)."""
+    today    = datetime.now(KST).date()
+    d_day    = (EXAM_DATE - today).days
+    lines    = [f"[아침 브리핑 — {today}]"]
+
+    # D-day
+    if d_day > 0:
+        lines.append(f"공조냉동기계기사 실기 D-{d_day}")
+    elif d_day == 0:
+        lines.append("공조냉동기계기사 실기 — 오늘 시험입니다!")
+    else:
+        lines.append("공조냉동기계기사 실기 시험 종료.")
+
+    # 취약 파트 (vault_analyzer 결과)
+    patterns_path = Path(SYSTEM_DIR) / "patterns" / "diary_patterns.json"
+    if patterns_path.exists():
+        try:
+            import json as _j
+            pat = _j.loads(patterns_path.read_text(encoding="utf-8"))
+            weak = pat.get("weak_parts", [])
+            if weak:
+                lines.append("취약 파트: " + ", ".join(weak[:3]))
+        except Exception:
+            pass
+
+    # 오답 복습
+    wrongs = [w for w in _load_wrong_answers() if not w.get("reviewed")]
+    if wrongs:
+        lines.append(f"오답 복습 {len(wrongs)}개 남음 — /review_wrong 으로 확인")
+
+    # 어제 일기 여부
+    yesterday = (today - timedelta(days=1)).strftime("%Y-%m-%d")
+    vault_root = Path(SYSTEM_DIR).parent
+    daily_path = vault_root / "DAILY" / f"{yesterday}.md"
+    if not daily_path.exists():
+        lines.append(f"어제({yesterday}) 일기가 없습니다. 기록해두세요.")
+
+    return "\n".join(lines)
+
+
+async def _morning_briefing_job(context) -> None:
+    """PTB JobQueue 콜백 — 매일 08:00 KST 발송."""
+    if not ALLOWED_USER_IDS:
+        return
+    text = _build_morning_briefing()
+    for uid in ALLOWED_USER_IDS:
+        try:
+            await context.bot.send_message(uid, text)
+        except Exception as e:
+            logger.warning("[브리핑] 발송 실패 uid=%s: %s", uid, e)
+
+
+async def cmd_review_wrong(update: Update, ctx: ContextTypes.DEFAULT_TYPE):
+    """/review_wrong — 오답 목록 출력."""
+    wrongs = [w for w in _load_wrong_answers() if not w.get("reviewed")]
+    if not wrongs:
+        await update.message.reply_text("복습할 오답이 없습니다.")
+        return
+    lines = [f"오답 복습 ({len(wrongs)}개)\n"]
+    for i, w in enumerate(wrongs[-5:], 1):  # 최근 5개만
+        lines.append(f"{i}. [{w['date']}] {w['question_summary'][:60]}")
+    await update.message.reply_text("\n".join(lines))
+
+
+async def _post_init(app) -> None:
+    """봇 초기화 후 스케줄 등록."""
+    if app.job_queue and ALLOWED_USER_IDS:
+        app.job_queue.run_daily(
+            _morning_briefing_job,
+            time=dtime(8, 0, 0, tzinfo=KST),
+            name="morning_briefing",
+        )
+        logger.info("[브리핑] 매일 08:00 KST 스케줄 등록 완료")
+
+
+# ==============================================================================
 # 메인
 # ==============================================================================
 def main():
@@ -624,7 +1180,7 @@ def main():
     get_agent()
 
     print("텔레그램 봇 시작 중...")
-    app = Application.builder().token(BOT_TOKEN).build()
+    app = Application.builder().token(BOT_TOKEN).post_init(_post_init).build()
 
     app.add_handler(CommandHandler('start',    cmd_start))
     app.add_handler(CommandHandler('id',       cmd_id))
@@ -635,11 +1191,23 @@ def main():
     app.add_handler(CommandHandler('review',   cmd_review))
     app.add_handler(CommandHandler('clip',     cmd_clipping))
     app.add_handler(CommandHandler('rollback', cmd_rollback))
+    app.add_handler(CommandHandler('inbox',    cmd_inbox))
+    app.add_handler(CommandHandler('sync',          cmd_sync))
+    app.add_handler(CommandHandler('bg',            cmd_bg))
+    app.add_handler(CommandHandler('tasks',         cmd_tasks))
+    app.add_handler(CommandHandler('claude',        cmd_claude))
+    app.add_handler(CommandHandler('claude_ro',     cmd_claude_ro))
+    app.add_handler(CommandHandler('claude_cancel', cmd_claude_cancel))
+    app.add_handler(CommandHandler('claude_status',  cmd_claude_status))
+    app.add_handler(CommandHandler('review_wrong',   cmd_review_wrong))
+    app.add_handler(CallbackQueryHandler(handle_approval_callback))
     app.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, handle_text))
     app.add_handler(MessageHandler(filters.PHOTO, handle_photo))
     app.add_handler(MessageHandler(filters.Document.IMAGE, handle_document))
 
-    print("원격 제어: /status /stop /budget /plan /review /clip /rollback")
+    print("원격 제어: /status /stop /budget /plan /review /clip /rollback /inbox")
+    print("백그라운드: /sync (임베딩) | /bg <질문> (비동기 질의) | /tasks (작업 현황)")
+    print("Claude 릴레이: /claude <요청> | /claude_ro <읽기전용> | /claude_cancel | /claude_status")
     print("사용법: 사진 한 장 → 3중 분석 / 앨범(여러 장) → 4단계 다중 분석")
 
     print("온유 텔레그램 봇 가동 완료. Ctrl+C로 종료.")

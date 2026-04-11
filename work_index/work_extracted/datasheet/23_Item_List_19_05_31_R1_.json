@@ -1,0 +1,1094 @@
+{
+  "meta": {
+    "source_path": "D:\\기계도면\\기계도면\\23. 실험실 (세나)\\실험실_AS-BUILT (1)\\6. Data Sheet\\Item List_19.05.31(R1).xlsx",
+    "company_id": "23",
+    "equipment": "실험실설비",
+    "doc_type": "DATA_SHEET",
+    "rev": "AS_BUILT",
+    "is_latest": true,
+    "extracted_at": "2026-03-27T19:33:07",
+    "record_count": 108
+  },
+  "records": [
+    {
+      "parameter": "No.",
+      "value": "Q'ty",
+      "unit": "",
+      "design_value": "Description",
+      "equipment": "실험실설비",
+      "row_idx": 2,
+      "sheet": "Quotation",
+      "chunk_hash": "0d41677c4f5e06c6"
+    },
+    {
+      "parameter": "1",
+      "value": "폐기물 성분 분석용",
+      "unit": "",
+      "design_value": "",
+      "equipment": "실험실설비",
+      "row_idx": 3,
+      "sheet": "Quotation",
+      "chunk_hash": "850426cb6537d338"
+    },
+    {
+      "parameter": "1.1",
+      "value": "1",
+      "unit": "",
+      "design_value": "Drying Oven(150L)",
+      "equipment": "실험실설비",
+      "row_idx": 4,
+      "sheet": "Quotation",
+      "chunk_hash": "5b0a85e8b7c3987a"
+    },
+    {
+      "parameter": "1.2",
+      "value": "1",
+      "unit": "",
+      "design_value": "Calorimeter",
+      "equipment": "실험실설비",
+      "row_idx": 5,
+      "sheet": "Quotation",
+      "chunk_hash": "caec2a4f44701c76"
+    },
+    {
+      "parameter": "1.3",
+      "value": "1",
+      "unit": "",
+      "design_value": "Cutting Mill(Willy type)",
+      "equipment": "실험실설비",
+      "row_idx": 6,
+      "sheet": "Quotation",
+      "chunk_hash": "47a0f775615549d7"
+    },
+    {
+      "parameter": "1.4",
+      "value": "1",
+      "unit": "",
+      "design_value": "Digital Balance",
+      "equipment": "실험실설비",
+      "row_idx": 7,
+      "sheet": "Quotation",
+      "chunk_hash": "ab25243ba5baa9c1"
+    },
+    {
+      "parameter": "1.4",
+      "value": "1",
+      "unit": "",
+      "design_value": "Digital Balance",
+      "equipment": "실험실설비",
+      "row_idx": 8,
+      "sheet": "Quotation",
+      "chunk_hash": "779c13a8579746b9"
+    },
+    {
+      "parameter": "1.5",
+      "value": "1",
+      "unit": "",
+      "design_value": "Top Loading Balance",
+      "equipment": "실험실설비",
+      "row_idx": 9,
+      "sheet": "Quotation",
+      "chunk_hash": "8f786fd2c825a5c0"
+    },
+    {
+      "parameter": "1.6",
+      "value": "1",
+      "unit": "",
+      "design_value": "Muffle Furnace",
+      "equipment": "실험실설비",
+      "row_idx": 10,
+      "sheet": "Quotation",
+      "chunk_hash": "904e25129956876e"
+    },
+    {
+      "parameter": "1.7",
+      "value": "5",
+      "unit": "",
+      "design_value": "Stop Watch",
+      "equipment": "실험실설비",
+      "row_idx": 11,
+      "sheet": "Quotation",
+      "chunk_hash": "7687ad444adc63b4"
+    },
+    {
+      "parameter": "2",
+      "value": "재의 열작 감량 분석기",
+      "unit": "",
+      "design_value": "",
+      "equipment": "실험실설비",
+      "row_idx": 12,
+      "sheet": "Quotation",
+      "chunk_hash": "d92c1414b56d395d"
+    },
+    {
+      "parameter": "2.1",
+      "value": "2",
+      "unit": "",
+      "design_value": "Pt Crucible",
+      "equipment": "실험실설비",
+      "row_idx": 13,
+      "sheet": "Quotation",
+      "chunk_hash": "11a854fff7de2772"
+    },
+    {
+      "parameter": "2.2",
+      "value": "2",
+      "unit": "",
+      "design_value": "Crucible",
+      "equipment": "실험실설비",
+      "row_idx": 14,
+      "sheet": "Quotation",
+      "chunk_hash": "3a772fded082c429"
+    },
+    {
+      "parameter": "2.3",
+      "value": "2",
+      "unit": "",
+      "design_value": "Desicator",
+      "equipment": "실험실설비",
+      "row_idx": 15,
+      "sheet": "Quotation",
+      "chunk_hash": "e142f8e3d52c994f"
+    },
+    {
+      "parameter": "2.4",
+      "value": "1",
+      "unit": "",
+      "design_value": "Dry Oven",
+      "equipment": "실험실설비",
+      "row_idx": 16,
+      "sheet": "Quotation",
+      "chunk_hash": "6121108110545f1a"
+    },
+    {
+      "parameter": "3",
+      "value": "연소가스 분석기",
+      "unit": "",
+      "design_value": "",
+      "equipment": "실험실설비",
+      "row_idx": 17,
+      "sheet": "Quotation",
+      "chunk_hash": "015be875bbe0e54a"
+    },
+    {
+      "parameter": "3.1",
+      "value": "1",
+      "unit": "",
+      "design_value": "Orsat Gas Analyzer",
+      "equipment": "실험실설비",
+      "row_idx": 18,
+      "sheet": "Quotation",
+      "chunk_hash": "ba27b97d412b376a"
+    },
+    {
+      "parameter": "4",
+      "value": "폐수 분석기",
+      "unit": "",
+      "design_value": "",
+      "equipment": "실험실설비",
+      "row_idx": 19,
+      "sheet": "Quotation",
+      "chunk_hash": "fdc54919f374b4b9"
+    },
+    {
+      "parameter": "4.1",
+      "value": "20",
+      "unit": "",
+      "design_value": "BOD Bottle",
+      "equipment": "실험실설비",
+      "row_idx": 20,
+      "sheet": "Quotation",
+      "chunk_hash": "d9a2521ee5012ed3"
+    },
+    {
+      "parameter": "4.2",
+      "value": "1",
+      "unit": "",
+      "design_value": "COD Measuring Apparatus",
+      "equipment": "실험실설비",
+      "row_idx": 21,
+      "sheet": "Quotation",
+      "chunk_hash": "64cd3fd5e61e7b1b"
+    },
+    {
+      "parameter": "4.3",
+      "value": "1",
+      "unit": "",
+      "design_value": "Vacuum Filtering Apparatus",
+      "equipment": "실험실설비",
+      "row_idx": 22,
+      "sheet": "Quotation",
+      "chunk_hash": "fb1b9a570a77f9d1"
+    },
+    {
+      "parameter": "4.4",
+      "value": "1",
+      "unit": "",
+      "design_value": "pH Measuring Equipment",
+      "equipment": "실험실설비",
+      "row_idx": 23,
+      "sheet": "Quotation",
+      "chunk_hash": "465b848472e57c85"
+    },
+    {
+      "parameter": "4.5",
+      "value": "1",
+      "unit": "",
+      "design_value": "Colony Counter",
+      "equipment": "실험실설비",
+      "row_idx": 24,
+      "sheet": "Quotation",
+      "chunk_hash": "222299104bd6b0c8"
+    },
+    {
+      "parameter": "4.6",
+      "value": "1",
+      "unit": "",
+      "design_value": "DO meter",
+      "equipment": "실험실설비",
+      "row_idx": 25,
+      "sheet": "Quotation",
+      "chunk_hash": "343d30db3c045b42"
+    },
+    {
+      "parameter": "4.7",
+      "value": "2",
+      "unit": "",
+      "design_value": "Shaking Water Bath",
+      "equipment": "실험실설비",
+      "row_idx": 26,
+      "sheet": "Quotation",
+      "chunk_hash": "91edff638ae1eb34"
+    },
+    {
+      "parameter": "4.8",
+      "value": "1",
+      "unit": "",
+      "design_value": "Spectrophotometer",
+      "equipment": "실험실설비",
+      "row_idx": 27,
+      "sheet": "Quotation",
+      "chunk_hash": "eff09e8afe4fcd22"
+    },
+    {
+      "parameter": "4.9",
+      "value": "1",
+      "unit": "",
+      "design_value": "Vacuum Pump",
+      "equipment": "실험실설비",
+      "row_idx": 28,
+      "sheet": "Quotation",
+      "chunk_hash": "538142fa860e604b"
+    },
+    {
+      "parameter": "4.10",
+      "value": "1",
+      "unit": "",
+      "design_value": "Incubator",
+      "equipment": "실험실설비",
+      "row_idx": 29,
+      "sheet": "Quotation",
+      "chunk_hash": "9a3e3252eb101166"
+    },
+    {
+      "parameter": "4.11",
+      "value": "1",
+      "unit": "",
+      "design_value": "Microscope",
+      "equipment": "실험실설비",
+      "row_idx": 30,
+      "sheet": "Quotation",
+      "chunk_hash": "8eebcf31e9a43974"
+    },
+    {
+      "parameter": "4.12",
+      "value": "1",
+      "unit": "",
+      "design_value": "Turbidimeter",
+      "equipment": "실험실설비",
+      "row_idx": 31,
+      "sheet": "Quotation",
+      "chunk_hash": "44fa012df6106ab2"
+    },
+    {
+      "parameter": "4.13",
+      "value": "Auto Pipette",
+      "unit": "",
+      "design_value": "",
+      "equipment": "실험실설비",
+      "row_idx": 32,
+      "sheet": "Quotation",
+      "chunk_hash": "6fa356f003b4fb4b"
+    },
+    {
+      "parameter": "4.14",
+      "value": "1",
+      "unit": "",
+      "design_value": "Auto Pipette Tip",
+      "equipment": "실험실설비",
+      "row_idx": 36,
+      "sheet": "Quotation",
+      "chunk_hash": "3bb89602b5b5b5d4"
+    },
+    {
+      "parameter": "4.15",
+      "value": "Micro Pipette",
+      "unit": "",
+      "design_value": "",
+      "equipment": "실험실설비",
+      "row_idx": 37,
+      "sheet": "Quotation",
+      "chunk_hash": "2c54ea6fac9c15ea"
+    },
+    {
+      "parameter": "4.16",
+      "value": "4",
+      "unit": "",
+      "design_value": "Kjeldhal-Distilling Apparatus",
+      "equipment": "실험실설비",
+      "row_idx": 40,
+      "sheet": "Quotation",
+      "chunk_hash": "195209af3f63d8da"
+    },
+    {
+      "parameter": "4.17",
+      "value": "2",
+      "unit": "",
+      "design_value": "Hot Plate Magnetic Stirrer",
+      "equipment": "실험실설비",
+      "row_idx": 41,
+      "sheet": "Quotation",
+      "chunk_hash": "72029b5ec3d30a8f"
+    },
+    {
+      "parameter": "4.18",
+      "value": "2",
+      "unit": "",
+      "design_value": "Magnetic Stirrer",
+      "equipment": "실험실설비",
+      "row_idx": 42,
+      "sheet": "Quotation",
+      "chunk_hash": "858bd1532782c897"
+    },
+    {
+      "parameter": "4.19",
+      "value": "1",
+      "unit": "",
+      "design_value": "2 Stage Distillator",
+      "equipment": "실험실설비",
+      "row_idx": 43,
+      "sheet": "Quotation",
+      "chunk_hash": "9381350f220a5f82"
+    },
+    {
+      "parameter": "4.20",
+      "value": "1",
+      "unit": "",
+      "design_value": "Centrifuge",
+      "equipment": "실험실설비",
+      "row_idx": 44,
+      "sheet": "Quotation",
+      "chunk_hash": "a2d14fa6c5cf547a"
+    },
+    {
+      "parameter": "4.21",
+      "value": "1",
+      "unit": "",
+      "design_value": "Automic Absorbtion Spectrophoto Meter",
+      "equipment": "실험실설비",
+      "row_idx": 45,
+      "sheet": "Quotation",
+      "chunk_hash": "a1316cfca1fa59c0"
+    },
+    {
+      "parameter": "5",
+      "value": "공통품목",
+      "unit": "",
+      "design_value": "",
+      "equipment": "실험실설비",
+      "row_idx": 47,
+      "sheet": "Quotation",
+      "chunk_hash": "17e28d72450e38ca"
+    },
+    {
+      "parameter": "5.1",
+      "value": "1",
+      "unit": "",
+      "design_value": "Center Table(with Sink) - 3000 x 1500 x 800/1800",
+      "equipment": "실험실설비",
+      "row_idx": 48,
+      "sheet": "Quotation",
+      "chunk_hash": "d4adeaf3839235ec"
+    },
+    {
+      "parameter": "5.2",
+      "value": "4",
+      "unit": "",
+      "design_value": "Side Table - 2400 x 750 x 800H",
+      "equipment": "실험실설비",
+      "row_idx": 49,
+      "sheet": "Quotation",
+      "chunk_hash": "91aab904c31fe43c"
+    },
+    {
+      "parameter": "5.3",
+      "value": "2",
+      "unit": "",
+      "design_value": "Reagent Cabient - 900 x 450 x 1800L",
+      "equipment": "실험실설비",
+      "row_idx": 50,
+      "sheet": "Quotation",
+      "chunk_hash": "518790eb0d9644ab"
+    },
+    {
+      "parameter": "5.4",
+      "value": "1",
+      "unit": "",
+      "design_value": "Shalves - 1200 x 300 x 600H",
+      "equipment": "실험실설비",
+      "row_idx": 51,
+      "sheet": "Quotation",
+      "chunk_hash": "8fc8cb8b758e343d"
+    },
+    {
+      "parameter": "5.5",
+      "value": "1",
+      "unit": "",
+      "design_value": "Balance Table - 900 x 750 x 800H",
+      "equipment": "실험실설비",
+      "row_idx": 52,
+      "sheet": "Quotation",
+      "chunk_hash": "4322a2fde38ffc1e"
+    },
+    {
+      "parameter": "5.6",
+      "value": "1",
+      "unit": "",
+      "design_value": "Draft Camber - 1200 x 750 x 2350H",
+      "equipment": "실험실설비",
+      "row_idx": 53,
+      "sheet": "Quotation",
+      "chunk_hash": "6dd6496cdc558d9b"
+    },
+    {
+      "parameter": "5.7",
+      "value": "1",
+      "unit": "",
+      "design_value": "Dryer - 1200 x 450 x 1600H",
+      "equipment": "실험실설비",
+      "row_idx": 54,
+      "sheet": "Quotation",
+      "chunk_hash": "fd868e7d8f7190eb"
+    },
+    {
+      "parameter": "5.8",
+      "value": "1",
+      "unit": "",
+      "design_value": "Sink - 1200 x 750 x 800H",
+      "equipment": "실험실설비",
+      "row_idx": 55,
+      "sheet": "Quotation",
+      "chunk_hash": "599e55930ef23907"
+    },
+    {
+      "parameter": "5.9",
+      "value": "1",
+      "unit": "",
+      "design_value": "Refrigerator - 200L",
+      "equipment": "실험실설비",
+      "row_idx": 56,
+      "sheet": "Quotation",
+      "chunk_hash": "f1e6309de6a9df2b"
+    },
+    {
+      "parameter": "5.10",
+      "value": "1",
+      "unit": "",
+      "design_value": "Distilling App - 4L/hr",
+      "equipment": "실험실설비",
+      "row_idx": 57,
+      "sheet": "Quotation",
+      "chunk_hash": "564df0128bc16152"
+    },
+    {
+      "parameter": "5.11",
+      "value": "2",
+      "unit": "",
+      "design_value": "Gas Burner Rok",
+      "equipment": "실험실설비",
+      "row_idx": 58,
+      "sheet": "Quotation",
+      "chunk_hash": "b335743c433c6caf"
+    },
+    {
+      "parameter": "5.12",
+      "value": "2",
+      "unit": "",
+      "design_value": "Water Bath",
+      "equipment": "실험실설비",
+      "row_idx": 59,
+      "sheet": "Quotation",
+      "chunk_hash": "de30d5d054a07ae5"
+    },
+    {
+      "parameter": "5.12",
+      "value": "5",
+      "unit": "",
+      "design_value": "Chair",
+      "equipment": "실험실설비",
+      "row_idx": 60,
+      "sheet": "Quotation",
+      "chunk_hash": "49d25aad4632deb0"
+    },
+    {
+      "parameter": "5.13",
+      "value": "1",
+      "unit": "",
+      "design_value": "Arm hood",
+      "equipment": "실험실설비",
+      "row_idx": 61,
+      "sheet": "Quotation",
+      "chunk_hash": "a7229c9915304569"
+    },
+    {
+      "parameter": "No.",
+      "value": "Maker",
+      "unit": "",
+      "design_value": "Description",
+      "equipment": "실험실설비",
+      "row_idx": 2,
+      "sheet": "Data Sheet",
+      "chunk_hash": "e9dd511d9ce8bf8d"
+    },
+    {
+      "parameter": "1",
+      "value": "폐기물 성분 분석용",
+      "unit": "",
+      "design_value": "",
+      "equipment": "실험실설비",
+      "row_idx": 3,
+      "sheet": "Data Sheet",
+      "chunk_hash": "82a179102f5ddc32"
+    },
+    {
+      "parameter": "1.1",
+      "value": "SH Sci.",
+      "unit": "",
+      "design_value": "Drying Oven(150L)",
+      "equipment": "실험실설비",
+      "row_idx": 4,
+      "sheet": "Data Sheet",
+      "chunk_hash": "b80b857597793919"
+    },
+    {
+      "parameter": "1.2",
+      "value": "Parr",
+      "unit": "",
+      "design_value": "Calorimeter",
+      "equipment": "실험실설비",
+      "row_idx": 19,
+      "sheet": "Data Sheet",
+      "chunk_hash": "9d790738971548cc"
+    },
+    {
+      "parameter": "1.3",
+      "value": "Jisico",
+      "unit": "",
+      "design_value": "Cutting Mill(Willy Type)",
+      "equipment": "실험실설비",
+      "row_idx": 48,
+      "sheet": "Data Sheet",
+      "chunk_hash": "7e710cbac8289936"
+    },
+    {
+      "parameter": "1.4",
+      "value": "Radwag",
+      "unit": "",
+      "design_value": "Digital Balance",
+      "equipment": "실험실설비",
+      "row_idx": 65,
+      "sheet": "Data Sheet",
+      "chunk_hash": "108088057533d2db"
+    },
+    {
+      "parameter": "1.4",
+      "value": "Radwag",
+      "unit": "",
+      "design_value": "Digital Balance",
+      "equipment": "실험실설비",
+      "row_idx": 83,
+      "sheet": "Data Sheet",
+      "chunk_hash": "96a45df957383451"
+    },
+    {
+      "parameter": "1.5",
+      "value": "Hansung",
+      "unit": "",
+      "design_value": "Top Loading Balance",
+      "equipment": "실험실설비",
+      "row_idx": 98,
+      "sheet": "Data Sheet",
+      "chunk_hash": "820e26880517f40e"
+    },
+    {
+      "parameter": "1.6",
+      "value": "SH Sci.",
+      "unit": "",
+      "design_value": "Muffle Furnace",
+      "equipment": "실험실설비",
+      "row_idx": 117,
+      "sheet": "Data Sheet",
+      "chunk_hash": "a34ac3d04c1099c0"
+    },
+    {
+      "parameter": "1.7",
+      "value": "DH",
+      "unit": "",
+      "design_value": "Stop Watch",
+      "equipment": "실험실설비",
+      "row_idx": 131,
+      "sheet": "Data Sheet",
+      "chunk_hash": "dcc085b64c96fc18"
+    },
+    {
+      "parameter": "2",
+      "value": "재의 열작 감량 분석기",
+      "unit": "",
+      "design_value": "",
+      "equipment": "실험실설비",
+      "row_idx": 136,
+      "sheet": "Data Sheet",
+      "chunk_hash": "681ffb6066155a9b"
+    },
+    {
+      "parameter": "2.1",
+      "value": "Special",
+      "unit": "",
+      "design_value": "Pt Crucible",
+      "equipment": "실험실설비",
+      "row_idx": 137,
+      "sheet": "Data Sheet",
+      "chunk_hash": "a864fb2e1234729d"
+    },
+    {
+      "parameter": "2.2",
+      "value": "DH",
+      "unit": "",
+      "design_value": "Crucible",
+      "equipment": "실험실설비",
+      "row_idx": 143,
+      "sheet": "Data Sheet",
+      "chunk_hash": "931d4728ca728f3a"
+    },
+    {
+      "parameter": "2.3",
+      "value": "DH",
+      "unit": "",
+      "design_value": "Desicator",
+      "equipment": "실험실설비",
+      "row_idx": 149,
+      "sheet": "Data Sheet",
+      "chunk_hash": "4c27f7f4d36420bb"
+    },
+    {
+      "parameter": "2.4",
+      "value": "SH Sci.",
+      "unit": "",
+      "design_value": "Dry Oven",
+      "equipment": "실험실설비",
+      "row_idx": 156,
+      "sheet": "Data Sheet",
+      "chunk_hash": "805f05fb6598d0f2"
+    },
+    {
+      "parameter": "3",
+      "value": "연소가스 분석기",
+      "unit": "",
+      "design_value": "",
+      "equipment": "실험실설비",
+      "row_idx": 173,
+      "sheet": "Data Sheet",
+      "chunk_hash": "d4e27a68ea977bc9"
+    },
+    {
+      "parameter": "3.1",
+      "value": "TPI",
+      "unit": "",
+      "design_value": "Orsat Gas Analyzer",
+      "equipment": "실험실설비",
+      "row_idx": 174,
+      "sheet": "Data Sheet",
+      "chunk_hash": "c25c4632fd183c38"
+    },
+    {
+      "parameter": "4",
+      "value": "폐수 분석기",
+      "unit": "",
+      "design_value": "",
+      "equipment": "실험실설비",
+      "row_idx": 200,
+      "sheet": "Data Sheet",
+      "chunk_hash": "01bc75b1e715ef14"
+    },
+    {
+      "parameter": "4.1",
+      "value": "DH",
+      "unit": "",
+      "design_value": "BOD Bottle",
+      "equipment": "실험실설비",
+      "row_idx": 201,
+      "sheet": "Data Sheet",
+      "chunk_hash": "77956e20e3ca0cda"
+    },
+    {
+      "parameter": "4.2",
+      "value": "Humas",
+      "unit": "",
+      "design_value": "COD Measuring Apparatus",
+      "equipment": "실험실설비",
+      "row_idx": 211,
+      "sheet": "Data Sheet",
+      "chunk_hash": "6482fa5d01b60209"
+    },
+    {
+      "parameter": "4.3",
+      "value": "Gast / DH",
+      "unit": "",
+      "design_value": "Vacuum Filtering Apparatus",
+      "equipment": "실험실설비",
+      "row_idx": 221,
+      "sheet": "Data Sheet",
+      "chunk_hash": "7defd3936ca9ece6"
+    },
+    {
+      "parameter": "4.4",
+      "value": "Hanna",
+      "unit": "",
+      "design_value": "pH Measuring Equipment",
+      "equipment": "실험실설비",
+      "row_idx": 234,
+      "sheet": "Data Sheet",
+      "chunk_hash": "cd58c4dc32b8e02e"
+    },
+    {
+      "parameter": "4.5",
+      "value": "DH",
+      "unit": "",
+      "design_value": "Colony Counter",
+      "equipment": "재열기",
+      "row_idx": 261,
+      "sheet": "Data Sheet",
+      "chunk_hash": "fbba87501dc1f6b2"
+    },
+    {
+      "parameter": "4.6",
+      "value": "Thermo Orion",
+      "unit": "",
+      "design_value": "DO Meter",
+      "equipment": "재열기",
+      "row_idx": 270,
+      "sheet": "Data Sheet",
+      "chunk_hash": "f9a682436fec5944"
+    },
+    {
+      "parameter": "4.7",
+      "value": "DH",
+      "unit": "",
+      "design_value": "Shaking Water Bath",
+      "equipment": "재열기",
+      "row_idx": 303,
+      "sheet": "Data Sheet",
+      "chunk_hash": "81cc75dbb9083767"
+    },
+    {
+      "parameter": "4.8",
+      "value": "Humas",
+      "unit": "",
+      "design_value": "Spectrophotometer",
+      "equipment": "밸브",
+      "row_idx": 325,
+      "sheet": "Data Sheet",
+      "chunk_hash": "dfb664ef0cf07033"
+    },
+    {
+      "parameter": "4.9",
+      "value": "GAST",
+      "unit": "",
+      "design_value": "Vacuum Pump",
+      "equipment": "과열기",
+      "row_idx": 354,
+      "sheet": "Data Sheet",
+      "chunk_hash": "967f7d23cb569a6a"
+    },
+    {
+      "parameter": "4.10",
+      "value": "SH Sci.",
+      "unit": "",
+      "design_value": "Incubator",
+      "equipment": "과열기",
+      "row_idx": 370,
+      "sheet": "Data Sheet",
+      "chunk_hash": "2b862549af4080a9"
+    },
+    {
+      "parameter": "4.11",
+      "value": "Sunny",
+      "unit": "",
+      "design_value": "Microscope",
+      "equipment": "과열기",
+      "row_idx": 389,
+      "sheet": "Data Sheet",
+      "chunk_hash": "037403405d1e1c98"
+    },
+    {
+      "parameter": "4.12",
+      "value": "HACH",
+      "unit": "",
+      "design_value": "Turbidity meter",
+      "equipment": "과열기",
+      "row_idx": 401,
+      "sheet": "Data Sheet",
+      "chunk_hash": "f27ea432e4fa5539"
+    },
+    {
+      "parameter": "4.13",
+      "value": "Auto Pipette",
+      "unit": "",
+      "design_value": "",
+      "equipment": "과열기",
+      "row_idx": 426,
+      "sheet": "Data Sheet",
+      "chunk_hash": "07260b9caa1a585c"
+    },
+    {
+      "parameter": "4.14",
+      "value": "Special",
+      "unit": "",
+      "design_value": "Auto Pipette Tip",
+      "equipment": "과열기",
+      "row_idx": 440,
+      "sheet": "Data Sheet",
+      "chunk_hash": "37db91a7a621e107"
+    },
+    {
+      "parameter": "4.15",
+      "value": "Micro Pipette",
+      "unit": "",
+      "design_value": "",
+      "equipment": "과열기",
+      "row_idx": 449,
+      "sheet": "Data Sheet",
+      "chunk_hash": "3e9a45d6c3a3cf7c"
+    },
+    {
+      "parameter": "4.16",
+      "value": "DH",
+      "unit": "",
+      "design_value": "Kjeldhal-Distilling Apparatus",
+      "equipment": "과열기",
+      "row_idx": 459,
+      "sheet": "Data Sheet",
+      "chunk_hash": "3b9b959b8d9c9011"
+    },
+    {
+      "parameter": "4.17",
+      "value": "DH",
+      "unit": "",
+      "design_value": "Hot Plate Magnetic Stirrer",
+      "equipment": "과열기",
+      "row_idx": 474,
+      "sheet": "Data Sheet",
+      "chunk_hash": "697dc767fb2109fa"
+    },
+    {
+      "parameter": "4.18",
+      "value": "DH",
+      "unit": "",
+      "design_value": "Magnetic Stirrer",
+      "equipment": "과열기",
+      "row_idx": 489,
+      "sheet": "Data Sheet",
+      "chunk_hash": "90ff6b1c48fef77f"
+    },
+    {
+      "parameter": "4.19",
+      "value": "Human",
+      "unit": "",
+      "design_value": "2 Stage Distillator",
+      "equipment": "과열기",
+      "row_idx": 504,
+      "sheet": "Data Sheet",
+      "chunk_hash": "bc038a0edc0be5d0"
+    },
+    {
+      "parameter": "4.20",
+      "value": "CYROZEN",
+      "unit": "",
+      "design_value": "Centrifuge",
+      "equipment": "필터",
+      "row_idx": 534,
+      "sheet": "Data Sheet",
+      "chunk_hash": "0f2437baac972cfd"
+    },
+    {
+      "parameter": "4.21",
+      "value": "Shimadzu",
+      "unit": "",
+      "design_value": "Automic Absorbtion Spectrophoto Meter",
+      "equipment": "필터",
+      "row_idx": 548,
+      "sheet": "Data Sheet",
+      "chunk_hash": "6d3e2c9e4b5cc13c"
+    },
+    {
+      "parameter": "5",
+      "value": "공통품목",
+      "unit": "",
+      "design_value": "",
+      "equipment": "증기드럼",
+      "row_idx": 604,
+      "sheet": "Data Sheet",
+      "chunk_hash": "3d0d7fc46fe7a298"
+    },
+    {
+      "parameter": "5.1",
+      "value": "CNC Lab.",
+      "unit": "",
+      "design_value": "Center Table(with Sink)",
+      "equipment": "증기드럼",
+      "row_idx": 605,
+      "sheet": "Data Sheet",
+      "chunk_hash": "3fcb47c7d1c23395"
+    },
+    {
+      "parameter": "5.2",
+      "value": "CNC Lab.",
+      "unit": "",
+      "design_value": "Side Table",
+      "equipment": "증기드럼",
+      "row_idx": 618,
+      "sheet": "Data Sheet",
+      "chunk_hash": "cbf0698aaea0eed7"
+    },
+    {
+      "parameter": "5.3",
+      "value": "CNC Lab.",
+      "unit": "",
+      "design_value": "Reagent Cabinet",
+      "equipment": "증기드럼",
+      "row_idx": 628,
+      "sheet": "Data Sheet",
+      "chunk_hash": "db3eb96f4138eb0a"
+    },
+    {
+      "parameter": "5.4",
+      "value": "CNC Lab.",
+      "unit": "",
+      "design_value": "Shalves",
+      "equipment": "증기드럼",
+      "row_idx": 637,
+      "sheet": "Data Sheet",
+      "chunk_hash": "8a2589ac76f50960"
+    },
+    {
+      "parameter": "5.5",
+      "value": "CNC Lab.",
+      "unit": "",
+      "design_value": "Balance Table",
+      "equipment": "증기드럼",
+      "row_idx": 645,
+      "sheet": "Data Sheet",
+      "chunk_hash": "a6b86b8d6a7f3106"
+    },
+    {
+      "parameter": "5.6",
+      "value": "CNC Lab.",
+      "unit": "",
+      "design_value": "Draft Camber",
+      "equipment": "증기드럼",
+      "row_idx": 654,
+      "sheet": "Data Sheet",
+      "chunk_hash": "c4c038a1a39bf3a3"
+    },
+    {
+      "parameter": "5.7",
+      "value": "DH",
+      "unit": "",
+      "design_value": "Dryer",
+      "equipment": "증기드럼",
+      "row_idx": 667,
+      "sheet": "Data Sheet",
+      "chunk_hash": "cc321b0013992507"
+    },
+    {
+      "parameter": "5.8",
+      "value": "CNC Lab.",
+      "unit": "",
+      "design_value": "Sink",
+      "equipment": "증기드럼",
+      "row_idx": 676,
+      "sheet": "Data Sheet",
+      "chunk_hash": "2f608055f8eb7476"
+    },
+    {
+      "parameter": "5.9",
+      "value": "Woosung",
+      "unit": "",
+      "design_value": "Refrigerator",
+      "equipment": "증기드럼",
+      "row_idx": 684,
+      "sheet": "Data Sheet",
+      "chunk_hash": "d2177125564cf56f"
+    },
+    {
+      "parameter": "5.10",
+      "value": "DH",
+      "unit": "",
+      "design_value": "Distilling App",
+      "equipment": "증기드럼",
+      "row_idx": 693,
+      "sheet": "Data Sheet",
+      "chunk_hash": "f00e47c0ac2626dd"
+    },
+    {
+      "parameter": "5.11",
+      "value": "DH",
+      "unit": "",
+      "design_value": "Gas Burner Rok",
+      "equipment": "응축기",
+      "row_idx": 713,
+      "sheet": "Data Sheet",
+      "chunk_hash": "40f498fa08fdda4f"
+    },
+    {
+      "parameter": "5.12",
+      "value": "SH Sci.",
+      "unit": "",
+      "design_value": "Water Bath",
+      "equipment": "버너",
+      "row_idx": 722,
+      "sheet": "Data Sheet",
+      "chunk_hash": "46174772690b22a7"
+    },
+    {
+      "parameter": "5.13",
+      "value": "CNC Lab.",
+      "unit": "",
+      "design_value": "Chair",
+      "equipment": "버너",
+      "row_idx": 736,
+      "sheet": "Data Sheet",
+      "chunk_hash": "6143e57446cdf374"
+    },
+    {
+      "parameter": "5.14",
+      "value": "CNC Lab.",
+      "unit": "",
+      "design_value": "Arm hood",
+      "equipment": "버너",
+      "row_idx": 744,
+      "sheet": "Data Sheet",
+      "chunk_hash": "31d2c2fd57a7019b"
+    }
+  ]
+}

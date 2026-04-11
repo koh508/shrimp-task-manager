@@ -353,6 +353,82 @@ def _generate(prompt: str) -> str:
         return f"[생성 오류: {e}]"
 
 
+# ──────────────────────────────────────────────────────────────────────────────
+# 시험 문제 풀이 파이프라인 (공조냉동기계기사 / OCU 등)
+# ──────────────────────────────────────────────────────────────────────────────
+
+# caption에 이 키워드가 있으면 exam 모드로 라우팅
+EXAM_KEYWORDS = (
+    "문제", "퀴즈", "풀어", "공조", "냉동", "냉매", "압축기", "응축기",
+    "증발기", "p-h", "몰리에르", "소방", "ocu", "실기", "필기",
+    "계산", "공식", "열역학", "냉동사이클", "과열도", "과냉각",
+)
+
+
+def is_exam_photo(caption: str) -> bool:
+    """caption 기반으로 시험 문제 사진인지 판단."""
+    c = caption.lower()
+    return any(kw in c for kw in EXAM_KEYWORDS)
+
+
+def _exam_vision_prompt(question: str = "") -> str:
+    base = (
+        "이 이미지에서 시험 문제나 문제지 내용을 빠짐없이 읽어라. "
+        "텍스트, 수식, 선도(p-h선도/냉동사이클), 도표, 그림의 레이블을 모두 읽어라. "
+        "읽은 내용을 그대로 출력한 뒤, 문제가 있으면 그 문제를 명확히 한 줄로 요약하라."
+    )
+    return base + (f" 사용자 추가 질문: {question}" if question else "")
+
+_EXAM_SOLVE_PROMPT = """당신은 공조냉동기계기사·소방설비·열역학 전문 강사입니다.
+
+[사진에서 읽은 내용]
+{vision}
+
+[Vault 관련 자료]
+{vault}
+
+{user_q}
+
+아래 형식으로 간결하게 답하라:
+
+**정답:** (한 줄)
+**핵심 공식/원리:** (한 줄)
+**풀이:** (2~3줄, 계산 과정 포함)
+
+"자세히"라고 요청하지 않는 한 위 형식을 절대 벗어나지 마라.
+"""
+
+
+def analyze_exam_image(img_path: str, question: str = "", agent=None) -> dict:
+    """
+    시험 문제 사진 → 핵심 풀이 반환.
+    Returns: {'answer': str, 'vision': str, 'vault': str}
+    """
+    import obsidian_agent as _oa
+
+    # ① Vision: 문제 텍스트/선도 읽기
+    vision_q = (
+        "이 이미지에서 시험 문제나 문제지 내용을 빠짐없이 읽어라. "
+        "텍스트, 수식, 선도(p-h선도/냉동사이클), 도표, 그림의 레이블을 모두 읽어라. "
+        "읽은 내용 그대로 출력하고, 문제가 있으면 한 줄로 요약하라."
+        + (f" 사용자 질문: {question}" if question else "")
+    )
+    vision = _oa.analyze_image(img_path, vision_q)
+
+    # ② Vault RAG: 관련 학습 자료 검색 (API 절감: 짧은 쿼리)
+    vault_q = (question or vision[:150]).strip()
+    vault, _ = _search_vault(vault_q[:200], agent, k=3)
+
+    # ③ LLM 풀이 생성
+    user_q_line = f"[사용자 질문]: {question}" if question else ""
+    prompt = _EXAM_SOLVE_PROMPT.format(
+        vision=vision, vault=vault or "없음", user_q=user_q_line
+    )
+    answer = _generate(prompt)
+
+    return {'answer': answer, 'vision': vision, 'vault': vault}
+
+
 def analyze_field_image_bytes(img_bytes: bytes, ext: str,
                                question: str = "", agent=None) -> dict:
     with tempfile.NamedTemporaryFile(suffix=f'.{ext}', delete=False) as tmp:

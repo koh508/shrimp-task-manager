@@ -1,0 +1,185 @@
+{
+  "run_at": "2026-03-27T19:33:33",
+  "args": {
+    "company": null,
+    "limit": null,
+    "force": false,
+    "latest_only": true
+  },
+  "stats": {
+    "processed": 24,
+    "skipped": 30,
+    "failed": 0,
+    "total_records": 0
+  },
+  "entries": [
+    {
+      "path": "D:\\기계도면\\기계도면\\09. 바닥재 처리설비 (태광)\\재처리 설비\\18. SUB VENDOR LIST\\021.SUB-VENDOR LIST (바닥재).xlsx",
+      "ok": true,
+      "doc_type": "LINELIST",
+      "records": 0,
+      "sheets": 1
+    },
+    {
+      "path": "D:\\기계도면\\기계도면\\17. 소각설비, 유압설비 (KHI, 태광)\\소각 설비\\18. SUB VENDOR LIST\\018.SUB-VENDOR LIST.xlsx",
+      "ok": true,
+      "doc_type": "LINELIST",
+      "records": 0,
+      "sheets": 1
+    },
+    {
+      "path": "D:\\기계도면\\기계도면\\22. 시료수, 약품2, 침출수, 화격자 (조선내화E)\\시료수분석설비 외 준공도서\\01. [제주-기계] 승인서류 (19.11.) AS BUILT\\18. 기술 및 참고자료\\[18-1] 시료수 분석설비\\18-1-3-1. DATA SHEET(PG).xls",
+      "ok": true,
+      "doc_type": "LINELIST",
+      "records": 0,
+      "sheets": 1
+    },
+    {
+      "path": "D:\\기계도면\\기계도면\\22. 시료수, 약품2, 침출수, 화격자 (조선내화E)\\시료수분석설비 외 준공도서\\01. [제주-기계] 승인서류 (19.11.) AS BUILT\\18. 기술 및 참고자료\\[18-1] 시료수 분석설비\\18-1-3-2. P258승인.xls",
+      "ok": true,
+      "doc_type": "LINELIST",
+      "records": 0,
+      "sheets": 1
+    },
+    {
+      "path": "D:\\기계도면\\기계도면\\22. 시료수, 약품2, 침출수, 화격자 (조선내화E)\\시료수분석설비 외 준공도서\\01. [제주-기계] 승인서류 (19.11.) AS BUILT\\18. 기술 및 참고자료\\[18-1] 시료수 분석설비\\18-1-4-1. DATASHEET (TG).xls",
+      "ok": true,
+      "doc_type": "LINELIST",
+      "records": 0,
+      "sheets": 1
+    },
+    {
+      "path": "D:\\기계도면\\기계도면\\22. 시료수, 약품2, 침출수, 화격자 (조선내화E)\\시료수분석설비 외 준공도서\\01. [제주-기계] 승인서류 (19.11.) AS BUILT\\18. 기술 및 참고자료\\[18-1] 시료수 분석설비\\18-1-4-2. 도면-온도계(T110).xls",
+      "ok": true,
+      "doc_type": "LINELIST",
+      "records": 0,
+      "sheets": 1
+    },
+    {
+      "path": "D:\\기계도면\\기계도면\\22. 시료수, 약품2, 침출수, 화격자 (조선내화E)\\시료수분석설비 외 준공도서\\01. [제주-기계] 승인서류 (19.11.) AS BUILT\\18. 기술 및 참고자료\\[18-1] 시료수 분석설비\\18-1-5. Flow Meter\\18-1-5-1. Flow Meter Spec Sheet (PA-20).xls",
+      "ok": true,
+      "doc_type": "LINELIST",
+      "records": 0,
+      "sheets": 1
+    },
+    {
+      "path": "D:\\기계도면\\기계도면\\22. 시료수, 약품2, 침출수, 화격자 (조선내화E)\\시료수분석설비 외 준공도서\\01. [제주-기계] 승인서류 (19.11.) AS BUILT\\18. 기술 및 참고자료\\[18-2] 보일러 약품주입설비\\18-2-4-1. 압력계 DATA SHEET.xls",
+      "ok": true,
+      "doc_type": "LINELIST",
+      "records": 0,
+      "sheets": 1
+    },
+    {
+      "path": "D:\\기계도면\\기계도면\\22. 시료수, 약품2, 침출수, 화격자 (조선내화E)\\시료수분석설비 외 준공도서\\01. [제주-기계] 승인서류 (19.11.) AS BUILT\\18. 기술 및 참고자료\\[18-2] 보일러 약품주입설비\\18-2-4-2. 압력계 도면.xls",
+      "ok": true,
+      "doc_type": "LINELIST",
+      "records": 0,
+      "sheets": 1
+    },
+    {
+      "path": "D:\\기계도면\\기계도면\\22. 시료수, 약품2, 침출수, 화격자 (조선내화E)\\시료수분석설비 외 준공도서\\01. [제주-기계] 승인서류 (19.11.) AS BUILT\\18. 기술 및 참고자료\\[18-3] 냉각수 약품주입설비\\18-3-4-1. 압력계 DATA SHEET.xls",
+      "ok": true,
+      "doc_type": "LINELIST",
+      "records": 0,
+      "sheets": 1
+    },
+    {
+      "path": "D:\\기계도면\\기계도면\\22. 시료수, 약품2, 침출수, 화격자 (조선내화E)\\시료수분석설비 외 준공도서\\01. [제주-기계] 승인서류 (19.11.) AS BUILT\\18. 기술 및 참고자료\\[18-3] 냉각수 약품주입설비\\18-3-4-2. 압력계 도면.xls",
+      "ok": true,
+      "doc_type": "LINELIST",
+      "records": 0,
+      "sheets": 1
+    },
+    {
+      "path": "D:\\기계도면\\기계도면\\22. 시료수, 약품2, 침출수, 화격자 (조선내화E)\\시료수분석설비 외 준공도서\\01. [제주-기계] 승인서류 (19.11.) AS BUILT\\18. 기술 및 참고자료\\[18-4] 폐기물 침출수 설비\\18-4-8-1. 압력계 (P258) DATA SHEET.xls",
+      "ok": true,
+      "doc_type": "LINELIST",
+      "records": 0,
+      "sheets": 1
+    },
+    {
+      "path": "D:\\기계도면\\기계도면\\22. 시료수, 약품2, 침출수, 화격자 (조선내화E)\\시료수분석설비 외 준공도서\\01. [제주-기계] 승인서류 (19.11.) AS BUILT\\18. 기술 및 참고자료\\[18-4] 폐기물 침출수 설비\\18-4-8-2. 압력계 (P258) 도면.xls",
+      "ok": true,
+      "doc_type": "LINELIST",
+      "records": 0,
+      "sheets": 1
+    },
+    {
+      "path": "D:\\기계도면\\기계도면\\22. 시료수, 약품2, 침출수, 화격자 (조선내화E)\\시료수분석설비 외 준공도서\\01. [제주-기계] 승인서류 (19.11.) AS BUILT\\18. 기술 및 참고자료\\[18-4] 폐기물 침출수 설비\\18-4-7. Pressure Switch\\18-4-7-2. Pressure Switch (P941) Data-sheet.xls",
+      "ok": true,
+      "doc_type": "LINELIST",
+      "records": 0,
+      "sheets": 1
+    },
+    {
+      "path": "D:\\기계도면\\기계도면\\22. 시료수, 약품2, 침출수, 화격자 (조선내화E)\\시료수분석설비 외 준공도서\\01. [제주-기계] 승인서류 (19.11.) AS BUILT\\18. 기술 및 참고자료\\[18-5] 화격자 냉각설비\\18-5-1. TCV\\18-5-1-1. TCV DATA SHEET(ACV-65A-EP-AS).xls",
+      "ok": true,
+      "doc_type": "LINELIST",
+      "records": 0,
+      "sheets": 1
+    },
+    {
+      "path": "D:\\기계도면\\기계도면\\22. 시료수, 약품2, 침출수, 화격자 (조선내화E)\\시료수분석설비 외 준공도서\\01. [제주-기계] 승인서류 (19.11.) AS BUILT\\18. 기술 및 참고자료\\[18-5] 화격자 냉각설비\\18-5-3. Flow Switch\\18-5-3-2. Flow Switch (SF-4) Data Sheet.xls",
+      "ok": true,
+      "doc_type": "LINELIST",
+      "records": 0,
+      "sheets": 3
+    },
+    {
+      "path": "D:\\기계도면\\기계도면\\22. 시료수, 약품2, 침출수, 화격자 (조선내화E)\\시료수분석설비 외 준공도서\\01. [제주-기계] 승인서류 (19.11.) AS BUILT\\18. 기술 및 참고자료\\[18-5] 화격자 냉각설비\\18-5-6. 온도계\\18-5-6-2. 도면-온도계(T110).xls",
+      "ok": true,
+      "doc_type": "LINELIST",
+      "records": 0,
+      "sheets": 1
+    },
+    {
+      "path": "D:\\기계도면\\기계도면\\22. 시료수, 약품2, 침출수, 화격자 (조선내화E)\\시료수분석설비 외 준공도서\\01. [제주-기계] 승인서류 (19.11.) AS BUILT\\18. 기술 및 참고자료\\[18-5] 화격자 냉각설비\\18-5-7. 압력계\\18-5-7-1. DATA SHEET(PG).xls",
+      "ok": true,
+      "doc_type": "LINELIST",
+      "records": 0,
+      "sheets": 1
+    },
+    {
+      "path": "D:\\기계도면\\기계도면\\22. 시료수, 약품2, 침출수, 화격자 (조선내화E)\\시료수분석설비 외 준공도서\\01. [제주-기계] 승인서류 (19.11.) AS BUILT\\18. 기술 및 참고자료\\[18-5] 화격자 냉각설비\\18-5-7. 압력계\\18-5-7-2. P258승인.xls",
+      "ok": true,
+      "doc_type": "LINELIST",
+      "records": 0,
+      "sheets": 1
+    },
+    {
+      "path": "D:\\기계도면\\기계도면\\22. 시료수, 약품2, 침출수, 화격자 (조선내화E)\\시료수분석설비 외 준공도서\\01. [제주-기계] 승인서류 (19.11.) AS BUILT\\6. DATA SHEET 및 성능곡선도\\[6-1] 시료수 분석설비\\6-1-2. 케이엔텍 Data Sheet - CD Range 수정.xlsx",
+      "ok": true,
+      "doc_type": "DATA_SHEET",
+      "records": 0,
+      "sheets": 5
+    },
+    {
+      "path": "D:\\기계도면\\기계도면\\23. 실험실 (세나)\\실험실_AS-BUILT (1)\\18. 기술 및 참고자료\\Equipment List.xlsx",
+      "ok": true,
+      "doc_type": "LINELIST",
+      "records": 0,
+      "sheets": 1
+    },
+    {
+      "path": "D:\\기계도면\\기계도면\\26. 연소가스처리설비 (에스텍)\\준공도서-연소가스 처리설비(전기)\\8. INSTRUMENT DATA SHEET\\2. 블루오션\\(19 01 07) Data Sheet - 제주환경자원순환센터(소각시설) 조성공사.xlsx",
+      "ok": true,
+      "doc_type": "DATA_SHEET",
+      "records": 0,
+      "sheets": 2
+    },
+    {
+      "path": "D:\\기계도면\\기계도면\\30. 저압증기복수기 (DTS)\\감리 승인용 7차 문서 (201908) As built\\18. Sub Vendor List\\첨부\\17DAC17 Sub-vendor list-191130.xlsx",
+      "ok": true,
+      "doc_type": "LINELIST",
+      "records": 0,
+      "sheets": 1
+    },
+    {
+      "path": "D:\\기계도면\\기계도면\\36. 폐열보일러, SB (조선내화E)\\보일러 준공도서\\보일러(기계)\\18.PIPING INFORMATION rev.0(●)\\원본\\18.0 PIPING INFORMATION(목차).xlsx",
+      "ok": true,
+      "doc_type": "LINELIST",
+      "records": 0,
+      "sheets": 2
+    }
+  ]
+}

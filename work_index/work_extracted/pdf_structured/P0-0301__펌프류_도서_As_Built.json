@@ -1,0 +1,97 @@
+{
+  "meta": {
+    "tag": "P0-0301",
+    "file": "펌프류 도서_As Built.pdf",
+    "company_id": "34",
+    "source_path": "D:\\기계도면\\기계도면\\34. 펌프류 (청우하이드로)\\펌프류 도서_As Built.pdf",
+    "split_from": null,
+    "extracted_at": "2026-03-28T13:31:31"
+  },
+  "tag": "P0-0301",
+  "records": [
+    {
+      "tag": "P0-0301",
+      "section": "MOTOR",
+      "position": null,
+      "parameter": "motor_poles",
+      "value": "2",
+      "unit": "pole",
+      "match_type": "exact",
+      "source": {
+        "file": "펌프류 도서_As Built.pdf",
+        "company": "34",
+        "page": 50
+      }
+    },
+    {
+      "tag": "P0-0301",
+      "section": "FAN",
+      "position": null,
+      "parameter": "air_flow_m3h",
+      "value": "69.93",
+      "unit": "M3/H",
+      "match_type": "exact",
+      "source": {
+        "file": "펌프류 도서_As Built.pdf",
+        "company": "34",
+        "page": 51
+      }
+    },
+    {
+      "tag": "P0-0301",
+      "section": "MOTOR",
+      "position": null,
+      "parameter": "motor_kw",
+      "value": "185.0",
+      "unit": "kW",
+      "match_type": "exact",
+      "source": {
+        "file": "펌프류 도서_As Built.pdf",
+        "company": "34",
+        "page": 51
+      }
+    },
+    {
+      "tag": "P0-0301",
+      "section": "MOTOR",
+      "position": null,
+      "parameter": "insulation_class",
+      "value": "F",
+      "unit": "",
+      "match_type": "exact",
+      "source": {
+        "file": "펌프류 도서_As Built.pdf",
+        "company": "34",
+        "page": 57
+      }
+    },
+    {
+      "tag": "P0-0301",
+      "section": "MOTOR",
+      "position": null,
+      "parameter": "motor_voltage_V",
+      "value": "380",
+      "unit": "V",
+      "match_type": "exact",
+      "source": {
+        "file": "펌프류 도서_As Built.pdf",
+        "company": "34",
+        "page": 57
+      }
+    },
+    {
+      "tag": "P0-0301",
+      "section": "MOTOR",
+      "position": null,
+      "parameter": "ip_rating",
+      "value": "IP54",
+      "unit": "",
+      "match_type": "exact",
+      "source": {
+        "file": "펌프류 도서_As Built.pdf",
+        "company": "34",
+        "page": 57
+      }
+    }
+  ]
+}

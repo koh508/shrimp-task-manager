@@ -1,0 +1,68 @@
+{
+  "meta": {
+    "tag": "VP-006",
+    "file": "10. 시험 및 검사 절차서 & 계획서.pdf",
+    "company_id": "30",
+    "source_path": "D:\\기계도면\\기계도면\\30. 저압증기복수기 (DTS)\\감리 승인용 7차 문서 (201908) As built\\10. 시험 및 검사 절차서 & 계획서\\10. 시험 및 검사 절차서 & 계획서.pdf",
+    "extracted_at": "2026-03-27T22:29:48"
+  },
+  "tag": "VP-006",
+  "records": [
+    {
+      "tag": "VP-006",
+      "section": "MOTOR",
+      "position": null,
+      "parameter": "insulation_class",
+      "value": "Resistance",
+      "unit": "",
+      "match_type": "exact",
+      "source": {
+        "file": "10. 시험 및 검사 절차서 & 계획서.pdf",
+        "company": "30",
+        "page": 13
+      }
+    },
+    {
+      "tag": "VP-006",
+      "section": "MOTOR",
+      "position": null,
+      "parameter": "insulation_class",
+      "value": "check",
+      "unit": "",
+      "match_type": "exact",
+      "source": {
+        "file": "10. 시험 및 검사 절차서 & 계획서.pdf",
+        "company": "30",
+        "page": 21
+      }
+    },
+    {
+      "tag": "VP-006",
+      "section": "MOTOR",
+      "position": null,
+      "parameter": "insulation_class",
+      "value": "RESISTANCE",
+      "unit": "",
+      "match_type": "exact",
+      "source": {
+        "file": "10. 시험 및 검사 절차서 & 계획서.pdf",
+        "company": "30",
+        "page": 53
+      }
+    },
+    {
+      "tag": "VP-006",
+      "section": "MOTOR",
+      "position": null,
+      "parameter": "insulation_class",
+      "value": "resistance",
+      "unit": "",
+      "match_type": "exact",
+      "source": {
+        "file": "10. 시험 및 검사 절차서 & 계획서.pdf",
+        "company": "30",
+        "page": 58
+      }
+    }
+  ]
+}

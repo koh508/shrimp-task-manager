@@ -1,0 +1,464 @@
+{
+  "meta": {
+    "source_path": "D:\\기계도면\\기계도면\\21. 순수제조설비 (에스텍)\\JJ-M-VP-012-01_순수제조설비_기자재준공도서_R0(AS BUILT)\\원본\\016 운전 및 유지관리 지침서\\원본\\07 RO 멤브레인\\07-2 Installation Manual.pdf",
+    "company_id": "21",
+    "company_name": "순수제조설비",
+    "equipment": "순수제조설비",
+    "doc_type": "MANUAL",
+    "rev": "0",
+    "is_latest": true,
+    "extracted_at": "2026-03-27T20:21:28",
+    "chunk_count": 28,
+    "vision_pages": 0
+  },
+  "chunks": [
+    {
+      "chunk_idx": 0,
+      "text": "Toray RO membrane\nTraining Material\nRO element installation\nToray Industries, Inc.,\nRO Membrane Products Dept.\n\nCopyright © 2010 Toray Industries, Inc. All rights reserved.\n\nFor successful RO elements installation",
+      "header": "",
+      "section_type": "일반",
+      "equipment": [
+        "순수제조설비"
+      ],
+      "company_id": "21",
+      "company_name": "순수제조설비",
+      "source_file": "07-2 Installation Manual",
+      "source_path": "D:\\기계도면\\기계도면\\21. 순수제조설비 (에스텍)\\JJ-M-VP-012-01_순수제조설비_기자재준공도서_R0(AS BUILT)\\원본\\016 운전 및 유지관리 지침서\\원본\\07 RO 멤브레인\\07-2 Installation Manual.pdf",
+      "rev": "0",
+      "chunk_hash": "335cb399515d9817",
+      "char_count": 213
+    },
+    {
+      "chunk_idx": 1,
+      "text": "y Industries, Inc. All rights reserved.\n\nFor successful RO elements installation 1. Use safe protection items\n(safety gloves, safety glasses, safety shoes, etc.)",
+      "header": "1. Use safe protection items",
+      "section_type": "일반",
+      "equipment": [
+        "순수제조설비"
+      ],
+      "company_id": "21",
+      "company_name": "순수제조설비",
+      "source_file": "07-2 Installation Manual",
+      "source_path": "D:\\기계도면\\기계도면\\21. 순수제조설비 (에스텍)\\JJ-M-VP-012-01_순수제조설비_기자재준공도서_R0(AS BUILT)\\원본\\016 운전 및 유지관리 지침서\\원본\\07 RO 멤브레인\\07-2 Installation Manual.pdf",
+      "rev": "0",
+      "chunk_hash": "b663d858d2fce110",
+      "char_count": 161
+    },
+    {
+      "chunk_idx": 2,
+      "text": "2. Keep the hand clean\n(wash hands before this work)",
+      "header": "2. Keep the hand clean",
+      "section_type": "청소",
+      "equipment": [
+        "순수제조설비"
+      ],
+      "company_id": "21",
+      "company_name": "순수제조설비",
+      "source_file": "07-2 Installation Manual",
+      "source_path": "D:\\기계도면\\기계도면\\21. 순수제조설비 (에스텍)\\JJ-M-VP-012-01_순수제조설비_기자재준공도서_R0(AS BUILT)\\원본\\016 운전 및 유지관리 지침서\\원본\\07 RO 멤브레인\\07-2 Installation Manual.pdf",
+      "rev": "0",
+      "chunk_hash": "6814fd84fd7620a9",
+      "char_count": 52
+    },
+    {
+      "chunk_idx": 3,
+      "text": "3. Prepare clean and enough space to put RO\nelements and necessary parts\n(interconnector, endplate, etc.)\n\nCopyright © 2010 Toray Industries, Inc. All rights reserved.\n\nFor successful RO elements installation",
+      "header": "3. Prepare clean and enough space to put RO",
+      "section_type": "일반",
+      "equipment": [
+        "순수제조설비"
+      ],
+      "company_id": "21",
+      "company_name": "순수제조설비",
+      "source_file": "07-2 Installation Manual",
+      "source_path": "D:\\기계도면\\기계도면\\21. 순수제조설비 (에스텍)\\JJ-M-VP-012-01_순수제조설비_기자재준공도서_R0(AS BUILT)\\원본\\016 운전 및 유지관리 지침서\\원본\\07 RO 멤브레인\\07-2 Installation Manual.pdf",
+      "rev": "0",
+      "chunk_hash": "175cc965299f5bb9",
+      "char_count": 208
+    },
+    {
+      "chunk_idx": 4,
+      "text": "y Industries, Inc. All rights reserved.\n\nFor successful RO elements installation 5. RO elements installation must be done after all\nnecessary preparations are checked and satisfied\nthe condition.",
+      "header": "5. RO elements installation must be done after all",
+      "section_type": "일반",
+      "equipment": [
+        "순수제조설비"
+      ],
+      "company_id": "21",
+      "company_name": "순수제조설비",
+      "source_file": "07-2 Installation Manual",
+      "source_path": "D:\\기계도면\\기계도면\\21. 순수제조설비 (에스텍)\\JJ-M-VP-012-01_순수제조설비_기자재준공도서_R0(AS BUILT)\\원본\\016 운전 및 유지관리 지침서\\원본\\07 RO 멤브레인\\07-2 Installation Manual.pdf",
+      "rev": "0",
+      "chunk_hash": "1bd9a4230db5bcd9",
+      "char_count": 195
+    },
+    {
+      "chunk_idx": 5,
+      "text": "e done after all\nnecessary preparations are checked and satisfied\nthe condition. 6. RO elements installation works should be done\nsystematically and its procedures are well known\nby all workers.",
+      "header": "6. RO elements installation works should be done",
+      "section_type": "일반",
+      "equipment": [
+        "순수제조설비"
+      ],
+      "company_id": "21",
+      "company_name": "순수제조설비",
+      "source_file": "07-2 Installation Manual",
+      "source_path": "D:\\기계도면\\기계도면\\21. 순수제조설비 (에스텍)\\JJ-M-VP-012-01_순수제조설비_기자재준공도서_R0(AS BUILT)\\원본\\016 운전 및 유지관리 지침서\\원본\\07 RO 멤브레인\\07-2 Installation Manual.pdf",
+      "rev": "0",
+      "chunk_hash": "5ba3c3175568d1e0",
+      "char_count": 194
+    },
+    {
+      "chunk_idx": 6,
+      "text": "should be done\nsystematically and its procedures are well known\nby all workers. 7. Several group should work in parallel and each\ninstallation group/worker should know his\nresponsible work before starting.\n\nCopyright © 2010 Toray Industries, Inc. All rights reserved.\n\nSchematic sample procedure of installation\nInterconnector Permeate Adapter\nElement\nLoading\n1 or 2 person\nThrust Ring\n5th EL\nPut interconnector\nAnd brine seal\nElement Check Element No.\n2 person\nTransfer 1 person Plastic bag\n3 persons Clear up\nInter Permeate 1 person\nAdapter\nconnector\n4th EL 3rd EL 2nd EL Lead EL\nCarton box\nClear up\nOpen carton box Element transfer\n1 person\n2 person 3 persons 4\nCopyright © 2010 Toray Industries, Inc. All rights reserved.\n\nRO elements installation detail",
+      "header": "7. Several group should work in parallel and each",
+      "section_type": "일반",
+      "equipment": [
+        "순수제조설비"
+      ],
+      "company_id": "21",
+      "company_name": "순수제조설비",
+      "source_file": "07-2 Installation Manual",
+      "source_path": "D:\\기계도면\\기계도면\\21. 순수제조설비 (에스텍)\\JJ-M-VP-012-01_순수제조설비_기자재준공도서_R0(AS BUILT)\\원본\\016 운전 및 유지관리 지침서\\원본\\07 RO 멤브레인\\07-2 Installation Manual.pdf",
+      "rev": "0",
+      "chunk_hash": "7011c3ae5eaeaf15",
+      "char_count": 758
+    },
+    {
+      "chunk_idx": 7,
+      "text": "010 Toray Industries, Inc. All rights reserved.\n\nRO elements installation detail 1. Prepare clean and enough space\nfor RO elements and pressure vessel end plate\n\nCopyright © 2010 Toray Industries, Inc. All rights reserved.\n\nRO elements installation detail",
+      "header": "1. Prepare clean and enough space",
+      "section_type": "일반",
+      "equipment": [
+        "순수제조설비"
+      ],
+      "company_id": "21",
+      "company_name": "순수제조설비",
+      "source_file": "07-2 Installation Manual",
+      "source_path": "D:\\기계도면\\기계도면\\21. 순수제조설비 (에스텍)\\JJ-M-VP-012-01_순수제조설비_기자재준공도서_R0(AS BUILT)\\원본\\016 운전 및 유지관리 지침서\\원본\\07 RO 멤브레인\\07-2 Installation Manual.pdf",
+      "rev": "0",
+      "chunk_hash": "cfb82c605b4e214d",
+      "char_count": 255
+    },
+    {
+      "chunk_idx": 8,
+      "text": "010 Toray Industries, Inc. All rights reserved.\n\nRO elements installation detail 2. Check pressure vessel condition\n- Check pressure vessel inner wall cleanness by white\npaper or cloth.\n- Bottom and top location of each bank must be checked.\n\nCopyright © 2010 Toray Industries, Inc. All rights reserved.\n\nRO elements installation detail",
+      "header": "2. Check pressure vessel condition",
+      "section_type": "일반",
+      "equipment": [
+        "순수제조설비"
+      ],
+      "company_id": "21",
+      "company_name": "순수제조설비",
+      "source_file": "07-2 Installation Manual",
+      "source_path": "D:\\기계도면\\기계도면\\21. 순수제조설비 (에스텍)\\JJ-M-VP-012-01_순수제조설비_기자재준공도서_R0(AS BUILT)\\원본\\016 운전 및 유지관리 지침서\\원본\\07 RO 멤브레인\\07-2 Installation Manual.pdf",
+      "rev": "0",
+      "chunk_hash": "9345b4f775f1b025",
+      "char_count": 336
+    },
+    {
+      "chunk_idx": 9,
+      "text": "010 Toray Industries, Inc. All rights reserved.\n\nRO elements installation detail 3. Preparation of pressure vessel end plate\n(1) Clean the parts (permeate adapter, thrust ring, end plate)\n- Use plastic glove is recommended when you clean the parts.\n- Follow pressure vessel supplier’s manual when you clean the parts.\n\nCopyright © 2010 Toray Industries, Inc. All rights reserved.\n\nRO elements installation detail",
+      "header": "3. Preparation of pressure vessel end plate",
+      "section_type": "일반",
+      "equipment": [
+        "순수제조설비"
+      ],
+      "company_id": "21",
+      "company_name": "순수제조설비",
+      "source_file": "07-2 Installation Manual",
+      "source_path": "D:\\기계도면\\기계도면\\21. 순수제조설비 (에스텍)\\JJ-M-VP-012-01_순수제조설비_기자재준공도서_R0(AS BUILT)\\원본\\016 운전 및 유지관리 지침서\\원본\\07 RO 멤브레인\\07-2 Installation Manual.pdf",
+      "rev": "0",
+      "chunk_hash": "0191e0c3e821ab63",
+      "char_count": 412
+    },
+    {
+      "chunk_idx": 10,
+      "text": "010 Toray Industries, Inc. All rights reserved.\n\nRO elements installation detail 3. Preparation of pressure vessel end plate\n(2) Check O-rings and put lubricant\n- Use plastic glove is recommended when you put lubricant.\n- Follow vessel supplier’s and Toray’s manual when you put lubricant.\n\nCopyright © 2010 Toray Industries, Inc. All rights reserved.\n\nRO elements installation detail",
+      "header": "3. Preparation of pressure vessel end plate",
+      "section_type": "일반",
+      "equipment": [
+        "순수제조설비"
+      ],
+      "company_id": "21",
+      "company_name": "순수제조설비",
+      "source_file": "07-2 Installation Manual",
+      "source_path": "D:\\기계도면\\기계도면\\21. 순수제조설비 (에스텍)\\JJ-M-VP-012-01_순수제조설비_기자재준공도서_R0(AS BUILT)\\원본\\016 운전 및 유지관리 지침서\\원본\\07 RO 멤브레인\\07-2 Installation Manual.pdf",
+      "rev": "0",
+      "chunk_hash": "0191e0c3e821ab63",
+      "char_count": 384
+    },
+    {
+      "chunk_idx": 11,
+      "text": "010 Toray Industries, Inc. All rights reserved.\n\nRO elements installation detail 3. Preparation of pressure vessel end plate\n(3) Set brine side end plate\nwith thrust ring and permeate adapter\nKeep permeate sampling line open or do not connect\npermeate piping for easier air removal at RO element installation.\n\nCopyright © 2010 Toray Industries, Inc. All rights reserved.\n\nRO elements installation detail",
+      "header": "3. Preparation of pressure vessel end plate",
+      "section_type": "일반",
+      "equipment": [
+        "순수제조설비"
+      ],
+      "company_id": "21",
+      "company_name": "순수제조설비",
+      "source_file": "07-2 Installation Manual",
+      "source_path": "D:\\기계도면\\기계도면\\21. 순수제조설비 (에스텍)\\JJ-M-VP-012-01_순수제조설비_기자재준공도서_R0(AS BUILT)\\원본\\016 운전 및 유지관리 지침서\\원본\\07 RO 멤브레인\\07-2 Installation Manual.pdf",
+      "rev": "0",
+      "chunk_hash": "0191e0c3e821ab63",
+      "char_count": 404
+    },
+    {
+      "chunk_idx": 12,
+      "text": "010 Toray Industries, Inc. All rights reserved.\n\nRO elements installation detail 4. Open carton box of RO element\nIn carton box, following items are packed.\n- RO element x 2\n- Parts set (Brine seal x 2, interconnector x 2, O-rings)\n\nCopyright © 2010 Toray Industries, Inc. All rights reserved.\n\nRO elements installation detail",
+      "header": "4. Open carton box of RO element",
+      "section_type": "일반",
+      "equipment": [
+        "순수제조설비"
+      ],
+      "company_id": "21",
+      "company_name": "순수제조설비",
+      "source_file": "07-2 Installation Manual",
+      "source_path": "D:\\기계도면\\기계도면\\21. 순수제조설비 (에스텍)\\JJ-M-VP-012-01_순수제조설비_기자재준공도서_R0(AS BUILT)\\원본\\016 운전 및 유지관리 지침서\\원본\\07 RO 멤브레인\\07-2 Installation Manual.pdf",
+      "rev": "0",
+      "chunk_hash": "176fe0bef4d2ac38",
+      "char_count": 326
+    },
+    {
+      "chunk_idx": 13,
+      "text": "010 Toray Industries, Inc. All rights reserved.\n\nRO elements installation detail 5. Stand RO elements in lines\nMind the arrow\ndirection\n- Decide the number of pressure vessel for 1 batch installation\n(normally, 30 – 40 pressure vessels are recommended)\n\nCopyright © 2010 Toray Industries, Inc. All rights reserved.\n\nRO elements installation detail",
+      "header": "5. Stand RO elements in lines",
+      "section_type": "일반",
+      "equipment": [
+        "순수제조설비"
+      ],
+      "company_id": "21",
+      "company_name": "순수제조설비",
+      "source_file": "07-2 Installation Manual",
+      "source_path": "D:\\기계도면\\기계도면\\21. 순수제조설비 (에스텍)\\JJ-M-VP-012-01_순수제조설비_기자재준공도서_R0(AS BUILT)\\원본\\016 운전 및 유지관리 지침서\\원본\\07 RO 멤브레인\\07-2 Installation Manual.pdf",
+      "rev": "0",
+      "chunk_hash": "d487519e91376162",
+      "char_count": 347
+    },
+    {
+      "chunk_idx": 14,
+      "text": "010 Toray Industries, Inc. All rights reserved.\n\nRO elements installation detail 6. Preparation of the parts(1)\n(interconnector, brine seal, permeate adapter)\n- Put each part in carton box\n- Wash permeate adapter, if not clean\n\nCopyright © 2010 Toray Industries, Inc. All rights reserved.\n\nRO elements installation detail",
+      "header": "6. Preparation of the parts(1)",
+      "section_type": "청소",
+      "equipment": [
+        "순수제조설비"
+      ],
+      "company_id": "21",
+      "company_name": "순수제조설비",
+      "source_file": "07-2 Installation Manual",
+      "source_path": "D:\\기계도면\\기계도면\\21. 순수제조설비 (에스텍)\\JJ-M-VP-012-01_순수제조설비_기자재준공도서_R0(AS BUILT)\\원본\\016 운전 및 유지관리 지침서\\원본\\07 RO 멤브레인\\07-2 Installation Manual.pdf",
+      "rev": "0",
+      "chunk_hash": "e5a1482c7906b892",
+      "char_count": 321
+    },
+    {
+      "chunk_idx": 15,
+      "text": "010 Toray Industries, Inc. All rights reserved.\n\nRO elements installation detail 6. Preparation of the parts(2)\n(interconnector, brine seal, permeate adapter)\n- Put lubricant on O-ring and set it to\nEasy to find the\ninterconnector and permeate adapter\nmissing of O-ring\n\nCopyright © 2010 Toray Industries, Inc. All rights reserved.\n\nRO elements installation detail",
+      "header": "6. Preparation of the parts(2)",
+      "section_type": "일반",
+      "equipment": [
+        "순수제조설비"
+      ],
+      "company_id": "21",
+      "company_name": "순수제조설비",
+      "source_file": "07-2 Installation Manual",
+      "source_path": "D:\\기계도면\\기계도면\\21. 순수제조설비 (에스텍)\\JJ-M-VP-012-01_순수제조설비_기자재준공도서_R0(AS BUILT)\\원본\\016 운전 및 유지관리 지침서\\원본\\07 RO 멤브레인\\07-2 Installation Manual.pdf",
+      "rev": "0",
+      "chunk_hash": "e5a1482c7906b892",
+      "char_count": 364
+    },
+    {
+      "chunk_idx": 16,
+      "text": "010 Toray Industries, Inc. All rights reserved.\n\nRO elements installation detail 6. Preparation of the parts(3)\n(interconnector, brine seal, permeate adapter)\nMind the brine seal\ndirection\n- Set Brine seal on RO element\n\nCopyright © 2010 Toray Industries, Inc. All rights reserved.\n\nRO elements installation detail",
+      "header": "6. Preparation of the parts(3)",
+      "section_type": "일반",
+      "equipment": [
+        "순수제조설비"
+      ],
+      "company_id": "21",
+      "company_name": "순수제조설비",
+      "source_file": "07-2 Installation Manual",
+      "source_path": "D:\\기계도면\\기계도면\\21. 순수제조설비 (에스텍)\\JJ-M-VP-012-01_순수제조설비_기자재준공도서_R0(AS BUILT)\\원본\\016 운전 및 유지관리 지침서\\원본\\07 RO 멤브레인\\07-2 Installation Manual.pdf",
+      "rev": "0",
+      "chunk_hash": "e5a1482c7906b892",
+      "char_count": 314
+    },
+    {
+      "chunk_idx": 17,
+      "text": "010 Toray Industries, Inc. All rights reserved.\n\nRO elements installation detail 6. Preparation of the parts(4)\n(interconnector, brine seal, permeate adapter)\n-put interconnector or permeate adapter on RO element\n\nCopyright © 2010 Toray Industries, Inc. All rights reserved.\n\nRO elements installation detail",
+      "header": "6. Preparation of the parts(4)",
+      "section_type": "일반",
+      "equipment": [
+        "순수제조설비"
+      ],
+      "company_id": "21",
+      "company_name": "순수제조설비",
+      "source_file": "07-2 Installation Manual",
+      "source_path": "D:\\기계도면\\기계도면\\21. 순수제조설비 (에스텍)\\JJ-M-VP-012-01_순수제조설비_기자재준공도서_R0(AS BUILT)\\원본\\016 운전 및 유지관리 지침서\\원본\\07 RO 멤브레인\\07-2 Installation Manual.pdf",
+      "rev": "0",
+      "chunk_hash": "e5a1482c7906b892",
+      "char_count": 307
+    },
+    {
+      "chunk_idx": 18,
+      "text": "010 Toray Industries, Inc. All rights reserved.\n\nRO elements installation detail 7. Transfer RO element near to pressure vessel &\nrecord RO element serial number\n\nCopyright © 2010 Toray Industries, Inc. All rights reserved.\n\nRO elements Loading Check Sheet\nRO Membrane Loading Logging List \" Train \" Date :\nFeed Side Brine Side\nNumber\nVessel No. 1 2 3 4 5 6 7 of Shims\nFeed Side Brine\n1 2 3 4 5 6 7\nSide\n\nCopyright © 2010 Toray Industries, Inc. All rights reserved.\n\nRO elements installation detail",
+      "header": "7. Transfer RO element near to pressure vessel &",
+      "section_type": "일반",
+      "equipment": [
+        "순수제조설비"
+      ],
+      "company_id": "21",
+      "company_name": "순수제조설비",
+      "source_file": "07-2 Installation Manual",
+      "source_path": "D:\\기계도면\\기계도면\\21. 순수제조설비 (에스텍)\\JJ-M-VP-012-01_순수제조설비_기자재준공도서_R0(AS BUILT)\\원본\\016 운전 및 유지관리 지침서\\원본\\07 RO 멤브레인\\07-2 Installation Manual.pdf",
+      "rev": "0",
+      "chunk_hash": "b5fc7e95dac064b0",
+      "char_count": 498
+    },
+    {
+      "chunk_idx": 19,
+      "text": "010 Toray Industries, Inc. All rights reserved.\n\nRO elements installation detail 8. RO element installation(1)\nPerson B &C\nPerson A\nMind the RO element direction\n- Person A : Hold RO element in pressure vessel\n- Person B & C : Keep next RO element in line with pressure vessel.\nand push RO element gently.\n\nCopyright © 2010 Toray Industries, Inc. All rights reserved.\n\nRO elements installation detail",
+      "header": "8. RO element installation(1)",
+      "section_type": "일반",
+      "equipment": [
+        "순수제조설비"
+      ],
+      "company_id": "21",
+      "company_name": "순수제조설비",
+      "source_file": "07-2 Installation Manual",
+      "source_path": "D:\\기계도면\\기계도면\\21. 순수제조설비 (에스텍)\\JJ-M-VP-012-01_순수제조설비_기자재준공도서_R0(AS BUILT)\\원본\\016 운전 및 유지관리 지침서\\원본\\07 RO 멤브레인\\07-2 Installation Manual.pdf",
+      "rev": "0",
+      "chunk_hash": "50053b88e3df286c",
+      "char_count": 400
+    },
+    {
+      "chunk_idx": 20,
+      "text": "010 Toray Industries, Inc. All rights reserved.\n\nRO elements installation detail 8. RO element installation(2)\nPerson B &C\nPerson A\nPush gently until RO element ATD touch each other\n- Person A : Hold RO element in pressure vessel\n- Person B & C : Keep next RO element in line with pressure vessel.\nand push RO element gently.\n\nCopyright © 2010 Toray Industries, Inc. All rights reserved.\n\nRO elements installation detail",
+      "header": "8. RO element installation(2)",
+      "section_type": "일반",
+      "equipment": [
+        "순수제조설비"
+      ],
+      "company_id": "21",
+      "company_name": "순수제조설비",
+      "source_file": "07-2 Installation Manual",
+      "source_path": "D:\\기계도면\\기계도면\\21. 순수제조설비 (에스텍)\\JJ-M-VP-012-01_순수제조설비_기자재준공도서_R0(AS BUILT)\\원본\\016 운전 및 유지관리 지침서\\원본\\07 RO 멤브레인\\07-2 Installation Manual.pdf",
+      "rev": "0",
+      "chunk_hash": "50053b88e3df286c",
+      "char_count": 420
+    },
+    {
+      "chunk_idx": 21,
+      "text": "010 Toray Industries, Inc. All rights reserved.\n\nRO elements installation detail 8. RO element installation(3)\nPerson A\nPerson B &C\n- Person A : Hold up the connection part of RO elements\nnot to hit ATD by pressure vessel\n- Person B & C : Keep next RO element in line with pressure vessel.\nand push RO element gently.\n\nCopyright © 2010 Toray Industries, Inc. All rights reserved.\n\nRO elements installation detail",
+      "header": "8. RO element installation(3)",
+      "section_type": "일반",
+      "equipment": [
+        "순수제조설비"
+      ],
+      "company_id": "21",
+      "company_name": "순수제조설비",
+      "source_file": "07-2 Installation Manual",
+      "source_path": "D:\\기계도면\\기계도면\\21. 순수제조설비 (에스텍)\\JJ-M-VP-012-01_순수제조설비_기자재준공도서_R0(AS BUILT)\\원본\\016 운전 및 유지관리 지침서\\원본\\07 RO 멤브레인\\07-2 Installation Manual.pdf",
+      "rev": "0",
+      "chunk_hash": "50053b88e3df286c",
+      "char_count": 412
+    },
+    {
+      "chunk_idx": 22,
+      "text": "010 Toray Industries, Inc. All rights reserved.\n\nRO elements installation detail 8. RO element installation(4)\nPerson B &C\nPerson A\n- Person A : Stand-by\n- Person B & C : Push RO element gently into pressure vessel.\nStop pushing at 3/4 of RO element length are installed.\n\nCopyright © 2010 Toray Industries, Inc. All rights reserved.\n\nRO elements installation detail",
+      "header": "8. RO element installation(4)",
+      "section_type": "일반",
+      "equipment": [
+        "순수제조설비"
+      ],
+      "company_id": "21",
+      "company_name": "순수제조설비",
+      "source_file": "07-2 Installation Manual",
+      "source_path": "D:\\기계도면\\기계도면\\21. 순수제조설비 (에스텍)\\JJ-M-VP-012-01_순수제조설비_기자재준공도서_R0(AS BUILT)\\원본\\016 운전 및 유지관리 지침서\\원본\\07 RO 멤브레인\\07-2 Installation Manual.pdf",
+      "rev": "0",
+      "chunk_hash": "50053b88e3df286c",
+      "char_count": 366
+    },
+    {
+      "chunk_idx": 23,
+      "text": "010 Toray Industries, Inc. All rights reserved.\n\nRO elements installation detail 8. RO element installation(5) Final push\n- Push lead RO element slightly into pressure vessel by hand.\n- Push lead RO element gently again by pipe until end element touch\nto thrust ring in brine side. Using pipe is more easy and safety.\n\nCopyright © 2010 Toray Industries, Inc. All rights reserved.\n\nRO elements installation detail",
+      "header": "8. RO element installation(5) Final push",
+      "section_type": "일반",
+      "equipment": [
+        "순수제조설비"
+      ],
+      "company_id": "21",
+      "company_name": "순수제조설비",
+      "source_file": "07-2 Installation Manual",
+      "source_path": "D:\\기계도면\\기계도면\\21. 순수제조설비 (에스텍)\\JJ-M-VP-012-01_순수제조설비_기자재준공도서_R0(AS BUILT)\\원본\\016 운전 및 유지관리 지침서\\원본\\07 RO 멤브레인\\07-2 Installation Manual.pdf",
+      "rev": "0",
+      "chunk_hash": "50053b88e3df286c",
+      "char_count": 412
+    },
+    {
+      "chunk_idx": 24,
+      "text": "010 Toray Industries, Inc. All rights reserved.\n\nRO elements installation detail 9. Shimming (1)\n- Shimming reduces the free gap in the pressure\nvessel of horizontal direction.\n- Shimming helps to minimize RO element\nmovement inside the vessel, when the system\nis shut down and re-started.\n- Shimming helps to minimize O-ring movement\nagainst the sealing surfaces, so reducing wear\nand possibility of “rolling” O-rings. This reduces\nleakage.\n\nCopyright © 2010 Toray Industries, Inc. All rights reserved.\n\nRO elements installation detail\nPermeate",
+      "header": "9. Shimming (1)",
+      "section_type": "정지",
+      "equipment": [
+        "순수제조설비"
+      ],
+      "company_id": "21",
+      "company_name": "순수제조설비",
+      "source_file": "07-2 Installation Manual",
+      "source_path": "D:\\기계도면\\기계도면\\21. 순수제조설비 (에스텍)\\JJ-M-VP-012-01_순수제조설비_기자재준공도서_R0(AS BUILT)\\원본\\016 운전 및 유지관리 지침서\\원본\\07 RO 멤브레인\\07-2 Installation Manual.pdf",
+      "rev": "0",
+      "chunk_hash": "cb4ecda84df83252",
+      "char_count": 545
+    },
+    {
+      "chunk_idx": 25,
+      "text": "Industries, Inc. All rights reserved.\n\nRO elements installation detail\nPermeate 9. Shimming (2) Shim\nAdapter",
+      "header": "9. Shimming (2) Shim",
+      "section_type": "일반",
+      "equipment": [
+        "순수제조설비"
+      ],
+      "company_id": "21",
+      "company_name": "순수제조설비",
+      "source_file": "07-2 Installation Manual",
+      "source_path": "D:\\기계도면\\기계도면\\21. 순수제조설비 (에스텍)\\JJ-M-VP-012-01_순수제조설비_기자재준공도서_R0(AS BUILT)\\원본\\016 운전 및 유지관리 지침서\\원본\\07 RO 멤브레인\\07-2 Installation Manual.pdf",
+      "rev": "0",
+      "chunk_hash": "bb21a4060c608490",
+      "char_count": 108
+    },
+    {
+      "chunk_idx": 26,
+      "text": "B C\nD A\nD\n- Free gap length : A = D – (B + C)\n- Requested number of Shim : N = (A-1mm) / t\n( t = thickness of shim)\n\nCopyright © 2010 Toray Industries, Inc. All rights reserved.\n\nRO elements installation detail",
+      "header": "B C\nD A\nD",
+      "section_type": "일반",
+      "equipment": [
+        "순수제조설비"
+      ],
+      "company_id": "21",
+      "company_name": "순수제조설비",
+      "source_file": "07-2 Installation Manual",
+      "source_path": "D:\\기계도면\\기계도면\\21. 순수제조설비 (에스텍)\\JJ-M-VP-012-01_순수제조설비_기자재준공도서_R0(AS BUILT)\\원본\\016 운전 및 유지관리 지침서\\원본\\07 RO 멤브레인\\07-2 Installation Manual.pdf",
+      "rev": "0",
+      "chunk_hash": "2ccad908e3594b4a",
+      "char_count": 210
+    },
+    {
+      "chunk_idx": 27,
+      "text": "010 Toray Industries, Inc. All rights reserved.\n\nRO elements installation detail 10. Set feed side end plate\n- Clean end plate\n- Put lubricant on brine seal and O-rings\n- Set feed side end plate\n- Follow pressure vessel supplier’s manual when you set the end plate.\n\nCopyright © 2010 Toray Industries, Inc. All rights reserved.\n\nThe end of RO elements\ninstallation work\nThank You\n\nCopyright © 2010 Toray Industries, Inc. All rights reserved.",
+      "header": "10. Set feed side end plate",
+      "section_type": "일반",
+      "equipment": [
+        "순수제조설비"
+      ],
+      "company_id": "21",
+      "company_name": "순수제조설비",
+      "source_file": "07-2 Installation Manual",
+      "source_path": "D:\\기계도면\\기계도면\\21. 순수제조설비 (에스텍)\\JJ-M-VP-012-01_순수제조설비_기자재준공도서_R0(AS BUILT)\\원본\\016 운전 및 유지관리 지침서\\원본\\07 RO 멤브레인\\07-2 Installation Manual.pdf",
+      "rev": "0",
+      "chunk_hash": "a69fcb0d896c358e",
+      "char_count": 441
+    }
+  ]
+}

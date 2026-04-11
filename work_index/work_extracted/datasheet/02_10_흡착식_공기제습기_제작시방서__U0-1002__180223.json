@@ -1,0 +1,54 @@
+{
+  "meta": {
+    "source_path": "D:\\기계도면\\기계도면\\02. 공기압축기 (한국에어로)\\기계\\6. Data Sheet & 성능곡선도\\10.흡착식 공기제습기 제작시방서 (U0-1002)_180223.xls",
+    "company_id": "02",
+    "equipment": "압축기",
+    "doc_type": "DATA_SHEET",
+    "rev": null,
+    "is_latest": true,
+    "extracted_at": "2026-03-27T19:33:07",
+    "record_count": 4
+  },
+  "records": [
+    {
+      "parameter": "흡착식 공기제습기",
+      "value": "Date",
+      "unit": "",
+      "design_value": "Rev.",
+      "equipment": "압축기",
+      "row_idx": 2,
+      "sheet": "U0-1002",
+      "chunk_hash": "f19e15caa800956d"
+    },
+    {
+      "parameter": "Rev",
+      "value": "제주특별자치도",
+      "unit": "",
+      "design_value": "Owner",
+      "equipment": "압축기",
+      "row_idx": 8,
+      "sheet": "U0-1002",
+      "chunk_hash": "42c9d23d50477e61"
+    },
+    {
+      "parameter": "1",
+      "value": "1272",
+      "unit": "",
+      "design_value": "FLOW RATE",
+      "equipment": "압축기",
+      "row_idx": 15,
+      "sheet": "U0-1002",
+      "chunk_hash": "bc966e689fa3c6f5"
+    },
+    {
+      "parameter": "1",
+      "value": "8",
+      "unit": "",
+      "design_value": "PRESSURE(NOR)",
+      "equipment": "압축기",
+      "row_idx": 16,
+      "sheet": "U0-1002",
+      "chunk_hash": "11e9357a41a4ab72"
+    }
+  ]
+}

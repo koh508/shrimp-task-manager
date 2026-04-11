@@ -1,0 +1,83 @@
+{
+  "meta": {
+    "tag": "PO-1001A/B",
+    "file": "펌프류 도서_As Built.pdf",
+    "company_id": "34",
+    "source_path": "D:\\기계도면\\기계도면\\34. 펌프류 (청우하이드로)\\펌프류 도서_As Built.pdf",
+    "split_from": "P0-0301",
+    "extracted_at": "2026-03-28T13:31:31"
+  },
+  "tag": "PO-1001A/B",
+  "records": [
+    {
+      "tag": "PO-1001A/B",
+      "section": "MOTOR",
+      "position": null,
+      "parameter": "motor_poles",
+      "value": "6",
+      "unit": "pole",
+      "match_type": "exact",
+      "source": {
+        "file": "펌프류 도서_As Built.pdf",
+        "company": "34",
+        "page": 126
+      }
+    },
+    {
+      "tag": "PO-1001A/B",
+      "section": "MOTOR",
+      "position": null,
+      "parameter": "ip_rating",
+      "value": "IP55",
+      "unit": "",
+      "match_type": "exact",
+      "source": {
+        "file": "펌프류 도서_As Built.pdf",
+        "company": "34",
+        "page": 126
+      }
+    },
+    {
+      "tag": "PO-1001A/B",
+      "section": "MOTOR",
+      "position": null,
+      "parameter": "motor_voltage_V",
+      "value": "440",
+      "unit": "V",
+      "match_type": "exact",
+      "source": {
+        "file": "펌프류 도서_As Built.pdf",
+        "company": "34",
+        "page": 126
+      }
+    },
+    {
+      "tag": "PO-1001A/B",
+      "section": "MOTOR",
+      "position": null,
+      "parameter": "motor_kw",
+      "value": "2.2",
+      "unit": "kW",
+      "match_type": "exact",
+      "source": {
+        "file": "펌프류 도서_As Built.pdf",
+        "company": "34",
+        "page": 131
+      }
+    },
+    {
+      "tag": "PO-1001A/B",
+      "section": "PERFORMANCE",
+      "position": null,
+      "parameter": "head_m",
+      "value": "20",
+      "unit": "m",
+      "match_type": "exact",
+      "source": {
+        "file": "펌프류 도서_As Built.pdf",
+        "company": "34",
+        "page": 131
+      }
+    }
+  ]
+}

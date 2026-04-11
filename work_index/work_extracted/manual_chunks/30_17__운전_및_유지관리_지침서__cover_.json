@@ -1,0 +1,32 @@
+{
+  "meta": {
+    "source_path": "D:\\기계도면\\기계도면\\30. 저압증기복수기 (DTS)\\감리 승인용 7차 문서 (201908) As built\\17. 운전 및 유지관리 지침서\\17. 운전 및 유지관리 지침서 (cover).pdf",
+    "company_id": "30",
+    "company_name": "저압증기복수기",
+    "equipment": "기타",
+    "doc_type": "MANUAL",
+    "rev": "AS_BUILT",
+    "is_latest": true,
+    "extracted_at": "2026-03-27T20:27:04",
+    "chunk_count": 1,
+    "vision_pages": 0
+  },
+  "chunks": [
+    {
+      "chunk_idx": 1,
+      "text": "17. 운전 및 유지관리 지침서\n0 2019.11.30 As-built 김영환 남흥순 김정식\n개정번호 일자 내용 작 성 자 검 토 자 승 인 자\n공사명 : 제주환경자원순환센터(소각시설) 조성공사 도 서 명 : 운전 및 유지관리 지침서\n분 야 : 폐기물 및 기계분야 도서 번호 : JJ-M-VP-006-017\n품 명 : AIR COOLED CONDENSER PACKAGE 도서 상태 : As-built\n제작사명: (주)디티에스 작 성 일 : 2019년 11월\n\nAIR COOLED CONDENSER PACKAGE\nContents",
+      "header": "17. 운전 및 유지관리 지침서",
+      "section_type": "운전",
+      "equipment": [
+        "기타"
+      ],
+      "company_id": "30",
+      "company_name": "저압증기복수기",
+      "source_file": "17. 운전 및 유지관리 지침서 (cover)",
+      "source_path": "D:\\기계도면\\기계도면\\30. 저압증기복수기 (DTS)\\감리 승인용 7차 문서 (201908) As built\\17. 운전 및 유지관리 지침서\\17. 운전 및 유지관리 지침서 (cover).pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "f87510056c45e28c",
+      "char_count": 294
+    }
+  ]
+}

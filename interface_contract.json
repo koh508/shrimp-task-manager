@@ -1,6 +1,6 @@
 {
   "obsidian_agent.py": {
-    "generated": "2026-03-22 15:39",
+    "generated": "2026-03-29 18:21",
     "functions": [
       {
         "file": "obsidian_agent.py",
@@ -203,7 +203,6 @@
         "returns": "unknown",
         "is_async": false,
         "side_effects": [
-          "file_write",
           "json_write"
         ],
         "has_kwargs": false,
@@ -243,6 +242,10 @@
           {
             "name": "k",
             "type": "unknown"
+          },
+          {
+            "name": "threshold",
+            "type": "float | None"
           }
         ],
         "returns": "unknown",
@@ -437,7 +440,6 @@
         "returns": "unknown",
         "is_async": false,
         "side_effects": [
-          "file_write",
           "json_write"
         ],
         "has_kwargs": false,
@@ -451,7 +453,6 @@
         "returns": "unknown",
         "is_async": false,
         "side_effects": [
-          "file_write",
           "json_write"
         ],
         "has_kwargs": false,
@@ -532,6 +533,17 @@
       {
         "file": "obsidian_agent.py",
         "class": "OnewAgent",
+        "name": "_merge_person_entities_to_md",
+        "args": [],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "obsidian_agent.py",
+        "class": "OnewAgent",
         "name": "_extract_entities",
         "args": [
           {
@@ -565,9 +577,7 @@
         ],
         "returns": "unknown",
         "is_async": false,
-        "side_effects": [
-          "file_write"
-        ],
+        "side_effects": [],
         "has_kwargs": false,
         "has_varargs": false
       },
@@ -598,7 +608,9 @@
         ],
         "returns": "unknown",
         "is_async": false,
-        "side_effects": [],
+        "side_effects": [
+          "file_write"
+        ],
         "has_kwargs": false,
         "has_varargs": false
       },
@@ -715,6 +727,30 @@
           }
         ],
         "returns": "unknown",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "obsidian_agent.py",
+        "class": null,
+        "name": "_cleanup_old_logs",
+        "args": [
+          {
+            "name": "log_dir",
+            "type": "str"
+          },
+          {
+            "name": "pattern",
+            "type": "str"
+          },
+          {
+            "name": "keep_days",
+            "type": "int"
+          }
+        ],
+        "returns": "None",
         "is_async": false,
         "side_effects": [],
         "has_kwargs": false,
@@ -1253,7 +1289,6 @@
         "returns": "unknown",
         "is_async": false,
         "side_effects": [
-          "file_write",
           "json_write"
         ],
         "has_kwargs": false,
@@ -1283,7 +1318,6 @@
         "returns": "unknown",
         "is_async": false,
         "side_effects": [
-          "file_write",
           "json_write"
         ],
         "has_kwargs": false,
@@ -1449,7 +1483,6 @@
         "returns": "str",
         "is_async": false,
         "side_effects": [
-          "file_write",
           "json_write"
         ],
         "has_kwargs": false,
@@ -1666,6 +1699,24 @@
         "returns": "str",
         "is_async": false,
         "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "obsidian_agent.py",
+        "class": null,
+        "name": "run_apm_report",
+        "args": [
+          {
+            "name": "date",
+            "type": "str"
+          }
+        ],
+        "returns": "str",
+        "is_async": false,
+        "side_effects": [
+          "subprocess"
+        ],
         "has_kwargs": false,
         "has_varargs": false
       },
@@ -2052,6 +2103,22 @@
       {
         "file": "obsidian_agent.py",
         "class": null,
+        "name": "_auto_detect_claude_work",
+        "args": [
+          {
+            "name": "onew",
+            "type": "unknown"
+          }
+        ],
+        "returns": "None",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "obsidian_agent.py",
+        "class": null,
         "name": "_startup_briefing",
         "args": [],
         "returns": "unknown",
@@ -2088,11 +2155,22 @@
         "side_effects": [],
         "has_kwargs": false,
         "has_varargs": false
+      },
+      {
+        "file": "obsidian_agent.py",
+        "class": null,
+        "name": "_print_error_summary",
+        "args": [],
+        "returns": "None",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
       }
     ]
   },
   "onew_self_improve.py": {
-    "generated": "2026-03-22 15:39",
+    "generated": "2026-03-29 18:21",
     "functions": [
       {
         "file": "onew_self_improve.py",
@@ -3066,7 +3144,7 @@
     ]
   },
   "onew_contract.py": {
-    "generated": "2026-03-22 15:39",
+    "generated": "2026-03-29 18:21",
     "functions": [
       {
         "file": "onew_contract.py",
@@ -3161,7 +3239,7 @@
     ]
   },
   "onew_code_planner.py": {
-    "generated": "2026-03-22 15:39",
+    "generated": "2026-03-29 18:21",
     "functions": [
       {
         "file": "onew_code_planner.py",
@@ -3738,7 +3816,7 @@
     ]
   },
   "onew_watcher.py": {
-    "generated": "2026-03-22 15:39",
+    "generated": "2026-03-29 18:21",
     "functions": [
       {
         "file": "onew_watcher.py",
@@ -4056,7 +4134,7 @@
     ]
   },
   "onew_meta.py": {
-    "generated": "2026-03-22 15:39",
+    "generated": "2026-03-29 18:21",
     "functions": [
       {
         "file": "onew_meta.py",
@@ -4344,7 +4422,7 @@
     ]
   },
   "onew_night_study.py": {
-    "generated": "2026-03-22 15:39",
+    "generated": "2026-03-29 18:21",
     "functions": [
       {
         "file": "onew_night_study.py",
@@ -4586,6 +4664,22 @@
         "name": "is_morning_briefing_time",
         "args": [],
         "returns": "bool",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_night_study.py",
+        "class": null,
+        "name": "_get_exam_rotation_notes",
+        "args": [
+          {
+            "name": "state",
+            "type": "dict"
+          }
+        ],
+        "returns": "list[str]",
         "is_async": false,
         "side_effects": [],
         "has_kwargs": false,
@@ -4973,7 +5067,7 @@
     ]
   },
   "onew_adhd.py": {
-    "generated": "2026-03-22 15:39",
+    "generated": "2026-03-29 18:21",
     "functions": [
       {
         "file": "onew_adhd.py",
@@ -5562,7 +5656,7 @@
     ]
   },
   "onew_adhd_coach.py": {
-    "generated": "2026-03-22 15:39",
+    "generated": "2026-03-29 18:21",
     "functions": [
       {
         "file": "onew_adhd_coach.py",
@@ -5882,7 +5976,7 @@
     ]
   },
   "onew_task_manager.py": {
-    "generated": "2026-03-22 15:39",
+    "generated": "2026-03-29 18:21",
     "functions": [
       {
         "file": "onew_task_manager.py",
@@ -6039,7 +6133,7 @@
     ]
   },
   "onew_budget.py": {
-    "generated": "2026-03-22 15:39",
+    "generated": "2026-03-29 18:21",
     "functions": [
       {
         "file": "onew_budget.py",
@@ -6146,7 +6240,7 @@
     ]
   },
   "onew_review_scheduler.py": {
-    "generated": "2026-03-22 15:39",
+    "generated": "2026-03-29 18:21",
     "functions": [
       {
         "file": "onew_review_scheduler.py",
@@ -6324,7 +6418,7 @@
     ]
   },
   "onew_weakness_tracker.py": {
-    "generated": "2026-03-22 15:39",
+    "generated": "2026-03-29 18:21",
     "functions": [
       {
         "file": "onew_weakness_tracker.py",
@@ -6500,7 +6594,7 @@
     ]
   },
   "onew_planner.py": {
-    "generated": "2026-03-22 15:39",
+    "generated": "2026-03-29 18:21",
     "functions": [
       {
         "file": "onew_planner.py",
@@ -6907,7 +7001,7 @@
     ]
   },
   "onew_shared.py": {
-    "generated": "2026-03-22 15:39",
+    "generated": "2026-03-29 18:21",
     "functions": [
       {
         "file": "onew_shared.py",
@@ -6987,7 +7081,7 @@
     ]
   },
   "onew_tools.py": {
-    "generated": "2026-03-22 15:39",
+    "generated": "2026-03-29 18:21",
     "functions": [
       {
         "file": "onew_tools.py",
@@ -7075,7 +7169,7 @@
     ]
   },
   "onew_locks.py": {
-    "generated": "2026-03-22 15:39",
+    "generated": "2026-03-29 18:21",
     "functions": [
       {
         "file": "onew_locks.py",
@@ -7119,6 +7213,28 @@
       {
         "file": "onew_locks.py",
         "class": null,
+        "name": "_atomic_text_write",
+        "args": [
+          {
+            "name": "filepath",
+            "type": "str"
+          },
+          {
+            "name": "content",
+            "type": "str"
+          }
+        ],
+        "returns": "unknown",
+        "is_async": false,
+        "side_effects": [
+          "file_write"
+        ],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_locks.py",
+        "class": null,
         "name": "_atomic_md_append",
         "args": [
           {
@@ -7141,7 +7257,7 @@
     ]
   },
   "onew_scheduler.py": {
-    "generated": "2026-03-22 15:39",
+    "generated": "2026-03-29 18:21",
     "functions": [
       {
         "file": "onew_scheduler.py",
@@ -7281,7 +7397,7 @@
     ]
   },
   "onew_field_linker.py": {
-    "generated": "2026-03-22 15:39",
+    "generated": "2026-03-29 18:21",
     "functions": [
       {
         "file": "onew_field_linker.py",
@@ -7465,7 +7581,7 @@
     ]
   },
   "onew_field_analyzer.py": {
-    "generated": "2026-03-22 15:39",
+    "generated": "2026-03-29 18:21",
     "functions": [
       {
         "file": "onew_field_analyzer.py",
@@ -7562,6 +7678,62 @@
       {
         "file": "onew_field_analyzer.py",
         "class": null,
+        "name": "is_exam_photo",
+        "args": [
+          {
+            "name": "caption",
+            "type": "str"
+          }
+        ],
+        "returns": "bool",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_field_analyzer.py",
+        "class": null,
+        "name": "_exam_vision_prompt",
+        "args": [
+          {
+            "name": "question",
+            "type": "str"
+          }
+        ],
+        "returns": "str",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_field_analyzer.py",
+        "class": null,
+        "name": "analyze_exam_image",
+        "args": [
+          {
+            "name": "img_path",
+            "type": "str"
+          },
+          {
+            "name": "question",
+            "type": "str"
+          },
+          {
+            "name": "agent",
+            "type": "unknown"
+          }
+        ],
+        "returns": "dict",
+        "is_async": false,
+        "side_effects": [],
+        "has_kwargs": false,
+        "has_varargs": false
+      },
+      {
+        "file": "onew_field_analyzer.py",
+        "class": null,
         "name": "analyze_field_image_bytes",
         "args": [
           {
@@ -7590,7 +7762,7 @@
     ]
   },
   "pdf_to_md.py": {
-    "generated": "2026-03-22 15:39",
+    "generated": "2026-03-29 18:21",
     "functions": [
       {
         "file": "pdf_to_md.py",

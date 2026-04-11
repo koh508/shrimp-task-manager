@@ -1,0 +1,34 @@
+{
+  "meta": {
+    "source_path": "D:\\기계도면\\기계도면\\02. 공기압축기 (한국에어로)\\기계\\6. Data Sheet & 성능곡선도\\09.냉동식 공기제습기 제작시방서 (U0-1001)_180223.xls",
+    "company_id": "02",
+    "equipment": "압축기",
+    "doc_type": "DATA_SHEET",
+    "rev": null,
+    "is_latest": true,
+    "extracted_at": "2026-03-27T19:33:07",
+    "record_count": 2
+  },
+  "records": [
+    {
+      "parameter": "냉동식 공기제습기",
+      "value": "Date",
+      "unit": "",
+      "design_value": "Rev.",
+      "equipment": "압축기",
+      "row_idx": 2,
+      "sheet": "U0-1001",
+      "chunk_hash": "f2b3b10b6d354845"
+    },
+    {
+      "parameter": "Rev",
+      "value": "제주특별자치도",
+      "unit": "",
+      "design_value": "Owner",
+      "equipment": "압축기",
+      "row_idx": 8,
+      "sheet": "U0-1001",
+      "chunk_hash": "95874ad166f035b4"
+    }
+  ]
+}

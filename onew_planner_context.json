@@ -1,13 +1,5 @@
 [
   {
-    "timestamp": "2026-03-20T18:28:41.436903",
-    "status": "aborted",
-    "goal": "토큰소비 최소화하며, 온유 시스템에 부족한 부분 자료 생성 (300자 내), 생성된 기준으로 Github 검색 하여 필요 파일 설치 계획 포함 재수정(500자 내외) 파일형식 md파일로 생성 후 보고.",
-    "files": [
-      "onew_system_gaps_and_search_plan.md"
-    ]
-  },
-  {
     "timestamp": "2026-03-20T18:31:56.326484",
     "status": "aborted",
     "goal": "토큰소비 최소화하며, 온유 시스템에 부족한 부분 자료 생성 (300자 내), 생성된 기준으로 Github 검색 하여 필요 파일 설치 계획 포함 재수정(500자 내외) 파일형식 md파일로 생성 후 보고.",
@@ -86,6 +78,15 @@
     "files": [
       "src/onew_system/core/interface.py",
       "tests/onew_system/core/test_interface.py"
+    ]
+  },
+  {
+    "timestamp": "2026-03-27T09:20:34.426581",
+    "status": "aborted",
+    "goal": "온유시스템 클로드코드 메시지 테스트 파일 생성 및 테스트",
+    "files": [
+      "onew_claude_message_test.py",
+      "test_onew_claude_message_test.py"
     ]
   }
 ]

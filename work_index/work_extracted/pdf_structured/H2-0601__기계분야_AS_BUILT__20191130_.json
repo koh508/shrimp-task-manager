@@ -1,0 +1,754 @@
+{
+  "meta": {
+    "tag": "H2-0601",
+    "file": "기계분야 AS BUILT (20191130).pdf",
+    "company_id": "30",
+    "source_path": "D:\\기계도면\\기계도면\\30. 저압증기복수기 (DTS)\\기계분야 AS BUILT (20191130).pdf",
+    "extracted_at": "2026-03-27T22:26:55"
+  },
+  "tag": "H2-0601",
+  "records": [
+    {
+      "tag": "H2-0601",
+      "section": "MOTOR",
+      "position": null,
+      "parameter": "insulation_class",
+      "value": "적용",
+      "unit": "",
+      "match_type": "exact",
+      "source": {
+        "file": "기계분야 AS BUILT (20191130).pdf",
+        "company": "30",
+        "page": 6
+      }
+    },
+    {
+      "tag": "H2-0601",
+      "section": "MOTOR",
+      "position": null,
+      "parameter": "insulation_class",
+      "value": "Insulation",
+      "unit": "",
+      "match_type": "exact",
+      "source": {
+        "file": "기계분야 AS BUILT (20191130).pdf",
+        "company": "30",
+        "page": 545
+      }
+    },
+    {
+      "tag": "H2-0601",
+      "section": "MOTOR",
+      "position": null,
+      "parameter": "insulation_class",
+      "value": "Material",
+      "unit": "",
+      "match_type": "exact",
+      "source": {
+        "file": "기계분야 AS BUILT (20191130).pdf",
+        "company": "30",
+        "page": 998
+      }
+    },
+    {
+      "tag": "H2-0601",
+      "section": "MOTOR",
+      "position": null,
+      "parameter": "insulation_class",
+      "value": "DENS",
+      "unit": "",
+      "match_type": "exact",
+      "source": {
+        "file": "기계분야 AS BUILT (20191130).pdf",
+        "company": "30",
+        "page": 1019
+      }
+    },
+    {
+      "tag": "H2-0601",
+      "section": "MOTOR",
+      "position": null,
+      "parameter": "insulation_class",
+      "value": "IN",
+      "unit": "",
+      "match_type": "exact",
+      "source": {
+        "file": "기계분야 AS BUILT (20191130).pdf",
+        "company": "30",
+        "page": 1020
+      }
+    },
+    {
+      "tag": "H2-0601",
+      "section": "MOTOR",
+      "position": null,
+      "parameter": "ip_rating",
+      "value": "IP55",
+      "unit": "",
+      "match_type": "exact",
+      "source": {
+        "file": "기계분야 AS BUILT (20191130).pdf",
+        "company": "30",
+        "page": 1259
+      }
+    },
+    {
+      "tag": "H2-0601",
+      "section": "MOTOR",
+      "position": null,
+      "parameter": "motor_poles",
+      "value": "4",
+      "unit": "pole",
+      "match_type": "exact",
+      "source": {
+        "file": "기계분야 AS BUILT (20191130).pdf",
+        "company": "30",
+        "page": 1264
+      }
+    },
+    {
+      "tag": "H2-0601",
+      "section": "MOTOR",
+      "position": null,
+      "parameter": "motor_voltage_V",
+      "value": "380",
+      "unit": "V",
+      "match_type": "exact",
+      "source": {
+        "file": "기계분야 AS BUILT (20191130).pdf",
+        "company": "30",
+        "page": 1264
+      }
+    },
+    {
+      "tag": "H2-0601",
+      "section": "MOTOR",
+      "position": null,
+      "parameter": "insulation_class",
+      "value": "F",
+      "unit": "",
+      "match_type": "exact",
+      "source": {
+        "file": "기계분야 AS BUILT (20191130).pdf",
+        "company": "30",
+        "page": 1264
+      }
+    },
+    {
+      "tag": "H2-0601",
+      "section": "LUBRICATION",
+      "position": null,
+      "parameter": "grease_type",
+      "value": "GUN GREASE GUN",
+      "unit": "",
+      "match_type": "exact",
+      "source": {
+        "file": "기계분야 AS BUILT (20191130).pdf",
+        "company": "30",
+        "page": 1269
+      }
+    },
+    {
+      "tag": "H2-0601",
+      "section": "LUBRICATION",
+      "position": null,
+      "parameter": "grease_type",
+      "value": "and Maker",
+      "unit": "",
+      "match_type": "exact",
+      "source": {
+        "file": "기계분야 AS BUILT (20191130).pdf",
+        "company": "30",
+        "page": 1269
+      }
+    },
+    {
+      "tag": "H2-0601",
+      "section": "MOTOR",
+      "position": null,
+      "parameter": "insulation_class",
+      "value": "Pillow",
+      "unit": "",
+      "match_type": "exact",
+      "source": {
+        "file": "기계분야 AS BUILT (20191130).pdf",
+        "company": "30",
+        "page": 1287
+      }
+    },
+    {
+      "tag": "H2-0601",
+      "section": "MOTOR",
+      "position": null,
+      "parameter": "ip_rating",
+      "value": "IP65",
+      "unit": "",
+      "match_type": "exact",
+      "source": {
+        "file": "기계분야 AS BUILT (20191130).pdf",
+        "company": "30",
+        "page": 1296
+      }
+    },
+    {
+      "tag": "H2-0601",
+      "section": "MOTOR",
+      "position": null,
+      "parameter": "motor_voltage_V",
+      "value": "220",
+      "unit": "V",
+      "match_type": "exact",
+      "source": {
+        "file": "기계분야 AS BUILT (20191130).pdf",
+        "company": "30",
+        "page": 1296
+      }
+    },
+    {
+      "tag": "H2-0601",
+      "section": "PERFORMANCE",
+      "position": null,
+      "parameter": "flow_rate",
+      "value": "96.40",
+      "unit": "m³/h",
+      "match_type": "exact",
+      "source": {
+        "file": "기계분야 AS BUILT (20191130).pdf",
+        "company": "30",
+        "page": 1304
+      }
+    },
+    {
+      "tag": "H2-0601",
+      "section": "PERFORMANCE",
+      "position": null,
+      "parameter": "head_m",
+      "value": "53.00",
+      "unit": "m",
+      "match_type": "exact",
+      "source": {
+        "file": "기계분야 AS BUILT (20191130).pdf",
+        "company": "30",
+        "page": 1304
+      }
+    },
+    {
+      "tag": "H2-0601",
+      "section": "MOTOR",
+      "position": null,
+      "parameter": "motor_rpm",
+      "value": "1777",
+      "unit": "rpm",
+      "match_type": "exact",
+      "source": {
+        "file": "기계분야 AS BUILT (20191130).pdf",
+        "company": "30",
+        "page": 1304
+      }
+    },
+    {
+      "tag": "H2-0601",
+      "section": "PERFORMANCE",
+      "position": null,
+      "parameter": "npsh_required_m",
+      "value": "1.76",
+      "unit": "m",
+      "match_type": "exact",
+      "source": {
+        "file": "기계분야 AS BUILT (20191130).pdf",
+        "company": "30",
+        "page": 1304
+      }
+    },
+    {
+      "tag": "H2-0601",
+      "section": "SEAL",
+      "position": null,
+      "parameter": "seal_type",
+      "value": "Single acting mechanical seal",
+      "unit": "",
+      "match_type": "exact",
+      "source": {
+        "file": "기계분야 AS BUILT (20191130).pdf",
+        "company": "30",
+        "page": 1304
+      }
+    },
+    {
+      "tag": "H2-0601",
+      "section": "MECHANICAL",
+      "position": null,
+      "parameter": "coupling_type",
+      "value": "Eupex NH",
+      "unit": "",
+      "match_type": "exact",
+      "source": {
+        "file": "기계분야 AS BUILT (20191130).pdf",
+        "company": "30",
+        "page": 1305
+      }
+    },
+    {
+      "tag": "H2-0601",
+      "section": "MOTOR",
+      "position": null,
+      "parameter": "motor_kw",
+      "value": "25.30",
+      "unit": "kW",
+      "match_type": "exact",
+      "source": {
+        "file": "기계분야 AS BUILT (20191130).pdf",
+        "company": "30",
+        "page": 1305
+      }
+    },
+    {
+      "tag": "H2-0601",
+      "section": "BEARING",
+      "position": "DE",
+      "parameter": "bearing_no",
+      "value": "6210 Z C3",
+      "unit": "",
+      "match_type": "exact",
+      "source": {
+        "file": "기계분야 AS BUILT (20191130).pdf",
+        "company": "30",
+        "page": 1310
+      }
+    },
+    {
+      "tag": "H2-0601",
+      "section": "BEARING",
+      "position": "NDE",
+      "parameter": "bearing_no",
+      "value": "6210 Z C3",
+      "unit": "",
+      "match_type": "exact",
+      "source": {
+        "file": "기계분야 AS BUILT (20191130).pdf",
+        "company": "30",
+        "page": 1310
+      }
+    },
+    {
+      "tag": "H2-0601",
+      "section": "BEARING",
+      "position": null,
+      "parameter": "bearing_lifetime_h",
+      "value": "40000",
+      "unit": "h",
+      "match_type": "exact",
+      "source": {
+        "file": "기계분야 AS BUILT (20191130).pdf",
+        "company": "30",
+        "page": 1310
+      }
+    },
+    {
+      "tag": "H2-0601",
+      "section": "LUBRICATION",
+      "position": null,
+      "parameter": "grease_type",
+      "value": "Esso Unirex N3",
+      "unit": "",
+      "match_type": "exact",
+      "source": {
+        "file": "기계분야 AS BUILT (20191130).pdf",
+        "company": "30",
+        "page": 1310
+      }
+    },
+    {
+      "tag": "H2-0601",
+      "section": "MOTOR",
+      "position": null,
+      "parameter": "insulation_class",
+      "value": "155",
+      "unit": "",
+      "match_type": "exact",
+      "source": {
+        "file": "기계분야 AS BUILT (20191130).pdf",
+        "company": "30",
+        "page": 1310
+      }
+    },
+    {
+      "tag": "H2-0601",
+      "section": "MOTOR",
+      "position": null,
+      "parameter": "ip_rating",
+      "value": "IP67",
+      "unit": "",
+      "match_type": "exact",
+      "source": {
+        "file": "기계분야 AS BUILT (20191130).pdf",
+        "company": "30",
+        "page": 1330
+      }
+    },
+    {
+      "tag": "H2-0601",
+      "section": "MOTOR",
+      "position": null,
+      "parameter": "ip_rating",
+      "value": "IP68",
+      "unit": "",
+      "match_type": "exact",
+      "source": {
+        "file": "기계분야 AS BUILT (20191130).pdf",
+        "company": "30",
+        "page": 1333
+      }
+    },
+    {
+      "tag": "H2-0601",
+      "section": "MOTOR",
+      "position": null,
+      "parameter": "motor_poles",
+      "value": "6",
+      "unit": "pole",
+      "match_type": "exact",
+      "source": {
+        "file": "기계분야 AS BUILT (20191130).pdf",
+        "company": "30",
+        "page": 1346
+      }
+    },
+    {
+      "tag": "H2-0601",
+      "section": "MOTOR",
+      "position": null,
+      "parameter": "insulation_class",
+      "value": "B",
+      "unit": "",
+      "match_type": "exact",
+      "source": {
+        "file": "기계분야 AS BUILT (20191130).pdf",
+        "company": "30",
+        "page": 1346
+      }
+    },
+    {
+      "tag": "H2-0601",
+      "section": "MOTOR",
+      "position": null,
+      "parameter": "insulation_class",
+      "value": "Resistance",
+      "unit": "",
+      "match_type": "exact",
+      "source": {
+        "file": "기계분야 AS BUILT (20191130).pdf",
+        "company": "30",
+        "page": 1613
+      }
+    },
+    {
+      "tag": "H2-0601",
+      "section": "MOTOR",
+      "position": null,
+      "parameter": "insulation_class",
+      "value": "check",
+      "unit": "",
+      "match_type": "exact",
+      "source": {
+        "file": "기계분야 AS BUILT (20191130).pdf",
+        "company": "30",
+        "page": 1621
+      }
+    },
+    {
+      "tag": "H2-0601",
+      "section": "MOTOR",
+      "position": null,
+      "parameter": "insulation_class",
+      "value": "RESISTANCE",
+      "unit": "",
+      "match_type": "exact",
+      "source": {
+        "file": "기계분야 AS BUILT (20191130).pdf",
+        "company": "30",
+        "page": 1653
+      }
+    },
+    {
+      "tag": "H2-0601",
+      "section": "MOTOR",
+      "position": null,
+      "parameter": "insulation_class",
+      "value": "resistance",
+      "unit": "",
+      "match_type": "exact",
+      "source": {
+        "file": "기계분야 AS BUILT (20191130).pdf",
+        "company": "30",
+        "page": 1658
+      }
+    },
+    {
+      "tag": "H2-0601",
+      "section": "LUBRICATION",
+      "position": null,
+      "parameter": "grease_type",
+      "value": "List",
+      "unit": "",
+      "match_type": "exact",
+      "source": {
+        "file": "기계분야 AS BUILT (20191130).pdf",
+        "company": "30",
+        "page": 1685
+      }
+    },
+    {
+      "tag": "H2-0601",
+      "section": "LUBRICATION",
+      "position": null,
+      "parameter": "grease_type",
+      "value": "LS2",
+      "unit": "",
+      "match_type": "exact",
+      "source": {
+        "file": "기계분야 AS BUILT (20191130).pdf",
+        "company": "30",
+        "page": 1686
+      }
+    },
+    {
+      "tag": "H2-0601",
+      "section": "BEARING",
+      "position": "DE",
+      "parameter": "bearing_no",
+      "value": "SIDE",
+      "unit": "",
+      "match_type": "pattern",
+      "source": {
+        "file": "기계분야 AS BUILT (20191130).pdf",
+        "company": "30",
+        "page": 1687
+      }
+    },
+    {
+      "tag": "H2-0601",
+      "section": "BEARING",
+      "position": "NDE",
+      "parameter": "bearing_no",
+      "value": "SIDE",
+      "unit": "",
+      "match_type": "pattern",
+      "source": {
+        "file": "기계분야 AS BUILT (20191130).pdf",
+        "company": "30",
+        "page": 1687
+      }
+    },
+    {
+      "tag": "H2-0601",
+      "section": "LUBRICATION",
+      "position": null,
+      "parameter": "grease_type",
+      "value": "d to reduce",
+      "unit": "",
+      "match_type": "exact",
+      "source": {
+        "file": "기계분야 AS BUILT (20191130).pdf",
+        "company": "30",
+        "page": 1723
+      }
+    },
+    {
+      "tag": "H2-0601",
+      "section": "LUBRICATION",
+      "position": null,
+      "parameter": "grease_type",
+      "value": "can cause damage to the hub",
+      "unit": "",
+      "match_type": "exact",
+      "source": {
+        "file": "기계분야 AS BUILT (20191130).pdf",
+        "company": "30",
+        "page": 1724
+      }
+    },
+    {
+      "tag": "H2-0601",
+      "section": "LUBRICATION",
+      "position": null,
+      "parameter": "grease_type",
+      "value": "d Not greased Greased Not greased",
+      "unit": "",
+      "match_type": "exact",
+      "source": {
+        "file": "기계분야 AS BUILT (20191130).pdf",
+        "company": "30",
+        "page": 1736
+      }
+    },
+    {
+      "tag": "H2-0601",
+      "section": "LUBRICATION",
+      "position": null,
+      "parameter": "grease_type",
+      "value": "d before assembling",
+      "unit": "",
+      "match_type": "exact",
+      "source": {
+        "file": "기계분야 AS BUILT (20191130).pdf",
+        "company": "30",
+        "page": 1736
+      }
+    },
+    {
+      "tag": "H2-0601",
+      "section": "MOTOR",
+      "position": null,
+      "parameter": "ip_rating",
+      "value": "IP44",
+      "unit": "",
+      "match_type": "exact",
+      "source": {
+        "file": "기계분야 AS BUILT (20191130).pdf",
+        "company": "30",
+        "page": 1744
+      }
+    },
+    {
+      "tag": "H2-0601",
+      "section": "MOTOR",
+      "position": null,
+      "parameter": "ip_rating",
+      "value": "IP54",
+      "unit": "",
+      "match_type": "exact",
+      "source": {
+        "file": "기계분야 AS BUILT (20191130).pdf",
+        "company": "30",
+        "page": 1745
+      }
+    },
+    {
+      "tag": "H2-0601",
+      "section": "MOTOR",
+      "position": null,
+      "parameter": "ip_rating",
+      "value": "IP22",
+      "unit": "",
+      "match_type": "exact",
+      "source": {
+        "file": "기계분야 AS BUILT (20191130).pdf",
+        "company": "30",
+        "page": 1770
+      }
+    },
+    {
+      "tag": "H2-0601",
+      "section": "MOTOR",
+      "position": null,
+      "parameter": "ip_rating",
+      "value": "IP23",
+      "unit": "",
+      "match_type": "exact",
+      "source": {
+        "file": "기계분야 AS BUILT (20191130).pdf",
+        "company": "30",
+        "page": 1770
+      }
+    },
+    {
+      "tag": "H2-0601",
+      "section": "MOTOR",
+      "position": null,
+      "parameter": "insulation_class",
+      "value": "PROTECTION",
+      "unit": "",
+      "match_type": "exact",
+      "source": {
+        "file": "기계분야 AS BUILT (20191130).pdf",
+        "company": "30",
+        "page": 1789
+      }
+    },
+    {
+      "tag": "H2-0601",
+      "section": "MOTOR",
+      "position": null,
+      "parameter": "insulation_class",
+      "value": "LAYERS",
+      "unit": "",
+      "match_type": "exact",
+      "source": {
+        "file": "기계분야 AS BUILT (20191130).pdf",
+        "company": "30",
+        "page": 1793
+      }
+    },
+    {
+      "tag": "H2-0601",
+      "section": "MOTOR",
+      "position": null,
+      "parameter": "insulation_class",
+      "value": "in",
+      "unit": "",
+      "match_type": "exact",
+      "source": {
+        "file": "기계분야 AS BUILT (20191130).pdf",
+        "company": "30",
+        "page": 1805
+      }
+    },
+    {
+      "tag": "H2-0601",
+      "section": "MOTOR",
+      "position": null,
+      "parameter": "insulation_class",
+      "value": "material",
+      "unit": "",
+      "match_type": "exact",
+      "source": {
+        "file": "기계분야 AS BUILT (20191130).pdf",
+        "company": "30",
+        "page": 1805
+      }
+    },
+    {
+      "tag": "H2-0601",
+      "section": "MOTOR",
+      "position": null,
+      "parameter": "insulation_class",
+      "value": "and",
+      "unit": "",
+      "match_type": "exact",
+      "source": {
+        "file": "기계분야 AS BUILT (20191130).pdf",
+        "company": "30",
+        "page": 1807
+      }
+    },
+    {
+      "tag": "H2-0601",
+      "section": "LUBRICATION",
+      "position": null,
+      "parameter": "grease_type",
+      "value": "lubrication",
+      "unit": "",
+      "match_type": "exact",
+      "source": {
+        "file": "기계분야 AS BUILT (20191130).pdf",
+        "company": "30",
+        "page": 1852
+      }
+    },
+    {
+      "tag": "H2-0601",
+      "section": "LUBRICATION",
+      "position": null,
+      "parameter": "grease_type",
+      "value": "lubricated version",
+      "unit": "",
+      "match_type": "exact",
+      "source": {
+        "file": "기계분야 AS BUILT (20191130).pdf",
+        "company": "30",
+        "page": 1870
+      }
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "meta": {
+    "source_path": "D:\\기계도면\\기계도면\\26. 연소가스처리설비 (에스텍)\\준공도서-연소가스 처리설비(전기)\\8. INSTRUMENT DATA SHEET\\1. 신범\\1. 계기류\\도면\\5-3. DIA PG....P711 승인도면.xls",
+    "company_id": "26",
+    "equipment": "연소가스처리",
+    "doc_type": "DATA_SHEET",
+    "rev": "AS_BUILT",
+    "is_latest": true,
+    "extracted_at": "2026-03-27T19:33:09",
+    "record_count": 6
+  },
+  "records": [
+    {
+      "parameter": "4",
+      "value": "DATE",
+      "unit": "",
+      "design_value": "SIGNATURE",
+      "equipment": "연소가스처리",
+      "row_idx": 34,
+      "sheet": "Sheet1",
+      "chunk_hash": "9418722ccd406f08"
+    },
+    {
+      "parameter": "3",
+      "value": "J. J.LEE",
+      "unit": "",
+      "design_value": "DRAWN BY",
+      "equipment": "연소가스처리",
+      "row_idx": 35,
+      "sheet": "Sheet1",
+      "chunk_hash": "c4614b3779df209c"
+    },
+    {
+      "parameter": "2",
+      "value": "DESIGNED BY",
+      "unit": "",
+      "design_value": "UNLESS OTHERWISE SPECIFIED \nDECIMAL DIMENSIONS ±0.20\nANGLE DIMENSIONS ±1˚\nDIMENSIONS ARE IN MILLI METER",
+      "equipment": "연소가스처리",
+      "row_idx": 36,
+      "sheet": "Sheet1",
+      "chunk_hash": "2fdc6a1f5597f534"
+    },
+    {
+      "parameter": "1",
+      "value": "M. J. LEE",
+      "unit": "",
+      "design_value": "CHECKED BY",
+      "equipment": "연소가스처리",
+      "row_idx": 37,
+      "sheet": "Sheet1",
+      "chunk_hash": "04c700946c7f0c83"
+    },
+    {
+      "parameter": "NO",
+      "value": "DATE",
+      "unit": "",
+      "design_value": "REASON",
+      "equipment": "연소가스처리",
+      "row_idx": 38,
+      "sheet": "Sheet1",
+      "chunk_hash": "6ccef35c233c23d6"
+    },
+    {
+      "parameter": "REVISION",
+      "value": "SCALE:N/S",
+      "unit": "",
+      "design_value": "REV.NO",
+      "equipment": "연소가스처리",
+      "row_idx": 39,
+      "sheet": "Sheet1",
+      "chunk_hash": "db650ad0a94812c9"
+    }
+  ]
+}

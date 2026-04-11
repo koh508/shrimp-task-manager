@@ -1,0 +1,25 @@
+{
+  "meta": {
+    "source_path": "D:\\기계도면\\기계도면\\36. 폐열보일러, SB (조선내화E)\\보일러 준공도서\\보일러(기계)\\18.PIPING INFORMATION rev.0(●)\\원본\\18.2 Manual Valve List_R2.xlsx",
+    "company_id": "36",
+    "equipment": "폐열보일러",
+    "doc_type": "LINELIST",
+    "rev": "2",
+    "is_latest": true,
+    "extracted_at": "2026-03-27T19:21:28",
+    "record_count": 1
+  },
+  "records": [
+    {
+      "tag": "",
+      "service": "Body",
+      "parameter": "",
+      "value": "Press.\n(.g)",
+      "unit": "kg/cm2",
+      "equipment": "폐열보일러",
+      "row_idx": 3,
+      "sheet": "Valve List",
+      "chunk_hash": "10a1ffca84d6e72f"
+    }
+  ]
+}

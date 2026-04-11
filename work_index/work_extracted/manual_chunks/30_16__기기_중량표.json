@@ -1,0 +1,34 @@
+{
+  "meta": {
+    "source_path": "D:\\기계도면\\기계도면\\30. 저압증기복수기 (DTS)\\감리 승인용 7차 문서 (201908) As built\\16. 기기 중량표\\16. 기기 중량표.pdf",
+    "company_id": "30",
+    "company_name": "저압증기복수기",
+    "equipment": "기타",
+    "doc_type": "MANUAL",
+    "rev": "AS_BUILT",
+    "is_latest": true,
+    "extracted_at": "2026-03-27T20:27:04",
+    "chunk_count": 1,
+    "vision_pages": 0
+  },
+  "chunks": [
+    {
+      "chunk_idx": 1,
+      "text": "16. 기기 중량표\n0 2019.11.30 As-built 김영환 남흥순 김정식\n개정번호 일자 내용 작 성 자 검 토 자 승 인 자\n공사명 : 제주환경자원순환센터(소각시설) 조성공사 도 서 명 : 기기 중량표\n분 야 : 폐기물 및 기계분야 도서 번호 : JJ-M-VP-006-016\n품 명 : AIR COOLED CONDENSER PACKAGE 도서 상태 : As-built\n제작사명: (주)디티에스 작 성 일 : 2019년 11월\n\nProject Name : 제주환경자원순환센터(소각시설) 조성사업\nEquipment Weight List\nItem Name : AIR COOLED CONDENSER\nSheet No. : 1 of 1\nEquipment Serial No. SET Weight total weight Remark\nAIR PREHEATER SET H1/2-0601 2 1,325 kg 2,650 kg\nMAIN DUCT H0-0401 1 20,400 kg 20,400 kg\nSTEAM HEADER H0-0401 1 24,200 kg 24,200 kg\nCONDENSATE HEADER H0-0401 2 5,400 kg 10,800 kg\nTUBE BUNDLE H0-0401 50 3,000 kg 150,000 kg\nCONDENSATE TANK T0-0402 1 7,500 kg 7,500 kg\nCONDENSATE TANK PUMP P0-0402A/B 2 360 kg 720 kg\nEJECTOR CONDENSER PACAKGE - 1 3,420 kg 3,420 kg\nBYPASS SYSTEM PCV 0304 1 2,100 kg 2,100 kg\nSTEEL STRUCTURE - 1 240,000 kg 240,000 kg\nISO - 9 8,000 kg 8,000 kg\nTOTAL 315,705 kg 469,790 kg",
+      "header": "16. 기기 중량표",
+      "section_type": "일반",
+      "equipment": [
+        "재열기",
+        "펌프",
+        "탱크"
+      ],
+      "company_id": "30",
+      "company_name": "저압증기복수기",
+      "source_file": "16. 기기 중량표",
+      "source_path": "D:\\기계도면\\기계도면\\30. 저압증기복수기 (DTS)\\감리 승인용 7차 문서 (201908) As built\\16. 기기 중량표\\16. 기기 중량표.pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "bcf427b3735f285a",
+      "char_count": 905
+    }
+  ]
+}

@@ -1,0 +1,354 @@
+{
+  "meta": {
+    "source_path": "D:\\기계도면\\기계도면\\22. 시료수, 약품2, 침출수, 화격자 (조선내화E)\\시료수분석설비 외 준공도서\\01. [제주-기계] 승인서류 (19.11.) AS BUILT\\6. DATA SHEET 및 성능곡선도\\[6-4] 폐기물 침출수 설비\\6-4-6. 폐기물 침출수 저장탱크 Data-Sheet.xls",
+    "company_id": "22",
+    "equipment": "화격자",
+    "doc_type": "DATA_SHEET",
+    "rev": "AS_BUILT",
+    "is_latest": true,
+    "extracted_at": "2026-03-27T19:33:07",
+    "record_count": 34
+  },
+  "records": [
+    {
+      "parameter": "CUSTOMER",
+      "value": "DATE :",
+      "unit": "",
+      "design_value": "제주특별자치도",
+      "equipment": "화격자",
+      "row_idx": 2,
+      "sheet": "FRP-15M3",
+      "chunk_hash": "e53dfba8be8801a3"
+    },
+    {
+      "parameter": "LOCATION",
+      "value": "DESIGN BY",
+      "unit": "",
+      "design_value": "제주시 구좌읍 동복리 산56-34",
+      "equipment": "화격자",
+      "row_idx": 3,
+      "sheet": "FRP-15M3",
+      "chunk_hash": "fbe01f66f6a27534"
+    },
+    {
+      "parameter": "ITEM NO.",
+      "value": "M.K.JANG",
+      "unit": "",
+      "design_value": "T0-0814",
+      "equipment": "화격자",
+      "row_idx": 4,
+      "sheet": "FRP-15M3",
+      "chunk_hash": "d915e4fecb14de53"
+    },
+    {
+      "parameter": "REQ,N NO.",
+      "value": "REVISION",
+      "unit": "",
+      "design_value": "NO.",
+      "equipment": "화격자",
+      "row_idx": 5,
+      "sheet": "FRP-15M3",
+      "chunk_hash": "7843bd002003da6c"
+    },
+    {
+      "parameter": "JOB NO.",
+      "value": "0",
+      "unit": "",
+      "design_value": "JJ-M-VP-013",
+      "equipment": "화격자",
+      "row_idx": 6,
+      "sheet": "FRP-15M3",
+      "chunk_hash": "2ddc54626c647e1b"
+    },
+    {
+      "parameter": "ITEM NAME",
+      "value": "1",
+      "unit": "",
+      "design_value": "폐기물 침출수 저장탱크 DATA SHEET",
+      "equipment": "화격자",
+      "row_idx": 7,
+      "sheet": "FRP-15M3",
+      "chunk_hash": "3a5ffa03c4902cce"
+    },
+    {
+      "parameter": "QUANTITY",
+      "value": "SET",
+      "unit": "",
+      "design_value": "1",
+      "equipment": "화격자",
+      "row_idx": 8,
+      "sheet": "FRP-15M3",
+      "chunk_hash": "321970200e28a962"
+    },
+    {
+      "parameter": "FLUID NAME",
+      "value": "-",
+      "unit": "",
+      "design_value": "",
+      "equipment": "화격자",
+      "row_idx": 10,
+      "sheet": "FRP-15M3",
+      "chunk_hash": "c21a53a4641ca2b1"
+    },
+    {
+      "parameter": "CAPACITY",
+      "value": "3",
+      "unit": "",
+      "design_value": "15",
+      "equipment": "화격자",
+      "row_idx": 11,
+      "sheet": "FRP-15M3",
+      "chunk_hash": "1e05c3e056a1c588"
+    },
+    {
+      "parameter": "DESIGN",
+      "value": "㎏/㎠",
+      "unit": "℃",
+      "design_value": "F.L",
+      "equipment": "화격자",
+      "row_idx": 12,
+      "sheet": "FRP-15M3",
+      "chunk_hash": "1f63ce62a591155d"
+    },
+    {
+      "parameter": "OPERATING",
+      "value": "㎏/㎠",
+      "unit": "℃",
+      "design_value": "ATM",
+      "equipment": "화격자",
+      "row_idx": 13,
+      "sheet": "FRP-15M3",
+      "chunk_hash": "7404a29628fc17d7"
+    },
+    {
+      "parameter": "S.G OF FLUID",
+      "value": "1",
+      "unit": "",
+      "design_value": "",
+      "equipment": "화격자",
+      "row_idx": 14,
+      "sheet": "FRP-15M3",
+      "chunk_hash": "67a7feee776ae416"
+    },
+    {
+      "parameter": "WEIGHT",
+      "value": "710",
+      "unit": "",
+      "design_value": "EMPTY",
+      "equipment": "화격자",
+      "row_idx": 15,
+      "sheet": "FRP-15M3",
+      "chunk_hash": "d450add558e5916d"
+    },
+    {
+      "parameter": "TANK SHELL",
+      "value": "NOZZLE",
+      "unit": "",
+      "design_value": "F.R.P",
+      "equipment": "탱크",
+      "row_idx": 21,
+      "sheet": "FRP-15M3",
+      "chunk_hash": "ea70ba1ca9586d25"
+    },
+    {
+      "parameter": "N/Z PACKING",
+      "value": "L/G TUBE",
+      "unit": "",
+      "design_value": "-",
+      "equipment": "화격자",
+      "row_idx": 22,
+      "sheet": "FRP-15M3",
+      "chunk_hash": "154618f724ccb7ad"
+    },
+    {
+      "parameter": "F/G GASKET",
+      "value": "EPDM",
+      "unit": "",
+      "design_value": "",
+      "equipment": "화격자",
+      "row_idx": 23,
+      "sheet": "FRP-15M3",
+      "chunk_hash": "73d0b67d32f72014"
+    },
+    {
+      "parameter": "STEEL BAND",
+      "value": "-",
+      "unit": "",
+      "design_value": "",
+      "equipment": "화격자",
+      "row_idx": 24,
+      "sheet": "FRP-15M3",
+      "chunk_hash": "600d6d13b0684476"
+    },
+    {
+      "parameter": "LADDER",
+      "value": "SS+도금 / FRP",
+      "unit": "",
+      "design_value": "",
+      "equipment": "화격자",
+      "row_idx": 25,
+      "sheet": "FRP-15M3",
+      "chunk_hash": "9ebf17b97f39f73a"
+    },
+    {
+      "parameter": "HAND RAIL",
+      "value": "-",
+      "unit": "",
+      "design_value": "",
+      "equipment": "화격자",
+      "row_idx": 26,
+      "sheet": "FRP-15M3",
+      "chunk_hash": "5cf3fb9e07a7ea1a"
+    },
+    {
+      "parameter": "PLATFORM",
+      "value": "-",
+      "unit": "",
+      "design_value": "",
+      "equipment": "화격자",
+      "row_idx": 27,
+      "sheet": "FRP-15M3",
+      "chunk_hash": "ad1e6bfc765eafb5"
+    },
+    {
+      "parameter": "A/G SUPPORT",
+      "value": "-",
+      "unit": "",
+      "design_value": "",
+      "equipment": "화격자",
+      "row_idx": 28,
+      "sheet": "FRP-15M3",
+      "chunk_hash": "6015144c3fd3c7d8"
+    },
+    {
+      "parameter": "STEEL BAND",
+      "value": "LADDER",
+      "unit": "",
+      "design_value": "NO",
+      "equipment": "화격자",
+      "row_idx": 30,
+      "sheet": "FRP-15M3",
+      "chunk_hash": "4d9b1254b1fad478"
+    },
+    {
+      "parameter": "HAND RAIL",
+      "value": "/G SUPPORT",
+      "unit": "A",
+      "design_value": "NO",
+      "equipment": "화격자",
+      "row_idx": 31,
+      "sheet": "FRP-15M3",
+      "chunk_hash": "ccf4a220baaa36ae"
+    },
+    {
+      "parameter": "INSULATION",
+      "value": "NAME PLATE",
+      "unit": "",
+      "design_value": "NO",
+      "equipment": "화격자",
+      "row_idx": 32,
+      "sheet": "FRP-15M3",
+      "chunk_hash": "aa629825cf2aed1e"
+    },
+    {
+      "parameter": "MARK",
+      "value": "SIZE",
+      "unit": "",
+      "design_value": "SERVICE",
+      "equipment": "화격자",
+      "row_idx": 34,
+      "sheet": "FRP-15M3",
+      "chunk_hash": "76be47b19b9e4223"
+    },
+    {
+      "parameter": "N-1",
+      "value": "50",
+      "unit": "",
+      "design_value": "INLET(공정수)",
+      "equipment": "화격자",
+      "row_idx": 35,
+      "sheet": "FRP-15M3",
+      "chunk_hash": "8e0a87eee0cbf551"
+    },
+    {
+      "parameter": "N-2",
+      "value": "50",
+      "unit": "",
+      "design_value": "INLET(침출여과수)",
+      "equipment": "화격자",
+      "row_idx": 36,
+      "sheet": "FRP-15M3",
+      "chunk_hash": "efdb6ddabfc5e899"
+    },
+    {
+      "parameter": "N-3",
+      "value": "80",
+      "unit": "",
+      "design_value": "OUTLET",
+      "equipment": "화격자",
+      "row_idx": 37,
+      "sheet": "FRP-15M3",
+      "chunk_hash": "caaa27b03ef3be19"
+    },
+    {
+      "parameter": "N-4",
+      "value": "20",
+      "unit": "",
+      "design_value": "LEVEL GAUGE",
+      "equipment": "화격자",
+      "row_idx": 38,
+      "sheet": "FRP-15M3",
+      "chunk_hash": "0cf9a45cb6042bec"
+    },
+    {
+      "parameter": "N-5",
+      "value": "50",
+      "unit": "",
+      "design_value": "OVERFLOW & DRAIN",
+      "equipment": "화격자",
+      "row_idx": 39,
+      "sheet": "FRP-15M3",
+      "chunk_hash": "d89fb97a80e6d3ce"
+    },
+    {
+      "parameter": "N-6",
+      "value": "80",
+      "unit": "",
+      "design_value": "L/T",
+      "equipment": "화격자",
+      "row_idx": 40,
+      "sheet": "FRP-15M3",
+      "chunk_hash": "44f3374528548149"
+    },
+    {
+      "parameter": "N-7",
+      "value": "50",
+      "unit": "",
+      "design_value": "SPARE",
+      "equipment": "화격자",
+      "row_idx": 41,
+      "sheet": "FRP-15M3",
+      "chunk_hash": "ec7bdc604027ef81"
+    },
+    {
+      "parameter": "N-8",
+      "value": "50",
+      "unit": "",
+      "design_value": "VENT",
+      "equipment": "화격자",
+      "row_idx": 42,
+      "sheet": "FRP-15M3",
+      "chunk_hash": "7fd53ad8e247cf51"
+    },
+    {
+      "parameter": "M-1",
+      "value": "500",
+      "unit": "",
+      "design_value": "MANHOLE",
+      "equipment": "화격자",
+      "row_idx": 43,
+      "sheet": "FRP-15M3",
+      "chunk_hash": "779c6cff2d8b09e7"
+    }
+  ]
+}

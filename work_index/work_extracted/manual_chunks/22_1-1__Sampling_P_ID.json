@@ -1,0 +1,176 @@
+{
+  "meta": {
+    "source_path": "D:\\기계도면\\기계도면\\22. 시료수, 약품2, 침출수, 화격자 (조선내화E)\\시료수분석설비 외 준공도서\\01. [제주-기계] 승인서류 (19.11.) AS BUILT\\16. 운전 및 유지관리 지침서\\16-1. 시료분석설비\\도면 및 Manual\\1-1. Sampling P&ID.pdf",
+    "company_id": "22",
+    "company_name": "시료수, 약품2, 침출수, 화격자",
+    "equipment": "화격자",
+    "doc_type": "MANUAL",
+    "rev": "AS_BUILT",
+    "is_latest": true,
+    "extracted_at": "2026-03-27T20:21:30",
+    "chunk_count": 10,
+    "vision_pages": 0
+  },
+  "chunks": [
+    {
+      "chunk_idx": 0,
+      "text": "도통계\n비설석분\n수료시\n)기호1(\n수료시\n기증주\n05P-A2B-2030-1-HPS-A51\n1-B\n,211-M-JJ\n)기호2(\n수료시\n기증주\n05P-A2B-2030-2-HPS-A51\n1-B\n,311-M-JJ\n수료시\n기수복기증압저\n04P-A1B-1030-0-LPS-A51\n1-B\n,711-M-JJ",
+      "header": "",
+      "section_type": "일반",
+      "equipment": [
+        "화격자"
+      ],
+      "company_id": "22",
+      "company_name": "시료수, 약품2, 침출수, 화격자",
+      "source_file": "1-1. Sampling P&ID",
+      "source_path": "D:\\기계도면\\기계도면\\22. 시료수, 약품2, 침출수, 화격자 (조선내화E)\\시료수분석설비 외 준공도서\\01. [제주-기계] 승인서류 (19.11.) AS BUILT\\16. 운전 및 유지관리 지침서\\16-1. 시료분석설비\\도면 및 Manual\\1-1. Sampling P&ID.pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "b8f88d69b1bfb626",
+      "char_count": 163
+    },
+    {
+      "chunk_idx": 1,
+      "text": "2B-2030-2-HPS-A51\n1-B\n,311-M-JJ\n수료시\n기수복기증압저\n04P-A1B-1030-0-LPS-A51\n1-B\n,711-M-JJ IX\nAX\nSH\n)기호1(\n수운다\n우로블\n러일보열폐\n04P-A2B-1030-1-HPS-A51\n5-B\n,211-M-JJ\nW.H\n비설석분료시\n)기호2(\n반어제장현\n수운다\n우로블\n러일보열폐\n04P-A2B-1030-2-HPS-A51\n3030-0-PCL\n5-B\n,311-M-JJ\n수료시\n기기탈\n04P-A1B-2030-0-LPS-A51\n5-C\n,711-M-JJ\n탑각냉\n용정공\nB1A-5080-0-RWC-A52\n3-B\n,331-M-JJ",
+      "header": "IX\nAX\nSH",
+      "section_type": "일반",
+      "equipment": [
+        "과열기"
+      ],
+      "company_id": "22",
+      "company_name": "시료수, 약품2, 침출수, 화격자",
+      "source_file": "1-1. Sampling P&ID",
+      "source_path": "D:\\기계도면\\기계도면\\22. 시료수, 약품2, 침출수, 화격자 (조선내화E)\\시료수분석설비 외 준공도서\\01. [제주-기계] 승인서류 (19.11.) AS BUILT\\16. 운전 및 유지관리 지침서\\16-1. 시료분석설비\\도면 및 Manual\\1-1. Sampling P&ID.pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "ff818b44397dd779",
+      "char_count": 317
+    },
+    {
+      "chunk_idx": 2,
+      "text": "기탈\n04P-A1B-2030-0-LPS-A51\n5-C\n,711-M-JJ\n탑각냉\n용정공\nB1A-5080-0-RWC-A52\n3-B\n,331-M-JJ VSP\n프펌환순\n수각냉용정공\nB1A-9080-0-SWC-A52\n3-B\n,331-M-JJ",
+      "header": "VSP",
+      "section_type": "일반",
+      "equipment": [
+        "화격자"
+      ],
+      "company_id": "22",
+      "company_name": "시료수, 약품2, 침출수, 화격자",
+      "source_file": "1-1. Sampling P&ID",
+      "source_path": "D:\\기계도면\\기계도면\\22. 시료수, 약품2, 침출수, 화격자 (조선내화E)\\시료수분석설비 외 준공도서\\01. [제주-기계] 승인서류 (19.11.) AS BUILT\\16. 운전 및 유지관리 지침서\\16-1. 시료분석설비\\도면 및 Manual\\1-1. Sampling P&ID.pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "eb7079df20807d14",
+      "char_count": 129
+    },
+    {
+      "chunk_idx": 3,
+      "text": "AIA\n2OiSA1031\nA1031\nLA1031\n2OiSA1031\nA1031\nLA1031\n인\n승\n토\n검\n계\n설\n도\n제\n용\n내\n짜\n날\n정 수",
+      "header": "AIA",
+      "section_type": "일반",
+      "equipment": [
+        "화격자"
+      ],
+      "company_id": "22",
+      "company_name": "시료수, 약품2, 침출수, 화격자",
+      "source_file": "1-1. Sampling P&ID",
+      "source_path": "D:\\기계도면\\기계도면\\22. 시료수, 약품2, 침출수, 화격자 (조선내화E)\\시료수분석설비 외 준공도서\\01. [제주-기계] 승인서류 (19.11.) AS BUILT\\16. 운전 및 유지관리 지침서\\16-1. 시료분석설비\\도면 및 Manual\\1-1. Sampling P&ID.pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "6f574b9719b86b7e",
+      "char_count": 77
+    },
+    {
+      "chunk_idx": 4,
+      "text": "NOITPIRCSED\nETADON.VER\nHpA2030\nA2030\nLA2030\nHpA2032\nA2032\nLA2032\nHpA2031\nA2031\nLA2031\nHpA1030\nA1030\nLA1030\nHpB1032\nB1032\nLB1032\nHpB1031\nB1031\nLB1031",
+      "header": "NOITPIRCSED",
+      "section_type": "일반",
+      "equipment": [
+        "화격자"
+      ],
+      "company_id": "22",
+      "company_name": "시료수, 약품2, 침출수, 화격자",
+      "source_file": "1-1. Sampling P&ID",
+      "source_path": "D:\\기계도면\\기계도면\\22. 시료수, 약품2, 침출수, 화격자 (조선내화E)\\시료수분석설비 외 준공도서\\01. [제주-기계] 승인서류 (19.11.) AS BUILT\\16. 운전 및 유지관리 지침서\\16-1. 시료분석설비\\도면 및 Manual\\1-1. Sampling P&ID.pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "8bbb01164a53f87c",
+      "char_count": 148
+    },
+    {
+      "chunk_idx": 5,
+      "text": "2031\nA2031\nLA2031\nHpA1030\nA1030\nLA1030\nHpB1032\nB1032\nLB1032\nHpB1031\nB1031\nLB1031 H\nH\nH\nH\nH\nH\n업사성조\n)설시각소(터센환순원자경환주제",
+      "header": "H\nH\nH\nH\nH\nH",
+      "section_type": "일반",
+      "equipment": [
+        "화격자"
+      ],
+      "company_id": "22",
+      "company_name": "시료수, 약품2, 침출수, 화격자",
+      "source_file": "1-1. Sampling P&ID",
+      "source_path": "D:\\기계도면\\기계도면\\22. 시료수, 약품2, 침출수, 화격자 (조선내화E)\\시료수분석설비 외 준공도서\\01. [제주-기계] 승인서류 (19.11.) AS BUILT\\16. 운전 및 유지관리 지침서\\16-1. 시료분석설비\\도면 및 Manual\\1-1. Sampling P&ID.pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "68f3768bbf9fb5d9",
+      "char_count": 114
+    },
+    {
+      "chunk_idx": 6,
+      "text": "EA\nTIA\nAIA\nEA\nTIA\nAIA\nODB2030\nB2030\nLB2030\nDCB2032\nB2032\nLB2032\nDCB2031\nB2031\nLB2031\nDCB1030\nB1030\nLB1030\nDCC1032\nC1032\nLC1032\nDCC1031\nC1031\nLC1031\n도치자별특주제\n5030-0H\n4030-2H\n4030-1H\n3030-0H\n2030-2H\n2030-1H\n소무사사축건합종한신)주(\n기각냉\n수료시\n기기탈\n기각냉수료시\n수운다우로블\n기각냉수료시\n수운다우로블\n기수복기증압저\n기각냉수료시\n기증주\n기각냉수료시\n기증주\n소무사사축건합종인제)주(\n링어니지엔성수)주(\nhcnerT\n.OT\nP.V\n기각냉수료시\n링어니지엔진웅)주(\n사공술기일동)주(\n사회식주\n설건합종영두\n사회식주\n설건합종도대\n사회식주\n설건보영\n사회식주\n설건합종강벽\n사회식주\n설건림성\n설건웅대\n사회식주\n도통계\n비설석분\n수료시\n.ON",
+      "header": "EA\nTIA\nAIA\nEA\nTIA\nAIA",
+      "section_type": "일반",
+      "equipment": [
+        "화격자"
+      ],
+      "company_id": "22",
+      "company_name": "시료수, 약품2, 침출수, 화격자",
+      "source_file": "1-1. Sampling P&ID",
+      "source_path": "D:\\기계도면\\기계도면\\22. 시료수, 약품2, 침출수, 화격자 (조선내화E)\\시료수분석설비 외 준공도서\\01. [제주-기계] 승인서류 (19.11.) AS BUILT\\16. 운전 및 유지관리 지침서\\16-1. 시료분석설비\\도면 및 Manual\\1-1. Sampling P&ID.pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "012cd7cd8cf0366e",
+      "char_count": 438
+    },
+    {
+      "chunk_idx": 7,
+      "text": "식주\n설건합종영두\n사회식주\n설건합종도대\n사회식주\n설건보영\n사회식주\n설건합종강벽\n사회식주\n설건림성\n설건웅대\n사회식주\n도통계\n비설석분\n수료시\n.ON GNIWARD\n.veR",
+      "header": "GNIWARD",
+      "section_type": "일반",
+      "equipment": [
+        "화격자"
+      ],
+      "company_id": "22",
+      "company_name": "시료수, 약품2, 침출수, 화격자",
+      "source_file": "1-1. Sampling P&ID",
+      "source_path": "D:\\기계도면\\기계도면\\22. 시료수, 약품2, 침출수, 화격자 (조선내화E)\\시료수분석설비 외 준공도서\\01. [제주-기계] 승인서류 (19.11.) AS BUILT\\16. 운전 및 유지관리 지침서\\16-1. 시료분석설비\\도면 및 Manual\\1-1. Sampling P&ID.pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "c8f725066deb13c6",
+      "char_count": 93
+    },
+    {
+      "chunk_idx": 8,
+      "text": "ENON\nELACS\n10-310-PV-M-JJ\n51X52\n51X52\n51X52\n51X52\n51X52\n51X52\n---\n---\n---\n---",
+      "header": "ENON\nELACS",
+      "section_type": "일반",
+      "equipment": [
+        "화격자"
+      ],
+      "company_id": "22",
+      "company_name": "시료수, 약품2, 침출수, 화격자",
+      "source_file": "1-1. Sampling P&ID",
+      "source_path": "D:\\기계도면\\기계도면\\22. 시료수, 약품2, 침출수, 화격자 (조선내화E)\\시료수분석설비 외 준공도서\\01. [제주-기계] 승인서류 (19.11.) AS BUILT\\16. 운전 및 유지관리 지침서\\16-1. 시료분석설비\\도면 및 Manual\\1-1. Sampling P&ID.pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "ef227c3bd708296b",
+      "char_count": 77
+    },
+    {
+      "chunk_idx": 9,
+      "text": "TLIUB\nSA\n11.91\n\n8X51\n51X52\n8X51\n51X52\n8X51\n51X52\n8X51\n51X52\n8X51\n51X52\n8X51\n51X52",
+      "header": "TLIUB\nSA",
+      "section_type": "일반",
+      "equipment": [
+        "화격자"
+      ],
+      "company_id": "22",
+      "company_name": "시료수, 약품2, 침출수, 화격자",
+      "source_file": "1-1. Sampling P&ID",
+      "source_path": "D:\\기계도면\\기계도면\\22. 시료수, 약품2, 침출수, 화격자 (조선내화E)\\시료수분석설비 외 준공도서\\01. [제주-기계] 승인서류 (19.11.) AS BUILT\\16. 운전 및 유지관리 지침서\\16-1. 시료분석설비\\도면 및 Manual\\1-1. Sampling P&ID.pdf",
+      "rev": "AS_BUILT",
+      "chunk_hash": "184bf9bfd1615d4b",
+      "char_count": 81
+    }
+  ]
+}
